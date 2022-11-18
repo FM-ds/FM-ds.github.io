@@ -537,7 +537,4 @@ d3.json(shp_file, function(data) {
     //targetSvg = d3.select('#legSvg');
     //drawLegend(colourScale, targetSvg);
     createLegend(d3.select("#mapLegend"),colourScale);
-
-
-
 }); 

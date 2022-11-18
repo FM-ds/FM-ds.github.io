@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The US-China Trade War",
+    "fontSize": 36,
+    "fontWeight": 600,
+    "font": "Arial",
+    "subtitle": "Key Events 2018-19",
+    "subtitleFont": "Arial",
+    "subtitleFontSize": 18,
+    "offset": 15
+  },
+  "background":"white",
+  "config": {
+    "axis": {
+      "labelFont": "Arial",
+      "labelFontSize": 12
+    },
+    "legend": {
+      "labelFont": "Arial",
+      "titleFont":  "Arial",
+      "titleFontSize": 16,
+      "labelFontSize": 14
+    }
+  },
+  "data": {
+    "url": "week8/data.csv"
+  },
+  "width": "container",
+  "height": 100,
+  "mark": {
+    "type": "circle",
+    "opacity": 0.2,
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "axis": {
+        "title": ""
+      }
+    },
+    "size": {
+      "field": "Size",
+      "type": "quantitative",
+      "title": "Value of Tarrif Revenue",
+      "legend": {
+        "clipHeight": 30,
+        "values": [4000000000, 17000000000, 30000000000]
+      },
+      "scale":{
+        "type": "sqrt"
+      }
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "scale": {
+        "scheme":"pastel2"
+      }
+    }
+  }
+}

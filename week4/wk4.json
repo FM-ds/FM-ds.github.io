@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Wikipedia's Fought-Over Econ Pages",
+    "fontSize": 36,
+    "fontWeight": 600,
+    "font": "EB Garamond",
+    "subtitle": "The Edit History of Selected Economics Pages on Wikipedia",
+    "subtitleFont": "EB Garamond",
+    "subtitleFontSize": 18,
+    "offset": 15
+  },
+  "background":"rgb(254,252,247)",
+  "config": {
+    "axis": {
+      "labelFont": "EB Garamond",
+      "labelFontSize": 12
+    },
+    "legend": {
+      "labelFont": "EB Garamond",
+      "titleFont":  "EB Garamond",
+      "titleFontSize": 16,
+      "labelFontSize": 14
+    }
+  },
+  "data": {
+    "url": "week4/wiki_edits.csv"
+  },
+  "transform": [
+    {
+      "timeUnit": "dayhours",
+      "field": "Date",
+      "as": "hours"
+    },
+    {
+      "filter": {
+        "field": "Date",
+        "gte": {
+          "year": 2020,
+          "month": 0,
+          "date": 0,
+          "hours": 0
+        }
+      }
+    }
+  ],
+  "width": "container",
+  "height": 800,
+  "mark": {
+    "type": "circle",
+    "opacity": 0.2,
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Page",
+      "type": "nominal",
+      "axis": {
+        "title": ""
+      },
+      "sort": {
+        "field": "Category"
+      }
+    },
+    "size": {
+      "field": "Abs Edit Size",
+      "type": "quantitative",
+      "title": "Size of Edit (Bytes)",
+      "legend": {
+        "clipHeight": 30
+      },
+      "scale": {
+        "type": "linear",
+        "exponent": 0.5,
+        "range": [
+          0,
+          2000
+        ]
+      }
+    },
+    "color": {
+      "field": "Category",
+      "type": "nominal",
+      "scale": {
+        "scheme":"pastel2"
+      }
+    }
+  }
+}

@@ -14,10 +14,13 @@
     <!-- Link to my style sheet -->
     <link rel="stylesheet" href="index.css">
 
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
     <!--The next three lines allow the Vega embed-->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
 </head>
 
 
@@ -25,38 +28,71 @@
 <body>
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
     <div id="container">
-        <div id="wk1" class="myWeek1">
+        <div id="wk1" class="weekSection">
             <div id="titleBlock">
                 <h1>Data Science for Economists.</h1>
                 <h2> Homework Tasks</h2>
             </div>
 
-            
+            <h2> Week 1</h2>
             <div id="s1">
                 <h3 id="chart1h">Korea's population is aging</h3>
                 <div class="chart" id="Chart1"></div>
                 <p>The first chart shows how Korea's population has aged, and how it is expected to continue doing so..</p>
             </div>
     
+            
+
             <div id="s2">
                 <h3 id="chart2h">... and declining</h3>
                 <div class="chart" id="Chart2"> </div>
                 <p>The second chart shows how ,simultaneously, Korea's population is expected to decline.</p>
             </div>
         </div> 
+
+        <div class="weekSection">
+            <h2> Week 2</h2>
+            <div class="chart" id="wk2Chart">
+            </div>
+        </div>
+
+        <div class="weekSection">
+            <h2> Week 4</h2>
+            <div class="chart" id="wk4Chart">
+            </div>
+        </div>
+        <div class="weekSection">
+            <h2> Week 8</h2>
+            <div class="chart" id="audioChart">
+            </div>
+            <div class="chart" id="week8Visual">
+            </div>
+        </div>
     </div>
+
 </body>
 
 
 <script>
     //Define charts:
-    var myChart1 = "week1/agingPopulation.json";
-    var myChart2 = "week1/decliningPopulation.json";
+    let myChart1 = "week1/agingPopulation.json";
+    let myChart2 = "week1/decliningPopulation.json";
+    
+    let wk2Chart = "week2/week2first.json";
+    let wk4Chart = "week4/wk4.json";
+    
+    let wk8Chart = "week8/wk8.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#wk2Chart', wk2Chart);
+
+    vegaEmbed('#wk4Chart', wk4Chart);
+    vegaEmbed('#week8Visual', wk8Chart);
 </script>
+
+<script src="week8/audiochart.js"></script>
 
 </html>
 
