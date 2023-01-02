@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Title for the page -->
     <title>Document</title>
 
@@ -38,21 +37,33 @@
             <div id="s1">
                 <h3 id="chart1h">Korea's population is aging</h3>
                 <div class="chart" id="Chart1"></div>
-                <p>The first chart shows how Korea's population has aged, and how it is expected to continue doing so..</p>
+                <p>The first chart shows how Korea's population has aged, and how it is expected to continue doing so..
+                </p>
             </div>
-    
-            
+
+
 
             <div id="s2">
                 <h3 id="chart2h">... and declining</h3>
                 <div class="chart" id="Chart2"> </div>
                 <p>The second chart shows how ,simultaneously, Korea's population is expected to decline.</p>
             </div>
-        </div> 
+        </div>
 
         <div class="weekSection">
+            <!-- Convert Data to USD for first, the to real USD for second -->
             <h2> Week 2</h2>
-            <div class="chart" id="wk2Chart">
+            <div class="chart" id="wk2Chart"> </div>
+            <div class="chart" id="wk2_2Chart"> </div>
+
+
+        </div>
+
+        <div class="weekSection">
+            <h2> Week 3</h2>
+            <div class="chart" id="wk3Chart">
+            </div>
+            <div class="chart" id="wk3_2Chart">
             </div>
         </div>
 
@@ -77,16 +88,24 @@
     //Define charts:
     let myChart1 = "week1/agingPopulation.json";
     let myChart2 = "week1/decliningPopulation.json";
-    
+
+    let wk2_2Chart = "week2/week2second.json";
+
     let wk2Chart = "week2/week2first.json";
+
     let wk4Chart = "week4/wk4.json";
-    
+
     let wk8Chart = "week8/wk8.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#wk2Chart', wk2Chart);
+    vegaEmbed('#wk2_2Chart', wk2_2Chart);
+
+    vegaEmbed('#wk3Chart', "week3/week3_first.json");
+    vegaEmbed('#wk3_2Chart', "week3/week3_second.json");
+
 
     vegaEmbed('#wk4Chart', wk4Chart);
     vegaEmbed('#week8Visual', wk8Chart);
@@ -95,5 +114,3 @@
 <script src="week8/audiochart.js"></script>
 
 </html>
-
-

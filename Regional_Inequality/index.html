@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <style>
@@ -11,18 +10,19 @@
     <script src="scrollManager.js"></script>
 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="boxplot.css">
+
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500&display=swap"
         rel="stylesheet">
 </head>
 
-</head>
+
 
 <body>
-    <div class="guide" ></div>
+    <div class="guide"></div>
     <div id='container1' class='container'>
         <div id='ukMapDiv'>
-
         </div>
         <div id="UKMapSectionContainer" class="sectionContainer">
             <div class="section" id="titleSection">
@@ -46,20 +46,64 @@
                     example, Sandwell, outside Birmingham was the third lowest average household income in the country,
                     at £14,545. </p>
             </div>
+            <div id="section4">
+                <div id="mapLegend"></div>
+            </div>
         </div>
     </div>
+
     <div id="gvaSection">
         <h3>International Comparison</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at metus eget enim lacinia venenatis.
-            Pellentesque tristique volutpat urna, et venenatis sem porta at. Proin vel dolor arcu. In mattis eleifend ligula
-            ut rhoncus. Phasellus sed laoreet augue, quis euismod urna. Donec et urna ut sapien faucibus luctus accumsan a
+            Pellentesque tristique volutpat urna, et venenatis sem porta at. Proin vel dolor arcu. In mattis eleifend
+            ligula
+            ut rhoncus. Phasellus sed laoreet augue, quis euismod urna. Donec et urna ut sapien faucibus luctus accumsan
+            a
             lacus. Morbi tempus ultrices mauris, consectetur accumsan nulla aliquet ac
         </p>
         <div id="gvaMapContainer" width="100%">
         </div>
     </div>
+    <div style="clear: both"></div>
+    <div id="plotSection">
 
+        <div id="stickyBit">
+            <h3>Boxplot Title</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at metus eget enim lacinia venenatis.
+                Pellentesque tristique volutpat urna, et venenatis sem porta at. Proin vel dolor arcu. In mattis
+                eleifend
+                ligula
+                ut rhoncus. Phasellus sed laoreet augue, quis euismod urna. Donec et urna ut sapien faucibus luctus
+                accumsan
+                a
+                lacus. Morbi tempus ultrices mauris, consectetur accumsan nulla aliquet ac
+            </p>
+            <div id="boxplotContainer"></div>
+        </div>
+        <div id="boxPlotSections">
+            <div id="plotbox1" class="section plotLabelBox">
+                <p>
+                    The same output data is shown here, where each region is a point.
+                </p>
+            </div>
+            <div id="plotbox2" class="section plotLabelBox">
+                <p>
+                    Point size represents population.
+                </p>
+            </div>
+            <div id="plotbox3" class="section plotLabelBox">
+                <p>
+                    By centering each country's regions by its median region, we can observe each country's spread.
+                </p>
+            </div>
+            <div id="plotbox4" class="section plotLabelBox">
+            </div>
+        </div>
+        <div style="padding-bottom: 500px"></div>
+
+    </div>
 
     <script>
         var svg = d3.select('#ukMapDiv').html('')
@@ -81,7 +125,7 @@
                 .style("top", mapOffsetValue + "px");
 
             let titleSectionBoundingRect = titleSectionDiv.node().getBoundingClientRect();
-            let titleSectionHeight = window.getComputedStyle(titleSectionDiv.node()).getPropertyValue("height").replace("px","")
+            let titleSectionHeight = window.getComputedStyle(titleSectionDiv.node()).getPropertyValue("height").replace("px", "")
             let titleOffsetValue = Math.max(((innerHeight - titleSectionHeight) / 2) - titleSectionBoundingRect.top, 0);
             titleSectionDiv
                 .style("padding-top", titleOffsetValue + "px") //padding-top, rather than top because it's not floating?
@@ -91,33 +135,63 @@
         render();
 
         let sectionFunctions = [
-        function(){
-            d3.selectAll("#mapG").transition().duration(2000).attr("transform","translate(0 0) scale(1)");
-            d3.selectAll(".mapLabel").remove();
-        },
-        function(){
-            d3.selectAll("#mapG").transition().duration(2000).attr("transform","translate(-1300 -2800) scale(6)");
-            d3.selectAll(".mapLabel").remove();
-            drawLabel(Map, "City of London",2, 500, 0, "mapLabel")
-            drawLabel(Map, "Luton",2, 500, 0, "mapLabel")
-        },
-        function(){
-            d3.selectAll("#mapG").transition().duration(2000).attr("transform","translate(-1000 -2500) scale(6)");         
-            d3.selectAll(".mapLabel").remove();
-            drawLabel(Map, "Sandwell",2, 500, 0, "mapLabel")
-            drawLabel(Map, "Coventry",2, 500, 0, "mapLabel")
-            drawLabel(Map, "Wolverhampton",2, 500, 0, "mapLabel")
-        },
-        function(){
-            d3.selectAll("#mapG").transition().duration(2000).attr("transform","translate(0 0) scale(1)");
-        }]
+            function () {
+                d3.selectAll("#mapG").transition().duration(2000).attr("transform", "translate(0 0) scale(1)");
+                d3.selectAll(".mapLabel").remove();
+            },
+            function () {
+                d3.selectAll("#mapG").transition().duration(2000).attr("transform", "translate(-1300 -2800) scale(6)");
+                d3.selectAll(".mapLabel").remove();
+                drawLabel(Map, "City of London", 2, 500, 0, "mapLabel")
+                drawLabel(Map, "Luton", 2, 500, 0, "mapLabel")
+            },
+            function () {
+                d3.selectAll("#mapG").transition().duration(2000).attr("transform", "translate(-1000 -2500) scale(6)");
+                d3.selectAll(".mapLabel").remove();
+                drawLabel(Map, "Sandwell", 2, 500, 0, "mapLabel")
+                drawLabel(Map, "Coventry", 2, 500, 0, "mapLabel")
+                drawLabel(Map, "Wolverhampton", 2, 500, 0, "mapLabel")
+            },
+            function(){
+                return null
+            },
+            function () {
+                d3.selectAll("#mapG").transition().duration(2000).attr("transform", "translate(0 0) scale(1)");
+            }]
 
 
 
-        hope = new ScrollManager({sectionParent:"#UKMapSectionContainer", sectionFunctions:sectionFunctions})
+        ukMapScrollManager = new ScrollManager({ sectionParent: "#UKMapSectionContainer", sectionFunctions: sectionFunctions })
+
+        let plotSectionFunctions = [
+            function () {
+                console.log('first');
+                d3.select('#box_x_ax').selectAll('.tick') //Making all tick-labels visible
+                    .transition()
+                    .duration(1000)
+                    .style('opacity',1);
+                d3.selectAll('.secondStage') // and all points
+                    .transition()
+                    .duration(1000)
+                    .style("opacity", 1)
+                    .attr('class', 'scatterPoint');
+                updateSize(attr='null', r=2);
+            },
+            function (){
+                updateSize();
+            },
+            function(){
+                console.log('foo');
+                updatePosition(attr='2019', scale=firstStageScale)
+            },
+            function(){
+                updatePosition();
+            }
+        ]
+
+        boxPlotScrollManager = new ScrollManager({ sectionParent: "#boxPlotSections", sectionFunctions: plotSectionFunctions })
+
     </script>
     <script src="map.js"></script>
     <script src="gva_maps.js"></script>
-</body>
-
-</html>
+    <script src="boxplot.js" </body>

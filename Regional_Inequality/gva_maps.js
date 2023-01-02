@@ -3,12 +3,18 @@ let viewbox_width = 400;
 let viewbox_height = 400;
 
 function drawGvaMap(projection, shp, targetDiv, id="gva_map"){
+    console.log(shp);
     let path = d3.geoPath().projection(projection)
 
     targetSvg = targetDiv
         .append("svg")
         .attr("class", "gvaSvg")
         .attr("viewBox", `0 0 ${viewbox_width} ${viewbox_height}`);
+
+    if(shp.properties.CNTR_CODE == 'UK'){
+        targetSvg.attr("viewBox", `100 0 200 ${viewbox_height}`); // This is an awful way of doing this. Ideally (TODO) I'd dynamically update viewboxes for everything 
+    }
+
     mapG = targetSvg
         .append("g")
             .attr("id", id+"_paths")
@@ -20,6 +26,9 @@ function drawGvaMap(projection, shp, targetDiv, id="gva_map"){
                         .attr("name", function(d){return d.properties.NAME_LATN;})
                         .attr("class", "gvaMapPath")
                         .style("fill", d => {
+                            if (! d.properties['2019'] > 0 ){
+                                return "rgb(219, 219, 219)";
+                            }
                             return gvaColourScale(d.properties['2019']);
                         })
                         .style("stroke", "black")
@@ -90,8 +99,8 @@ function toggleMap(element){
     //console.log(element.attr("max-width"));
 }
 
-
 d3.json(nuts3_shp, function(data) {
+    foo = data;
     nuts3_data = data;
     
     gvaColourScale = d3.scaleLinear()
@@ -113,7 +122,7 @@ d3.json(nuts3_shp, function(data) {
     let mapContainer = d3.select("#gvaMapContainer");
     let countries = ['France', 'Germany', 'Italy', 'Netherlands', 'Denmark', 'United Kingdom']
     let i_order = [5,0,1,3,4]
-    for(let j = 0; j<6; j++){
+    for(let j = 0; j<5; j++){
         i = i_order[j];
         mapDiv = mapContainer.append("div")
             .attr("class", "gvaMapDiv")

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "title" : {
+    "anchor": "start",
+    "align": "left",
+    "text": "IMF lending is Relatively Low",
+    "subtitle": "Loans disbursed, relative to total SDR holdings",
+    "fontSize": 18,
+    "color": "rgb(27,26,25)",
+    "subtitleFontSize": 14,
+    "font": "Arial",
+    "subtitleFont": "Arial",
+    "subtitleFontWeight": 600,
+    "subtitleColor": "rgb(138,133,129)",
+    "fontWeight": 600
+  },
+  "description": "A bar chart showing IMF lending between 1984 and 2022 in billions of nominal US dollars.",
+  "width": "600",
+  "height": "300",
+  "padding":25,
+  "data": {
+    "url": "week2/second.csv"
+  },
+  "background": "rgb(253,241,230)",
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Date",
+      "type": "ordinal",
+      "axis": {
+        "title":null,
+        "labelAngle": 0,
+        "values": [
+          "1984",
+          "1990",
+          "2000",
+          "2010",
+          "2020"
+        ]
+      }
+    },
+    "y": {
+      "field": "Total",
+      "type": "quantitative",
+      "axis": {
+        "title":null,
+        "domain": false,
+        "orient": "right",
+        "format": "r",
+        "ticks": false
+      }
+    }
+  }
+}
