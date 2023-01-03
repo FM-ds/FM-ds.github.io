@@ -94,6 +94,26 @@ p{
     width: 80%;
 }
 
+/* Week 5*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: auto;
+    background-color: lightblue;
+  }
+  
+  .grid > div {
+    background-color: lightyellow;
+    padding: 0 !important;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
 /* Week 8 */
 #audioChart{

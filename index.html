@@ -72,6 +72,22 @@
             <div class="chart" id="wk4Chart">
             </div>
         </div>
+
+        <div class="weekSection">
+            <h2> Week 5</h2>
+            <div class="grid">
+                <div id="onsFig1"></div>
+                <div id="onsFig2"></div>
+                <div id="onsFig3"></div>
+                <div id="onsFig4"></div>
+                <div id="onsFig5"></div>
+                <div id="onsFig6"></div>
+                <div id="onsFig7"></div>
+                <div id="onsFig8"></div>
+                <div id="onsFig9"></div>
+              </div>
+        </div>
+
         <div class="weekSection">
             <h2> Week 8</h2>
             <div class="chart" id="audioChart">
@@ -108,6 +124,11 @@
 
 
     vegaEmbed('#wk4Chart', wk4Chart);
+
+    for (let i = 1; i <= 9; i++) {
+        vegaEmbed(`#onsFig${i}`, `week5/onsFig${i}.json`);
+    }
+
     vegaEmbed('#week8Visual', wk8Chart);
 </script>
 
