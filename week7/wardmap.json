@@ -1,0 +1,37 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Bristol",
+    "fontSize": 32,
+    "subtitle":[" data: Open Data Bristol","",""],
+    "subtitleFontSize":14,
+    "anchor": "start",
+    "color": "black",
+    "dx":35,
+    "dy":10},
+
+  "config": {
+      "background":"white",
+      "view": {"stroke": "transparent"}},
+  
+  "width": 620,
+  "height": 600,
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/FM-ds/FM-ds.github.io/main/week7/wards_topo.json",
+        "format": {"type": "topojson", "feature": "wards"}},
+
+  "projection": {"type": "mercator"},
+  
+  "mark": {
+      "type": "geoshape",
+      "fill": "lightgray",
+      "stroke": "white",
+      "strokeWidth":0.1
+  },
+
+  "encoding": {
+        "tooltip": {"field": "properties.name"}
+  }
+
+}

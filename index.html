@@ -89,6 +89,14 @@
         </div>
 
         <div class="weekSection">
+            <h2> Week 7</h2>
+            <div class="chart" id="week7wards">
+            </div>
+            <div class="chart" id="week7meals">
+            </div>
+        </div>
+
+        <div class="weekSection">
             <h2> Week 8</h2>
             <div class="chart" id="audioChart">
             </div>
@@ -128,6 +136,10 @@
     for (let i = 1; i <= 9; i++) {
         vegaEmbed(`#onsFig${i}`, `week5/onsFig${i}.json`);
     }
+
+    vegaEmbed('#week7wards', 'week7/wardmap.json');
+    vegaEmbed('#week7meals', 'week7/freemeals.json');
+
 
     vegaEmbed('#week8Visual', wk8Chart);
 </script>
