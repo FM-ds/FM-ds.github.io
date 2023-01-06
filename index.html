@@ -56,8 +56,14 @@
             <div class="chart" id="wk2Chart"> </div>
             <div class="chart" id="wk2_2Chart"> </div>
 
-
         </div>
+
+        <div class="weekSection">
+            <!-- Convert Data to USD for first, the to real USD for second -->
+            <h2> Week 3</h2>
+            <div class="chart" id="wk3Chart"> </div>
+        </div>
+
 
         <div class="weekSection">
             <h2> Week 4</h2>
@@ -128,6 +134,8 @@
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#wk2Chart', wk2Chart);
     vegaEmbed('#wk2_2Chart', wk2_2Chart);
+
+    vegaEmbed('#wk3Chart',  "week3/week3.json");
 
     vegaEmbed('#wk9Chart', "week9/week9_first.json");
     vegaEmbed('#wk9_2Chart', "week9/week9_second.json");
