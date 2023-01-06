@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A linechart showing consumption Emmissions over time.",
+    "width": 600,
+    "height": 480,
+    "title" : {
+          "dx":50,
+          "anchor": "start",
+          "align": "left",
+          "text": "China-West Emission Convergence",
+          "subtitle": ["Consumption Emmisions for Select Countries (Tonnes of Carbon)"],
+          "fontSize": 24,
+          "subtitleFontSize": 12,
+          "font": "Arial",
+          "subtitleFont": "Arial",
+          "subtitleFontWeight": 400,
+          "fontWeight": 600   },
+    "data": {"url": "https://raw.githubusercontent.com/FM-ds/FM-ds.github.io/main/week3/consumption.json"},
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Year", "type": "quantitative", "title":null,     "axis": {"format": "0000"}
+  },
+      "y": {"field": "Consumption Emmisions Per Capita", "type": "quantitative"},
+      "color" : {"field": "Country"},
+  
+    }
+  }
+  
