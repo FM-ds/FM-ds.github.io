@@ -99,6 +99,10 @@
                 </p>
             </div>
             <div id="plotbox4" class="section plotLabelBox">
+                plotbox4
+            </div>
+            <div id="plotbox5" class="section plotLabelBox">
+                plotbox5
             </div>
         </div>
         <div style="padding-bottom: 500px"></div>
@@ -122,6 +126,10 @@
             //first center the map and the first section
             let mapOffsetValue = Math.max((innerHeight - ukMapDiv.node().clientHeight) / 2, 0);
             ukMapDiv
+                .style("top", mapOffsetValue + "px");
+
+            //and also apply this to the legend Div
+            d3.select('.legendSection')
                 .style("top", mapOffsetValue + "px");
 
             let titleSectionBoundingRect = titleSectionDiv.node().getBoundingClientRect();
@@ -179,13 +187,18 @@
             },
             function (){
                 updateSize();
+                medians_focus(focus=false)
             },
             function(){
-                console.log('foo');
                 updatePosition(attr='2019', scale=firstStageScale)
+                medians_focus()
             },
             function(){
                 updatePosition();
+            },
+            function(){
+                console.log('foo');
+                medians_focus(focus=false)
             }
         ]
 

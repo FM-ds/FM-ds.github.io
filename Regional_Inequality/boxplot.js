@@ -8,9 +8,15 @@ let height = 200;
 let ax_font_size = "5px";
 let ax_weight = "0.25px";
 
+let countries = ['United Kingdom', 'France', 'Germany', 'Netherlands', 'Denmark'];
+
+let quantiles_unweighted = {"Germany": {"q1": 0.8357348703170029, "q2": 1.0, "q3": 1.207492795389049}, "Denmark": {"q1": 0.8851351351351351, "q2": 1.0, "q3": 1.170045045045045}, "Spain": {"q1": 0.9140969162995595, "q2": 1.0, "q3": 1.2422907488986783}, "France": {"q1": 0.9330855018587361, "q2": 1.0, "q3": 1.1561338289962826}, "Italy": {"q1": 0.75, "q2": 1.0, "q3": 1.2055555555555555}, "Netherlands": {"q1": 0.9056356487549148, "q2": 1.0, "q3": 1.1448230668414154}, "Poland": {"q1": 0.8691588785046729, "q2": 1.0, "q3": 1.1869158878504673}, "United Kingdom": {"q1": 0.8297737408453009, "q2": 1.0, "q3": 1.2350763062067838}}
+
+let quantiles = {"Denmark": {"q1": 0.8988690497909927, "q2": 1.0, "q3": 1.13170729487961}, "United Kingdom": {"q1": 0.8311065295003994, "q2": 1.0, "q3": 1.269002889661404}, "Germany": {"q1": 0.8243325937477065, "q2": 1.0, "q3": 1.2231540469082363}, "Spain": {"q1": 0.867438950828485, "q2": 0.9999999999999999, "q3": 1.3005108376290155}, "France": {"q1": 0.8590398412733005, "q2": 1.0, "q3": 1.1848432276233725}, "Italy": {"q1": 0.6560532777725007, "q2": 1.0, "q3": 1.137537424904338}, "Netherlands": {"q1": 0.8913022005356929, "q2": 1.0, "q3": 1.1697285766015968}, "Poland": {"q1": 0.8793245800999343, "q2": 1.0, "q3": 1.2534860963329633}}
+
 //our x axis scale - not the axis itself
 let x_scale = d3.scalePoint()
-    .domain(['United Kingdom', 'France', 'Germany', 'Netherlands', 'Denmark'])
+    .domain(countries)
     .range([0, width])
     .padding(0.4)
     .align(0.5);
@@ -32,7 +38,7 @@ let sizeScale = d3.scaleLinear()
     .range([1,13]) //TODO link to area not radius
 
 let countryScale = d3.scaleOrdinal(d3.schemeCategory10)
-    .domain(['United Kingdom', 'France', 'Germany', 'Netherlands', 'Denmark']);
+    .domain(countries);
 
 let plotData = 'boxplotdata.json'
 
@@ -43,7 +49,7 @@ box_data = null
 let plotArea, y, points_group, points_gs, points;
 
 // let median_Sections = ["DK013", "DE269", "ES416", "FRB01", "ITH56", "NL337", "PL618", "UKJ35"]
-let median_section_names = ["DK013", "DE269", "FRB01", "NL337", "UKJ35"]
+let median_section_names = ["DK042", "DE128", "FR102", "NL221", "UKM92"]
 
 d3.json(plotData, function (data) {
     box_data = data;
@@ -80,7 +86,10 @@ d3.json(plotData, function (data) {
             //.attr("cx", d => x(d.Country) -15 + Math.random()*30)
             //.attr("cy", d => y(d['2019']))
             .attr("r", 2)
+            .attr("GEO", d => d.GEO)
             .style("fill", d => countryScale(d.Country))
+            .style("stroke", "black")
+            .style("stroke-width", 0.25)
             .style("opacity", 0.7);
 
     
@@ -179,15 +188,68 @@ function updatePosition(attr="2019_rel", scale=secondStageScale){
         .call(y_ax);
 }
 
-function medians_focus(){
+function medians_focus(focus=true){
+    if(!focus){
+        // unfocus
+        // Add borders to median regions and labels
+        let median_circles = d3.selectAll("circle").filter(function () {
+            return median_section_names.includes(d3.select(this).attr("GEO")); // filter by single attribute
+        });
+        median_circles.raise().attr('stroke-width', 0);
+        d3.selectAll('.median_label').remove();
+        return null
+    }
+
+
     // Add borders to median regions and labels
-    let median_sections = d3.selectAll("g")
+    let median_circles = d3.selectAll("circle")
         .filter(function() {
             return median_section_names.includes(d3.select(this).attr("GEO")); // filter by single attribute
         })
-    median_sections.attr("class", median_sections.attr("class") + " median_region")
+        median_circles.attr("class", median_circles.attr("class") + " median_region")
 
-    median_sections
-        .attr('stroke', 'rgba(26, 26, 26, 0.8)')
-        .attr('stroke-width', 2)
+    median_circles
+        .raise()
+        .style('opacity', 1)
+        .style('stroke', 'rgba(26, 26, 26, 1)')
+        .style('stroke-width', 2)
+        
+    let median_groups = d3.selectAll("g")
+        .filter(function() {
+            return median_section_names.includes(d3.select(this).attr("GEO")); // filter by single attribute
+        })
+    median_groups.attr("class", median_groups.attr("class") + " median_region")
+
+    median_groups
+        .raise()
+        .append('text')
+        .attr('class', 'median_label')
+        .text("MEDIAN")
+        .style("font-weight", "bold")
+        .style("font-size", ax_font_size)
+        .style("fill", 'black')
+        .style("opacity", 1)
+}
+
+function drawBoxPlots(){
+    let boxWidth = 35;
+    countries.forEach(country => {
+        /** Draw a Rect with properties
+            - x: x_scale(country)-0.5*boxWidth
+            - y: secondStageScale( quantiles.Q3[country] )
+            - height: secondStageScale( quantiles.Q1[country] ) -  secondStageScale( quantiles.Q3[country] )
+            - width: boxWidth
+        
+            - fill: countryScale(country)
+        */
+        console.log(country);
+        plotArea.append('rect')
+            .attr("x", x_scale(country)-0.5*boxWidth)
+            .attr("y", secondStageScale( quantiles[country].q3))
+            .attr("height", secondStageScale( quantiles[country].q1 ) -  secondStageScale( quantiles[country].q3 ))
+            .attr("width", boxWidth)
+            .style("fill", countryScale(country));
+
+    });
+
 }
