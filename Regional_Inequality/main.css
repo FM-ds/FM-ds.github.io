@@ -192,3 +192,12 @@ h1 {
     position: relative;
     height: 10px;
 }
+
+
+.legendSection{
+    position: -webkit-sticky;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    background-color: white;
+}
