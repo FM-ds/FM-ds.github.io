@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title for the page -->
+    <title>Datascience Homework Portfolio</title>
+    
+    <link rel="stylesheet" href="portfolio.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+</head>
+
+<body>
+    <h1> Datas Science Homework Portfolio</h1>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Embedding Two Charts </h2>
+            <h3> Week 1 </h3>
+        
+            <summary> The first chart shows how Korea's population has rapidly aged, and how it is expected to continue doing
+                so. The second chart shows how, simultaneously, Korea's population is expected to decline. </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="week1fig1"> </figure>
+            <figure id="week1fig2"> </figure>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Two Charts </h2>
+            <h3> Week 2 </h3>
+        
+            <summary> The first chart is a recreation of a chart from <i>'IMF bailouts hit record high as global economic outlook worsens. </i> The values in the first have been converted from IMF SDRs to USD. In the second, total borrowing is shown relative to total holdings. 
+
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="week2fig1"> </figure>
+            <figure id="week2fig2"> </figure>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="graphDesc">
+            <p>A second sticky item</p>
+        </div>
+
+        <div class="weekFigures">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tellus felis, at lobortis orci
+                sollicitudin ac. Donec lobortis sapien ac posuere faucibus. Mauris lectus neque, pretium non volutpat
+                eget, vestibulum at magna. In sollicitudin augue nunc, non bibendum augue ornare quis.</p>
+
+            <p>Integer accumsan interdum justo eu pretium. Aliquam maximus mi sit amet dapibus efficitur.</p>
+
+            <p>Sed condimentum lacus sit amet turpis aliquam varius nec a lacus. In facilisis convallis ante sit amet
+                consequat. Aenean a lorem mollis, bibendum nibh nec, maximus orci. Nulla facilisi.</p>
+        </div>
+
+    </section>
+
+    <script>
+        vegaEmbed('#week1fig1', "week1/agingPopulation.json");
+        vegaEmbed('#week1fig2', "week1/decliningPopulation.json");
+
+        vegaEmbed('#week2fig1', "week2/week2first.json");
+        vegaEmbed('#week2fig2', "week2/week2second.json");
+
+
+        "week9/week9_first.json"
+
+    </script>
+</body>

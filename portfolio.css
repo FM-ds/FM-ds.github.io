@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;600&family=Raleway:wght@200;300;400;600;700&display=swap');
+
+body {
+    background-color: ghostwhite;
+    margin: 3rem auto;
+    min-width: 750px;
+    max-width: 1200px;
+  }
+  
+  h1 {
+    text-align: left;
+    font-family: 'Outfit';
+    font-weight: 500;
+    margin-bottom: 3rem;
+    font-size: 3em;
+  }
+
+  h2 {
+    text-align: right;
+    font-family: 'Outfit';
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 0.1rem;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    text-align: right;
+    font-family: 'Outfit';
+    font-weight: 300;
+    margin-top: 0rem;
+    font-size: 1em;
+  }
+
+  summary {
+    text-align: right;
+    font-family: 'Outfit';
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  figure {
+    max-width: 600px;
+    min-width: 450px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 35rem) {
+    section {
+      flex-direction: row;
+    }
+  }
+  section > * {
+    flex: 1;
+  }
+  
+  .weekFigures {
+    padding: 0 1rem;
+  }
+  .weekFigures p {
+    font-family: Georgia;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  @media screen and (min-width: 35rem) {
+    .weekFigures p {
+      margin: 0;
+    }
+  }
+  @media screen and (min-width: 35rem) {
+    .weekFigures p:not(:last-of-type) {
+      min-height: 90vh;
+    }
+  }
+  
+  .graphDesc {
+    align-self: flex-start;
+    margin: 0;
+    width: 100%;
+    min-width: 300px;
+    justify-content: right;
+    top: 20px;
+    border-top: 5px solid black;
+    max-width: 30%;
+  }
+  @media screen and (min-width: 35rem) {
+    .graphDesc {
+      position: sticky;
+    }
+  }

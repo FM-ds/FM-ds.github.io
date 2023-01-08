@@ -107,7 +107,9 @@
             <h2> Week 9</h2>
             <div class="chart" id="wk9Chart">
             </div>
-            <div class="chart" id="wk9_2Chart">
+            <div class="chart" id="wk9_2Chart"> </div>
+            <div class="chart" id="scatterMatrix"> </div>
+
             </div>
         </div>
 
@@ -142,6 +144,9 @@
 
     vegaEmbed('#wk9Chart', "week9/week9_first.json");
     vegaEmbed('#wk9_2Chart', "week9/week9_second.json");
+
+    vegaEmbed('#scatterMatrix', "/Regional_Inequality/scatter_matrix.json"); //
+
 
 
     vegaEmbed('#wk4Chart', wk4Chart);
