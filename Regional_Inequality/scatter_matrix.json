@@ -1,45 +1,26 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "repeat": {
-    "row": ["Life Satisfaction (Normalised)", "Life Expectency (Normalised)", "Average Income (Normalised)", "Household Deprivation (Normalised)", "Foodbank Distance (Normalised)"],
-    "column": ["Life Satisfaction (Normalised)", "Life Expectency (Normalised)", "Average Income (Normalised)", "Household Deprivation (Normalised)", "Foodbank Distance (Normalised)"]
-  },
-  "spec": {
-    "data": {"url": "/Regional_Inequality/clustered_data.json"},
-    "mark": "point",
-    "width":600,
-    "params": [
-      {
-        "name": "brush",
-        "select": {
-          "type": "interval",
-          "resolve": "union",
-          "on": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
-          "translate": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
-          "zoom": "wheel![event.shiftKey]"
-        }
-      },
-      {
-        "name": "grid",
-        "select": {
-          "type": "interval",
-          "resolve": "global",
-          "translate": "[mousedown[!event.shiftKey], window:mouseup] > window:mousemove!",
-          "zoom": "wheel![!event.shiftKey]"
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/FM-ds/FM-ds.github.io/main/Regional_Inequality/clustered_data.json"},
+    "repeat": {
+      "row": ["Average Income (Normalised)", "Life Expectency (Normalised)",  "Household Deprivation (Normalised)", "Life Satisfaction (Normalised)", "Foodbank Distance (Normalised)"],
+      "column": ["Average Income (Normalised)", "Life Expectency (Normalised)",  "Household Deprivation (Normalised)"]
+    },
+    "spec": {
+      "width": 200,
+      "height": 200,
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "field": {"repeat": "column"},
+          "type": "quantitative",
+          "scale": {"zero": false}
         },
-        "bind": "scales"
-      }
-    ],
-    "encoding": {
-      "x": {"field": {"repeat": "column"}, "type": "quantitative", "axis":{"domain": true}},
-      "y": {
-        "field": {"repeat": "row"},
-        "type": "quantitative",
-        "axis": {"minExtent": 30}
-      },
-      "color": {
-        "field":"cluster", "type" : "nominal"
+        "y": {
+          "field": {"repeat": "row"},
+          "type": "quantitative",
+          "scale": {"zero": false}
+        },
+        "color": {"field": "cluster", "type": "nominal"}
       }
     }
   }
-}
