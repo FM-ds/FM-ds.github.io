@@ -190,6 +190,7 @@ h1 {
     left: 50vw;
     transform: translate(-50%, 0);
     position: relative;
+    opacity: 0 !important;
     height: 100px;
 }
 
@@ -198,6 +199,7 @@ h1 {
     left: 50vw;
     transform: translate(-50%, 0);
     position: relative;
+    opacity: 0 !important;
     height: 100px;
 }
 
