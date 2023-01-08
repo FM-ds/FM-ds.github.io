@@ -35,15 +35,17 @@ class ScrollManager {
 
         // Make our IntersectionObserver
         const observer = new IntersectionObserver(entries => {
-            console.log(`Intersection: length${
+            /*console.log(`Intersection: length${
                 entries.length
             }, i: ${
                 entries[0].target.getAttribute("sectionIndex")
-            } `)
+            } `)*/
 
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     let section = entry.target;
+                    console.warn(entry.target.getAttribute("sectionIndex"))
+
 
                     // unapply focussedClass from all selected Sections
                     sectionParent.querySelectorAll("." + focussedClass).forEach(section => {

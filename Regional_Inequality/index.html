@@ -68,7 +68,7 @@
     <div style="clear: both"></div>
     <div id="plotSection">
 
-        <div id="stickyBit">
+        <div id="stickyBit" >
             <h3>Boxplot Title</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at metus eget enim lacinia venenatis.
@@ -82,7 +82,7 @@
             </p>
             <div id="boxplotContainer"></div>
         </div>
-        <div id="boxPlotSections">
+         <div id="boxPlotSections">
             <div id="plotbox1" class="section plotLabelBox">
                 <p>
                     The same output data is shown here, where each region is a point.
@@ -104,12 +104,22 @@
             <div id="plotbox5" class="section plotLabelBox">
                 plotbox5
             </div>
-        </div>
+        </div> 
         <div style="padding-bottom: 500px"></div>
 
     </div>
 
     <script>
+        history.scrollRestoration = 'manual';
+        addEventListener('DOMContentLoaded', (event) => {
+            console.log('loaded')
+            window.scrollTo(0, 0);
+        });
+    
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+
         var svg = d3.select('#ukMapDiv').html('')
             .append('svg')
             .attr("id", "ukMapSvg")
@@ -139,7 +149,7 @@
                 .style("padding-top", titleOffsetValue + "px") //padding-top, rather than top because it's not floating?
                 .style("margin-bottom", titleSectionBoundingRect.bottom + "px");
         }
-        window.scrollTo(0, 0);
+                
         render();
 
         let sectionFunctions = [
@@ -194,16 +204,22 @@
                 medians_focus()
             },
             function(){
+                plotSectionFunctions[0]()
                 updatePosition();
             },
             function(){
+                updatePosition();
+                plotSectionFunctions[0]()
+
+                updateSize(attr='null', r=2);
+
                 drawBoxPlots();
                 medians_focus(focus=false)
             }
         ]
 
         boxPlotScrollManager = new ScrollManager({ sectionParent: "#boxPlotSections", sectionFunctions: plotSectionFunctions })
-
+        
     </script>
     <script src="map.js"></script>
     <script src="gva_maps.js"></script>

@@ -55,17 +55,21 @@ let median_section_names = ['DK03', 'UKM92', 'DE22', 'ES11', 'FRI1', 'ITC3', 'NL
 // Tooltip Funcs
 let boxplotMouseover = function(d) {
     console.log('mouseon');
-    // boxplotTooltip
-    //   .style("opacity", 1)
-    // d3.select(this)
-    //   .style("stroke", "black")
-    //   .style("opacity", 1)
+    boxplotTooltip
+       .style("opacity", 1)
+    d3.select(this)
+       .style("stroke", "black")
+       .style("opacity", 1)
   }
 let boxplotMousemove = function(d) {
+    body_margin = parseFloat(window.getComputedStyle(document.body).getPropertyValue('margin-left').replace("px","")); //this is hacky, sorry :((
+    
+    console.log(d);
     boxplotTooltip
-      .html("The exact value of<br>this cell is: ")
-      .style("left", (d3.mouse(this)[0]+70) + "px")
-      .style("top", (d3.mouse(this)[1]) + "px")
+      .html(`<b> ${d['GEO_name']} </b> </br> Population: ${d['pop_2019']} </br> GVA Pc: ${d['2019']}</b>`)
+      .style("left", (d3.mouse(document.body)[0])+5+body_margin + "px")
+      .style("top", (d3.mouse(document.body)[1]) +5+ "px")  
+    
   }
 let boxplotMouseleave = function(d) {
     boxplotTooltip
@@ -132,8 +136,9 @@ d3.json(plotData, function (data) {
 
     // Draw the tooltip 
 
-    boxplotTooltip = box_svg
+    boxplotTooltip = d3.select("body")
             .append("div")
+            .attr('id', 'boxplotTooltip')
             .style("opacity", 0)
             .attr("class", "tooltip")
             .style("background-color", "white")
@@ -141,6 +146,9 @@ d3.json(plotData, function (data) {
             .style("border-width", "2px")
             .style("border-radius", "5px")
             .style("padding", "5px")
+            .style("position", "absolute");
+    
+    plotSectionFunctions[0]();
 
 });
 
@@ -284,7 +292,13 @@ function drawBoxPlots(){
             .attr("width", boxWidth)
             .style("stroke", countryScale(country))
             .style("stroke-width", 0.5)
-            .style("fill", "rgb(200,200,200)");
+            .style("fill", "rgb(200,200,200)")
+            .style("opacity", 0)
+            .transition()
+            .duration(1000)
+            .style("opacity", 1)
+
+
 
         // the upper whisker
         plotArea.append('line')
@@ -294,6 +308,10 @@ function drawBoxPlots(){
             .attr('y2', secondStageScale( quantiles[country].q0))
             .style("stroke", countryScale(country))
             .style("stroke-width", 1)
+            .style("opacity", 0)
+            .transition()
+            .duration(1000)
+            .style("opacity", 1);
 
 
         // the upper whisker
@@ -303,7 +321,11 @@ function drawBoxPlots(){
             .attr('y1', secondStageScale( quantiles[country].q4))
             .attr('y2', secondStageScale( quantiles[country].q4))
             .style("stroke", countryScale(country))
-            .style("stroke-width", 1);
+            .style("stroke-width", 1)
+            .style("opacity", 0)
+            .transition()
+            .duration(1000)
+            .style("opacity", 1);
 
         //and the central lines
         plotArea.insert('line', ":first-child")
@@ -312,7 +334,11 @@ function drawBoxPlots(){
             .attr('y1', secondStageScale( quantiles[country].q0))
             .attr('y2', secondStageScale( quantiles[country].q4))
             .style("stroke", countryScale(country))
-            .style("stroke-width", 1);
+            .style("stroke-width", 1)
+            .style("opacity", 0)
+            .transition()
+            .duration(1000)
+            .style("opacity", 1);
 
     });
 }

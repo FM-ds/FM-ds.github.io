@@ -128,7 +128,7 @@ h1 {
     position: -webkit-sticky;
     top: 0;
     position: sticky;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .tempImg{
@@ -186,19 +186,19 @@ h1 {
 }
 
 #plotbox4{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     left: 50vw;
     transform: translate(-50%, 0);
     position: relative;
-    height: 10px;
+    height: 100px;
 }
 
 #plotbox5{
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     left: 50vw;
     transform: translate(-50%, 0);
     position: relative;
-    height: 10px;
+    height: 100px;
 }
 
 
