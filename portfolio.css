@@ -4,13 +4,13 @@ body {
     background-color: ghostwhite;
     margin: 3rem auto;
     min-width: 750px;
-    max-width: 1200px;
+    max-width: 1500px;
   }
   
   h1 {
     text-align: left;
     font-family: 'Outfit';
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 3rem;
     font-size: 3em;
   }
@@ -29,7 +29,7 @@ body {
     font-family: 'Outfit';
     font-weight: 300;
     margin-top: 0rem;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   summary {
@@ -44,9 +44,10 @@ body {
   }
 
   figure {
-    max-width: 600px;
+    /* max-width: 600px; */
     min-width: 450px;
     margin: 0;
+    padding-bottom: 16px !important;
   }
 
   @media screen and (min-width: 35rem) {
@@ -60,7 +61,14 @@ body {
   
   .weekFigures {
     padding: 0 1rem;
+    padding-left: 0px;
+    margin-left: 16px;
   }
+
+  .weekFigures > figure:first-of-type > div:first-of-type {
+    border-top: 5px solid black;
+  }
+
   .weekFigures p {
     font-family: Georgia;
     font-size: 1.1rem;
@@ -91,4 +99,59 @@ body {
     .graphDesc {
       position: sticky;
     }
+  }
+
+  .dataSource{
+    padding-top: 10px;
+  }
+
+  a {
+    color: black;
+    font-weight: bold;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+  /* Week 5 */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: auto;
+  }
+  
+  .grid > div {
+    padding: 0 !important;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #audioChart{
+    width:825px;
+  }
+
+  #mlFirst{
+    width: 1000px;
+  }
+
+  #mlSecond{
+    width:1000px;
   }

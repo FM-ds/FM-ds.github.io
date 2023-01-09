@@ -26,13 +26,14 @@
   "data": {
     "url": "week8/data.csv"
   },
-  "width": "container",
-  "height": 100,
+  "width": "600",
+  "height": 200,
   "mark": {
     "type": "circle",
     "opacity": 0.2,
     "stroke": "black",
-    "strokeWidth": 0.5
+    "strokeWidth": 0.5,
+    "tooltip":true
   },
   "encoding": {
     "x": {
@@ -58,6 +59,7 @@
         "values": [4000000000, 17000000000, 30000000000]
       },
       "scale":{
+        "range": [100,1000],
         "type": "sqrt"
       }
     },

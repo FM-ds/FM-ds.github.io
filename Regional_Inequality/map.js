@@ -7,7 +7,7 @@
 */
 //always export from MapShaper w/ gj2008
 
-//map options - these are for the viewBox, which is now divorced from the svg element options
+//firstMap options - these are for the viewBox, which is now divorced from the svg element options
 const mapWidth = 300;
 const mapHeight = 600;
 
@@ -16,7 +16,7 @@ const mapSvg = d3.select("#ukMapSvg")
   .attr("height", "100%")
   .attr("viewBox", `0 0 ${mapWidth} ${mapHeight}`);
 
-const map_margin = 10; //margin from edges of map BBox to svg
+const map_margin = 10; //margin from edges of firstMap BBox to svg
 
 //legend options
 const legWidth = 200
@@ -63,7 +63,7 @@ function drawMap(projection, shp){
         .on("mouseover", regionMouseOver)
         .on("mouseleave", regionMouseLeave);
 
-    //TODO: Workout Map Border
+    //TODO: Workout firstMap Border
     //This is broken:
     /*
     mapSvg.append("rect") //the border
@@ -73,7 +73,7 @@ function drawMap(projection, shp){
         .attr("y",0.5)
         .attr("class", "map_border");
     */
-    //center map in svg
+    //center firstMap in svg
 }
 
 
@@ -107,12 +107,12 @@ function monoScaleUpdate(colScale, attribute){
     colourScale = colScale;
 }
 
-function resetMapDims(map, duration=0){
+function resetMapDims(firstMap, duration=0){
     //resets the maps zoom and centers it in the svg element
-    //map must be a d3 selection
+    //firstMap must be a d3 selection
     //TODO: center vertically
     
-    let targetGWidth=mapSvg.attr("width")-2*map_margin; //size to resize the map group to
+    let targetGWidth=mapSvg.attr("width")-2*map_margin; //size to resize the firstMap group to
     let targetGHeight=mapSvg.attr("height")-2*map_margin;
 
     //TODO make this not reliant on there being only one mapG
@@ -131,7 +131,7 @@ function resetMapDims(map, duration=0){
 
 }
 
-function drawLabel(Map,LAD21NM, fontSize=9, fadeDuration=500, delay=0, class_name=null){
+function drawLabel(firstMap,LAD21NM, fontSize=9, fadeDuration=500, delay=0, class_name=null){
   //Draws label for Region by ID which is its LAD21NM
   //d3.select()
     pruned = LAD21NM.replace(/ /g,"_").replace(/,/g, "");
@@ -141,7 +141,7 @@ function drawLabel(Map,LAD21NM, fontSize=9, fadeDuration=500, delay=0, class_nam
     x = regionBBox.x+(regionBBox.width/2);
     y = regionBBox.y+(regionBBox.height/2);
 
-    labelGroup = Map
+    labelGroup = firstMap
         .append("g")
             .attr("class", class_name)
             .style("opacity",0);
@@ -207,12 +207,12 @@ function regionMouseLeave(region){
 }
 
 function sample(){
-    drawLabel(Map,"Westminster", 2, 1000, 500) ;
-    drawLabel(Map,"Hackney", 2, 1000, 500) ;
-    drawLabel(Map,"Croydon", 2, 1000, 500) ;
+    drawLabel(firstMap,"Westminster", 2, 1000, 500) ;
+    drawLabel(firstMap,"Hackney", 2, 1000, 500) ;
+    drawLabel(firstMap,"Croydon", 2, 1000, 500) ;
     
     camCoords = projection([-0.1426,51.5390])
-    Map
+    firstMap
         .append("circle")
         .attr("class", "mapPath")
         .attr("cx", camCoords[0])
@@ -220,7 +220,7 @@ function sample(){
         .attr("fill", "red")
         .attr("opacity", 0.8)
         .attr("r", 2);
-    Map
+    firstMap
         .append("circle")
         .attr("id", "boi")
         .attr("cx", camCoords[0])
@@ -233,6 +233,7 @@ function sample(){
 
 //////////////////////New Legend Code /////////////////////////
 function createLegend(targetDiv, colourScale){
+
     /*Creates an SVG containing the legend within the D3 Selection targetDiv
     Args:
         - targetDiv: a d3 selection containing the div in which the legend svg is to be drawn
@@ -260,6 +261,14 @@ function createLegend(targetDiv, colourScale){
                 .attr("width", "170") //these are svg coordinates 
                 .attr("height", "15") // and not DOM px coords
                 .style("fill", "url(#mapGradient)");
+
+    legendGroup.append("text")
+        .attr("x",0)
+        .attr("y", 65)
+        .attr("font-size", "0.75em")
+        .attr("id", "instructionText")
+        .text('Hover Over a Region to See Details');
+    
     
     //the d3 axes take a scale with a domain that is the domain of the data and a range that is the width - it maps values to pixels along a dimension
     //so we need a new scale with the domain of the colourScale and a range of the width
@@ -291,6 +300,12 @@ function updateInfoPanel(region, colourScale=colourScale, legendID = "legendSVG"
         -legendID: string, the svg containing the info panel
     Returns: nothing
     */
+
+    d3.selectAll('#instructionText')
+        .transition()
+        .duration(200)
+        .style("opacity", 0);
+
     //styling options:
     const legendBarHeight = 30;
 
@@ -484,11 +499,11 @@ let appendGradient = function(colourScale, defsID = 'legendDefs', gradientID = "
 
 function centerOn(coordinates){
     /*
-        Centers the map on coordinate [lat, lon]
+        Centers the firstMap on coordinate [lat, lon]
     */
     let projected_coordinates = projection(coordinates);
    
-    Map.append("circle")
+    firstMap.append("circle")
         .attr("cx", projected_coordinates[0])
         .attr("cy", projected_coordinates[1])
         .attr("r", 2)
@@ -530,10 +545,10 @@ d3.json(shp_file, function(data) {
     window.type1Data = data;
     projection = d3.geoMercator().fitExtent([[0,0],[mapWidth, mapHeight]], data);
     drawMap(projection, data);
-    Map = d3.select("#mapG");
-    //drawLabel(Map, "Liverpool")
+    firstMap = d3.select("#mapG");
+    //drawLabel(firstMap, "Liverpool")
     //d3.select("#mapG").transition().duration(500).attr("transform","translate(100 50) scale(0.5)");
-    //resetMapDims(Map);
+    //resetMapDims(firstMap);
     //targetSvg = d3.select('#legSvg');
     //drawLegend(colourScale, targetSvg);
     createLegend(d3.select("#mapLegend"),colourScale);

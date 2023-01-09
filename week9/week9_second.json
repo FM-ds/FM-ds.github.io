@@ -3,16 +3,17 @@
     "data": {
         "url": "week9/expectency_expend.json"
     },
-    "width": 620,
-    "height": 400,
+    "width": 1025,
+    "height": 600,
+    "transform": [{"filter":"datum.ISO3 != 'MEX'"}],
     "title" : {
         "dx":30,
         "anchor": "start",
         "align": "left",
-        "text": "The Healthcare Input-Output Link",
+        "text": "Healthcare Inputs and Outcomes",
         "subtitle": ["Healthcare Spending (2021 PPP USD) and Life Expectancy at Birth"],
-        "fontSize": 24,
-        "subtitleFontSize": 12,
+        "fontSize": 32,
+        "subtitleFontSize": 16,
         "font": "Arial",
         "subtitleFont": "Arial",
         "subtitleFontWeight": 400,
@@ -33,6 +34,7 @@
                     "scale": {
                         "zero": false
                     }
+                    
                 },
                 "y": {
                     "field": "Life Expectancy",
@@ -67,7 +69,7 @@
         {
             "transform": [
                 {
-                    "filter": "(datum.ISO3 == 'USA' | datum.ISO3 == 'CZE' |  datum.ISO3 == 'LTU' | datum.ISO3 == 'JPN' | datum.ISO3 == 'DEU' | datum.ISO3 == 'NOR' | datum.ISO3 == 'PRK') & datum.Year%4 == 0"
+                    "filter": "(datum.ISO3 == 'USA' | datum.ISO3 == 'CZE' |  datum.ISO3 == 'LTU' | datum.ISO3 == 'JPN' | datum.ISO3 == 'DEU' | datum.ISO3 == 'NOR' | datum.ISO3 == 'KOR') & datum.Year%4 == 0"
                 }
             ],
             "mark": {
@@ -103,6 +105,7 @@
             "mark": {
                 "type": "text",
                 "dx":10,
+                "fontSize": 16,
                 "align":"left"
             },
             "encoding": {
@@ -114,6 +117,10 @@
                     "type": "quantitative",
                     "scale": {
                         "zero": false
+                    },
+                    "axis": {
+                        "titleFontSize":16,
+                        "labelFontSize": 14
                     }
                 },
                 "y": {
@@ -121,6 +128,10 @@
                     "type": "quantitative",
                     "scale": {
                         "zero": false
+                    },
+                    "axis": {
+                        "titleFontSize":16,
+                        "labelFontSize": 14
                     }
                 }
             }

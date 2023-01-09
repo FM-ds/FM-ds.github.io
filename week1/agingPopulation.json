@@ -8,16 +8,18 @@
     },
   
     "title": {
-      "text": "Aging populations",
+      "text": "Korea's Population is Aging ... ",
       "subtitle":"Share of popluation that is ages 65+. Source: UN. S Korea=blue",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
       "color": "black"
     },
+
+    "description": "A figure showing a rapid increase in the % of Korea's population aged over 65.",
   
-    "height": 300,
-    "width": "container",
+    "height": 600,
+    "width": 900,
     
     "mark": {"type": "line", "width":10},
   

@@ -3,7 +3,7 @@
     
   
        "title": {
-        "text": "Declining populations",
+        "text": "... and Expected to Decline",
         "subtitle":"Cumulative % change in population. Source: UN.",
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
@@ -15,6 +15,8 @@
     "data": {
       "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/demographicsUNPopChange.csv"
     },
+
+    "description": "A figure showing an expected Decline in Korea's population",
   
   
     "repeat": {"layer": ["S Korea", "Japan", "UK", "Italy", "Spain", "France", "US"]},
@@ -22,8 +24,8 @@
   
   
     "spec": {
-      "height": 300,
-      "width": "container",
+      "height": 600,
+      "width": 825,
     
       "mark": {
         "type":"line",
