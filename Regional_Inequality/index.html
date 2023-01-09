@@ -37,8 +37,9 @@
             <div class="section" id="titleSection">
                 <h2> Inequality in the UK: </h2>
                 <h1> What is the extent and nature of inter-regional inequality in the UK?</h1>
-                <p> <b> Aims: </b>To investigate and visualise the extent and nature of inter-regional inequality within the UK. In order to interrogate the extent of inter-regional inequality, I would like to compare the UK to its peers. I intend to identify the disparity between the areas with the lowest and highest incomes and outputs. However, I want to go beyond only indicators of Income and output and also examine disparities in measures of health, wellbeing, and deprivation and the relationships between them.
-                     </p>
+                <p> <b> 
+                    Aims: </b>I intend to identify the disparity between the areas with the lowest and highest incomes and outputs. However, I want to go beyond only indicators of Income and output and also examine disparities in measures of health, wellbeing, and deprivation and the relationships between them. In order to interrogate the extent of inter-regional inequality, I would like to compare the UK to its peers.
+                </p>
             </div>
             <div class="legendSection" id="section4">
                 <div id="mapLegend"></div>
@@ -58,7 +59,7 @@
                 <h3> Birmingham</h3>
                 <p> 
                     Many of Britain's other biggest built-up areas contain some of the lowest-income areas. 
-                Sandwell, outside Birmingham, has the third lowest average household income in the country,
+                Sandwell, outside Birmingham, has the third lowest average household income in the country.
                 </p>
             </div>
         </div>
@@ -107,7 +108,7 @@
         </div> 
         <div style="padding-bottom: 500px"></div>
     </div>
-    <h3> Clustering on Socio-Economic Indicators </h3>
+    <h3 style="font-size:1.5em"> Clustering on Socio-Economic Indicators </h3>
 </div>
     <figure id="scatterMatrixSection">
         <div id="scatterMatrix">
@@ -127,7 +128,7 @@
             For the GVA maps, I combined data from three different sources: shape files from the European Commission and output data from Eurostat and the ONS. For the bubble-box plot, I expressed the output as a multiple of each country’s population-weighted median.
         </p>
         <p>
-            The scatter-matrix uses 5 indicators, each fetched separately and then merged. The life expectancy, deprivation, and life-satisfaction data were retrieved using the ONS api. The beta dataset api was used, rather than the ‘timeseries’ api explained in class. A metric of food bank density was constructed by scraping the search page of givefood.org: the distances to nearby food banks were scraped and the average distance of the closest 5 was calculated. These data were then normalised and clusters were created.
+            The scatter-matrix uses 5 indicators, each fetched separately and then merged. The life expectency, deprivation, and life-satisfaction data were retrieved using the ONS api. The beta dataset api was used, rather than the ‘timeseries’ api explained in class. A metric of food bank density was constructed by scraping the search page of givefood.org: the distances to nearby food banks were scraped and the average distance of the closest 5 was calculated. These data were then normalised and clusters were created.
         </p>
         <h2> Challenges and Limitations </h2>
         <p>
@@ -137,7 +138,7 @@
             I could not achieve the ‘scrollytelling’ behaviour I desired or create a separate interactive legend using Vega-lite. Instead, I created the map from scratch using d3 which proved to be a challenging but rewarding endeavour. I also found that existing JavaScript scroll libraries either performed poorly or were slow to load so I instead implemented my own (graphscroll.js) using the built-in IntersectionObserver api. Another issue encountered was the LAD shape boundaries’ unnecessary resolution — solved by simplifying the regions using Mapshaper.
         </p>
         <p>
-            There was challenges regarding post-Brexit data-stewardship; Eurostat no longer stores most British data so I had to merge in data from the ONS and perform currency conversions.
+            There were challenges regarding post-Brexit data-stewardship; Eurostat no longer stores most British data so I had to merge in data from the ONS and perform currency conversions.
         </p>
         <p>
             On my bubble-box-plot, I wanted to visualise values relative to its  country’s median. Using a simple median would be misleading due to variations in population. Instead, I implemented a function to find population-weighted quantiles (informed by the discussion <a href='https://aakinshin.net/posts/weighted-quantiles/'>here</a>).
@@ -184,6 +185,18 @@
             </li>
 
             
+        </ul>
+        <h2>Word Counts</h2>
+        <ul>
+            <li>Aims: 64</li>
+            <li>London Section: 35</li>
+            <li>Birmingham Section: 26</li>
+            <li>Bubble-Box-Plot: 46</li>
+            <li>Data, Challenges, Conclusion: 626 </li>
+            <li><b>Total: 751</b></li>
+
+
+
         </ul>
     </section>
 </body>
