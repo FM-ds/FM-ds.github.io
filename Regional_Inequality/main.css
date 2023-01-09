@@ -55,7 +55,8 @@ h1 {
 }
 
 .section{
-    opacity: 60%;
+    opacity: 100%;
+    background-color: white;
 }
 
 .sectionContainer > .section {
@@ -162,7 +163,6 @@ h1 {
 }
 
 .plotLabelBox{
-    background-color: rgb(255, 255, 255, 1) !important;
     border: 0.5px solid black;
 }
 
