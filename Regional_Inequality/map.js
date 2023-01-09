@@ -335,7 +335,7 @@ function updateInfoPanel(region, colourScale=colourScale, legendID = "legendSVG"
     legendBar 
         .transition()
         .duration(200)
-        .attr("x", axisScale(regionValue))
+        .attr("x", Math.min(axisScale(regionValue),182))
         .attr("opacity",1)
         .attr("fill", colourScale(regionValue))
         .attr("transform","translate(0 -"+(legendBarHeight-15)/2+")");

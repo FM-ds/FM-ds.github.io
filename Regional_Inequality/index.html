@@ -35,7 +35,7 @@
             <div class="section" id="titleSection">
                 <h2> Inequality in the UK: </h2>
                 <h1> What is the extent and nature of inter-regional inequality in the UK?</h1>
-                <p> <b> Aims: </b>To investigate and visualise the extent and nature of inter-region inequality within the UK. I would like to identify the disparities between the country’s richest and poorest areas. In order to interrogate the extent of inter-regional inequality, I would like to compare the UK to its peers. However, I want to go beyond only indicators of income and output and also examine disparities in measures of health, wellbeing, and deprivation and the relationships between them.
+                <p> <b> Aims: </b>To investigate and visualise the extent and nature of inter-region inequality within the UK. In order to interrogate the extent of inter-regional inequality, I would like to compare the UK to its peers. I intend to identify the disparity between the areas with the lowest and highest incomes and outputs. However, I want to go beyond only indicators of Income and output and also examine disparities in measures of health, wellbeing, and deprivation and the relationships between them.
                      </p>
             </div>
             <div class="legendSection" id="section4">
@@ -43,14 +43,19 @@
             </div>
             <div class="section" id="section2">
                 <h3> London</h3>
-                <p> The ten highest income areas are all
-                    within the Greater London Builtup Area. </p>
-                <p> However, there is considerable inequality between the districts. At 81% of the median area, Luton has the area's lowest average household income. </p>
+                <p> 
+                    The ten highest income areas are all
+                    within the Greater London Builtup Area. 
+                </p>
+                <p> 
+                    However, there is considerable inequality between the districts. At 81% of the median area, Luton has the area's lowest average household income. 
+                </p>
 
             </div>
             <div class="section" id="section3">
                 <h3> Birmingham</h3>
-                <p> Many of Britain's other biggest metropolitan areas contain some of the lowest-income areas. 
+                <p> 
+                    Many of Britain's other biggest built-up areas contain some of the lowest-income areas. 
                 Sandwell, outside Birmingham, has the third lowest average household income in the country,
                 </p>
             </div>
@@ -58,8 +63,8 @@
     </div>
 
     <div id="gvaSection">
-        <h3>International Comparison</h3>
-        <p>
+        <h3 style="margin: 5px">International Comparison</h3>
+        <p style="margin: 5px; padding-bottom: 5px;">
             Gross Value Added Per Capita by NUTS3 Region
         </p>
         <div id="gvaMapContainer" width="100%">
@@ -69,16 +74,9 @@
     <div id="plotSection">
 
         <div id="stickyBit" >
-            <h3>Boxplot Title</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at metus eget enim lacinia venenatis.
-                Pellentesque tristique volutpat urna, et venenatis sem porta at. Proin vel dolor arcu. In mattis
-                eleifend
-                ligula
-                ut rhoncus. Phasellus sed laoreet augue, quis euismod urna. Donec et urna ut sapien faucibus luctus
-                accumsan
-                a
-                lacus. Morbi tempus ultrices mauris, consectetur accumsan nulla aliquet ac
+            <h3>GVA Bubble-Box-Plot</h3>
+            <p style="margin: 5px; padding-bottom: 5px;">
+                Gross Value Added Per Capita by NUTS2 Region
             </p>
             <div id="boxplotContainer"></div>
         </div>
@@ -95,7 +93,7 @@
             </div>
             <div id="plotbox3" class="section plotLabelBox">
                 <p>
-                    By centering each country's regions by its median region, we can observe each country's spread.
+                    By centering each country's regions by its median region, we can compare inter-regional inequality across countries.
                 </p>
             </div>
             <div id="plotbox4" class="section plotLabelBox">
@@ -116,31 +114,31 @@
     </figure>
 
     <section id="writeUp">
-        <h2> Data </h2>
+        <h2 id="dataTitle"> Data </h2>
         <p>
-            To complete this project, I used several data sources. 
+            To complete this project I used several data sources. 
         </p>
         <p>
             For the first map, I used household income data from the Office for National Statistics (ONS) and sourced Local Authority District (LAD) boundaries from the Open Geography Portal. The income data was downloaded into 12 files by region. I looped over them to combine into a single Dataframe. I then associated the income data directly with the geoJSON boundary regions — this turned out to be more performant (avoiding unnecessary http requests) and avoided asynchronous-loading problems.
         </p>
         <p>
-            For the GVA maps, I combined data from three different sources: shape files from the European Commission and output data from Eurostat and the ONS. For the bubble-box plot, I expressed the output by as a multiple of each country’s population-weighted median.
+            For the GVA maps, I combined data from three different sources: shape files from the European Commission and output data from Eurostat and the ONS. For the bubble-box plot, I expressed the output as a multiple of each country’s population-weighted median.
         </p>
         <p>
-            The scatter-matrix uses 5 indicators, each fetched separately and then merged. The life expectancy, deprivation, and life-satisfaction data were retrieved using the ONS api. It should be the beta dataset api was used, rather than the ‘timeseries’ api explained in class. A metric of food bank density was constructed by scraping the search page of givefood.org: the distances to nearby food banks were scraped and the average distance of the closest 5 was calculated. These data were then normalised and clusters were created.
+            The scatter-matrix uses 5 indicators, each fetched separately and then merged. The life expectancy, deprivation, and life-satisfaction data were retrieved using the ONS api. The beta dataset api was used, rather than the ‘timeseries’ api explained in class. A metric of food bank density was constructed by scraping the search page of givefood.org: the distances to nearby food banks were scraped and the average distance of the closest 5 was calculated. These data were then normalised and clusters were created.
         </p>
         <h2> Challenges and Limitations </h2>
         <p>
-            There were several challenges that I encountered while cleaning, analysing, and visualising the data for this project.
+            I encountered several challenges.
         </p>
         <p>
-            I could not achieved my desired ‘scrollytelling’ behaviour or create a separate interactive legend using Vega-lite. Instead, I created the map from scratch using d3 which proved to be a challenging but rewarding endeavour. I also found that existing JavaScript scroll libraries either performed poorly, or were slow to load so I instead implemented my own (graphscroll.js) using the built-in IntersectionObserver api. Another issue I encountered was that the LAD shape boundaries had too much complexity so I simplified the regions using Mapshaper.
+            I could not achieve the ‘scrollytelling’ behaviour I desired or create a separate interactive legend using Vega-lite. Instead, I created the map from scratch using d3 which proved to be a challenging but rewarding endeavour. I also found that existing JavaScript scroll libraries either performed poorly or were slow to load so I instead implemented my own (graphscroll.js) using the built-in IntersectionObserver api. Another issue encountered was the LAD shape boundaries’ unnecessary resolution — solved by simplifying the regions using Mapshaper.
         </p>
         <p>
-            Another challenge were the changes in data-stewardship as a result of Brexit. Eurostat no longer stores most British data so I had to merge in data from the ONS and perform currency conversions.
+            There was challenges regarding post-Brexit data-stewardship; Eurostat no longer stores most British data so I had to merge in data from the ONS and perform currency conversions.
         </p>
         <p>
-            On my bubble-box-plot, I wanted to visualise values relative to their  country’s median. However, using a simple median would be misleading as there is significant variation in population. Instead, I implemented a function to find population-weighted quantiles (informed by the discussion here).
+            On my bubble-box-plot, I wanted to visualise values relative to its  country’s median. Using a simple median would be misleading due to variations in population. Instead, I implemented a function to find population-weighted quantiles (informed by the discussion <a href='https://aakinshin.net/posts/weighted-quantiles/'>here</a>).
         </p>
         <p>
             An unfortunate limitation of this project is the age of some of the data used — the most recent complete income and output data at the granularity I desired was from 2019. An additional limitation is Vega-lite’s inability to responsively scale figures when multiple subfigures are included, hurting the experience on mobile. 
@@ -150,17 +148,19 @@
             In my analysis, I found that there were stark disparities in incomes within the UK, as seen on the first map. As expected, the highest income areas were found around London. I was surprised, however, by the low incomes found in the UK’s other largest cities.
         </p>
         <p>
-            The pattern of a high income concentration around the capital was similar in France but notably different in Germany, where there was a more pronounced East-West divide. 
+            The pattern of a high-income concentration around the capital was similar in France but notably different in Germany, where there was a more pronounced East-West divide. 
         </p>
         <p>
-            The extent of inter-regional inequality was of a similar extent in the UK to its peers, with an interquartile range higher than Denmark, The Netherlands, and France, but lower than Germany.
+            Inter-regional inequality in the UK was of a similar extent to its peers. The interquartile range was higher than Denmark’s, The Netherlands’, and France’s, but lower than Germany’s.
         </p>
         <p>
-            As the scatterplot matrix showed, these disparities in economic indicators translated to disparities in health and deprivation but, perhaps fortunately, there was not a close relationship between life-satisfaction and the other indicators. Nor was there with the food bank metric.
+            As the scatterplot matrix shows, the disparities in economic indicators translate to disparities in health and deprivation but, perhaps fortunately, there was not a close relationship between life-satisfaction and the other indicators. Nor was there with the food bank metric.
         </p>
         <p>
-            In the future, it would be interesting to study the extent of intra-region inequality, something which is now possible with the release of granular 2021 census data. It could also be interesting to examine the geographic spread of food banks, and what influences their creation.
+            The computed clusters revealed regional patterns in the indicators; even when clustered without location data, the points in each cluster were often close (e.g. cluster 1 is mostly London/South East).
         </p>
+        <p>
+            In the future, it would be interesting to study the extent of intra-region inequality, something which is now possible with the release of granular 2021 census data. It could also be interesting to examine the geographic spread of food banks and what influences their placement.        </p>
         <h2> Google Colab and Non-Vega Source Links </h2>
         <ul>
             <li>
