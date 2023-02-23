@@ -135,7 +135,7 @@
             I encountered several challenges.
         </p>
         <p>
-            I could not achieve the ‘scrollytelling’ behaviour I desired or create a separate interactive legend using Vega-lite. Instead, I created the map from scratch using d3 which proved to be a challenging but rewarding endeavour. I also found that existing JavaScript scroll libraries either performed poorly or were slow to load so I instead implemented my own (graphscroll.js) using the built-in IntersectionObserver api. Another issue encountered was the LAD shape boundaries’ unnecessary resolution — solved by simplifying the regions using Mapshaper.
+            I could not achieve the ‘scrollytelling’ behaviour I desired or create a separate interactive legend using Vega-lite. Instead, I created the map from scratch using d3 which proved to be a challenging but rewarding endeavour. I also found that existing JavaScript scroll libraries either performed poorly or were slow to load so I instead implemented my own (<a href="scrollManager.js">scrollManager.js</a>) using the built-in IntersectionObserver api. Another issue encountered was the LAD shape boundaries’ unnecessary resolution — solved by simplifying the regions using Mapshaper.
         </p>
         <p>
             There were challenges regarding post-Brexit data-stewardship; Eurostat no longer stores most British data so I had to merge in data from the ONS and perform currency conversions.
