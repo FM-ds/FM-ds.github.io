@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title for the page -->
+    <title>Data Science Homework Portfolio</title>
+    
+    <link rel="stylesheet" href="portfolio.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+    <h1> Data Science Homework Portfolio</h1>
+    <h3 style="text-align: left"> <a href="/Regional_Inequality/"> ⧉ Final Project</a> </h3>
+
+
+    <section>
+        <div class="graphDesc">
+            <h2> Beveridge Curves </h2>
+            <h3> US Beveridge Curve </h3>
+        
+            <summary> The BLS seems to group years into curves by creating a new curve after a month of great discontinuity with the one before. The BLS's groupings, with some minor modifications, seemed the cleanest.
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="us_bev"> </figure>
+        </br>
+        </div>
+    </section>
+    <section>
+        <div class="graphDesc">
+            <h2> US Incomes </h2>
+            <h3> Real US household incomes by Percentile, Race, and Region </h3>
+        
+            <summary> Needs a bit more work: adding a median to the quintiles, and some more interactivity
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="us_incomes"> </figure>
+        </br>
+        </div>
+    </section>
+
+    <script>
+        vegaEmbed('#us_bev', "US_Beveridge.json");
+        vegaEmbed('#us_incomes', "US_incomes.json");
+
+    </script>
+</body>
