@@ -1,0 +1,207 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/UK_LAD_Incomes.csv"  },
+          "title": {
+      "text": "Incomes in South-West England",
+      "subtitle": ["Gross Domestic Household Income, Per Head (2020 Prices) ", "source: ONS", ""],
+      "fontSize":18,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "width": 650,
+    "height": 300,
+    "hconcat" : [ 
+  
+        {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/UK_LAD_Incomes.csv"
+      },
+      "transform": [
+      {
+        "filter": {
+          "field": "Region name",
+          "oneOf": [
+            "Bristol, City of",
+            "North Somerset",
+            "South Gloucestershire",
+            "Bath and North East Somerset"        ]
+        }
+      },
+      {"filter":{"param":"index"}},
+      {
+        "lookup": "LAD code",
+        "from": {
+          "data": {
+            "url": "https://martinjc.github.io/UK-GeoJSON/json/eng/topo_lad.json",
+            "format": {"type": "topojson", "feature": "lad"}
+          },
+          "key": "properties.LAD13CD",
+          "fields": ["properties", "type", "geometry"]
+        }
+      } ],
+      
+        "projection": {"type": "mercator"},
+      "mark": "geoshape",
+        "encoding": {
+      "color": {
+        "field": "Change",
+        "scale":{"scheme": "purplegreen", "domain":[-0.05,0,0.3]},
+        "type": "quantitative",
+        "legend":{
+          "orient": "none",
+          "title": "Change (since '97)",
+          "legendX":0,
+          "legendY":0
+        }
+      },
+      "tooltip": [
+        {"field": "properties.LAD13NM", "type": "nominal", "title": "District"},
+        {"field": "Change", "type": "quantitative", "title": "Since 1997"}
+      ]
+  
+    }
+  
+      
+    },
+    
+     {
+      "width":350,
+      "height":225,
+      "layer": [
+      {
+        "params": [{
+          "name": "index",
+          "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
+          "select": {
+            "type": "point",
+            "encodings": ["x"],
+            "on": "mouseover",
+            "nearest": true
+          }
+        },
+        {
+        "name": "extraRegion",
+        "select": {"type": "point", "fields": ["Region name"]},
+        "bind": {
+          "input": "select",
+          "options": ["Hackney", "North Somerset", "South Somerset"],
+          "name": "Region name"
+        },
+        "value": "Select Region"
+      } 
+        ],
+        "mark": "point",
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal", "axis": null},
+          "opacity": {"value": 0}
+        }
+      },
+      {
+        "mark": "line",
+         "transform": [
+      {
+        "filter": {"or" : [{
+          "field": "Region name",
+          "oneOf": [
+            "Bristol, City of",
+            "North Somerset",
+            "South Gloucestershire",
+            "Bath and North East Somerset"        ]
+        },
+        {"param":"extraRegion"}
+        ]}
+        
+      }],
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal", "axis": null},
+          "y": {
+            "field": "Real_GDHI", "type": "quantitative",
+            "scale":{"domainMin":14000}
+          },
+          "color": {
+            "condition":[
+            {
+              "test":"datum['Region name'] == 'Bristol, City of'",
+              "value": "rgb(128,0,0)"
+            },
+            {
+              "param":"extraRegion",
+              "value": "blue"
+            }
+            ]
+            ,
+      
+            "field":"Region name",
+            "scale" : {"range": ["rgb(200,200,200)"]},
+            "legend":null},
+            "opacity" : {"value": 1}
+        },
+        "detail":{"field":"Region name"}
+      },
+      {
+        "transform": [{"filter": {"param": "index"}}],
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal", "axis": null},
+          "color": {"value": "black"}
+        },
+        "layer": [
+          {"mark": {"type": "rule", "strokeWidth": 0.5}},
+          {
+            "mark": {"type": "text", "align": "center", "fontWeight": 100},
+            "encoding": {
+              "text": {"field": "Year", "timeUnit": "yearmonth"},
+              "y": {"value": 220}
+            }
+          }
+        ]
+      },
+      {
+          "transform": [
+            {
+              "filter":"datum.Year==1546300800000"
+            },
+            {
+              "filter": {"or" : [{
+                "field": "Region name",
+                "oneOf": [
+                  "Bristol, City of",
+                  "South Gloucestershire",
+                  "Bath and North East Somerset",
+                  ""]
+              },
+                {"param":"extraRegion"}
+              ]}
+            }],
+            "encoding": {
+              "x": {"field": "Year", "type": "temporal", "axis": null},
+              "y": {
+                "field": "Real_GDHI", "type": "quantitative",
+                "scale":{"domainMin":14000}
+              },
+              "color": {"field": "Region name", "type": "nominal", 
+              "legend":null},
+              "opacity" : {"value": 1},
+              "text":{"field":"Region name"}
+            },
+            "mark":{
+              "type": "text",
+              "align":"left",
+              "dx":5
+            }
+      }
+  
+  
+  
+    ]}
+  
+    
+    ]
+  
+  }
+  
+  
+  
