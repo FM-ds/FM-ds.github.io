@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title for the page -->
+    <title> E4E Week 3</title>
+    
+    <link rel="stylesheet" href="portfolio.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+    <h1> E4E: Work</h1>
+
+
+    <section>
+        <div class="graphDesc">
+            <h2> Costa Rica Machine Exports/Imports </h2>
+            <h3> US Beveridge Curve </h3>
+        
+            <summary> Very Barebones
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="costa"> </figure>
+        </br>
+        </div>
+    </section>
+
+
+    <script>
+        vegaEmbed('#costa', "trade.json");
+
+    </script>
+</body>

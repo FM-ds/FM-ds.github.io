@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/FM-ds/FM-ds.github.io/main/E4E/costa_rica/trade_data.csv"
+  },
+  "width":600,
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Country", "type": "nominal", "axis": {"labelAngle": 0}},
+    "y": {"field": "Balance", "type": "quantitative"}
+  }
+}
