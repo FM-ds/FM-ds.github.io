@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A scatterplot showing body mass and flipper lengths of penguins.",
+  "description": "A linked scatterplot showing American Labour Market Data.",
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/US_beveridge_data.csv"
   },
@@ -43,8 +43,10 @@
       "type": "quantitative",
       "scale": {"zero": false},
             "axis":{"title":"Job Opening rate (%)"}
-
     },
+    "tooltip":[
+      {"title": "Date", "field":"Month"}
+    ],
     "color": {"field": "Period", "type": "nominal"}
   }},
   {"mark": "line", 
@@ -69,7 +71,8 @@
               },
               "value": 0
             },
-    "color": {"field": "Period", "type": "nominal"}
+    "color": {"field": "Period", "type": "nominal"},
+    "order":{"field":"Date"}
   }},
     {"mark": "line",
   "encoding": {
@@ -83,6 +86,7 @@
       "type": "quantitative",
       "scale": {"zero": false}
     },
+    "order":{"field":"Date"},
     "opacity": {
               "condition": {
                 "test": {"or": [
@@ -94,33 +98,8 @@
               "value": 0
             },
     "color": {"field": "Period", "type": "nominal"}
-  }},
-  {
-    "transform": [{"filter": "slice(datum.Month, 0, 3) == 'Jan'"}],
-    "mark":{"type": "text", "dy":-10},
-    "encoding": {
-          "x": {
-      "field": "Unemployment rate",
-      "type": "quantitative",
-      "scale": {"zero": false}
-    },
-    "y": {
-      "field": "Job openings rate",
-      "type": "quantitative",
-      "scale": {"zero": false}
-    },
-    "opacity": {
-              "condition": {
-                "test": {"or": [
-                  {"param": "hovered", "empty": false},
-                  {"param": "clicked", "empty": false}
-                ]},
-                "value": 0.6
-              },
-              "value": 0
-            },
-    "text":{"field":"Month"}}
   }
+}
   
   ]
   

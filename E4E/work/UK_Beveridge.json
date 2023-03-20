@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A scatterplot showing body mass and flipper lengths of penguins.",
+    "description": "A linked scatterplot showing British Labour Market Data.",
     "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/UK_Beveridge_Data.csv"
+      "url": "UK_Beveridge_Data.csv"
     },
     "title": {
       "text": "Britain's Beveridge Curve",
@@ -44,8 +44,11 @@
             "field": "Job openings rate",
             "type": "quantitative",
             "scale": {"zero": false},
-            "axis": {"title": "Job Opening rate (%)"}
+            "axis": {"title": "Job Vacancy Ratio (%)"}
           },
+          "tooltip":[
+            {"title": "Date", "field":"Month"}
+          ],
           "color": {"field": "Period", "type": "nominal"}
         }
       },
@@ -74,7 +77,8 @@
             },
             "value": 0
           },
-          "color": {"field": "Period", "type": "nominal"}
+          "color": {"field": "Period", "type": "nominal"},
+          "order":{"field":"Date", "type":"temporal"}
         }
       },
       {
@@ -102,7 +106,8 @@
             },
             "value": 0
           },
-          "color": {"field": "Period", "type": "nominal"}
+          "color": {"field": "Period", "type": "nominal"},
+          "order":{"field":"Date", "type":"temporal"}
         }
       },
       {

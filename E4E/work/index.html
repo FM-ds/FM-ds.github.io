@@ -70,7 +70,7 @@
     <section>
         <div class="graphDesc">
             <h2> South West Incomes </h2>
-            <h3> Unfinished! </h3>
+            <h3> You can display any UK local authourity district with the dropdown but this does increase load times </h3>
         
             <summary> 
                 </br>
@@ -82,12 +82,43 @@
         </br>
         </div>
     </section>
+    <section>
+        <div class="graphDesc">
+            <h2> British Median Incomes and the rest of the OECD </h2>
+            <h3> The tooltip isn't frustrating here: where values aren't defined, it reads 0, and the date is far too granualar</h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="oecd_incomes"> </figure>
+        </br>
+        </div>
+    </section>
+    <section>
+        <div class="graphDesc">
+            <h2> Wages in Chicago </h2>
+        
+            <summary> 
+                Haven't sorted iframe embeding with this pages css. View it <a href="Treemap/index.html">here</a> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <iframe src="Treemap/index.html" width="1000px", "height="800px""></iframe>
+        </div>
+    </section>
+
 
     <script>
         vegaEmbed('#us_bev', "US_Beveridge.json");
         vegaEmbed('#uk_bev', "UK_Beveridge.json");
         vegaEmbed('#us_incomes', "US_incomes.json");
         vegaEmbed('#brs_incomes', "Bristol_incomes.json");
+        vegaEmbed('#oecd_incomes', "OECD_incomes.json")
 
 
     </script>

@@ -1,207 +1,236 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/UK_LAD_Incomes.csv"  },
-          "title": {
-      "text": "Incomes in South-West England",
-      "subtitle": ["Gross Domestic Household Income, Per Head (2020 Prices) ", "source: ONS", ""],
-      "fontSize":18,
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 11,
-      "anchor": "start",
-      "color": "black"
-    },
-  
-    "width": 650,
-    "height": 300,
-    "hconcat" : [ 
-  
-        {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/UK_LAD_Incomes.csv"
+  },
+  "title": {
+    "text": "Household Income in South-West England",
+    "subtitle": [
+      "Gross Domestic Household Income, Per Head (2020 Prices) ",
+      "source: ONS",
+      ""
+    ],
+    "fontSize": 18,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 650,
+  "height": 300,
+  "hconcat": [
+    {
       "data": {
         "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/UK_LAD_Incomes.csv"
       },
       "transform": [
-      {
-        "filter": {
-          "field": "Region name",
-          "oneOf": [
-            "Bristol, City of",
-            "North Somerset",
-            "South Gloucestershire",
-            "Bath and North East Somerset"        ]
+        {
+          "filter": {
+            "field": "Region name",
+            "oneOf": [
+              "Bristol, City of",
+              "North Somerset",
+              "South Gloucestershire",
+              "Bath and North East Somerset"
+            ]
+          }
+        },
+        {"filter": {"param": "index"}},
+        {
+          "lookup": "LAD code",
+          "from": {
+            "data": {
+              "url": "https://martinjc.github.io/UK-GeoJSON/json/eng/topo_lad.json",
+              "format": {"type": "topojson", "feature": "lad"}
+            },
+            "key": "properties.LAD13CD",
+            "fields": ["properties", "type", "geometry"]
+          }
         }
-      },
-      {"filter":{"param":"index"}},
-      {
-        "lookup": "LAD code",
-        "from": {
-          "data": {
-            "url": "https://martinjc.github.io/UK-GeoJSON/json/eng/topo_lad.json",
-            "format": {"type": "topojson", "feature": "lad"}
-          },
-          "key": "properties.LAD13CD",
-          "fields": ["properties", "type", "geometry"]
-        }
-      } ],
-      
-        "projection": {"type": "mercator"},
+      ],
+      "projection": {"type": "mercator"},
       "mark": "geoshape",
-        "encoding": {
-      "color": {
-        "field": "Change",
-        "scale":{"scheme": "purplegreen", "domain":[-0.05,0,0.3]},
-        "type": "quantitative",
-        "legend":{
-          "orient": "none",
-          "title": "Change (since '97)",
-          "legendX":0,
-          "legendY":0
-        }
-      },
-      "tooltip": [
-        {"field": "properties.LAD13NM", "type": "nominal", "title": "District"},
-        {"field": "Change", "type": "quantitative", "title": "Since 1997"}
-      ]
-  
-    }
-  
-      
+      "encoding": {
+        "color": {
+          "field": "Change",
+          "scale": {"scheme": "purplegreen", "domain": [-0.05, 0, 0.3]},
+          "type": "quantitative",
+          "legend": {
+            "orient": "none",
+            "title": "Change (since '97)",
+            "format": "%",
+            "legendX": 0,
+            "legendY": 0
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.LAD13NM",
+            "type": "nominal",
+            "title": "District"
+          },
+          {
+            "field": "Real_GDHI",
+            "type": "nominal",
+            "title": "Income",
+            "format": ","
+          },
+          {
+            "field": "Change",
+            "type": "quantitative",
+            "title": "Since 1997",
+            "format": ".2f"
+          }
+        ]
+      }
     },
-    
-     {
-      "width":350,
-      "height":225,
+    {
+      "width": 350,
+      "height": 225,
       "layer": [
-      {
-        "params": [{
-          "name": "index",
-          "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
-          "select": {
-            "type": "point",
-            "encodings": ["x"],
-            "on": "mouseover",
-            "nearest": true
+        {
+          "params": [
+            {
+              "name": "index",
+              "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "on": "mouseover",
+                "nearest": true
+              }
+            },
+            {
+              "name": "extraRegion",
+              "select": {"type": "point", "fields": ["Region name"]},
+              "bind": {
+                "input": "select",
+                "options": ["Select Region","Barking and Dagenham", "Barnet", "Brent", "Bromley", "Camden", "Ealing", "Enfield", "Greenwich", "Hammersmith and Fulham", "Haringey", "Harrow", "Havering", "Hillingdon", "Hounslow", "Islington", "Kingston upon Thames", "Lambeth", "Lewisham", "Merton", "Newham", "Richmond upon Thames", "Sutton", "Waltham Forest", "Wandsworth", "Westminster", "Bolton", "Bury", "Oldham", "Rochdale", "Stockport", "Tameside", "Trafford", "Wigan", "Liverpool", "St. Helens", "Sefton", "Wirral", "Barnsley", "Gateshead", "North Tyneside", "South Tyneside", "Sunderland", "Coventry", "Dudley", "Sandwell", "Solihull", "Walsall", "Wolverhampton", "Bradford", "Calderdale", "Kirklees", "Wakefield", "Stockton-on-Tees", "Blackpool", "East Riding of Yorkshire", "North East Lincolnshire", "North Lincolnshire", "Derby", "Plymouth", "Luton", "Southend-on-Sea", "Thurrock", "Medway", "Bracknell Forest", "Reading", "Wokingham", "Brighton and Hove", "Portsmouth", "Southampton", "Barrow-in-Furness", "Eden", "Amber Valley", "Chesterfield", "Derbyshire Dales", "Mid Devon", "Basildon", "Brentwood", "Castle Point", "Chelmsford", "Epping Forest", "Harlow", "Maldon", "Cheltenham", "Fareham", "Gosport", "Havant", "New Forest", "Dacorum", "East Hertfordshire", "North Hertfordshire", "St Albans", "Stevenage", "Gravesham", "Maidstone", "Sevenoaks", "Thanet", "Tunbridge Wells", "Burnley", "Fylde", "Hyndburn", "Rossendale", "West Lancashire", "Blaby", "Charnwood", "Hinckley and Bosworth", "Melton", "Oadby and Wigston", "North Kesteven", "South Holland", "Broadland", "Great Yarmouth", "Craven", "Ryedale", "Bassetlaw", "West Oxfordshire", "Mendip", "Cannock Chase", "East Staffordshire", "South Staffordshire", "Staffordshire Moorlands", "Tamworth", "Ipswich", "Epsom and Ewell", "Guildford", "Mole Valley", "Spelthorne", "Tandridge", "Waverley", "North Warwickshire", "Nuneaton and Bedworth", "Adur", "Mid Sussex", "Worthing", "Malvern Hills", "Redditch", "Worcester", "Wychavon", "Shropshire", "Cheshire East", "Stoke-on-Trent", "Bedford", "Central Bedfordshire", "South Derbyshire", "Mansfield", "Sedgemoor", "Swindon", "Rugby", "Rushmoor", "Broxbourne", "County Durham", "Northumberland", "City of London", "Tower Hamlets", "Slough", "Hart", "Hackney", "Kensington and Chelsea", "Milton Keynes", "Three Rivers", "Herefordshire, County of", "Fenland", "Swale", "Tonbridge and Malling", "Lancaster", "Boston", "West Lindsey", "Hambleton", "Gedling", "Rushcliffe", "South Oxfordshire", "Vale of White Horse", "Arun", "Bromsgrove", "Middlesbrough", "East Lindsey", "Uttlesford", "Wyre", "Telford and Wrekin", "Folkestone and Hythe", "Selby", "Newark and Sherwood", "North West Leicestershire", "South Hams", "South Kesteven", "Stratford-on-Avon", "South Ribble", "Breckland", "North Somerset", "York", "Braintree", "Canterbury", "Darlington", "Leicester", "Stafford", "Wyre Forest", "Broxtowe", "West Devon", "Erewash", "High Peak", "Lichfield", "Ashfield", "Cotswold", "Doncaster", "Lincoln", "Woking", "Peterborough", "Colchester", "Rochford", "Sheffield", "Bristol, City of", "Cherwell", "Knowsley", "Gloucester", "Stroud", "Winchester", "Exeter", "Warrington", "Watford", "Welwyn Hatfield", "Elmbridge", "Isles of Scilly", "Southwark", "Birmingham", "Eastleigh", "Hastings", "Bexley", "Redbridge", "Huntingdonshire", "South Cambridgeshire", "Harrogate", "Manchester", "Leeds", "Newcastle-under-Lyme", "Newcastle upon Tyne", "Croydon", "South Lakeland", "Blackburn with Darwen", "Kingston upon Hull, City of", "East Cambridgeshire", "Eastbourne", "Lewes", "Rother", "Wealden", "Chichester", "Allerdale", "Ashford", "East Devon", "Horsham", "North Norfolk", "South Norfolk", "Teignbridge", "Torridge", "Tendring", "Harborough", "Bolsover", "Ribble Valley", "Surrey Heath", "North East Derbyshire", "Tewkesbury", "Test Valley", "South Gloucestershire", "West Berkshire", "Forest of Dean", "Hertsmere", "Preston", "Cheshire West and Chester", "Torbay", "Nottingham", "East Hampshire", "King's Lynn and West Norfolk", "Richmondshire", "Scarborough", "Dartford", "North Devon", "Redcar and Cleveland", "Bath and North East Somerset", "Windsor and Maidenhead", "South Somerset", "Copeland", "Babergh", "Mid Suffolk", "Warwick", "Rutland", "Bournemouth, Christchurch and Poole", "Dorset", "East Suffolk", "West Suffolk", "Somerset West and Taunton", "Dover", "Reigate and Banstead", "Runnymede", "Norwich", "Crawley", "Carlisle", "Rotherham", "Salford", "Hartlepool", "Cambridge", "Chorley", "Basingstoke and Deane", "Oxford", "Buckinghamshire", "Halton", "Pendle", "North Northamptonshire", "West Northamptonshire", "Cornwall", "Isle of Wight", "Wiltshire", "Antrim and Newtownabbey", "Armagh City, Banbridge and Craigavon", "Belfast", "Causeway Coast and Glens", "Derry City and Strabane", "Fermanagh and Omagh", "Lisburn and Castlereagh", "Mid and East Antrim", "Mid Ulster", "Newry, Mourne and Down", "Ards and North Down", "Argyll and Bute", "Dundee City", "Na h-Eileanan Siar", "Orkney Islands", "Scottish Borders", "Shetland Islands", "West Lothian", "Aberdeen City", "Aberdeenshire", "Angus", "Clackmannanshire", "Dumfries and Galloway", "East Ayrshire", "East Dunbartonshire", "East Lothian", "East Renfrewshire", "City of Edinburgh", "Falkirk", "Fife", "Glasgow City", "Highland", "Inverclyde", "Midlothian", "Moray", "North Ayrshire", "North Lanarkshire", "Perth and Kinross", "Renfrewshire", "South Ayrshire", "South Lanarkshire", "Stirling", "West Dunbartonshire", "Gwynedd", "Conwy", "Denbighshire", "Flintshire", "Wrexham", "Powys", "Ceredigion", "Pembrokeshire", "Carmarthenshire", "Swansea", "Neath Port Talbot", "Bridgend", "Vale of Glamorgan", "Rhondda Cynon Taf", "Merthyr Tydfil", "Caerphilly", "Blaenau Gwent", "Torfaen", "Monmouthshire", "Newport", "Cardiff", "Isle of Anglesey"],
+                "name": "Display Region"
+              },
+              "value": "Select Region"
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "x": {"field": "Year", "type": "temporal"},
+            "opacity": {"value": 0}
           }
         },
         {
-        "name": "extraRegion",
-        "select": {"type": "point", "fields": ["Region name"]},
-        "bind": {
-          "input": "select",
-          "options": ["Hackney", "North Somerset", "South Somerset"],
-          "name": "Region name"
-        },
-        "value": "Select Region"
-      } 
-        ],
-        "mark": "point",
-        "encoding": {
-          "x": {"field": "Year", "type": "temporal", "axis": null},
-          "opacity": {"value": 0}
-        }
-      },
-      {
-        "mark": "line",
-         "transform": [
-      {
-        "filter": {"or" : [{
-          "field": "Region name",
-          "oneOf": [
-            "Bristol, City of",
-            "North Somerset",
-            "South Gloucestershire",
-            "Bath and North East Somerset"        ]
-        },
-        {"param":"extraRegion"}
-        ]}
-        
-      }],
-        "encoding": {
-          "x": {"field": "Year", "type": "temporal", "axis": null},
-          "y": {
-            "field": "Real_GDHI", "type": "quantitative",
-            "scale":{"domainMin":14000}
-          },
-          "color": {
-            "condition":[
+          "mark": { "type":"line", "point":"true"},
+          "tooltip":[
             {
-              "test":"datum['Region name'] == 'Bristol, City of'",
-              "value": "rgb(128,0,0)"
-            },
-            {
-              "param":"extraRegion",
-              "value": "blue"
+              "field": "Real_GDHI",
+              "type": "nominal",
+              "title": "Income",
+              "format": ","
             }
-            ]
-            ,
-      
-            "field":"Region name",
-            "scale" : {"range": ["rgb(200,200,200)"]},
-            "legend":null},
-            "opacity" : {"value": 1}
-        },
-        "detail":{"field":"Region name"}
-      },
-      {
-        "transform": [{"filter": {"param": "index"}}],
-        "encoding": {
-          "x": {"field": "Year", "type": "temporal", "axis": null},
-          "color": {"value": "black"}
-        },
-        "layer": [
-          {"mark": {"type": "rule", "strokeWidth": 0.5}},
-          {
-            "mark": {"type": "text", "align": "center", "fontWeight": 100},
-            "encoding": {
-              "text": {"field": "Year", "timeUnit": "yearmonth"},
-              "y": {"value": 220}
-            }
-          }
-        ]
-      },
-      {
+          ],
           "transform": [
             {
-              "filter":"datum.Year==1546300800000"
-            },
-            {
-              "filter": {"or" : [{
-                "field": "Region name",
-                "oneOf": [
-                  "Bristol, City of",
-                  "South Gloucestershire",
-                  "Bath and North East Somerset",
-                  ""]
-              },
-                {"param":"extraRegion"}
-              ]}
-            }],
-            "encoding": {
-              "x": {"field": "Year", "type": "temporal", "axis": null},
-              "y": {
-                "field": "Real_GDHI", "type": "quantitative",
-                "scale":{"domainMin":14000}
-              },
-              "color": {"field": "Region name", "type": "nominal", 
-              "legend":null},
-              "opacity" : {"value": 1},
-              "text":{"field":"Region name"}
-            },
-            "mark":{
-              "type": "text",
-              "align":"left",
-              "dx":5
+              "filter": {
+                "or": [
+                  {
+                    "field": "Region name",
+                    "oneOf": [
+                      "Bristol, City of",
+                      "North Somerset",
+                      "South Gloucestershire",
+                      "Bath and North East Somerset"
+                    ]
+                  },
+                  {"param": "extraRegion"}
+                ]
+              }
             }
-      }
-  
-  
-  
-    ]}
-  
-    
-    ]
-  
-  }
-  
-  
-  
+          ],
+          "encoding": {
+            "x": {"field": "Year", "type": "temporal"},
+            "y": {
+              "field": "Real_GDHI",
+              "type": "quantitative",
+              "scale": {"zero": false}
+            },
+            "color": {
+              "condition": [
+                {
+                  "test": "datum['Region name'] == 'Bristol, City of'",
+                  "value": "rgb(128,0,0)"
+                },
+                {"param": "extraRegion", "value": "blue"}
+              ],
+              "field": "Region name",
+              "scale": {"range": ["rgb(200,200,200)"]},
+              "legend": null
+            },
+            "opacity": {"value": 1}
+          },
+          "detail": {"field": "Region name"}
+        },
+        {
+          "transform": [{"filter": {"param": "index"}}],
+          "encoding": {
+            "x": {"field": "Year", "type": "temporal"},
+            "color": {"value": "black"}
+          },
+          "layer": [
+            {"mark": {"type": "rule", "strokeWidth": 0.5}},
+            {
+              "mark": {"type": "text", "align": "center", "fontWeight": 100},
+              "encoding": {
+                "text": {"field": "Year", "timeUnit": "yearmonth"},
+                "y": {"value": -10}
+              }
+            }
+          ]
+        },
+        {
+          "transform": [
+            {"filter": "datum.Year==1546300800000"},
+            {
+              "filter": {
+                "or": [
+                  {
+                    "field": "Region name",
+                    "oneOf": [
+                      "Bristol, City of",
+                      "South Gloucestershire",
+                      "Bath and North East Somerset"
+                    ]
+                  },
+                  {"param": "extraRegion"}
+                ]
+              }
+            }
+          ],
+          "encoding": {
+            "x": {"field": "Year", "type": "temporal", "axis":{"title":null}},
+            "y": {
+              "field": "Real_GDHI",
+              "type": "quantitative",
+              "scale": {"zero": false},
+              "axis":{"title":"Real Income (£)"}
+            },
+            "color": {
+              "condition": [
+                {
+                  "test": "datum['Region name'] == 'Bristol, City of'",
+                  "value": "rgb(128,0,0)"
+                },
+                {"param": "extraRegion", "value": "blue"}
+              ],
+              "field": "Region name",
+              "scale": {"range": ["rgb(200,200,200)"]},
+              "legend": null
+            },
+            
+            "opacity": {"value": 1},
+            "text": {"field": "Region name"}
+          },
+          "mark": {"type": "text", "align": "left", "dx": 5}
+        }
+      ]
+    }
+  ]
+}
