@@ -37,6 +37,7 @@
 <body>
 
     <main>
+        <figure id="bigHist"></figure>
         <p id="first_p"> The scale below represents the range of incomes before tax for workers in the UK. At one end, the lowest earners (bottom 1%) make just £12,700, whilst the highest earners (top 1%) make £183,000 a year.  </p>
         <svg id="firstSvg"> </svg>
         <p style="opacity:0" id="second_p"> If instead you look at incomes after tax, the gap is not quite so large. The lowest earners pay no tax but the earnings of the top 1% fall to £121,000 - an average tax rate of 34%.  </p>   
@@ -343,6 +344,36 @@
             steps[step_i]();
         }
     }
+
+hist_json =
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"data": {
+"url": "UK_income_Bins.csv"
+},
+"width": 500,
+"height": 300,
+"layer" : [
+    {
+        "mark": "bar",
+        "encoding": {
+        "x": {
+            "field": "at_bin_start",
+            "bin": {"binned": true}
+        },
+        "x2": {"field": "at_bin_end"},
+        "y": {
+            "field": "Count",
+            "type": "quantitative"
+            }
+        }
+    }
+]
+}
+
+vegaEmbed("#bigHist", hist_json);
+
+
 
     </script>
     
