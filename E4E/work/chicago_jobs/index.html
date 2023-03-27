@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+    .label{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    pointer-events: none;
+}
+.container {
+    display: flex;
+  }
+  
+  #tree {
+  }
+  
+  #legend {
+    flex: 1;
+  }
+
+  body{
+    background-color: rgb(255, 255, 255, 0);
+  }
+  
+
+.selected_panel {
+    width: 250px;
+    border-radius: 0px;
+    border-color: grey;
+    padding: 10px;
+    background-color: rgb(117, 164, 58);
+  }
+  
+  .selected_panel h5 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: white;
+  }
+  .selected_panel h6 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  .histo{
+    margin: 0 !important;
+  }
+</style>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v6.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+
+<!-- Create a div where the graph will take place -->
+<body>
+    <div class="container">
+        <div id="tree"></div>
+        <div id="legend">
+            <div class="selected_panel">
+                <h5> Select a Department or Job </h5>
+                <h6>  </h6>
+                <figure class="histo" id="vega1">
+                </figure>
+                <figure class="histo" id="vega2">
+                </figure>
+            </div>
+    
+    
+    
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+        // set the dimensions and margins of the graph
+        const margin = { top: 20, right: 10, bottom: 10, left: 10 },
+            width = 445 - margin.left - margin.right,
+            height = 445 - margin.top - margin.bottom;
+
+        // append the svg object to the body of the page
+        const svg = d3.select("#tree")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                `translate(${0}, ${0})`);
+
+    
+
+    json_data = null
+    root = null
+    shaped_data = null
+
+    label_padding = 1
+
+    current_department = "City of Chicago"
+
+    function resetLegend(){
+        legend = d3.select(".selected_panel")
+            .style('background-color', "rgb(117, 164, 58)")
+
+        d3.select("#vega2")
+            .attr("class", "histo")
+            .selectAll("*")
+                .remove();
+
+        // update the title
+        legend.select("h5")
+            .text("Heading Three")
+    }
+
+    // mouse handling
+    var mouseover = function (d) {
+        clickedRect = d3.select(this) 
+                .selectAll('g > rect');
+        BBox = clickedRect.node().getBBox();
+
+
+        if(d3.select(this).attr("class") != "cityG"){
+            vegaEmbed('#vega2', departmentJSON(clickedRect.data()[0].data.Median_Income, clickedRect.data()[0].data.name, clickedRect.data()[0].data.Department ) );
+        }
+
+        // update the legend
+        updateLegend(d, clickedRect);
+        
+    }
+    var mousemove = function (d) {
+        //console.log(this)
+    }
+    var mouseleave = function (d) {
+
+    }
+
+    function updateLegend(d, clickedRect){
+        BBox = clickedRect.node().getBBox();
+
+                
+        // get the legend div
+        legend = d3.select(".selected_panel")
+            .style('background-color', clickedRect.style("fill"))
+
+        // update the title
+        legend.select("h5")
+            .text(clickedRect.data()[0].data.name)
+        
+        // update the info
+        legend.select("h6")
+            .html(`
+                Median Income: ${clickedRect.data()[0].data.Median_Income.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}
+                <br>
+                Workers: ${clickedRect.data()[0].data.Count}
+
+
+            `            
+            )
+
+
+        //update vegalite
+        d3.select("#vega1")
+            .attr("class", "histo")
+            .selectAll("*")
+                .remove();
+
+        //update vegalite
+        d3.select("#vega2")
+            .attr("class", "histo")
+            .selectAll("*")
+                .remove();
+
+        vegaEmbed('#vega1', chicagoJSON(clickedRect.data()[0].data.Department_Median, clickedRect.data()[0].data.Department ) );
+    }
+
+    var mouseclick = function (d){
+
+        clickedRect = d3.select(this) 
+                .selectAll('g > rect');
+        BBox = clickedRect.node().getBBox();
+
+        // update the legend
+        updateLegend(d, clickedRect);
+        
+        if(d3.select(this).attr("class") != "cityG"){
+            vegaEmbed('#vega2', departmentJSON(clickedRect.data()[0].data.Median_Income, clickedRect.data()[0].data.name, clickedRect.data()[0].data.Department ) );
+            return
+        }
+
+        topRect.lower()
+                .attr("x", BBox.x)
+                .attr("y", BBox.y)
+                .attr("width", BBox.width)
+                .attr("height", BBox.height)
+                .style("fill", clickedRect.style("fill"))
+        topRect.transition()
+                .duration(500)
+                .attr("x", 0)
+                .attr("y", 0)
+                .attr("width", width)
+                .attr("height", margin.top);
+        
+        topText
+            .text(`${clickedRect.data()[0].data.name} (Return)`)
+            .style("font-weight", "bold")
+        
+        console.log(this)
+        // Make the original box invisible and then visible again
+        clickedRect
+                .style("opacity", opacity);
+        clickedRect
+                .transition()
+                .duration(1000)
+                .delay(1000)
+                .style("opacity", 1);
+        d3.select(this.parentNode)
+            .transition()
+            .duration(1000)
+            .style("opacity", opacity);
+        
+            switchTreemap(d3.select(this).data()[0].data.name);
+        
+    }
+
+    // make the top rect
+    
+    topG = svg.append("g")
+        .attr("id", "topG")
+        .on("click", d => {
+            resetLegend();
+            switchTreemap("City of Chicago")})
+
+    
+    topRect = topG.append("rect")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", width)
+        .attr("height", margin.top)
+        .style("fill", "white")
+        .style("stroke", "grey")
+        .style("stroke-width", 0.5)
+
+    topText = topG.append("text")
+        .attr("class", "label")
+        .text("City of Chicago")
+        .attr("x", 5)
+        .attr("dy", 15)
+        .style("pointer-events", "none")
+
+    d3.json("chicago_jobs.json").then(function(data){
+        // 0. a list of medians by department, copy and pasted out of laziness
+        dep_medians ={"Ccpsa": 138180.0,  "Dept Of Buildings": 114138.0,  "Board Of Ethics": 105798.0,  "Department Of Police": 104934.0,  "Office Of Budget & Management": 103920.0,  "Department Of Law": 103920.0,  "Chicago Dept Of Transportation": 103920.0,  "Dais": 103134.0,  "License Appeal Commission": 102732.0,  "Dept Of Water Management": 102696.0,  "Commission On Human Relations": 102516.0,  "Fire Department": 102372.0,  "Office Of The Mayor": 100740.0,  "Dept Of Cultural Affairs": 98520.0,  "City Treasurer": 97332.0,  "Dept Streets And Sanitation": 94704.0,  "Office Of Climate And Environmental Equity": 94680.0,  "Department Of Planning And Development": 93780.0,  "Department Of Procurement Serv": 93660.0,  "Department Of Human Resources": 93378.0,  "Police Board": 92322.0,  "Bus Affairs And Consumer Prot": 90444.0,  "Department Of Public Health": 89808.0,  "Family And Support Services": 89388.0,  "Dept Of Housing": 89076.0,  "Public Safety Administration": 86442.0,  "Ig": 85248.0,  "Copa": 84084.0,  "Department Of Aviation": 82092.0,  "Mayors Office-Disabilities": 81552.0,  "Dept Of Administrative Hearing": 77772.0,  "City Clerk": 77772.0,  "Chicago Public Library": 77112.0,  "Department Of Finance": 75996.0,  "Office Of Emergency Management": 74844.0,  "Comm Animal Care And Control": 71436.0,  "City Council": 70176.0,  "Board Of Election Commissioner": 55704.0};
+        // 1. Make a Node for the Whole City
+
+        // Get all Unique Values of Department from data
+        let departments = [...new Set(data.map(item => item.Department))]
+        // Get list of objects with Department and Sum
+        city_data = departments.map(department => {
+            let sum = data.filter(item => item.Department === department).reduce((acc, item) => acc + item.value, 0)
+            let Count = data.filter(item => item.Department === department).reduce((acc, item) => acc + item.Count, 0)
+            return {name: department, Department: department, value: sum, Median_Income: dep_medians[department], Department_Median: dep_medians[department], Count: Count}
+        })
+        city_root = d3.hierarchy(
+            { name: "City of Chicago", children: city_data }
+        ).sum(function (d) { return d.value })        
+
+        // 2. Make a Node for Each Department
+        department_roots = departments.map(department => {
+            rows = data.filter(item => item.Department === department)
+                .map(row => {
+                    return {name: row.Role, value: row.value, Median_Income: row.Median_Income, Department: row.Department, Department_Median: dep_medians[department], Count: row.Count}
+                })
+            return d3.hierarchy(
+                { name: department, children: rows }).sum(function (d) { return d.value })
+        })
+
+
+        // prep the colour scheme
+        colorScale = d3.scaleOrdinal(d3.schemeDark2)
+            
+
+    
+        // Add a g to the svg and call the treemap function
+        svg
+            .append("g")
+            .attr("id", "City_of_Chicago")
+            .attr("class", "treemap")
+            .call(treemap, city_root, true)
+            .style("visibility", "visible")
+
+        department_treemaps = {}
+        department_roots.forEach(root => {
+            department_treemaps[root.data.name] = svg
+                .append("g")
+                .attr("class", "treemap")
+                .attr("id", root.data.name.replaceAll(" ", "_"))
+                .style("visibility", "hidden")
+                .style("opacity", 0)
+                .call(treemap, root)
+        });
+    
+        
+        json_data = data
+    })
+
+
+    function switchTreemap(department_name){
+        if(department_name == "City of Chicago"){
+            topText.text("City of Chicago")
+            topRect.style("fill","white")
+        }
+
+        current_department = department_name
+        d3.selectAll(".treemap")
+            .transition()
+            .delay(500)
+            .style("visibility", "hidden");
+        d3.select("#" + department_name.replaceAll(" ", "_"))
+            .transition()
+            .delay(500)
+            .duration(500)
+            .style("opacity", 1)
+            .style("visibility", "visible")
+    }
+
+
+    function treemap(g, root, city = false){
+        /* Appends a (hidden) treemap to the d3 selection g with the data root
+
+        */
+
+        opacity_scale = d3.scaleOrdinal()
+            .range([0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]);
+
+        d3.treemap()
+            .size([width, height])
+            .padding(2)
+            (root)
+
+        leaf_gs = g
+            .attr("transform", `translate(0, ${margin.top})`)
+            .selectAll("g")
+            .data(root.leaves())
+            .join("g")
+            .attr("class", (city == true ? "cityG" : "" ) )
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave)
+            .on("click", mouseclick)
+
+
+        leaf_gs
+            .append("rect")
+                .attr('x', function (d) { return d.x0; })
+                .attr('y', function (d) { return d.y0; })
+                .attr('width', function (d) { return d.x1 - d.x0; })
+                .attr('height', function (d) { return d.y1 - d.y0; })
+                .style("stroke", "grey")
+                .style("stroke-width", 0)
+                .style("fill", d => {
+                    if(!city)
+                        return colorScale(d.parent.data.name);
+                    else
+                        return colorScale(d.data.name);
+                })
+                .style("opacity", d => {
+                    if(city)
+                        return 1.0;
+                    else
+                        return opacity_scale(d.data.value);
+                })
+                .exit()
+
+        // and to add the text labels
+        labels = leaf_gs.append("foreignObject")
+            .attr("x", function (d) { return d.x0 + label_padding })   
+                    .attr("y", function (d) { return d.y0 + label_padding + 4 })    
+                    .attr("width", function (d) { return d.x1 - d.x0 - 2*label_padding })  
+                    .attr("height", function (d) { return d.y1 - d.y0 - 2*label_padding })
+                        .append("xhtml:body")
+                            .attr("width", "100%")
+                            .attr("height", "100%")
+                            .attr("id", d => "label_"+d.data.name.split('').filter(char => /[a-zA-Z]/.test(char)))
+                            .attr("class","label")
+                            .html(d => {
+                                
+                               return `
+                                <b>${d.data.name}</b> 
+                                <br>
+                                Total: $${d.data.value.toLocaleString()}
+                                <br>
+                                Median Income: $${d.data.Median_Income.toLocaleString()}
+                                
+                                
+                                `
+                            }
+                            )
+                            .style("opacity", d => {
+                                // if area of d is less than 200, hide the label
+                                if( ((d.x1 - d.x0) * (d.y1 - d.y0) < 2000) | (d.x1 - d.x0) < 30) 
+                                    return 0;
+                                else
+                                    return 1;
+
+                            })
+    }
+    
+    /////// Vega
+
+    function chicagoJSON(ruleX=null, ruleText=null){
+        if (!ruleX) {
+            ruleX = 1000000
+            ruleText = ""
+            opacity = 0
+        }
+        else {
+            console.log("else")
+            opacity = 1
+        }
+        console.log(`ruleX: ${ruleX} ruleText: ${ruleText}`)
+        return {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/Notebooks/hist_data/chicago_hist.json"
+            },
+            "config": { "view": { "stroke": "transparent" } },
+            "background": null,
+            "width": 200,
+            "title": {
+                "text": "Within Chicago",
+                "fontWeight": "normal",
+                "anchor": "start",
+                "offset": 10,
+                "color": "white"
+            },
+
+            "height": 75,
+            "layer": [
+                {
+                    "mark": "bar",
+
+                    "encoding": {
+                        "x": {
+                            "field": "bin_start",
+                            "bin": { "binned": true },
+                            "scale": {
+                                "domain": [0, 200000]
+                            },
+                            "axis": {
+                                "title": "Income",
+                                "labelColor": "white",
+                                "grid": false,
+                                "ticks": false,
+                                "domainColor": "white",
+                                "titleColor": "white"
+                            }
+
+                        },
+                        "x2": { "field": "bin_end" },
+                        "y": {
+                            "field": "count",
+                            "axis": null,
+                            "type": "quantitative"
+                        },
+                        "color": { "value": "white" }
+                    }
+
+
+                },
+                {
+                    "data": { "values": [{}] },
+                    "mark": { "type": "rule", "color": "white", "size": 2, "strokeDash": [8, 8] },
+                    "encoding": { "x": { "datum": ruleX, "type": "quantitative" }, "opacity": { "value": opacity } }
+                },
+
+                {
+                    "data": { "values": [{}] },
+                    "mark": { "type": "text" },
+                    "encoding": {
+                        "text": {
+                            "value": ruleText,
+                        },
+                        "x": { "datum": ruleX },
+                        "color": { "value": "white" },
+                        "opacity": { "value": opacity },
+                        "y": { "value": -10, "axis": null }
+                    }
+                }
+
+
+            ]
+
+        }
+    }
+
+
+    function departmentJSON(ruleX=null, ruleText=null, department = null){
+        if(department == null) {
+            return ""
+        }
+        // strip department of everything but letters
+        stripped_department = department.split('').filter(char => /[a-zA-Z]/.test(char)).join('')
+        
+        
+        if (!ruleX) {
+            ruleX = 1000000
+            ruleText = ""
+            opacity = 0
+        }
+        else {
+            console.log("else")
+            opacity = 1
+        }
+        console.log(`ruleX: ${ruleX} ruleText: ${ruleText}`)
+        return {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "url": `https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/Notebooks/hist_data/departments/${stripped_department}.json`
+            },
+            "config": { "view": { "stroke": "transparent" } },
+            "background": null,
+            "width": 200,
+            "title": {
+                "text": `Within ${department}`,
+                "fontWeight": "normal",
+                "anchor": "start",
+                "offset": 10,
+                "color": "white"
+            },
+
+            "height": 75,
+            "layer": [
+                {
+                    "mark": "bar",
+
+                    "encoding": {
+                        "x": {
+                            "field": "bin_start",
+                            "bin": { "binned": true },
+                            "scale": {
+                                "domain": [0, 200000]
+                            },
+                            "axis": {
+                                "title": "Income",
+                                "labelColor": "white",
+                                "grid": false,
+                                "ticks": false,
+                                "domainColor": "white",
+                                "titleColor": "white"
+                            }
+
+                        },
+                        "x2": { "field": "bin_end" },
+                        "y": {
+                            "field": "count",
+                            "axis": null,
+                            "type": "quantitative"
+                        },
+                        "color": { "value": "white" }
+                    }
+
+
+                },
+                {
+                    "data": { "values": [{}] },
+                    "mark": { "type": "rule", "color": "white", "size": 2, "strokeDash": [8, 8] },
+                    "encoding": { "x": { "datum": ruleX, "type": "quantitative" }, "opacity": { "value": opacity } }
+                },
+
+                {
+                    "data": { "values": [{}] },
+                    "mark": { "type": "text" },
+                    "encoding": {
+                        "text": {
+                            "value": ruleText,
+                        },
+                        "x": { "datum": ruleX },
+                        "color": { "value": "white" },
+                        "opacity": { "value": opacity },
+                        "y": { "value": -10, "axis": null }
+                    }
+                }
+
+
+            ]
+
+        }
+    }
+
+
+
+
+                var vlSpec = {
+                    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                    "data": {
+                        "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/Notebooks/hist_data/chicago_hist.json"
+                    },
+                    "config": { "view": { "stroke": "transparent" } },
+                    "background": null,
+                    "width": 220,
+                    "height": 55,
+                    "title": {
+                        "text": "City of Chicago",
+                        "fontWeight": "normal",
+                        "anchor": "start",
+                        "offset": 10,
+                        "color": "white"
+                    },
+
+                    "mark": "bar",
+                    "encoding": {
+                        "x": {
+                            "field": "bin_start",
+                            "bin": { "binned": true },
+                            "axis": {
+                                "title": "Income",
+                                "labelColor": "white",
+                                "grid": false,
+                                "ticks": false,
+                                "domainColor": "white",
+                                "titleColor": "white"
+                            }
+
+                        },
+                        "x2": { "field": "bin_end" },
+                        "y": {
+                            "field": "count",
+                            "axis": null,
+                            "type": "quantitative"
+                        },
+                        "color": { "value": "white" }
+                    }
+                }
+                    ;
+        vegaEmbed('#vega1', chicagoJSON(), { actions: true });
+    
+</script>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;600&family=PT+Serif&family=Raleway:wght@200;300;400;600;700&display=swap');        
+        svg {
+            overflow: visible;
+            margin: 0 auto;
+            display: block
+        }
+
+        main{
+            padding-top: 50px;
+            width: 800px;
+        }
+
+        p {
+            font-family: 'PT Serif', serif;
+            font-size: 12;
+            padding-bottom: 18px;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+
+</head>
+<body>
+
+    <main>
+        <p id="first_p"> The scale below represents the range of incomes before tax for workers in the UK. At one end, the lowest earners (bottom 1%) make just £12,700, whilst the highest earners (top 1%) make £183,000 a year.  </p>
+        <svg id="firstSvg"> </svg>
+        <p style="opacity:0" id="second_p"> If instead you look at incomes after tax, the gap is not quite so large. The lowest earners pay no tax but the earnings of the top 1% fall to £121,000 - an average tax rate of 34%.  </p>   
+        <svg id="secondSvg"> 
+            <defs>
+                <marker id="startarrow" markerWidth="10" markerHeight="7" 
+                refX="10" refY="3.5" orient="auto">
+                  <polygon points="10 0, 10 7, 0 3.5" fill="brown" />
+                </marker>
+                <marker id="endarrow" markerWidth="10" markerHeight="7" 
+                refX="0" refY="3.5" orient="auto" markerUnits="strokeWidth">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="brown" />
+                </marker>
+              </defs>
+        </svg>
+
+    </main>
+    <button class="rounded-button" onclick="next()">Next</button>
+
+
+    <script>
+
+    var data = d3.range(50);
+
+    
+
+    var colors = d3.scaleQuantize()
+        .domain([0,50])
+        /*.range(
+            d3.range(0,1.01,0.02).map(i => {
+                return d3.schemeTableau10(i)
+            }));*/
+        .range(["#5E4FA2", "#3288BD", "#66C2A5", "#ABDDA4", "#E6F598", 
+            "#FFFFBF", "#FEE08B", "#FDAE61", "#F46D43", "#D53E4F", "#9E0142"]);
+
+
+
+    var firstSvg = d3.select("#firstSvg")
+        .attr("height", 100)
+        .attr("width", 625);
+    
+    var secondSvg = d3.select("#secondSvg")
+        .attr("height", 100)
+        .attr("width", 625);
+
+    function callOutRect(stepname, svg, scale_id, i, text_top, text_bottom){
+        special = d3.select(`#scale_${scale_id}_${i}`)
+            .transition()
+            .duration(500)
+            .attr("height", 90)
+            .style("opacity", 1)
+            .attr("class", `${stepname}_rect callout`)
+            .attr("y", -10)
+        svg.append("text")
+            .attr("class", `${stepname} callout`)
+            .attr("x", 10 + i*12)
+            .attr("y", -15)
+            .attr("font-family", "Outfit")
+            .attr("text-anchor", "middle")
+            .attr("font-size", "12px")
+            .text(text_top)
+            .style("font-weight", 500)
+            .style("opacity", 0)
+            .transition()
+            .duration(500)
+            .style("opacity", 1)
+            .delay(1000)
+        svg.append("text")
+            .attr("class", `${stepname} callout`)
+            .attr("x", 12 + i*12)
+            .attr("y", 92)
+            .attr("font-family", "Outfit")
+            .attr("text-anchor", "middle")
+            .attr("font-size", "12px")
+            .text(text_bottom)
+            .style("font-weight", 500)
+            .style("opacity", 0)
+            .transition()
+            .duration(500)
+            .style("opacity", 1)
+            .delay(1000)
+        
+    }
+
+    function callDown(stepname){
+        d3.selectAll(`.${stepname}_rect`)
+            .transition()
+            .duration(500)
+            .attr("y", 10)
+            .attr("height", 50)
+        d3.selectAll(`.${stepname}`)
+            .transition()
+            .duration(500)
+            .style("opacity", 0)
+            .remove()
+    }
+
+
+    STATS = {"median_bt": 26300, "user_i":35, "user_bt":35000, "user_i_at":20, "user_at":15000, "median_at": 23800}
+
+    steps = [ 
+        function(){    
+        var rects = firstSvg.selectAll(".rects")
+            .data(data)
+            .enter()
+            .append("rect")
+                .attr("y", 10)
+                .attr("height", 50)
+                .attr("x", (d,i)=>10 + i*12)
+                .attr("id", (d,i)=>"scale_1_" + i)
+                .attr("width", 5)
+                .attr("fill", d=>colors(d))
+                .attr("stroke", "gray")
+                .style("opacity", 0)
+                .transition()
+                .duration(1000)
+                .delay((d,i)=>i*25)
+                .style("opacity", 1);
+        firstSvg.append("text")
+            .attr("x", 10)
+            .attr("y", 73)
+            .attr("font-family", "Outfit")
+            .attr("font-size", "10px")
+            .text("Lowest Income")
+            .style("font-weight", 500)
+            .style("opacity", 0)
+            .transition()
+            .style("opacity", 1)
+            .duration(1000)
+            .delay(1250)
+        firstSvg.append("text")
+            .attr("x", 10)
+            .attr("y", 3)
+            .attr("font-family", "Outfit")
+            .attr("font-size", "10px")
+            .text("£12,700")
+            .style("font-weight", 500)
+            .style("opacity", 0)
+            .transition()
+            .style("opacity", 1)
+            .duration(1000)
+            .delay(1250)
+        firstSvg.append("text")
+            .attr("x", 603)
+            .attr("y", 73)
+            .attr("font-family", "Outfit")
+            .attr("font-size", "10px")
+            .attr("text-anchor", "end")
+            .text("Highest Income")
+            .style("font-weight", 500)
+            .style("opacity", 0)
+            .transition()
+            .duration(1000)
+            .style("opacity", 1)
+            .delay(1250);
+        firstSvg.append("text")
+            .attr("x", 603)
+            .attr("y", 3)
+            .attr("font-family", "Outfit")
+            .attr("font-size", "10px")
+            .attr("text-anchor", "end")
+            .text("£183,000")
+            .style("font-weight", 500)
+            .style("opacity", 0)
+            .transition()
+            .duration(1000)
+            .style("opacity", 1)
+            .delay(1250);
+        },
+            function(){
+                callOutRect("medStep", firstSvg, 1, 24, STATS.median_bt.toLocaleString('en-GB', {style: 'currency', currency: 'GBP'}), "Median")
+                callOutRect("userStep", firstSvg, 1, Math.round(STATS.user_i/2), STATS.user_bt.toLocaleString('en-GB', {style: 'currency', currency: 'GBP'}), "You")
+                
+                // append text to first_p, adding to the end
+                d3.select("#first_p")
+                    .insert("span", ":first-child")
+                    .html(`An income of ${STATS.user_bt.toLocaleString("en-GB", {style: "currency", currency: "GBP"})} lies in the top ${100-STATS.user_i}% of incomes.`)
+                    .attr("id", "first_p_1")
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(500)
+                    .style("opacity", 1)
+
+            },
+            function(){
+                callDown("medStep")
+
+                // a second scale
+                var rects = secondSvg.selectAll(".rects")
+                    .data(data)
+                    .enter()
+                    .append("rect")
+                        .attr("y", 10)
+                        .attr("height", 50)
+                        .attr("x", (d,i)=>10 + i*12)
+                        .attr("id", (d,i)=>"scale_2_" + i)
+                        .attr("width", 5)
+                        .attr("fill", d=>colors(d))
+                        .attr("stroke", "gray")
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(1000)
+                        .delay((d,i)=>i*25)
+                        .style("opacity", 1);
+                secondSvg.append("text")
+                    .attr("x", 10)
+                    .attr("y", 73)
+                    .attr("font-family", "Outfit")
+                    .attr("font-size", "10px")
+                    .text("Lowest Income")
+                    .style("font-weight", 500)
+                    .style("opacity", 0)
+                    .transition()
+                    .style("opacity", 1)
+                    .duration(1000)
+                    .delay(1250)
+                secondSvg.append("text")
+                    .attr("x", 10)
+                    .attr("y", 3)
+                    .attr("font-family", "Outfit")
+                    .attr("font-size", "10px")
+                    .text("£12,700")
+                    .style("font-weight", 500)
+                    .style("opacity", 0)
+                    .transition()
+                    .style("opacity", 1)
+                    .duration(1000)
+                    .delay(1250)
+                secondSvg.append("text")
+                    .attr("x", 603)
+                    .attr("y", 73)
+                    .attr("font-family", "Outfit")
+                    .attr("font-size", "10px")
+                    .attr("text-anchor", "end")
+                    .text("Highest Income")
+                    .style("font-weight", 500)
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(1000)
+                    .style("opacity", 1)
+                    .delay(1250);
+                secondSvg.append("text")
+                    .attr("x", 603)
+                    .attr("y", 3)
+                    .attr("font-family", "Outfit")
+                    .attr("font-size", "10px")
+                    .attr("text-anchor", "end")
+                    .text("£121,000")
+                    .style("font-weight", 500)
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(1000)
+                    .style("opacity", 1)
+                    .delay(1250);
+                d3.select("#second_p")
+                    .transition()
+                    .duration(500)
+                    .style("opacity", 1)
+
+                callOutRect("medStep", secondSvg, 2, 24, STATS.median_at.toLocaleString('en-GB', {style: 'currency', currency: 'GBP'}), "Median")
+                callOutRect("userStep", secondSvg, 2, Math.round(STATS.user_i_at/2), STATS.user_at.toLocaleString('en-GB', {style: 'currency', currency: 'GBP'}), "You")
+
+            },
+            function(){
+                callDown("medStep");
+
+                min_i = Math.round(Math.min(STATS.user_i, STATS.user_i_at)/2)
+                max_i = Math.round(Math.max(STATS.user_i, STATS.user_i_at)/2)
+                secondSvg.append("line")
+                    .attr("x1", (min_i+1)*12+11)
+                    .attr("x2", (max_i-1)*12+9)
+                    .attr("y1", 0)
+                    .attr("y2", 0)
+                    .attr("stroke-width","1")
+                    .attr("stroke", "gray")
+                    .attr("marker-end", "url(#endarrow)")
+                    .attr("marker-start", "url(#startarrow)");
+                d3.select("#second_p")
+                    .insert("span", ":first-child")
+                    .html(d => {
+                        text = "by "
+                        
+                    })
+                    .attr("id", "second_p_1")
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(500)
+                    .style("opacity", 1)
+
+
+            }
+        ]
+
+
+
+
+
+    steps[0]();
+
+    step_i = 0;
+    function next(){
+        step_i++;
+        if (step_i < steps.length){
+            steps[step_i]();
+        }
+    }
+
+    </script>
+    
+</body>
+</html>

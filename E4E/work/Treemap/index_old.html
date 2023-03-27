@@ -64,11 +64,6 @@ rect.parent {
 .children:hover rect.child {
   fill: #bbb;
 }
-/* Toplayer */
-.ptext {  
-  font-size: 24;
-  font-weight: bold;
-}
 
 </style>
 </head>
@@ -278,44 +273,25 @@ function main(o, data) {
     g.append("rect")
         .attr("class", "parent")
         .call(rect);
-    
-    //////////
 
-/*     var t = g.append("text")
-      .attr("class", "toplayer ptext")
-      .attr("dy", ".75em")
-      .attr("x", function(d) { return x(d.x) + 6; })
-      .attr("y", function(d) { return y(d.y) + 6; })
-      .text(function(d) { 
+    var t = g.append("text")
+        .attr("class", "ptext")
+        .attr("dy", ".75em")
+    t.append("tspan")
+        .text(function(d) { return formatNumber(d.value); });
+    first_line_tspans = t.append("tspan") // first line t-span
+        .attr("dy", "1.0em")
+        .text(function(d) { 
           return d.key; })
-      .each(wrap((x(d.x + d.dx) - x(d.x)))); */
-
-    var t = g.append("foreignObject")
-      //.attr("x", function(d) { return x(d.x) ; })
-      .attr("x", function(d) { return x(d.x); })
-      .attr("y", function(d) { return y(d.y) + 6; })
-      .attr("width", function(d){
-        return (x(d.x + d.dx) - x(d.x))
-      })
-      .attr("height", function(d){
-        return (y(d.y + d.dy) - y(d.y))
-      })
-      .append("xhtml:div")
-        .style("color", "darkOrange")
-        .attr("id", function(d){
-          return("divtitle_"+d.key.replaceAll(" ", "_"));
-        })
-        .style("text-align", "left")
-        .attr("class", "ptext divText")
-        .style("width", "100%")
-        .style("height", "100%")
-        .style("padding", "5px")
-        .style("overflow-y", "auto")
-        .html(function(d) { 
-          return d.key; });
-
+    second_line_tspans = t.append("tspan") // first line t-span
+        .attr("dy", "1.0em")
+        .text(function(d) { 
+          // create a copy of d.key
+          return "Depa"; })
     
-    /////////
+    t.call(text);
+
+  
     g.selectAll("rect")
         .style("fill", function(d) { return color(d.key); });
 
@@ -340,18 +316,10 @@ function main(o, data) {
       // Fade-in entering text.
       g2.selectAll("text").style("fill-opacity", 0);
 
-/*       // Transition to the new view.
+      // Transition to the new view.
       t1.selectAll(".ptext").call(text).style("fill-opacity", 0);
       t1.selectAll(".ctext").call(text2).style("fill-opacity", 0);
       t2.selectAll(".ptext").call(text).style("fill-opacity", 1);
-      t2.selectAll(".ctext").call(text2).style("fill-opacity", 1);
-      t1.selectAll("rect").call(rect);
-      t2.selectAll("rect").call(rect); */
-
-      // Transition to the new view.
-      t1.selectAll(".ptext").call(text).style("opacity", 0);
-      t1.selectAll(".ctext").call(text2).style("fill-opacity", 0);
-      t2.selectAll(".ptext").call(text).style("opacity", 1);
       t2.selectAll(".ctext").call(text2).style("fill-opacity", 1);
       t1.selectAll("rect").call(rect);
       t2.selectAll("rect").call(rect);
@@ -369,21 +337,31 @@ function main(o, data) {
   function text(text) {
     //want to wrap this
     //top-layer text
-/*     text.selectAll("tspan")
+    text.each(
+      function(d){
+        //console.log(d);
+        
+      }
+    );
+    text.selectAll("tspan")
         .attr("x", function(d) { 
           return x(d.x) + 6; })
- */    text.attr("x", function(d) { return x(d.x) + 6; })
+    text.attr("x", function(d) { return x(d.x) + 6; })
         .attr("y", function(d) { return y(d.y) + 6; })
+        .style("font-size", function(d){
+          let fs = "18"
+          return(fs)
+        })
         .style("font-style", "bold")
-        /* .style("opacity", function(d) { 
+        .style("opacity", function(d) { 
 
           //console.log( "width:" + (x(d.x + d.dx) - x(d.x)) )
           //console.log( "height:" + (x(d.y + d.dy) - x(d.y)) )
 
           //console.log(this.getBBox());
 
-          return this.getComputedTextLength() < x(d.x + d.dx) - x(d.x) ? 1 : 0;  
-        }); */
+          return this.getComputedTextLength() < x(d.x + d.dx) - x(d.x) ? 1 : 0; 
+        });
     }
 
   function text2(text) {

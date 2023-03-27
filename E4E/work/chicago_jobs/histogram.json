@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "chicago_jobs.json"},
+    "width": 200,
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "bin": true,
+        "field": "Income"
+      },
+      "y": {"aggregate": "count"},
+      "color": {"value":"white"}
+    }
+}
+  

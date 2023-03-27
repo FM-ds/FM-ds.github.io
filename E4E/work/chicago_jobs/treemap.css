@@ -1,0 +1,47 @@
+.label{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    pointer-events: none;
+}
+.container {
+    display: flex;
+  }
+  
+  #tree {
+  }
+  
+  #legend {
+    flex: 1;
+    background-color: lightgreen;
+  }
+  
+
+.selected_panel {
+    width: 250px;
+    border-radius: 0px;
+    border-color: grey;
+    padding: 10px;
+    background-color: rgb(117, 164, 58);
+  }
+  
+  .selected_panel h5 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: white;
+  }
+  .selected_panel h6 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  .histo{
+    margin: 0 !important;
+  }
