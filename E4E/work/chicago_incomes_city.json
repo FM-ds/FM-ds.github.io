@@ -153,7 +153,7 @@
                 "field": "Real Income",
                 "type": "quantitative",
                 "scale": {"zero": false},
-                "axis": {"title": "Real Income (£)"}
+                "axis": {"title": "Real Income (2021 $)"}
               },
               "color": {
                 "condition": [
