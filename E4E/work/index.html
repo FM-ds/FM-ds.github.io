@@ -99,7 +99,7 @@
     </section>
     <section>
         <div class="graphDesc">
-            <h2> Wages in Chicago </h2>
+            <h2> City Workers in Chicago </h2>
         
             <summary> 
                  Located <a href="chicago_jobs/index.html">here</a> 
@@ -111,6 +111,34 @@
             <iframe src="chicago_jobs/index.html" style="border: none" allowtransparency="true" width="1000px" height="800px"></iframe>
         </div>
     </section>
+    <section>
+        <div class="graphDesc">
+            <h2> Income in Chicago </h2>
+        
+            <summary> 
+                 Option One: City Census Tracts only
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="city_incomes_only"> </figure>
+        </br>
+    </section>
+    <section>
+        <div class="graphDesc">
+            <h2> Income in Chicago </h2>
+        
+            <summary> 
+                 Option One: Census Tracts for the City and its Collar Counties
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="city_with_collar"> </figure>
+        </br>
+    </section>
 
 
     <script>
@@ -119,6 +147,10 @@
         vegaEmbed('#us_incomes', "US_incomes.json");
         vegaEmbed('#brs_incomes', "Bristol_incomes.json");
         vegaEmbed('#oecd_incomes', "OECD_incomes.json")
+        vegaEmbed('#city_incomes_only', "chicago_incomes_city.json", {renderer: "svg"})
+        vegaEmbed('#city_with_collar', "chicago_collar_incomes.json", {renderer: "svg"})
+
+
 
 
     </script>
