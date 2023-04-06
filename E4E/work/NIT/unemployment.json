@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e4/Negative_Income_Tax_Results.csv"
+    },
+    "title": {
+      "anchor": "start",
+      "dx": 30,
+      "fontSize": 20,
+      "text": "How Families Responded",
+      "subtitle": [
+        " Change in Employment Rate, estimates from four Negative Income Tax Experiments ",
+        "Source: Robins, P. K. (1985)"
+      ]
+    },
+    "width": 400,
+    "height": 300,
+    "transform": [
+      {
+        "filter": "datum.Measure == 'Employment Rate' & datum.Group != 'Single Female' "
+      },
+      {
+        "calculate": " if(isNaN(datum.High), null, min(datum.High, 20))",
+        "as": "clippedHigh"
+      }
+    ],
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {"field": "Group", "axis": {"title": null, "labelAngle": 0}},
+          "y": {
+            "field": "Estimate",
+            "type": "quantitative",
+            "axis": {"title": "Change in Employment Rate (%)"},
+            "scale":{"domainMin":-0.18}
+          },
+          "xOffset": {"field": "Study"},
+          "color": {"field": "Study"},
+          "opacity": {"value": 1}
+        }
+      },
+      {
+        "mark": {"type": "text", "dy": 10},
+        "encoding": {
+          "x": {"field": "Group", "axis": {"title": null, "labelAngle": 0}},
+          "y": {
+            "field": "Estimate",
+            "type": "quantitative",
+            "axis": {"title": "Change in Employment Rate (%)"}
+          },
+          "xOffset": {"field": "Study"},
+          "color": {"field": "Study"},
+          "opacity": {"value": 1},
+          "text": {"field": "Estimate"}
+        }
+      }
+    ]
+  }

@@ -81,7 +81,8 @@ body {
   }
   @media screen and (min-width: 35rem) {
     .weekFigures p:not(:last-of-type) {
-      min-height: 90vh;
+      /* min-height: 90vh; */
+      
     }
   }
   
@@ -154,4 +155,33 @@ body {
 
   #mlSecond{
     width:1000px;
+  }
+
+  #NIT{
+    width: 1000px !important;
+    margin: auto;
+  }
+
+  #NIT h1{
+    font-family:  Helvetica-neue, Arial, sans-serif;
+    font-size: 24px;
+    padding-left: 100 ;
+  }
+
+  #NIT p{
+    font-size: 14px;
+  }
+
+  #NIT iframe{
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: block;
+  }
+
+  #taxDiagram{
+    margin: auto;
+  }
+  #taxDiagram div{
+    border: none !important
   }

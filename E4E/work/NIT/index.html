@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+<title> Negative Income Tax Experiments </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Negative Income Tax Experiments">
+
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+
+
+<style>
+body {
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+    font-family:  Helvetica-neue, Arial, sans-serif;
+    font-size: 12px;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#experimentLocations{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.experimentMap{
+    /*width: 400px;*/
+    /* height: 200px; */
+    /* border: 1px solid #000000; */
+    margin: 10px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+</style>
+</head>
+<body>
+    <div id="experimentLocations">
+        <figure class="experimentMap" id="experiment1">
+            <div>
+                <figure id="njmap"></figure>
+                <figure id="pamap"></figure>    
+            </div>
+            <caption>
+                <p> New-Jersey Experiment</p>
+                <p> (1968-1972) </p>
+            </caption>
+        </figure>
+
+        <figure class="experimentMap" id="experiment2">
+            <div>
+                <figure id="iamap"></figure>
+                <figure id="ncmap"></figure>    
+            </div>
+            <caption>
+                <p> Rural Experiment</p>
+                <p> (1969-1973) </p>
+            </caption>
+        </figure>
+
+        <figure class="experimentMap" id="experiment2">
+            <div>
+                <figure id="inmap"></figure>
+            </div>
+            <caption>
+                <p> Gary, IN Experiment</p>
+                <p> (1971-1974) </p>
+            </caption>
+        </figure>
+
+        <figure class="experimentMap" id="experiment2">
+            <div>
+                <figure id="wamap"></figure>
+                <figure id="comap"></figure>    
+            </div>
+            <caption>
+                <p> Seattle-Denver Experiment</p>
+                <p> (1971-1982)</p>
+            </caption>
+        </figure>
+
+    </div>
+
+<script>
+
+experiments = [
+    [{"state":"nj", "counties": ["Mercer", "Passaic", "Hudson"]}, {"state": "pa", "counties" : ["Lackawana"]}],
+    [{"state":"ia", "counties": ["Calhoun", "Pocahontas"]}, {"state": "nc", "counties" : ["Duplin"]}],
+    [{"state":"wa", "counties": ["King"]}, {"state": "co", "counties" : ["Denver"]}],
+    [{"state":"in", "counties": ["Gary"]}]
+]
+
+// for each experiment in experiments, append a new figure to the experimentLocations div with the id experiment1, experiment2, etc. and within each 
+
+
+vegaEmbed("#njmap", "state_maps/nj.json", {"actions": false, renderer: "svg"})
+vegaEmbed("#pamap", "state_maps/pa.json", {"actions": false, renderer: "svg" })
+
+vegaEmbed("#ncmap", "state_maps/nc.json", {"actions": false, renderer: "svg"})
+vegaEmbed("#iamap", "state_maps/ia.json", {"actions": false, renderer: "svg" })
+
+vegaEmbed("#inmap", "state_maps/in.json", {"actions": false, renderer: "svg" })
+
+vegaEmbed("#wamap", "state_maps/wa.json", {"actions": false, renderer: "svg"})
+vegaEmbed("#comap", "state_maps/co.json", {"actions": false, renderer: "svg" })
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+
+.container {
+    display: flex;
+}
+
+h1{
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+h2{
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h3{
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-left: 10px;
+    margin-top: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+h6 {
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+p{
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(81, 81, 81);
+}
+
+main {
+    width: 660px;
+}
+
+form {
+    /*Center */
+    padding-left: 0px;
+    font-size: 12;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 440px;
+}
+
+#weeklyIncome {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: auto;
+}
+
+.formRow input {
+    border: 0;
+    height: 35px;
+    font-size: 32px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.smallSuffix {
+    font-size: 16px;
+}
+#incomeInput{
+    font-size: 32px;
+    font-family: Helvetica, Arial, sans-serif;
+    /* Stroke only on bottom */
+    border-bottom: 1px solid #000;
+}
+
+.formRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.formRow *{
+    width: 50%;
+}
+
+#secondPane{
+    border-left: 1px solid black;
+    width: 200px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+
+</head>
+<body>
+
+<main>
+    <h1> Incomes in the UK </h1>
+    <h2> Where does yours lie? </h2>
+
+    <section class="container">
+        <figure id="weeklyIncome">
+
+        </figure>
+    </section>
+
+    <section style="width: 500px; margin: auto;" class="container">
+        <form onsubmit="return false">
+            <div class="formRow">
+                <label for="income">Income after taxes and benefits:</label>
+                <div class="inputContainer">
+                    <span id="incomeInput">
+                        £
+                        <input style="width: 60px" type="text" id="income" value=400 />
+                        <span class="smallSuffix"> a week </span>
+                    </span>
+                </div>
+            </div>
+            <label style="padding-left: 10px"> In your Household </label>
+            <div class="formRow">
+                <div>
+                    <span id="adultInput">
+                        <input type="text" style="width: 35px" id="adults" value=1 />
+                        Adults
+                    </span>
+                </div>
+
+                <div>
+                    <span id="childrenInput">
+                        <input type="text" style="width: 35px" id="children" value=0 />
+                        Children
+                    </span>
+                </div>
+            </div>
+            <br />
+            <button onclick="updateVega()">Submit</button>
+        </form>
+        <div id="secondPane">
+            <h6>
+                Equivalised Household Income:
+            </h6>
+            <h3 id="incomeReadout">
+                
+            </h3>
+
+            <p>
+                Equivalisation adjusts household income to account for the different financial resource requirements of different household types. This allows for a fair comparison of the standard of living between households of different sizes and compositions
+            </p>
+        </div>
+    
+
+    </section>
+</main>
+
+
+<script>
+
+    unmodified_spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/Uncleaned%20Data/Household_Income.csv"
+  },
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "width": 500,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {"strokeWidth": 1, "color": "darkgreen"},
+        "interpolate": "step",
+        "color": {
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {"offset": 0, "color": "#f2fbef"},
+            {"offset": 1, "color": "darkgreen"}
+          ]
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "Income",
+          "title": "Equivalised Household Income",
+          "scale": {"domain": [0, 990]},
+          "type": "quantitative",
+          "axis": {"titleFontWeight": "normal", "grid": false, "labelAngle": 0}
+        },
+        "y": {
+          "field": "Count",
+          "axis": {
+            "titleFontWeight": "normal",
+            "grid": false,
+            "title": "Individuals (millions)"
+          },
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}
+
+function updateVega(){
+
+    unadj_income = document.getElementById('income').value
+    adults = document.getElementById('adults').value
+    children = document.getElementById('children').value
+
+    value = unadj_income/(0.67+0.33*(adults-1)+0.285*children)
+    console.log(value)
+
+    newSpec = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "description": "A simple bar chart with embedded data.",
+        "data": {
+            "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/Uncleaned%20Data/Household_Income.csv"
+        },
+        "config": {
+            "style": {
+                "cell": {
+                    "stroke": "transparent"
+                }
+            }
+        },
+        "width": 500,
+        "height": 300,
+
+        "layer": [
+            {
+                "mark": {"type": "area", "line": {"strokeWidth":1,"color": "darkgreen"},"interpolate": "step", "color":{
+                        "x1": 1,
+      "y1": 1,
+      "x2": 1,
+      "y2": 0,
+      "gradient": "linear",
+      "stops": [
+        {
+          "offset": 0,
+          "color": "#f2fbef"
+        },
+        {
+          "offset": 1,
+          "color": "darkgreen"
+        }
+      ]
+        }
+                },
+                "encoding": {
+                    "x": {
+                        "field": "Income",
+                        "title": "Equivalised Household Income",
+                        "scale": { "domain": [0, 990] },
+                        "type": "quantitative", "axis": { "titleFontWeight":"normal", "grid": false, "labelAngle": 0 }
+                    },
+                    "y": {
+                        "field": "Count",
+                        "axis": {
+                          "titleFontWeight":"normal",
+                            "grid": false,
+                            "title": "Individuals (millions)"
+                        },
+                        "type": "quantitative"
+                    }
+                }
+            },
+            {
+                "mark": { "type": "rule", "strokeWidth": 1, "strokeDash": [8,8] },
+                "encoding": {
+                    "x": {
+                        "datum": value, "scale": { "domain": [0, 990] }
+                    }
+                }
+            },
+            {
+                "mark": { "type": "text", "size": 12 },
+                "encoding": {
+                    "x": { "datum": value, "scale": { "domain": [0, 990] } },
+                    "y": { "value": -10 },
+                    "text": { "value": "You" }
+                }
+            }
+        ]
+    }
+
+
+    document.getElementById("weeklyIncome").innerHTML == ""
+    vegaEmbed('#weeklyIncome',newSpec)
+
+    // set incomeReadouts to the adjusted income, rounded to the nearest £1 and formatted with commas and a £ sign
+    document.getElementById("incomeReadout").innerHTML = "£" + value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " <span class='smallSuffix'> a week </span>"
+
+}
+
+vegaEmbed("#weeklyIncome", unmodified_spec)
+
+</script>
+
+</main>
+
+</body>
+</html>

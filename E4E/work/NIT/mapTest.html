@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shaded Counties</title>
+    <meta charset="utf-8" />
+    <script type='text/javascript'
+            src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AonPaYLT3gf6IncqTr1HjAZR5XYn65VYEug_7EpfdSKbjKAodzhyXfK8JiginGMz'
+            async defer></script>
+    <script type='text/javascript'>
+    var countyNames = ['Calhoun County, Iowa', 'Pocahontas County, Iowa'];
+    var countyPolygons = [];
+
+    function GetMap() {
+        var map = new Microsoft.Maps.Map('#myMap', {
+            center: new Microsoft.Maps.Location(42.3826, -94.6444),
+            zoom: 8
+        });
+
+        //Geocode each county name
+        for (var i = 0; i < countyNames.length; i++) {
+            geocodeCounty(countyNames[i], map);
+        }
+    }
+
+    function geocodeCounty(countyName, map) {
+        //Create a request to geocode the county name
+        var geocodeRequest = 'https://dev.virtualearth.net/REST/v1/Locations?query=' + encodeURIComponent(countyName) + '&key=AonPaYLT3gf6IncqTr1HjAZR5XYn65VYEug_7EpfdSKbjKAodzhyXfK8JiginGMz';
+
+        //Make a GET request to the Bing Maps REST services
+        fetch(geocodeRequest).then(function (response) {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Network response was not ok.');
+            }
+        }).then(function (data) {
+            //Extract the first result from the response
+            var result = data.resourceSets[0].resources[0];
+
+            //Create a polygon for the county using its bounding box
+            var countyPolygon = new Microsoft.Maps.Polygon([
+                new Microsoft.Maps.Location(result.bbox[0], result.bbox[1]),
+                new Microsoft.Maps.Location(result.bbox[0], result.bbox[3]),
+                new Microsoft.Maps.Location(result.bbox[2], result.bbox[3]),
+                new Microsoft.Maps.Location(result.bbox[2], result.bbox[1])
+            ], {
+                fillColor: 'rgba(200, 100, 100, 0.5)',
+                strokeColor: 'red',
+                strokeThickness: 0.5
+            });
+
+            //Add the polygon to the map
+            map.entities.push(countyPolygon);
+        }).catch(function (error) {
+            console.log('There was a problem with the fetch operation: ' + error.message);
+        });
+    }
+    </script>
+</head>
+<body>
+    <div id="myMap" style="position:relative;width:600px;height:400px;"></div>
+</body>
+</html>

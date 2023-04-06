@@ -139,6 +139,47 @@
             <figure id="city_with_collar"> </figure>
         </br>
     </section>
+    <section>
+        <div class="graphDesc">
+            <h2> Negative Income Tax Experiments </h2>
+        
+            <summary> 
+                 Negative income Taxes provide cash to residents earning under a certain threshold. A worker earning under the threshold would be given cash proportional to the difference between their income and a cutoff. The idea became popular in the 1960s with the 1962 publication of Milton Friedman's "Capitalism and Freedom". Between 1968 and 1982, the United States sponsored four negative income tax experiments. 
+                </br>
+                Data from <a href="https://econpapers.repec.org/article/uwpjhriss/v_3a20_3ay_3a1985_3ai_3a4_3ap_3a567-582.htm"> Robins, PK (1985) </a>
+            </summary>
+        </div>
+        
+        <div id="NIT" style="background-color: white; padding-left: 35px; "class="weekFigures">
+            <h1> Negative Income Taxes </h1>
+            Negative income Taxes provide cash to residents earning under a certain threshold. A worker earning under the threshold would be given cash proportional to the difference between their income and a cutoff, guaranteeing a minimum income while not disincentivizing work.
+            <div id="tax_diagram"> </div>
+            <h1> The Four Experiments </h1>
+            <p> The idea became popular in the 1960s with the 1962 publication of Milton Friedman's "Capitalism and Freedom". Between 1968 and 1982, the United States sponsored four negative income tax experiments. </p>
+            <iframe src="NIT/index.html" style="border: none" allowtransparency="true" width="1000px" height="800px"></iframe>
+            <h1> The Results </h1>
+            <p> The results of each study suggest a small negative effect on employment rates, and on quantity of work.  </p>
+            <div id="duration_results"></div>
+            <div id="unemployment_results"></div>
+
+        </br>
+    </section>
+    <section>
+        <div class="graphDesc">
+            <h2> Returns to Education in the US </h2>
+            <h3> Data here is from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4534330/">Tamborini et al</a> </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="returns_education"> </figure>
+        </br>
+        </div>
+    </section>
+
 
 
     <script>
@@ -149,8 +190,10 @@
         vegaEmbed('#oecd_incomes', "OECD_incomes.json")
         vegaEmbed('#city_incomes_only', "chicago_incomes_city.json", {renderer: "svg"})
         vegaEmbed('#city_with_collar', "chicago_collar_incomes.json", {renderer: "svg"})
-
-
+        vegaEmbed('#tax_diagram', "NIT/tax_diagram.json", {renderer: "svg"})
+        vegaEmbed('#duration_results', "NIT/work_duration.json", {renderer: "svg"})
+        vegaEmbed('#unemployment_results', "NIT/unemployment.json", {renderer: "svg"})
+        vegaEmbed('#returns_education', "education.json", {renderer: "svg"})
 
 
     </script>
