@@ -1,1 +1,201 @@
-{"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e4/Returns_To_Education.csv"}, "config": {"style": {"cell": {"stroke": "transparent"}}}, "title": {"anchor": "start", "dx": 30, "fontSize": 16, "text": "Lifetime Earnings by Education", "subtitle": [" Lifetime Earnings (Millions of USD) for Men and Women, with controls", "Estimates from Tamborini et al (2015)", ""], "subtitleFontSize": 12, "subtitleFontStyle": "italic"}, "hconcat": [{"title": {"text": "Women", "fontSize": 12, "fontWeight": "normal", "orient": "bottom"}, "transform": [{"filter": "datum.Gender == 'Women' "}], "layer": [{"width": 300, "height": 300, "mark": "bar", "encoding": {"x": {"field": "Education (new)", "axis": {"title": null, "labelAngle": 25}}, "y": {"scale": {"domain": [0, 3.1]}, "field": "Earnings", "type": "quantitative", "axis": {"title": "Lifetime Earnings (M USD)", "ticks": false}}, "xOffset": {"field": "Measure"}, "color": {"field": "Measure"}, "opacity": {"value": 1}}}, {"mark": {"type": "text", "dy": -10}, "encoding": {"x": {"field": "Education (new)", "axis": {"title": null, "labelAngle": 0, "ticks": false}}, "y": {"field": "Earnings", "type": "quantitative"}, "xOffset": {"field": "Measure"}, "color": {"field": "Measure"}, "opacity": {"value": 1}, "text": {"field": "Earnings"}}}]}, {"title": {"text": "Men", "fontSize": 12, "fontWeight": "normal", "orient": "bottom"}, "transform": [{"filter": "datum.Gender == 'Men' "}], "layer": [{"width": 300, "height": 300, "mark": "bar", "encoding": {"x": {"field": "Education (new)", "axis": {"title": null, "labelAngle": 25}}, "y": {"scale": {"domain": [0, 3.1]}, "field": "Earnings", "type": "quantitative", "axis": {"title": null, "ticks": false}}, "xOffset": {"field": "Measure"}, "color": {"field": "Measure"}, "opacity": {"value": 1}}}, {"mark": {"type": "text", "dy": -10}, "encoding": {"x": {"field": "Education (new)", "axis": {"title": null, "labelAngle": 0, "ticks": false}}, "y": {"field": "Earnings", "type": "quantitative"}, "xOffset": {"field": "Measure"}, "color": {"field": "Measure", "legend": {"orient": "top", "title": null}}, "opacity": {"value": 1}, "text": {"field": "Earnings"}}}]}]}
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e4/Returns_To_Education.csv"
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  },
+  "title": {
+    "anchor": "start",
+    "dx": 30,
+    "fontSize": 16,
+    "text": "Lifetime Earnings by Education",
+    "subtitle": [
+      " Lifetime Earnings (Millions of USD) for Men and Women, with controls",
+      "Estimates from Tamborini et al (2015)",
+      ""
+    ],
+    "subtitleFontSize": 12,
+    "subtitleFontStyle": "italic"
+  },
+  "hconcat": [
+    {
+      "title": {
+        "text": "Women",
+        "fontSize": 12,
+        "fontWeight": "normal",
+        "orient": "bottom"
+      },
+      "transform": [
+        {
+          "filter": "datum.Gender == 'Women' "
+        }
+      ],
+      "layer": [
+        {
+          "width": 300,
+          "height": 300,
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "Education (new)",
+              "axis": {
+                "title": null,
+                "labelAngle": 25
+              }
+            },
+            "y": {
+              "scale": {
+                "domain": [
+                  0,
+                  3.1
+                ]
+              },
+              "field": "Earnings",
+              "type": "quantitative",
+              "axis": {
+                "title": "Lifetime Earnings (M USD)",
+                "ticks": false
+              }
+            },
+            "xOffset": {
+              "field": "Measure"
+            },
+            "color": {
+              "field": "Measure"
+            },
+            "opacity": {
+              "value": 1
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "dy": -10
+          },
+          "encoding": {
+            "x": {
+              "field": "Education (new)",
+              "axis": {
+                "title": null,
+                "labelAngle": 0,
+                "ticks": false
+              }
+            },
+            "y": {
+              "field": "Earnings",
+              "type": "quantitative"
+            },
+            "xOffset": {
+              "field": "Measure"
+            },
+            "color": {
+              "field": "Measure"
+            },
+            "opacity": {
+              "value": 1
+            },
+            "text": {
+              "field": "Earnings"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Men",
+        "fontSize": 12,
+        "fontWeight": "normal",
+        "orient": "bottom"
+      },
+      "transform": [
+        {
+          "filter": "datum.Gender == 'Men' "
+        }
+      ],
+      "layer": [
+        {
+          "width": 300,
+          "height": 300,
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "Education (new)",
+              "axis": {
+                "title": null,
+                "labelAngle": 25
+              }
+            },
+            "y": {
+              "scale": {
+                "domain": [
+                  0,
+                  3.1
+                ]
+              },
+              "field": "Earnings",
+              "type": "quantitative",
+              "axis": {
+                "title": null,
+                "ticks": false
+              }
+            },
+            "xOffset": {
+              "field": "Measure"
+            },
+            "color": {
+              "field": "Measure"
+            },
+            "opacity": {
+              "value": 1
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "dy": -10
+          },
+          "encoding": {
+            "x": {
+              "field": "Education (new)",
+              "axis": {
+                "title": null,
+                "labelAngle": 0,
+                "ticks": false
+              }
+            },
+            "y": {
+              "field": "Earnings",
+              "type": "quantitative"
+            },
+            "xOffset": {
+              "field": "Measure"
+            },
+            "color": {
+              "field": "Measure",
+              "legend": {
+                "orient": "top",
+                "title": null
+              }
+            },
+            "opacity": {
+              "value": 1
+            },
+            "text": {
+              "field": "Earnings"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "description": "A chart titled 'Lifetime Earnings by Education' with subtitle ' Lifetime Earnings (Millions of USD) for Men and Women, with controls Estimates from Tamborini et al (2015) "
+}

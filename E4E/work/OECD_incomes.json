@@ -1,1 +1,241 @@
-{"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/OECD_incomes.csv"}, "width": 400, "height": 300, "encoding": {"x": {"field": "Year", "type": "temporal", "axis": {"title": null}}}, "title": {"text": "High Growth \u2014 Low Growth", "subtitle": ["Median disposable income, 2020 Prices, British Pounds", ""], "fontSize": 16, "subtitleFontStyle": "italic", "subtitleFontSize": 12, "anchor": "start", "color": "black"}, "transform": [{"timeUnit": "year", "field": "Year", "as": "Year"}], "layer": [{"encoding": {"color": {"condition": [{"test": "datum['Country'] == 'United Kingdom'", "value": "rgb(128,0,0)"}, {"param": "extraRegion", "value": "blue"}], "field": "Region name", "scale": {"range": ["rgb(200,200,200)"]}, "legend": null}, "y": {"field": "median_income", "type": "quantitative", "title": "Median Disposable Income (2020GBP)"}, "detail": {"field": "Country"}}, "layer": [{"transform": [{"filter": {"or": [{"field": "Country", "oneOf": ["United Kingdom", "Greece", "Italy", "Poland", "United States", "France", "Germany", "Sweden", "Netherlands", "Norway", "Spain", "Japan"]}, {"param": "extraRegion"}]}}], "mark": "line", "params": [{"name": "extraRegion", "select": {"type": "point", "fields": ["Country"]}, "bind": {"input": "select", "options": ["Greece", "Sweden", "United Kingdom", "Canada", "Netherlands", "Italy", "Mexico", "Denmark", "Germany", "Israel", "Japan", "New Zealand", "Finland", "Luxembourg", "Norway", "Hungary", "Czech Republic", "Australia", "United States", "France", "Belgium", "Estonia", "Iceland", "India", "Ireland", "Latvia", "Lithuania", "Portugal", "Slovak Republic", "Slovenia", "Poland", "Brazil", "Bulgaria", "Korea", "Romania", "Switzerland", "Austria", "Spain", "Russia", "Costa Rica", "China (People's Republic of)", "South Africa"], "name": "Region name"}, "value": "United States"}]}, {"transform": [{"filter": {"param": "hover", "empty": false}}, {"filter": {"or": [{"field": "Country", "equal": "United Kingdom"}, {"param": "extraRegion"}]}}], "mark": "point"}]}, {"transform": [{"filter": {"or": [{"field": "Country", "equal": "United Kingdom"}, {"param": "extraRegion"}]}}, {"pivot": "Country", "value": "median_income", "groupby": ["Year"]}], "mark": {"type": "rule", "tooltip": {"content": "data"}}, "encoding": {"opacity": {"condition": {"value": 0.3, "param": "hover", "empty": false}, "value": 0}}, "params": [{"name": "hover", "select": {"type": "point", "fields": ["Year"], "nearest": true, "on": "mouseover", "clear": "mouseout"}}]}]}
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/OECD_incomes.csv"
+  },
+  "width": 400,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null
+      }
+    }
+  },
+  "title": {
+    "text": "High Growth \u2014 Low Growth",
+    "subtitle": [
+      "Median disposable income, 2020 Prices, British Pounds",
+      ""
+    ],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "timeUnit": "year",
+      "field": "Year",
+      "as": "Year"
+    }
+  ],
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "condition": [
+            {
+              "test": "datum['Country'] == 'United Kingdom'",
+              "value": "rgb(128,0,0)"
+            },
+            {
+              "param": "extraRegion",
+              "value": "blue"
+            }
+          ],
+          "field": "Region name",
+          "scale": {
+            "range": [
+              "rgb(200,200,200)"
+            ]
+          },
+          "legend": null
+        },
+        "y": {
+          "field": "median_income",
+          "type": "quantitative",
+          "title": "Median Disposable Income (2020GBP)"
+        },
+        "detail": {
+          "field": "Country"
+        }
+      },
+      "layer": [
+        {
+          "transform": [
+            {
+              "filter": {
+                "or": [
+                  {
+                    "field": "Country",
+                    "oneOf": [
+                      "United Kingdom",
+                      "Greece",
+                      "Italy",
+                      "Poland",
+                      "United States",
+                      "France",
+                      "Germany",
+                      "Sweden",
+                      "Netherlands",
+                      "Norway",
+                      "Spain",
+                      "Japan"
+                    ]
+                  },
+                  {
+                    "param": "extraRegion"
+                  }
+                ]
+              }
+            }
+          ],
+          "mark": "line",
+          "params": [
+            {
+              "name": "extraRegion",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "Country"
+                ]
+              },
+              "bind": {
+                "input": "select",
+                "options": [
+                  "Greece",
+                  "Sweden",
+                  "United Kingdom",
+                  "Canada",
+                  "Netherlands",
+                  "Italy",
+                  "Mexico",
+                  "Denmark",
+                  "Germany",
+                  "Israel",
+                  "Japan",
+                  "New Zealand",
+                  "Finland",
+                  "Luxembourg",
+                  "Norway",
+                  "Hungary",
+                  "Czech Republic",
+                  "Australia",
+                  "United States",
+                  "France",
+                  "Belgium",
+                  "Estonia",
+                  "Iceland",
+                  "India",
+                  "Ireland",
+                  "Latvia",
+                  "Lithuania",
+                  "Portugal",
+                  "Slovak Republic",
+                  "Slovenia",
+                  "Poland",
+                  "Brazil",
+                  "Bulgaria",
+                  "Korea",
+                  "Romania",
+                  "Switzerland",
+                  "Austria",
+                  "Spain",
+                  "Russia",
+                  "Costa Rica",
+                  "China (People's Republic of)",
+                  "South Africa"
+                ],
+                "name": "Region name"
+              },
+              "value": "United States"
+            }
+          ]
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            },
+            {
+              "filter": {
+                "or": [
+                  {
+                    "field": "Country",
+                    "equal": "United Kingdom"
+                  },
+                  {
+                    "param": "extraRegion"
+                  }
+                ]
+              }
+            }
+          ],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "or": [
+              {
+                "field": "Country",
+                "equal": "United Kingdom"
+              },
+              {
+                "param": "extraRegion"
+              }
+            ]
+          }
+        },
+        {
+          "pivot": "Country",
+          "value": "median_income",
+          "groupby": [
+            "Year"
+          ]
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "tooltip": {
+          "content": "data"
+        }
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.3,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        }
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Year"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ],
+  "description": "A chart titled 'High Growth \u2014 Low Growth' with subtitle 'Median disposable income, 2020 Prices, British Pounds "
+}

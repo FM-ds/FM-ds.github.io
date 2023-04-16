@@ -1,1 +1,219 @@
-{"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "description": "A linked scatterplot showing British Labour Market Data.", "data": {"url": "UK_Beveridge_Data.csv"}, "title": {"text": "Britain's Beveridge Curve", "subtitle": ["Job Vacancy Rate and Unemployment Rate by Month, Both Seasonally Adjusted", "Source: Bureau of Labour Statistics", ""], "subtitleFontStyle": "italic", "subtitleFontSize": 12, "anchor": "start", "color": "black", "fontSize": 16}, "width": 500, "height": 350, "layer": [{"mark": "circle", "params": [{"name": "hovered", "select": {"type": "point", "fields": ["Period"], "toggle": false, "on": "mouseover"}}, {"name": "clicked", "select": {"type": "point", "fields": ["Period"]}}], "encoding": {"x": {"field": "Unemployment rate", "type": "quantitative", "scale": {"zero": false}, "axis": {"title": "Unemployment rate (%)"}}, "y": {"field": "Job openings rate", "type": "quantitative", "scale": {"zero": false}, "axis": {"title": "Job Vacancy Ratio (%)"}}, "tooltip": [{"title": "Date", "field": "Month"}], "color": {"field": "Period", "type": "nominal"}}}, {"mark": "line", "encoding": {"x": {"field": "Unemployment rate", "type": "quantitative", "scale": {"zero": false}}, "y": {"field": "Job openings rate", "type": "quantitative", "scale": {"zero": false}}, "opacity": {"condition": {"test": {"or": [{"param": "hovered", "empty": false}, {"param": "clicked", "empty": false}]}, "value": 0.8}, "value": 0}, "color": {"field": "Period", "type": "nominal"}, "order": {"field": "Date", "type": "temporal"}}}, {"mark": "line", "encoding": {"x": {"field": "Unemployment rate", "type": "quantitative", "scale": {"zero": false}}, "y": {"field": "Job openings rate", "type": "quantitative", "scale": {"zero": false}}, "opacity": {"condition": {"test": {"or": [{"param": "hovered", "empty": false}, {"param": "clicked", "empty": false}]}, "value": 0.8}, "value": 0}, "color": {"field": "Period", "type": "nominal"}, "order": {"field": "Date", "type": "temporal"}}}, {"transform": [{"filter": "slice(datum.Month, 0, 3) == 'Jan'"}], "mark": {"type": "text", "dy": -10}, "encoding": {"x": {"field": "Unemployment rate", "type": "quantitative", "scale": {"zero": false}}, "y": {"field": "Job openings rate", "type": "quantitative", "scale": {"zero": false}}, "opacity": {"condition": {"test": {"or": [{"param": "hovered", "empty": false}, {"param": "clicked", "empty": false}]}, "value": 0.6}, "value": 0}, "text": {"field": "Month"}}}]}
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A chart titled 'Britain's Beveridge Curve' with subtitle 'Job Vacancy Rate and Unemployment Rate by Month, Both Seasonally Adjusted Source: Bureau of Labour Statistics ",
+  "data": {
+    "url": "UK_Beveridge_Data.csv"
+  },
+  "title": {
+    "text": "Britain's Beveridge Curve",
+    "subtitle": [
+      "Job Vacancy Rate and Unemployment Rate by Month, Both Seasonally Adjusted",
+      "Source: Bureau of Labour Statistics",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16
+  },
+  "width": 500,
+  "height": 350,
+  "layer": [
+    {
+      "mark": "circle",
+      "params": [
+        {
+          "name": "hovered",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Period"
+            ],
+            "toggle": false,
+            "on": "mouseover"
+          }
+        },
+        {
+          "name": "clicked",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Period"
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Unemployment rate",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "title": "Unemployment rate (%)"
+          }
+        },
+        "y": {
+          "field": "Job openings rate",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "title": "Job Vacancy Ratio (%)"
+          }
+        },
+        "tooltip": [
+          {
+            "title": "Date",
+            "field": "Month"
+          }
+        ],
+        "color": {
+          "field": "Period",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Unemployment rate",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "Job openings rate",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "or": [
+                {
+                  "param": "hovered",
+                  "empty": false
+                },
+                {
+                  "param": "clicked",
+                  "empty": false
+                }
+              ]
+            },
+            "value": 0.8
+          },
+          "value": 0
+        },
+        "color": {
+          "field": "Period",
+          "type": "nominal"
+        },
+        "order": {
+          "field": "Date",
+          "type": "temporal"
+        }
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Unemployment rate",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "Job openings rate",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "or": [
+                {
+                  "param": "hovered",
+                  "empty": false
+                },
+                {
+                  "param": "clicked",
+                  "empty": false
+                }
+              ]
+            },
+            "value": 0.8
+          },
+          "value": 0
+        },
+        "color": {
+          "field": "Period",
+          "type": "nominal"
+        },
+        "order": {
+          "field": "Date",
+          "type": "temporal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "slice(datum.Month, 0, 3) == 'Jan'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": -10
+      },
+      "encoding": {
+        "x": {
+          "field": "Unemployment rate",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "Job openings rate",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "or": [
+                {
+                  "param": "hovered",
+                  "empty": false
+                },
+                {
+                  "param": "clicked",
+                  "empty": false
+                }
+              ]
+            },
+            "value": 0.6
+          },
+          "value": 0
+        },
+        "text": {
+          "field": "Month"
+        }
+      }
+    }
+  ]
+}
