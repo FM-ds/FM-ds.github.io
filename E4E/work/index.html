@@ -194,6 +194,38 @@
         </br>
         </div>
     </section>
+    <section>
+        <div class="graphDesc">
+            <h2> US Yields </h2>        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="US_yields"> </figure>
+            <figure id="yield_curve"> </figure>
+
+        </br>
+        </div>
+    </section>
+    <section>
+        <div class="graphDesc">
+            <h2> Who Holds America's Assets & Debt? </h2>        
+            <summary> International Holders of US Treasury Securities and Assets
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="Securities_holders"> </figure>
+            <figure id="assets"> </figure>
+
+
+        </br>
+        </div>
+    </section>
+
 
 
 
@@ -210,6 +242,12 @@
         vegaEmbed('#duration_results', "NIT/work_duration.json", {renderer: "svg"})
         vegaEmbed('#unemployment_results', "NIT/unemployment.json", {renderer: "svg"})
         vegaEmbed('#returns_education', "education.json", {renderer: "svg"})
+        vegaEmbed('#US_yields', "US_yields.json", {renderer: "svg"})
+        vegaEmbed('#yield_curve', "yield_curve.json", {renderer: "svg"})
+        vegaEmbed('#Securities_holders', "Securities_holders.json", {renderer: "svg"})
+        vegaEmbed('#assets', "assets.json", {renderer: "svg"})
+
+
 
 
     </script>

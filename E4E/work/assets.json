@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e5/US_Assets.csv"},
+    "title": {
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize":12,
+    "text": "Who Holds America's Assets?",
+    "subtitle": [
+      " Major Foreign Holders of US Assets",
+      "Data: US Treasury"
+    ]
+  },
+  "width":300,
+  "height":400,
+  "transform": [
+    {
+      "filter":"datum.Type != 'Total' & datum.Rank < 13"
+    },
+    {
+      "calculate": "datum.Value * 1000000000",
+      "as" : "Value"
+    }
+  ],
+  "mark": {"type":"bar"},
+  "encoding": {
+    "y": {"field": "Country", "sort": {"op": "sum", "order":"descending","field": "Value"}, "axis":{"title":null}},
+    "x": {"aggregate": "sum", "field": "Value", "axis":{"title":null, "titleFontWeight":"normal", "format":"$.2s"}},
+    "color": {"field": "Type", "legend":{"orient": "none", "columns":4,
+    "legendX":-100,
+    "legendY":-20,
+    "offset": 20,"title":null}},
+    "tooltip":[
+      {"field": "Country"},
+      {"field": "Type"},
+
+
+      {"field": "Value", "title":"Amount", "format":"$,"}
+    ]
+  }
+}

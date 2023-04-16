@@ -1,0 +1,175 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e5/yields.csv"
+    },
+    "width": 500,
+    "height": 350,
+    "title": {
+      "text": "US Bond Yields",
+      "subtitle": [
+        "Par Yield Curve Rates Since 2007, Recessions Shaded",
+        "Source: US Treasury",
+        ""
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 9,
+      "anchor": "start",
+      "color": "black"
+    },
+    "layer": [
+      {
+        "mark": {"type": "rect"},
+        "data": {
+          "values": [
+            {
+              "name": "Great Recession",
+              "start": 1196520540000,
+              "end": 1243864140000
+            },
+            {
+              "name": "COVID Recession",
+              "start": 1580568540000,
+              "end": 1585748940000
+            }
+          ]
+        },
+        "encoding": {
+          "x": {
+            "field": "start",
+            "type": "temporal",
+            "axis": {
+              "title": null,
+              "grid": false,
+              "ticks": false,
+              "labelSeparation": 10
+            }
+          },
+          "x2": {"field": "end"},
+          "color": {"value": "rgb(255,240,230)"}
+        }
+      },
+      {
+        "layer": [
+          {
+            "mark": {"type": "line"},
+            "encoding": {
+              "x": {
+                "field": "Date",
+                "type": "temporal",
+                "axis": {
+                  "title": null,
+                  "grid": false,
+                  "ticks": false,
+                  "labelSeparation": 10
+                }
+              },
+              "color": {
+                "field": "Maturity",
+                "scale": {
+                  "domain": ["3 Mo", "2 Yr", "10 Yr", "30 Yr"],
+                  "range": [
+                    "rgb(200,200,200)",
+                    "rgb(51,105,156)",
+                    "rgb(176,51,54)",
+                    "rgb(200,200,200)"
+                  ]
+                },
+                "legend": {"values": ["10 Yr", "2 Yr"]}
+              },
+              "y": {
+                "field": "Rate",
+                "type": "quantitative",
+                "axis": {"title": "Yield", "grid": false}
+              }
+            }
+          },
+          {
+            "mark": "point",
+            "transform": [{"filter": {"param": "hover", "empty": false}}],
+            "encoding": {
+              "x": {
+                "field": "Date",
+                "type": "temporal",
+                "axis": {
+                  "title": null,
+                  "grid": false,
+                  "ticks": false,
+                  "labelSeparation": 10
+                }
+              },
+              "color": {
+                "field": "Maturity",
+                "scale": {
+                  "domain": ["3 Mo", "2 Yr", "10 Yr", "30 Yr"],
+                  "range": [
+                    "rgb(200,200,200)",
+                    "rgb(51,105,156)",
+                    "rgb(176,51,54)",
+                    "rgb(200,200,200)"
+                  ]
+                },
+                "legend": {"values": ["10 Yr", "2 Yr"]}
+              },
+              "y": {
+                "field": "Rate",
+                "type": "quantitative",
+                "axis": {"title": "Yield", "grid": false}
+              }
+            }
+          }
+        ]
+      },
+      {
+        "mark": "rule",
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "temporal",
+            "axis": {
+              "title": null,
+              "grid": false,
+              "ticks": false,
+              "labelSeparation": 10
+            }
+          },
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {
+              "field": "Date",
+              "type": "temporal",
+              "format": "%B %Y",
+              "title": null
+            },
+            {"field": "10 Yr", "type": "quantitative", "format": ".2f"},
+            {"field": "2 Yr", "type": "quantitative", "format": ".2f"},
+            {"field": "3 Mo", "type": "quantitative", "format": ".2f"},
+            {"field": "30 Yr", "type": "quantitative", "format": ".2f"}
+          ]
+        },
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["Date"],
+              "nearest": true,
+              "on": "mouseover",
+              "clear": "mouseout"
+            }
+          }
+        ],
+        "transform": [{"pivot": "Maturity", "value": "Rate", "groupby": ["Date"]}]
+      }
+    ],
+    "transform": [
+      {"filter": "datum.Date>1138665600000"},
+      {
+        "calculate": " (datum.Maturity== '10 Yr' | datum.Maturity== '2 Yr') ? 1 : 0 ",
+        "as": "highlight"
+      }
+    ]
+  }

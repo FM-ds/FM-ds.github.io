@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e5/spread.csv"},
+  "width": 500,
+  "height": 350,
+  "title": {
+    "text": "US Yield Curve",
+    "subtitle": [
+      "10 Year - 2 year Spread, Recessions Shaded",
+      "Source: US Treasury",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "filter":"datum.Date>646794061000"
+    }
+  ],
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal", "axis":{"title":null, "grid": false, "ticks": false, "labelSeparation":10}}
+    },
+  "layer": [
+    
+    {
+      "mark":{"type": "rect"},
+      "data" : {"values": [
+        {"name": "Great Recession", "start": 1196520540000, "end":1243864140000},
+        {"name": "COVID Recession", "start": 1580568540000, "end":1585748940000},
+        {"name": "Early 1990s Recession", "start": 646794061000, "end":667789261000},
+        {"name": "Early 2000s Recession", "start": 983408461000, "end":1004576461000}
+
+
+      ]},
+      "encoding": {
+        "x":{"field":"start", "type": "temporal"},
+        "x2":{"field":"end"},
+        "color":{"value":"rgb(255,240,230)"}
+      }
+    },
+        {
+      "mark": "rule",
+      "encoding": {
+        "y": {"datum":0.008},
+        "size": {"value": 1}
+      }
+    },
+    {
+      "encoding": {
+        "y": {"field": "Value", "type": "quantitative", "axis":{"title":"Yield", "grid": false}},
+        "color": {"value":"rgb(128,0,0)"}
+      },
+      "layer": [
+        {"mark": {
+          "type" : "line", "interpolate":"step"
+          }},
+        {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+      ]
+    },
+    {
+      "transform": [{"pivot": "Measure", "value": "Value", "groupby": ["Date"]}],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Date", "type":"temporal", "format":"%B %Y", "title":null},
+          {"field": "Spread", "type": "quantitative", "format":".2f"}
+        ]
+      },
+      "params": [{
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "clear": "mouseout"
+        }
+      }]
+    }
+  ]
+}
