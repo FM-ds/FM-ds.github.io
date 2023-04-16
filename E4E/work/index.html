@@ -227,6 +227,40 @@
         </div>
     </section>
 
+    <section>
+        <div class="graphDesc">
+            <h2> US Federal Receipts over Time </h2>        
+            <summary> Two Versions here: since 1790 and Since 1934
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="US_Tax_longrun"> </figure>
+        </br>
+            <figure id="US_Tax_1934"> </figure>
+
+
+        </br>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> International Tax Revenue </h2>        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="intl_tax"> </figure>
+
+
+        </br>
+        </div>
+    </section>
+
 
 
 
@@ -247,6 +281,11 @@
         vegaEmbed('#yield_curve', "yield_curve.json", {renderer: "svg"})
         vegaEmbed('#Securities_holders', "Securities_holders.json", {renderer: "svg"})
         vegaEmbed('#assets', "assets.json", {renderer: "svg"})
+        vegaEmbed('#US_Tax_longrun', "US_Tax_longrun.json", {renderer: "svg"})
+        vegaEmbed('#US_Tax_1934', "US_Tax_1934.json", {renderer: "svg"})
+        vegaEmbed('#intl_tax', "intl_tax.json", {renderer: "svg"})
+
+
 
 
 

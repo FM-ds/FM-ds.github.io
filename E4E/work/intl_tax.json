@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e6/intl_tax.csv"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleFontStyle": "italic",
+      "text": "Tax revenue by country",
+      "subtitle": [
+        " Tax Revenue of Selected Countries, as a Percentage of GDP",
+        "Data: World Bank",
+        ""
+      ]
+    },
+    "width": 300,
+    "height": 400,
+    "mark": {"type": "bar"},
+    "encoding": {
+      "y": {
+        "field": "Country",
+        "sort": {"field": "Value", "order": "descending"},
+        "axis": {"title": null}
+      },
+      "x": {
+        "aggregate": "sum",
+        "field": "Value",
+        "axis": {"title": null, "titleFontWeight": "normal", "format": ".0%"}
+      },
+      "tooltip": [
+        {"field": "Country"},
+        {"field": "Value", "title": "Revenue (% of GDP)", "format": ".2%"}
+      ],
+      "color": {"value": "rgb(128,0,0)"}
+    },
+    "description": "A chart titled 'Who Holds America's Debt?' with subtitle ' Major Foreign Holders of US Treasury Securities Data: US Treasury ",
+    "transform": [{"calculate": "datum.Value /100", "as": "Value"}]
+  }
