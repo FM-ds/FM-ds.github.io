@@ -12,8 +12,9 @@
         "Source: US Treasury",
         ""
       ],
+      "fontSize": 16,
+      "subtitleFontSize": 12,
       "subtitleFontStyle": "italic",
-      "subtitleFontSize": 9,
       "anchor": "start",
       "color": "black"
     },

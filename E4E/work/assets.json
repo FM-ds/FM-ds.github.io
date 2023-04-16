@@ -3,12 +3,14 @@
   "data": {"url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e5/US_Assets.csv"},
     "title": {
     "anchor": "start",
-    "fontSize": 18,
-    "subtitleFontSize":12,
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "subtitleFontStyle": "italic",
     "text": "Who Holds America's Assets?",
     "subtitle": [
       " Major Foreign Holders of US Assets",
-      "Data: US Treasury"
+      "Data: US Treasury",
+      ""
     ]
   },
   "width":300,

@@ -5,12 +5,13 @@
     },
     "title": {
       "anchor": "start",
-      "fontSize": 18,
+      "fontSize": 16,
       "subtitleFontSize": 12,
+      "subtitleFontStyle": "italic",
       "text": "Who Holds America's Debt?",
       "subtitle": [
         " Major Foreign Holders of US Treasury Securities",
-        "Data: US Treasury"
+        "Data: US Treasury",""
       ]
     },
     "width": 300,
