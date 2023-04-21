@@ -284,12 +284,24 @@
             "value": 0
           },
           "tooltip": [
-            {"field": "Year", "type": "temporal", "format": "%Y", "title": null},
+            {"field": "Year", "type": "temporal", "format": "%Y"},
             {
               "field": "Balance_GDP",
               "type": "quantitative",
               "format": ".2%",
-              "title": "Balance"
+              "title": "Overall"
+            },
+            {
+              "field": "Goods_Balance_GDP",
+              "type": "quantitative",
+              "format": ".2%",
+              "title": "Services"
+            },
+            {
+              "field": "Services_Balance_GDP",
+              "type": "quantitative",
+              "format": ".2%",
+              "title": "Services"
             }
           ]
         },
