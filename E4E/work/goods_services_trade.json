@@ -7,15 +7,20 @@
     "height": 350,
     "title": {
       "text": "US Trade Balance",
-      "subtitle": ["Goods and Services, Percentage of GDP, Recessions Shaded", "Data: FRED", ""],
+      "subtitle": [
+        "Goods and Services, Percentage of GDP, Recessions Shaded",
+        "Data: FRED",
+        ""
+      ],
       "fontSize": 16,
       "subtitleFontSize": 12,
       "subtitleFontStyle": "italic",
       "anchor": "start",
       "color": "black"
     },
-        "transform": [{"filter": "datum.Start > 189302400000 | datum.Year > 189302400000 "}],
-
+    "transform": [
+      {"filter": "datum.Start > 189302400000 | datum.Year > 189302400000 "}
+    ],
     "layer": [
       {
         "mark": {"type": "rect"},
@@ -94,13 +99,16 @@
         "layer": [
           {
             "layer": [
-                            {
-                        "transform": [{"filter": "datum.Year > -189302400000 & datum.Series=='Services_Balance_GDP'" }],
-
+              {
+                "transform": [
+                  {
+                    "filter": "datum.Year > -189302400000 & datum.Series=='Services_Balance_GDP'"
+                  }
+                ],
                 "mark": {
-                    "type": "area",
-                    "interpolate": "step",
-                                    "color": {
+                  "type": "area",
+                  "interpolate": "linear",
+                  "color": {
                     "x1": 1,
                     "y1": 0,
                     "x2": 1,
@@ -111,8 +119,7 @@
                       {"offset": 1, "color": "#87d474"}
                     ]
                   },
-                  "line":{"color":"darkseagreen"}
-
+                  "line": {"color": "darkseagreen"}
                 },
                 "encoding": {
                   "x": {
@@ -133,15 +140,16 @@
                   }
                 }
               },
-
-              
               {
-                        "transform": [{"filter": "datum.Year > -189302400000 & datum.Series=='Goods_Balance_GDP'" }],
-
+                "transform": [
+                  {
+                    "filter": "datum.Year > -189302400000 & datum.Series=='Goods_Balance_GDP'"
+                  }
+                ],
                 "mark": {
-                    "type": "area",
-                    "interpolate": "step",
-                                    "color": {
+                  "type": "area",
+                  "interpolate": "linear",
+                  "color": {
                     "x1": 1,
                     "y1": 0,
                     "x2": 1,
@@ -152,9 +160,7 @@
                       {"offset": 1, "color": "#ec8282"}
                     ]
                   },
-                  "line":{"color":"indianred"}
-
-
+                  "line": {"color": "indianred"}
                 },
                 "encoding": {
                   "x": {
@@ -172,16 +178,12 @@
                     "type": "quantitative",
                     "axis": {"title": null, "grid": false, "format": "$2s"},
                     "stack": "zero"
-                  }                }
+                  }
+                }
               },
               {
-                        "transform": [{"filter": "datum.Year > -189302400000"  }],
-
-                "mark": {
-                    "type": "line",
-                    "interpolate": "step"
-
-                },
+                "transform": [{"filter": "datum.Year > -189302400000"}],
+                "mark": {"type": "line", "interpolate": "linear"},
                 "encoding": {
                   "x": {
                     "field": "Year",
@@ -198,21 +200,21 @@
                     "type": "quantitative",
                     "axis": {"title": null, "grid": false, "format": "$2s"}
                   },
-                  "color":{
-                    "field":"Series", 
-                    "scale":{
-                      "range": ["rgb(50,50,50)","indianred", "darkseagreen"],
+                  "color": {
+                    "field": "Series",
+                    "scale": {
+                      "range": ["rgb(50,50,50)", "indianred", "darkseagreen"]
                     },
-                    
-                    "legend":{  
-                      "legendX":-36,
-                      "legendY":-20,
-                      "title":null,
-                      "columns":3,
+                    "legend": {
+                      "legendX": -36,
+                      "legendY": -20,
+                      "title": null,
+                      "columns": 3,
                       "orient": "none",
                       "labelExpr": "datum.label == 'Goods_Balance_GDP' ? 'Goods' : datum.label == 'Services_Balance_GDP' ? 'Services' :datum.label == 'Balance_GDP' ? 'Total' : 'Video Game' "
-}
-                  }                }
+                    }
+                  }
+                }
               }
             ]
           },
@@ -234,11 +236,16 @@
                 "type": "quantitative",
                 "axis": {"title": null, "grid": false, "format": "$2s"}
               },
-              "color":{"value":"grey"}            },
+              "color": {"value": "grey"}
+            },
             "transform": [{"filter": {"param": "hover", "empty": false}}]
           }
         ],
-        "transform": [{"filter": " datum.Series == 'Goods_Balance_GDP' | datum.Series == 'Services_Balance_GDP' | datum.Series == 'Balance_GDP'  "}]
+        "transform": [
+          {
+            "filter": " datum.Series == 'Goods_Balance_GDP' | datum.Series == 'Services_Balance_GDP' | datum.Series == 'Balance_GDP'  "
+          }
+        ]
       },
       {
         "mark": "line",
@@ -277,12 +284,7 @@
             "value": 0
           },
           "tooltip": [
-            {
-              "field": "Year",
-              "type": "temporal",
-              "format": "%Y",
-              "title": null
-            },
+            {"field": "Year", "type": "temporal", "format": "%Y", "title": null},
             {
               "field": "Balance_GDP",
               "type": "quantitative",
