@@ -113,7 +113,7 @@
                 "mark": {
                   "opacity": 0.7,
                   "type": "area",
-                  "interpolate": "step",
+                  "interpolate": "linear",
                   "color": {
                     "x1": 1,
                     "y1": 0,
@@ -147,7 +147,7 @@
               {
                 "mark": {
                   "type": "line",
-                  "interpolate": "step",
+                  "interpolate": "linear",
                   "color": "rgb(128,0,0)"
                 },
                 "encoding": {
