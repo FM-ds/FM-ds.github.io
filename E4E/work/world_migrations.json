@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e8/world_migrants.csv"
+  },
+  "width": 500,
+  "height": 350,
+  "title": {
+    "text": "Migrants Since 1970",
+    "subtitle": [
+      "Migrants as a percentage of world population",
+      "Data: UN",
+      ""
+    ],
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "subtitleFontStyle": "italic",
+    "anchor": "start",
+    "color": "black"
+  },
+  "layer": [
+    {
+      "layer": [
+        {
+          "mark": {"type": "line", "interpolate": "linear"},
+          "transform": [{"filter": "datum.Series == 'Percentage'"}],
+          "encoding": {
+            "x": {"field": "Year", "axis": {"title": null}},
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "scale": {"domainMax": 0.04},
+              "axis": {"title": null, "grid": false, "format": "%"}
+            },
+            "color": {"value": "rgb(128,0,0)"}
+          }
+        },
+        {
+          "mark": {"type": "text", "dy": -15},
+          "encoding": {
+            "x": {"field": "Year", "axis": {"title": null}},
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "scale": {"domainMax": 0.04},
+              "axis": {"title": null, "grid": false, "format": "%"}
+            },
+            "color": {"value": "rgb(128,0,0)"},
+            "text": {"field": "Value", "format": ".1%"}
+          },
+          "transform": [{"filter": "datum.Series == 'Percentage'"}]
+        },
+        {
+          "mark": "point",
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "encoding": {
+            "x": {"field": "Year", "axis": {"title": null}},
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "scale": {"domainMax": 0.04},
+              "axis": {"title": null, "grid": false, "format": "%"}
+            },
+            "color": {"value": "rgb(128,0,0)"}
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {"field": "Year", "axis": {"title": null}},
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Year", "type": "quantitative", "title": null},
+          {"field": "Number", "type": "quantitative", "format": ",.4r"},
+          {"field": "Percentage", "type": "quantitative", "format": ".1%"}
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "transform": [{"pivot": "Series", "value": "Value", "groupby": ["Year"]}]
+    }
+  ],
+  "description": "A chart titled 'US Yield Curve' with subtitle '10 Year - 2 year Spread, Recessions Shaded Source: US Treasury ",
+  "transform": [
+    {
+      "calculate": "datum.Series == 'Percentage' ? datum.Value/100 : datum.Value",
+      "as": "Value"
+    }
+  ]
+}
