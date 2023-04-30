@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <h1> E4E: Work</h1>
+    <h1> E4E: Figures</h1>
 
 
     <section>
@@ -290,12 +290,27 @@
             <figure id="relative_US_balance"> </figure>
             <figure id="goods_services_trade"> </figure>
 
+        </br>
+        </div>
+    </section>
 
-
+    <section>
+        <div class="graphDesc">
+            <h2> Flows </h2>        
+            <summary>
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="world_immigration"> </figure>
+            <figure id="world_interactive_migration"> </figure>
+            <figure id="US_current_account"> </figure>
 
         </br>
         </div>
     </section>
+
 
 
 
@@ -323,7 +338,9 @@
         vegaEmbed('#nominal_US_balance', "nominal_US_balance.json", {renderer: "svg"})
         vegaEmbed('#relative_US_balance', "relative_US_balance.json", {renderer: "svg"})
         vegaEmbed('#goods_services_trade', "goods_services_trade.json", {renderer: "svg"})
-
+        vegaEmbed('#world_immigration', "world_immigration.json", {renderer: "svg"})
+        vegaEmbed('#world_interactive_migration', "world_interactive_migration.json", {renderer: "svg"})
+        vegaEmbed('#US_current_account', "US_current_account.json", {renderer: "svg"})
         
 
 

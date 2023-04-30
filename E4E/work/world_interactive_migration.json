@@ -1,0 +1,135 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e8/migration_pairs.json"
+    },
+    "width": 700,
+    "height": 300,
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+    "layer": [
+      {
+        "mark": {
+          "align": "left",
+          "type": "text",
+          "fontWeight": "bold",
+          "fontSize": 14
+        },
+        "encoding": {
+          "x": {"value": 80},
+          "y": {"value": -75},
+          "text": {"field": "formattedName", "type": "nominal"}
+        },
+        "transform": [
+          {
+            "calculate": "'Net Migration' + '—' + datum.origin",
+            "as": "formattedName"
+          },
+          {"window": [{"op": "rank", "as": "rank"}]},
+          {
+            "filter": "datum.origin_code == selectCountry.destination_code & datum.rank == 1"
+          }
+        ]
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontSize": 12,
+          "fontStyle": "italic",
+          "align": "left"
+        },
+        "encoding": {
+          "text": {"value": "Emigrants to minus Imigrants from, Data: UN"},
+          "x": {"value": 80},
+          "y": {"value": -60}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontSize": 12,
+          "fontStyle": "italic",
+          "align": "left"
+        },
+        "encoding": {
+          "text": {"value": "Click to Select Any Country"},
+          "x": {"value": 80},
+          "y": {"value": -45}
+        }
+      },
+      {
+        "mark": "geoshape",
+        "projection": {
+          "type": "naturalEarth1",
+          "clipExtent": [[60, 0], [1000, 1000]]
+        },
+        "encoding": {"color": {"value": "black"}, "opacity": {"value": 0.2}}
+      },
+      {
+        "mark": {
+          "type": "geoshape",
+          "stroke": "black",
+          "strokeOffset": 1,
+          "strokeWidth": 2
+        },
+        "projection": {
+          "type": "naturalEarth1",
+          "clipExtent": [[60, 0], [1000, 1000]]
+        },
+        "encoding": {"color": {"value": "white"}},
+        "transform": [
+          {"filter": "datum.destination_code == selectCountry.destination_code"}
+        ]
+      },
+      {
+        "params": [
+          {
+            "name": "selectCountry",
+            "value": 276,
+            "select": {
+              "type": "point",
+              "on": "click",
+              "nearest": false,
+              "fields": ["origin", "destination", "destination_code"]
+            }
+          }
+        ],
+        "mark": "geoshape",
+        "encoding": {
+          "color": {
+            "field": "net_flow",
+            "type": "quantitative",
+            "scale": {"scheme": "purplegreen", "domainMid": 0},
+            "legend": {
+              "orient": "none",
+              "direction": "horizontal",
+              "title": null,
+              "legendX": 80,
+              "legendY": -30
+            }
+          },
+          "tooltip": [
+            {"field": "destination", "title": "Country"},
+            {"field": "net_flow", "format": ",", "title": "Net Migration"}
+          ]
+        }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.destination_code != '10'"},
+      {
+        "filter": "isDefined(selectCountry.destination_code) ? datum.origin_code  == selectCountry.destination_code : datum.origin_code  == 826"
+      },
+      {"calculate": "pad(datum.destination_code, 3, '0', 'left')", "as": "id"},
+      {
+        "lookup": "id",
+        "from": {
+          "data": {
+            "url": "https://unpkg.com/world-atlas@1.1.4/world/110m.json",
+            "format": {"type": "topojson", "feature": "countries"}
+          },
+          "key": "id",
+          "fields": ["properties", "type", "geometry"]
+        }
+      }
+    ]
+  }

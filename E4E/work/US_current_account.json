@@ -1,139 +1,139 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e8/current_account.json"
-    },
-    "title": {
-      "text": "US Current Account",
-      "subtitle": [
-        "Current Account Components, Billions of USD",
-        "Date: FRED ",
-        ""
-      ],
-      "fontSize": 14,
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 12,
-      "anchor": "start",
-      "color": "black"
-    },
-    "width": 500,
-    "height": 300,
-    "layer": [
-      {
-        "mark": "bar",
-        "encoding": {
-          "y": {
-            "field": "Value",
-            "title": "Billions of Dollars",
-            "type": "quantitative",
-            "axis": {"grid": false, "format": "$d"}
-          },
-          "color": {
-            "field": "Series",
-            "type": "nominal",
-            "scale": {"scheme": "tableau10"},
-            "legend": {
-              "title": null,
-              "direction": "horizontal",
-              "orient": "none",
-              "legendX": -48,
-              "legendY": -20
-            }
-          },
-          "tooltip": [
-            {
-              "field": "observation_date",
-              "title": "date",
-              "type": "temporal",
-              "format": "Q%q %Y"
-            },
-            {"field": "Series", "title": "Component"},
-            {"field": "stringValue", "title": "Balance"}
-          ],
-          "opacity": {"value": 0.8},
-          "x": {
-            "timeUnit": "yearquarter",
-            "field": "observation_date",
-            "type": "temporal",
-            "title": null,
-            "axis": {"grid": false}
-          }
-        },
-        "transform": [{"filter": "datum.Series != 'Current Account'"}]
-      },
-      {
-        "mark": {"type": "line", "xOffset": 11},
-        "encoding": {
-          "y": {
-            "field": "Value",
-            "title": "Billions of Dollars",
-            "type": "quantitative",
-            "axis": {"grid": false, "format": "$d"}
-          },
-          "color": {
-            "field": "Series",
-            "type": "nominal",
-            "scale": {"scheme": "tableau10"},
-            "legend": {
-              "title": null,
-              "direction": "horizontal",
-              "orient": "none",
-              "legendX": -48,
-              "legendY": -20
-            }
-          },
-          "tooltip": [
-            {
-              "field": "observation_date",
-              "title": "date",
-              "type": "temporal",
-              "format": "Q%q %Y"
-            },
-            {"field": "Series", "title": "Component"},
-            {"field": "stringValue", "title": "Balance"}
-          ],
-          "opacity": {"value": 1},
-          "x": {
-            "timeUnit": "yearquarter",
-            "field": "observation_date",
-            "type": "temporal",
-            "title": null,
-            "axis": {"grid": false}
-          }
-        },
-        "transform": [{"filter": "datum.Series == 'Current Account'"}]
-      },
-      {
-        "mark": "rule",
-        "encoding": {
-          "y": {
-            "field": "Value",
-            "title": "Billions of Dollars",
-            "type": "quantitative",
-            "axis": {"grid": false, "format": "$d"},
-            "datum": 0
-          },
-          "color": {"value": "black"},
-          "tooltip": [
-            {
-              "field": "observation_date",
-              "title": "date",
-              "type": "temporal",
-              "format": "Q%q %Y"
-            },
-            {"field": "Series", "title": "Component"},
-            {"field": "stringValue", "title": "Balance"}
-          ],
-          "size": {"value": 1}
-        }
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e8/current_account.json"
+  },
+  "title": {
+    "text": "US Current Account",
+    "subtitle": [
+      "Current Account Components, Billions of USD",
+      "Date: FRED ",
+      ""
     ],
-    "transform": [
-      {
-        "calculate": "(datum.Value > 0 ? '' : '-')+(abs(datum.Value) < 1000 ?  '$' + abs(datum.Value) : abs(datum.Value) < 1000000 ?  '$' + abs((round(datum.Value / 1000 * 100) / 100)) + ' K' : abs(datum.Value) < 1000000000 ?  '$' + abs(round(datum.Value / 1000000 * 100) / 100) + ' M' : abs(datum.Value) < 1000000000000 ?  '$' + abs((round(datum.Value / 1000000000 * 100) / 100)) + ' B' : '$' + abs(round(datum.Value / 1000000000000 * 100) / 100) + ' T')",
-        "as": "stringValue"
+    "fontSize": 14,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 300,
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Value",
+          "title": "Billions of Dollars",
+          "type": "quantitative",
+          "axis": {"grid": false, "format": "$d", "titleFontWeight": "normal"}
+        },
+        "color": {
+          "field": "Series",
+          "type": "nominal",
+          "scale": {"scheme": "tableau10"},
+          "legend": {
+            "title": null,
+            "direction": "horizontal",
+            "orient": "none",
+            "legendX": -48,
+            "legendY": -20
+          }
+        },
+        "tooltip": [
+          {
+            "field": "observation_date",
+            "title": "date",
+            "type": "temporal",
+            "format": "Q%q %Y"
+          },
+          {"field": "Series", "title": "Component"},
+          {"field": "stringValue", "title": "Balance"}
+        ],
+        "opacity": {"value": 0.8},
+        "x": {
+          "timeUnit": "yearquarter",
+          "field": "observation_date",
+          "type": "temporal",
+          "title": null,
+          "axis": {"grid": false}
+        }
       },
-      {"calculate": "datum.Value/1000000000", "as": "Value"},
-      {"filter": "datum.observation_date < 1672531200000"}
-    ]
-  }
+      "transform": [{"filter": "datum.Series != 'Current Account'"}]
+    },
+    {
+      "mark": {"type": "line", "xOffset": 11},
+      "encoding": {
+        "y": {
+          "field": "Value",
+          "title": "Billions of Dollars",
+          "type": "quantitative",
+          "axis": {"grid": false, "format": "$d"}
+        },
+        "color": {
+          "field": "Series",
+          "type": "nominal",
+          "scale": {"scheme": "tableau10"},
+          "legend": {
+            "title": null,
+            "direction": "horizontal",
+            "orient": "none",
+            "legendX": -48,
+            "legendY": -20
+          }
+        },
+        "tooltip": [
+          {
+            "field": "observation_date",
+            "title": "date",
+            "type": "temporal",
+            "format": "Q%q %Y"
+          },
+          {"field": "Series", "title": "Component"},
+          {"field": "stringValue", "title": "Balance"}
+        ],
+        "opacity": {"value": 1},
+        "x": {
+          "timeUnit": "yearquarter",
+          "field": "observation_date",
+          "type": "temporal",
+          "title": null,
+          "axis": {"grid": false}
+        }
+      },
+      "transform": [{"filter": "datum.Series == 'Current Account'"}]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "y": {
+          "field": "Value",
+          "title": "Billions of Dollars",
+          "type": "quantitative",
+          "axis": {"grid": false, "format": "$d"},
+          "datum": 0
+        },
+        "color": {"value": "black"},
+        "tooltip": [
+          {
+            "field": "observation_date",
+            "title": "date",
+            "type": "temporal",
+            "format": "Q%q %Y"
+          },
+          {"field": "Series", "title": "Component"},
+          {"field": "stringValue", "title": "Balance"}
+        ],
+        "size": {"value": 1}
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "(datum.Value > 0 ? '' : '-')+(abs(datum.Value) < 1000 ?  '$' + abs(datum.Value) : abs(datum.Value) < 1000000 ?  '$' + abs((round(datum.Value / 1000 * 100) / 100)) + ' K' : abs(datum.Value) < 1000000000 ?  '$' + abs(round(datum.Value / 1000000 * 100) / 100) + ' M' : abs(datum.Value) < 1000000000000 ?  '$' + abs((round(datum.Value / 1000000000 * 100) / 100)) + ' B' : '$' + abs(round(datum.Value / 1000000000000 * 100) / 100) + ' T')",
+      "as": "stringValue"
+    },
+    {"calculate": "datum.Value/1000000000", "as": "Value"},
+    {"filter": "datum.observation_date < 1672531200000"}
+  ]
+}
