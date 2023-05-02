@@ -1,0 +1,303 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e9/Gini.json"
+  },
+  "width": 500,
+  "height": 350,
+  "title": {
+    "text": "More or Less Equal",
+    "subtitle": ["Gini Coefficents over time, Data: World Bank", ""],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "layer": [
+    {
+      "layer": [
+        {
+          "mark": {"type": "line", "interpolate": "basis"},
+          "params": [
+            {
+              "name": "extraRegion",
+              "select": {"type": "point", "fields": ["Country Name"]},
+              "bind": {
+                "input": "select",
+                "options": [
+                  "Albania",
+                  "Argentina",
+                  "Armenia",
+                  "Australia",
+                  "Austria",
+                  "Azerbaijan",
+                  "Bangladesh",
+                  "Belarus",
+                  "Belgium",
+                  "Belize",
+                  "Benin",
+                  "Bhutan",
+                  "Bolivia",
+                  "Bosnia and Herzegovina",
+                  "Botswana",
+                  "Brazil",
+                  "Bulgaria",
+                  "Burkina Faso",
+                  "Burundi",
+                  "Cameroon",
+                  "Canada",
+                  "Chile",
+                  "China",
+                  "Colombia",
+                  "Costa Rica",
+                  "Croatia",
+                  "Cyprus",
+                  "Czechia",
+                  "Denmark",
+                  "Djibouti",
+                  "Dominican Republic",
+                  "Ecuador",
+                  "Egypt, Arab Rep.",
+                  "El Salvador",
+                  "Estonia",
+                  "Eswatini",
+                  "Ethiopia",
+                  "Fiji",
+                  "Finland",
+                  "France",
+                  "Gambia, The",
+                  "Georgia",
+                  "Germany",
+                  "Ghana",
+                  "Greece",
+                  "Guatemala",
+                  "Guinea",
+                  "Guinea-Bissau",
+                  "Honduras",
+                  "Hungary",
+                  "Iceland",
+                  "India",
+                  "Indonesia",
+                  "Iran, Islamic Rep.",
+                  "Ireland",
+                  "Israel",
+                  "Italy",
+                  "Jamaica",
+                  "Jordan",
+                  "Kazakhstan",
+                  "Kenya",
+                  "Korea, Rep.",
+                  "Kosovo",
+                  "Kyrgyz Republic",
+                  "Lao PDR",
+                  "Latvia",
+                  "Lesotho",
+                  "Lithuania",
+                  "Luxembourg",
+                  "Madagascar",
+                  "Malawi",
+                  "Malaysia",
+                  "Maldives",
+                  "Mali",
+                  "Malta",
+                  "Mauritania",
+                  "Mexico",
+                  "Moldova",
+                  "Mongolia",
+                  "Montenegro",
+                  "Morocco",
+                  "Mozambique",
+                  "Netherlands",
+                  "Nicaragua",
+                  "Niger",
+                  "Nigeria",
+                  "North Macedonia",
+                  "Norway",
+                  "Pakistan",
+                  "Panama",
+                  "Paraguay",
+                  "Peru",
+                  "Philippines",
+                  "Poland",
+                  "Portugal",
+                  "Romania",
+                  "Russian Federation",
+                  "Rwanda",
+                  "Senegal",
+                  "Serbia",
+                  "Slovak Republic",
+                  "Slovenia",
+                  "South Africa",
+                  "Spain",
+                  "Sri Lanka",
+                  "Sweden",
+                  "Switzerland",
+                  "Tajikistan",
+                  "Tanzania",
+                  "Thailand",
+                  "Togo",
+                  "Tunisia",
+                  "Turkiye",
+                  "Uganda",
+                  "Ukraine",
+                  "United Kingdom",
+                  "United States",
+                  "Uruguay",
+                  "Uzbekistan",
+                  "Vietnam",
+                  "West Bank and Gaza"
+                ],
+                "name": "Highlight Region"
+              },
+              "value": "Bolivia"
+            }
+          ],
+          "transform": [{}],
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "scale": {"domain": [1990, 2020]},
+              "type": "quantitative",
+              "axis": {
+                "grid": false,
+                "format": "d",
+                "ticks": false,
+                "title": null
+              }
+            },
+            "color": {
+              "condition": [
+                {
+                  "value": "rgb(0,0,0)",
+                  "test": "datum['Country Name'] != 'United States'"
+                },
+                {"param": "extraRegion", "value": "darkblue"}
+              ],
+              "field": "Region name",
+              "scale": {"scheme": "inferno"},
+              "legend": null
+            },
+            "y": {
+              "field": "Gini",
+              "axis": {"grid": false, "titleFontWeight": "normal"},
+              "type": "quantitative",
+              "scale": {"zero": false},
+              "title": "Gini Coefficent"
+            },
+            "opacity": {
+              "condition": [
+                {"param": "extraRegion", "value": 1},
+                {
+                  "value": 0.05,
+                  "test": "datum['Country Name'] != 'United States' "
+                }
+              ],
+              "value": 1,
+              "legend": null
+            },
+            "detail": {"field": "Country Name"}
+          }
+        },
+        {
+          "mark": "point",
+          "transform": [
+            {"filter": {"param": "hover", "empty": false}},
+            {
+              "filter": {
+                "or": [
+                  {"field": "Country Name", "equal": "United States"},
+                  {"param": "extraRegion"}
+                ]
+              }
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "scale": {"domain": [1990, 2020]},
+              "type": "quantitative",
+              "axis": {
+                "grid": false,
+                "format": "d",
+                "ticks": false,
+                "title": null
+              }
+            },
+            "color": {
+              "condition": [
+                {
+                  "value": "rgb(0,0,0)",
+                  "test": "datum['Country Name'] != 'United States'"
+                },
+                {"param": "extraRegion", "value": "darkblue"}
+              ],
+              "field": "Region name",
+              "scale": {"scheme": "inferno"},
+              "legend": null
+            },
+            "y": {
+              "field": "Gini",
+              "axis": {"grid": false, "titleFontWeight": "normal"},
+              "type": "quantitative",
+              "scale": {"zero": false},
+              "title": "Gini Coefficent"
+            },
+            "opacity": {
+              "condition": [
+                {"param": "extraRegion", "value": 1},
+                {
+                  "value": 0.05,
+                  "test": "datum['Country Name'] != 'United States' "
+                }
+              ],
+              "value": 1,
+              "legend": null
+            },
+            "detail": {"field": "Country Name"}
+          }
+        }
+      ]
+    },
+    {
+      "mark": {"type": "rule", "tooltip": {"content": "data"}},
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "scale": {"domain": [1990, 2020]},
+          "type": "quantitative",
+          "axis": {"grid": false, "format": "d", "ticks": false, "title": null}
+        },
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        }
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "transform": [
+        {
+          "filter": {
+            "or": [
+              {"field": "Country Name", "equal": "United States"},
+              {"param": "extraRegion"}
+            ]
+          }
+        },
+        {"pivot": "Country Name", "value": "Gini", "groupby": ["Year"]}
+      ]
+    }
+  ],
+  "description": "A chart titled 'High Growth — Low Growth' with subtitle 'Median disposable income, 2020 Prices, British Pounds ",
+  "transform": [{"filter": "datum.Year > 1990 & datum.Year < 2021"}]
+}

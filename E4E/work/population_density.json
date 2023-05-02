@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "US Population by County",
+    "subtitle": ["Date: Census Bureau ", ""],
+    "fontSize": 14,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 500,
+  "height": 380,
+  "data": {
+    "url": "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json",
+    "format": {"type": "topojson", "feature": "counties"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {"color": {"value": "lightgray"}},
+      "projection": {"type": "albersUsa"}
+    },
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "field": "Population",
+          "type": "quantitative",
+          "legend": {
+            "orient": "none",
+            "title": null,
+            "direction": "horizontal",
+            "legendX": 0,
+            "legendY": 0
+          },
+          "scale": {
+            "domain": [0, 150000, 500000, 10000000],
+            "range": [
+              "rgb(20,20,60)",
+              "rgb(100,100,100)",
+              "#FDC30B",
+              "#FCE036",
+              "#FDF502"
+            ]
+          }
+        },
+        "tooltip": [
+          {"field": "county_state", "title": "County"},
+          {"field": "Population", "title": "Population", "format": ",d"}
+        ]
+      },
+      "transform": [
+        {"filter": "datum.Population > 1"},
+        {
+          "calculate": "datum.properties.name + ', ' + datum.State",
+          "as": "county_state"
+        }
+      ],
+      "projection": {"type": "albersUsa"}
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/JamesFKean/RA_work/main/statesfipspopv2.csv"
+        },
+        "key": "id",
+        "fields": ["2022", "State", "County Name"]
+      },
+      "as": ["Population", "State", "County Name"],
+      "default": "-0.00"
+    }
+  ]
+}
