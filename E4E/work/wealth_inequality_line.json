@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e9/wealth_inequality.json"
+  },
+  "title": {
+    "text": "Wealth Inequality ",
+    "subtitle": [
+      "Share of Wealth owned by richest 1% ",
+      " Data: World Inequality Dataset",
+      ""
+    ],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "vconcat": [
+    {
+      "width": 500,
+      "height": 280,
+      "layer": [
+        {
+          "layer": [
+            {
+              "mark": "line",
+              "encoding": {
+                "x": {
+                  "field": "Year",
+                  "type": "quantitative",
+                  "axis": {"ticks": false, "grid": false}
+                },
+                "y": {
+                  "field": "Value",
+                  "type": "quantitative",
+                  "scale": {"zero": true},
+                  "axis": {"grid": true}
+                },
+                "color": {
+                  "field": "Country",
+                  "legend": null,
+                  "type": "nominal"
+                },
+                "opacity": {"value": 1}
+              }
+            },
+            {
+              "mark": {
+                "type": "point",
+                "size": 15,
+                "opacity": 1,
+                "filled": true
+              },
+              "encoding": {
+                "x": {
+                  "field": "Year",
+                  "type": "quantitative",
+                  "axis": {"ticks": false, "format": "2d"}
+                },
+                "y": {
+                  "field": "Value",
+                  "type": "quantitative",
+                  "scale": {"zero": true},
+                  "axis": {"grid": true}
+                },
+                "color": {
+                  "field": "Country",
+                  "legend": null,
+                  "type": "nominal"
+                },
+                "opacity": {"value": 1}
+              }
+            },
+            {
+              "encoding": {
+                "x": {
+                  "field": "Year",
+                  "type": "quantitative",
+                  "axis": {"ticks": false, "format": "2d"}
+                },
+                "y": {
+                  "field": "Value",
+                  "type": "quantitative",
+                  "scale": {"zero": true},
+                  "axis": {"grid": true}
+                },
+                "color": {"field": "Country", "legend": null},
+                "opacity": {"value": 1},
+                "text": {"field": "Country"}
+              },
+              "mark": {"type": "text", "align": "left", "dx": 5},
+              "transform": [
+                {"filter": "datum.Year==2021"},
+                {
+                  "filter": {
+                    "field": "Country",
+                    "oneOf": [
+                      "USA",
+                      "United Kingdom",
+                      "France",
+                      "China",
+                      "Russia"
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "transform": [
+            {
+              "filter": {
+                "field": "Country",
+                "oneOf": ["USA", "United Kingdom", "France", "China", "Russia"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "A chart titled 'Chicago Area Median Incomes' with subtitle 'Median Individual Income, Workers Only   2021 Prices, source: Census "
+}

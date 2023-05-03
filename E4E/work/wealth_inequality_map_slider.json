@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Wealth Inequality ",
+    "subtitle": [
+      "Share of Wealth owned by richest 1% ",
+      " Data: World Inequality Dataset",
+      ""
+    ],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "params": [],
+  "vconcat": [
+    {
+      "width": 600,
+      "height": 380,
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e9/wealth_inequality.json",
+        "format": {"parse": {"Year": "date"}}
+      },
+      "projection": {"type": "mercator"},
+      "mark": "geoshape",
+      "encoding": {
+        "color": {
+          "field": "Value",
+          "scale": {"scheme": "yellowgreenblue", "domain": [0.1, 0.7]},
+          "type": "quantitative",
+          "legend": {
+            "format": "%",
+            "orient": "none",
+            "title": null,
+            "direction": "horizontal",
+            "legendX": -40,
+            "legendY": 0
+          }
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title": "County"},
+          {
+            "field": "Value",
+            "type": "nominal",
+            "format": ".1%",
+            "title": "1% Wealth Share"
+          }
+        ]
+      },
+      "transform": [
+        {"filter": "datum.Year == SelectYear.Year"},
+        {
+          "lookup": "country_code",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/vega/vega/main/packages/vega-loader/test/data/world-110m.json",
+              "format": {"type": "topojson", "feature": "countries"}
+            },
+            "key": "id",
+            "fields": ["properties", "id", "type", "geometry"]
+          }
+        },
+        {
+          "calculate": "'Wealth Inequality' + '—' + SelectYear.Year",
+          "as": "formattedTitle"
+        }
+      ],
+      "params": [
+        {
+          "name": "SelectYear",
+          "select": {"type": "point", "fields": ["Year"]},
+          "bind": {
+            "input": "range",
+            "min": 1995,
+            "max": 2020,
+            "step": 1,
+            "name": "Year"
+          },
+          "value": 2020
+        }
+      ]
+    }
+  ],
+  "description": "A chart titled 'Chicago Area Median Incomes' with subtitle 'Median Individual Income, Workers Only   2021 Prices, source: Census "
+}
