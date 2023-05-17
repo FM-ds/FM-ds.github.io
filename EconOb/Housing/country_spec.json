@@ -1,0 +1,175 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/FM-ds/FM-ds.github.io/main/EconOb/Housing/dwellings_houseprices.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "circle"},
+      "encoding": {
+        "x": {
+          "field": "dwellings_change",
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#b4c8d8",
+            "domainOpacity": 0.5,
+            "grid": false,
+            "format": "%",
+            "labelAngle": 0,
+            "labelColor": "#b4c8d8",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#b4c8d8",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "Dwellings Growth(%) ",
+            "titleAlign": "right",
+            "titleAnchor": "end",
+            "titleColor": "#b4c8d8",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleY": -15
+          }
+        },
+        "y": {
+          "field": "house_price_index_change",
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#b4c8d8",
+            "domainOpacity": 0.5,
+            "format": "%",
+            "gridColor": "#b4c8d8",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#b4c8d8",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#b4c8d8",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": " House Price Growth (%), most recent 20 year period ",
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#b4c8d8",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -7
+          }
+        },
+        "color": {
+          "field": "period",
+          "scale": {
+            "range": [
+              "#EB5C2E",
+              "#F4C245",
+              "#00A767",
+              "#179FDB",
+              "#F4134D",
+              "#36B7B4"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "area_name", "title": "Country"},
+          {"field": "period", "title": "Period"},
+          {
+            "field": "house_price_index_change",
+            "title": "House Price Growth",
+            "format": ".1%"
+          },
+          {
+            "field": "dwellings_change",
+            "title": "Dwellings Growth",
+            "format": ".1%"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "dx": 20, "dy": -2},
+      "encoding": {
+        "x": {
+          "field": "dwellings_change",
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#b4c8d8",
+            "domainOpacity": 0.5,
+            "grid": false,
+            "format": "%",
+            "labelAngle": 0,
+            "labelColor": "#b4c8d8",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#b4c8d8",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "Dwellings Growth(%) ",
+            "titleAlign": "right",
+            "titleAnchor": "end",
+            "titleColor": "#b4c8d8",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleY": -15
+          }
+        },
+        "y": {
+          "field": "house_price_index_change",
+          "type": "quantitative",
+          "axis": {
+            "domainColor": "#b4c8d8",
+            "domainOpacity": 0.5,
+            "format": "%",
+            "gridColor": "#b4c8d8",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#b4c8d8",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#b4c8d8",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": " House Price Growth (%), most recent 20 year period ",
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#b4c8d8",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -7
+          }
+        },
+        "color": {
+          "field": "period",
+          "scale": {
+            "range": [
+              "#EB5C2E",
+              "#F4C245",
+              "#00A767",
+              "#179FDB",
+              "#F4134D",
+              "#36B7B4"
+            ]
+          },
+          "legend": null
+        },
+        "text": {"field": "flag_iso3"}
+      },
+      "transform": [{"filter": "datum.iso3 != 'AUT' & datum.iso3 != 'FRA'"}]
+    }
+  ],
+  "background": "#122B39",
+  "height": 300,
+  "title": "",
+  "width": 400,
+  "config": {
+    "view": {"continuousWidth": 400, "continuousHeight": 300, "stroke": null},
+    "font": "Circular Std Book"
+  }
+}
