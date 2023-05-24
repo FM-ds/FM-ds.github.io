@@ -1,609 +1,609 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {
-    "values": [
-      {
-        "Date": 1644451200000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 1
-      },
-      {
-        "Date": 1644537600000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9906722307
-      },
-      {
-        "Date": 1644796800000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9735121727
-      },
-      {
-        "Date": 1644883200000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9872953296
-      },
-      {
-        "Date": 1644969600000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9953792691
-      },
-      {
-        "Date": 1645056000000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9840391278
-      },
-      {
-        "Date": 1645142400000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9792305827
-      },
-      {
-        "Date": 1645401600000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9709483981
-      },
-      {
-        "Date": 1645488000000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9606233239
-      },
-      {
-        "Date": 1645574400000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9561513662
-      },
-      {
-        "Date": 1645660800000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9370055795
-      },
-      {
-        "Date": 1645747200000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9592261314
-      },
-      {
-        "Date": 1646006400000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9560219049
-      },
-      {
-        "Date": 1646092800000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9400401115
-      },
-      {
-        "Date": 1646179200000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9436458945
-      },
-      {
-        "Date": 1646265600000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9388284683
-      },
-      {
-        "Date": 1646352000000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9149640799
-      },
-      {
-        "Date": 1646611200000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.894639492
-      },
-      {
-        "Date": 1646697600000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.8885458708
-      },
-      {
-        "Date": 1646784000000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9097066522
-      },
-      {
-        "Date": 1646870400000,
-        "Series": "Return_with_affiliate_in_Russia",
-        "Value": 0.9135484099
-      },
-      {
-        "Date": 1644451200000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 1
-      },
-      {
-        "Date": 1644537600000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9905490875
-      },
-      {
-        "Date": 1644796800000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9796785712
-      },
-      {
-        "Date": 1644883200000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9849515557
-      },
-      {
-        "Date": 1644969600000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9937300086
-      },
-      {
-        "Date": 1645056000000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9866008162
-      },
-      {
-        "Date": 1645142400000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9853271842
-      },
-      {
-        "Date": 1645401600000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9840601683
-      },
-      {
-        "Date": 1645488000000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9715866446
-      },
-      {
-        "Date": 1645574400000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9738121033
-      },
-      {
-        "Date": 1645660800000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9604585767
-      },
-      {
-        "Date": 1645747200000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9745813012
-      },
-      {
-        "Date": 1646006400000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9792385697
-      },
-      {
-        "Date": 1646092800000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9801738262
-      },
-      {
-        "Date": 1646179200000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9836737514
-      },
-      {
-        "Date": 1646265600000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.981400907
-      },
-      {
-        "Date": 1646352000000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.968493402
-      },
-      {
-        "Date": 1646611200000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9545829296
-      },
-      {
-        "Date": 1646697600000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9460987449
-      },
-      {
-        "Date": 1646784000000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.952431798
-      },
-      {
-        "Date": 1646870400000,
-        "Series": "Return_without_affiliate_in_Russia",
-        "Value": 0.9621217251
-      }
-    ]
-  },
-  "width": 400,
-  "height": 300,
-  "config": {"style": {"cell": {"stroke": "transparent"}}},
-  "layer": [
-    {
-      "layer": [
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "values": [
         {
-          "mark": {"type": "line", "interpolate": "linear"},
-          "encoding": {
-            "x": {
-              "field": "Date",
-              "type": "temporal",
-              "axis": {
-                "format": "%e %b %Y",
-                "values": [1644451200000, 1645660000000, 1646870000000],
-                "grid": false,
-                "domainColor": "#919ae4",
-                "domainOpacity": 0.5,
-                "labelAngle": 0,
-                "labelColor": "#676A86",
-                "labelOpacity": 0.7,
-                "orient": "bottom",
-                "tickColor": "#676A86",
-                "tickCount": 10,
-                "tickOpacity": 0.5,
-                "title": "",
-                "titleAlign": "center",
-                "titleAnchor": "middle",
-                "titleColor": "#676A86",
-                "titleFontSize": 12,
-                "titleOpacity": 0.8,
-                "titleX": 207,
-                "titleY": -15
-              },
-              "title": null
-            },
-            "color": {
-              "legend": null,
-              "field": "Series",
-              "type": "nominal",
-              "scale": {"range": ["#F4134D", "#179FDB"]}
-            },
-            "y": {
-              "field": "Value",
-              "type": "quantitative",
-              "scale": {"domainMin": 0.88},
-              "axis": {
-                "domainColor": "#676A86",
-                "domainOpacity": 0.5,
-                "format": "%",
-                "gridColor": "#676A86",
-                "gridDash": [1, 5],
-                "gridOpacity": 0.5,
-                "labelColor": "#676A86",
-                "labelOpacity": 0.7,
-                "labelPadding": 5,
-                "tickColor": "#676A86",
-                "tickCount": 8,
-                "tickOpacity": 0.5,
-                "ticks": false,
-                "title": "Cumulative Return on Shares",
-                "titleAlign": "left",
-                "titleAngle": 0,
-                "titleBaseline": "bottom",
-                "titleColor": "#676A86",
-                "titleFontSize": 12,
-                "titleOpacity": 0.8,
-                "titleX": 0,
-                "titleY": -18
-              }
-            }
-          }
+          "Date": 1644451200000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 1
         },
         {
-          "mark": "point",
-          "transform": [{"filter": {"param": "hover", "empty": false}}],
-          "encoding": {
-            "x": {
-              "field": "Date",
-              "type": "temporal",
-              "axis": {
-                "format": "%e %b %Y",
-                "values": [1644451200000, 1645660000000, 1646870000000],
-                "grid": false,
-                "domainColor": "#919ae4",
-                "domainOpacity": 0.5,
-                "labelAngle": 0,
-                "labelColor": "#676A86",
-                "labelOpacity": 0.7,
-                "orient": "bottom",
-                "tickColor": "#676A86",
-                "tickCount": 10,
-                "tickOpacity": 0.5,
-                "title": "",
-                "titleAlign": "center",
-                "titleAnchor": "middle",
-                "titleColor": "#676A86",
-                "titleFontSize": 12,
-                "titleOpacity": 0.8,
-                "titleX": 207,
-                "titleY": -15
-              },
-              "title": null
-            },
-            "color": {
-              "legend": null,
-              "field": "Series",
-              "type": "nominal",
-              "scale": {"range": ["#F4134D", "#179FDB"]}
-            },
-            "y": {
-              "field": "Value",
-              "type": "quantitative",
-              "scale": {"domainMin": 0.88},
-              "axis": {
-                "domainColor": "#676A86",
-                "domainOpacity": 0.5,
-                "format": "%",
-                "gridColor": "#676A86",
-                "gridDash": [1, 5],
-                "gridOpacity": 0.5,
-                "labelColor": "#676A86",
-                "labelOpacity": 0.7,
-                "labelPadding": 5,
-                "tickColor": "#676A86",
-                "tickCount": 8,
-                "tickOpacity": 0.5,
-                "ticks": false,
-                "title": "Cumulative Return on Shares",
-                "titleAlign": "left",
-                "titleAngle": 0,
-                "titleBaseline": "bottom",
-                "titleColor": "#676A86",
-                "titleFontSize": 12,
-                "titleOpacity": 0.8,
-                "titleX": 0,
-                "titleY": -18
-              }
-            }
-          }
+          "Date": 1644537600000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9906722307
+        },
+        {
+          "Date": 1644796800000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9735121727
+        },
+        {
+          "Date": 1644883200000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9872953296
+        },
+        {
+          "Date": 1644969600000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9953792691
+        },
+        {
+          "Date": 1645056000000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9840391278
+        },
+        {
+          "Date": 1645142400000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9792305827
+        },
+        {
+          "Date": 1645401600000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9709483981
+        },
+        {
+          "Date": 1645488000000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9606233239
+        },
+        {
+          "Date": 1645574400000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9561513662
+        },
+        {
+          "Date": 1645660800000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9370055795
+        },
+        {
+          "Date": 1645747200000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9592261314
+        },
+        {
+          "Date": 1646006400000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9560219049
+        },
+        {
+          "Date": 1646092800000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9400401115
+        },
+        {
+          "Date": 1646179200000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9436458945
+        },
+        {
+          "Date": 1646265600000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9388284683
+        },
+        {
+          "Date": 1646352000000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9149640799
+        },
+        {
+          "Date": 1646611200000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.894639492
+        },
+        {
+          "Date": 1646697600000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.8885458708
+        },
+        {
+          "Date": 1646784000000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9097066522
+        },
+        {
+          "Date": 1646870400000,
+          "Series": "Return_with_affiliate_in_Russia",
+          "Value": 0.9135484099
+        },
+        {
+          "Date": 1644451200000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 1
+        },
+        {
+          "Date": 1644537600000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9905490875
+        },
+        {
+          "Date": 1644796800000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9796785712
+        },
+        {
+          "Date": 1644883200000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9849515557
+        },
+        {
+          "Date": 1644969600000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9937300086
+        },
+        {
+          "Date": 1645056000000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9866008162
+        },
+        {
+          "Date": 1645142400000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9853271842
+        },
+        {
+          "Date": 1645401600000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9840601683
+        },
+        {
+          "Date": 1645488000000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9715866446
+        },
+        {
+          "Date": 1645574400000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9738121033
+        },
+        {
+          "Date": 1645660800000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9604585767
+        },
+        {
+          "Date": 1645747200000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9745813012
+        },
+        {
+          "Date": 1646006400000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9792385697
+        },
+        {
+          "Date": 1646092800000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9801738262
+        },
+        {
+          "Date": 1646179200000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9836737514
+        },
+        {
+          "Date": 1646265600000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.981400907
+        },
+        {
+          "Date": 1646352000000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.968493402
+        },
+        {
+          "Date": 1646611200000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9545829296
+        },
+        {
+          "Date": 1646697600000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9460987449
+        },
+        {
+          "Date": 1646784000000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.952431798
+        },
+        {
+          "Date": 1646870400000,
+          "Series": "Return_without_affiliate_in_Russia",
+          "Value": 0.9621217251
         }
       ]
     },
-    {
-      "mark": {"type": "rule"},
-      "encoding": {
-        "x": {
-          "field": "Date",
-          "type": "temporal",
-          "axis": {
-            "format": "%e %b %Y",
-            "values": [1644451200000, 1645660000000, 1646870000000],
-            "grid": false,
-            "domainColor": "#919ae4",
-            "domainOpacity": 0.5,
-            "labelAngle": 0,
-            "labelColor": "#676A86",
-            "labelOpacity": 0.7,
-            "orient": "bottom",
-            "tickColor": "#676A86",
-            "tickCount": 10,
-            "tickOpacity": 0.5,
-            "title": "",
-            "titleAlign": "center",
-            "titleAnchor": "middle",
-            "titleColor": "#676A86",
-            "titleFontSize": 12,
-            "titleOpacity": 0.8,
-            "titleX": 207,
-            "titleY": -15
-          },
-          "title": null
-        },
-        "opacity": {
-          "condition": {"value": 0.3, "param": "hover", "empty": false},
-          "value": 0
-        },
-        "tooltip": [
+    "width": 400,
+    "height": 300,
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+    "layer": [
+      {
+        "layer": [
           {
-            "field": "Return_with_affiliate_in_Russia",
-            "type": "quantitative",
-            "title": "Without Russian Affiliates",
-            "format": ".1%"
+            "mark": {"type": "line", "interpolate": "linear"},
+            "encoding": {
+              "x": {
+                "field": "Date",
+                "type": "temporal",
+                "axis": {
+                  "format": "%e %b %Y",
+                  "values": [1644451200000, 1645660000000, 1646870000000],
+                  "grid": false,
+                  "domainColor": "#919ae4",
+                  "domainOpacity": 0.5,
+                  "labelAngle": 0,
+                  "labelColor": "#676A86",
+                  "labelOpacity": 0.7,
+                  "orient": "bottom",
+                  "tickColor": "#676A86",
+                  "tickCount": 10,
+                  "tickOpacity": 0.5,
+                  "title": "",
+                  "titleAlign": "center",
+                  "titleAnchor": "middle",
+                  "titleColor": "#676A86",
+                  "titleFontSize": 12,
+                  "titleOpacity": 0.8,
+                  "titleX": 207,
+                  "titleY": -15
+                },
+                "title": null
+              },
+              "color": {
+                "legend": null,
+                "field": "Series",
+                "type": "nominal",
+                "scale": {"range": ["#F4134D", "#179FDB"]}
+              },
+              "y": {
+                "field": "Value",
+                "type": "quantitative",
+                "scale": {"domainMin": 0.8},
+                "axis": {
+                  "domainColor": "#676A86",
+                  "domainOpacity": 0.5,
+                  "format": "%",
+                  "gridColor": "#676A86",
+                  "gridDash": [1, 5],
+                  "gridOpacity": 0.5,
+                  "labelColor": "#676A86",
+                  "labelOpacity": 0.7,
+                  "labelPadding": 5,
+                  "tickColor": "#676A86",
+                  "tickCount": 8,
+                  "tickOpacity": 0.5,
+                  "ticks": false,
+                  "title": "Cumulative Return on Shares",
+                  "titleAlign": "left",
+                  "titleAngle": 0,
+                  "titleBaseline": "bottom",
+                  "titleColor": "#676A86",
+                  "titleFontSize": 12,
+                  "titleOpacity": 0.8,
+                  "titleX": 0,
+                  "titleY": -18
+                }
+              }
+            }
           },
           {
-            "field": "Return_without_affiliate_in_Russia",
-            "format": ".1%",
-            "type": "quantitative",
-            "title": "With Russian Affiliates"
+            "mark": "point",
+            "transform": [{"filter": {"param": "hover", "empty": false}}],
+            "encoding": {
+              "x": {
+                "field": "Date",
+                "type": "temporal",
+                "axis": {
+                  "format": "%e %b %Y",
+                  "values": [1644451200000, 1645660000000, 1646870000000],
+                  "grid": false,
+                  "domainColor": "#919ae4",
+                  "domainOpacity": 0.5,
+                  "labelAngle": 0,
+                  "labelColor": "#676A86",
+                  "labelOpacity": 0.7,
+                  "orient": "bottom",
+                  "tickColor": "#676A86",
+                  "tickCount": 10,
+                  "tickOpacity": 0.5,
+                  "title": "",
+                  "titleAlign": "center",
+                  "titleAnchor": "middle",
+                  "titleColor": "#676A86",
+                  "titleFontSize": 12,
+                  "titleOpacity": 0.8,
+                  "titleX": 207,
+                  "titleY": -15
+                },
+                "title": null
+              },
+              "color": {
+                "legend": null,
+                "field": "Series",
+                "type": "nominal",
+                "scale": {"range": ["#F4134D", "#179FDB"]}
+              },
+              "y": {
+                "field": "Value",
+                "type": "quantitative",
+                "scale": {"domainMin": 0.88},
+                "axis": {
+                  "domainColor": "#676A86",
+                  "domainOpacity": 0.5,
+                  "format": "%",
+                  "gridColor": "#676A86",
+                  "gridDash": [1, 5],
+                  "gridOpacity": 0.5,
+                  "labelColor": "#676A86",
+                  "labelOpacity": 0.7,
+                  "labelPadding": 5,
+                  "tickColor": "#676A86",
+                  "tickCount": 8,
+                  "tickOpacity": 0.5,
+                  "ticks": false,
+                  "title": "Cumulative Return on Shares",
+                  "titleAlign": "left",
+                  "titleAngle": 0,
+                  "titleBaseline": "bottom",
+                  "titleColor": "#676A86",
+                  "titleFontSize": 12,
+                  "titleOpacity": 0.8,
+                  "titleX": 0,
+                  "titleY": -18
+                }
+              }
+            }
           }
         ]
       },
-      "params": [
-        {
-          "name": "hover",
-          "select": {
-            "type": "point",
-            "fields": ["Date"],
-            "nearest": true,
-            "on": "mouseover",
-            "clear": "mouseout"
+      {
+        "mark": {"type": "rule"},
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "temporal",
+            "axis": {
+              "format": "%e %b %Y",
+              "values": [1644451200000, 1645660000000, 1646870000000],
+              "grid": false,
+              "domainColor": "#919ae4",
+              "domainOpacity": 0.5,
+              "labelAngle": 0,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "orient": "bottom",
+              "tickColor": "#676A86",
+              "tickCount": 10,
+              "tickOpacity": 0.5,
+              "title": "",
+              "titleAlign": "center",
+              "titleAnchor": "middle",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleOpacity": 0.8,
+              "titleX": 207,
+              "titleY": -15
+            },
+            "title": null
+          },
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {
+              "field": "Return_with_affiliate_in_Russia",
+              "type": "quantitative",
+              "title": "Without Russian Affiliates",
+              "format": ".1%"
+            },
+            {
+              "field": "Return_without_affiliate_in_Russia",
+              "format": ".1%",
+              "type": "quantitative",
+              "title": "With Russian Affiliates"
+            }
+          ]
+        },
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["Date"],
+              "nearest": true,
+              "on": "mouseover",
+              "clear": "mouseout"
+            }
+          }
+        ],
+        "transform": [{"pivot": "Series", "value": "Value", "groupby": ["Date"]}]
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontWeight": "normal",
+          "fontSize": 12,
+          "align": "left"
+        },
+        "encoding": {
+          "x": {"value": 405},
+          "text": {"value": "Firms With "},
+          "y": {"value": 126},
+          "color": {"value": "#F4134D"}
+        },
+        "transform": [{"filter": "datum.Date == 1644451200000"}]
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontWeight": "normal",
+          "fontSize": 12,
+          "align": "left"
+        },
+        "encoding": {
+          "x": {"value": 405},
+          "text": {"value": "Russian Affiliates"},
+          "y": {"value": 138},
+          "color": {"value": "#F4134D"}
+        },
+        "transform": [{"filter": "datum.Date == 1644451200000"}]
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontWeight": "normal",
+          "fontSize": 12,
+          "align": "left"
+        },
+        "encoding": {
+          "x": {"value": 405},
+          "text": {"value": "Firms Without"},
+          "y": {"value": 50},
+          "color": {"value": "#179FDB"}
+        },
+        "transform": [{"filter": "datum.Date == 1644451200000"}]
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontWeight": "normal",
+          "fontSize": 12,
+          "align": "left"
+        },
+        "encoding": {
+          "x": {"value": 405},
+          "text": {"value": "Russian Affiliates"},
+          "y": {"value": 62},
+          "color": {"value": "#179FDB"}
+        },
+        "transform": [{"filter": "datum.Date == 1644451200000"}]
+      },
+      {
+        "mark": {"type": "rule", "color": "#676A86"},
+        "data": {
+          "values": [
+            {"Date": 1645570000000, "Event": "Russian Invasion of Ukraine"}
+          ]
+        },
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "temporal",
+            "axis": {
+              "format": "%e %b %Y",
+              "values": [1644451200000, 1645660000000, 1646870000000],
+              "grid": false,
+              "domainColor": "#919ae4",
+              "domainOpacity": 0.5,
+              "labelAngle": 0,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "orient": "bottom",
+              "tickColor": "#676A86",
+              "tickCount": 10,
+              "tickOpacity": 0.5,
+              "title": "",
+              "titleAlign": "center",
+              "titleAnchor": "middle",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleOpacity": 0.8,
+              "titleX": 207,
+              "titleY": -15
+            },
+            "title": null
           }
         }
-      ],
-      "transform": [{"pivot": "Series", "value": "Value", "groupby": ["Date"]}]
-    },
-    {
-      "mark": {
-        "type": "text",
-        "fontWeight": "normal",
-        "fontSize": 12,
-        "align": "left"
       },
-      "encoding": {
-        "x": {"value": 405},
-        "text": {"value": "Firms With "},
-        "y": {"value": 212},
-        "color": {"value": "#F4134D"}
-      },
-      "transform": [{"filter": "datum.Date == 1644451200000"}]
-    },
-    {
-      "mark": {
-        "type": "text",
-        "fontWeight": "normal",
-        "fontSize": 12,
-        "align": "left"
-      },
-      "encoding": {
-        "x": {"value": 405},
-        "text": {"value": "Russian Affiliates"},
-        "y": {"value": 224},
-        "color": {"value": "#F4134D"}
-      },
-      "transform": [{"filter": "datum.Date == 1644451200000"}]
-    },
-    {
-      "mark": {
-        "type": "text",
-        "fontWeight": "normal",
-        "fontSize": 12,
-        "align": "left"
-      },
-      "encoding": {
-        "x": {"value": 405},
-        "text": {"value": "Firms Without"},
-        "y": {"value": 90},
-        "color": {"value": "#179FDB"}
-      },
-      "transform": [{"filter": "datum.Date == 1644451200000"}]
-    },
-    {
-      "mark": {
-        "type": "text",
-        "fontWeight": "normal",
-        "fontSize": 12,
-        "align": "left"
-      },
-      "encoding": {
-        "x": {"value": 405},
-        "text": {"value": "Russian Affiliates"},
-        "y": {"value": 102},
-        "color": {"value": "#179FDB"}
-      },
-      "transform": [{"filter": "datum.Date == 1644451200000"}]
-    },
-    {
-      "mark": {"type": "rule", "color": "#676A86"},
-      "data": {
-        "values": [
-          {"Date": 1645570000000, "Event": "Russian Invasion of Ukraine"}
-        ]
-      },
-      "encoding": {
-        "x": {
-          "field": "Date",
-          "type": "temporal",
-          "axis": {
-            "format": "%e %b %Y",
-            "values": [1644451200000, 1645660000000, 1646870000000],
-            "grid": false,
-            "domainColor": "#919ae4",
-            "domainOpacity": 0.5,
-            "labelAngle": 0,
-            "labelColor": "#676A86",
-            "labelOpacity": 0.7,
-            "orient": "bottom",
-            "tickColor": "#676A86",
-            "tickCount": 10,
-            "tickOpacity": 0.5,
-            "title": "",
-            "titleAlign": "center",
-            "titleAnchor": "middle",
-            "titleColor": "#676A86",
-            "titleFontSize": 12,
-            "titleOpacity": 0.8,
-            "titleX": 207,
-            "titleY": -15
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 5,
+          "size": 11,
+          "fontWeight": "normal",
+          "color": "#676A86"
+        },
+        "data": {
+          "values": [
+            {"Date": 1645570000000, "Event": "Russian Invasion of Ukraine"}
+          ]
+        },
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "temporal",
+            "axis": {
+              "format": "%e %b %Y",
+              "values": [1644451200000, 1645660000000, 1646870000000],
+              "grid": false,
+              "domainColor": "#919ae4",
+              "domainOpacity": 0.5,
+              "labelAngle": 0,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "orient": "bottom",
+              "tickColor": "#676A86",
+              "tickCount": 10,
+              "tickOpacity": 0.5,
+              "title": "",
+              "titleAlign": "center",
+              "titleAnchor": "middle",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleOpacity": 0.8,
+              "titleX": 207,
+              "titleY": -15
+            },
+            "title": null
           },
-          "title": null
+          "text": {"field": "Event"},
+          "y": {"value": 16},
+          "opacity": {"value": 0.7}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontWeight": "lighter",
+          "align": "left",
+          "color": "#676A86",
+          "fontSize": 10
+        },
+        "encoding": {
+          "x": {"value": 1},
+          "text": {
+            "value": "Source: Authors' calculation based on Bloomberg, Orbis, and WIOD data"
+          },
+          "y": {"value": -10}
+        },
+        "transform": [{"filter": "datum.Date == 1644451200000"}]
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "image": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+            }
+          ]
+        },
+        "mark": {
+          "type": "image",
+          "align": "right",
+          "baseline": "top",
+          "height": 40,
+          "opacity": 0.5,
+          "width": 40,
+          "xOffset": 105,
+          "yOffset": -33
+        },
+        "encoding": {
+          "x": {"value": 400},
+          "url": {"field": "image", "type": "nominal"},
+          "y": {"value": -10}
         }
       }
-    },
-    {
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": 5,
-        "size": 11,
-        "fontWeight": "normal",
-        "color": "#676A86"
-      },
-      "data": {
-        "values": [
-          {"Date": 1645570000000, "Event": "Russian Invasion of Ukraine"}
-        ]
-      },
-      "encoding": {
-        "x": {
-          "field": "Date",
-          "type": "temporal",
-          "axis": {
-            "format": "%e %b %Y",
-            "values": [1644451200000, 1645660000000, 1646870000000],
-            "grid": false,
-            "domainColor": "#919ae4",
-            "domainOpacity": 0.5,
-            "labelAngle": 0,
-            "labelColor": "#676A86",
-            "labelOpacity": 0.7,
-            "orient": "bottom",
-            "tickColor": "#676A86",
-            "tickCount": 10,
-            "tickOpacity": 0.5,
-            "title": "",
-            "titleAlign": "center",
-            "titleAnchor": "middle",
-            "titleColor": "#676A86",
-            "titleFontSize": 12,
-            "titleOpacity": 0.8,
-            "titleX": 207,
-            "titleY": -15
-          },
-          "title": null
-        },
-        "text": {"field": "Event"},
-        "y": {"value": 22},
-        "opacity": {"value": 0.7}
-      }
-    },
-    {
-      "mark": {
-        "type": "text",
-        "fontWeight": "lighter",
-        "align": "left",
-        "color": "#676A86",
-        "fontSize": 10
-      },
-      "encoding": {
-        "x": {"value": 1},
-        "text": {
-          "value": "Source: Authors' calculation based on Bloomberg, Orbis, and WIOD data"
-        },
-        "y": {"value": -10}
-      },
-      "transform": [{"filter": "datum.Date == 1644451200000"}]
-    },
-    {
-      "data": {
-        "values": [
-          {
-            "image": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
-          }
-        ]
-      },
-      "mark": {
-        "type": "image",
-        "align": "right",
-        "baseline": "top",
-        "height": 40,
-        "opacity": 0.5,
-        "width": 40,
-        "xOffset": 105,
-        "yOffset": -33
-      },
-      "encoding": {
-        "x": {"value": 400},
-        "url": {"field": "image", "type": "nominal"},
-        "y": {"value": -10}
-      }
-    }
-  ]
-}
+    ]
+  }
