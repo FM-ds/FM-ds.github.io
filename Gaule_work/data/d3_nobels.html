@@ -388,6 +388,16 @@
                 .transition()
 
             if (state == 'alive') {
+                pins
+                    .transition()
+                    .duration(duration)
+                    .attr("transform", function (d) {
+                        return "translate(" + projection([
+                            (d.death_lon_j == null ? d.lon : d.death_lon_j),
+                            (d.death_lat_j == null ? d.lat : d.death_lat_j)
+                        ]) + ")";
+                    });
+
                 d3.select("#state_birth")
                     .transition()
                     .style("border-bottom", "0.5px solid rgba(34.5, 34.5, 34.5, 0)")
@@ -400,16 +410,6 @@
                     .style("border-bottom", "0.5px solid rgba(34.5, 34.5, 34.5, 1)")
                     .duration(duration/2)
 
-                pins
-                    .transition()
-                    .duration(duration)
-                    .style("opacity", d => d.death_lat == null ? 0 : 1)
-                    .attr("transform", function (d) {
-                        return "translate(" + projection([
-                            (d.death_lon_j == null ? d.lon : d.death_lon_j),
-                            (d.death_lat_j == null ? d.lat : d.death_lat_j)
-                        ]) + ")";
-                    });
                 state = 'dead';
             } else {
                 d3.select("#state_birth")
