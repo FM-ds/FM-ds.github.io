@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title for the page -->
+    <title>Nobel Maps</title>
+    
+    <link rel="stylesheet" href="portfolio.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+    <h1> Nobel Maps</h1>
+    <h3 style="text-align: left"> <a href="data/maps.zip"> ⧉ Download All Maps (svg, png, eps, json, html) </a> </h3>
+
+
+    <section>
+        <div class="graphDesc">
+            <h2> Birthplaces </h2>
+            <h3> Overall and by Prize  </h3>
+        
+            <summary> Here, they're embeded using the Vega Embed library but SVGs and PNGs are also provided. 
+                </br>
+                </br>
+                Notebook (Download): <a href="data/Nobels.ipynb"> Nobels.ipynb </a>
+                </br>
+                Notebook (View): <a href="https://github.com/FM-ds/FM-ds.github.io/blob/main/Gaule_work/data/Nobels.ipynb"> github </a>
+                </br>
+                </br>
+                <b>Coloured by Prize</b>
+                SVG: <a href="data/maps_svg/birthplaces_allprizes.svg"> birthplace_prize.svg </a> </br>
+                PNG: <a href="data/maps_png/birthplaces_allprizes.png"> birthplace_prize.png </a> </br>
+                HTML: <a href="data/maps_html/birthplaces_allprizes.html"> birthplace_prize.html </a> </br>
+                JSON: <a href="data/maps_json/birthplaces_allprizes.json"> birthplace_prize.json </a> </br>
+                </br>
+                <b>Just Physics, Chemistry and Medicine</b> </br>
+                SVG: <a href="data/maps_svg/birthplaces_phys_chem_med.svg"> birthplace_physchemmed.svg </a> </br>
+                EPS: <a href="data/maps_eps/birthplaces_phys_chem_med.eps"> birthplace_physchemmed.eps </a> </br>
+                PNG: <a href="data/maps_png/birthplaces_phys_chem_med.png"> birthplace_physchemmed.png </a> </br>
+                HTML: <a href="data/maps_html/birthplaces_phys_chem_med.html"> birthplace_physchemmed.html </a> </br>
+                JSON: <a href="data/maps_json/birthplaces_phys_chem_med.json"> birthplace_physchemmed.json </a> </br>
+                </br>
+
+                <b>One Colour</b>>
+                SVG: <a href="data/maps_svg/birthplaces_onecolour.svg"> birthplace_onecolour.svg </a> </br>
+                PNG: <a href="data/maps_png/birthplaces_onecolour.png"> birthplace_onecolour.png </a> </br>
+                HTML: <a href="data/maps_html/birthplaces_onecolour.html"> birthplace_onecolour.html </a> </br>
+                JSON: <a href="data/maps_json/birthplaces_onecolour.json"> birthplace_onecolour.json </a> </br>
+                </br>
+                <b> Physics </b>
+                SVG: <a href="data/maps_svg/birthplaces_Physics.svg"> birthplace_physics.svg </a> </br>
+                PNG: <a href="data/maps_png/birthplaces_Physics.png"> birthplace_physics.png </a> </br>
+                HTML: <a href="data/maps_html/birthplaces_Physics.html"> birthplace_physics.html </a> </br>
+                JSON: <a href="data/maps_json/birthplaces_Physics.json"> birthplace_physics.json </a> </br>
+                </br>
+                <b> Chemistry </b>
+                SVG: <a href="data/maps_svg/birthplaces_Chemistry.svg"> birthplace_chemistry.svg </a> </br>
+                PNG: <a href="data/maps_png/birthplaces_Chemistry.png"> birthplace_chemistry.png </a> </br>
+                HTML: <a href="data/maps_html/birthplaces_Chemistry.html"> birthplace_chemistry.html </a> </br>
+                JSON: <a href="data/maps_json/birthplaces_Chemistry.json"> birthplace_chemistry.json </a> </br>
+                </br>
+                <b> Medicine </b>
+                SVG: <a href="data/maps_svg/birthplaces_Medicine.svg"> birthplace_medicine.svg </a> </br>
+                PNG: <a href="data/maps_png/birthplaces_Medicine.png"> birthplace_medicine.png </a> </br>
+                HTML: <a href="data/maps_html/birthplaces_Medicine.html"> birthplace_medicine.html </a> </br>
+                JSON: <a href="data/maps_json/birthplaces_Medicine.json"> birthplace_medicine.json </a> </br>
+                </br>
+                <b> Literature </b>
+                SVG: <a href="data/maps_svg/birthplaces_Literature.svg"> birthplace_literature.svg </a> </br>
+                PNG: <a href="data/maps_png/birthplaces_Literature.png"> birthplace_literature.png </a> </br>
+                HTML: <a href="data/maps_html/birthplaces_Literature.html"> birthplace_literature.html </a> </br>
+                JSON: <a href="data/maps_json/birthplaces_Literature.json"> birthplace_literature.json </a> </br>
+                </br>
+                <b> Peace </b>
+                SVG: <a href="data/maps_svg/birthplaces_Peace.svg"> birthplace_peace.svg </a> </br>
+                PNG: <a href="data/maps_png/birthplaces_Peace.png"> birthplace_peace.png </a> </br>
+                HTML: <a href="data/maps_html/birthplaces_Peace.html"> birthplace_peace.html </a> </br>
+                JSON: <a href="data/maps_json/birthplaces_Peace.json"> birthplace_peace.json </a> </br>
+                </br>
+                <b> Economics </b>
+                SVG: <a href="data/maps_svg/birthplaces_Economics.svg"> birthplace_economics.svg </a> </br>
+                PNG: <a href="data/maps_png/birthplaces_Economics.png"> birthplace_economics.png </a> </br>
+                HTML: <a href="data/maps_html/birthplaces_Economics.html"> birthplace_economics.html </a> </br>
+                JSON: <a href="data/maps_json/birthplaces_Economics.json"> birthplace_economics.json </a> </br>
+                </br>
+
+
+                
+            </summary>
+        </div>
+        
+        <div id="vegaMaps" class="weekFigures">
+
+        </br>
+    </div>
+
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Birth to Death </h2>
+            <h3> Animated Chart  </h3>
+        
+            <summary> 
+                For this, I repurposed and expanded some previous d3 code I had written. The source code for this is less comprehensible, but I think it's an interesting map. There's a video of it in action which is easier to embed places but does lose the interactivity.
+                </br>
+            </br> 
+                Source Code: <a href="data/d3_nobels.html"> d3_nobels.html </a>
+                </br>
+                Video: <a href="data/birthplace_deathplace.mov"> birthplace_deathplace.mov </a>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <iframe scrolling="no" style="border: none;" src="data/d3_nobels.html" width="100%" height="600px"></iframe>
+        </div>
+
+    </section>
+
+    
+
+    <script>
+/*         vegaEmbed('#week1fig1', "week1/agingPopulation.json");
+        vegaEmbed('#week1fig2', "week1/decliningPopulation.json");
+ */
+
+    specs = ["birthplaces_phys_chem_med.json", "birthplaces_allprizes.json", "birthplaces_onecolour.json", "birthplaces_Chemistry.json", "birthplaces_Economics.json", "birthplaces_Literature.json", "birthplaces_Medicine.json", "birthplaces_Peace.json", "birthplaces_Physics.json"]
+    
+    vegaMaps = document.getElementById("vegaMaps");
+
+    specs.forEach(spec => {
+        console.log(`data/maps_json/${spec}`);
+        // append a div to vegaMaps for each spec
+        div = document.createElement("div");
+        div.id = spec.split(".")[0];
+        vegaMaps.appendChild(div);
+        // embed the spec in the div
+        vegaEmbed(`#${spec.split(".")[0]}`, `data/maps_json/${spec}`);
+
+    });
+
+    </script>
+</body>

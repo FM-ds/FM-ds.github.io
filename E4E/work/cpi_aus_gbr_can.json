@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Inflation",
+    "subtitle": "All items, % | Source: ONS through ECO API",
+    "fontSize": "14",
+    "subtitleFontSize": "12",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": "250",
+  "width": "320",
+  "background": "#ffffff",
+  "view": {
+    "fill": "#ffffff"
+  },
+  "data": {
+    "url": "https://api.economicsobservatory.com/gbr/infl?vega",
+    "format": {
+      "type": "json"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datetime(slice(datum.date, 0, 4), slice(datum.date, 5, 7)-1)  ",
+      "as": "time"
+    },
+    {
+      "calculate": "datum.value",
+      "as": "Britain"
+    },
+    {
+    "lookup": "date",
+    "from": {
+      "data": {"url": "https://api.economicsobservatory.com/aus/infl?vega"},
+      "key": "date",
+      "fields": ["value"]
+    }
+    },
+    {
+      "calculate": "toNumber(datum.value)",
+      "as": "Australia"
+    },
+    {
+    "lookup": "date",
+    "from": {
+      "data": {"url": "https://api.economicsobservatory.com/CAN/infl?vega"},
+      "key": "date",
+      "fields": ["value"]
+    }
+    },
+    {
+      "calculate": "datum.value",
+      "as": "Canada"
+    },
+    {"fold": ["United States", "Canada", "Britain", "Australia"],
+    "as": ["Country", "CPI"]},
+    {"filter": "isValid(datum.CPI)"},
+    {"filter": {"timeUnit": "year", "field": "time", "gte": "2019"}}  
+  ],
+
+  "mark": {
+    "type": "line",
+    "color": "#f4134d",
+    "strokeWidth": "2"
+  },
+  "encoding": {
+    "x": {
+      "field": "time",
+      "type": "temporal",
+      "axis": {
+        "grid": false,
+        "title": "",
+        "titleColor": "#122B39"
+      }
+    },
+    "y": {
+      "field": "CPI",
+      "type": "quantitative",
+      "axis": {
+        "title": "",
+        "titleColor": "#122B39"
+      }
+    },
+    "color":{
+      "field": "Country",
+      "legend":{
+        "title":null,
+        "direction": "horizontal",
+        "orient": "none",
+        "legendX": 66,
+        "legendY": -15
+      }
+    }
+  }
+}
