@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title for the page -->
+    <title> E4E</title>
+    
+    <link rel="stylesheet" href="portfolio.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+    <h1> Figures for House Prices Blog </h1>
+
+
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 1 </h2>
+            <h3> CPI and Core CPI </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig1"> </figure>
+        </br>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 2 </h2>
+            <h3> B of E Base Rate </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig2"> </figure>
+        </br>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 3 </h2>
+            <h3> Mortgage Rates </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig3"> </figure>
+        </br>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 4 </h2>
+            <h3> Mortgage Payments/Net Pay </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig4"> </figure>
+        </br>
+        </div>
+    </section>
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 5 </h2>
+            <h3> Mortgage Approvals, Housing Transactions </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig5"> </figure>
+        </br>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 6 </h2>
+            <h3> House Price Changes </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig6"> </figure>
+        </br>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 7 </h2>
+            <h3> House Prices by Region </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig7"> </figure>
+        </br>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 8 </h2>
+            <h3> Fixed Rate/Variable Rate </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig8"> </figure>
+        </br>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 9 </h2>
+            <h3> Single/Joint Income </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig9"> </figure>
+        </br>
+        </div>
+    </section>
+
+    <section>
+        <div class="graphDesc">
+            <h2> Figure 10 </h2>
+            <h3> Rental Growth </h3>
+        
+            <summary> 
+                </br>
+            </summary>
+        </div>
+        
+        <div class="weekFigures">
+            <figure id="fig10"> </figure>
+        </br>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        vegaEmbed('#fig1', "specs/fig1.json");
+        vegaEmbed('#fig2', "specs/fig2.json");
+        vegaEmbed('#fig3', "specs/fig3.json");
+        vegaEmbed('#fig4', "specs/fig4.json");
+        vegaEmbed('#fig5', "specs/fig5.json");
+        vegaEmbed('#fig6', "specs/fig6.json");
+        vegaEmbed('#fig7', "specs/fig7.json");
+        vegaEmbed('#fig8', "specs/fig8.json");
+        vegaEmbed('#fig9', "specs/fig9.json");
+        vegaEmbed('#fig10', "specs/fig10.json");
+
+
+
+
+
+
+
+
+    </script>
+</body>
