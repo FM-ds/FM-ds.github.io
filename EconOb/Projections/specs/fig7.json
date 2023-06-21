@@ -1,0 +1,360 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/EcoObservatory/Articles/A23_C7.csv"
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "text": {"fontWeight": "bold", "color": "#404040"}
+  },
+  "width": 400,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#676A86",
+        "size": 1,
+        "strokeDash": [4, 1]
+      },
+      "encoding": {
+        "y": {
+          "axis": {
+            "domainColor": "#747790",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "titleColor": "#676A86",
+            "labelColor": "#989aa7",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#a7a9bb",
+            "tickCount": 8,
+            "tickOpacity": 0.5
+          },
+          "type": "quantitative",
+          "field": "y"
+        },
+        "x": {
+          "field": "Factor",
+          "type": "ordinal",
+          "sort": null,
+          "axis": {
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.6,
+            "title": null,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15,
+            "labelAngle": -35,
+            "labelOffset": 8
+          }
+        }
+      },
+      "transform": [{"calculate": "0", "as": "y"}]
+    },
+    {
+      "mark": {"type": "bar", "size": 32},
+      "encoding": {
+        "y": {
+          "axis": {
+            "gridOpacity": 0.6,
+            "labelFontSize": 12,
+            "ticks": false,
+            "labelPadding": 5
+          },
+          "field": "previous_sum",
+          "type": "quantitative",
+          "title": "Contribution"
+        },
+        "x": {
+          "field": "Factor",
+          "type": "ordinal",
+          "sort": null,
+          "axis": {
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.6,
+            "title": null,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15,
+            "labelAngle": -35,
+            "labelOffset": 8
+          }
+        },
+        "y2": {"field": "sum"},
+        "color": {
+          "condition": [
+            {"value": "lightgrey", "test": "datum.Factor === 'Total'"},
+            {
+              "value": "rgb(224,52,82)",
+              "test": "datum.sum < datum.previous_sum"
+            }
+          ],
+          "value": "rgb(110,177,222)"
+        },
+        "tooltip": [{"field": "Factor"}, {"field": "Contribution"}]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#404040",
+        "opacity": 1,
+        "strokeWidth": 2,
+        "xOffset": -16,
+        "x2Offset": 16
+      },
+      "encoding": {
+        "y": {
+          "axis": {
+            "domainColor": "#747790",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "titleColor": "#676A86",
+            "labelColor": "#989aa7",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#a7a9bb",
+            "tickCount": 8,
+            "tickOpacity": 0.5
+          },
+          "field": "sum",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "Factor",
+          "type": "ordinal",
+          "sort": null,
+          "axis": {
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.6,
+            "title": null,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15,
+            "labelAngle": -35,
+            "labelOffset": 8
+          }
+        },
+        "x2": {"field": "lead"}
+      }
+    },
+    {
+      "mark": {"type": "text", "dy": -4, "baseline": "bottom"},
+      "encoding": {
+        "y": {
+          "axis": {
+            "domainColor": "#747790",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "titleColor": "#676A86",
+            "labelColor": "#989aa7",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#a7a9bb",
+            "tickCount": 8,
+            "tickOpacity": 0.5
+          },
+          "field": "sum_inc",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "Factor",
+          "type": "ordinal",
+          "sort": null,
+          "axis": {
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.6,
+            "title": null,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15,
+            "labelAngle": -35,
+            "labelOffset": 8
+          }
+        },
+        "text": {"field": "sum_inc", "type": "nominal"}
+      }
+    },
+    {
+      "mark": {"type": "text", "dy": 4, "baseline": "top"},
+      "encoding": {
+        "y": {
+          "axis": {
+            "domainColor": "#747790",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "titleColor": "#676A86",
+            "labelColor": "#989aa7",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#a7a9bb",
+            "tickCount": 8,
+            "tickOpacity": 0.5
+          },
+          "field": "sum_dec",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "Factor",
+          "type": "ordinal",
+          "sort": null,
+          "axis": {
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.6,
+            "title": null,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15,
+            "labelAngle": -35,
+            "labelOffset": 8
+          }
+        },
+        "text": {"field": "sum_dec", "type": "nominal"}
+      }
+    },
+    {
+      "mark": {"type": "text", "fontWeight": "bold", "baseline": "middle"},
+      "encoding": {
+        "y": {
+          "axis": {
+            "domainColor": "#747790",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "titleColor": "#676A86",
+            "labelColor": "#989aa7",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#a7a9bb",
+            "tickCount": 8,
+            "tickOpacity": 0.5
+          },
+          "field": "center",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "Factor",
+          "type": "ordinal",
+          "sort": null,
+          "axis": {
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.6,
+            "title": null,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15,
+            "labelAngle": -35,
+            "labelOffset": 8
+          }
+        },
+        "text": {"field": "text_Contribution", "type": "nominal"},
+        "color": {
+          "condition": [
+            {"value": "#725a30", "test": "datum.Factor === 'Total'"}
+          ],
+          "value": "white"
+        }
+      }
+    }
+  ],
+  "transform": [
+    {"window": [{"op": "sum", "field": "Contribution", "as": "sum"}]},
+    {"calculate": "round(datum.sum * 100) /100", "as": "sum"},
+    {"window": [{"op": "lead", "field": "Factor", "as": "lead"}]},
+    {
+      "calculate": "datum.lead === null ? datum.Factor : datum.lead",
+      "as": "lead"
+    },
+    {
+      "calculate": "datum.Factor === 'Total' ? 0 : datum.sum - datum.Contribution",
+      "as": "previous_sum"
+    },
+    {
+      "calculate": "datum.Factor === 'Total' ? datum.sum : datum.Contribution",
+      "as": "Contribution"
+    },
+    {
+      "calculate": "(datum.Factor !== 'Total' && datum.Contribution > 0 ? '+' : '') + datum.Contribution",
+      "as": "text_Contribution"
+    },
+    {"calculate": "(datum.sum + datum.previous_sum) / 2", "as": "center"},
+    {
+      "calculate": "datum.sum < datum.previous_sum ? datum.sum : ''",
+      "as": "sum_dec"
+    },
+    {
+      "calculate": "datum.sum > datum.previous_sum ? datum.sum : ''",
+      "as": "sum_inc"
+    }
+  ]
+}

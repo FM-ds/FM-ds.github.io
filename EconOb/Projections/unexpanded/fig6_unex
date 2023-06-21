@@ -1,0 +1,207 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "data": {"values":
+[{"Date":"2019-01-01","Series":"actual","Value":0.039,"Furlough":false,"Metric":false},{"Date":"2019-02-01","Series":"actual","Value":0.038,"Furlough":false,"Metric":false},{"Date":"2019-03-01","Series":"actual","Value":0.037,"Furlough":false,"Metric":false},{"Date":"2019-04-01","Series":"actual","Value":0.036,"Furlough":false,"Metric":false},{"Date":"2019-05-01","Series":"actual","Value":0.038,"Furlough":false,"Metric":false},{"Date":"2019-06-01","Series":"actual","Value":0.039,"Furlough":false,"Metric":false},{"Date":"2019-07-01","Series":"actual","Value":0.04,"Furlough":false,"Metric":false},{"Date":"2019-08-01","Series":"actual","Value":0.04,"Furlough":false,"Metric":false},{"Date":"2019-09-01","Series":"actual","Value":0.04,"Furlough":false,"Metric":false},{"Date":"2019-10-01","Series":"actual","Value":0.039,"Furlough":false,"Metric":false},{"Date":"2019-11-01","Series":"actual","Value":0.037,"Furlough":false,"Metric":false},{"Date":"2019-12-01","Series":"actual","Value":0.038,"Furlough":false,"Metric":false},{"Date":"2020-01-01","Series":"actual","Value":0.039,"Furlough":false,"Metric":false},{"Date":"2020-02-01","Series":"actual","Value":0.039,"Furlough":false,"Metric":false},{"Date":"2020-03-01","Series":"actual","Value":0.039,"Furlough":false,"Metric":false},{"Date":"2020-04-01","Series":"actual","Value":0.038,"Furlough":false,"Metric":false},{"Date":"2020-05-01","Series":"actual","Value":0.039,"Furlough":false,"Metric":false},{"Date":"2020-06-01","Series":"actual","Value":0.043,"Furlough":false,"Metric":false},{"Date":"2020-07-01","Series":"actual","Value":0.046,"Furlough":false,"Metric":false},{"Date":"2020-08-01","Series":"actual","Value":0.05,"Furlough":false,"Metric":false},{"Date":"2019-01-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-02-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-03-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-04-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-05-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-06-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-07-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-08-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-09-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-10-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-11-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-12-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-01-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-02-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-03-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-04-01","Series":"EconometricModel_March","Value":0.0467199,"Furlough":false,"Metric":true},{"Date":"2020-05-01","Series":"EconometricModel_March","Value":0.0544347,"Furlough":false,"Metric":true},{"Date":"2020-06-01","Series":"EconometricModel_March","Value":0.0583968,"Furlough":false,"Metric":true},{"Date":"2020-07-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-08-01","Series":"EconometricModel_March","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-01-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-02-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-03-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-04-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-05-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-06-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-07-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-08-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-09-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-10-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-11-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-12-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-01-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-02-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-03-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-04-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-05-01","Series":"EconometricModel_Apr","Value":0.0458502,"Furlough":false,"Metric":true},{"Date":"2020-06-01","Series":"EconometricModel_Apr","Value":0.0499457,"Furlough":false,"Metric":true},{"Date":"2020-07-01","Series":"EconometricModel_Apr","Value":0.0520481,"Furlough":false,"Metric":true},{"Date":"2020-08-01","Series":"EconometricModel_Apr","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-01-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-02-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-03-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-04-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-05-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-06-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-07-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-08-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-09-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-10-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-11-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-12-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-01-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-02-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-03-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-04-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-05-01","Series":"EconometricModel_May","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-06-01","Series":"EconometricModel_May","Value":0.0432019,"Furlough":false,"Metric":true},{"Date":"2020-07-01","Series":"EconometricModel_May","Value":0.0454091,"Furlough":false,"Metric":true},{"Date":"2020-08-01","Series":"EconometricModel_May","Value":0.0469864,"Furlough":false,"Metric":true},{"Date":"2019-01-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-02-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-03-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-04-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-05-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-06-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-07-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-08-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-09-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-10-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-11-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2019-12-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-01-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-02-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-03-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-04-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-05-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-06-01","Series":"EconometricModel_Jun","Value":null,"Furlough":false,"Metric":true},{"Date":"2020-07-01","Series":"EconometricModel_Jun","Value":0.0452103,"Furlough":false,"Metric":true},{"Date":"2020-08-01","Series":"EconometricModel_Jun","Value":0.0467908,"Furlough":false,"Metric":true},{"Date":"2019-01-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-02-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-03-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-04-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-05-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-06-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-07-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-08-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-09-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-10-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-11-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-12-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-01-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-02-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-03-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-04-01","Series":"FurloughDummy_March","Value":0.0448589,"Furlough":true,"Metric":false},{"Date":"2020-05-01","Series":"FurloughDummy_March","Value":0.0507416,"Furlough":true,"Metric":false},{"Date":"2020-06-01","Series":"FurloughDummy_March","Value":0.0538306,"Furlough":true,"Metric":false},{"Date":"2020-07-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-08-01","Series":"FurloughDummy_March","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-01-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-02-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-03-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-04-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-05-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-06-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-07-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-08-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-09-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-10-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-11-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-12-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-01-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-02-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-03-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-04-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-05-01","Series":"FurloughDummy_Apr","Value":0.0405598,"Furlough":true,"Metric":false},{"Date":"2020-06-01","Series":"FurloughDummy_Apr","Value":0.0420923,"Furlough":true,"Metric":false},{"Date":"2020-07-01","Series":"FurloughDummy_Apr","Value":0.0443167,"Furlough":true,"Metric":false},{"Date":"2020-08-01","Series":"FurloughDummy_Apr","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-01-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-02-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-03-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-04-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-05-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-06-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-07-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-08-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-09-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-10-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-11-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-12-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-01-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-02-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-03-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-04-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-05-01","Series":"FurloughDummy_May","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-06-01","Series":"FurloughDummy_May","Value":0.0402967,"Furlough":true,"Metric":false},{"Date":"2020-07-01","Series":"FurloughDummy_May","Value":0.042549,"Furlough":true,"Metric":false},{"Date":"2020-08-01","Series":"FurloughDummy_May","Value":0.0441708,"Furlough":true,"Metric":false},{"Date":"2019-01-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-02-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-03-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-04-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-05-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-06-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-07-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-08-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-09-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-10-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-11-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2019-12-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-01-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-02-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-03-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-04-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-05-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-06-01","Series":"FurloughDummy_June","Value":null,"Furlough":true,"Metric":false},{"Date":"2020-07-01","Series":"FurloughDummy_June","Value":0.0452103,"Furlough":true,"Metric":false},{"Date":"2020-08-01","Series":"FurloughDummy_June","Value":0.0467908,"Furlough":true,"Metric":false}]
+
+
+},
+  "width": 550,
+  "height": 300,
+  "encoding": {"x": {"field": "Date", "type": "temporal",           "axis": {
+            "format": "%Y",
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }},         
+          "y": {"field": "Value", "type": "quantitative", 
+            "scale":{
+              "domainMin":0.034,
+              "domainMax": 0.059
+            },
+            "axis": {
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "format": "",
+              "gridColor": "#676A86",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "labelPadding": 5,
+              "tickColor": "#676A86",
+              "tickCount": 8,
+              "tickOpacity": 0.5,
+              "ticks": false,
+              "title": null,
+              "titleAlign": "left",
+              "titleAngle": 0,
+              "titleBaseline": "bottom",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleOpacity": 0.8,
+              "titleX": 0,
+              "titleY": -18
+          }
+}
+},
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth":0.5},
+      "transform": [
+        {"filter":"datum.Furlough"}
+      ],
+      "encoding": {
+        "color":{"field":"Series", "scale":{"range":["rgb(110,177,222)"]},           "legend": null,}
+      }
+
+    },
+        {
+      "mark": {"type": "line",  "strokeWidth":1},
+      "transform": [
+        {"filter":"datum.Metric"}
+      ],
+      "encoding": {
+        "color": {"value":"purple"},
+        "detail": {"field": "Series", "type": "nominal"},
+        "strokeDash": {"value":[2,2]}
+
+      }
+
+    },
+
+            {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "size": 11,
+        "fontWeight": "normal",
+        "color": "#676A86"
+      },
+      "data": {
+        "values": [
+   
+
+
+          
+                  ]
+      },
+      "encoding": {
+        "x": {"field":"Date"},
+        "y": {"field": "Value"},
+        "text":{"field":"label"}
+      }
+    },
+        {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "size": 11,
+        "fontWeight": "normal",
+        "color": "#676A86"
+      },
+      "data": {
+        "values": [
+          {"Date": "2020-08-01", "Series": "actual", "Value":0.05, "label": "Productivity Outcomes"},
+          {"Date": "2020-06-01", "Series": "fit", "Value":0.054, "label": "Forecasts with Furlough Dummy"},
+          {"Date": "2020-06-01", "Series": "real", "Value":0.058, "label": "Forecasts From Econometric Models"},
+                  ]
+      },
+      "encoding": {
+        "x": {"field":"Date"},
+        "y": {"field": "Value"},
+        "color": {
+          "legend": null,
+          "condition": [
+          {"test" : "datum.Series == 'fit'", "value":"rgb(110,177,222)"},
+          {"test" : "datum.Series == 'actual'", "value":"rgb(40,40,40)"},
+          {"test" : "datum.Series == 'real'", "value":"purple"}
+
+        ]},
+        "text":{"field":"label"}
+      }
+    },
+    {
+      "encoding": {
+        "color": {"field": "Series", "scale":{"range":["rgb(224,52,82)", "rgb(110,177,222)"]}, "legend":null}
+      },
+      "layer": [
+
+        {
+          "transform": [
+            {"filter": "datum.Series == 'actual' | datum.Series == 'fit'"}
+          ],
+          "mark": {"type": "line"},
+          "encoding": {
+            "color":{"value": "darkgray" },
+            "strokeDash": {
+              "field": "Series",
+              "legend": null
+            }
+          }
+          },
+
+          
+                ]
+    },
+        {
+      "mark": {
+        "type": "text",
+        "fontWeight": "lighter",
+        "align": "left",
+        "color": "#676A86",
+        "fontSize": 11
+      },
+      "data": {
+        "values": [{"Value":0}]
+      },
+      "encoding": {
+        "x": {"value": 1},
+        "text": {
+          "value": null
+        },
+        "y": {"value": -10}
+      }    },
+          {
+      "data": {
+        "values": [
+          {
+            "image": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+          }
+        ]
+      },
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": 105,
+        "yOffset": -33
+      },
+      "encoding": {
+        "x": {"value": 575},
+        "url": {"field": "image", "type": "nominal"},
+        "y": {"value": -10}
+      }
+    }
+  ],
+}
