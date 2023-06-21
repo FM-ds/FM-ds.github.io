@@ -1,0 +1,266 @@
+[
+    {
+        "Date": 1575158400000,
+        "Series": "GDP",
+        "Value": 1.0,
+        "Forecast": false
+    },
+    {
+        "Date": 1577836800000,
+        "Series": "GDP",
+        "Value": 1.0029880478,
+        "Forecast": false
+    },
+    {
+        "Date": 1580515200000,
+        "Series": "GDP",
+        "Value": 0.9980079681,
+        "Forecast": false
+    },
+    {
+        "Date": 1583020800000,
+        "Series": "GDP",
+        "Value": 0.9272908367,
+        "Forecast": false
+    },
+    {
+        "Date": 1585699200000,
+        "Series": "GDP",
+        "Value": 0.734063745,
+        "Forecast": false
+    },
+    {
+        "Date": 1588291200000,
+        "Series": "GDP",
+        "Value": 0.7569721116,
+        "Forecast": false
+    },
+    {
+        "Date": 1590969600000,
+        "Series": "GDP",
+        "Value": 0.8247011952,
+        "Forecast": false
+    },
+    {
+        "Date": 1593561600000,
+        "Series": "GDP",
+        "Value": 0.8854581673,
+        "Forecast": false
+    },
+    {
+        "Date": 1596240000000,
+        "Series": "GDP",
+        "Value": 0.9043824701,
+        "Forecast": false
+    },
+    {
+        "Date": 1598918400000,
+        "Series": "GDP",
+        "Value": 0.9143426295,
+        "Forecast": false
+    },
+    {
+        "Date": 1601510400000,
+        "Series": "GDP",
+        "Value": 0.9193227092,
+        "Forecast": false
+    },
+    {
+        "Date": 1604188800000,
+        "Series": "GDP",
+        "Value": 0.9033864542,
+        "Forecast": false
+    },
+    {
+        "Date": 1606780800000,
+        "Series": "GDP",
+        "Value": 0.9193227092,
+        "Forecast": false
+    },
+    {
+        "Date": 1609459200000,
+        "Series": "GDP",
+        "Value": 0.8924302789,
+        "Forecast": false
+    },
+    {
+        "Date": 1612137600000,
+        "Series": "GDP",
+        "Value": 0.8984063745,
+        "Forecast": false
+    },
+    {
+        "Date": 1614556800000,
+        "Series": "GDP",
+        "Value": 0.9183266932,
+        "Forecast": false
+    },
+    {
+        "Date": 1617235200000,
+        "Series": "GDP",
+        "Value": 0.9472111554,
+        "Forecast": false
+    },
+    {
+        "Date": 1619827200000,
+        "Series": "GDP",
+        "Value": 0.9591633466,
+        "Forecast": false
+    },
+    {
+        "Date": 1622505600000,
+        "Series": "GDP",
+        "Value": 0.969123506,
+        "Forecast": false
+    },
+    {
+        "Date": 1625097600000,
+        "Series": "GDP",
+        "Value": 0.96812749,
+        "Forecast": false
+    },
+    {
+        "Date": 1627776000000,
+        "Series": "GDP",
+        "Value": 0.9760956175,
+        "Forecast": false
+    },
+    {
+        "Date": 1630454400000,
+        "Series": "GDP",
+        "Value": 0.9820717131,
+        "Forecast": false
+    },
+    {
+        "Date": 1633046400000,
+        "Series": "GDP",
+        "Value": 0.9830677291,
+        "Forecast": false
+    },
+    {
+        "Date": 1635724800000,
+        "Series": "GDP",
+        "Value": 0.9930278884,
+        "Forecast": false
+    },
+    {
+        "Date": 1638316800000,
+        "Series": "GDP",
+        "Value": 0.9940239044,
+        "Forecast": false
+    },
+    {
+        "Date": 1640995200000,
+        "Series": "GDP",
+        "Value": 0.9960159363,
+        "Forecast": false
+    },
+    {
+        "Date": 1643673600000,
+        "Series": "GDP",
+        "Value": 0.9950199203,
+        "Forecast": false
+    },
+    {
+        "Date": 1646092800000,
+        "Series": "GDP",
+        "Value": 0.9960159363,
+        "Forecast": false
+    },
+    {
+        "Date": 1648771200000,
+        "Series": "GDP",
+        "Value": 0.9960159363,
+        "Forecast": false
+    },
+    {
+        "Date": 1651363200000,
+        "Series": "GDP",
+        "Value": 1.0039840637,
+        "Forecast": false
+    },
+    {
+        "Date": 1654041600000,
+        "Series": "GDP",
+        "Value": 0.9960159363,
+        "Forecast": false
+    },
+    {
+        "Date": 1656633600000,
+        "Series": "GDP",
+        "Value": 1.0,
+        "Forecast": false
+    },
+    {
+        "Date": 1659312000000,
+        "Series": "GDP",
+        "Value": 1.0,
+        "Forecast": false
+    },
+    {
+        "Date": 1661990400000,
+        "Series": "GDP",
+        "Value": 0.9930278884,
+        "Forecast": false
+    },
+    {
+        "Date": 1664582400000,
+        "Series": "GDP",
+        "Value": 1.0,
+        "Forecast": false
+    },
+    {
+        "Date": 1667260800000,
+        "Series": "GDP",
+        "Value": 1.0009960159,
+        "Forecast": false
+    },
+    {
+        "Date": 1669852800000,
+        "Series": "GDP",
+        "Value": 0.9960159363,
+        "Forecast": false
+    },
+    {
+        "Date": 1672531200000,
+        "Series": "GDP",
+        "Value": 1.0009960159,
+        "Forecast": false
+    },
+    {
+        "Date": 1675209600000,
+        "Series": "GDP",
+        "Value": 1.0009960159,
+        "Forecast": false
+    },
+    {
+        "Date": 1677628800000,
+        "Series": "GDP",
+        "Value": 0.9990039841,
+        "Forecast": false
+    },
+    {
+        "Date": 1680307200000,
+        "Series": "GDP",
+        "Value": 1.0,
+        "Forecast": false
+    },
+    {
+        "Date": 1680307200000,
+        "Series": "GDP",
+        "Value": 1.0,
+        "Forecast": true
+    },
+    {
+        "Date": 1682899200000,
+        "Series": "GDP",
+        "Value": 1.0005954349,
+        "Forecast": true
+    },
+    {
+        "Date": 1685577600000,
+        "Series": "GDP",
+        "Value": 1.0020106467,
+        "Forecast": true
+    }
+]

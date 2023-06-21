@@ -1,0 +1,573 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "data": {
+    "values": [
+      {"Date": 1483228800000, "Series": "actual", "Value": 0.046},
+      {"Date": 1485907200000, "Series": "actual", "Value": 0.046},
+      {"Date": 1488326400000, "Series": "actual", "Value": 0.044},
+      {"Date": 1491004800000, "Series": "actual", "Value": 0.043},
+      {"Date": 1493596800000, "Series": "actual", "Value": 0.044},
+      {"Date": 1496275200000, "Series": "actual", "Value": 0.044},
+      {"Date": 1498867200000, "Series": "actual", "Value": 0.045},
+      {"Date": 1501545600000, "Series": "actual", "Value": 0.045},
+      {"Date": 1504224000000, "Series": "actual", "Value": 0.044},
+      {"Date": 1506816000000, "Series": "actual", "Value": 0.043},
+      {"Date": 1509494400000, "Series": "actual", "Value": 0.042},
+      {"Date": 1512086400000, "Series": "actual", "Value": 0.042},
+      {"Date": 1514764800000, "Series": "actual", "Value": 0.041},
+      {"Date": 1517443200000, "Series": "actual", "Value": 0.042},
+      {"Date": 1519862400000, "Series": "actual", "Value": 0.041},
+      {"Date": 1522540800000, "Series": "actual", "Value": 0.04},
+      {"Date": 1525132800000, "Series": "actual", "Value": 0.04},
+      {"Date": 1527811200000, "Series": "actual", "Value": 0.041},
+      {"Date": 1530403200000, "Series": "actual", "Value": 0.042},
+      {"Date": 1533081600000, "Series": "actual", "Value": 0.043},
+      {"Date": 1535760000000, "Series": "actual", "Value": 0.043},
+      {"Date": 1538352000000, "Series": "actual", "Value": 0.041},
+      {"Date": 1541030400000, "Series": "actual", "Value": 0.039},
+      {"Date": 1543622400000, "Series": "actual", "Value": 0.038},
+      {"Date": 1546300800000, "Series": "actual", "Value": 0.039},
+      {"Date": 1548979200000, "Series": "actual", "Value": 0.038},
+      {"Date": 1551398400000, "Series": "actual", "Value": 0.037},
+      {"Date": 1554076800000, "Series": "actual", "Value": 0.036},
+      {"Date": 1556668800000, "Series": "actual", "Value": 0.038},
+      {"Date": 1559347200000, "Series": "actual", "Value": 0.039},
+      {"Date": 1561939200000, "Series": "actual", "Value": 0.04},
+      {"Date": 1564617600000, "Series": "actual", "Value": 0.04},
+      {"Date": 1567296000000, "Series": "actual", "Value": 0.04},
+      {"Date": 1569888000000, "Series": "actual", "Value": 0.039},
+      {"Date": 1572566400000, "Series": "actual", "Value": 0.037},
+      {"Date": 1575158400000, "Series": "actual", "Value": 0.038},
+      {"Date": 1577836800000, "Series": "actual", "Value": 0.039},
+      {"Date": 1580515200000, "Series": "actual", "Value": 0.04},
+      {"Date": 1583020800000, "Series": "actual", "Value": 0.038},
+      {"Date": 1585699200000, "Series": "actual", "Value": 0.039},
+      {"Date": 1588291200000, "Series": "actual", "Value": 0.04},
+      {"Date": 1590969600000, "Series": "actual", "Value": 0.043},
+      {"Date": 1593561600000, "Series": "actual", "Value": 0.047},
+      {"Date": 1596240000000, "Series": "actual", "Value": 0.051},
+      {"Date": 1598918400000, "Series": "actual", "Value": 0.053},
+      {"Date": 1601510400000, "Series": "actual", "Value": 0.052},
+      {"Date": 1604188800000, "Series": "actual", "Value": 0.052},
+      {"Date": 1606780800000, "Series": "actual", "Value": 0.051},
+      {"Date": 1483228800000, "Series": "fit", "Value": 0.0453122896},
+      {"Date": 1485907200000, "Series": "fit", "Value": 0.0453122896},
+      {"Date": 1488326400000, "Series": "fit", "Value": 0.0453122896},
+      {"Date": 1491004800000, "Series": "fit", "Value": 0.0435117845},
+      {"Date": 1493596800000, "Series": "fit", "Value": 0.042611532},
+      {"Date": 1496275200000, "Series": "fit", "Value": 0.0435117845},
+      {"Date": 1498867200000, "Series": "fit", "Value": 0.0435117845},
+      {"Date": 1501545600000, "Series": "fit", "Value": 0.044412037},
+      {"Date": 1504224000000, "Series": "fit", "Value": 0.044412037},
+      {"Date": 1506816000000, "Series": "fit", "Value": 0.0435117845},
+      {"Date": 1509494400000, "Series": "fit", "Value": 0.042611532},
+      {"Date": 1512086400000, "Series": "fit", "Value": 0.0417112795},
+      {"Date": 1514764800000, "Series": "fit", "Value": 0.0417112795},
+      {"Date": 1517443200000, "Series": "fit", "Value": 0.0408110269},
+      {"Date": 1519862400000, "Series": "fit", "Value": 0.0417112795},
+      {"Date": 1522540800000, "Series": "fit", "Value": 0.0408110269},
+      {"Date": 1525132800000, "Series": "fit", "Value": 0.0399107744},
+      {"Date": 1527811200000, "Series": "fit", "Value": 0.0399107744},
+      {"Date": 1530403200000, "Series": "fit", "Value": 0.0408110269},
+      {"Date": 1533081600000, "Series": "fit", "Value": 0.0417112795},
+      {"Date": 1535760000000, "Series": "fit", "Value": 0.042611532},
+      {"Date": 1538352000000, "Series": "fit", "Value": 0.042611532},
+      {"Date": 1541030400000, "Series": "fit", "Value": 0.0408110269},
+      {"Date": 1543622400000, "Series": "fit", "Value": 0.0390105219},
+      {"Date": 1546300800000, "Series": "fit", "Value": 0.0381102694},
+      {"Date": 1548979200000, "Series": "fit", "Value": 0.0390105219},
+      {"Date": 1551398400000, "Series": "fit", "Value": 0.0381102694},
+      {"Date": 1554076800000, "Series": "fit", "Value": 0.0372100168},
+      {"Date": 1556668800000, "Series": "fit", "Value": 0.0363097643},
+      {"Date": 1559347200000, "Series": "fit", "Value": 0.0381102694},
+      {"Date": 1561939200000, "Series": "fit", "Value": 0.0390105219},
+      {"Date": 1564617600000, "Series": "fit", "Value": 0.0399107744},
+      {"Date": 1567296000000, "Series": "fit", "Value": 0.0399107744},
+      {"Date": 1569888000000, "Series": "fit", "Value": 0.0399107744},
+      {"Date": 1572566400000, "Series": "fit", "Value": 0.0390105219},
+      {"Date": 1575158400000, "Series": "fit", "Value": 0.0372100168},
+      {"Date": 1577836800000, "Series": "fit", "Value": 0.0381102694},
+      {"Date": 1580515200000, "Series": "fit", "Value": 0.0382095396},
+      {"Date": 1583020800000, "Series": "fit", "Value": 0.0382989079},
+      {"Date": 1585699200000, "Series": "fit", "Value": 0.038379362},
+      {"Date": 1588291200000, "Series": "fit", "Value": 0.0384517909},
+      {"Date": 1590969600000, "Series": "fit", "Value": 0.0385169953},
+      {"Date": 1593561600000, "Series": "fit", "Value": 0.0385756957},
+      {"Date": 1596240000000, "Series": "fit", "Value": 0.0386285409},
+      {"Date": 1598918400000, "Series": "fit", "Value": 0.0386761149},
+      {"Date": 1601510400000, "Series": "fit", "Value": 0.0387189435},
+      {"Date": 1604188800000, "Series": "fit", "Value": 0.0387575},
+      {"Date": 1606780800000, "Series": "fit", "Value": 0.0387922107},
+      {"Date": 1577836800000, "Series": "fit_low", "Value": 0.0402133634},
+      {"Date": 1580515200000, "Series": "fit_low", "Value": 0.0410393186},
+      {"Date": 1583020800000, "Series": "fit_low", "Value": 0.0416023668},
+      {"Date": 1585699200000, "Series": "fit_low", "Value": 0.0420218016},
+      {"Date": 1588291200000, "Series": "fit_low", "Value": 0.0423473786},
+      {"Date": 1590969600000, "Series": "fit_low", "Value": 0.0426062669},
+      {"Date": 1593561600000, "Series": "fit_low", "Value": 0.0428154529},
+      {"Date": 1596240000000, "Series": "fit_low", "Value": 0.0429864492},
+      {"Date": 1598918400000, "Series": "fit_low", "Value": 0.0431274791},
+      {"Date": 1601510400000, "Series": "fit_low", "Value": 0.0432446339},
+      {"Date": 1604188800000, "Series": "fit_low", "Value": 0.0433425446},
+      {"Date": 1606780800000, "Series": "fit_low", "Value": 0.0434248012},
+      {"Date": 1577836800000, "Series": "fit_high", "Value": 0.0360071753},
+      {"Date": 1580515200000, "Series": "fit_high", "Value": 0.0353797607},
+      {"Date": 1583020800000, "Series": "fit_high", "Value": 0.0349954491},
+      {"Date": 1585699200000, "Series": "fit_high", "Value": 0.0347369224},
+      {"Date": 1588291200000, "Series": "fit_high", "Value": 0.0345562033},
+      {"Date": 1590969600000, "Series": "fit_high", "Value": 0.0344277237},
+      {"Date": 1593561600000, "Series": "fit_high", "Value": 0.0343359384},
+      {"Date": 1596240000000, "Series": "fit_high", "Value": 0.0342706325},
+      {"Date": 1598918400000, "Series": "fit_high", "Value": 0.0342247506},
+      {"Date": 1601510400000, "Series": "fit_high", "Value": 0.034193253},
+      {"Date": 1604188800000, "Series": "fit_high", "Value": 0.0341724555},
+      {"Date": 1606780800000, "Series": "fit_high", "Value": 0.0341596201}
+    ]
+  },
+  "width": 550,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {"type": "rule"},
+      "data": {"values": [{"Date": "2020-01-01"}]},
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "format": "%Y",
+            "values": [
+              1486012800000,
+              1514761200000,
+              1546297200000,
+              1577833200000,
+              1606690800000
+            ],
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }
+        },
+        "y": null,
+        "opacity": {"value": 1},
+        "color": {"value": "darkgray"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "size": 11,
+        "fontWeight": "normal",
+        "color": "#676A86"
+      },
+      "data": {
+        "values": [
+          {
+            "Date": "2020-01-01",
+            "Series": "actual",
+            "Value": 0.0515,
+            "label": "Forecast→"
+          },
+          {
+            "Date": "2020-01-01",
+            "Series": "actual",
+            "Value": 0.0508,
+            "label": "Period"
+          },
+          {
+            "Date": "2020-05-01",
+            "Series": "se",
+            "Value": 0.0353,
+            "label": "±2 s.e. intervals"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "format": "%Y",
+            "values": [
+              1486012800000,
+              1514761200000,
+              1546297200000,
+              1577833200000,
+              1606690800000
+            ],
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"domainMin": 0.0325, "domainMax": 0.053},
+          "axis": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "format": "",
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": null,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -18
+          }
+        },
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "size": 11,
+        "fontWeight": "normal",
+        "color": "#676A86"
+      },
+      "data": {
+        "values": [
+          {
+            "Date": "2019-07-01",
+            "Series": "actual",
+            "Value": 0.0528,
+            "label": "Unemployment Rate Outcomes"
+          },
+          {
+            "Date": "2018-09-24",
+            "Series": "fit",
+            "Value": 0.043,
+            "label": "in Sample Fitted Values"
+          },
+          {
+            "Date": "2020-01-01",
+            "Series": "se",
+            "Value": 0.0373,
+            "label": "Simple Model Forecasts"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "format": "%Y",
+            "values": [
+              1486012800000,
+              1514761200000,
+              1546297200000,
+              1577833200000,
+              1606690800000
+            ],
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"domainMin": 0.0325, "domainMax": 0.053},
+          "axis": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "format": "",
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": null,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -18
+          }
+        },
+        "color": {
+          "field": "Series",
+          "scale": {
+            "range": [
+              "darkgray",
+              "rgb(224,52,82)",
+              "rgb(110,177,222)",
+              "rgb(110,177,222)"
+            ]
+          },
+          "legend": false
+        },
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "layer": [
+        {
+          "mark": {"type": "area", "fill": "lightgray", "opacity": 0.4},
+          "encoding": {
+            "x": {
+              "field": "Date",
+              "type": "temporal",
+              "axis": {
+                "format": "%Y",
+                "values": [
+                  1486012800000,
+                  1514761200000,
+                  1546297200000,
+                  1577833200000,
+                  1606690800000
+                ],
+                "grid": false,
+                "domainColor": "#919ae4",
+                "domainOpacity": 0.5,
+                "labelAngle": 0,
+                "labelColor": "#676A86",
+                "labelOpacity": 0.7,
+                "orient": "bottom",
+                "tickColor": "#676A86",
+                "tickCount": 10,
+                "tickOpacity": 0.5,
+                "title": "",
+                "titleAlign": "center",
+                "titleAnchor": "middle",
+                "titleColor": "#676A86",
+                "titleFontSize": 12,
+                "titleOpacity": 0.8,
+                "titleX": 207,
+                "titleY": -15
+              }
+            },
+            "y": {
+              "field": "fit_low",
+              "type": "quantitative",
+              "scale": {"domainMin": 0.0325, "domainMax": 0.053},
+              "axis": {
+                "domainColor": "#676A86",
+                "domainOpacity": 0.5,
+                "format": "",
+                "gridColor": "#676A86",
+                "gridDash": [1, 5],
+                "gridOpacity": 0.5,
+                "labelColor": "#676A86",
+                "labelOpacity": 0.7,
+                "labelPadding": 5,
+                "tickColor": "#676A86",
+                "tickCount": 8,
+                "tickOpacity": 0.5,
+                "ticks": false,
+                "title": null,
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#676A86",
+                "titleFontSize": 12,
+                "titleOpacity": 0.8,
+                "titleX": 0,
+                "titleY": -18
+              }
+            },
+            "color": {
+              "field": "Series",
+              "scale": {"range": ["rgb(224,52,82)", "rgb(110,177,222)"]},
+              "legend": false
+            },
+            "y2": {"field": "fit_high"}
+          },
+          "transform": [
+            {
+              "filter": "datum.Series == 'fit_low' | datum.Series == 'fit_high'"
+            },
+            {"pivot": "Series", "value": "Value", "groupby": ["Date"]}
+          ]
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Date",
+              "type": "temporal",
+              "axis": {
+                "format": "%Y",
+                "values": [
+                  1486012800000,
+                  1514761200000,
+                  1546297200000,
+                  1577833200000,
+                  1606690800000
+                ],
+                "grid": false,
+                "domainColor": "#919ae4",
+                "domainOpacity": 0.5,
+                "labelAngle": 0,
+                "labelColor": "#676A86",
+                "labelOpacity": 0.7,
+                "orient": "bottom",
+                "tickColor": "#676A86",
+                "tickCount": 10,
+                "tickOpacity": 0.5,
+                "title": "",
+                "titleAlign": "center",
+                "titleAnchor": "middle",
+                "titleColor": "#676A86",
+                "titleFontSize": 12,
+                "titleOpacity": 0.8,
+                "titleX": 207,
+                "titleY": -15
+              }
+            },
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "scale": {"domainMin": 0.0325, "domainMax": 0.053},
+              "axis": {
+                "domainColor": "#676A86",
+                "domainOpacity": 0.5,
+                "format": "",
+                "gridColor": "#676A86",
+                "gridDash": [1, 5],
+                "gridOpacity": 0.5,
+                "labelColor": "#676A86",
+                "labelOpacity": 0.7,
+                "labelPadding": 5,
+                "tickColor": "#676A86",
+                "tickCount": 8,
+                "tickOpacity": 0.5,
+                "ticks": false,
+                "title": null,
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#676A86",
+                "titleFontSize": 12,
+                "titleOpacity": 0.8,
+                "titleX": 0,
+                "titleY": -18
+              }
+            },
+            "color": {
+              "field": "Series",
+              "scale": {"range": ["rgb(224,52,82)", "rgb(110,177,222)"]},
+              "legend": false
+            },
+            "strokeDash": {"field": "Series", "legend": null}
+          },
+          "transform": [
+            {"filter": "datum.Series == 'actual' | datum.Series == 'fit'"}
+          ]
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontWeight": "lighter",
+        "align": "left",
+        "color": "#676A86",
+        "fontSize": 11
+      },
+      "data": {"values": [{"Value": 0}]},
+      "encoding": {
+        "x": {"value": 1},
+        "y": {"value": -10},
+        "text": {"value": null}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "image": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+          }
+        ]
+      },
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": 105,
+        "yOffset": -33
+      },
+      "encoding": {
+        "x": {"value": 450},
+        "y": {"value": -10},
+        "url": {"field": "image", "type": "nominal"}
+      }
+    }
+  ]
+}

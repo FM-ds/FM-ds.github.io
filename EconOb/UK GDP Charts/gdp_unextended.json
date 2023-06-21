@@ -1,0 +1,181 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "data": {"values":[{"Date":1575158400000,"Series":"GDP","Value":1.0,"Forecast":false},{"Date":1577836800000,"Series":"GDP","Value":1.0029880478,"Forecast":false},{"Date":1580515200000,"Series":"GDP","Value":0.9980079681,"Forecast":false},{"Date":1583020800000,"Series":"GDP","Value":0.9272908367,"Forecast":false},{"Date":1585699200000,"Series":"GDP","Value":0.734063745,"Forecast":false},{"Date":1588291200000,"Series":"GDP","Value":0.7569721116,"Forecast":false},{"Date":1590969600000,"Series":"GDP","Value":0.8247011952,"Forecast":false},{"Date":1593561600000,"Series":"GDP","Value":0.8854581673,"Forecast":false},{"Date":1596240000000,"Series":"GDP","Value":0.9043824701,"Forecast":false},{"Date":1598918400000,"Series":"GDP","Value":0.9143426295,"Forecast":false},{"Date":1601510400000,"Series":"GDP","Value":0.9193227092,"Forecast":false},{"Date":1604188800000,"Series":"GDP","Value":0.9033864542,"Forecast":false},{"Date":1606780800000,"Series":"GDP","Value":0.9193227092,"Forecast":false},{"Date":1609459200000,"Series":"GDP","Value":0.8924302789,"Forecast":false},{"Date":1612137600000,"Series":"GDP","Value":0.8984063745,"Forecast":false},{"Date":1614556800000,"Series":"GDP","Value":0.9183266932,"Forecast":false},{"Date":1617235200000,"Series":"GDP","Value":0.9472111554,"Forecast":false},{"Date":1619827200000,"Series":"GDP","Value":0.9591633466,"Forecast":false},{"Date":1622505600000,"Series":"GDP","Value":0.969123506,"Forecast":false},{"Date":1625097600000,"Series":"GDP","Value":0.96812749,"Forecast":false},{"Date":1627776000000,"Series":"GDP","Value":0.9760956175,"Forecast":false},{"Date":1630454400000,"Series":"GDP","Value":0.9820717131,"Forecast":false},{"Date":1633046400000,"Series":"GDP","Value":0.9830677291,"Forecast":false},{"Date":1635724800000,"Series":"GDP","Value":0.9930278884,"Forecast":false},{"Date":1638316800000,"Series":"GDP","Value":0.9940239044,"Forecast":false},{"Date":1640995200000,"Series":"GDP","Value":0.9960159363,"Forecast":false},{"Date":1643673600000,"Series":"GDP","Value":0.9950199203,"Forecast":false},{"Date":1646092800000,"Series":"GDP","Value":0.9960159363,"Forecast":false},{"Date":1648771200000,"Series":"GDP","Value":0.9960159363,"Forecast":false},{"Date":1651363200000,"Series":"GDP","Value":1.0039840637,"Forecast":false},{"Date":1654041600000,"Series":"GDP","Value":0.9960159363,"Forecast":false},{"Date":1656633600000,"Series":"GDP","Value":1.0,"Forecast":false},{"Date":1659312000000,"Series":"GDP","Value":1.0,"Forecast":false},{"Date":1661990400000,"Series":"GDP","Value":0.9930278884,"Forecast":false},{"Date":1664582400000,"Series":"GDP","Value":1.0,"Forecast":false},{"Date":1667260800000,"Series":"GDP","Value":1.0009960159,"Forecast":false},{"Date":1669852800000,"Series":"GDP","Value":0.9960159363,"Forecast":false},{"Date":1672531200000,"Series":"GDP","Value":1.0009960159,"Forecast":false},{"Date":1675209600000,"Series":"GDP","Value":1.0009960159,"Forecast":false},{"Date":1677628800000,"Series":"GDP","Value":0.9990039841,"Forecast":false},{"Date":1680307200000,"Series":"GDP","Value":1.0,"Forecast":false},{"Date":1680307200000,"Series":"GDP","Value":1.0,"Forecast":true},{"Date":1682899200000,"Series":"GDP","Value":1.0005954349,"Forecast":true},{"Date":1685577600000,"Series":"GDP","Value":1.0020106467,"Forecast":true}]},
+  "width": 550,
+  "height": 300,
+  "encoding": {"x": {"field": "Date", "type": "temporal",           "axis": {
+            "format": "%e %b %Y",
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }},         
+          "y": {"field": "Value", "type": "quantitative", 
+            "scale":{
+              "domainMin":0.7,
+              "domainMax": 1.05
+            },
+            "axis": {
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "format": "%",
+              "gridColor": "#676A86",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "labelPadding": 5,
+              "tickColor": "#676A86",
+              "tickCount": 8,
+              "tickOpacity": 0.5,
+              "ticks": false,
+              "title": "United Kingdom GDP",
+              "titleAlign": "left",
+              "titleAngle": 0,
+              "titleBaseline": "bottom",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleOpacity": 0.8,
+              "titleX": 0,
+              "titleY": -18
+          }
+}
+},
+  "layer": [
+        {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "size": 11,
+        "fontWeight": "normal",
+        "color": "#676A86"
+      },
+      "data": {
+        "values": [
+          {"Date": "2023-04-01", "Value":1.03, "label": "NIESR →"},
+          {"Date": "2023-04-01", "Value":1.015, "label": "Forecast"},
+          {"Date": "2022-12-20", "Value":1.03, "label": "⟵ONS"},
+          {"Date": "2023-01-18", "Value":1.015, "label": "Data"}
+        ]
+      },
+      "encoding": {
+        "x": {"field":"Date"},
+        "y": {"field": "Value"},
+        "text":{"field":"label"}
+      }
+    },
+        {
+      "transform": [{"filter":"!datum.Forecast"}],
+      "encoding": {
+        "color": {"value": "rgb(110,177,222)"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+      ]
+    },
+    {
+      "transform": [{"filter":"datum.Forecast"}],
+      "encoding": {
+        "y": {"field": "Value", "type": "quantitative"},
+        "color": {"value": "rgb(224,52,82)"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {"transform": [{"filter": {"param": "hover", "empty": false}}], "mark": "point"}
+      ]
+    },
+    {
+      "mark": {"type": "rule", "color": "#676A86"},
+      "data":{"values": [{"Date":"2023-04-01"}]},
+      "encoding": {
+        "x": {"field":"Date"},
+        "opacity": {"value":0.6},
+        "y": null
+      }
+    },
+    {
+      "transform": [{"pivot": "Series", "value": "Value", "groupby": ["Date"]}],
+      "mark": "rule",
+      "encoding": {
+        "y":null,
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "GDP", "type": "quantitative", "format":".1%", "title":"GDP"},
+          {"field": "Date", "type": "temporal", "format": "%B %Y"}
+        ]
+      },
+      "params": [{
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "clear": "mouseout"
+        }
+      }]
+    },
+        {
+      "mark": {
+        "type": "text",
+        "fontWeight": "lighter",
+        "align": "left",
+        "color": "#676A86",
+        "fontSize": 11
+      },
+      "data": {
+        "values": [{"Value":0}]
+      },
+      "encoding": {
+        "x": {"value": 1},
+        "text": {
+          "value": "Indexed to 2019, Source: ONS, NIESR"
+        },
+        "y": {"value": -10}
+      }    },
+          {
+      "data": {
+        "values": [
+          {
+            "image": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+          }
+        ]
+      },
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": 105,
+        "yOffset": -33
+      },
+      "encoding": {
+        "x": {"value": 470},
+        "url": {"field": "image", "type": "nominal"},
+        "y": {"value": -10}
+      }
+    }
+  ],
+}

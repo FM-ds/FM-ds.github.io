@@ -1,0 +1,200 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "data": {"values":
+[{"Date":1485907200000,"Series":"actual","Value":4.5845755651},{"Date":1488326400000,"Series":"actual","Value":4.5861677784},{"Date":1491004800000,"Series":"actual","Value":4.5874195719},{"Date":1493596800000,"Series":"actual","Value":4.5901803984},{"Date":1496275200000,"Series":"actual","Value":4.5911878877},{"Date":1498867200000,"Series":"actual","Value":4.5921001439},{"Date":1501545600000,"Series":"actual","Value":4.5938715966},{"Date":1504224000000,"Series":"actual","Value":4.5965894768},{"Date":1506816000000,"Series":"actual","Value":4.5954470693},{"Date":1509494400000,"Series":"actual","Value":4.5980851463},{"Date":1512086400000,"Series":"actual","Value":4.5995785821},{"Date":1514764800000,"Series":"actual","Value":4.6003103963},{"Date":1517443200000,"Series":"actual","Value":4.5977003561},{"Date":1519862400000,"Series":"actual","Value":4.5975381358},{"Date":1522540800000,"Series":"actual","Value":4.5996328834},{"Date":1525132800000,"Series":"actual","Value":4.6018145622},{"Date":1527811200000,"Series":"actual","Value":4.6043578561},{"Date":1530403200000,"Series":"actual","Value":4.6077518506},{"Date":1533081600000,"Series":"actual","Value":4.6086879912},{"Date":1535760000000,"Series":"actual","Value":4.6092896892},{"Date":1538352000000,"Series":"actual","Value":4.6120762839},{"Date":1541030400000,"Series":"actual","Value":4.6127096923},{"Date":1543622400000,"Series":"actual","Value":4.609999506},{"Date":1546300800000,"Series":"actual","Value":4.6140080171},{"Date":1548979200000,"Series":"actual","Value":4.6179699188},{"Date":1551398400000,"Series":"actual","Value":4.6197139114},{"Date":1554076800000,"Series":"actual","Value":4.6152729805},{"Date":1556668800000,"Series":"actual","Value":4.6180400133},{"Date":1559347200000,"Series":"actual","Value":4.618880765},{"Date":1561939200000,"Series":"actual","Value":4.6217027666},{"Date":1564617600000,"Series":"actual","Value":4.6205276541},{"Date":1567296000000,"Series":"actual","Value":4.6207196638},{"Date":1569888000000,"Series":"actual","Value":4.622883377},{"Date":1572566400000,"Series":"actual","Value":4.6195739519},{"Date":1575158400000,"Series":"actual","Value":4.6205788603},{"Date":1577836800000,"Series":"actual","Value":4.6215581665},{"Date":1580515200000,"Series":"actual","Value":4.6190208215},{"Date":1583020800000,"Series":"actual","Value":4.5432213753},{"Date":1585699200000,"Series":"actual","Value":4.3268323201},{"Date":1588291200000,"Series":"actual","Value":4.353427809},{"Date":1590969600000,"Series":"actual","Value":4.4402990805},{"Date":1593561600000,"Series":"actual","Value":4.5012808099},{"Date":1596240000000,"Series":"actual","Value":4.5225969459},{"Date":1598918400000,"Series":"actual","Value":4.5331122649},{"Date":1601510400000,"Series":"actual","Value":4.567850385},{"Date":1604188800000,"Series":"actual","Value":4.5452927849},{"Date":1606780800000,"Series":"actual","Value":4.5548038303},{"Date":1485907200000,"Series":"fit","Value":4.5879939904},{"Date":1488326400000,"Series":"fit","Value":4.5861119008},{"Date":1491004800000,"Series":"fit","Value":4.5876600812},{"Date":1493596800000,"Series":"fit","Value":4.5888772562},{"Date":1496275200000,"Series":"fit","Value":4.5915617318},{"Date":1498867200000,"Series":"fit","Value":4.5925413589},{"Date":1501545600000,"Series":"fit","Value":4.5934283866},{"Date":1504224000000,"Series":"fit","Value":4.5951508496},{"Date":1506816000000,"Series":"fit","Value":4.5977935665},{"Date":1509494400000,"Series":"fit","Value":4.5966827525},{"Date":1512086400000,"Series":"fit","Value":4.5992478731},{"Date":1514764800000,"Series":"fit","Value":4.6007000078},{"Date":1517443200000,"Series":"fit","Value":4.6014115837},{"Date":1519862400000,"Series":"fit","Value":4.5988737244},{"Date":1522540800000,"Series":"fit","Value":4.5987159903},{"Date":1525132800000,"Series":"fit","Value":4.6007528074},{"Date":1527811200000,"Series":"fit","Value":4.6028741517},{"Date":1530403200000,"Series":"fit","Value":4.6053471106},{"Date":1533081600000,"Series":"fit","Value":4.6086472439},{"Date":1535760000000,"Series":"fit","Value":4.6095574954},{"Date":1538352000000,"Series":"fit","Value":4.6101425533},{"Date":1541030400000,"Series":"fit","Value":4.6128520845},{"Date":1543622400000,"Series":"fit","Value":4.613467976},{"Date":1546300800000,"Series":"fit","Value":4.6108327402},{"Date":1548979200000,"Series":"fit","Value":4.6147303954},{"Date":1551398400000,"Series":"fit","Value":4.6185827304},{"Date":1554076800000,"Series":"fit","Value":4.6202784927},{"Date":1556668800000,"Series":"fit","Value":4.6159603762},{"Date":1559347200000,"Series":"fit","Value":4.6186508865},{"Date":1561939200000,"Series":"fit","Value":4.619468387},{"Date":1564617600000,"Series":"fit","Value":4.622212346},{"Date":1567296000000,"Series":"fit","Value":4.6210697313},{"Date":1569888000000,"Series":"fit","Value":4.6212564309},{"Date":1572566400000,"Series":"fit","Value":4.6233603065},{"Date":1575158400000,"Series":"fit","Value":4.6201424038},{"Date":1577836800000,"Series":"fit","Value":4.6211195213},{"Date":1580515200000,"Series":"fit","Value":4.6216452304},{"Date":1583020800000,"Series":"fit","Value":4.6221564009},{"Date":1585699200000,"Series":"fit","Value":4.6226534349},{"Date":1588291200000,"Series":"fit","Value":4.6231367235},{"Date":1590969600000,"Series":"fit","Value":4.6236066466},{"Date":1593561600000,"Series":"fit","Value":4.6240635739},{"Date":1596240000000,"Series":"fit","Value":4.6245078649},{"Date":1598918400000,"Series":"fit","Value":4.624939869},{"Date":1601510400000,"Series":"fit","Value":4.625359926},{"Date":1604188800000,"Series":"fit","Value":4.6257683662},{"Date":1606780800000,"Series":"fit","Value":4.626165511},{"Date":1577836800000,"Series":"fit_low","Value":4.6232226154},{"Date":1580515200000,"Series":"fit_low","Value":4.6244750094},{"Date":1583020800000,"Series":"fit_low","Value":4.6254598598},{"Date":1585699200000,"Series":"fit_low","Value":4.6262958746},{"Date":1588291200000,"Series":"fit_low","Value":4.6270323111},{"Date":1590969600000,"Series":"fit_low","Value":4.6276959181},{"Date":1593561600000,"Series":"fit_low","Value":4.6283033312},{"Date":1596240000000,"Series":"fit_low","Value":4.6288657733},{"Date":1598918400000,"Series":"fit_low","Value":4.6293912333},{"Date":1601510400000,"Series":"fit_low","Value":4.6298856164},{"Date":1604188800000,"Series":"fit_low","Value":4.6303534108},{"Date":1606780800000,"Series":"fit_low","Value":4.6307981016},{"Date":1577836800000,"Series":"fit_high","Value":4.6190164273},{"Date":1580515200000,"Series":"fit_high","Value":4.6188154514},{"Date":1583020800000,"Series":"fit_high","Value":4.618852942},{"Date":1585699200000,"Series":"fit_high","Value":4.6190109953},{"Date":1588291200000,"Series":"fit_high","Value":4.6192411358},{"Date":1590969600000,"Series":"fit_high","Value":4.619517375},{"Date":1593561600000,"Series":"fit_high","Value":4.6198238167},{"Date":1596240000000,"Series":"fit_high","Value":4.6201499566},{"Date":1598918400000,"Series":"fit_high","Value":4.6204885047},{"Date":1601510400000,"Series":"fit_high","Value":4.6208342355},{"Date":1604188800000,"Series":"fit_high","Value":4.6211833217},{"Date":1606780800000,"Series":"fit_high","Value":4.6215329205}]},
+  "width": 550,
+  "height": 300,
+  "encoding": {"x": {"field": "Date", "type": "temporal",           "axis": {
+            "format": "%Y",
+                          "values": [1486012800000, 1514761200000, 1546297200000, 1577833200000, 1606690800000],
+
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }},         
+          "y": {"field": "Value", "type": "quantitative", 
+            "scale":{
+              "domainMin":4.3,
+              "domainMax": 4.64
+            },
+            "axis": {
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "format": "",
+              "gridColor": "#676A86",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "labelPadding": 5,
+              "tickColor": "#676A86",
+              "tickCount": 8,
+              "tickOpacity": 0.5,
+              "ticks": false,
+              "title": null,
+              "titleAlign": "left",
+              "titleAngle": 0,
+              "titleBaseline": "bottom",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleOpacity": 0.8,
+              "titleX": 0,
+              "titleY": -18
+          }
+}
+},
+  "layer": [
+    
+    {
+      "mark": {"type": "rule"},
+      "data": {"values": [{"Date": "2020-01-01"}]},
+      "encoding": {
+        "y":null,
+        "opacity": {"value": 1},
+        "color":{"value":"darkgray"}
+
+      }
+
+    },
+            {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "size": 11,
+        "fontWeight": "normal",
+        "color": "#676A86"
+      },
+      "data": {
+        "values": [
+          {"Date": "2020-01-01", "Series": "actual", "Value":4.637, "label": "Forecast→"},
+          {"Date": "2020-01-01", "Series": "actual", "Value":4.635, "label": ""},
+                  ]
+      },
+      "encoding": {
+        "x": {"field":"Date"},
+        "y": {"field": "Value"},
+        "text":{"field":"label"}
+      }
+    },
+        {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "size": 11,
+        "fontWeight": "normal",
+        "color": "#676A86"
+      },
+      "data": {
+        "values": [
+          {"Date": "2020-05-01", "Series": "actual", "Value":4.33, "label": "Log(GDP)"},
+          {"Date": "2020-04-01", "Series": "fit", "Value":4.61, "label": "ln(GDP) Forecast"},
+          {"Date": "2020-05-01", "Series": "se", "Value":4.632, "label": ""},
+
+                  ]
+      },
+      "encoding": {
+        "x": {"field":"Date"},
+        "y": {"field": "Value"},
+        "color": {"field": "Series", "scale":{"range":["darkgray", "rgb(224,52,82)", "rgb(110,177,222)"]}, "legend":false},
+        "text":{"field":"label"}
+      }
+    },
+    {
+      "encoding": {
+        "color": {"field": "Series", "scale":{"range":["rgb(224,52,82)", "rgb(110,177,222)"]}, "legend":false}
+      },
+      "layer": [
+                          {
+          "transform": [
+            {"filter": "datum.Series == 'fit_low' | datum.Series == 'fit_high'"},
+            {"pivot": "Series", "value": "Value", "groupby": ["Date"]}
+          ],
+          "mark": {
+            "type":"area",
+            "fill": "lightgray",
+            "opacity": 0.4
+            },
+          "encoding": {
+            "y": {"field": "fit_low"},
+            "y2":{"field": "fit_high"}
+          }
+          },
+
+        {
+          "transform": [
+            {"filter": "datum.Series == 'actual' | datum.Series == 'fit'"}
+          ],
+          "mark": "line",
+          "encoding": {
+            "strokeDash": {
+              "field": "Series",
+              "legend": null
+            }
+          }
+          },
+
+          
+                ]
+    },
+        {
+      "mark": {
+        "type": "text",
+        "fontWeight": "lighter",
+        "align": "left",
+        "color": "#676A86",
+        "fontSize": 11
+      },
+      "data": {
+        "values": [{"Value":0}]
+      },
+      "encoding": {
+        "x": {"value": 1},
+        "text": {
+          "value": null
+        },
+        "y": {"value": -10}
+      }    },
+          {
+      "data": {
+        "values": [
+          {
+            "image": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+          }
+        ]
+      },
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": 105,
+        "yOffset": -33
+      },
+      "encoding": {
+        "x": {"value": 450},
+        "url": {"field": "image", "type": "nominal"},
+        "y": {"value": -10}
+      }
+    }
+  ],
+}
