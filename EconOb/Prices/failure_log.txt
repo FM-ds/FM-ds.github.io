@@ -1,0 +1,443 @@
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?count=48', None, 2023-06-24 12:13:51, 'a bytes-like object is required, not 'str'' 
+  
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?count=48', None, 2023-06-24 12:17:03, 'float division by zero' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=11&count=48', None, 2023-06-24 12:18:54, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=21&count=48', None, 2023-06-24 12:20:42, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=31&count=48', None, 2023-06-24 12:22:23, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=41&count=48', None, 2023-06-24 12:24:10, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=51&count=48', None, 2023-06-24 12:26:00, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=61&count=48', None, 2023-06-24 12:27:54, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=71&count=48', None, 2023-06-24 12:29:39, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/bakery/all/?page=4&count=48', None, 2023-06-24 12:31:14, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/bakery/all/?page=14&count=48', None, 2023-06-24 12:32:56, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=9&count=48', None, 2023-06-24 12:34:33, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=19&count=48', None, 2023-06-24 12:36:13, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=7&count=48', None, 2023-06-24 12:37:56, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=17&count=48', None, 2023-06-24 12:39:41, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=27&count=48', None, 2023-06-24 12:41:25, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=37&count=48', None, 2023-06-24 12:43:09, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=8&count=48', None, 2023-06-24 12:44:49, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=18&count=48', None, 2023-06-24 12:46:41, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=28&count=48', None, 2023-06-24 12:48:35, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=38&count=48', None, 2023-06-24 12:50:24, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=48&count=48', None, 2023-06-24 12:52:14, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=58&count=48', None, 2023-06-24 12:54:01, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=68&count=48', None, 2023-06-24 12:55:58, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=78&count=48', None, 2023-06-24 12:57:52, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=88&count=48', None, 2023-06-24 12:59:58, 'a bytes-like object is required, not 'str'' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=98&count=48', None, 2023-06-24 13:01:46, 'a bytes-like object is required, not 'str'' 
+  
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=100&count=48', None, 2023-06-24 13:04:39, 'float division by zero' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=110&count=48', None, 2023-06-24 13:07:08, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=120&count=48', None, 2023-06-24 13:08:59, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=124&count=48', 0, 2023-06-24 13:09:32,  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=6&count=48', None, 2023-06-24 13:10:38, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=16&count=48', None, 2023-06-24 13:12:29, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=26&count=48', None, 2023-06-24 13:14:21, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=36&count=48', None, 2023-06-24 13:16:10, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=46&count=48', None, 2023-06-24 13:18:01, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=56&count=48', None, 2023-06-24 13:19:51, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=66&count=48', 0, 2023-06-24 13:21:26,  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=10&count=48', None, 2023-06-24 13:23:03, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=20&count=48', None, 2023-06-24 13:24:46, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?count=48', 0, 2023-06-24 13:25:42,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=2&count=48', 0, 2023-06-24 13:25:43,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=3&count=48', 0, 2023-06-24 13:25:45,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=4&count=48', 0, 2023-06-24 13:25:47,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=5&count=48', 0, 2023-06-24 13:25:48,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=6&count=48', 0, 2023-06-24 13:25:49,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=7&count=48', 0, 2023-06-24 13:25:51,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=8&count=48', 0, 2023-06-24 13:25:52,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=9&count=48', 0, 2023-06-24 13:25:53,  
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?count=48', None, 2023-06-26 02:15:34, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=11&count=48', None, 2023-06-26 02:17:08, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=21&count=48', None, 2023-06-26 02:18:33, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=31&count=48', None, 2023-06-26 02:19:59, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=41&count=48', None, 2023-06-26 02:21:28, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=51&count=48', None, 2023-06-26 02:22:52, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=61&count=48', None, 2023-06-26 02:24:21, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=71&count=48', None, 2023-06-26 02:25:47, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/bakery/all/?page=4&count=48', None, 2023-06-26 02:27:11, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/bakery/all/?page=14&count=48', None, 2023-06-26 02:28:32, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=9&count=48', None, 2023-06-26 02:29:57, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=19&count=48', None, 2023-06-26 02:31:29, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=7&count=48', None, 2023-06-26 02:33:03, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=17&count=48', None, 2023-06-26 02:34:26, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=27&count=48', None, 2023-06-26 02:35:59, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=37&count=48', None, 2023-06-26 02:39:03, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=38&count=48', None, 2023-06-26 02:45:05, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=8&count=48', None, 2023-06-26 02:46:19, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=18&count=48', None, 2023-06-26 02:47:44, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=28&count=48', None, 2023-06-26 02:49:12, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=38&count=48', None, 2023-06-26 02:50:42, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=48&count=48', None, 2023-06-26 02:52:10, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=58&count=48', None, 2023-06-26 02:53:41, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=68&count=48', None, 2023-06-26 02:55:12, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=78&count=48', None, 2023-06-26 02:57:24, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=88&count=48', None, 2023-06-26 02:58:56, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=98&count=48', None, 2023-06-26 03:00:25, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=108&count=48', None, 2023-06-26 03:01:57, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=118&count=48', None, 2023-06-26 03:03:42, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=124&count=48', 0, 2023-06-26 03:04:30,  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=4&count=48', None, 2023-06-26 03:04:59, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=14&count=48', None, 2023-06-26 03:06:33, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=24&count=48', None, 2023-06-26 03:08:08, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=34&count=48', None, 2023-06-26 03:09:40, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=44&count=48', None, 2023-06-26 03:11:19, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=54&count=48', None, 2023-06-26 03:12:59, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=64&count=48', None, 2023-06-26 03:14:39, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=66&count=48', 0, 2023-06-26 03:14:47,  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=8&count=48', None, 2023-06-26 03:15:57, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=18&count=48', None, 2023-06-26 03:17:21, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?count=48', 0, 2023-06-26 03:18:32,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=2&count=48', None, 2023-06-26 03:18:32, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=3&count=48', 0, 2023-06-26 03:18:33,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=4&count=48', 0, 2023-06-26 03:18:34,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=5&count=48', 0, 2023-06-26 03:18:35,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=6&count=48', 0, 2023-06-26 03:18:36,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=7&count=48', 0, 2023-06-26 03:18:37,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=8&count=48', 0, 2023-06-26 03:18:38,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=9&count=48', 0, 2023-06-26 03:18:39,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=10&count=48', 0, 2023-06-26 03:18:40,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=11&count=48', 0, 2023-06-26 03:18:41,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=11&count=48', None, 2023-06-26 03:18:52, 'start_session() got an unexpected keyword argument 'desired_capabilities'' 
+  
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?count=48', None, 2023-06-27 14:31:08, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=11&count=48', None, 2023-06-27 14:32:45, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=21&count=48', None, 2023-06-27 14:34:24, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=31&count=48', None, 2023-06-27 14:36:05, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=41&count=48', None, 2023-06-27 14:37:44, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=51&count=48', None, 2023-06-27 14:39:25, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=61&count=48', None, 2023-06-27 14:41:05, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=71&count=48', None, 2023-06-27 14:42:47, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=76&count=48', None, 2023-06-27 15:36:49, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=77&count=48', 0, 2023-06-27 15:36:52,  
+'https://www.tesco.com/groceries/en-GB/shop/bakery/all/?page=4&count=48', None, 2023-06-27 15:37:21, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/bakery/all/?page=14&count=48', None, 2023-06-27 15:38:49, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?count=48', None, 2023-06-27 16:16:01, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=3&count=48', None, 2023-06-27 17:42:44, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=9&count=48', None, 2023-06-27 17:43:33, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=12&count=48', None, 2023-06-27 18:59:12, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=16&count=48', None, 2023-06-27 20:24:10, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=19&count=48', None, 2023-06-27 20:24:31, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?count=48', None, 2023-06-27 20:33:51, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=7&count=48', None, 2023-06-27 20:34:44, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=17&count=48', None, 2023-06-27 20:36:16, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=27&count=48', None, 2023-06-27 20:37:50, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=37&count=48', None, 2023-06-27 20:39:24, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=8&count=48', None, 2023-06-27 20:40:49, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=18&count=48', None, 2023-06-27 20:42:21, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=28&count=48', None, 2023-06-27 20:43:55, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=38&count=48', None, 2023-06-27 20:45:33, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=48&count=48', None, 2023-06-27 20:47:14, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=58&count=48', None, 2023-06-27 20:48:52, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=68&count=48', None, 2023-06-27 20:50:31, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=72&count=48', None, 2023-06-27 21:03:14, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=78&count=48', None, 2023-06-27 21:04:13, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=88&count=48', None, 2023-06-27 21:05:53, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=98&count=48', None, 2023-06-27 21:07:42, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=108&count=48', None, 2023-06-27 21:09:27, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=118&count=48', None, 2023-06-27 21:11:05, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=124&count=48', 0, 2023-06-27 21:11:59,  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=4&count=48', None, 2023-06-27 21:12:34, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=14&count=48', None, 2023-06-27 21:14:18, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=24&count=48', None, 2023-06-27 21:16:07, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=34&count=48', None, 2023-06-27 21:17:56, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=44&count=48', None, 2023-06-27 21:19:46, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=54&count=48', None, 2023-06-27 21:21:37, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=64&count=48', None, 2023-06-27 21:23:36, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=66&count=48', 0, 2023-06-27 21:23:45,  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=8&count=48', None, 2023-06-27 21:24:56, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=18&count=48', None, 2023-06-27 21:26:26, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?count=48', 0, 2023-06-27 21:27:45,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=2&count=48', None, 2023-06-27 21:27:45, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=3&count=48', 0, 2023-06-27 21:27:47,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=4&count=48', 0, 2023-06-27 21:27:49,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=5&count=48', 0, 2023-06-27 21:27:50,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=6&count=48', 0, 2023-06-27 21:27:52,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=7&count=48', 0, 2023-06-27 21:27:54,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=8&count=48', 0, 2023-06-27 21:27:55,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=9&count=48', 0, 2023-06-27 21:27:57,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=10&count=48', 0, 2023-06-27 21:27:58,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=11&count=48', 0, 2023-06-27 21:28:00,  
+'https://www.tesco.com/groceries/en-GB/shop/home-ents/all/?page=12&count=48', None, 2023-06-27 21:28:15, 'dumps() takes 1 positional argument but 2 were given' 
+  
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?count=48', None, 2023-06-29 16:26:26, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=11&count=48', None, 2023-06-29 16:28:09, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=21&count=48', None, 2023-06-29 16:29:55, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=31&count=48', None, 2023-06-29 16:31:42, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=41&count=48', None, 2023-06-29 16:33:22, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=51&count=48', None, 2023-06-29 16:35:11, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=61&count=48', None, 2023-06-29 16:37:01, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=71&count=48', None, 2023-06-29 16:38:47, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=77&count=48', 0, 2023-06-29 16:39:44,  
+'https://www.tesco.com/groceries/en-GB/shop/bakery/all/?page=4&count=48', None, 2023-06-29 16:40:15, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/bakery/all/?page=14&count=48', None, 2023-06-29 16:41:51, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=9&count=48', None, 2023-06-29 16:43:29, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=19&count=48', None, 2023-06-29 16:45:12, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=7&count=48', None, 2023-06-29 16:46:49, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=17&count=48', None, 2023-06-29 16:48:31, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=27&count=48', None, 2023-06-29 16:50:12, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=37&count=48', None, 2023-06-29 16:51:57, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=8&count=48', None, 2023-06-29 16:53:33, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=18&count=48', None, 2023-06-29 16:55:20, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=23&count=48', None, 2023-06-29 17:01:04, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=28&count=48', None, 2023-06-29 17:01:51, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=38&count=48', None, 2023-06-29 17:03:33, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=44&count=48', None, 2023-06-29 17:04:31, 'Message: Reached error page: about:neterror?e=connectionFailure&u=https%3A//www.tesco.com/groceries/en-GB/shop/food-cupboard/all/%3Fpage%3D44%26count%3D48&c=UTF-8&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20www.tesco.com.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:541:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:61:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:329:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:154:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:35:25
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=48&count=48', None, 2023-06-29 17:05:04, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=58&count=48', None, 2023-06-29 17:06:45, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=68&count=48', None, 2023-06-29 17:08:17, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=78&count=48', None, 2023-06-29 17:09:52, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=87&count=48', None, 2023-06-29 17:16:13, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=88&count=48', None, 2023-06-29 17:16:13, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=98&count=48', None, 2023-06-29 17:17:55, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=108&count=48', None, 2023-06-29 17:19:42, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=118&count=48', None, 2023-06-29 17:21:44, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=124&count=48', 0, 2023-06-29 17:22:35,  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=4&count=48', None, 2023-06-29 17:23:11, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=14&count=48', None, 2023-06-29 17:24:53, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=24&count=48', None, 2023-06-29 17:26:37, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=28&count=48', None, 2023-06-29 17:32:12, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=34&count=48', None, 2023-06-29 17:33:07, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=44&count=48', None, 2023-06-29 17:34:43, 'dumps() takes 1 positional argument but 2 were given' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=54&count=48', None, 2023-06-29 17:36:20, 'dumps() takes 1 positional argument but 2 were given' 
+  
+url, product_count, scrape_time, error 
