@@ -441,3 +441,19 @@ bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
 'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=54&count=48', None, 2023-06-29 17:36:20, 'dumps() takes 1 positional argument but 2 were given' 
   
 url, product_count, scrape_time, error 
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=76&count=48', 0, 2023-07-01 00:38:39,  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=77&count=48', 0, 2023-07-01 00:38:41,  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=123&count=48', 2, 2023-07-01 01:13:03,  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=124&count=48', 0, 2023-07-01 01:13:05,  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=65&count=48', 0, 2023-07-01 01:24:58,  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=66&count=48', 0, 2023-07-01 01:25:00,  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=14&count=48', None, 2023-07-01 01:59:25, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/pets/all/?page=16&count=48', 0, 2023-07-01 02:37:25,  
