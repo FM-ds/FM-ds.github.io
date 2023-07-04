@@ -16810,3 +16810,6 @@ JavaScript warning: https://www.tesco.com/F5YV1OelTIpS/S_/4zw83Q19pN/Qi9GfDukaJa
 JavaScript warning: https://pagead2.googlesyndication.com/bg/JuxDZWINa7otHwaisCqyMSq7iwQyCfHq_LhnNSU0b2U.js line 2 > eval line 7317 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: https://www.tesco.com/data-assets/prod/GHS/gtmScriptsExpFalse.js?20230620a, line 1: ReferenceError: bertie is not defined
 JavaScript error: https://www.tesco.com/data-assets/prod/GHS/gtmScriptsExpFalse.js?20230620a, line 1: ReferenceError: bertie is not defined
+1688273143818	Marionette	INFO	Stopped listening on port 58272
+1688273155953	Marionette	INFO	Stopped listening on port 50108
+1688273156532	Marionette	INFO	Stopped listening on port 49755
