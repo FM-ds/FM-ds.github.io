@@ -55,7 +55,7 @@
 </style>
 
 <!-- Load d3.js -->
-<script src="https://d3js.org/d3.v6.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
@@ -196,7 +196,7 @@
             return
         }
 
-        topRect.lower()
+/*         topRect.lower()
                 .attr("x", BBox.x)
                 .attr("y", BBox.y)
                 .attr("width", BBox.width)
@@ -207,7 +207,7 @@
                 .attr("x", 0)
                 .attr("y", 0)
                 .attr("width", width)
-                .attr("height", margin.top);
+                .attr("height", margin.top); */
         
         topText
             .text(`${clickedRect.data()[0].data.name} (Return)`)
@@ -263,11 +263,18 @@
 
         // Get all Unique Values of Department from data
         let departments = [...new Set(data.map(item => item.Department))]
+        let shortDepartments = {}
+        // make obj with Department as key and shortDepartment as value
+        data.forEach(department => {
+            shortDepartments[department.Department] = department.shortDepartment
+        })
+        console.log(shortDepartments)
         // Get list of objects with Department and Sum
         city_data = departments.map(department => {
+            console.log(department)
             let sum = data.filter(item => item.Department === department).reduce((acc, item) => acc + item.value, 0)
             let Count = data.filter(item => item.Department === department).reduce((acc, item) => acc + item.Count, 0)
-            return {name: department, Department: department, value: sum, Median_Income: dep_medians[department], Department_Median: dep_medians[department], Count: Count}
+            return {name: department, shortDepartment: shortDepartments[department], Department: department, value: sum, Median_Income: dep_medians[department], Department_Median: dep_medians[department], Count: Count}
         })
         city_root = d3.hierarchy(
             { name: "City of Chicago", children: city_data }
@@ -322,6 +329,11 @@
         current_department = department_name
         d3.selectAll(".treemap")
             .transition()
+            .duration(500)
+            .style("opacity", 0)
+            
+        d3.selectAll(".treemap")
+            .transition()
             .delay(500)
             .style("visibility", "hidden");
         d3.select("#" + department_name.replaceAll(" ", "_"))
@@ -342,9 +354,11 @@
             .range([0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]);
 
         d3.treemap()
+            .tile(d3.treemapSquarify)
             .size([width, height])
             .padding(2)
-            (root)
+            (root.sort((a, b) => b.value - a.value)
+)
 
         leaf_gs = g
             .attr("transform", `translate(0, ${margin.top})`)
@@ -382,26 +396,52 @@
 
         // and to add the text labels
         labels = leaf_gs.append("foreignObject")
-            .attr("x", function (d) { return d.x0 + label_padding })   
+                    .attr("margin", 0)
+                    .attr("x", function (d) { 
+                        if (d.x1 - d.x0 < 20){
+                            return d.x0
+                        }
+                        return d.x0 + 5 })   
                     .attr("y", function (d) { return d.y0 + label_padding + 4 })    
                     .attr("width", function (d) { return d.x1 - d.x0 - 2*label_padding })  
                     .attr("height", function (d) { return d.y1 - d.y0 - 2*label_padding })
                         .append("xhtml:body")
+                            .style("margin", 0)
                             .attr("width", "100%")
                             .attr("height", "100%")
                             .attr("id", d => "label_"+d.data.name.split('').filter(char => /[a-zA-Z]/.test(char)))
                             .attr("class","label")
                             .html(d => {
                                 
-                               return `
-                                <b>${d.data.name}</b> 
-                                <br>
-                                Total: $${d.data.value.toLocaleString()}
-                                <br>
-                                Median Income: $${d.data.Median_Income.toLocaleString()}
+                                if( (((d.x1 - d.x0) < 100) | d.y1 - d.y0 < 20) ){
+                                    if (d.data.shortDepartment != null) {
+                                        return `
+                                            <div class="label">
+                                                <b>${d.data.shortDepartment}</b> 
+                                            </div>
+                                        `;
+                                    } else {
+                                        return `
+                                            <div class="label">
+                                                <b>${d.data.name}</b> 
+                                            </div>
+                                        `;
+                                    }
                                 
-                                
-                                `
+                                }
+
+
+                                return `
+                                    <div class="label">
+                                        <b>${d.data.name}</b> 
+                                        <br>
+                                        Total: $${d.data.value.toLocaleString()}
+                                        <br>
+                                        Median Income: $${d.data.Median_Income.toLocaleString()}
+                                    </div>
+                                    `
+
+                        
                             }
                             )
                             .style("opacity", d => {
