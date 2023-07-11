@@ -457,3 +457,252 @@ bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
 ' 
   
 'https://www.tesco.com/groceries/en-GB/shop/pets/all/?page=16&count=48', 0, 2023-07-01 02:37:25,  
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=77&count=48', 0, 2023-07-05 11:57:27,  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=53&count=48', None, 2023-07-05 12:28:08, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=123&count=48', 2, 2023-07-05 12:41:29,  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=124&count=48', 0, 2023-07-05 12:41:31,  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=66&count=48', 0, 2023-07-05 12:54:34,  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=26&count=48', 0, 2023-07-05 12:58:54,  
+'https://www.tesco.com/groceries/en-GB/shop/home-and-ents/all/?page=86&count=48', 0, 2023-07-05 13:15:29,  
+'https://www.tesco.com/groceries/en-GB/shop/home-and-ents/all/?page=87&count=48', 0, 2023-07-05 13:15:30,  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=10&count=48', None, 2023-07-05 13:34:09, 'Message: Failed to decode response from marionette
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=11&count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=12&count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=13&count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=14&count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=15&count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=16&count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=17&count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=18&count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=19&count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/pets/all/?count=48', None, 2023-07-05 13:34:09, 'Message: Tried to run command without establishing a connection
+' 
+  
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=76&count=48', 0, 2023-07-06 10:30:23,  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=77&count=48', 0, 2023-07-06 10:30:25,  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=124&count=48', 0, 2023-07-06 11:07:15,  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=38&count=48', None, 2023-07-06 11:24:03, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=66&count=48', 0, 2023-07-06 11:29:28,  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=26&count=48', 0, 2023-07-06 11:33:58,  
+'https://www.tesco.com/groceries/en-GB/shop/home-and-ents/all/?page=85&count=48', 0, 2023-07-06 11:50:21,  
+'https://www.tesco.com/groceries/en-GB/shop/home-and-ents/all/?page=86&count=48', 0, 2023-07-06 11:50:23,  
+'https://www.tesco.com/groceries/en-GB/shop/home-and-ents/all/?page=87&count=48', 0, 2023-07-06 11:50:25,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=67&count=48', 0, 2023-07-06 12:05:12,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=69&count=48', 0, 2023-07-06 12:05:25,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=70&count=48', 0, 2023-07-06 12:05:25,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=71&count=48', 0, 2023-07-06 12:05:26,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=72&count=48', 0, 2023-07-06 12:05:26,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=73&count=48', 0, 2023-07-06 12:05:26,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=74&count=48', 0, 2023-07-06 12:05:27,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=75&count=48', 0, 2023-07-06 12:05:27,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=76&count=48', 0, 2023-07-06 12:05:28,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=77&count=48', 0, 2023-07-06 12:05:28,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=78&count=48', 0, 2023-07-06 12:05:28,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=79&count=48', 0, 2023-07-06 12:05:29,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=80&count=48', None, 2023-07-06 12:10:46, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?count=48', None, 2023-07-09 10:56:41, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=2&count=48', None, 2023-07-09 10:56:46, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=3&count=48', None, 2023-07-09 10:56:49, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=4&count=48', None, 2023-07-09 10:56:52, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=5&count=48', None, 2023-07-09 10:56:55, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=6&count=48', None, 2023-07-09 10:56:59, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=7&count=48', None, 2023-07-09 10:57:02, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=8&count=48', None, 2023-07-09 10:57:05, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=9&count=48', None, 2023-07-09 10:57:10, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=10&count=48', None, 2023-07-09 10:57:14, 'name 'get_products' is not defined' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=11&count=48', None, 2023-07-09 10:57:17, 'name 'get_products' is not defined' 
+  
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=77&count=48', None, 2023-07-10 08:16:28, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/bakery/all/?page=12&count=48', None, 2023-07-10 08:23:22, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/frozen-food/all/?page=12&count=48', None, 2023-07-10 08:30:43, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/treats-and-snacks/all/?page=39&count=48', 0, 2023-07-10 08:39:19,  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=105&count=48', None, 2023-07-10 09:05:38, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=123&count=48', 0, 2023-07-10 09:08:56,  
+'https://www.tesco.com/groceries/en-GB/shop/food-cupboard/all/?page=124&count=48', 0, 2023-07-10 09:08:57,  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=18&count=48', None, 2023-07-10 09:17:26, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=31&count=48', None, 2023-07-10 09:24:56, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/drinks/all/?page=66&count=48', 0, 2023-07-10 09:32:41,  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=4&count=48', None, 2023-07-10 09:38:10, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/household/all/?page=26&count=48', 0, 2023-07-10 09:42:08,  
+'https://www.tesco.com/groceries/en-GB/shop/home-and-ents/all/?page=13&count=48', 0, 2023-07-10 09:44:48,  
+'https://www.tesco.com/groceries/en-GB/shop/home-and-ents/all/?page=45&count=48', None, 2023-07-10 09:55:43, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/home-and-ents/all/?page=84&count=48', None, 2023-07-10 10:07:47, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/home-and-ents/all/?page=87&count=48', 0, 2023-07-10 10:08:07,  
+'https://www.tesco.com/groceries/en-GB/shop/health-and-beauty/all/?page=30&count=48', None, 2023-07-10 10:18:45, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?count=48', None, 2023-07-10 10:33:50, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/baby-and-toddler/all/?page=3&count=48', None, 2023-07-10 10:39:03, 'Message: Navigation timed out after 300000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:503:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/pets/all/?page=16&count=48', 0, 2023-07-10 10:45:03,  
+url, product_count, scrape_time, error 
+url, product_count, scrape_time, error 
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=2&count=48', None, 2023-07-11 08:20:44, 'Message: The element with the reference e94aa3f5-7306-4e39-873f-804c7c1a6b1d is stale; either its node document is not the active document, or it is no longer connected to the DOM
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:495:5
+element.getKnownElement@chrome://remote/content/marionette/element.sys.mjs:508:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:233:33
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:50:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:50:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:244:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:56:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:244:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:248:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:85:30
+' 
+  
+'https://www.tesco.com/groceries/en-GB/shop/fresh-food/all/?page=3&count=48', None, 2023-07-11 08:20:52, 'Message: The element with the reference c649b314-927d-4d4a-9cae-aa1b2c792291 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:183:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:495:5
+element.getKnownElement@chrome://remote/content/marionette/element.sys.mjs:508:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:233:33
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:50:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:50:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:244:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:56:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:244:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:248:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:85:30
+' 
+  
+url, product_count, scrape_time, error 
