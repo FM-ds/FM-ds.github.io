@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/vega/datalib/master/test/data/stocks.csv"},
+  "width": 400,
+  "height": 300,
+  "encoding": {"x": {"field": "date", "type": "temporal"}},
+  "layer": [
+    {
+      "encoding": {
+        "color": {"field": "symbol", "type": "nominal"},
+        "y": {"field": "price", "type": "quantitative"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {"mark": "point"}
+      ]
+    },
+    {
+      "transform": [{"pivot": "symbol", "value": "price", "groupby": ["date"]}],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "value": 0.1
+        },
+        "tooltip": [
+          {"field": "AAPL", "type": "quantitative"},
+          {"field": "AMZN", "type": "quantitative"},
+          {"field": "GOOG", "type": "quantitative"},
+          {"field": "IBM", "type": "quantitative"},
+          {"field": "MSFT", "type": "quantitative"}
+        ]
+      }
+    }
+  ]
+}
