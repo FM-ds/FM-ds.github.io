@@ -1,0 +1,384 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Google's stock price over time.",
+    "config": {
+      "locale": {
+        "number": {
+          "decimal": ".",
+          "thousands": ",",
+          "grouping": [3],
+          "currency": ["£", ""]
+        }
+      },
+      "view": {
+        "continuousWidth": 400,
+        "continuousHeight": 300,
+        "discreteHeight": 300,
+        "discreteWidth": 400,
+        "stroke": null
+      },
+      "font": "Circular Std Book"
+    },
+    "data": {
+      "values": [
+        {"Period": 0, "Series": "No Inflation", "Value": 200000},
+        {"Period": 1, "Series": "No Inflation", "Value": 195000},
+        {"Period": 2, "Series": "No Inflation", "Value": 190000},
+        {"Period": 3, "Series": "No Inflation", "Value": 185000},
+        {"Period": 4, "Series": "No Inflation", "Value": 180000},
+        {"Period": 5, "Series": "No Inflation", "Value": 175000},
+        {"Period": 6, "Series": "No Inflation", "Value": 170000},
+        {"Period": 7, "Series": "No Inflation", "Value": 165000},
+        {"Period": 8, "Series": "No Inflation", "Value": 160000},
+        {"Period": 9, "Series": "No Inflation", "Value": 155000},
+        {"Period": 10, "Series": "No Inflation", "Value": 150000},
+        {"Period": 11, "Series": "No Inflation", "Value": 145000},
+        {"Period": 12, "Series": "No Inflation", "Value": 140000},
+        {"Period": 13, "Series": "No Inflation", "Value": 135000},
+        {"Period": 14, "Series": "No Inflation", "Value": 130000},
+        {"Period": 15, "Series": "No Inflation", "Value": 125000},
+        {"Period": 16, "Series": "No Inflation", "Value": 120000},
+        {"Period": 17, "Series": "No Inflation", "Value": 115000},
+        {"Period": 18, "Series": "No Inflation", "Value": 110000},
+        {"Period": 19, "Series": "No Inflation", "Value": 105000},
+        {"Period": 20, "Series": "No Inflation", "Value": 100000},
+        {"Period": 21, "Series": "No Inflation", "Value": 95000},
+        {"Period": 22, "Series": "No Inflation", "Value": 90000},
+        {"Period": 23, "Series": "No Inflation", "Value": 85000},
+        {"Period": 24, "Series": "No Inflation", "Value": 80000},
+        {"Period": 25, "Series": "No Inflation", "Value": 75000},
+        {"Period": 26, "Series": "No Inflation", "Value": 70000},
+        {"Period": 27, "Series": "No Inflation", "Value": 65000},
+        {"Period": 28, "Series": "No Inflation", "Value": 60000},
+        {"Period": 29, "Series": "No Inflation", "Value": 55000},
+        {"Period": 30, "Series": "No Inflation", "Value": 50000},
+        {"Period": 31, "Series": "No Inflation", "Value": 45000},
+        {"Period": 32, "Series": "No Inflation", "Value": 40000},
+        {"Period": 33, "Series": "No Inflation", "Value": 35000},
+        {"Period": 34, "Series": "No Inflation", "Value": 30000},
+        {"Period": 35, "Series": "No Inflation", "Value": 25000},
+        {"Period": 36, "Series": "No Inflation", "Value": 20000},
+        {"Period": 37, "Series": "No Inflation", "Value": 15000},
+        {"Period": 38, "Series": "No Inflation", "Value": 10000},
+        {"Period": 39, "Series": "No Inflation", "Value": 5000},
+        {"Period": 40, "Series": "No Inflation", "Value": 0},
+        {"Period": 0, "Series": "5% Inflation", "Value": 200000},
+        {"Period": 1, "Series": "5% Inflation", "Value": 185714.29},
+        {"Period": 2, "Series": "5% Inflation", "Value": 172335.6},
+        {"Period": 3, "Series": "5% Inflation", "Value": 159809.96},
+        {"Period": 4, "Series": "5% Inflation", "Value": 148086.45},
+        {"Period": 5, "Series": "5% Inflation", "Value": 137117.08},
+        {"Period": 6, "Series": "5% Inflation", "Value": 126856.62},
+        {"Period": 7, "Series": "5% Inflation", "Value": 117262.42},
+        {"Period": 8, "Series": "5% Inflation", "Value": 108294.3},
+        {"Period": 9, "Series": "5% Inflation", "Value": 99914.38},
+        {"Period": 10, "Series": "5% Inflation", "Value": 92086.99},
+        {"Period": 11, "Series": "5% Inflation", "Value": 84778.5},
+        {"Period": 12, "Series": "5% Inflation", "Value": 77957.24},
+        {"Period": 13, "Series": "5% Inflation", "Value": 71593.38},
+        {"Period": 14, "Series": "5% Inflation", "Value": 65658.83},
+        {"Period": 15, "Series": "5% Inflation", "Value": 60127.14},
+        {"Period": 16, "Series": "5% Inflation", "Value": 54973.38},
+        {"Period": 17, "Series": "5% Inflation", "Value": 50174.12},
+        {"Period": 18, "Series": "5% Inflation", "Value": 45707.27},
+        {"Period": 19, "Series": "5% Inflation", "Value": 41552.07},
+        {"Period": 20, "Series": "5% Inflation", "Value": 37688.95},
+        {"Period": 21, "Series": "5% Inflation", "Value": 34099.52},
+        {"Period": 22, "Series": "5% Inflation", "Value": 30766.49},
+        {"Period": 23, "Series": "5% Inflation", "Value": 27673.56},
+        {"Period": 24, "Series": "5% Inflation", "Value": 24805.43},
+        {"Period": 25, "Series": "5% Inflation", "Value": 22147.71},
+        {"Period": 26, "Series": "5% Inflation", "Value": 19686.85},
+        {"Period": 27, "Series": "5% Inflation", "Value": 17410.14},
+        {"Period": 28, "Series": "5% Inflation", "Value": 15305.62},
+        {"Period": 29, "Series": "5% Inflation", "Value": 13362.05},
+        {"Period": 30, "Series": "5% Inflation", "Value": 11568.87},
+        {"Period": 31, "Series": "5% Inflation", "Value": 9916.18},
+        {"Period": 32, "Series": "5% Inflation", "Value": 8394.65},
+        {"Period": 33, "Series": "5% Inflation", "Value": 6995.54},
+        {"Period": 34, "Series": "5% Inflation", "Value": 5710.64},
+        {"Period": 35, "Series": "5% Inflation", "Value": 4532.26},
+        {"Period": 36, "Series": "5% Inflation", "Value": 3453.15},
+        {"Period": 37, "Series": "5% Inflation", "Value": 2466.53},
+        {"Period": 38, "Series": "5% Inflation", "Value": 1566.05},
+        {"Period": 39, "Series": "5% Inflation", "Value": 745.74},
+        {"Period": 40, "Series": "5% Inflation", "Value": 0},
+        {"Period": 0, "Series": "Ratio", "Value": 1},
+        {"Period": 1, "Series": "Ratio", "Value": 0.9524},
+        {"Period": 2, "Series": "Ratio", "Value": 0.907},
+        {"Period": 3, "Series": "Ratio", "Value": 0.8638},
+        {"Period": 4, "Series": "Ratio", "Value": 0.8227},
+        {"Period": 5, "Series": "Ratio", "Value": 0.7835},
+        {"Period": 6, "Series": "Ratio", "Value": 0.7462},
+        {"Period": 7, "Series": "Ratio", "Value": 0.7107},
+        {"Period": 8, "Series": "Ratio", "Value": 0.6768},
+        {"Period": 9, "Series": "Ratio", "Value": 0.6446},
+        {"Period": 10, "Series": "Ratio", "Value": 0.6139},
+        {"Period": 11, "Series": "Ratio", "Value": 0.5847},
+        {"Period": 12, "Series": "Ratio", "Value": 0.5568},
+        {"Period": 13, "Series": "Ratio", "Value": 0.5303},
+        {"Period": 14, "Series": "Ratio", "Value": 0.5051},
+        {"Period": 15, "Series": "Ratio", "Value": 0.481},
+        {"Period": 16, "Series": "Ratio", "Value": 0.4581},
+        {"Period": 17, "Series": "Ratio", "Value": 0.4363},
+        {"Period": 18, "Series": "Ratio", "Value": 0.4155},
+        {"Period": 19, "Series": "Ratio", "Value": 0.3957},
+        {"Period": 20, "Series": "Ratio", "Value": 0.3769},
+        {"Period": 21, "Series": "Ratio", "Value": 0.3589},
+        {"Period": 22, "Series": "Ratio", "Value": 0.3418},
+        {"Period": 23, "Series": "Ratio", "Value": 0.3256},
+        {"Period": 24, "Series": "Ratio", "Value": 0.3101},
+        {"Period": 25, "Series": "Ratio", "Value": 0.2953},
+        {"Period": 26, "Series": "Ratio", "Value": 0.2812},
+        {"Period": 27, "Series": "Ratio", "Value": 0.2678},
+        {"Period": 28, "Series": "Ratio", "Value": 0.2551},
+        {"Period": 29, "Series": "Ratio", "Value": 0.2429},
+        {"Period": 30, "Series": "Ratio", "Value": 0.2314},
+        {"Period": 31, "Series": "Ratio", "Value": 0.2204},
+        {"Period": 32, "Series": "Ratio", "Value": 0.2099},
+        {"Period": 33, "Series": "Ratio", "Value": 0.1999},
+        {"Period": 34, "Series": "Ratio", "Value": 0.1904},
+        {"Period": 35, "Series": "Ratio", "Value": 0.1813},
+        {"Period": 36, "Series": "Ratio", "Value": 0.1727},
+        {"Period": 37, "Series": "Ratio", "Value": 0.1644},
+        {"Period": 38, "Series": "Ratio", "Value": 0.1566},
+        {"Period": 39, "Series": "Ratio", "Value": 0.1491},
+        {"Period": 40, "Series": "Ratio", "Value": null}
+      ]
+    },
+    "layer": [
+      {
+        "layer": [
+          {
+            "data": {
+              "values": [
+                {"Period": 40, "Series": "Ratio (RHS)", "Value": 30000},
+                {"Period": 40, "Series": "No Inflation", "Value": 14000},
+                {"Period": 40, "Series": "5% Inflation", "Value": 6000}
+              ]
+            },
+            "mark": {"type": "text", "align": "left", "dx": 5},
+            "encoding": {
+              "x": {
+                "field": "Period",
+                "type": "quantitative",
+                "axis": {
+                  "domainColor": "#676A86",
+                  "domainOpacity": 0.5,
+                  "grid": true,
+                  "gridColor": "#676A86",
+                  "gridDash": [1, 5],
+                  "gridOpacity": 0.5,
+                  "labelAngle": 0,
+                  "labelColor": "#676A86",
+                  "labelOpacity": 0.7,
+                  "orient": "bottom",
+                  "tickColor": "#676A86",
+                  "tickCount": 10,
+                  "tickOpacity": 0.5,
+                  "title": "",
+                  "titleAlign": "left",
+                  "titleAnchor": "end",
+                  "titleColor": "#676A86",
+                  "titleFontSize": 10,
+                  "titleFontWeight": "normal",
+                  "titleOpacity": 0.8,
+                  "titleX": 405,
+                  "titleY": 6
+                }
+              },
+              "y": {
+                "axis": {
+                  "titleAlign": "left",
+                  "titleAngle": 0,
+                  "labelColor": "#676A86",
+                  "domainColor": "#676A86",
+                  "format": "$,d",
+                  "domainOpacity": 0.5,
+                  "gridColor": "#676A86",
+                  "gridDash": [1, 5],
+                  "gridOpacity": 0.5,
+                  "titleBaseline": "bottom",
+                  "titleColor": "#676A86",
+                  "titleFontSize": 12,
+                  "titleFontWeight": "normal",
+                  "titleOpacity": 0.8,
+                  "titleX": 0,
+                  "titleY": -7,
+                  "title": "Outstanding Balance"
+                },
+                "field": "Value",
+                "type": "quantitative"
+              },
+              "color": {
+                "condition": [
+                  {"value": "#EF8E35", "test": "datum.Series == 'No Inflation'"},
+                  {"value": "#E4564A", "test": "datum.Series == '5% Inflation'"},
+                  {"value": "grey", "test": "datum.Series == 'Ratio (RHS)'"}
+                ],
+                "legend": null,
+                "field": "Series",
+                "type": "nominal"
+              },
+              "text": {"field": "Series"}
+            }
+          },
+          {
+            "mark": {"type": "line", "interpolate": "monotone"},
+            "transform": [
+              {
+                "filter": "datum.Series == 'No Inflation' | datum.Series == '5% Inflation'"
+              }
+            ],
+            "encoding": {
+              "x": {
+                "field": "Period",
+                "type": "quantitative",
+                "axis": {
+                  "domainColor": "#676A86",
+                  "domainOpacity": 0.5,
+                  "grid": true,
+                  "gridColor": "#676A86",
+                  "gridDash": [1, 5],
+                  "gridOpacity": 0.5,
+                  "labelAngle": 0,
+                  "labelColor": "#676A86",
+                  "labelOpacity": 0.7,
+                  "orient": "bottom",
+                  "tickColor": "#676A86",
+                  "tickCount": 10,
+                  "tickOpacity": 0.5,
+                  "title": "",
+                  "titleAlign": "left",
+                  "titleAnchor": "end",
+                  "titleColor": "#676A86",
+                  "titleFontSize": 10,
+                  "titleFontWeight": "normal",
+                  "titleOpacity": 0.8,
+                  "titleX": 405,
+                  "titleY": 6
+                }
+              },
+              "y": {
+                "axis": {
+                  "titleAlign": "left",
+                  "titleAngle": 0,
+                  "labelColor": "#676A86",
+                  "domainColor": "#676A86",
+                  "format": "$,d",
+                  "domainOpacity": 0.5,
+                  "gridColor": "#676A86",
+                  "gridDash": [1, 5],
+                  "gridOpacity": 0.5,
+                  "titleBaseline": "bottom",
+                  "titleColor": "#676A86",
+                  "titleFontSize": 12,
+                  "titleFontWeight": "normal",
+                  "titleOpacity": 0.8,
+                  "titleX": 0,
+                  "titleY": -7,
+                  "title": "Outstanding Balance"
+                },
+                "field": "Value",
+                "type": "quantitative"
+              },
+              "color": {
+                "condition": [
+                  {"value": "#EF8E35", "test": "datum.Series == 'No Inflation'"},
+                  {"value": "#E4564A", "test": "datum.Series == '5% Inflation'"},
+                  {"value": "grey", "test": "datum.Series == 'Ratio (RHS)'"}
+                ],
+                "legend": null,
+                "field": "Series",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "mark": {"type": "line", "interpolate": "natural", "strokeDash": [4, 4]},
+        "encoding": {
+          "x": {
+            "field": "Period",
+            "type": "quantitative",
+            "axis": {
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "grid": true,
+              "gridColor": "#676A86",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelAngle": 0,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "orient": "bottom",
+              "tickColor": "#676A86",
+              "tickCount": 10,
+              "tickOpacity": 0.5,
+              "title": "",
+              "titleAlign": "left",
+              "titleAnchor": "end",
+              "titleColor": "#676A86",
+              "titleFontSize": 10,
+              "titleFontWeight": "normal",
+              "titleOpacity": 0.8,
+              "titleX": 405,
+              "titleY": 6
+            }
+          },
+          "y": {
+            "axis": {
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "format": "%",
+              "gridColor": "#676A86",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "labelPadding": 5,
+              "tickColor": "#676A86",
+              "tickCount": 8,
+              "tickOpacity": 0.5,
+              "ticks": false,
+              "titleAlign": "left",
+              "titleAngle": 0,
+              "title": "Ratio",
+              "titleBaseline": "bottom",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleFontWeight": "normal",
+              "titleOpacity": 0.8,
+              "titleX": -30,
+              "titleY": -7
+            },
+            "field": "Value",
+            "type": "quantitative"
+          },
+          "color": {
+            "condition": [
+              {"value": "#EF8E35", "test": "datum.Series == 'No Inflation'"},
+              {"value": "#E4564A", "test": "datum.Series == '5% Inflation'"},
+              {"value": "grey", "test": "datum.Series == 'Ratio (RHS)'"}
+            ],
+            "legend": null,
+            "field": "Series",
+            "type": "nominal"
+          }
+        },
+        "transform": [
+          {
+            "filter": "datum.Series != 'No Inflation' & datum.Series != '5% Inflation'"
+          }
+        ]
+      }
+    ],
+    "resolve": {"scale": {"y": "independent"}},
+    "transform": [
+      {
+        "calculate": "datum.Series == 'Ratio' ? 'Ratio (RHS)' : datum.Series ",
+        "as": "Series"
+      }
+    ]
+  }

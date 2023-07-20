@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <style>
+
+            body {
+                background-color: white;
+                margin: 0%;
+                padding: 0%;
+            }
+
+            svg {
+                border: 1px solid black;
+                padding: 0%;
+                margin: 0%;
+                margin: auto;
+                background-color: rgb(40,51,107);
+                /* Fill Page width */
+                display: block;
+                width: 100%;
+            }
+
+            h2 {
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 32px;
+                color: rgb(40,51,107);
+                margin: 0%;
+                padding: 0%;
+            }
+
+            main {
+                max-width: 800;
+                margin: auto;
+                padding: 25px;
+            }
+        </style>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+    </head>
+    <body>
+
+        <svg width="1200" height="350">
+        </svg>
+
+        <main>
+
+            <h2> About </h2>
+
+        </main>
+
+        <script>
+
+            svg = d3.select("svg");
+
+            density = 28
+            overlap = 0.2
+            circle_spacing = density;
+            circl_radius = (density/(1-overlap))/2;
+            window_width = window.innerWidth;
+
+            let circles_group = svg.append("g")
+                .attr("transform", "translate(0, 0)");
+            // append a circle every 20 pixels horizontally and vertically
+            for (var i = 0; i < 10_000 ; i += circle_spacing) {
+                for (var j = 0; j < svg.attr("height"); j += circle_spacing) {
+                    // circles must fit entirely
+                    if (j - circl_radius < 0) {
+                        continue;
+                    }
+                    circles_group.append("circle")
+                        .attr("cx", i)
+                        .attr("cy", j)
+                        .attr("class" ,"header_circle")
+                        .attr("fill", "rgba(255,255,255,0)")
+                        .attr("r", circl_radius)
+                        .attr("stroke", "rgba(255,255,255,0.5)")
+                        .attr("stroke-width", "1px");
+                }
+            }
+
+            let title_group = svg.append("g")
+                .attr("transform", `translate(${4.4*circl_radius}, ${svg.attr("height")/2 })`);
+
+            // Append a title H1
+            let title = title_group.append("text")
+                .attr("x", 0)
+                .attr("y", -5)
+                .attr("font-family", "Helvetica Neue, Helvetica, Arial, sans-serif")
+                .attr("font-weight", "bold")
+                // vertically middle baseline but horizontally start
+                .attr("alignment-baseline", "middle")
+                .attr("text-anchor", "start")
+                .attr("fill", "white")
+                .attr("font-size", "60px")
+                .text("Finn McEvoy");
+
+            let subtitle = title_group.append("text")
+                .attr("x", 3)
+                .attr("y", 35)
+                .attr("font-family", "Helvetica Neue, Helvetica, Arial, sans-serif")
+                .attr("font-weight", "lighter")
+                // vertically middle baseline but horizontally start
+                .attr("alignment-baseline", "middle")
+                .attr("text-anchor", "start")
+                .attr("fill", "white")
+                .attr("font-size", "32px")
+                .text("Full-Stack Social Data Scientist");
+
+            // 2. filter circles within bounding box
+            function resize_react(){
+                // get the main's bounding box
+                main = d3.select("main");
+                main_padding = 25; // TODO: get this from the css
+                main_bounding_box = d3.select("main").node().getBoundingClientRect();
+                // left align the title group with the main
+                title_group.attr("transform", `translate(${main_bounding_box.x+main_padding}, ${svg.attr("height")/2 })`);
+                title_group_bounding_box = title_group.node().getBoundingClientRect();;
+
+
+                function obscured(cx, cy){
+                    margin = { top: 5, right: 20, bottom: 15, left: 10};
+                    in_x = cx > title_group_bounding_box.x - margin.left && cx < title_group_bounding_box.x + title_group_bounding_box.width + margin.right;
+                    in_y = cy > title_group_bounding_box.y - margin.top && cy < title_group_bounding_box.y + title_group_bounding_box.height + margin.bottom;
+                    return in_x && in_y;
+                }
+
+                svg.selectAll(".header_circle_hidden")
+                    .attr("class", "header_circle")
+                    .attr("opacity", 1);
+                
+                svg.selectAll(".header_circle_left")
+                    .attr("class", "header_circle")
+                    .attr("fill", "rgba(255,255,255,0)")
+                    .style("stroke", "rgba(255,255,255,0.5)")
+                    .style("stroke-width", "1px");
+
+                svg.selectAll(".header_circle")
+                .filter(function(d, i) {
+                    cx = d3.select(this).attr("cx");
+                    cy = d3.select(this).attr("cy");
+                    return obscured(cx, cy);
+                })
+                .attr("class", "header_circle_hidden")
+                .attr("opacity", 0);
+
+                svg.selectAll(".header_circle")
+                .filter(function(d, i) {
+                    return d3.select(this).attr("cx") < title_group_bounding_box.x 
+                        & d3.select(this).attr("cx") > title_group_bounding_box.x - margin.left - 2* circl_radius
+                        & d3.select(this).attr("cy") > title_group_bounding_box.y - margin.top
+                        && d3.select(this).attr("cy") < title_group_bounding_box.y + title_group_bounding_box.height + margin.bottom;
+                })
+                .attr("class", "header_circle_left")
+                .attr("fill", "rgba(255,255,255,1)")
+                .style("stroke", "rgba(40, 51, 107, 1)")
+                .style("stroke-width", "5px");
+
+            }
+
+            resize_react();
+            
+            //stolen from https://stackoverflow.com/questions/25582882/javascript-math-random-normal-distribution-gaussian-bell-curve
+            function gaussianRandom(mean = 0, stdev = 1) {
+                const u = 1 - Math.random(); // Converting [0,1) to (0,1]
+                const v = Math.random();
+                const z = Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+                // Transform to the desired mean and standard deviation:
+                return z * stdev + mean;
+            }
+
+            function ripple(x=null,y=null){
+                // colours circles around a point by distance from point and time
+                // x, y: coordinates of point
+                // returns: nothing
+                power = gaussianRandom(0.5, 0.5);
+                if (x == null || y == null) {
+                    circles = svg.selectAll(".header_circle")
+                        .filter(function(d){
+                            return d3.select(this).attr("class") != "header_circle_left" & d3.select(this).attr("cx") < window.innerWidth
+                        })
+                    // choose a random circle
+                    chosen_i = Math.floor(Math.random() * circles.size());
+                    circle = circles
+                        .filter(function(d, i) {
+                            return i == chosen_i;
+                        })
+                    x = circle.attr("cx");
+                    y = circle.attr("cy");
+                }
+                svg.selectAll(".header_circle")
+                    .filter(function(d){
+                        return d3.select(this).attr("class") != "header_circle_left" 
+                            & d3.select(this).attr("cx") < window.innerWidth
+                    })
+                    .transition()
+                    .duration(1000)
+                    .attr("fill", function(d, i) {
+                        opacity = power;
+                        distance = Math.sqrt(Math.pow(d3.select(this).attr("cx") - x, 2) + Math.pow(d3.select(this).attr("cy") - y, 2));
+                        distance = Math.pow(distance, 1.1)
+                        console.log(distance);
+                        return `rgba(255,255,255,${Math.max(0, opacity - distance/100)})`;
+                    })
+                    .delay(function(d, i) {
+                        distance = Math.sqrt(Math.pow(d3.select(this).attr("cx") - x, 2) + Math.pow(d3.select(this).attr("cy") - y, 2));
+                        return distance;
+                    })
+                    .transition() // fade back to opacity 0
+                    .duration(1000)
+                    .attr("fill", function(d, i) {
+                        return `rgba(255,255,255,0)`;
+                    })
+                    .delay(function(d, i) {
+                        distance = Math.sqrt(Math.pow(d3.select(this).attr("cx") - x, 2) + Math.pow(d3.select(this).attr("cy") - y, 2));
+                        return distance;
+                    })
+                setTimeout(function() {
+                    ripple();
+                }, gaussianRandom(1500, 500));
+            }
+
+        // ripple every 1-2 seconds
+        setInterval(ripple, Math.random() * 1200 + 600);
+
+        // resize_react on window resize
+        window.addEventListener("resize", resize_react);
+
+
+
+        </script>
+
+    </body>
+
+</html>

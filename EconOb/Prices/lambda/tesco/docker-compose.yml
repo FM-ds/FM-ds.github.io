@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  lambda:
+    build: .
+    environment:
+      - PYTHONPATH=/var/task/src:/var/task/lib
+      - PATH=/var/task/bin
+      - AWS_BUCKET_NAME='eco-prices-scrapes'
+      - AWS_ACCESS_KEY_ID='AKIAT2EP6CVZKPINILMS'
+      - AWS_SECRET_ACCESS_KEY='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'
+    volumes:
+      - ./src/:/var/task/src/
