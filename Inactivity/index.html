@@ -22,22 +22,18 @@
 <body>
     <h1> Inactivity Charts and Maps</h1>
 
-    <section>
-        <div class="weekFigures">
-            <figure id="week1fig1"> </figure>
-            </br>
-            <figure id="week1fig2"> </figure>
-        </div>
-    </section>
-
 
 
 
     <script>
-        specs = [ "Belfast_home.json", "NI_home.json", "NI_sick_graph.json", "NI_sick_map.json", "NI_Inactive.json", "Belfast_Inactive.json",   "ni_50_64_inac.json", "NI_headline.json",   "belfast_sick.json" ]
+        specs = ["inac age 720.mp4", "Belfast_home.json", "NI_home.json", "NI_sick_graph.json", "NI_sick_map.json", "NI_Inactive.json", "Belfast_Inactive.json",   "ni_50_64_inac.json", "NI_headline.json",   "belfast_sick.json" ]
 
         groups = {
             'UK Wide': [
+                "50+inac.json",
+                "inac_age_share.json",
+                "age_year.json",
+                "inac_age.mp4",
                 "constituency_level.json",
                 "UK_gender_count.json",
                 "UK_gender_rate.json",
@@ -71,6 +67,7 @@
                 let figure = document.createElement("figure");
                 figure.id = "fig_" +group_name_formatted+ i;
                 weekFigures.appendChild(figure);
+                weekFigures.appendChild(document.createElement("br"));
 
                 spec_url = "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/Charts/" + group_specs[i];
 
@@ -82,8 +79,11 @@
                 h3.appendChild(document.createElement("br"));
                 h3.appendChild(figLink);
 
-
-                vegaEmbed('#fig_' +group_name_formatted+ i, spec_url);
+                if (group_specs[i].includes(".mp4")) {
+                    figure.innerHTML = '<video width="60%" height="60%" autoplay loop muted><source src="' + spec_url + '" type="video/mp4"></video>';
+                } else {
+                    vegaEmbed('#fig_' +group_name_formatted+ i, spec_url);
+                }
             }
 
             h2.innerHTML = group_name;
