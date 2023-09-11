@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Finn McEvoy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@500&display=swap');
+
+
+
+        /* CSS Variables */
+        :root {
+            --bg-color: #1f1f1f;
+            /* Keeping the dark background for the neon to stand out */
+            --text-near: #E6E6E6;
+            /* A bit dimmer than pure white to balance the neon */
+            --link-visualisation: #0FFF95;
+            /* Neon green */
+            --link-engineering: #FF00E1;
+            /* Neon pink */
+            --link-analytics: #F5FF00;
+            /* Neon yellow */
+            --link-research: #00F3FF;
+            /* Neon blue */
+
+            --link-visualisation-light: rgba(0, 128, 75, 1);
+  --link-engineering-light: rgba(128, 0, 112, 1);
+  --link-analytics-light: rgba(128, 128, 0, 1);
+  --link-research-light: rgba(0, 122, 128, 1);
+        }
+
+        body.light-theme {
+  /* Light theme variables here */
+  --bg-color: rgba(0,0,0,0.05);
+  --text-near: rgba(0,0,0,0.8);
+
+  --link-visualisation: var(--link-visualisation-light);
+  --link-engineering: var(--link-engineering-light);
+  --link-analytics: var(--link-analytics-light);
+  --link-research: var(--link-research-light);
+
+  /* ... */
+}
+
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-near);
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        /* Main Section */
+        .main {
+            max-width: 1000px;
+            margin-top: 40vh;
+            /* Start halfway down the page */
+            margin-left: 30px;
+            float: left;
+            padding: 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 300;
+        }
+
+        /* Title */
+        .title {
+            font-size: 10vw;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-weight: normal;
+            margin-left: -10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #intro h2{
+            margin-top: -10px;
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+        }
+
+        #intro p > a{
+            color: var(--text-near);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #intro p > a:hover{
+            color: var(--text-near);
+            text-decoration: underline;
+        }
+
+        /* Links */
+        .links {
+            font-weight: bold; !important
+        }
+
+        .links a {
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .link-visualisation {
+    color: var(--link-visualisation);
+    font-weight: bold;
+}
+
+.link-engineering {
+    color: var(--link-engineering);
+    font-weight: bold;
+}
+
+.link-analytics {
+    color: var(--link-analytics);
+    font-weight: bold;
+}
+
+.link-research {
+    color: var(--link-research);
+    font-weight: bold;
+}
+
+
+        /* Content Divs */
+        .content-div h2 {
+            font-weight: bold;
+        }
+
+        #intro {
+            margin-left: 11px;
+        }
+
+        #about_me {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        .content-div {
+            border-left-width: 2px;
+            border-left-style: solid;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        .visualisation {
+            border-left-color: var(--link-visualisation);
+        }
+
+
+        .engineering {
+            border-left-color: var(--link-engineering);
+        }
+
+        .analytics {
+            border-left-color: var(--link-analytics);
+        }
+
+        .research {
+            border-left-color: var(--link-research);
+        }
+
+        .floating-c {
+            position: relative;
+            top: -0.3em;
+            /* Adjust as needed */
+            font-size: smaller;
+        }
+
+
+
+        /* Three Column Section */
+        .three-columns {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding-left: 0%;
+            padding-right: 20px;
+        }
+
+        .divider {
+            width: 1px;
+            background-color: var(--text-near);
+            height: 100%;
+        }
+
+        #martini {
+            width: 25px;
+            height: 25px;
+            margin-bottom: -5px;
+        }
+
+        .column h3 {
+            padding-bottom: 20px;
+            margin-bottom: 5px;
+        }
+
+        .column h4 {
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+            padding-top: 10px;
+        }
+
+        .column p {
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+
+        .theme-toggle {
+            margin-left: 30px;
+            font-size: 144px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+    </style>
+</head>
+
+<body>
+    <div id="theme-toggle" class="theme-toggle">&#9728;</div>
+    <div class="main">
+
+        <div id="intro">
+            <h1 class="title">FINN M<span class="floating-c">c</span>EVOY</h1>
+
+            <h2>
+            Full<i>ish</i>-Stack Social Data    
+            </h2>
+
+            <div class="links">
+                <a href="#visualisation" class="link-visualisation">Visualisation</a>
+                <a href="#engineering" class="link-engineering">Engineering & Analytics</a>
+                <a href="#research" class="link-research">Research</a>
+            </div>
+
+            <p id="about_me">
+                I do stuff with data, mostly at the <a href="https://www.economicsobservatory.com">Economics Observatory</a>, where I'm a Research Fellow. My work and research spans the data science stack from data collection and cleaning, to visualisation and analysis, to writing and communicating. Right now, I'm involved with lots of complicated scraping (reverse engineering APIs, using selenium, distributing across cloud instances) for prices research, and data vis with d3 and Vega(-lite). 
+            </p>
+
+            <div class="three-columns">
+                <div class="column">
+                    <h3>Experience</h3>
+
+                    <h4> Research Fellow</h4>
+                    <p>Economics Observatory, LSE </br> September 2023- </p>
+
+                    <h4> Research Assistant</h4>
+                    <p> Patrick Gaule, University of Bristol </br> June 2023- </p>
+
+                    <h4> Research Assistant</h4>
+                    <p> Economics4Everyone, University of Chicago </br> March 2023-September 2023 </p>
+
+                    <h4> Lots of Bartending <svg id="martini" xmlns="http://www.w3.org/2000/svg" width="256"
+                            height="256" viewBox="0 0 256 256">
+                            <path fill="currentColor"
+                                d="M234.83 42.83A4 4 0 0 0 232 36H24a4 4 0 0 0-2.83 6.83L124 145.66V212H88a4 4 0 0 0 0 8h80a4 4 0 0 0 0-8h-36v-66.34ZM33.66 44h188.68l-24 24H57.66ZM128 138.34L65.66 76h124.68Z" />
+                        </svg> </h4>
+                    <p> Bristol, Copenhagen </br> </p>
+
+
+                </div>
+                <div class="divider"></div>
+                <div class="column">
+                    <h3>Education</h3>
+
+                    <h4> University of Bristol </h4>
+                    <p>
+                        BSc Economics w/ Study Abroad
+                        </br>
+                        September 2019 - June 2023
+                    </p>
+
+                    <p>
+
+                        1st Class Honours | 1st in all 2nd, 3rd, 4th year modules
+                        </br>
+                        Lots of data science & Econometrics
+                    </p>
+
+                    <h4> Copenhagen Business School </h4>
+                    <p>
+                        Year Abroad
+                        </br>
+                        September 2021 - June 2022
+                    </p>
+
+
+                </div>
+                <div class="divider"></div>
+                <div class="column">
+                    <h3>Skills</h3>
+                    <!-- Add your skills here -->
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div id="visualisation" class="content-div visualisation">
+            <h2>Visualisation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+
+        <div id="engineering" class="content-div engineering">
+            <h2>Engineering & Analytics</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+
+        <div id="research" class="content-div research">
+            <h2>Research</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', function () {
+    document.body.classList.toggle('light-theme');
+  });
+});
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Science Portfolio</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 50px 0 0 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            margin: auto;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 0px;
+        }
+
+        h4 {
+            color: darkslategray;
+            font-weight: lighter;
+            margin-bottom: 30px;
+        }
+
+        .chart-section {
+            margin-bottom: 30px;
+        }
+
+        .chart-details {
+            padding: 10px;
+        }
+
+        .chart-figure {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Data Science Portfolio</h1>
+        <h4>A Collection of charts put together at the ECO Workshop</h4>
+
+        <section class="chart-section">
+            <div class="chart-details">
+                <h3>Growth of Regional Trade Agreements</h3>
+                <p>Some description about this chart.</p>
+            </div>
+            <figure class="chart-figure" id="chart1"></figure>
+        </section>
+
+        <section class="chart-section">
+            <div class="chart-details">
+                <h3>US Current Account</h3>
+                <p>Some description about this chart.</p>
+            </div>
+            <figure class="chart-figure" id="chart2"></figure>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script>
+        const chart2Spec = 'https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/Charts/age_year.json';
+        const chart1Spec = 'https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/Charts/UK_gender_rate.json';
+
+        specs = [chart1Spec, chart2Spec];
+
+        // loop through the specs and embed each chart, using ids with index
+        specs.forEach((spec, index) => {
+            vegaEmbed('#chart' + (index+1), spec).then(function(result) {
+            }).catch(console.error);
+        });
+</script>
+</body>
+</html>

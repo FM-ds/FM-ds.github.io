@@ -1,0 +1,27 @@
+body {
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    margin: auto;
+    max-width: 800px;
+}
+
+.chart-section {
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.chart-details {
+    float: left;
+    width: 50%;
+}
+
+.chart-figure {
+    float: right;
+    width: 50%;
+}

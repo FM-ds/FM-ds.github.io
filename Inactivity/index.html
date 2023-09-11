@@ -63,6 +63,19 @@
 
             group_name_formatted = group_name.replace(/\s/g, '_');
 
+            h2.innerHTML = group_name;
+
+            graphDesc.className = "graphDesc";
+            weekFigures.className = "weekFigures";
+            
+            section.appendChild(graphDesc);
+            section.appendChild(weekFigures);
+            weekFigures.appendChild(figure);
+            graphDesc.appendChild(h2);
+            graphDesc.appendChild(h3);
+
+            document.body.appendChild(section);
+
             for (i = 0; i < group_specs.length; i++) {
                 let figure = document.createElement("figure");
                 figure.id = "fig_" +group_name_formatted+ i;
@@ -85,19 +98,6 @@
                     vegaEmbed('#fig_' +group_name_formatted+ i, spec_url);
                 }
             }
-
-            h2.innerHTML = group_name;
-
-            graphDesc.className = "graphDesc";
-            weekFigures.className = "weekFigures";
-            
-            section.appendChild(graphDesc);
-            section.appendChild(weekFigures);
-            weekFigures.appendChild(figure);
-            graphDesc.appendChild(h2);
-            graphDesc.appendChild(h3);
-
-            document.body.appendChild(section);
 
             //vegaEmbed('#fig' + i, specs[i]);
         }
