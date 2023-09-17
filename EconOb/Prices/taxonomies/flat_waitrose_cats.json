@@ -5064,7 +5064,8 @@
         "id": 844
     },
     {
-        "name": "root",
-        "id": 0
+        "name": "waitrose",
+        "id": 0,
+        "depth": -1
     }
 ]

@@ -1488,7 +1488,8 @@
         "id": 248
     },
     {
-        "name": "root",
-        "id": 0
+        "name": "sainsburys",
+        "id": 0,
+        "depth": -1
     }
 ]

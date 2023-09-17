@@ -1812,7 +1812,8 @@
         "id": 302
     },
     {
-        "name": "root",
-        "id": 0
+        "name": "ALDI",
+        "id": 0,
+        "depth": -1
     }
 ]

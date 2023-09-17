@@ -10548,7 +10548,8 @@
         "id": 1758
     },
     {
-        "name": "root",
-        "id": 0
+        "name": "morrisons",
+        "id": 0,
+        "depth": -1
     }
 ]
