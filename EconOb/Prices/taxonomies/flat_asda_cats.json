@@ -1,7 +1,8 @@
 [
     {
         "name": "Bakery & Cakes",
-        "id": 0
+        "id": 0,
+        "parent": -1
     },
     {
         "name": "Fruited Loaves, Scones & Hot Cross Buns",
@@ -265,7 +266,8 @@
     },
     {
         "name": "The Best",
-        "id": 53
+        "id": 53,
+        "parent": -1
     },
     {
         "name": "Bakery & Cakes",
@@ -444,7 +446,8 @@
     },
     {
         "name": "Fresh",
-        "id": 89
+        "id": 89,
+        "parent": -1
     },
     {
         "name": "Cooked Meats",
@@ -1643,7 +1646,8 @@
     },
     {
         "name": "Chocolate & Sweets",
-        "id": 329
+        "id": 329,
+        "parent": -1
     },
     {
         "name": "Mars, Maltesers, M&M's & More - Sponsored Shop",
@@ -1657,7 +1661,8 @@
     },
     {
         "name": "Baby & Toddler",
-        "id": 332
+        "id": 332,
+        "parent": -1
     },
     {
         "name": "Bath Time & Toiletries",
@@ -2436,7 +2441,8 @@
     },
     {
         "name": "Household",
-        "id": 488
+        "id": 488,
+        "parent": -1
     },
     {
         "name": "Tissue",
@@ -3035,7 +3041,8 @@
     },
     {
         "name": "Market Street",
-        "id": 608
+        "id": 608,
+        "parent": -1
     },
     {
         "name": "Fresh From The Deli Counter",
@@ -3249,7 +3256,8 @@
     },
     {
         "name": "Drinks",
-        "id": 651
+        "id": 651,
+        "parent": -1
     },
     {
         "name": "Kids & Lunchbox Drinks",
@@ -3768,7 +3776,8 @@
     },
     {
         "name": "World Foods",
-        "id": 755
+        "id": 755,
+        "parent": -1
     },
     {
         "name": "Eastern European",
@@ -4392,7 +4401,8 @@
     },
     {
         "name": "Feel Good",
-        "id": 880
+        "id": 880,
+        "parent": -1
     },
     {
         "name": "Plant-Based",
@@ -4431,7 +4441,8 @@
     },
     {
         "name": "Student Event",
-        "id": 888
+        "id": 888,
+        "parent": -1
     },
     {
         "name": "Homeware",
@@ -4440,7 +4451,8 @@
     },
     {
         "name": "The Big Cleaning Event",
-        "id": 890
+        "id": 890,
+        "parent": -1
     },
     {
         "name": "Bleaches & Cleaners",
@@ -4464,7 +4476,8 @@
     },
     {
         "name": "Savers",
-        "id": 895
+        "id": 895,
+        "parent": -1
     },
     {
         "name": "Food",
@@ -4478,7 +4491,8 @@
     },
     {
         "name": "Beer, Wines & Spirits",
-        "id": 898
+        "id": 898,
+        "parent": -1
     },
     {
         "name": "Cocktail Shop - Sponsored",
@@ -5272,7 +5286,8 @@
     },
     {
         "name": "Meat & Poultry",
-        "id": 1057
+        "id": 1057,
+        "parent": -1
     },
     {
         "name": "Pork",
@@ -5646,7 +5661,8 @@
     },
     {
         "name": "Frozen",
-        "id": 1132
+        "id": 1132,
+        "parent": -1
     },
     {
         "name": "Frozen Offer Buy 3 for \u00a39",
@@ -6265,7 +6281,8 @@
     },
     {
         "name": "Great Summer Stunner Event",
-        "id": 1256
+        "id": 1256,
+        "parent": -1
     },
     {
         "name": "Hydrated Hair",
@@ -6294,7 +6311,8 @@
     },
     {
         "name": "Eat Out At Home",
-        "id": 1262
+        "id": 1262,
+        "parent": -1
     },
     {
         "name": "Gourmet Collection",
@@ -6363,11 +6381,13 @@
     },
     {
         "name": "nan",
-        "id": 1276
+        "id": 1276,
+        "parent": -1
     },
     {
         "name": "Fish & Seafood",
-        "id": 1277
+        "id": 1277,
+        "parent": -1
     },
     {
         "name": "Shell Fish",
@@ -6486,7 +6506,8 @@
     },
     {
         "name": "Back To School Event",
-        "id": 1301
+        "id": 1301,
+        "parent": -1
     },
     {
         "name": "Lunchbox Ideas",
@@ -6505,7 +6526,8 @@
     },
     {
         "name": "Health, Wellbeing & Medicines",
-        "id": 1305
+        "id": 1305,
+        "parent": -1
     },
     {
         "name": "Ear, Eye and Mouth Care",
@@ -7069,7 +7091,8 @@
     },
     {
         "name": "Toiletries & Beauty",
-        "id": 1418
+        "id": 1418,
+        "parent": -1
     },
     {
         "name": "Tissue",
@@ -8093,7 +8116,8 @@
     },
     {
         "name": "Food Cupboard",
-        "id": 1623
+        "id": 1623,
+        "parent": -1
     },
     {
         "name": "Crackers",
@@ -10227,7 +10251,8 @@
     },
     {
         "name": "Bigger Pack, Better Value ",
-        "id": 2050
+        "id": 2050,
+        "parent": -1
     },
     {
         "name": "Fresh",
@@ -10256,7 +10281,8 @@
     },
     {
         "name": "Home & Garden",
-        "id": 2056
+        "id": 2056,
+        "parent": -1
     },
     {
         "name": "DIY",
@@ -11210,7 +11236,8 @@
     },
     {
         "name": "Free From",
-        "id": 2247
+        "id": 2247,
+        "parent": -1
     },
     {
         "name": "Dairy Free & Plant Based",
@@ -11544,7 +11571,8 @@
     },
     {
         "name": "Toys & Entertainment",
-        "id": 2314
+        "id": 2314,
+        "parent": -1
     },
     {
         "name": "Technology & Electricals ",
@@ -11893,7 +11921,8 @@
     },
     {
         "name": "Vegan",
-        "id": 2384
+        "id": 2384,
+        "parent": -1
     },
     {
         "name": "Fresh",
@@ -12132,7 +12161,8 @@
     },
     {
         "name": "Fruit & Veg",
-        "id": 2432
+        "id": 2432,
+        "parent": -1
     },
     {
         "name": "Salad & Herbs",
@@ -12646,7 +12676,8 @@
     },
     {
         "name": "More Card Points ",
-        "id": 2535
+        "id": 2535,
+        "parent": -1
     },
     {
         "name": "Fruit Pots - 200 Points",
@@ -12700,7 +12731,8 @@
     },
     {
         "name": "Pet Shop",
-        "id": 2546
+        "id": 2546,
+        "parent": -1
     },
     {
         "name": "Pet Accessories",
@@ -13241,5 +13273,9 @@
         "name": "Dog Grooming",
         "parent": 2650,
         "id": 2654
+    },
+    {
+        "name": "root",
+        "id": -1
     }
 ]

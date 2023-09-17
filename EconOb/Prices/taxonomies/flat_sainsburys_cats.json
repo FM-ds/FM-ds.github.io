@@ -1,7 +1,8 @@
 [
     {
         "name": "Beauty & cosmetics",
-        "id": 0
+        "id": 0,
+        "parent": -1
     },
     {
         "name": "Bath & body",
@@ -10,11 +11,13 @@
     },
     {
         "name": "",
-        "id": 2
+        "id": 2,
+        "parent": -1
     },
     {
         "name": "Food cupboard",
-        "id": 3
+        "id": 3,
+        "parent": -1
     },
     {
         "name": "Fruit & desserts",
@@ -48,7 +51,8 @@
     },
     {
         "name": "Household",
-        "id": 10
+        "id": 10,
+        "parent": -1
     },
     {
         "name": "Household essentials",
@@ -62,7 +66,8 @@
     },
     {
         "name": "Dairy, eggs & chilled",
-        "id": 13
+        "id": 13,
+        "parent": -1
     },
     {
         "name": "Vegetarian, vegan & dairy free",
@@ -71,7 +76,8 @@
     },
     {
         "name": "Drinks",
-        "id": 15
+        "id": 15,
+        "parent": -1
     },
     {
         "name": "Juice & smoothies",
@@ -145,7 +151,8 @@
     },
     {
         "name": "Baby & toddler",
-        "id": 30
+        "id": 30,
+        "parent": -1
     },
     {
         "name": "Baby laundry",
@@ -184,7 +191,8 @@
     },
     {
         "name": "Toiletries & health",
-        "id": 38
+        "id": 38,
+        "parent": -1
     },
     {
         "name": "Toiletries & health essentials",
@@ -193,7 +201,8 @@
     },
     {
         "name": "Groceries",
-        "id": 40
+        "id": 40,
+        "parent": -1
     },
     {
         "name": "Beauty & cosmetics",
@@ -1229,5 +1238,9 @@
         "name": "Frozen essentials",
         "parent": 214,
         "id": 247
+    },
+    {
+        "name": "root",
+        "id": -1
     }
 ]

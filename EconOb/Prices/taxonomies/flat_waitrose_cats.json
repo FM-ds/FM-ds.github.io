@@ -1,7 +1,8 @@
 [
     {
         "name": "Groceries",
-        "id": 0
+        "id": 0,
+        "parent": -1
     },
     {
         "name": "Charity Donation",
@@ -4210,11 +4211,16 @@
     },
     {
         "name": "Entertaining",
-        "id": 842
+        "id": 842,
+        "parent": -1
     },
     {
         "name": "All food to order",
         "parent": 842,
         "id": 843
+    },
+    {
+        "name": "root",
+        "id": -1
     }
 ]

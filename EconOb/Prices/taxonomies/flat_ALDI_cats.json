@@ -1,7 +1,8 @@
 [
     {
         "name": "baby-toddler",
-        "id": 0
+        "id": 0,
+        "parent": -1
     },
     {
         "name": "nappies-wipes",
@@ -40,7 +41,8 @@
     },
     {
         "name": "drinks",
-        "id": 8
+        "id": 8,
+        "parent": -1
     },
     {
         "name": "tea",
@@ -209,7 +211,8 @@
     },
     {
         "name": "bakery",
-        "id": 42
+        "id": 42,
+        "parent": -1
     },
     {
         "name": "tea-break-sweet-treats",
@@ -288,7 +291,8 @@
     },
     {
         "name": "household",
-        "id": 58
+        "id": 58,
+        "parent": -1
     },
     {
         "name": "laundry",
@@ -392,7 +396,8 @@
     },
     {
         "name": "frozen",
-        "id": 79
+        "id": 79,
+        "parent": -1
     },
     {
         "name": "ice-cream-desserts",
@@ -521,7 +526,8 @@
     },
     {
         "name": "food-cupboard",
-        "id": 105
+        "id": 105,
+        "parent": -1
     },
     {
         "name": "biscuits-crackers",
@@ -840,7 +846,8 @@
     },
     {
         "name": "pet-care",
-        "id": 169
+        "id": 169,
+        "parent": -1
     },
     {
         "name": "dogs",
@@ -874,7 +881,8 @@
     },
     {
         "name": "chilled-food",
-        "id": 176
+        "id": 176,
+        "parent": -1
     },
     {
         "name": "cheese",
@@ -1128,7 +1136,8 @@
     },
     {
         "name": "seasonal",
-        "id": 227
+        "id": 227,
+        "parent": -1
     },
     {
         "name": "chocolates",
@@ -1142,7 +1151,8 @@
     },
     {
         "name": "fresh-food",
-        "id": 230
+        "id": 230,
+        "parent": -1
     },
     {
         "name": "meat-poultry",
@@ -1376,7 +1386,8 @@
     },
     {
         "name": "health-beauty",
-        "id": 277
+        "id": 277,
+        "parent": -1
     },
     {
         "name": "medicine",
@@ -1497,5 +1508,9 @@
         "name": "oral-care",
         "parent": 300,
         "id": 301
+    },
+    {
+        "name": "root",
+        "id": -1
     }
 ]

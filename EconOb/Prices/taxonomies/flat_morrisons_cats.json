@@ -1,7 +1,8 @@
 [
     {
         "name": "Laundry & Household",
-        "id": 0
+        "id": 0,
+        "parent": -1
     },
     {
         "name": "Tissues",
@@ -590,7 +591,8 @@
     },
     {
         "name": "Health & Wellness",
-        "id": 118
+        "id": 118,
+        "parent": -1
     },
     {
         "name": "Digestive Health",
@@ -1389,7 +1391,8 @@
     },
     {
         "name": "Fruit",
-        "id": 278
+        "id": 278,
+        "parent": -1
     },
     {
         "name": "Veg & Flowers",
@@ -1608,7 +1611,8 @@
     },
     {
         "name": "Free From...",
-        "id": 322
+        "id": 322,
+        "parent": -1
     },
     {
         "name": "Gluten Free Food & Drink",
@@ -1807,7 +1811,8 @@
     },
     {
         "name": "Drinks",
-        "id": 362
+        "id": 362,
+        "parent": -1
     },
     {
         "name": "Tonic Water & Mixers",
@@ -2236,7 +2241,8 @@
     },
     {
         "name": "Pet Food & Accessories",
-        "id": 448
+        "id": 448,
+        "parent": -1
     },
     {
         "name": "Dog Food & Accessories",
@@ -2530,7 +2536,8 @@
     },
     {
         "name": "Beer",
-        "id": 507
+        "id": 507,
+        "parent": -1
     },
     {
         "name": "Wine & Spirits",
@@ -2744,7 +2751,8 @@
     },
     {
         "name": "Baby",
-        "id": 550
+        "id": 550,
+        "parent": -1
     },
     {
         "name": "Toddler & Kids",
@@ -3048,7 +3056,8 @@
     },
     {
         "name": "Meat",
-        "id": 611
+        "id": 611,
+        "parent": -1
     },
     {
         "name": "Poultry & Fish",
@@ -3167,7 +3176,8 @@
     },
     {
         "name": "Organic",
-        "id": 635
+        "id": 635,
+        "parent": -1
     },
     {
         "name": "Organic Toiletries & Baby Food",
@@ -3186,7 +3196,8 @@
     },
     {
         "name": "World & Local Food",
-        "id": 639
+        "id": 639,
+        "parent": -1
     },
     {
         "name": "Asian Food",
@@ -3205,7 +3216,8 @@
     },
     {
         "name": "Chilled Food",
-        "id": 643
+        "id": 643,
+        "parent": -1
     },
     {
         "name": "Sandwiches",
@@ -3874,7 +3886,8 @@
     },
     {
         "name": "Extra Special",
-        "id": 777
+        "id": 777,
+        "parent": -1
     },
     {
         "name": "Extra Special Fruit & Veg",
@@ -3973,7 +3986,8 @@
     },
     {
         "name": "Bakery",
-        "id": 797
+        "id": 797,
+        "parent": -1
     },
     {
         "name": "Bread & Rolls",
@@ -4407,7 +4421,8 @@
     },
     {
         "name": "Other",
-        "id": 884
+        "id": 884,
+        "parent": -1
     },
     {
         "name": "Other",
@@ -4426,11 +4441,13 @@
     },
     {
         "name": "nan",
-        "id": 888
+        "id": 888,
+        "parent": -1
     },
     {
         "name": "Toiletries & Beauty",
-        "id": 889
+        "id": 889,
+        "parent": -1
     },
     {
         "name": "Men's Toiletries",
@@ -5334,7 +5351,8 @@
     },
     {
         "name": "Food Cupboard",
-        "id": 1070
+        "id": 1070,
+        "parent": -1
     },
     {
         "name": "Rice",
@@ -6568,7 +6586,8 @@
     },
     {
         "name": "Summer",
-        "id": 1317
+        "id": 1317,
+        "parent": -1
     },
     {
         "name": "BBQ",
@@ -6597,7 +6616,8 @@
     },
     {
         "name": "Fresh Food & Bakery",
-        "id": 1323
+        "id": 1323,
+        "parent": -1
     },
     {
         "name": "Meat & Poultry",
@@ -6616,7 +6636,8 @@
     },
     {
         "name": "Home & Entertainment",
-        "id": 1327
+        "id": 1327,
+        "parent": -1
     },
     {
         "name": "Stationery",
@@ -7650,7 +7671,8 @@
     },
     {
         "name": "World Food",
-        "id": 1534
+        "id": 1534,
+        "parent": -1
     },
     {
         "name": "African & Caribbean Food",
@@ -8014,7 +8036,8 @@
     },
     {
         "name": "Frozen Food",
-        "id": 1607
+        "id": 1607,
+        "parent": -1
     },
     {
         "name": "Chips",
@@ -8568,7 +8591,8 @@
     },
     {
         "name": "Vegan & Plant Based",
-        "id": 1718
+        "id": 1718,
+        "parent": -1
     },
     {
         "name": "Plant Based by Asda",
@@ -8764,5 +8788,9 @@
         "name": "OMV! Food Cupboard",
         "parent": 1757,
         "id": 1757
+    },
+    {
+        "name": "root",
+        "id": -1
     }
 ]

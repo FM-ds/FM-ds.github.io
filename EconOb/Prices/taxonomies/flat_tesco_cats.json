@@ -1,7 +1,8 @@
 [
     {
         "name": "Pets",
-        "id": 0
+        "id": 0,
+        "parent": -1
     },
     {
         "name": "Dog Food & Accessories",
@@ -340,7 +341,8 @@
     },
     {
         "name": "Bakery",
-        "id": 68
+        "id": 68,
+        "parent": -1
     },
     {
         "name": "Bread & Rolls",
@@ -1084,7 +1086,8 @@
     },
     {
         "name": "Health & Beauty",
-        "id": 217
+        "id": 217,
+        "parent": -1
     },
     {
         "name": "Suncare & Travel",
@@ -3383,7 +3386,8 @@
     },
     {
         "name": "Home & Ents",
-        "id": 677
+        "id": 677,
+        "parent": -1
     },
     {
         "name": "Home Accessories",
@@ -5867,7 +5871,8 @@
     },
     {
         "name": "Baby & Toddler",
-        "id": 1174
+        "id": 1174,
+        "parent": -1
     },
     {
         "name": "Dummies & Teething",
@@ -6806,7 +6811,8 @@
     },
     {
         "name": "Household",
-        "id": 1362
+        "id": 1362,
+        "parent": -1
     },
     {
         "name": "Facial Tissue & Hand Wipes",
@@ -8130,7 +8136,8 @@
     },
     {
         "name": "Frozen Food",
-        "id": 1627
+        "id": 1627,
+        "parent": -1
     },
     {
         "name": "Desserts",
@@ -9394,7 +9401,8 @@
     },
     {
         "name": "Treats & Snacks",
-        "id": 1880
+        "id": 1880,
+        "parent": -1
     },
     {
         "name": "Chocolate, Sweets, Mints & Chewing Gum",
@@ -9518,7 +9526,8 @@
     },
     {
         "name": "Drinks",
-        "id": 1905
+        "id": 1905,
+        "parent": -1
     },
     {
         "name": "On The Go Drinks",
@@ -11577,7 +11586,8 @@
     },
     {
         "name": "Food Cupboard",
-        "id": 2317
+        "id": 2317,
+        "parent": -1
     },
     {
         "name": "Table Sauces, Olives, Pickles & Chutney",
@@ -16101,7 +16111,8 @@
     },
     {
         "name": "Fresh Food",
-        "id": 3222
+        "id": 3222,
+        "parent": -1
     },
     {
         "name": "Dairy Free & Dairy Alternatives",
@@ -20102,5 +20113,9 @@
         "name": "Seaweed & Samphire",
         "parent": 4020,
         "id": 4022
+    },
+    {
+        "name": "root",
+        "id": -1
     }
 ]

@@ -1,11 +1,13 @@
 [
     {
         "name": "Afternoon Tea",
-        "id": 0
+        "id": 0,
+        "parent": -1
     },
     {
         "name": "Pets",
-        "id": 1
+        "id": 1,
+        "parent": -1
     },
     {
         "name": "Pet Accessories",
@@ -29,7 +31,8 @@
     },
     {
         "name": "Fresh",
-        "id": 6
+        "id": 6,
+        "parent": -1
     },
     {
         "name": "Pasta Tubs & Dips",
@@ -323,11 +326,13 @@
     },
     {
         "name": "Lowering Prices",
-        "id": 65
+        "id": 65,
+        "parent": -1
     },
     {
         "name": "Drinks",
-        "id": 66
+        "id": 66,
+        "parent": -1
     },
     {
         "name": "Spirits & Pre-Mixed",
@@ -576,7 +581,8 @@
     },
     {
         "name": "BBQ Essentials",
-        "id": 116
+        "id": 116,
+        "parent": -1
     },
     {
         "name": "Drinks",
@@ -585,7 +591,8 @@
     },
     {
         "name": "Easter",
-        "id": 118
+        "id": 118,
+        "parent": -1
     },
     {
         "name": "Easter Chocolate",
@@ -594,7 +601,8 @@
     },
     {
         "name": "Slimming World",
-        "id": 120
+        "id": 120,
+        "parent": -1
     },
     {
         "name": "Meats",
@@ -623,7 +631,8 @@
     },
     {
         "name": "Home & Household",
-        "id": 126
+        "id": 126,
+        "parent": -1
     },
     {
         "name": "Appliances",
@@ -712,11 +721,13 @@
     },
     {
         "name": "Luxury Food",
-        "id": 144
+        "id": 144,
+        "parent": -1
     },
     {
         "name": "Offers",
-        "id": 145
+        "id": 145,
+        "parent": -1
     },
     {
         "name": "3 for \u00a33 Mix & Match",
@@ -735,7 +746,8 @@
     },
     {
         "name": "Frozen",
-        "id": 149
+        "id": 149,
+        "parent": -1
     },
     {
         "name": "Frozen Slimming World",
@@ -1084,11 +1096,13 @@
     },
     {
         "name": "Back to School",
-        "id": 219
+        "id": 219,
+        "parent": -1
     },
     {
         "name": "Beers, Wines & Spirits",
-        "id": 220
+        "id": 220,
+        "parent": -1
     },
     {
         "name": "Spirits & Pre-Mixed",
@@ -1102,11 +1116,13 @@
     },
     {
         "name": "The Land of the Roast",
-        "id": 223
+        "id": 223,
+        "parent": -1
     },
     {
         "name": "Bakery",
-        "id": 224
+        "id": 224,
+        "parent": -1
     },
     {
         "name": "Cakes",
@@ -1200,7 +1216,8 @@
     },
     {
         "name": "Toiletries & Health",
-        "id": 243
+        "id": 243,
+        "parent": -1
     },
     {
         "name": "Soap Handwash and Hand Sanitiser",
@@ -1239,7 +1256,8 @@
     },
     {
         "name": "Food Cupboard",
-        "id": 251
+        "id": 251,
+        "parent": -1
     },
     {
         "name": "Cans, Tins & Packets",
@@ -1568,7 +1586,8 @@
     },
     {
         "name": "Air Fry",
-        "id": 317
+        "id": 317,
+        "parent": -1
     },
     {
         "name": "Fish & Seafood",
@@ -1582,23 +1601,28 @@
     },
     {
         "name": "Halloween and Bonfire",
-        "id": 320
+        "id": 320,
+        "parent": -1
     },
     {
         "name": "Gluten Free",
-        "id": 321
+        "id": 321,
+        "parent": -1
     },
     {
         "name": "Christmas Trimmings",
-        "id": 322
+        "id": 322,
+        "parent": -1
     },
     {
         "name": "Halal",
-        "id": 323
+        "id": 323,
+        "parent": -1
     },
     {
         "name": "Pet",
-        "id": 324
+        "id": 324,
+        "parent": -1
     },
     {
         "name": "Dog Food",
@@ -1617,19 +1641,23 @@
     },
     {
         "name": "Slimming World Meals",
-        "id": 328
+        "id": 328,
+        "parent": -1
     },
     {
         "name": "Treats & Snacks",
-        "id": 329
+        "id": 329,
+        "parent": -1
     },
     {
         "name": "New",
-        "id": 330
+        "id": 330,
+        "parent": -1
     },
     {
         "name": "Exclusive Brands",
-        "id": 331
+        "id": 331,
+        "parent": -1
     },
     {
         "name": "Slimming World",
@@ -1663,6 +1691,11 @@
     },
     {
         "name": "Festive Drinks",
-        "id": 338
+        "id": 338,
+        "parent": -1
+    },
+    {
+        "name": "root",
+        "id": -1
     }
 ]
