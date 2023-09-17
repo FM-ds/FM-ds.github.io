@@ -1,0 +1,1358 @@
+[
+    {
+        "name": "Afternoon Tea",
+        "parent": "root"
+    },
+    {
+        "name": "Pets",
+        "parent": "root"
+    },
+    {
+        "name": "Pet Accessories",
+        "parent": "Pets"
+    },
+    {
+        "name": "Cat Food",
+        "parent": "Pets"
+    },
+    {
+        "name": "Dog Food",
+        "parent": "Pets"
+    },
+    {
+        "name": "Pet Treats",
+        "parent": "Pets"
+    },
+    {
+        "name": "Fresh",
+        "parent": "root"
+    },
+    {
+        "name": "Pasta Tubs & Dips",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Dips",
+        "parent": "Pasta Tubs & Dips"
+    },
+    {
+        "name": "Coleslaws & Pasta Tubs",
+        "parent": "Pasta Tubs & Dips"
+    },
+    {
+        "name": "Juice, Smoothies & Drinks",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Juice",
+        "parent": "Juice, Smoothies & Drinks"
+    },
+    {
+        "name": "Milk, Butter & Eggs",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Milk",
+        "parent": "Milk, Butter & Eggs"
+    },
+    {
+        "name": "Butter & Margarine",
+        "parent": "Milk, Butter & Eggs"
+    },
+    {
+        "name": "Cream",
+        "parent": "Milk, Butter & Eggs"
+    },
+    {
+        "name": "Eggs",
+        "parent": "Milk, Butter & Eggs"
+    },
+    {
+        "name": "Chilled Desserts",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Fresh Meat & Chicken",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Bacon & Gammon",
+        "parent": "Fresh Meat & Chicken"
+    },
+    {
+        "name": "Lamb",
+        "parent": "Fresh Meat & Chicken"
+    },
+    {
+        "name": "Sausages",
+        "parent": "Fresh Meat & Chicken"
+    },
+    {
+        "name": "Beef",
+        "parent": "Fresh Meat & Chicken"
+    },
+    {
+        "name": "Luxury Meat",
+        "parent": "Fresh Meat & Chicken"
+    },
+    {
+        "name": "Chicken & Turkey",
+        "parent": "Fresh Meat & Chicken"
+    },
+    {
+        "name": "Pork",
+        "parent": "Fresh Meat & Chicken"
+    },
+    {
+        "name": "Cheese",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Cheddar Cheese",
+        "parent": "Cheese"
+    },
+    {
+        "name": "Cheese Snacks & Spreads",
+        "parent": "Cheese"
+    },
+    {
+        "name": "Low Fat Cheese",
+        "parent": "Cheese"
+    },
+    {
+        "name": "Grated & Sliced Cheese",
+        "parent": "Cheese"
+    },
+    {
+        "name": "British Regional Cheese",
+        "parent": "Cheese"
+    },
+    {
+        "name": "Speciality Cheese",
+        "parent": "Cheese"
+    },
+    {
+        "name": "Cottage Cheese & Soft Cheese",
+        "parent": "Cheese"
+    },
+    {
+        "name": "Bakery",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Crumpets, Muffins & Pancakes",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Yogurts",
+        "parent": "Fresh"
+    },
+    {
+        "name": "M\u00fcller Yogurts",
+        "parent": "Yogurts"
+    },
+    {
+        "name": "Yogurt",
+        "parent": "Yogurts"
+    },
+    {
+        "name": "Low Fat & Fat Free Yogurt",
+        "parent": "Yogurts"
+    },
+    {
+        "name": "Kids Yogurt",
+        "parent": "Yogurts"
+    },
+    {
+        "name": "Yogurt Drinks",
+        "parent": "Yogurts"
+    },
+    {
+        "name": "Dessert Yogurt",
+        "parent": "Yogurts"
+    },
+    {
+        "name": "Fresh Party Food",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Coleslaw & Sandwich Fillers",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Cooked Meats & Deli",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Continental Meats",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Slices & Pasties",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Olives",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Pies & Quiches",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Sausage Rolls & Savoury Eggs",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Dips",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Beef",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Ham",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Sandwich Fillers",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Chicken & Turkey",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Pate",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Pork",
+        "parent": "Cooked Meats & Deli"
+    },
+    {
+        "name": "Fresh Fruit, Veg & Salads",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Salads",
+        "parent": "Fresh Fruit, Veg & Salads"
+    },
+    {
+        "name": "Potatoes",
+        "parent": "Fresh Fruit, Veg & Salads"
+    },
+    {
+        "name": "Fresh Vegetables",
+        "parent": "Fresh Fruit, Veg & Salads"
+    },
+    {
+        "name": "Fresh Fruit",
+        "parent": "Fresh Fruit, Veg & Salads"
+    },
+    {
+        "name": "Fresh Fish",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Chilled Ready Meals & Snacks",
+        "parent": "Fresh"
+    },
+    {
+        "name": "Lowering Prices",
+        "parent": "root"
+    },
+    {
+        "name": "Drinks",
+        "parent": "root"
+    },
+    {
+        "name": "Spirits & Pre-Mixed",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Gin",
+        "parent": "Spirits & Pre-Mixed"
+    },
+    {
+        "name": "Alcopops",
+        "parent": "Spirits & Pre-Mixed"
+    },
+    {
+        "name": "Liqueurs",
+        "parent": "Spirits & Pre-Mixed"
+    },
+    {
+        "name": "Rum",
+        "parent": "Spirits & Pre-Mixed"
+    },
+    {
+        "name": "Vodka",
+        "parent": "Spirits & Pre-Mixed"
+    },
+    {
+        "name": "Whisky",
+        "parent": "Spirits & Pre-Mixed"
+    },
+    {
+        "name": "Wine & Sparkling",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Red Wine",
+        "parent": "Wine & Sparkling"
+    },
+    {
+        "name": "Sparkling Wine",
+        "parent": "Wine & Sparkling"
+    },
+    {
+        "name": "Rose Wine",
+        "parent": "Wine & Sparkling"
+    },
+    {
+        "name": "White Wine",
+        "parent": "Wine & Sparkling"
+    },
+    {
+        "name": "Kids & Lunchbox Drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Fruit Juice & Smoothies",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Smoothies",
+        "parent": "Fruit Juice & Smoothies"
+    },
+    {
+        "name": "Fruit Juice",
+        "parent": "Fruit Juice & Smoothies"
+    },
+    {
+        "name": "Hot Beverages",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Sports & Energy Drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Lucozade",
+        "parent": "Sports & Energy Drinks"
+    },
+    {
+        "name": "Protein Shakes",
+        "parent": "Sports & Energy Drinks"
+    },
+    {
+        "name": "Monster",
+        "parent": "Sports & Energy Drinks"
+    },
+    {
+        "name": "Still & Flavoured Water",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Bigger Packs",
+        "parent": "Still & Flavoured Water"
+    },
+    {
+        "name": "Still Water",
+        "parent": "Still & Flavoured Water"
+    },
+    {
+        "name": "Sparkling Water",
+        "parent": "Still & Flavoured Water"
+    },
+    {
+        "name": "Beer, Cider & Ales",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Ales",
+        "parent": "Beer, Cider & Ales"
+    },
+    {
+        "name": "Beer",
+        "parent": "Beer, Cider & Ales"
+    },
+    {
+        "name": "Cider",
+        "parent": "Beer, Cider & Ales"
+    },
+    {
+        "name": "Coffee",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Instant & Ground Coffee",
+        "parent": "Coffee"
+    },
+    {
+        "name": "Starbucks Coffee",
+        "parent": "Coffee"
+    },
+    {
+        "name": "Coffee Machine Pods",
+        "parent": "Coffee"
+    },
+    {
+        "name": "Milkshakes",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Squash & Cordial",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Hot Chocolate",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Tea",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Breakfast Tea",
+        "parent": "Tea"
+    },
+    {
+        "name": "Fruit & Herbal Tea",
+        "parent": "Tea"
+    },
+    {
+        "name": "Decaf Tea",
+        "parent": "Tea"
+    },
+    {
+        "name": "Fizzy Drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Cola",
+        "parent": "Fizzy Drinks"
+    },
+    {
+        "name": "Canned Drinks",
+        "parent": "Fizzy Drinks"
+    },
+    {
+        "name": "Lemonade",
+        "parent": "Fizzy Drinks"
+    },
+    {
+        "name": "Diet Drinks",
+        "parent": "Fizzy Drinks"
+    },
+    {
+        "name": "Multipacks",
+        "parent": "Fizzy Drinks"
+    },
+    {
+        "name": "Orange and Fruit Flavoured",
+        "parent": "Fizzy Drinks"
+    },
+    {
+        "name": "Bottled Drinks",
+        "parent": "Fizzy Drinks"
+    },
+    {
+        "name": "12 - 24 Packs",
+        "parent": "Fizzy Drinks"
+    },
+    {
+        "name": "BBQ Essentials",
+        "parent": "root"
+    },
+    {
+        "name": "Drinks",
+        "parent": "BBQ Essentials"
+    },
+    {
+        "name": "Easter",
+        "parent": "root"
+    },
+    {
+        "name": "Easter Chocolate",
+        "parent": "Easter"
+    },
+    {
+        "name": "Slimming World",
+        "parent": "root"
+    },
+    {
+        "name": "Meats",
+        "parent": "Slimming World"
+    },
+    {
+        "name": "Meals",
+        "parent": "Slimming World"
+    },
+    {
+        "name": "Soups",
+        "parent": "Slimming World"
+    },
+    {
+        "name": "Slimming World Lunch Bowls",
+        "parent": "Slimming World"
+    },
+    {
+        "name": "Vegetarian",
+        "parent": "Slimming World"
+    },
+    {
+        "name": "Home & Household",
+        "parent": "root"
+    },
+    {
+        "name": "Appliances",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Home Accessories",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Cooking & Dining",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Bin Bags, Foil & Cling Film",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Baby & Toddler",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Reusable Bags",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Toilet Roll, Kitchen Roll & Tissues",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Laundry",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Washing Powders & Liquids",
+        "parent": "Laundry"
+    },
+    {
+        "name": "Fabric Conditioners",
+        "parent": "Laundry"
+    },
+    {
+        "name": "Washing Capsules & Tablets",
+        "parent": "Laundry"
+    },
+    {
+        "name": "Cleaning Products",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Washing Up & Dishwasher Tablets",
+        "parent": "Cleaning Products"
+    },
+    {
+        "name": "Kitchen",
+        "parent": "Cleaning Products"
+    },
+    {
+        "name": "Bathroom & Toilet",
+        "parent": "Cleaning Products"
+    },
+    {
+        "name": "Electronic Cigarettes",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Sim Cards",
+        "parent": "Home & Household"
+    },
+    {
+        "name": "Luxury Food",
+        "parent": "root"
+    },
+    {
+        "name": "Offers",
+        "parent": "root"
+    },
+    {
+        "name": "3 for \u00a33 Mix & Match",
+        "parent": "Offers"
+    },
+    {
+        "name": "3 for \u00a310 Mix & Match",
+        "parent": "Offers"
+    },
+    {
+        "name": "3 for \u00a35 Mix & Match",
+        "parent": "Offers"
+    },
+    {
+        "name": "Frozen",
+        "parent": "root"
+    },
+    {
+        "name": "Frozen Slimming World",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Frozen Ready Meals",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Frozen Snacks",
+        "parent": "Frozen Ready Meals"
+    },
+    {
+        "name": "Meal in a Bag",
+        "parent": "Frozen Ready Meals"
+    },
+    {
+        "name": "Traditional",
+        "parent": "Frozen Ready Meals"
+    },
+    {
+        "name": "Italian",
+        "parent": "Frozen Ready Meals"
+    },
+    {
+        "name": "Chinese & Oriental",
+        "parent": "Frozen Ready Meals"
+    },
+    {
+        "name": "Spanish & Mexican",
+        "parent": "Frozen Ready Meals"
+    },
+    {
+        "name": "Indian",
+        "parent": "Frozen Ready Meals"
+    },
+    {
+        "name": "Luxury",
+        "parent": "Frozen Ready Meals"
+    },
+    {
+        "name": "Vegan",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Party Food & Platters",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Pizza & Garlic Bread",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Meat & Chicken Pizza",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Stuffed Crust Pizza",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Mini Pizzas",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Deep Pan Pizza",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Pizza Snacks",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Stonebaked Pizza",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Garlic Bread",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Thin & Crispy Pizza",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Sharing Pizza",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Woodfired Pizza",
+        "parent": "Pizza & Garlic Bread"
+    },
+    {
+        "name": "Frozen Desserts, Fruit & Pastry",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Desserts",
+        "parent": "Frozen Desserts, Fruit & Pastry"
+    },
+    {
+        "name": "Frozen Fruit, Smoothies & Ice",
+        "parent": "Frozen Desserts, Fruit & Pastry"
+    },
+    {
+        "name": "Pastry",
+        "parent": "Frozen Desserts, Fruit & Pastry"
+    },
+    {
+        "name": "Frozen Pies",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Greggs",
+        "parent": "Frozen Pies"
+    },
+    {
+        "name": "Pies & Puddings",
+        "parent": "Frozen Pies"
+    },
+    {
+        "name": "Pasties, Quiche & Sausage Rolls",
+        "parent": "Frozen Pies"
+    },
+    {
+        "name": "Chips & Potatoes",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Chips & Fries",
+        "parent": "Chips & Potatoes"
+    },
+    {
+        "name": "Potatoes",
+        "parent": "Chips & Potatoes"
+    },
+    {
+        "name": "Yorkshire Puddings & Stuffing",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Ice Cream & Lollies",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Ice Lollies",
+        "parent": "Ice Cream & Lollies"
+    },
+    {
+        "name": "Ice Cream Tubs",
+        "parent": "Ice Cream & Lollies"
+    },
+    {
+        "name": "Ice Cream Cones, Sticks & Bars",
+        "parent": "Ice Cream & Lollies"
+    },
+    {
+        "name": "Frozen Bakery",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Frozen Meat & Chicken",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Crispy Shredded",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Luxury Meat & Poultry",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Lamb",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Chicken and Turkey",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Turkey",
+        "parent": "Chicken and Turkey"
+    },
+    {
+        "name": "Sausages",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Breaded & Battered Chicken",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Beef",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Burgers",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Burgers and Sausages",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Burgers",
+        "parent": "Burgers and Sausages"
+    },
+    {
+        "name": "Pork & Gammon",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Turkey",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Chicken",
+        "parent": "Frozen Meat & Chicken"
+    },
+    {
+        "name": "Vegetarian",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Frozen Vegetables & Rice",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Herbs",
+        "parent": "Frozen Vegetables & Rice"
+    },
+    {
+        "name": "Vegetables",
+        "parent": "Frozen Vegetables & Rice"
+    },
+    {
+        "name": "Rice & Grains",
+        "parent": "Frozen Vegetables & Rice"
+    },
+    {
+        "name": "Vegetable Side Dishes",
+        "parent": "Frozen Vegetables & Rice"
+    },
+    {
+        "name": "Frozen Fish & Seafood",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Luxury Fish & Seafood",
+        "parent": "Frozen Fish & Seafood"
+    },
+    {
+        "name": "Fish Fingers, Fish Cakes & Scampi",
+        "parent": "Frozen Fish & Seafood"
+    },
+    {
+        "name": "Fish Pies & Meals",
+        "parent": "Frozen Fish & Seafood"
+    },
+    {
+        "name": "Prawns & Seafood",
+        "parent": "Frozen Fish & Seafood"
+    },
+    {
+        "name": "Battered & Breaded Fish",
+        "parent": "Frozen Fish & Seafood"
+    },
+    {
+        "name": "Fish Fillets",
+        "parent": "Frozen Fish & Seafood"
+    },
+    {
+        "name": "TGI Fridays",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Back to School",
+        "parent": "root"
+    },
+    {
+        "name": "Beers, Wines & Spirits",
+        "parent": "root"
+    },
+    {
+        "name": "Spirits & Pre-Mixed",
+        "parent": "Beers, Wines & Spirits"
+    },
+    {
+        "name": "Wine & Sparkling",
+        "parent": "Beers, Wines & Spirits"
+    },
+    {
+        "name": "The Land of the Roast",
+        "parent": "root"
+    },
+    {
+        "name": "Bakery",
+        "parent": "root"
+    },
+    {
+        "name": "Cakes",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Mini Rolls & Cake Bars",
+        "parent": "Cakes"
+    },
+    {
+        "name": "Fruit Pies & Tarts",
+        "parent": "Cakes"
+    },
+    {
+        "name": "Cake",
+        "parent": "Cakes"
+    },
+    {
+        "name": "Muffins & Mini Bites",
+        "parent": "Cakes"
+    },
+    {
+        "name": "Wraps, Naan, Pittas & Thins",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Fruit Loaves, Teacakes & Scones",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Crumpets, Muffins & Pancakes",
+        "parent": "Bakery"
+    },
+    {
+        "name": "The Daily Bakery",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Bread",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Brown & Wholemeal Bread",
+        "parent": "Bread"
+    },
+    {
+        "name": "White Bread",
+        "parent": "Bread"
+    },
+    {
+        "name": "Seeds & Grains",
+        "parent": "Bread"
+    },
+    {
+        "name": "Half & Half Bread",
+        "parent": "Bread"
+    },
+    {
+        "name": "Indian & Mediterranean Breads",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Wraps, Bagels, Pittas & Thins",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Croissants, Pain au Chocolat & Belgian Buns",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Rolls & Part Baked",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Toiletries & Health",
+        "parent": "root"
+    },
+    {
+        "name": "Soap Handwash and Hand Sanitiser",
+        "parent": "Toiletries & Health"
+    },
+    {
+        "name": "Medicines",
+        "parent": "Toiletries & Health"
+    },
+    {
+        "name": "Mens Toiletries",
+        "parent": "Toiletries & Health"
+    },
+    {
+        "name": "Dental Care",
+        "parent": "Toiletries & Health"
+    },
+    {
+        "name": "Shampoo and Conditioner",
+        "parent": "Toiletries & Health"
+    },
+    {
+        "name": "Deodorant",
+        "parent": "Toiletries & Health"
+    },
+    {
+        "name": "Womens Toiletries",
+        "parent": "Toiletries & Health"
+    },
+    {
+        "name": "Food Cupboard",
+        "parent": "root"
+    },
+    {
+        "name": "Cans, Tins & Packets",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Tinned Fruit, Desserts & Jelly",
+        "parent": "Cans, Tins & Packets"
+    },
+    {
+        "name": "Tinned Soup",
+        "parent": "Cans, Tins & Packets"
+    },
+    {
+        "name": "Tinned Beans, Spaghetti & Pasta",
+        "parent": "Cans, Tins & Packets"
+    },
+    {
+        "name": "Tinned Fish & Seafood",
+        "parent": "Cans, Tins & Packets"
+    },
+    {
+        "name": "Tinned Tomatoes & Vegetables",
+        "parent": "Cans, Tins & Packets"
+    },
+    {
+        "name": "Packet Rice, Pasta & Noodles",
+        "parent": "Cans, Tins & Packets"
+    },
+    {
+        "name": "Tinned Meat & Pies",
+        "parent": "Cans, Tins & Packets"
+    },
+    {
+        "name": "Cereal",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Cereal Bars",
+        "parent": "Cereal"
+    },
+    {
+        "name": "Everyday & Family Cereal",
+        "parent": "Cereal"
+    },
+    {
+        "name": "Oats & Porridge",
+        "parent": "Cereal"
+    },
+    {
+        "name": "Kids Cereal",
+        "parent": "Cereal"
+    },
+    {
+        "name": "Rice, Pasta & Noodles",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Pasta",
+        "parent": "Rice, Pasta & Noodles"
+    },
+    {
+        "name": "Rice, Grains & Pulses",
+        "parent": "Rice, Pasta & Noodles"
+    },
+    {
+        "name": "Noodles",
+        "parent": "Rice, Pasta & Noodles"
+    },
+    {
+        "name": "Chocolate & Sweets",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Sharing Bags & Tubs",
+        "parent": "Chocolate & Sweets"
+    },
+    {
+        "name": "Sweets",
+        "parent": "Chocolate & Sweets"
+    },
+    {
+        "name": "Single Chocolate Bars & Bags",
+        "parent": "Chocolate & Sweets"
+    },
+    {
+        "name": "Chocolate Boxes & Gifts",
+        "parent": "Chocolate & Sweets"
+    },
+    {
+        "name": "Multipacks",
+        "parent": "Chocolate & Sweets"
+    },
+    {
+        "name": "Chewing Gum & Mints",
+        "parent": "Chocolate & Sweets"
+    },
+    {
+        "name": "Long Life Milk & Sugar",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Table Sauces, BBQ & Pickles",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Pickles & Chutneys",
+        "parent": "Table Sauces, BBQ & Pickles"
+    },
+    {
+        "name": "Salad Cream & Mayonnaise",
+        "parent": "Table Sauces, BBQ & Pickles"
+    },
+    {
+        "name": "BBQ, Chilli & Marinades",
+        "parent": "Table Sauces, BBQ & Pickles"
+    },
+    {
+        "name": "Table Sauce",
+        "parent": "Table Sauces, BBQ & Pickles"
+    },
+    {
+        "name": "Biscuits & Crackers",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Chocolate Biscuits",
+        "parent": "Biscuits & Crackers"
+    },
+    {
+        "name": "Crackers & Savoury Biscuits",
+        "parent": "Biscuits & Crackers"
+    },
+    {
+        "name": "Sweet Biscuits",
+        "parent": "Biscuits & Crackers"
+    },
+    {
+        "name": "Multipack Biscuits",
+        "parent": "Biscuits & Crackers"
+    },
+    {
+        "name": "Tea, Coffee & Hot Drinks",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Jams & Spreads",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Jams, Marmalades & Honey",
+        "parent": "Jams & Spreads"
+    },
+    {
+        "name": "Paste & Spreads",
+        "parent": "Jams & Spreads"
+    },
+    {
+        "name": "Cooking Ingredients",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Herbs, Spices & Seasonings",
+        "parent": "Cooking Ingredients"
+    },
+    {
+        "name": "Gravy, Stock Cubes & Stuffing",
+        "parent": "Cooking Ingredients"
+    },
+    {
+        "name": "Packet Mixes",
+        "parent": "Cooking Ingredients"
+    },
+    {
+        "name": "Salt, Pepper & Vinegar",
+        "parent": "Cooking Ingredients"
+    },
+    {
+        "name": "Oils & Dressings",
+        "parent": "Cooking Ingredients"
+    },
+    {
+        "name": "Freeze Pops, Wafers & Sauces",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Ice Cream Toppings",
+        "parent": "Freeze Pops, Wafers & Sauces"
+    },
+    {
+        "name": "Freeze Pops",
+        "parent": "Freeze Pops, Wafers & Sauces"
+    },
+    {
+        "name": "Ice Cream Wafers",
+        "parent": "Freeze Pops, Wafers & Sauces"
+    },
+    {
+        "name": "Crisps, Nuts & Snacks",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Seabrook",
+        "parent": "Crisps, Nuts & Snacks"
+    },
+    {
+        "name": "Nuts & Snacks",
+        "parent": "Crisps, Nuts & Snacks"
+    },
+    {
+        "name": "Sharing Crisps",
+        "parent": "Crisps, Nuts & Snacks"
+    },
+    {
+        "name": "Multipack Crisps",
+        "parent": "Crisps, Nuts & Snacks"
+    },
+    {
+        "name": "Dried Fruit",
+        "parent": "Crisps, Nuts & Snacks"
+    },
+    {
+        "name": "Popcorn",
+        "parent": "Crisps, Nuts & Snacks"
+    },
+    {
+        "name": "Baby Food",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Biscuits & Beverages",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Cooking Sauces & Meal Kits",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Pasta Sauces",
+        "parent": "Cooking Sauces & Meal Kits"
+    },
+    {
+        "name": "Chinese and Oriental Sauces",
+        "parent": "Cooking Sauces & Meal Kits"
+    },
+    {
+        "name": "Mexican Sauces & Meal Kits",
+        "parent": "Cooking Sauces & Meal Kits"
+    },
+    {
+        "name": "Traditional Sauces",
+        "parent": "Cooking Sauces & Meal Kits"
+    },
+    {
+        "name": "Indian and Curry Sauces",
+        "parent": "Cooking Sauces & Meal Kits"
+    },
+    {
+        "name": "Home Baking",
+        "parent": "Food Cupboard"
+    },
+    {
+        "name": "Air Fry",
+        "parent": "root"
+    },
+    {
+        "name": "Fish & Seafood",
+        "parent": "Air Fry"
+    },
+    {
+        "name": "Meat & Poultry",
+        "parent": "Air Fry"
+    },
+    {
+        "name": "Halloween and Bonfire",
+        "parent": "root"
+    },
+    {
+        "name": "Gluten Free",
+        "parent": "root"
+    },
+    {
+        "name": "Christmas Trimmings",
+        "parent": "root"
+    },
+    {
+        "name": "Halal",
+        "parent": "root"
+    },
+    {
+        "name": "Pet",
+        "parent": "root"
+    },
+    {
+        "name": "Dog Food",
+        "parent": "Pet"
+    },
+    {
+        "name": "Cat Food",
+        "parent": "Pet"
+    },
+    {
+        "name": "Pet Treats",
+        "parent": "Pet"
+    },
+    {
+        "name": "Slimming World Meals",
+        "parent": "root"
+    },
+    {
+        "name": "Treats & Snacks",
+        "parent": "root"
+    },
+    {
+        "name": "New",
+        "parent": "root"
+    },
+    {
+        "name": "Exclusive Brands",
+        "parent": "root"
+    },
+    {
+        "name": "Slimming World",
+        "parent": "Exclusive Brands"
+    },
+    {
+        "name": "Blue Dragon",
+        "parent": "Exclusive Brands"
+    },
+    {
+        "name": "Cathedral City",
+        "parent": "Exclusive Brands"
+    },
+    {
+        "name": "Piccolino",
+        "parent": "Exclusive Brands"
+    },
+    {
+        "name": "Grill House",
+        "parent": "Exclusive Brands"
+    },
+    {
+        "name": "TGI Fridays",
+        "parent": "Exclusive Brands"
+    },
+    {
+        "name": "Festive Drinks",
+        "parent": "root"
+    }
+]

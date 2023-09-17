@@ -1,0 +1,994 @@
+[
+    {
+        "name": "Beauty & cosmetics",
+        "parent": "root"
+    },
+    {
+        "name": "Bath & body",
+        "parent": "Beauty & cosmetics"
+    },
+    {
+        "name": "",
+        "parent": "root"
+    },
+    {
+        "name": "Food cupboard",
+        "parent": "root"
+    },
+    {
+        "name": "Fruit & desserts",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Freefrom",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Table sauces, dressings & condiments",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Jams, honey & spreads",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "World Foods",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Tea, coffee & hot drinks",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Household",
+        "parent": "root"
+    },
+    {
+        "name": "Household essentials",
+        "parent": "Household"
+    },
+    {
+        "name": "Newsagent & tobacconist",
+        "parent": "Household"
+    },
+    {
+        "name": "Dairy, eggs & chilled",
+        "parent": "root"
+    },
+    {
+        "name": "Vegetarian, vegan & dairy free",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Drinks",
+        "parent": "root"
+    },
+    {
+        "name": "Juice & smoothies",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Fizzy drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Sports, energy & wellbeing",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Champagne & sparkling wine",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Wine",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Mixers & adult soft drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Water",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Low & no alcohol",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Milk & milk drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Spirits & liqueurs",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Tea, coffee & hot drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Squash & cordials",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Kids & lunchbox",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Beer & cider",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Baby & toddler",
+        "parent": "root"
+    },
+    {
+        "name": "Baby laundry",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Snacks & rusks",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Toiletries & healthcare",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Nappies & pants",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Wipes",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Baby meals",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Baby milk & drinks",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Toiletries & health",
+        "parent": "root"
+    },
+    {
+        "name": "Toiletries & health essentials",
+        "parent": "Toiletries & health"
+    },
+    {
+        "name": "Groceries",
+        "parent": "root"
+    },
+    {
+        "name": "Beauty & cosmetics",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Bath & body",
+        "parent": "Beauty & cosmetics"
+    },
+    {
+        "name": "Bakery",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Scones, fruited & buns",
+        "parent": "Bakery"
+    },
+    {
+        "name": "All scones, fruited & buns",
+        "parent": "Scones, fruited & buns"
+    },
+    {
+        "name": "Freefrom bread & cakes",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Cakes & tarts",
+        "parent": "Bakery"
+    },
+    {
+        "name": "All cakes & tarts",
+        "parent": "Cakes & tarts"
+    },
+    {
+        "name": "Croissants & breakfast bakery",
+        "parent": "Bakery"
+    },
+    {
+        "name": "All breakfast bakery",
+        "parent": "Croissants & breakfast bakery"
+    },
+    {
+        "name": "Bread rolls & bagels",
+        "parent": "Bakery"
+    },
+    {
+        "name": "All rolls & bagels",
+        "parent": "Bread rolls & bagels"
+    },
+    {
+        "name": "Naans & meal sides",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Bread",
+        "parent": "Bakery"
+    },
+    {
+        "name": "All bread",
+        "parent": "Bread"
+    },
+    {
+        "name": "From our in store bakery",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Doughnuts, cookies & muffins",
+        "parent": "Bakery"
+    },
+    {
+        "name": "All doughnuts, cookies & muffins",
+        "parent": "Doughnuts, cookies & muffins"
+    },
+    {
+        "name": "Wraps, thins & pittas",
+        "parent": "Bakery"
+    },
+    {
+        "name": "All wraps, thins & pittas",
+        "parent": "Wraps, thins & pittas"
+    },
+    {
+        "name": "Birthday & party cakes",
+        "parent": "Bakery"
+    },
+    {
+        "name": "Food cupboard",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Biscuits & crackers",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Fruit & desserts",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Crisps, nuts & snacking fruit",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Sugar & home baking",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Baking & dessert mixes",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Cake cases, candles & baking accessories",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Flour",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Freefrom baking",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Wholefood powders & ingredients",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Baking powder & raising agents",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Decorations, toppings & fillings",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Sugar, syrups & sweeteners",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Baking Essentials",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Cooking chocolate",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Colourings & flavourings",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Dried fruit & peel",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Nuts & seeds",
+        "parent": "Sugar & home baking"
+    },
+    {
+        "name": "Food cupboard essentials",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Cooking ingredients & oils",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Freefrom",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Table sauces, dressings & condiments",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Jams, honey & spreads",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "World Foods",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Rice, pasta & noodles",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Rice",
+        "parent": "Rice, pasta & noodles"
+    },
+    {
+        "name": "Instant snack & meals",
+        "parent": "Rice, pasta & noodles"
+    },
+    {
+        "name": "Noodles",
+        "parent": "Rice, pasta & noodles"
+    },
+    {
+        "name": "Quinoa, couscous & pulses",
+        "parent": "Rice, pasta & noodles"
+    },
+    {
+        "name": "Pasta",
+        "parent": "Rice, pasta & noodles"
+    },
+    {
+        "name": "Microwave rice",
+        "parent": "Rice, pasta & noodles"
+    },
+    {
+        "name": "Confectionery",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Canned, tinned & packaged foods",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Tea, coffee & hot drinks",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "Cereals",
+        "parent": "Food cupboard"
+    },
+    {
+        "name": "All cereals",
+        "parent": "Cereals"
+    },
+    {
+        "name": "Dairy, eggs & chilled",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Cooked meats, olives & dips",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Ready meals",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "All ready meals",
+        "parent": "Ready meals"
+    },
+    {
+        "name": "Pizza, pasta & garlic bread",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Desserts",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Vegetarian, vegan & dairy free",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Sandwiches & food to go",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Dairy & chilled essentials",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Savoury snacks",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Dairy & eggs",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Dairy free",
+        "parent": "Dairy & eggs"
+    },
+    {
+        "name": "Pies, pasties & quiche",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Fresh soup",
+        "parent": "Dairy, eggs & chilled"
+    },
+    {
+        "name": "Household",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Household essentials",
+        "parent": "Household"
+    },
+    {
+        "name": "Newsagent & tobacconist",
+        "parent": "Household"
+    },
+    {
+        "name": "Drinks",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Juice & smoothies",
+        "parent": "Drinks"
+    },
+    {
+        "name": "All juice & smoothies",
+        "parent": "Juice & smoothies"
+    },
+    {
+        "name": "Fizzy drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Sports, energy & wellbeing",
+        "parent": "Drinks"
+    },
+    {
+        "name": "All",
+        "parent": "Sports, energy & wellbeing"
+    },
+    {
+        "name": "Champagne & sparkling wine",
+        "parent": "Drinks"
+    },
+    {
+        "name": "All champagne & sparkling wine",
+        "parent": "Champagne & sparkling wine"
+    },
+    {
+        "name": "Wine",
+        "parent": "Drinks"
+    },
+    {
+        "name": "All wine",
+        "parent": "Wine"
+    },
+    {
+        "name": "Mixers & adult soft drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Mixers",
+        "parent": "Mixers & adult soft drinks"
+    },
+    {
+        "name": "Water",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Sparkling water",
+        "parent": "Water"
+    },
+    {
+        "name": "Coconut water",
+        "parent": "Water"
+    },
+    {
+        "name": "Still water",
+        "parent": "Water"
+    },
+    {
+        "name": "Flavoured & vitamin water",
+        "parent": "Water"
+    },
+    {
+        "name": "Low & no alcohol",
+        "parent": "Drinks"
+    },
+    {
+        "name": "No alcohol",
+        "parent": "Low & no alcohol"
+    },
+    {
+        "name": "Low alcohol",
+        "parent": "Low & no alcohol"
+    },
+    {
+        "name": "Milk & milk drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Milkshakes & milkshake mixes",
+        "parent": "Milk & milk drinks"
+    },
+    {
+        "name": "Flavoured milk",
+        "parent": "Milk & milk drinks"
+    },
+    {
+        "name": "Fresh milk",
+        "parent": "Milk & milk drinks"
+    },
+    {
+        "name": "Longer life milk",
+        "parent": "Milk & milk drinks"
+    },
+    {
+        "name": "Spirits & liqueurs",
+        "parent": "Drinks"
+    },
+    {
+        "name": "All spirits & liqueurs",
+        "parent": "Spirits & liqueurs"
+    },
+    {
+        "name": "Low & no alcohol spirits",
+        "parent": "Spirits & liqueurs"
+    },
+    {
+        "name": "Tea, coffee & hot drinks",
+        "parent": "Drinks"
+    },
+    {
+        "name": "All tea & coffee",
+        "parent": "Tea, coffee & hot drinks"
+    },
+    {
+        "name": "Squash & cordials",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Kids & lunchbox",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Beer & cider",
+        "parent": "Drinks"
+    },
+    {
+        "name": "Low & no alcohol beer & cider",
+        "parent": "Beer & cider"
+    },
+    {
+        "name": "All beer",
+        "parent": "Beer & cider"
+    },
+    {
+        "name": "Meat & fish",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Bacon & sausages",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "Sausages",
+        "parent": "Bacon & sausages"
+    },
+    {
+        "name": "Bacon",
+        "parent": "Bacon & sausages"
+    },
+    {
+        "name": "Meat & fish essentials",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "Lamb",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "All lamb",
+        "parent": "Lamb"
+    },
+    {
+        "name": "Fish & seafood",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "All fish & seafood",
+        "parent": "Fish & seafood"
+    },
+    {
+        "name": "Ham, cooked meats & p\u00e2t\u00e9",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "All ham, cooked meats & p\u00e2t\u00e9",
+        "parent": "Ham, cooked meats & p\u00e2t\u00e9"
+    },
+    {
+        "name": "Pork & gammon",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "All pork & gammon",
+        "parent": "Pork & gammon"
+    },
+    {
+        "name": "Beef",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "All beef",
+        "parent": "Beef"
+    },
+    {
+        "name": "Duck, game & venison",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "Mince",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "Turkey",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "Chicken",
+        "parent": "Meat & fish"
+    },
+    {
+        "name": "All chicken",
+        "parent": "Chicken"
+    },
+    {
+        "name": "Baby & toddler",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Baby laundry",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Snacks & rusks",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "All snacks & rusks",
+        "parent": "Snacks & rusks"
+    },
+    {
+        "name": "Toiletries & healthcare",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Nappies & pants",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Wipes",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "Baby meals",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "All baby meals",
+        "parent": "Baby meals"
+    },
+    {
+        "name": "Baby milk & drinks",
+        "parent": "Baby & toddler"
+    },
+    {
+        "name": "All baby milk & drinks",
+        "parent": "Baby milk & drinks"
+    },
+    {
+        "name": "Toiletries & health",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Toiletries & health essentials",
+        "parent": "Toiletries & health"
+    },
+    {
+        "name": "Dietary & world foods",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Vegan",
+        "parent": "Dietary & world foods"
+    },
+    {
+        "name": "All vegan",
+        "parent": "Vegan"
+    },
+    {
+        "name": "Vegetarian & plant based",
+        "parent": "Dietary & world foods"
+    },
+    {
+        "name": "Vitamins & supplements",
+        "parent": "Dietary & world foods"
+    },
+    {
+        "name": "Sports nutrition",
+        "parent": "Dietary & world foods"
+    },
+    {
+        "name": "World foods",
+        "parent": "Dietary & world foods"
+    },
+    {
+        "name": "Asian",
+        "parent": "World foods"
+    },
+    {
+        "name": "Halal",
+        "parent": "World foods"
+    },
+    {
+        "name": "All world foods",
+        "parent": "World foods"
+    },
+    {
+        "name": "Irish",
+        "parent": "World foods"
+    },
+    {
+        "name": "Kosher",
+        "parent": "World foods"
+    },
+    {
+        "name": "American",
+        "parent": "World foods"
+    },
+    {
+        "name": "Far East & South-East Asian",
+        "parent": "World foods"
+    },
+    {
+        "name": "Free From",
+        "parent": "Dietary & world foods"
+    },
+    {
+        "name": "Milk free",
+        "parent": "Free From"
+    },
+    {
+        "name": "Lactose free",
+        "parent": "Free From"
+    },
+    {
+        "name": "Nut free",
+        "parent": "Free From"
+    },
+    {
+        "name": "Gluten free",
+        "parent": "Free From"
+    },
+    {
+        "name": "Soya free",
+        "parent": "Free From"
+    },
+    {
+        "name": "Egg free",
+        "parent": "Free From"
+    },
+    {
+        "name": "Weight management",
+        "parent": "Dietary & world foods"
+    },
+    {
+        "name": "Fruit & vegetables",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Fresh herbs & ingredients",
+        "parent": "Fruit & vegetables"
+    },
+    {
+        "name": "All fresh herbs & ingredients",
+        "parent": "Fresh herbs & ingredients"
+    },
+    {
+        "name": "Fresh fruit",
+        "parent": "Fruit & vegetables"
+    },
+    {
+        "name": "All fruit",
+        "parent": "Fresh fruit"
+    },
+    {
+        "name": "Frozen fruit & vegetables",
+        "parent": "Fruit & vegetables"
+    },
+    {
+        "name": "Prepared fruit, veg & salad",
+        "parent": "Fruit & vegetables"
+    },
+    {
+        "name": "Fresh vegetables",
+        "parent": "Fruit & vegetables"
+    },
+    {
+        "name": "All vegetables",
+        "parent": "Fresh vegetables"
+    },
+    {
+        "name": "Frozen",
+        "parent": "Groceries"
+    },
+    {
+        "name": "Meat & poultry",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Beef, pork & lamb",
+        "parent": "Meat & poultry"
+    },
+    {
+        "name": "Burgers",
+        "parent": "Meat & poultry"
+    },
+    {
+        "name": "Chicken & turkey",
+        "parent": "Meat & poultry"
+    },
+    {
+        "name": "Vegan",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Freefrom",
+        "parent": "Frozen"
+    },
+    {
+        "name": "All",
+        "parent": "Freefrom"
+    },
+    {
+        "name": "Chips, potatoes & rice",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Rice",
+        "parent": "Chips, potatoes & rice"
+    },
+    {
+        "name": "Jackets & mashed potato",
+        "parent": "Chips, potatoes & rice"
+    },
+    {
+        "name": "Roast potatoes",
+        "parent": "Chips, potatoes & rice"
+    },
+    {
+        "name": "Sweet potatoes",
+        "parent": "Chips, potatoes & rice"
+    },
+    {
+        "name": "Waffles, hashbrowns & croquettes",
+        "parent": "Chips, potatoes & rice"
+    },
+    {
+        "name": "Chips & wedges",
+        "parent": "Chips, potatoes & rice"
+    },
+    {
+        "name": "Onion rings",
+        "parent": "Chips, potatoes & rice"
+    },
+    {
+        "name": "Fish & seafood",
+        "parent": "Frozen"
+    },
+    {
+        "name": "All",
+        "parent": "Fish & seafood"
+    },
+    {
+        "name": "Vegetarian & meat free",
+        "parent": "Frozen"
+    },
+    {
+        "name": "All vegetarian",
+        "parent": "Vegetarian & meat free"
+    },
+    {
+        "name": "Pizza & garlic bread",
+        "parent": "Frozen"
+    },
+    {
+        "name": "All pizza & garlic bread",
+        "parent": "Pizza & garlic bread"
+    },
+    {
+        "name": "Fruit, vegetables & herbs",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Smoothie mixes",
+        "parent": "Fruit, vegetables & herbs"
+    },
+    {
+        "name": "All vegetables",
+        "parent": "Fruit, vegetables & herbs"
+    },
+    {
+        "name": "Fruit",
+        "parent": "Fruit, vegetables & herbs"
+    },
+    {
+        "name": "Yorkshire puddings & roast accompaniments",
+        "parent": "Frozen"
+    },
+    {
+        "name": "Ready meals, pies & party food",
+        "parent": "Frozen"
+    },
+    {
+        "name": "All ready meals",
+        "parent": "Ready meals, pies & party food"
+    },
+    {
+        "name": "Ice cream & ice",
+        "parent": "Frozen"
+    },
+    {
+        "name": "All ice creams",
+        "parent": "Ice cream & ice"
+    },
+    {
+        "name": "Desserts & pastry",
+        "parent": "Frozen"
+    },
+    {
+        "name": "All",
+        "parent": "Desserts & pastry"
+    },
+    {
+        "name": "Frozen essentials",
+        "parent": "Frozen"
+    }
+]
