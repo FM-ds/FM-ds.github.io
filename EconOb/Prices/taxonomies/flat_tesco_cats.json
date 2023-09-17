@@ -72,7 +72,7 @@
         "id": 12
     },
     {
-        "name": "Puppy Food (0-12 Months)",
+        "name": "Puppy Food (0 12 Months)",
         "depth": 2,
         "parent": 2,
         "id": 13
@@ -162,7 +162,7 @@
         "id": 27
     },
     {
-        "name": "Kitten Food (0-12 Months)",
+        "name": "Kitten Food (0 12 Months)",
         "depth": 2,
         "parent": 27,
         "id": 28
@@ -174,7 +174,7 @@
         "id": 29
     },
     {
-        "name": "Kitten Dry Food & cat Biscuits",
+        "name": "Kitten Dry Food & Cat Biscuits",
         "depth": 3,
         "parent": 28,
         "id": 30
@@ -606,13 +606,13 @@
         "id": 101
     },
     {
-        "name": "Croissants & Pastries from our Bakery",
+        "name": "Croissants & Pastries From Our Bakery",
         "depth": 3,
         "parent": 101,
         "id": 102
     },
     {
-        "name": "Cakes & Brownies from our Bakery",
+        "name": "Cakes & Brownies From Our Bakery",
         "depth": 3,
         "parent": 101,
         "id": 103
@@ -624,13 +624,13 @@
         "id": 104
     },
     {
-        "name": "Cookies & Gingerbread from our Bakery",
+        "name": "Cookies & Gingerbread From Our Bakery",
         "depth": 3,
         "parent": 101,
         "id": 105
     },
     {
-        "name": "Fruit Pies from our Bakery",
+        "name": "Fruit Pies From Our Bakery",
         "depth": 3,
         "parent": 101,
         "id": 106
@@ -642,7 +642,7 @@
         "id": 107
     },
     {
-        "name": "Multipack doughnuts",
+        "name": "Multipack Doughnuts",
         "depth": 3,
         "parent": 101,
         "id": 108
@@ -678,31 +678,31 @@
         "id": 113
     },
     {
-        "name": "White Loaves from our Bakery",
+        "name": "White Loaves From Our Bakery",
         "depth": 3,
         "parent": 113,
         "id": 114
     },
     {
-        "name": "Brown & Wholemeal loaves from our Bakery",
+        "name": "Brown & Wholemeal Loaves From Our Bakery",
         "depth": 3,
         "parent": 113,
         "id": 115
     },
     {
-        "name": "Seeded Bread from our Bakery",
+        "name": "Seeded Bread From Our Bakery",
         "depth": 3,
         "parent": 113,
         "id": 116
     },
     {
-        "name": "Multipack Rolls from our Bakery",
+        "name": "Multipack Rolls From Our Bakery",
         "depth": 3,
         "parent": 113,
         "id": 117
     },
     {
-        "name": "Speciality Loaves from our Bakery",
+        "name": "Speciality Loaves From Our Bakery",
         "depth": 3,
         "parent": 113,
         "id": 118
@@ -894,13 +894,13 @@
         "id": 149
     },
     {
-        "name": "Sandwich Thins",
+        "name": "S&Wich Thins",
         "depth": 2,
         "parent": 149,
         "id": 150
     },
     {
-        "name": "Sandwich Thins",
+        "name": "S&Wich Thins",
         "depth": 3,
         "parent": 151,
         "id": 151
@@ -1290,13 +1290,13 @@
         "id": 215
     },
     {
-        "name": "Pain au Chocolat",
+        "name": "Pain Au Chocolat",
         "depth": 2,
         "parent": 208,
         "id": 216
     },
     {
-        "name": "Pain au Chocolat",
+        "name": "Pain Au Chocolat",
         "depth": 3,
         "parent": 217,
         "id": 217
@@ -1392,7 +1392,7 @@
         "id": 232
     },
     {
-        "name": "SPF Lip",
+        "name": "Spf Lip",
         "depth": 3,
         "parent": 225,
         "id": 233
@@ -1452,7 +1452,7 @@
         "id": 242
     },
     {
-        "name": "Travel Hand Gel, Sanitiser & Wipes",
+        "name": "Travel H& Gel, Sanitiser & Wipes",
         "depth": 3,
         "parent": 242,
         "id": 243
@@ -1524,7 +1524,7 @@
         "id": 254
     },
     {
-        "name": "Hair Clips, Grips & Bands",
+        "name": "Hair Clips, Grips & B&S",
         "depth": 3,
         "parent": 253,
         "id": 255
@@ -1824,13 +1824,13 @@
         "id": 304
     },
     {
-        "name": "CBD Cannabidiol, Sleep Aids & Stress Relief",
+        "name": "Cbd Cannabidiol, Sleep Aids & Stress Relief",
         "depth": 2,
         "parent": 280,
         "id": 305
     },
     {
-        "name": "CBD Drops & Sprays",
+        "name": "Cbd Drops & Sprays",
         "depth": 3,
         "parent": 305,
         "id": 306
@@ -2178,7 +2178,7 @@
         "id": 363
     },
     {
-        "name": "Shower, Bath & Hand Hygiene",
+        "name": "Shower, Bath & H& Hygiene",
         "depth": 1,
         "parent": 218,
         "id": 364
@@ -2232,7 +2232,7 @@
         "id": 372
     },
     {
-        "name": "Handwash",
+        "name": "H&Wash",
         "depth": 2,
         "parent": 364,
         "id": 373
@@ -2244,13 +2244,13 @@
         "id": 374
     },
     {
-        "name": "Antibacterial Handwash",
+        "name": "Antibacterial H&Wash",
         "depth": 3,
         "parent": 373,
         "id": 375
     },
     {
-        "name": "Handwash",
+        "name": "H&Wash",
         "depth": 3,
         "parent": 376,
         "id": 376
@@ -2304,19 +2304,19 @@
         "id": 384
     },
     {
-        "name": "Hand Gel, Sanitiser & Wipes",
+        "name": "H& Gel, Sanitiser & Wipes",
         "depth": 2,
         "parent": 364,
         "id": 385
     },
     {
-        "name": "Hand Wipes",
+        "name": "H& Wipes",
         "depth": 3,
         "parent": 385,
         "id": 386
     },
     {
-        "name": "Hand Gel & Sanitiser",
+        "name": "H& Gel & Sanitiser",
         "depth": 3,
         "parent": 385,
         "id": 387
@@ -2394,19 +2394,19 @@
         "id": 399
     },
     {
-        "name": "Hand Cream",
+        "name": "H& Cream",
         "depth": 2,
         "parent": 388,
         "id": 400
     },
     {
-        "name": "Dry Skin Hand Cream",
+        "name": "Dry Skin H& Cream",
         "depth": 3,
         "parent": 400,
         "id": 401
     },
     {
-        "name": "Hand Cream",
+        "name": "H& Cream",
         "depth": 3,
         "parent": 402,
         "id": 402
@@ -2784,37 +2784,37 @@
         "id": 464
     },
     {
-        "name": "Normal Hair - Everyday Conditioner",
+        "name": "Normal Hair   Everyday Conditioner",
         "depth": 2,
         "parent": 452,
         "id": 465
     },
     {
-        "name": "Normal Hair - Everyday Conditioner",
+        "name": "Normal Hair   Everyday Conditioner",
         "depth": 3,
         "parent": 466,
         "id": 466
     },
     {
-        "name": "Anti Dandruff Conditioner",
+        "name": "Anti D&Ruff Conditioner",
         "depth": 2,
         "parent": 452,
         "id": 467
     },
     {
-        "name": "Anti Dandruff Conditioner",
+        "name": "Anti D&Ruff Conditioner",
         "depth": 3,
         "parent": 468,
         "id": 468
     },
     {
-        "name": "2 in 1 Conditioner",
+        "name": "2 In 1 Conditioner",
         "depth": 2,
         "parent": 452,
         "id": 469
     },
     {
-        "name": "2 in 1 Conditioner",
+        "name": "2 In 1 Conditioner",
         "depth": 3,
         "parent": 470,
         "id": 470
@@ -2886,7 +2886,7 @@
         "id": 481
     },
     {
-        "name": "SPF Lip",
+        "name": "Spf Lip",
         "depth": 3,
         "parent": 481,
         "id": 482
@@ -3162,7 +3162,7 @@
         "id": 527
     },
     {
-        "name": "Denture Fixatives - Denture Adhesive",
+        "name": "Denture Fixatives   Denture Adhesive",
         "depth": 3,
         "parent": 526,
         "id": 528
@@ -3300,13 +3300,13 @@
         "id": 550
     },
     {
-        "name": "Anti Dandruff Shampoo",
+        "name": "Anti D&Ruff Shampoo",
         "depth": 2,
         "parent": 550,
         "id": 551
     },
     {
-        "name": "Anti Dandruff Shampoo",
+        "name": "Anti D&Ruff Shampoo",
         "depth": 3,
         "parent": 552,
         "id": 552
@@ -3348,13 +3348,13 @@
         "id": 558
     },
     {
-        "name": "Normal Hair - Everyday Shampoo",
+        "name": "Normal Hair   Everyday Shampoo",
         "depth": 2,
         "parent": 550,
         "id": 559
     },
     {
-        "name": "Normal Hair - Everyday Shampoo",
+        "name": "Normal Hair   Everyday Shampoo",
         "depth": 3,
         "parent": 560,
         "id": 560
@@ -3396,13 +3396,13 @@
         "id": 566
     },
     {
-        "name": "2 in 1 Shampoo",
+        "name": "2 In 1 Shampoo",
         "depth": 2,
         "parent": 550,
         "id": 567
     },
     {
-        "name": "2 in 1 Shampoo",
+        "name": "2 In 1 Shampoo",
         "depth": 3,
         "parent": 568,
         "id": 568
@@ -3468,13 +3468,13 @@
         "id": 578
     },
     {
-        "name": "Mens Deodorant - Antiperspirant",
+        "name": "Mens Deodorant   Antiperspirant",
         "depth": 3,
         "parent": 578,
         "id": 579
     },
     {
-        "name": "Womens Deodorant - Antiperspirant",
+        "name": "Womens Deodorant   Antiperspirant",
         "depth": 3,
         "parent": 578,
         "id": 580
@@ -3498,7 +3498,7 @@
         "id": 583
     },
     {
-        "name": "Hair Clip, Grips & Bands",
+        "name": "Hair Clip, Grips & B&S",
         "depth": 3,
         "parent": 582,
         "id": 584
@@ -3600,7 +3600,7 @@
         "id": 600
     },
     {
-        "name": "Leave-In Conditioner",
+        "name": "Leave In Conditioner",
         "depth": 3,
         "parent": 600,
         "id": 601
@@ -3690,7 +3690,7 @@
         "id": 615
     },
     {
-        "name": "IBS & Trapped Wind Relief",
+        "name": "Ibs & Trapped Wind Relief",
         "depth": 3,
         "parent": 615,
         "id": 616
@@ -3906,7 +3906,7 @@
         "id": 651
     },
     {
-        "name": "Non-Medicated Throat Lozenges",
+        "name": "Non Medicated Throat Lozenges",
         "depth": 3,
         "parent": 650,
         "id": 652
@@ -4008,7 +4008,7 @@
         "id": 668
     },
     {
-        "name": "Bandages",
+        "name": "B&Ages",
         "depth": 3,
         "parent": 660,
         "id": 669
@@ -4092,7 +4092,7 @@
         "id": 682
     },
     {
-        "name": "Candles",
+        "name": "C&Les",
         "depth": 2,
         "parent": 679,
         "id": 683
@@ -4104,7 +4104,7 @@
         "id": 684
     },
     {
-        "name": "Dinner Candles",
+        "name": "Dinner C&Les",
         "depth": 3,
         "parent": 683,
         "id": 685
@@ -4116,19 +4116,19 @@
         "id": 686
     },
     {
-        "name": "Pillar Candles",
+        "name": "Pillar C&Les",
         "depth": 3,
         "parent": 683,
         "id": 687
     },
     {
-        "name": "Yankee Candles",
+        "name": "Yankee C&Les",
         "depth": 3,
         "parent": 683,
         "id": 688
     },
     {
-        "name": "Scented Candles",
+        "name": "Scented C&Les",
         "depth": 3,
         "parent": 683,
         "id": 689
@@ -4380,7 +4380,7 @@
         "id": 730
     },
     {
-        "name": "Colander & Sieves",
+        "name": "Col&Er & Sieves",
         "depth": 3,
         "parent": 730,
         "id": 731
@@ -4410,7 +4410,7 @@
         "id": 735
     },
     {
-        "name": "Mandolin & Spiraliser",
+        "name": "M&Olin & Spiraliser",
         "depth": 3,
         "parent": 730,
         "id": 736
@@ -4710,13 +4710,13 @@
         "id": 785
     },
     {
-        "name": "DIY & Car Care",
+        "name": "Diy & Car Care",
         "depth": 1,
         "parent": 678,
         "id": 786
     },
     {
-        "name": "DIY",
+        "name": "Diy",
         "depth": 2,
         "parent": 786,
         "id": 787
@@ -4782,7 +4782,7 @@
         "id": 797
     },
     {
-        "name": "Oil and Maintenance Liquids",
+        "name": "Oil & Maintenance Liquids",
         "depth": 3,
         "parent": 794,
         "id": 798
@@ -4794,7 +4794,7 @@
         "id": 799
     },
     {
-        "name": "Screenwash & De-icer",
+        "name": "Screenwash & De Icer",
         "depth": 3,
         "parent": 794,
         "id": 800
@@ -4824,7 +4824,7 @@
         "id": 804
     },
     {
-        "name": "Smoke & CO2 Alarms",
+        "name": "Smoke & Co2 Alarms",
         "depth": 3,
         "parent": 803,
         "id": 805
@@ -4836,7 +4836,7 @@
         "id": 806
     },
     {
-        "name": "FM & AM Radio",
+        "name": "Fm & Am Radio",
         "depth": 3,
         "parent": 806,
         "id": 807
@@ -4848,7 +4848,7 @@
         "id": 808
     },
     {
-        "name": "DAB Radio",
+        "name": "Dab Radio",
         "depth": 3,
         "parent": 806,
         "id": 809
@@ -4878,7 +4878,7 @@
         "id": 813
     },
     {
-        "name": "Candle Lightbulbs",
+        "name": "C&Le Lightbulbs",
         "depth": 3,
         "parent": 810,
         "id": 814
@@ -4914,7 +4914,7 @@
         "id": 819
     },
     {
-        "name": "In-Ear",
+        "name": "In Ear",
         "depth": 3,
         "parent": 818,
         "id": 820
@@ -4938,7 +4938,7 @@
         "id": 823
     },
     {
-        "name": "Hair removal",
+        "name": "Hair Removal",
         "depth": 3,
         "parent": 823,
         "id": 824
@@ -4992,19 +4992,19 @@
         "id": 832
     },
     {
-        "name": "SD Card",
+        "name": "Sd Card",
         "depth": 3,
         "parent": 832,
         "id": 833
     },
     {
-        "name": "Micro SD Cards",
+        "name": "Micro Sd Cards",
         "depth": 3,
         "parent": 832,
         "id": 834
     },
     {
-        "name": "USB Drives",
+        "name": "Usb Drives",
         "depth": 3,
         "parent": 832,
         "id": 835
@@ -5022,7 +5022,7 @@
         "id": 837
     },
     {
-        "name": "iPhone Charger Cables",
+        "name": "Iphone Charger Cables",
         "depth": 3,
         "parent": 836,
         "id": 838
@@ -5046,7 +5046,7 @@
         "id": 841
     },
     {
-        "name": "USB-C & Micro USB Cables",
+        "name": "Usb C & Micro Usb Cables",
         "depth": 3,
         "parent": 836,
         "id": 842
@@ -5124,7 +5124,7 @@
         "id": 854
     },
     {
-        "name": "Media Streamers & TV Accessories",
+        "name": "Media Streamers & Tv Accessories",
         "depth": 2,
         "parent": 802,
         "id": 855
@@ -5136,7 +5136,7 @@
         "id": 856
     },
     {
-        "name": "TV Aerials",
+        "name": "Tv Aerials",
         "depth": 3,
         "parent": 855,
         "id": 857
@@ -5364,7 +5364,7 @@
         "id": 894
     },
     {
-        "name": "Glue Stick, PVA Glue & Sticky Tape",
+        "name": "Glue Stick, Pva Glue & Sticky Tape",
         "depth": 3,
         "parent": 893,
         "id": 895
@@ -5418,7 +5418,7 @@
         "id": 903
     },
     {
-        "name": "Box Files & Expanding Files",
+        "name": "Box Files & Exp&Ing Files",
         "depth": 3,
         "parent": 902,
         "id": 904
@@ -5472,7 +5472,7 @@
         "id": 912
     },
     {
-        "name": "Handwriting Pens",
+        "name": "H&Writing Pens",
         "depth": 3,
         "parent": 908,
         "id": 913
@@ -5604,7 +5604,7 @@
         "id": 934
     },
     {
-        "name": "Post-It & Sticky Notes",
+        "name": "Post It & Sticky Notes",
         "depth": 3,
         "parent": 933,
         "id": 935
@@ -5670,19 +5670,19 @@
         "id": 945
     },
     {
-        "name": "Compatible with Canon",
+        "name": "Compatible With Canon",
         "depth": 3,
         "parent": 945,
         "id": 946
     },
     {
-        "name": "Compatible with HP",
+        "name": "Compatible With Hp",
         "depth": 3,
         "parent": 945,
         "id": 947
     },
     {
-        "name": "Compatible with Epson",
+        "name": "Compatible With Epson",
         "depth": 3,
         "parent": 945,
         "id": 948
@@ -5754,7 +5754,7 @@
         "id": 959
     },
     {
-        "name": "Drawing Pins, Rubber Bands & Paper Clips",
+        "name": "Drawing Pins, Rubber B&S & Paper Clips",
         "depth": 3,
         "parent": 955,
         "id": 960
@@ -5790,7 +5790,7 @@
         "id": 965
     },
     {
-        "name": "Glue Sticks & PVA Glue",
+        "name": "Glue Sticks & Pva Glue",
         "depth": 3,
         "parent": 964,
         "id": 966
@@ -5874,7 +5874,7 @@
         "id": 979
     },
     {
-        "name": "Hand Towels",
+        "name": "H& Towels",
         "depth": 3,
         "parent": 977,
         "id": 980
@@ -6006,7 +6006,7 @@
         "id": 1001
     },
     {
-        "name": "BBQ Fuel, Charcoal & Accessories",
+        "name": "Bbq Fuel, Charcoal & Accessories",
         "depth": 2,
         "parent": 994,
         "id": 1002
@@ -6252,97 +6252,97 @@
         "id": 1042
     },
     {
-        "name": "LEGO",
+        "name": "Lego",
         "depth": 2,
         "parent": 1010,
         "id": 1043
     },
     {
-        "name": "LEGO Friends",
+        "name": "Lego Friends",
         "depth": 3,
         "parent": 1043,
         "id": 1044
     },
     {
-        "name": "LEGO City",
+        "name": "Lego City",
         "depth": 3,
         "parent": 1043,
         "id": 1045
     },
     {
-        "name": "LEGO Star Wars",
+        "name": "Lego Star Wars",
         "depth": 3,
         "parent": 1043,
         "id": 1046
     },
     {
-        "name": "LEGO Classic",
+        "name": "Lego Classic",
         "depth": 3,
         "parent": 1043,
         "id": 1047
     },
     {
-        "name": "LEGO Minecraft",
+        "name": "Lego Minecraft",
         "depth": 3,
         "parent": 1043,
         "id": 1048
     },
     {
-        "name": "LEGO Harry Potter",
+        "name": "Lego Harry Potter",
         "depth": 3,
         "parent": 1043,
         "id": 1049
     },
     {
-        "name": "LEGO Marvel Super Heroes",
+        "name": "Lego Marvel Super Heroes",
         "depth": 3,
         "parent": 1043,
         "id": 1050
     },
     {
-        "name": "LEGO Ninjago",
+        "name": "Lego Ninjago",
         "depth": 3,
         "parent": 1043,
         "id": 1051
     },
     {
-        "name": "LEGO DC Super Heroes",
+        "name": "Lego Dc Super Heroes",
         "depth": 3,
         "parent": 1043,
         "id": 1052
     },
     {
-        "name": "LEGO Dots",
+        "name": "Lego Dots",
         "depth": 3,
         "parent": 1043,
         "id": 1053
     },
     {
-        "name": "LEGO Speed Champions",
+        "name": "Lego Speed Champions",
         "depth": 3,
         "parent": 1043,
         "id": 1054
     },
     {
-        "name": "LEGO Super Mario",
+        "name": "Lego Super Mario",
         "depth": 3,
         "parent": 1043,
         "id": 1055
     },
     {
-        "name": "LEGO Creator",
+        "name": "Lego Creator",
         "depth": 3,
         "parent": 1043,
         "id": 1056
     },
     {
-        "name": "LEGO Technic",
+        "name": "Lego Technic",
         "depth": 3,
         "parent": 1043,
         "id": 1057
     },
     {
-        "name": "LEGO DUPLO",
+        "name": "Lego Duplo",
         "depth": 3,
         "parent": 1043,
         "id": 1058
@@ -6474,37 +6474,37 @@
         "id": 1079
     },
     {
-        "name": "AA Batteries",
+        "name": "Aa Batteries",
         "depth": 2,
         "parent": 1079,
         "id": 1080
     },
     {
-        "name": "4 Pack AA Batteries",
+        "name": "4 Pack Aa Batteries",
         "depth": 3,
         "parent": 1080,
         "id": 1081
     },
     {
-        "name": "10 Pack AA Batteries",
+        "name": "10 Pack Aa Batteries",
         "depth": 3,
         "parent": 1080,
         "id": 1082
     },
     {
-        "name": "16 Pack AA Batteries",
+        "name": "16 Pack Aa Batteries",
         "depth": 3,
         "parent": 1080,
         "id": 1083
     },
     {
-        "name": "8 Pack AA Batteries",
+        "name": "8 Pack Aa Batteries",
         "depth": 3,
         "parent": 1080,
         "id": 1084
     },
     {
-        "name": "12 Pack AA Batteries",
+        "name": "12 Pack Aa Batteries",
         "depth": 3,
         "parent": 1080,
         "id": 1085
@@ -6552,31 +6552,31 @@
         "id": 1092
     },
     {
-        "name": "AAA Batteries",
+        "name": "Aaa Batteries",
         "depth": 2,
         "parent": 1079,
         "id": 1093
     },
     {
-        "name": "8 Pack AAA Batteries",
+        "name": "8 Pack Aaa Batteries",
         "depth": 3,
         "parent": 1093,
         "id": 1094
     },
     {
-        "name": "12 Pack AAA Batteries",
+        "name": "12 Pack Aaa Batteries",
         "depth": 3,
         "parent": 1093,
         "id": 1095
     },
     {
-        "name": "4 Pack AAA Batteries",
+        "name": "4 Pack Aaa Batteries",
         "depth": 3,
         "parent": 1093,
         "id": 1096
     },
     {
-        "name": "10 Pack AAA Batteries",
+        "name": "10 Pack Aaa Batteries",
         "depth": 3,
         "parent": 1093,
         "id": 1097
@@ -6612,37 +6612,37 @@
         "id": 1102
     },
     {
-        "name": "A23 & MN21 Batteries",
+        "name": "A23 & Mn21 Batteries",
         "depth": 3,
         "parent": 1101,
         "id": 1103
     },
     {
-        "name": "CR 2016 Batteries",
+        "name": "Cr 2016 Batteries",
         "depth": 3,
         "parent": 1101,
         "id": 1104
     },
     {
-        "name": "CR 2032 Batteries",
+        "name": "Cr 2032 Batteries",
         "depth": 3,
         "parent": 1101,
         "id": 1105
     },
     {
-        "name": "CR 123 Batteries",
+        "name": "Cr 123 Batteries",
         "depth": 3,
         "parent": 1101,
         "id": 1106
     },
     {
-        "name": "CR 2025 Batteries",
+        "name": "Cr 2025 Batteries",
         "depth": 3,
         "parent": 1101,
         "id": 1107
     },
     {
-        "name": "LR 44 Batteries",
+        "name": "Lr 44 Batteries",
         "depth": 3,
         "parent": 1101,
         "id": 1108
@@ -6678,7 +6678,7 @@
         "id": 1113
     },
     {
-        "name": "50g Rolling Tobacco",
+        "name": "50G Rolling Tobacco",
         "depth": 3,
         "parent": 1113,
         "id": 1114
@@ -6690,7 +6690,7 @@
         "id": 1115
     },
     {
-        "name": "30g Rolling Tobacco",
+        "name": "30G Rolling Tobacco",
         "depth": 3,
         "parent": 1113,
         "id": 1116
@@ -6846,13 +6846,13 @@
         "id": 1141
     },
     {
-        "name": "Birthday Candles",
+        "name": "Birthday C&Les",
         "depth": 2,
         "parent": 1136,
         "id": 1142
     },
     {
-        "name": "Birthday Candles",
+        "name": "Birthday C&Les",
         "depth": 3,
         "parent": 1143,
         "id": 1143
@@ -6882,7 +6882,7 @@
         "id": 1147
     },
     {
-        "name": "Confetti and Party Poppers",
+        "name": "Confetti & Party Poppers",
         "depth": 2,
         "parent": 1136,
         "id": 1148
@@ -6894,7 +6894,7 @@
         "id": 1149
     },
     {
-        "name": "Confetti and Party Poppers",
+        "name": "Confetti & Party Poppers",
         "depth": 3,
         "parent": 1150,
         "id": 1150
@@ -7266,7 +7266,7 @@
         "id": 1211
     },
     {
-        "name": "First Baby Milk Liquid Ready to Feed",
+        "name": "First Baby Milk Liquid Ready To Feed",
         "depth": 3,
         "parent": 1210,
         "id": 1212
@@ -7284,19 +7284,19 @@
         "id": 1214
     },
     {
-        "name": "Toddler - Growing Up Baby Milk From 12 Months",
+        "name": "Toddler   Growing Up Baby Milk From 12 Months",
         "depth": 2,
         "parent": 1209,
         "id": 1215
     },
     {
-        "name": "Toddler - Growing Up Milk Liquid Ready to Feed",
+        "name": "Toddler   Growing Up Milk Liquid Ready To Feed",
         "depth": 3,
         "parent": 1215,
         "id": 1216
     },
     {
-        "name": "Toddler - Growing Up Milk Powder",
+        "name": "Toddler   Growing Up Milk Powder",
         "depth": 3,
         "parent": 1215,
         "id": 1217
@@ -7308,7 +7308,7 @@
         "id": 1218
     },
     {
-        "name": "Follow On Baby Milk Liquid Ready to Feed",
+        "name": "Follow On Baby Milk Liquid Ready To Feed",
         "depth": 3,
         "parent": 1218,
         "id": 1219
@@ -7326,13 +7326,13 @@
         "id": 1221
     },
     {
-        "name": "Comfort Baby Milk for Colic & Constipation",
+        "name": "Comfort Baby Milk For Colic & Constipation",
         "depth": 3,
         "parent": 1221,
         "id": 1222
     },
     {
-        "name": "Anti-Reflux Baby Milk for Reflux & Regurgitation",
+        "name": "Anti Reflux Baby Milk For Reflux & Regurgitation",
         "depth": 3,
         "parent": 1221,
         "id": 1223
@@ -7734,13 +7734,13 @@
         "id": 1289
     },
     {
-        "name": "Baby Cups & Beakers Under 12 months",
+        "name": "Baby Cups & Beakers Under 12 Months",
         "depth": 3,
         "parent": 1289,
         "id": 1290
     },
     {
-        "name": "Baby Cups & Beakers 12 months+",
+        "name": "Baby Cups & Beakers 12 Months+",
         "depth": 3,
         "parent": 1289,
         "id": 1291
@@ -7842,7 +7842,7 @@
         "id": 1307
     },
     {
-        "name": "Muslin square & Burp Cloths",
+        "name": "Muslin Square & Burp Cloths",
         "depth": 3,
         "parent": 1307,
         "id": 1308
@@ -7878,7 +7878,7 @@
         "id": 1313
     },
     {
-        "name": "Stage 1 (4-6+ months)",
+        "name": "Stage 1 (4 6+ Months)",
         "depth": 2,
         "parent": 1313,
         "id": 1314
@@ -7938,7 +7938,7 @@
         "id": 1323
     },
     {
-        "name": "Stage 2 (7+ months)",
+        "name": "Stage 2 (7+ Months)",
         "depth": 2,
         "parent": 1313,
         "id": 1324
@@ -7968,7 +7968,7 @@
         "id": 1328
     },
     {
-        "name": "Stage 3 (10+ months)",
+        "name": "Stage 3 (10+ Months)",
         "depth": 2,
         "parent": 1313,
         "id": 1329
@@ -7980,7 +7980,7 @@
         "id": 1330
     },
     {
-        "name": "Baby & Toddler Juices - Drinks",
+        "name": "Baby & Toddler Juices   Drinks",
         "depth": 2,
         "parent": 1313,
         "id": 1331
@@ -7992,7 +7992,7 @@
         "id": 1332
     },
     {
-        "name": "Stage 4 (12+ months)",
+        "name": "Stage 4 (12+ Months)",
         "depth": 2,
         "parent": 1313,
         "id": 1333
@@ -8124,7 +8124,7 @@
         "id": 1354
     },
     {
-        "name": "Mum to Be",
+        "name": "Mum To Be",
         "depth": 1,
         "parent": 1175,
         "id": 1355
@@ -8178,7 +8178,7 @@
         "parent": 0
     },
     {
-        "name": "Facial Tissue & Hand Wipes",
+        "name": "Facial Tissue & H& Wipes",
         "depth": 1,
         "parent": 1363,
         "id": 1364
@@ -8196,7 +8196,7 @@
         "id": 1366
     },
     {
-        "name": "Box Tissues - Facial Tissues",
+        "name": "Box Tissues   Facial Tissues",
         "depth": 3,
         "parent": 1365,
         "id": 1367
@@ -8214,13 +8214,13 @@
         "id": 1369
     },
     {
-        "name": "Hand Wipes, Towels & Antibacterial Tissues",
+        "name": "H& Wipes, Towels & Antibacterial Tissues",
         "depth": 2,
         "parent": 1364,
         "id": 1370
     },
     {
-        "name": "Hand Wipes",
+        "name": "H& Wipes",
         "depth": 3,
         "parent": 1370,
         "id": 1371
@@ -8256,19 +8256,19 @@
         "id": 1376
     },
     {
-        "name": "Edison Screw (ES/E27) lightbulbs",
+        "name": "Edison Screw (Es/E27) Lightbulbs",
         "depth": 3,
         "parent": 1376,
         "id": 1377
     },
     {
-        "name": "Bayonet Cap (BC/B22D) lightbulbs",
+        "name": "Bayonet Cap (Bc/B22D) Lightbulbs",
         "depth": 3,
         "parent": 1376,
         "id": 1378
     },
     {
-        "name": "Small Edison Screw (SES/E14) lightbulbs",
+        "name": "Small Edison Screw (Ses/E14) Lightbulbs",
         "depth": 3,
         "parent": 1376,
         "id": 1379
@@ -8280,13 +8280,13 @@
         "id": 1380
     },
     {
-        "name": "Edison Screw (ES/E27) lightbulbs",
+        "name": "Edison Screw (Es/E27) Lightbulbs",
         "depth": 3,
         "parent": 1380,
         "id": 1381
     },
     {
-        "name": "Bayonet Cap (BC/B22D) lightbulbs",
+        "name": "Bayonet Cap (Bc/B22D) Lightbulbs",
         "depth": 3,
         "parent": 1380,
         "id": 1382
@@ -8298,19 +8298,19 @@
         "id": 1383
     },
     {
-        "name": "Edison Screw (ES/E27) lightbulbs",
+        "name": "Edison Screw (Es/E27) Lightbulbs",
         "depth": 3,
         "parent": 1383,
         "id": 1384
     },
     {
-        "name": "Candle Lightbulbs",
+        "name": "C&Le Lightbulbs",
         "depth": 2,
         "parent": 1375,
         "id": 1385
     },
     {
-        "name": "Small Edison Screw (SES/E14) lightbulbs",
+        "name": "Small Edison Screw (Ses/E14) Lightbulbs",
         "depth": 3,
         "parent": 1385,
         "id": 1386
@@ -8322,13 +8322,13 @@
         "id": 1387
     },
     {
-        "name": "GU10 lightbulbs",
+        "name": "Gu10 Lightbulbs",
         "depth": 3,
         "parent": 1387,
         "id": 1388
     },
     {
-        "name": "GU5.3 lightbulbs",
+        "name": "Gu5.3 Lightbulbs",
         "depth": 3,
         "parent": 1387,
         "id": 1389
@@ -8478,13 +8478,13 @@
         "id": 1413
     },
     {
-        "name": "Air Freshener - Plug In Refill",
+        "name": "Air Freshener   Plug In Refill",
         "depth": 3,
         "parent": 1413,
         "id": 1414
     },
     {
-        "name": "Air Freshener - Plug In Holder",
+        "name": "Air Freshener   Plug In Holder",
         "depth": 3,
         "parent": 1413,
         "id": 1415
@@ -8502,13 +8502,13 @@
         "id": 1417
     },
     {
-        "name": "Scented Candles",
+        "name": "Scented C&Les",
         "depth": 2,
         "parent": 1412,
         "id": 1418
     },
     {
-        "name": "Scented Candles",
+        "name": "Scented C&Les",
         "depth": 3,
         "parent": 1419,
         "id": 1419
@@ -8604,7 +8604,7 @@
         "id": 1434
     },
     {
-        "name": "Medium Packs (2-3 Rolls)",
+        "name": "Medium Packs (2 3 Rolls)",
         "depth": 2,
         "parent": 1432,
         "id": 1435
@@ -8718,13 +8718,13 @@
         "id": 1453
     },
     {
-        "name": "Delicate & Hand Wash",
+        "name": "Delicate & H& Wash",
         "depth": 2,
         "parent": 1441,
         "id": 1454
     },
     {
-        "name": "Delicate & Hand Wash Liquid",
+        "name": "Delicate & H& Wash Liquid",
         "depth": 3,
         "parent": 1454,
         "id": 1455
@@ -8904,13 +8904,13 @@
         "id": 1484
     },
     {
-        "name": "Lotioned Toilet Roll 6-12 Roll",
+        "name": "Lotioned Toilet Roll 6 12 Roll",
         "depth": 3,
         "parent": 1484,
         "id": 1485
     },
     {
-        "name": "Lotioned Toilet Roll 2-4 Roll",
+        "name": "Lotioned Toilet Roll 2 4 Roll",
         "depth": 3,
         "parent": 1484,
         "id": 1486
@@ -8928,37 +8928,37 @@
         "id": 1488
     },
     {
-        "name": "2-4 Roll",
+        "name": "2 4 Roll",
         "depth": 2,
         "parent": 1481,
         "id": 1489
     },
     {
-        "name": "2-4 Roll Toilet Roll",
+        "name": "2 4 Roll Toilet Roll",
         "depth": 3,
         "parent": 1489,
         "id": 1490
     },
     {
-        "name": "Standard Toilet Roll",
+        "name": "St&Ard Toilet Roll",
         "depth": 2,
         "parent": 1481,
         "id": 1491
     },
     {
-        "name": "Standard Toilet Roll 2-4 Roll",
+        "name": "St&Ard Toilet Roll 2 4 Roll",
         "depth": 3,
         "parent": 1491,
         "id": 1492
     },
     {
-        "name": "Standard Toilet Roll 16 Roll +",
+        "name": "St&Ard Toilet Roll 16 Roll +",
         "depth": 3,
         "parent": 1491,
         "id": 1493
     },
     {
-        "name": "Standard Toilet Roll 6-12 Roll",
+        "name": "St&Ard Toilet Roll 6 12 Roll",
         "depth": 3,
         "parent": 1491,
         "id": 1494
@@ -8976,25 +8976,25 @@
         "id": 1496
     },
     {
-        "name": "Quilted Toilet Roll 2-4 Roll",
+        "name": "Quilted Toilet Roll 2 4 Roll",
         "depth": 3,
         "parent": 1495,
         "id": 1497
     },
     {
-        "name": "Quilted Toilet Roll 6-12 Roll",
+        "name": "Quilted Toilet Roll 6 12 Roll",
         "depth": 3,
         "parent": 1495,
         "id": 1498
     },
     {
-        "name": "6-12 Roll",
+        "name": "6 12 Roll",
         "depth": 2,
         "parent": 1481,
         "id": 1499
     },
     {
-        "name": "6-12 Roll Toilet Roll",
+        "name": "6 12 Roll Toilet Roll",
         "depth": 3,
         "parent": 1499,
         "id": 1500
@@ -9006,7 +9006,7 @@
         "id": 1501
     },
     {
-        "name": "Moist Toilet Wipes - Wet Wipes",
+        "name": "Moist Toilet Wipes   Wet Wipes",
         "depth": 3,
         "parent": 1501,
         "id": 1502
@@ -9060,7 +9060,7 @@
         "id": 1510
     },
     {
-        "name": "Kitchen Cleaner - Kitchen Spray",
+        "name": "Kitchen Cleaner   Kitchen Spray",
         "depth": 3,
         "parent": 1510,
         "id": 1511
@@ -9462,7 +9462,7 @@
         "id": 1577
     },
     {
-        "name": "Cleaning - Disinfectant",
+        "name": "Cleaning   Disinfectant",
         "depth": 3,
         "parent": 1576,
         "id": 1578
@@ -10050,13 +10050,13 @@
         "id": 1675
     },
     {
-        "name": "Burgers, Sandwiches & Snacking",
+        "name": "Burgers, S&Wiches & Snacking",
         "depth": 2,
         "parent": 1671,
         "id": 1676
     },
     {
-        "name": "Sandwiches",
+        "name": "S&Wiches",
         "depth": 3,
         "parent": 1676,
         "id": 1677
@@ -10074,7 +10074,7 @@
         "id": 1679
     },
     {
-        "name": "Rest of the World Ready Meals",
+        "name": "Rest Of The World Ready Meals",
         "depth": 2,
         "parent": 1671,
         "id": 1680
@@ -10140,7 +10140,7 @@
         "id": 1690
     },
     {
-        "name": "Under 500cal Meals",
+        "name": "Under 500Cal Meals",
         "depth": 2,
         "parent": 1671,
         "id": 1691
@@ -10200,19 +10200,19 @@
         "id": 1700
     },
     {
-        "name": "BBQ Meat & Chicken",
+        "name": "Bbq Meat & Chicken",
         "depth": 2,
         "parent": 1700,
         "id": 1701
     },
     {
-        "name": "Frozen BBQ Meat",
+        "name": "Frozen Bbq Meat",
         "depth": 3,
         "parent": 1701,
         "id": 1702
     },
     {
-        "name": "Frozen BBQ Chicken",
+        "name": "Frozen Bbq Chicken",
         "depth": 3,
         "parent": 1701,
         "id": 1703
@@ -10410,31 +10410,31 @@
         "id": 1735
     },
     {
-        "name": "Frozen Pizza - Ham & Bacon Pizza",
+        "name": "Frozen Pizza   Ham & Bacon Pizza",
         "depth": 3,
         "parent": 1735,
         "id": 1736
     },
     {
-        "name": "Frozen Pizza - Ham & Pineapple Pizza",
+        "name": "Frozen Pizza   Ham & Pineapple Pizza",
         "depth": 3,
         "parent": 1735,
         "id": 1737
     },
     {
-        "name": "Frozen Pizza - Pepperoni Pizza",
+        "name": "Frozen Pizza   Pepperoni Pizza",
         "depth": 3,
         "parent": 1735,
         "id": 1738
     },
     {
-        "name": "Frozen Pizza - Chicken Pizza",
+        "name": "Frozen Pizza   Chicken Pizza",
         "depth": 3,
         "parent": 1735,
         "id": 1739
     },
     {
-        "name": "Frozen Pizza - Meat Feast Pizza",
+        "name": "Frozen Pizza   Meat Feast Pizza",
         "depth": 3,
         "parent": 1735,
         "id": 1740
@@ -10632,7 +10632,7 @@
         "id": 1772
     },
     {
-        "name": "Frozen Fish in Sauce",
+        "name": "Frozen Fish In Sauce",
         "depth": 3,
         "parent": 1769,
         "id": 1773
@@ -10836,7 +10836,7 @@
         "id": 1806
     },
     {
-        "name": "Frozen Vegetables - Prepared Vegetables",
+        "name": "Frozen Vegetables   Prepared Vegetables",
         "depth": 3,
         "parent": 1806,
         "id": 1807
@@ -10848,13 +10848,13 @@
         "id": 1808
     },
     {
-        "name": "Frozen Vegetables - Frozen Steam Bags",
+        "name": "Frozen Vegetables   Frozen Steam Bags",
         "depth": 3,
         "parent": 1808,
         "id": 1809
     },
     {
-        "name": "Frozen Vegetables - Mixed Vegetables",
+        "name": "Frozen Vegetables   Mixed Vegetables",
         "depth": 3,
         "parent": 1808,
         "id": 1810
@@ -10866,19 +10866,19 @@
         "id": 1811
     },
     {
-        "name": "Frozen Vegetables - Broccoli & Cauliflower",
+        "name": "Frozen Vegetables   Broccoli & Cauliflower",
         "depth": 3,
         "parent": 1811,
         "id": 1812
     },
     {
-        "name": "Frozen vegetables - Carrots & Parsnips",
+        "name": "Frozen Vegetables   Carrots & Parsnips",
         "depth": 3,
         "parent": 1811,
         "id": 1813
     },
     {
-        "name": "Frozen Vegetables - Sprouts & Cabbage",
+        "name": "Frozen Vegetables   Sprouts & Cabbage",
         "depth": 3,
         "parent": 1811,
         "id": 1814
@@ -10890,7 +10890,7 @@
         "id": 1815
     },
     {
-        "name": "Frozen vegetables - Frozen Green Beans",
+        "name": "Frozen Vegetables   Frozen Green Beans",
         "depth": 3,
         "parent": 1815,
         "id": 1816
@@ -10902,13 +10902,13 @@
         "id": 1817
     },
     {
-        "name": "Frozen Vegetables - Frozen Sweetcorn",
+        "name": "Frozen Vegetables   Frozen Sweetcorn",
         "depth": 3,
         "parent": 1815,
         "id": 1818
     },
     {
-        "name": "Frozen Vegetables - Frozen Peas",
+        "name": "Frozen Vegetables   Frozen Peas",
         "depth": 3,
         "parent": 1815,
         "id": 1819
@@ -10950,13 +10950,13 @@
         "id": 1825
     },
     {
-        "name": "Vegan Fillets & Fish-Free",
+        "name": "Vegan Fillets & Fish Free",
         "depth": 2,
         "parent": 1823,
         "id": 1826
     },
     {
-        "name": "Frozen Vegan Fish-Free",
+        "name": "Frozen Vegan Fish Free",
         "depth": 3,
         "parent": 1826,
         "id": 1827
@@ -11184,7 +11184,7 @@
         "id": 1864
     },
     {
-        "name": "Vegetarian Fillets & Fish-Free",
+        "name": "Vegetarian Fillets & Fish Free",
         "depth": 2,
         "parent": 1864,
         "id": 1865
@@ -11400,7 +11400,7 @@
         "id": 1900
     },
     {
-        "name": "Premium & Hand Cooked Sharing Crisps",
+        "name": "Premium & H& Cooked Sharing Crisps",
         "depth": 3,
         "parent": 1900,
         "id": 1901
@@ -11412,7 +11412,7 @@
         "id": 1902
     },
     {
-        "name": "Cereal Bars & On the Go Snack Bars",
+        "name": "Cereal Bars & On The Go Snack Bars",
         "depth": 2,
         "parent": 1902,
         "id": 1903
@@ -11778,7 +11778,7 @@
         "id": 1963
     },
     {
-        "name": "Australian & New Zealand White Wine\u200b",
+        "name": "Australian & New Zeal& White Wine\u200b",
         "depth": 3,
         "parent": 1962,
         "id": 1964
@@ -11802,7 +11802,7 @@
         "id": 1967
     },
     {
-        "name": "USA White Wine",
+        "name": "Usa White Wine",
         "depth": 3,
         "parent": 1962,
         "id": 1968
@@ -11826,7 +11826,7 @@
         "id": 1971
     },
     {
-        "name": "Rest of the World White Wine",
+        "name": "Rest Of The World White Wine",
         "depth": 3,
         "parent": 1962,
         "id": 1972
@@ -11928,7 +11928,7 @@
         "id": 1988
     },
     {
-        "name": "White Zinfandel & Grenache",
+        "name": "White Zinf&El & Grenache",
         "depth": 3,
         "parent": 1987,
         "id": 1989
@@ -11946,13 +11946,13 @@
         "id": 1991
     },
     {
-        "name": "USA Rose Wine",
+        "name": "Usa Rose Wine",
         "depth": 3,
         "parent": 1987,
         "id": 1992
     },
     {
-        "name": "Rest of the World Rose Wine",
+        "name": "Rest Of The World Rose Wine",
         "depth": 3,
         "parent": 1987,
         "id": 1993
@@ -12024,7 +12024,7 @@
         "id": 2004
     },
     {
-        "name": "Alcohol Free and Low Alcohol White Wine",
+        "name": "Alcohol Free & Low Alcohol White Wine",
         "depth": 3,
         "parent": 2003,
         "id": 2005
@@ -12036,7 +12036,7 @@
         "id": 2006
     },
     {
-        "name": "Alcohol Free and Low Alcohol Red Wine",
+        "name": "Alcohol Free & Low Alcohol Red Wine",
         "depth": 3,
         "parent": 2003,
         "id": 2007
@@ -12090,13 +12090,13 @@
         "id": 2015
     },
     {
-        "name": "Rest of the World Red Wine",
+        "name": "Rest Of The World Red Wine",
         "depth": 3,
         "parent": 2008,
         "id": 2016
     },
     {
-        "name": "Australian & New Zealand Red Wine",
+        "name": "Australian & New Zeal& Red Wine",
         "depth": 3,
         "parent": 2008,
         "id": 2017
@@ -12114,7 +12114,7 @@
         "id": 2019
     },
     {
-        "name": "USA Red Wine",
+        "name": "Usa Red Wine",
         "depth": 3,
         "parent": 2008,
         "id": 2020
@@ -12198,7 +12198,7 @@
         "id": 2033
     },
     {
-        "name": "Ready to Drink Milkshakes",
+        "name": "Ready To Drink Milkshakes",
         "depth": 3,
         "parent": 2032,
         "id": 2034
@@ -12720,7 +12720,7 @@
         "id": 2120
     },
     {
-        "name": "Ready to Drink Premixed Spirits & Cocktails",
+        "name": "Ready To Drink Premixed Spirits & Cocktails",
         "depth": 2,
         "parent": 2112,
         "id": 2121
@@ -12846,7 +12846,7 @@
         "id": 2141
     },
     {
-        "name": "Brandy & Cognac",
+        "name": "Br&Y & Cognac",
         "depth": 2,
         "parent": 2112,
         "id": 2142
@@ -12858,7 +12858,7 @@
         "id": 2143
     },
     {
-        "name": "Brandy",
+        "name": "Br&Y",
         "depth": 3,
         "parent": 2142,
         "id": 2144
@@ -12948,7 +12948,7 @@
         "id": 2158
     },
     {
-        "name": "Flavoured Water - Still Water",
+        "name": "Flavoured Water   Still Water",
         "depth": 2,
         "parent": 2158,
         "id": 2159
@@ -13002,7 +13002,7 @@
         "id": 2167
     },
     {
-        "name": "Flavoured Water - Sparkling Water",
+        "name": "Flavoured Water   Sparkling Water",
         "depth": 2,
         "parent": 2158,
         "id": 2168
@@ -13038,7 +13038,7 @@
         "id": 2173
     },
     {
-        "name": "Lavazza AMM Compatible Coffee Pods",
+        "name": "Lavazza Amm Compatible Coffee Pods",
         "depth": 3,
         "parent": 2172,
         "id": 2174
@@ -13158,7 +13158,7 @@
         "id": 2193
     },
     {
-        "name": "Ready to Drink Iced Coffee",
+        "name": "Ready To Drink Iced Coffee",
         "depth": 3,
         "parent": 2193,
         "id": 2194
@@ -13512,67 +13512,67 @@
         "id": 2252
     },
     {
-        "name": "Beer - Lager",
+        "name": "Beer   Lager",
         "depth": 2,
         "parent": 2239,
         "id": 2253
     },
     {
-        "name": "Beer - Bigger Pack Lager",
+        "name": "Beer   Bigger Pack Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2254
     },
     {
-        "name": "Beer - Bottled Lager",
+        "name": "Beer   Bottled Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2255
     },
     {
-        "name": "Beer - Mexican Lager",
+        "name": "Beer   Mexican Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2256
     },
     {
-        "name": "Beer - Canned Lager",
+        "name": "Beer   Canned Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2257
     },
     {
-        "name": "Beer - Italian Lager",
+        "name": "Beer   Italian Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2258
     },
     {
-        "name": "Beer - Spanish Lager",
+        "name": "Beer   Spanish Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2259
     },
     {
-        "name": "Beer - Alcohol Free & Low Alcohol Lager",
+        "name": "Beer   Alcohol Free & Low Alcohol Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2260
     },
     {
-        "name": "Beer - Thai & Indian Lager",
+        "name": "Beer   Thai & Indian Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2261
     },
     {
-        "name": "Beer - Single Bottled Lager",
+        "name": "Beer   Single Bottled Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2262
     },
     {
-        "name": "Beer - Small Pack Lager",
+        "name": "Beer   Small Pack Lager",
         "depth": 3,
         "parent": 2253,
         "id": 2263
@@ -13590,55 +13590,55 @@
         "id": 2265
     },
     {
-        "name": "Beer - Real Ale & Bitter",
+        "name": "Beer   Real Ale & Bitter",
         "depth": 2,
         "parent": 2239,
         "id": 2266
     },
     {
-        "name": "Beer - Small Pack Ale & Bitters",
+        "name": "Beer   Small Pack Ale & Bitters",
         "depth": 3,
         "parent": 2266,
         "id": 2267
     },
     {
-        "name": "Beer - Dark Ale",
+        "name": "Beer   Dark Ale",
         "depth": 3,
         "parent": 2266,
         "id": 2268
     },
     {
-        "name": "Beer - Single Bottled Ale & Bitters",
+        "name": "Beer   Single Bottled Ale & Bitters",
         "depth": 3,
         "parent": 2266,
         "id": 2269
     },
     {
-        "name": "Beer - IPA & Pale Ale",
+        "name": "Beer   Ipa & Pale Ale",
         "depth": 3,
         "parent": 2266,
         "id": 2270
     },
     {
-        "name": "Beer - Traditional Stout & Porter",
+        "name": "Beer   Traditional Stout & Porter",
         "depth": 3,
         "parent": 2266,
         "id": 2271
     },
     {
-        "name": "Beer - Bitter & Amber Ale",
+        "name": "Beer   Bitter & Amber Ale",
         "depth": 3,
         "parent": 2266,
         "id": 2272
     },
     {
-        "name": "Beer - Golden Ale",
+        "name": "Beer   Golden Ale",
         "depth": 3,
         "parent": 2266,
         "id": 2273
     },
     {
-        "name": "Beer - Bigger Pack Ale & Bitters",
+        "name": "Beer   Bigger Pack Ale & Bitters",
         "depth": 3,
         "parent": 2266,
         "id": 2274
@@ -13650,7 +13650,7 @@
         "id": 2275
     },
     {
-        "name": "IPA",
+        "name": "Ipa",
         "depth": 3,
         "parent": 2275,
         "id": 2276
@@ -13674,7 +13674,7 @@
         "id": 2279
     },
     {
-        "name": "New England IPA",
+        "name": "New Engl& Ipa",
         "depth": 3,
         "parent": 2275,
         "id": 2280
@@ -13776,7 +13776,7 @@
         "id": 2296
     },
     {
-        "name": "Ready to Drink Premixed Spirits & Cocktails",
+        "name": "Ready To Drink Premixed Spirits & Cocktails",
         "depth": 2,
         "parent": 2296,
         "id": 2297
@@ -13968,7 +13968,7 @@
         "id": 2328
     },
     {
-        "name": "BBQ, Burger, Pizza Sauces & Marinades",
+        "name": "Bbq, Burger, Pizza Sauces & Marinades",
         "depth": 2,
         "parent": 2319,
         "id": 2329
@@ -14190,7 +14190,7 @@
         "id": 2365
     },
     {
-        "name": "Sandwich Spread",
+        "name": "S&Wich Spread",
         "depth": 3,
         "parent": 2365,
         "id": 2366
@@ -14286,7 +14286,7 @@
         "id": 2381
     },
     {
-        "name": "Hollandaise & Bearnaise Sauce",
+        "name": "Holl&Aise & Bearnaise Sauce",
         "depth": 3,
         "parent": 2376,
         "id": 2382
@@ -14742,7 +14742,7 @@
         "id": 2457
     },
     {
-        "name": "Fruit Pot - Fruit Jelly Pots",
+        "name": "Fruit Pot   Fruit Jelly Pots",
         "depth": 3,
         "parent": 2453,
         "id": 2458
@@ -14760,7 +14760,7 @@
         "id": 2460
     },
     {
-        "name": "Fruit Pot - Fruit In Juice Pots",
+        "name": "Fruit Pot   Fruit In Juice Pots",
         "depth": 3,
         "parent": 2453,
         "id": 2461
@@ -14850,7 +14850,7 @@
         "id": 2475
     },
     {
-        "name": "Beans and Sausages",
+        "name": "Beans & Sausages",
         "depth": 3,
         "parent": 2473,
         "id": 2476
@@ -14916,7 +14916,7 @@
         "id": 2486
     },
     {
-        "name": "Tinned Mandarins",
+        "name": "Tinned M&Arins",
         "depth": 3,
         "parent": 2478,
         "id": 2487
@@ -15570,7 +15570,7 @@
         "id": 2595
     },
     {
-        "name": "Pasta Bake Sauce - Pasta Sauce",
+        "name": "Pasta Bake Sauce   Pasta Sauce",
         "depth": 3,
         "parent": 2591,
         "id": 2596
@@ -15588,13 +15588,13 @@
         "id": 2598
     },
     {
-        "name": "Pasta Sauce - Lasagne Sauce",
+        "name": "Pasta Sauce   Lasagne Sauce",
         "depth": 3,
         "parent": 2591,
         "id": 2599
     },
     {
-        "name": "Stir in Pasta Sauce",
+        "name": "Stir In Pasta Sauce",
         "depth": 3,
         "parent": 2591,
         "id": 2600
@@ -15606,7 +15606,7 @@
         "id": 2601
     },
     {
-        "name": "Sauces for Meat Dishes",
+        "name": "Sauces For Meat Dishes",
         "depth": 3,
         "parent": 2601,
         "id": 2602
@@ -15636,7 +15636,7 @@
         "id": 2606
     },
     {
-        "name": "Indian Curry Pastes & Tandoori Oven Bake",
+        "name": "Indian Curry Pastes & T&Oori Oven Bake",
         "depth": 3,
         "parent": 2606,
         "id": 2607
@@ -16074,7 +16074,7 @@
         "id": 2679
     },
     {
-        "name": "American BBQ & Condiments",
+        "name": "American Bbq & Condiments",
         "depth": 3,
         "parent": 2679,
         "id": 2680
@@ -16386,7 +16386,7 @@
         "id": 2731
     },
     {
-        "name": "Egg Noodles - Stir Fry Noodles",
+        "name": "Egg Noodles   Stir Fry Noodles",
         "depth": 3,
         "parent": 2731,
         "id": 2732
@@ -16404,7 +16404,7 @@
         "id": 2734
     },
     {
-        "name": "Straight to Wok Noodles",
+        "name": "Straight To Wok Noodles",
         "depth": 3,
         "parent": 2731,
         "id": 2735
@@ -16476,31 +16476,31 @@
         "id": 2746
     },
     {
-        "name": "Pasta - Macaroni, Penne & Rigatoni",
+        "name": "Pasta   Macaroni, Penne & Rigatoni",
         "depth": 3,
         "parent": 2744,
         "id": 2747
     },
     {
-        "name": "Pasta - Lasagne Sheets",
+        "name": "Pasta   Lasagne Sheets",
         "depth": 3,
         "parent": 2744,
         "id": 2748
     },
     {
-        "name": "Pasta - Fusilli, Twists & Spirals",
+        "name": "Pasta   Fusilli, Twists & Spirals",
         "depth": 3,
         "parent": 2744,
         "id": 2749
     },
     {
-        "name": "Pasta - Spaghetti, Linguine & Tagliatelle",
+        "name": "Pasta   Spaghetti, Linguine & Tagliatelle",
         "depth": 3,
         "parent": 2744,
         "id": 2750
     },
     {
-        "name": "Pasta - Gnocchi, Polenta & Orzo",
+        "name": "Pasta   Gnocchi, Polenta & Orzo",
         "depth": 3,
         "parent": 2744,
         "id": 2751
@@ -16734,7 +16734,7 @@
         "id": 2789
     },
     {
-        "name": "Crackers for Cheese",
+        "name": "Crackers For Cheese",
         "depth": 2,
         "parent": 2785,
         "id": 2790
@@ -16962,7 +16962,7 @@
         "id": 2827
     },
     {
-        "name": "Standard Mints",
+        "name": "St&Ard Mints",
         "depth": 3,
         "parent": 2826,
         "id": 2828
@@ -18012,7 +18012,7 @@
         "id": 3002
     },
     {
-        "name": "Glace Cherries, Candied Fruit & Stem Ginger",
+        "name": "Glace Cherries, C&Ied Fruit & Stem Ginger",
         "depth": 3,
         "parent": 2997,
         "id": 3003
@@ -18054,7 +18054,7 @@
         "id": 3009
     },
     {
-        "name": "Candles & Number Candles",
+        "name": "C&Les & Number C&Les",
         "depth": 3,
         "parent": 3004,
         "id": 3010
@@ -18150,7 +18150,7 @@
         "id": 3025
     },
     {
-        "name": "Ready to Roll Icing & Fondant Icing",
+        "name": "Ready To Roll Icing & Fondant Icing",
         "depth": 3,
         "parent": 3024,
         "id": 3026
@@ -18210,7 +18210,7 @@
         "id": 3035
     },
     {
-        "name": "Cream of Tartar",
+        "name": "Cream Of Tartar",
         "depth": 3,
         "parent": 3035,
         "id": 3036
@@ -18240,7 +18240,7 @@
         "id": 3040
     },
     {
-        "name": "Bicarbonate of Soda & Baking Powder",
+        "name": "Bicarbonate Of Soda & Baking Powder",
         "depth": 3,
         "parent": 3035,
         "id": 3041
@@ -18384,7 +18384,7 @@
         "id": 3064
     },
     {
-        "name": "Cereal Bars & On the Go Snack Bars",
+        "name": "Cereal Bars & On The Go Snack Bars",
         "depth": 2,
         "parent": 3064,
         "id": 3065
@@ -18564,7 +18564,7 @@
         "id": 3094
     },
     {
-        "name": "Cream Biscuits & Sandwich Biscuits",
+        "name": "Cream Biscuits & S&Wich Biscuits",
         "depth": 3,
         "parent": 3093,
         "id": 3095
@@ -18672,7 +18672,7 @@
         "id": 3112
     },
     {
-        "name": "Cajun & BBQ Seasoning",
+        "name": "Cajun & Bbq Seasoning",
         "depth": 3,
         "parent": 3111,
         "id": 3113
@@ -18834,7 +18834,7 @@
         "id": 3139
     },
     {
-        "name": "Ready-to-Serve Gravy",
+        "name": "Ready To Serve Gravy",
         "depth": 3,
         "parent": 3133,
         "id": 3140
@@ -18912,7 +18912,7 @@
         "id": 3152
     },
     {
-        "name": "Packet Sauces, Mixes & Cook in a Bag",
+        "name": "Packet Sauces, Mixes & Cook In A Bag",
         "depth": 2,
         "parent": 3103,
         "id": 3153
@@ -18936,7 +18936,7 @@
         "id": 3156
     },
     {
-        "name": "Cook in a Bag",
+        "name": "Cook In A Bag",
         "depth": 3,
         "parent": 3153,
         "id": 3157
@@ -19026,13 +19026,13 @@
         "id": 3171
     },
     {
-        "name": "Crisps - Tortilla Chips, Nachos & Dips",
+        "name": "Crisps   Tortilla Chips, Nachos & Dips",
         "depth": 3,
         "parent": 3170,
         "id": 3172
     },
     {
-        "name": "Premium & Hand Cooked Sharing Crisps",
+        "name": "Premium & H& Cooked Sharing Crisps",
         "depth": 3,
         "parent": 3170,
         "id": 3173
@@ -20022,7 +20022,7 @@
         "id": 3337
     },
     {
-        "name": "Camembert cheese",
+        "name": "Camembert Cheese",
         "depth": 3,
         "parent": 3325,
         "id": 3338
@@ -21138,7 +21138,7 @@
         "id": 3523
     },
     {
-        "name": "Semi-Skimmed Milk",
+        "name": "Semi Skimmed Milk",
         "depth": 3,
         "parent": 3523,
         "id": 3524
@@ -21192,7 +21192,7 @@
         "id": 3532
     },
     {
-        "name": "Burgers, Meatballs & BBQ Meat",
+        "name": "Burgers, Meatballs & Bbq Meat",
         "depth": 2,
         "parent": 3532,
         "id": 3533
@@ -21204,13 +21204,13 @@
         "id": 3534
     },
     {
-        "name": "BBQ Lamb",
+        "name": "Bbq Lamb",
         "depth": 3,
         "parent": 3533,
         "id": 3535
     },
     {
-        "name": "BBQ Beef",
+        "name": "Bbq Beef",
         "depth": 3,
         "parent": 3533,
         "id": 3536
@@ -21222,13 +21222,13 @@
         "id": 3537
     },
     {
-        "name": "BBQ Pork",
+        "name": "Bbq Pork",
         "depth": 3,
         "parent": 3533,
         "id": 3538
     },
     {
-        "name": "BBQ Chicken",
+        "name": "Bbq Chicken",
         "depth": 3,
         "parent": 3533,
         "id": 3539
@@ -21276,31 +21276,31 @@
         "id": 3546
     },
     {
-        "name": "Ready to Cook",
+        "name": "Ready To Cook",
         "depth": 2,
         "parent": 3532,
         "id": 3547
     },
     {
-        "name": "Ready to Cook Beef",
+        "name": "Ready To Cook Beef",
         "depth": 3,
         "parent": 3547,
         "id": 3548
     },
     {
-        "name": "Ready to Cook Pork",
+        "name": "Ready To Cook Pork",
         "depth": 3,
         "parent": 3547,
         "id": 3549
     },
     {
-        "name": "Ready to Cook Lamb",
+        "name": "Ready To Cook Lamb",
         "depth": 3,
         "parent": 3547,
         "id": 3550
     },
     {
-        "name": "Ready to Cook Chicken",
+        "name": "Ready To Cook Chicken",
         "depth": 3,
         "parent": 3547,
         "id": 3551
@@ -21318,7 +21318,7 @@
         "id": 3553
     },
     {
-        "name": "BBQ Sauces & Marinades",
+        "name": "Bbq Sauces & Marinades",
         "depth": 3,
         "parent": 3552,
         "id": 3554
@@ -21414,7 +21414,7 @@
         "id": 3569
     },
     {
-        "name": "Pigs in Blankets & Cocktail Sausages",
+        "name": "Pigs In Blankets & Cocktail Sausages",
         "depth": 3,
         "parent": 3569,
         "id": 3570
@@ -21654,25 +21654,25 @@
         "id": 3609
     },
     {
-        "name": "Meat & Veg - Sausages",
+        "name": "Meat & Veg   Sausages",
         "depth": 3,
         "parent": 3609,
         "id": 3610
     },
     {
-        "name": "Meat & Veg - Mince",
+        "name": "Meat & Veg   Mince",
         "depth": 3,
         "parent": 3609,
         "id": 3611
     },
     {
-        "name": "Meat & Veg - Burgers",
+        "name": "Meat & Veg   Burgers",
         "depth": 3,
         "parent": 3609,
         "id": 3612
     },
     {
-        "name": "Meat & Veg - Meatballs",
+        "name": "Meat & Veg   Meatballs",
         "depth": 3,
         "parent": 3609,
         "id": 3613
@@ -21762,7 +21762,7 @@
         "id": 3627
     },
     {
-        "name": "Italian & Pasta Ready Meals for 1",
+        "name": "Italian & Pasta Ready Meals For 1",
         "depth": 3,
         "parent": 3627,
         "id": 3628
@@ -21798,13 +21798,13 @@
         "id": 3633
     },
     {
-        "name": "British Classics Ready Meals for 1",
+        "name": "British Classics Ready Meals For 1",
         "depth": 3,
         "parent": 3633,
         "id": 3634
     },
     {
-        "name": "British Classics Ready Meals for 2+",
+        "name": "British Classics Ready Meals For 2+",
         "depth": 3,
         "parent": 3633,
         "id": 3635
@@ -21816,7 +21816,7 @@
         "id": 3636
     },
     {
-        "name": "Thai, Asian & Chinese Ready Meals for 1",
+        "name": "Thai, Asian & Chinese Ready Meals For 1",
         "depth": 3,
         "parent": 3636,
         "id": 3637
@@ -21828,7 +21828,7 @@
         "id": 3638
     },
     {
-        "name": "Chinese, Thai & Asian Ready Meals & Boxes for 2+",
+        "name": "Chinese, Thai & Asian Ready Meals & Boxes For 2+",
         "depth": 3,
         "parent": 3636,
         "id": 3639
@@ -21846,37 +21846,37 @@
         "id": 3641
     },
     {
-        "name": "Ready Meals for 2+",
+        "name": "Ready Meals For 2+",
         "depth": 2,
         "parent": 3621,
         "id": 3642
     },
     {
-        "name": "Rest of World Ready Meals For 2+",
+        "name": "Rest Of World Ready Meals For 2+",
         "depth": 3,
         "parent": 3642,
         "id": 3643
     },
     {
-        "name": "Italian & Pasta Ready Meals for 2+",
+        "name": "Italian & Pasta Ready Meals For 2+",
         "depth": 3,
         "parent": 3642,
         "id": 3644
     },
     {
-        "name": "Chinese, Thai & Asian Ready Meals and Boxes for 2+",
+        "name": "Chinese, Thai & Asian Ready Meals & Boxes For 2+",
         "depth": 3,
         "parent": 3642,
         "id": 3645
     },
     {
-        "name": "British Classics Ready Meals for 2+",
+        "name": "British Classics Ready Meals For 2+",
         "depth": 3,
         "parent": 3642,
         "id": 3646
     },
     {
-        "name": "Indian Ready Meals & Boxes for 2+",
+        "name": "Indian Ready Meals & Boxes For 2+",
         "depth": 3,
         "parent": 3642,
         "id": 3647
@@ -21888,7 +21888,7 @@
         "id": 3648
     },
     {
-        "name": "Rest of World Ready Meal Starters & Sides",
+        "name": "Rest Of World Ready Meal Starters & Sides",
         "depth": 3,
         "parent": 3648,
         "id": 3649
@@ -21918,7 +21918,7 @@
         "id": 3653
     },
     {
-        "name": "Indian Ready Meals for 1",
+        "name": "Indian Ready Meals For 1",
         "depth": 3,
         "parent": 3653,
         "id": 3654
@@ -21942,37 +21942,37 @@
         "id": 3657
     },
     {
-        "name": "Ready Meals for 1",
+        "name": "Ready Meals For 1",
         "depth": 2,
         "parent": 3621,
         "id": 3658
     },
     {
-        "name": "Rest of World Ready Meals For 1",
+        "name": "Rest Of World Ready Meals For 1",
         "depth": 3,
         "parent": 3658,
         "id": 3659
     },
     {
-        "name": "British Classics Ready Meals for 1",
+        "name": "British Classics Ready Meals For 1",
         "depth": 3,
         "parent": 3658,
         "id": 3660
     },
     {
-        "name": "Chinese, Thai & Asian Ready Meals for 1",
+        "name": "Chinese, Thai & Asian Ready Meals For 1",
         "depth": 3,
         "parent": 3658,
         "id": 3661
     },
     {
-        "name": "Italian & Pasta Ready Meals for 1",
+        "name": "Italian & Pasta Ready Meals For 1",
         "depth": 3,
         "parent": 3658,
         "id": 3662
     },
     {
-        "name": "Indian Ready Meals for 1",
+        "name": "Indian Ready Meals For 1",
         "depth": 3,
         "parent": 3658,
         "id": 3663
@@ -22014,13 +22014,13 @@
         "id": 3669
     },
     {
-        "name": "Rest of World Ready Meals",
+        "name": "Rest Of World Ready Meals",
         "depth": 2,
         "parent": 3621,
         "id": 3670
     },
     {
-        "name": "Rest of World Ready Meals for 1",
+        "name": "Rest Of World Ready Meals For 1",
         "depth": 3,
         "parent": 3670,
         "id": 3671
@@ -22254,7 +22254,7 @@
         "id": 3709
     },
     {
-        "name": "Vegan & Vegetarian Rest of World Meals",
+        "name": "Vegan & Vegetarian Rest Of World Meals",
         "depth": 3,
         "parent": 3704,
         "id": 3710
@@ -22338,7 +22338,7 @@
         "id": 3723
     },
     {
-        "name": "Deli Slices, Ready to Eat Pieces & Falafels",
+        "name": "Deli Slices, Ready To Eat Pieces & Falafels",
         "depth": 2,
         "parent": 3683,
         "id": 3724
@@ -22428,7 +22428,7 @@
         "id": 3738
     },
     {
-        "name": "Finest Picnic & Sharing 2 for \u00a35.50",
+        "name": "Finest Picnic & Sharing 2 For \u00a35.50",
         "depth": 2,
         "parent": 3731,
         "id": 3739
@@ -22686,7 +22686,7 @@
         "id": 3781
     },
     {
-        "name": "Chilled Soup, Sandwiches & Salad Pots",
+        "name": "Chilled Soup, S&Wiches & Salad Pots",
         "depth": 1,
         "parent": 3223,
         "id": 3782
@@ -22758,37 +22758,37 @@
         "id": 3793
     },
     {
-        "name": "Fresh Soup - Meat & Chicken Soup",
+        "name": "Fresh Soup   Meat & Chicken Soup",
         "depth": 3,
         "parent": 3793,
         "id": 3794
     },
     {
-        "name": "Fresh Soup - Tomato Soup",
+        "name": "Fresh Soup   Tomato Soup",
         "depth": 3,
         "parent": 3793,
         "id": 3795
     },
     {
-        "name": "Fresh Soup - Vegetable Soup",
+        "name": "Fresh Soup   Vegetable Soup",
         "depth": 3,
         "parent": 3793,
         "id": 3796
     },
     {
-        "name": "Heat to Eat",
+        "name": "Heat To Eat",
         "depth": 2,
         "parent": 3782,
         "id": 3797
     },
     {
-        "name": "Heat to Eat Toasties",
+        "name": "Heat To Eat Toasties",
         "depth": 3,
         "parent": 3797,
         "id": 3798
     },
     {
-        "name": "Heat to Eat Subs, Rolls & Wraps",
+        "name": "Heat To Eat Subs, Rolls & Wraps",
         "depth": 3,
         "parent": 3797,
         "id": 3799
@@ -22800,7 +22800,7 @@
         "id": 3800
     },
     {
-        "name": "Fresh Soup - Organic Soup",
+        "name": "Fresh Soup   Organic Soup",
         "depth": 3,
         "parent": 3800,
         "id": 3801
@@ -22830,13 +22830,13 @@
         "id": 3805
     },
     {
-        "name": "Sandwiches, Wraps & Sushi",
+        "name": "S&Wiches, Wraps & Sushi",
         "depth": 2,
         "parent": 3782,
         "id": 3806
     },
     {
-        "name": "Sandwiches",
+        "name": "S&Wiches",
         "depth": 3,
         "parent": 3806,
         "id": 3807
@@ -23196,7 +23196,7 @@
         "id": 3866
     },
     {
-        "name": "Ready to Eat Pears",
+        "name": "Ready To Eat Pears",
         "depth": 3,
         "parent": 3865,
         "id": 3867
@@ -23238,7 +23238,7 @@
         "id": 3873
     },
     {
-        "name": "Deli Counter - Chorizo, Salami, & Continental Meats",
+        "name": "Deli Counter   Chorizo, Salami, & Continental Meats",
         "depth": 2,
         "parent": 3873,
         "id": 3874
@@ -23262,7 +23262,7 @@
         "id": 3877
     },
     {
-        "name": "Counters - Olives & Antipasti",
+        "name": "Counters   Olives & Antipasti",
         "depth": 2,
         "parent": 3873,
         "id": 3878
@@ -23280,31 +23280,31 @@
         "id": 3880
     },
     {
-        "name": "Counter - Cheese",
+        "name": "Counter   Cheese",
         "depth": 2,
         "parent": 3873,
         "id": 3881
     },
     {
-        "name": "Counter - Cheese Accompaniments",
+        "name": "Counter   Cheese Accompaniments",
         "depth": 3,
         "parent": 3881,
         "id": 3882
     },
     {
-        "name": "Counter - Continental Cheese",
+        "name": "Counter   Continental Cheese",
         "depth": 3,
         "parent": 3881,
         "id": 3883
     },
     {
-        "name": "Counter - Cheddar Cheese",
+        "name": "Counter   Cheddar Cheese",
         "depth": 3,
         "parent": 3881,
         "id": 3884
     },
     {
-        "name": "Counter - Regional Cheese",
+        "name": "Counter   Regional Cheese",
         "depth": 3,
         "parent": 3881,
         "id": 3885
@@ -23406,7 +23406,7 @@
         "id": 3901
     },
     {
-        "name": "Breaded and Prepared",
+        "name": "Breaded & Prepared",
         "depth": 2,
         "parent": 3886,
         "id": 3902
@@ -23430,7 +23430,7 @@
         "id": 3905
     },
     {
-        "name": "Ready to Eat Fillets",
+        "name": "Ready To Eat Fillets",
         "depth": 3,
         "parent": 3905,
         "id": 3906
@@ -23460,7 +23460,7 @@
         "id": 3910
     },
     {
-        "name": "Fresh Salad, Coleslaw & Sandwich Fillers",
+        "name": "Fresh Salad, Coleslaw & S&Wich Fillers",
         "depth": 1,
         "parent": 3223,
         "id": 3911
@@ -23712,7 +23712,7 @@
         "id": 3952
     },
     {
-        "name": "Lettuce & Salad bags",
+        "name": "Lettuce & Salad Bags",
         "depth": 2,
         "parent": 3911,
         "id": 3953
@@ -23754,13 +23754,13 @@
         "id": 3959
     },
     {
-        "name": "Sandwich Fillers",
+        "name": "S&Wich Fillers",
         "depth": 2,
         "parent": 3911,
         "id": 3960
     },
     {
-        "name": "Sandwich Fillers",
+        "name": "S&Wich Fillers",
         "depth": 3,
         "parent": 3961,
         "id": 3961

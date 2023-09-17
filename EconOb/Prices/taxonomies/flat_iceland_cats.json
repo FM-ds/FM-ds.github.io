@@ -264,7 +264,7 @@
         "id": 44
     },
     {
-        "name": "Coleslaw & Sandwich Fillers",
+        "name": "Coleslaw & S&Wich Fillers",
         "depth": 1,
         "parent": 7,
         "id": 45
@@ -324,7 +324,7 @@
         "id": 54
     },
     {
-        "name": "Sandwich Fillers",
+        "name": "S&Wich Fillers",
         "depth": 2,
         "parent": 46,
         "id": 55
@@ -402,7 +402,7 @@
         "parent": 0
     },
     {
-        "name": "Spirits & Pre-Mixed",
+        "name": "Spirits & Pre Mixed",
         "depth": 1,
         "parent": 67,
         "id": 68
@@ -678,7 +678,7 @@
         "id": 113
     },
     {
-        "name": "Orange and Fruit Flavoured",
+        "name": "Orange & Fruit Flavoured",
         "depth": 2,
         "parent": 108,
         "id": 114
@@ -690,13 +690,13 @@
         "id": 115
     },
     {
-        "name": "12 - 24 Packs",
+        "name": "12   24 Packs",
         "depth": 2,
         "parent": 108,
         "id": 116
     },
     {
-        "name": "BBQ Essentials",
+        "name": "Bbq Essentials",
         "depth": 0,
         "id": 117,
         "parent": 0
@@ -876,19 +876,19 @@
         "parent": 0
     },
     {
-        "name": "3 for \u00a33 Mix & Match",
+        "name": "3 For \u00a33 Mix & Match",
         "depth": 1,
         "parent": 146,
         "id": 147
     },
     {
-        "name": "3 for \u00a310 Mix & Match",
+        "name": "3 For \u00a310 Mix & Match",
         "depth": 1,
         "parent": 146,
         "id": 148
     },
     {
-        "name": "3 for \u00a35 Mix & Match",
+        "name": "3 For \u00a35 Mix & Match",
         "depth": 1,
         "parent": 146,
         "id": 149
@@ -918,7 +918,7 @@
         "id": 153
     },
     {
-        "name": "Meal in a Bag",
+        "name": "Meal In A Bag",
         "depth": 2,
         "parent": 152,
         "id": 154
@@ -1164,7 +1164,7 @@
         "id": 194
     },
     {
-        "name": "Chicken and Turkey",
+        "name": "Chicken & Turkey",
         "depth": 2,
         "parent": 191,
         "id": 195
@@ -1200,7 +1200,7 @@
         "id": 200
     },
     {
-        "name": "Burgers and Sausages",
+        "name": "Burgers & Sausages",
         "depth": 2,
         "parent": 191,
         "id": 201
@@ -1308,13 +1308,13 @@
         "id": 218
     },
     {
-        "name": "TGI Fridays",
+        "name": "Tgi Fridays",
         "depth": 1,
         "parent": 150,
         "id": 219
     },
     {
-        "name": "Back to School",
+        "name": "Back To School",
         "depth": 0,
         "id": 220,
         "parent": 0
@@ -1326,7 +1326,7 @@
         "parent": 0
     },
     {
-        "name": "Spirits & Pre-Mixed",
+        "name": "Spirits & Pre Mixed",
         "depth": 1,
         "parent": 221,
         "id": 222
@@ -1338,7 +1338,7 @@
         "id": 223
     },
     {
-        "name": "The Land of the Roast",
+        "name": "The L& Of The Roast",
         "depth": 0,
         "id": 224,
         "parent": 0
@@ -1446,7 +1446,7 @@
         "id": 241
     },
     {
-        "name": "Croissants, Pain au Chocolat & Belgian Buns",
+        "name": "Croissants, Pain Au Chocolat & Belgian Buns",
         "depth": 1,
         "parent": 225,
         "id": 242
@@ -1464,7 +1464,7 @@
         "parent": 0
     },
     {
-        "name": "Soap Handwash and Hand Sanitiser",
+        "name": "Soap H&Wash & H& Sanitiser",
         "depth": 1,
         "parent": 244,
         "id": 245
@@ -1488,7 +1488,7 @@
         "id": 248
     },
     {
-        "name": "Shampoo and Conditioner",
+        "name": "Shampoo & Conditioner",
         "depth": 1,
         "parent": 244,
         "id": 249
@@ -1662,7 +1662,7 @@
         "id": 277
     },
     {
-        "name": "Table Sauces, BBQ & Pickles",
+        "name": "Table Sauces, Bbq & Pickles",
         "depth": 1,
         "parent": 252,
         "id": 278
@@ -1680,7 +1680,7 @@
         "id": 280
     },
     {
-        "name": "BBQ, Chilli & Marinades",
+        "name": "Bbq, Chilli & Marinades",
         "depth": 2,
         "parent": 278,
         "id": 281
@@ -1872,7 +1872,7 @@
         "id": 312
     },
     {
-        "name": "Chinese and Oriental Sauces",
+        "name": "Chinese & Oriental Sauces",
         "depth": 2,
         "parent": 311,
         "id": 313
@@ -1890,7 +1890,7 @@
         "id": 315
     },
     {
-        "name": "Indian and Curry Sauces",
+        "name": "Indian & Curry Sauces",
         "depth": 2,
         "parent": 311,
         "id": 316
@@ -1920,7 +1920,7 @@
         "id": 320
     },
     {
-        "name": "Halloween and Bonfire",
+        "name": "Halloween & Bonfire",
         "depth": 0,
         "id": 321,
         "parent": 0
@@ -1986,7 +1986,7 @@
         "parent": 0
     },
     {
-        "name": "Exclusive Brands",
+        "name": "Exclusive Br&S",
         "depth": 0,
         "id": 332,
         "parent": 0
@@ -2022,7 +2022,7 @@
         "id": 337
     },
     {
-        "name": "TGI Fridays",
+        "name": "Tgi Fridays",
         "depth": 1,
         "parent": 332,
         "id": 338

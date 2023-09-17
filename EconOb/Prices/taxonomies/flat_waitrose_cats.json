@@ -24,7 +24,7 @@
         "id": 4
     },
     {
-        "name": "Stage 2 Follow On Milk (6+ months)",
+        "name": "Stage 2 Follow On Milk (6+ Months)",
         "depth": 3,
         "parent": 4,
         "id": 5
@@ -54,7 +54,7 @@
         "id": 9
     },
     {
-        "name": "Size 6 and up Nappies & Pants",
+        "name": "Size 6 & Up Nappies & Pants",
         "depth": 3,
         "parent": 9,
         "id": 10
@@ -96,7 +96,7 @@
         "id": 16
     },
     {
-        "name": "Bed Wetting - Pyjama Pants",
+        "name": "Bed Wetting   Pyjama Pants",
         "depth": 3,
         "parent": 9,
         "id": 17
@@ -144,7 +144,7 @@
         "id": 24
     },
     {
-        "name": "Children's Toys",
+        "name": "Children'S Toys",
         "depth": 3,
         "parent": 24,
         "id": 25
@@ -180,13 +180,13 @@
         "id": 30
     },
     {
-        "name": "Children's Bath & Shower",
+        "name": "Children'S Bath & Shower",
         "depth": 3,
         "parent": 27,
         "id": 31
     },
     {
-        "name": "Baby Handwash",
+        "name": "Baby H&Wash",
         "depth": 3,
         "parent": 27,
         "id": 32
@@ -270,7 +270,7 @@
         "id": 45
     },
     {
-        "name": "Parent's Skincare",
+        "name": "Parent'S Skincare",
         "depth": 3,
         "parent": 45,
         "id": 46
@@ -282,7 +282,7 @@
         "id": 47
     },
     {
-        "name": "Pocket-Money Toys",
+        "name": "Pocket Money Toys",
         "depth": 3,
         "parent": 47,
         "id": 48
@@ -510,7 +510,7 @@
         "id": 85
     },
     {
-        "name": "Sandwich Thins",
+        "name": "S&Wich Thins",
         "depth": 3,
         "parent": 85,
         "id": 86
@@ -876,7 +876,7 @@
         "id": 146
     },
     {
-        "name": "Multi-Purpose Cleaning Products",
+        "name": "Multi Purpose Cleaning Products",
         "depth": 3,
         "parent": 142,
         "id": 147
@@ -1032,7 +1032,7 @@
         "id": 172
     },
     {
-        "name": "Candles & Air Fresheners",
+        "name": "C&Les & Air Fresheners",
         "depth": 2,
         "parent": 124,
         "id": 173
@@ -1068,7 +1068,7 @@
         "id": 178
     },
     {
-        "name": "Candles & Tealights",
+        "name": "C&Les & Tealights",
         "depth": 3,
         "parent": 173,
         "id": 179
@@ -1086,19 +1086,19 @@
         "id": 181
     },
     {
-        "name": "Small Edison Screw (SES)",
+        "name": "Small Edison Screw (Ses)",
         "depth": 3,
         "parent": 180,
         "id": 182
     },
     {
-        "name": "Bayonet Cap (BC)",
+        "name": "Bayonet Cap (Bc)",
         "depth": 3,
         "parent": 180,
         "id": 183
     },
     {
-        "name": "Edison Screw (ES)",
+        "name": "Edison Screw (Es)",
         "depth": 3,
         "parent": 180,
         "id": 184
@@ -1224,7 +1224,7 @@
         "id": 204
     },
     {
-        "name": "Wine in a Can",
+        "name": "Wine In A Can",
         "depth": 3,
         "parent": 196,
         "id": 205
@@ -1332,7 +1332,7 @@
         "id": 222
     },
     {
-        "name": "Brandy",
+        "name": "Br&Y",
         "depth": 3,
         "parent": 215,
         "id": 223
@@ -1434,13 +1434,13 @@
         "id": 239
     },
     {
-        "name": "Multi-pack Beer",
+        "name": "Multi Pack Beer",
         "depth": 3,
         "parent": 233,
         "id": 240
     },
     {
-        "name": "Alcohol Free and Low Alcohol Drinks",
+        "name": "Alcohol Free & Low Alcohol Drinks",
         "depth": 2,
         "parent": 195,
         "id": 241
@@ -1854,7 +1854,7 @@
         "id": 309
     },
     {
-        "name": "BBQ Sauce & Marinades",
+        "name": "Bbq Sauce & Marinades",
         "depth": 3,
         "parent": 302,
         "id": 310
@@ -1896,7 +1896,7 @@
         "id": 316
     },
     {
-        "name": "Hollandaise Sauce",
+        "name": "Holl&Aise Sauce",
         "depth": 3,
         "parent": 302,
         "id": 317
@@ -2538,7 +2538,7 @@
         "id": 423
     },
     {
-        "name": "BBQ Accessories",
+        "name": "Bbq Accessories",
         "depth": 3,
         "parent": 420,
         "id": 424
@@ -2724,7 +2724,7 @@
         "id": 454
     },
     {
-        "name": "Party Candles",
+        "name": "Party C&Les",
         "depth": 3,
         "parent": 451,
         "id": 455
@@ -2778,7 +2778,7 @@
         "id": 463
     },
     {
-        "name": "Waitrose freefrom",
+        "name": "Waitrose Freefrom",
         "depth": 3,
         "parent": 462,
         "id": 464
@@ -2850,7 +2850,7 @@
         "id": 475
     },
     {
-        "name": "Men's Toiletries",
+        "name": "Men'S Toiletries",
         "depth": 2,
         "parent": 475,
         "id": 476
@@ -2868,7 +2868,7 @@
         "id": 478
     },
     {
-        "name": "Men's Sensitive Bladder & Incontinence",
+        "name": "Men'S Sensitive Bladder & Incontinence",
         "depth": 3,
         "parent": 476,
         "id": 479
@@ -2946,7 +2946,7 @@
         "id": 491
     },
     {
-        "name": "Anti-Aging Skincare",
+        "name": "Anti Aging Skincare",
         "depth": 3,
         "parent": 487,
         "id": 492
@@ -2982,7 +2982,7 @@
         "id": 497
     },
     {
-        "name": "Hand & Foot Care",
+        "name": "H& & Foot Care",
         "depth": 3,
         "parent": 497,
         "id": 498
@@ -3126,7 +3126,7 @@
         "id": 521
     },
     {
-        "name": "Baby & Children's Health Care",
+        "name": "Baby & Children'S Health Care",
         "depth": 3,
         "parent": 516,
         "id": 522
@@ -3192,7 +3192,7 @@
         "id": 532
     },
     {
-        "name": "Hand Wash & Soap",
+        "name": "H& Wash & Soap",
         "depth": 3,
         "parent": 530,
         "id": 533
@@ -3210,7 +3210,7 @@
         "id": 535
     },
     {
-        "name": "Women's Deodorants",
+        "name": "Women'S Deodorants",
         "depth": 3,
         "parent": 535,
         "id": 536
@@ -3222,7 +3222,7 @@
         "id": 537
     },
     {
-        "name": "Men's Deodorants",
+        "name": "Men'S Deodorants",
         "depth": 3,
         "parent": 535,
         "id": 538
@@ -3336,7 +3336,7 @@
         "id": 556
     },
     {
-        "name": "Neal's Yard",
+        "name": "Neal'S Yard",
         "depth": 3,
         "parent": 556,
         "id": 557
@@ -3360,7 +3360,7 @@
         "id": 560
     },
     {
-        "name": "Men's Hair Care",
+        "name": "Men'S Hair Care",
         "depth": 3,
         "parent": 558,
         "id": 561
@@ -3384,7 +3384,7 @@
         "id": 564
     },
     {
-        "name": "Children's Hair Care",
+        "name": "Children'S Hair Care",
         "depth": 3,
         "parent": 558,
         "id": 565
@@ -3822,7 +3822,7 @@
         "id": 637
     },
     {
-        "name": "Goat's & Sheep's Cheese",
+        "name": "Goat'S & Sheep'S Cheese",
         "depth": 3,
         "parent": 635,
         "id": 638
@@ -4194,7 +4194,7 @@
         "id": 699
     },
     {
-        "name": "BBQ Meat",
+        "name": "Bbq Meat",
         "depth": 3,
         "parent": 698,
         "id": 700
@@ -4350,7 +4350,7 @@
         "id": 725
     },
     {
-        "name": "BBQ Chicken",
+        "name": "Bbq Chicken",
         "depth": 3,
         "parent": 721,
         "id": 726
@@ -4446,7 +4446,7 @@
         "id": 741
     },
     {
-        "name": "Sandwiches & Wraps",
+        "name": "S&Wiches & Wraps",
         "depth": 3,
         "parent": 739,
         "id": 742
@@ -4818,7 +4818,7 @@
         "id": 803
     },
     {
-        "name": "Smoked Salmon & Ready to Eat",
+        "name": "Smoked Salmon & Ready To Eat",
         "depth": 3,
         "parent": 801,
         "id": 804
@@ -4938,7 +4938,7 @@
         "id": 823
     },
     {
-        "name": "Sandwiches & Wraps",
+        "name": "S&Wiches & Wraps",
         "depth": 3,
         "parent": 815,
         "id": 824
@@ -5058,7 +5058,7 @@
         "parent": 0
     },
     {
-        "name": "All food to order",
+        "name": "All Food To Order",
         "depth": 1,
         "parent": 843,
         "id": 844

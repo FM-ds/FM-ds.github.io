@@ -132,7 +132,7 @@
         "id": 22
     },
     {
-        "name": "Other Brands",
+        "name": "Other Br&S",
         "depth": 3,
         "parent": 21,
         "id": 23
@@ -150,7 +150,7 @@
         "id": 25
     },
     {
-        "name": "Shop by Scent",
+        "name": "Shop By Scent",
         "depth": 2,
         "parent": 9,
         "id": 26
@@ -168,7 +168,7 @@
         "id": 28
     },
     {
-        "name": "Scented Candles",
+        "name": "Scented C&Les",
         "depth": 2,
         "parent": 9,
         "id": 29
@@ -240,25 +240,25 @@
         "id": 40
     },
     {
-        "name": "1-2 Rolls",
+        "name": "1 2 Rolls",
         "depth": 2,
         "parent": 38,
         "id": 41
     },
     {
-        "name": "1-2 Rolls",
+        "name": "1 2 Rolls",
         "depth": 3,
         "parent": 42,
         "id": 42
     },
     {
-        "name": "3 - 4 Rolls ",
+        "name": "3   4 Rolls ",
         "depth": 2,
         "parent": 38,
         "id": 43
     },
     {
-        "name": "3 - 4 Rolls ",
+        "name": "3   4 Rolls ",
         "depth": 3,
         "parent": 44,
         "id": 44
@@ -270,7 +270,7 @@
         "id": 45
     },
     {
-        "name": "Stain Remover & Laundry care",
+        "name": "Stain Remover & Laundry Care",
         "depth": 2,
         "parent": 45,
         "id": 46
@@ -402,13 +402,13 @@
         "id": 67
     },
     {
-        "name": "Standard Toilet Roll",
+        "name": "St&Ard Toilet Roll",
         "depth": 2,
         "parent": 67,
         "id": 68
     },
     {
-        "name": "Standard Toilet Roll",
+        "name": "St&Ard Toilet Roll",
         "depth": 3,
         "parent": 69,
         "id": 69
@@ -648,19 +648,19 @@
         "id": 108
     },
     {
-        "name": "Eco-Friendly & Refills",
+        "name": "Eco Friendly & Refills",
         "depth": 1,
         "parent": 1,
         "id": 109
     },
     {
-        "name": "Eco-Friendly & Refills",
+        "name": "Eco Friendly & Refills",
         "depth": 2,
         "parent": 110,
         "id": 110
     },
     {
-        "name": "Eco-Friendly & Refills",
+        "name": "Eco Friendly & Refills",
         "depth": 3,
         "parent": 111,
         "id": 111
@@ -756,13 +756,13 @@
         "id": 126
     },
     {
-        "name": "IBS & Wind Relief",
+        "name": "Ibs & Wind Relief",
         "depth": 2,
         "parent": 120,
         "id": 127
     },
     {
-        "name": "IBS & Wind Relief",
+        "name": "Ibs & Wind Relief",
         "depth": 3,
         "parent": 128,
         "id": 128
@@ -942,7 +942,7 @@
         "id": 157
     },
     {
-        "name": "Women's Health",
+        "name": "Women'S Health",
         "depth": 1,
         "parent": 119,
         "id": 158
@@ -978,7 +978,7 @@
         "id": 163
     },
     {
-        "name": "BV & Cystitis",
+        "name": "Bv & Cystitis",
         "depth": 3,
         "parent": 163,
         "id": 164
@@ -1014,7 +1014,7 @@
         "id": 169
     },
     {
-        "name": "Bandages",
+        "name": "B&Ages",
         "depth": 2,
         "parent": 165,
         "id": 170
@@ -1056,7 +1056,7 @@
         "id": 176
     },
     {
-        "name": "CBD Oil",
+        "name": "Cbd Oil",
         "depth": 2,
         "parent": 174,
         "id": 177
@@ -1080,13 +1080,13 @@
         "id": 180
     },
     {
-        "name": "Women's Vitamins",
+        "name": "Women'S Vitamins",
         "depth": 2,
         "parent": 174,
         "id": 181
     },
     {
-        "name": "Women's Vitamins",
+        "name": "Women'S Vitamins",
         "depth": 3,
         "parent": 182,
         "id": 182
@@ -1104,13 +1104,13 @@
         "id": 184
     },
     {
-        "name": "Men's Vitamins",
+        "name": "Men'S Vitamins",
         "depth": 2,
         "parent": 174,
         "id": 185
     },
     {
-        "name": "Men's Vitamins",
+        "name": "Men'S Vitamins",
         "depth": 3,
         "parent": 186,
         "id": 186
@@ -1176,43 +1176,43 @@
         "id": 196
     },
     {
-        "name": "Children's Health & Wellness",
+        "name": "Children'S Health & Wellness",
         "depth": 1,
         "parent": 119,
         "id": 197
     },
     {
-        "name": "Children's First Aid",
+        "name": "Children'S First Aid",
         "depth": 2,
         "parent": 197,
         "id": 198
     },
     {
-        "name": "Children's First Aid",
+        "name": "Children'S First Aid",
         "depth": 3,
         "parent": 199,
         "id": 199
     },
     {
-        "name": "Children's Vitamins",
+        "name": "Children'S Vitamins",
         "depth": 2,
         "parent": 197,
         "id": 200
     },
     {
-        "name": "Children's Vitamins",
+        "name": "Children'S Vitamins",
         "depth": 3,
         "parent": 201,
         "id": 201
     },
     {
-        "name": "View All Children's Health & Wellness",
+        "name": "View All Children'S Health & Wellness",
         "depth": 2,
         "parent": 197,
         "id": 202
     },
     {
-        "name": "View All Children's Health & Wellness",
+        "name": "View All Children'S Health & Wellness",
         "depth": 3,
         "parent": 203,
         "id": 203
@@ -1242,13 +1242,13 @@
         "id": 207
     },
     {
-        "name": "Children's Pain & Fever Relief",
+        "name": "Children'S Pain & Fever Relief",
         "depth": 2,
         "parent": 197,
         "id": 208
     },
     {
-        "name": "Children's Pain & Fever Relief",
+        "name": "Children'S Pain & Fever Relief",
         "depth": 3,
         "parent": 209,
         "id": 209
@@ -1338,13 +1338,13 @@
         "id": 223
     },
     {
-        "name": "Baby & Children's Allergy",
+        "name": "Baby & Children'S Allergy",
         "depth": 2,
         "parent": 223,
         "id": 224
     },
     {
-        "name": "Baby & Children's Allergy",
+        "name": "Baby & Children'S Allergy",
         "depth": 3,
         "parent": 225,
         "id": 225
@@ -1476,7 +1476,7 @@
         "id": 246
     },
     {
-        "name": "Baby & Children's Cough and Cold",
+        "name": "Baby & Children'S Cough & Cold",
         "depth": 3,
         "parent": 239,
         "id": 247
@@ -1500,7 +1500,7 @@
         "id": 250
     },
     {
-        "name": "Pre-Workouts",
+        "name": "Pre Workouts",
         "depth": 2,
         "parent": 248,
         "id": 251
@@ -2016,13 +2016,13 @@
         "id": 336
     },
     {
-        "name": "View all Gluten Free",
+        "name": "View All Gluten Free",
         "depth": 2,
         "parent": 324,
         "id": 337
     },
     {
-        "name": "View all Gluten Free",
+        "name": "View All Gluten Free",
         "depth": 3,
         "parent": 338,
         "id": 338
@@ -2130,13 +2130,13 @@
         "id": 355
     },
     {
-        "name": "ASDA Milk Free",
+        "name": "Asda Milk Free",
         "depth": 2,
         "parent": 353,
         "id": 356
     },
     {
-        "name": "ASDA Milk Free",
+        "name": "Asda Milk Free",
         "depth": 3,
         "parent": 357,
         "id": 357
@@ -2736,7 +2736,7 @@
         "id": 456
     },
     {
-        "name": "Puppy Food (0-2 Years)",
+        "name": "Puppy Food (0 2 Years)",
         "depth": 2,
         "parent": 450,
         "id": 457
@@ -2772,7 +2772,7 @@
         "id": 462
     },
     {
-        "name": "Natural and Grain Free Dog Food",
+        "name": "Natural & Grain Free Dog Food",
         "depth": 2,
         "parent": 450,
         "id": 463
@@ -2904,7 +2904,7 @@
         "id": 484
     },
     {
-        "name": "Kitten Food (0-1 Years)",
+        "name": "Kitten Food (0 1 Years)",
         "depth": 2,
         "parent": 482,
         "id": 485
@@ -3126,7 +3126,7 @@
         "id": 521
     },
     {
-        "name": "Vaping & E-Cigs",
+        "name": "Vaping & E Cigs",
         "depth": 3,
         "parent": 518,
         "id": 522
@@ -3204,7 +3204,7 @@
         "id": 534
     },
     {
-        "name": "Brandy & Cognac",
+        "name": "Br&Y & Cognac",
         "depth": 3,
         "parent": 528,
         "id": 535
@@ -3372,19 +3372,19 @@
         "id": 562
     },
     {
-        "name": "HiPP Baby Milk",
+        "name": "Hipp Baby Milk",
         "depth": 3,
         "parent": 559,
         "id": 563
     },
     {
-        "name": "Ready to Feed Baby Milk",
+        "name": "Ready To Feed Baby Milk",
         "depth": 3,
         "parent": 559,
         "id": 564
     },
     {
-        "name": "SMA Baby Milk",
+        "name": "Sma Baby Milk",
         "depth": 3,
         "parent": 559,
         "id": 565
@@ -3522,7 +3522,7 @@
         "id": 587
     },
     {
-        "name": "Newborn & Mum to Be",
+        "name": "Newborn & Mum To Be",
         "depth": 2,
         "parent": 552,
         "id": 588
@@ -3630,7 +3630,7 @@
         "id": 605
     },
     {
-        "name": "Popular Brands",
+        "name": "Popular Br&S",
         "depth": 3,
         "parent": 604,
         "id": 606
@@ -3762,7 +3762,7 @@
         "id": 627
     },
     {
-        "name": "Simple to Cook",
+        "name": "Simple To Cook",
         "depth": 3,
         "parent": 623,
         "id": 628
@@ -3864,7 +3864,7 @@
         "parent": 0
     },
     {
-        "name": "Sandwiches",
+        "name": "S&Wiches",
         "depth": 1,
         "parent": 644,
         "id": 645
@@ -3876,7 +3876,7 @@
         "id": 646
     },
     {
-        "name": "Sandwiches",
+        "name": "S&Wiches",
         "depth": 3,
         "parent": 646,
         "id": 647
@@ -3996,7 +3996,7 @@
         "id": 666
     },
     {
-        "name": "Dairy Free or Lactose Free Cheese",
+        "name": "Dairy Free Or Lactose Free Cheese",
         "depth": 2,
         "parent": 652,
         "id": 667
@@ -4326,7 +4326,7 @@
         "id": 721
     },
     {
-        "name": "Single Pots & On the Go Yogurts",
+        "name": "Single Pots & On The Go Yogurts",
         "depth": 3,
         "parent": 717,
         "id": 722
@@ -4464,7 +4464,7 @@
         "id": 744
     },
     {
-        "name": "3 for \u00a37.50 Ready Meals",
+        "name": "3 For \u00a37.50 Ready Meals",
         "depth": 3,
         "parent": 741,
         "id": 745
@@ -4518,13 +4518,13 @@
         "id": 753
     },
     {
-        "name": "Ready to Cook Meals",
+        "name": "Ready To Cook Meals",
         "depth": 2,
         "parent": 739,
         "id": 754
     },
     {
-        "name": "Ready to Cook Meals",
+        "name": "Ready To Cook Meals",
         "depth": 3,
         "parent": 755,
         "id": 755
@@ -4722,25 +4722,25 @@
         "id": 787
     },
     {
-        "name": "Extra Special Meal for 2",
+        "name": "Extra Special Meal For 2",
         "depth": 2,
         "parent": 785,
         "id": 788
     },
     {
-        "name": "Extra Special Meal for 2",
+        "name": "Extra Special Meal For 2",
         "depth": 3,
         "parent": 789,
         "id": 789
     },
     {
-        "name": "Extra Special Meal for 1",
+        "name": "Extra Special Meal For 1",
         "depth": 2,
         "parent": 785,
         "id": 790
     },
     {
-        "name": "Extra Special Meal for 1",
+        "name": "Extra Special Meal For 1",
         "depth": 3,
         "parent": 791,
         "id": 791
@@ -4884,7 +4884,7 @@
         "id": 814
     },
     {
-        "name": "Croissants & Pain au Chocolat",
+        "name": "Croissants & Pain Au Chocolat",
         "depth": 3,
         "parent": 814,
         "id": 815
@@ -5268,13 +5268,13 @@
         "id": 878
     },
     {
-        "name": "Desserts for Two",
+        "name": "Desserts For Two",
         "depth": 2,
         "parent": 872,
         "id": 879
     },
     {
-        "name": "Desserts for Two",
+        "name": "Desserts For Two",
         "depth": 3,
         "parent": 880,
         "id": 880
@@ -5322,13 +5322,13 @@
         "id": 887
     },
     {
-        "name": "Dummy Shelf new 2",
+        "name": "Dummy Shelf New 2",
         "depth": 3,
         "parent": 887,
         "id": 888
     },
     {
-        "name": "nan",
+        "name": "Nan",
         "depth": 0,
         "id": 889,
         "parent": 0
@@ -5340,61 +5340,61 @@
         "parent": 0
     },
     {
-        "name": "Men's Toiletries",
+        "name": "Men'S Toiletries",
         "depth": 1,
         "parent": 890,
         "id": 891
     },
     {
-        "name": "Men's Shaving & Grooming",
+        "name": "Men'S Shaving & Grooming",
         "depth": 2,
         "parent": 891,
         "id": 892
     },
     {
-        "name": "Men's Shaving Gel",
+        "name": "Men'S Shaving Gel",
         "depth": 3,
         "parent": 892,
         "id": 893
     },
     {
-        "name": "Men's Razors & Blades",
+        "name": "Men'S Razors & Blades",
         "depth": 3,
         "parent": 892,
         "id": 894
     },
     {
-        "name": "Men's Hair Care",
+        "name": "Men'S Hair Care",
         "depth": 2,
         "parent": 891,
         "id": 895
     },
     {
-        "name": "Men's Hair Styling",
+        "name": "Men'S Hair Styling",
         "depth": 3,
         "parent": 895,
         "id": 896
     },
     {
-        "name": " Men's Hair Dye & Hair Loss",
+        "name": " Men'S Hair Dye & Hair Loss",
         "depth": 3,
         "parent": 895,
         "id": 897
     },
     {
-        "name": "Men's Shampoo & Conditioner",
+        "name": "Men'S Shampoo & Conditioner",
         "depth": 3,
         "parent": 895,
         "id": 898
     },
     {
-        "name": "Men's Skin Care",
+        "name": "Men'S Skin Care",
         "depth": 2,
         "parent": 891,
         "id": 899
     },
     {
-        "name": "Men's Face Wash & Scrubs",
+        "name": "Men'S Face Wash & Scrubs",
         "depth": 3,
         "parent": 899,
         "id": 900
@@ -5406,31 +5406,31 @@
         "id": 901
     },
     {
-        "name": "Men's Mousturisers & Shaving Balms",
+        "name": "Men'S Mousturisers & Shaving Balms",
         "depth": 3,
         "parent": 899,
         "id": 902
     },
     {
-        "name": "Men's Deodorant & Body Spray",
+        "name": "Men'S Deodorant & Body Spray",
         "depth": 2,
         "parent": 891,
         "id": 903
     },
     {
-        "name": "Men's Body Spray",
+        "name": "Men'S Body Spray",
         "depth": 3,
         "parent": 903,
         "id": 904
     },
     {
-        "name": "Men's Roll-On Deodorant",
+        "name": "Men'S Roll On Deodorant",
         "depth": 3,
         "parent": 903,
         "id": 905
     },
     {
-        "name": "Men's Spray Deodorant",
+        "name": "Men'S Spray Deodorant",
         "depth": 3,
         "parent": 903,
         "id": 906
@@ -5568,7 +5568,7 @@
         "id": 928
     },
     {
-        "name": "Multi-Benefit Toothpaste",
+        "name": "Multi Benefit Toothpaste",
         "depth": 3,
         "parent": 926,
         "id": 929
@@ -5592,7 +5592,7 @@
         "id": 932
     },
     {
-        "name": "Multi-Benefit Mouthwash",
+        "name": "Multi Benefit Mouthwash",
         "depth": 3,
         "parent": 932,
         "id": 933
@@ -5604,7 +5604,7 @@
         "id": 934
     },
     {
-        "name": "Alcohol-Free Mouthwash",
+        "name": "Alcohol Free Mouthwash",
         "depth": 3,
         "parent": 932,
         "id": 935
@@ -5622,7 +5622,7 @@
         "id": 937
     },
     {
-        "name": "Baby & Children's Dental Care",
+        "name": "Baby & Children'S Dental Care",
         "depth": 2,
         "parent": 907,
         "id": 938
@@ -5640,19 +5640,19 @@
         "id": 940
     },
     {
-        "name": "Children's Mouthwash",
+        "name": "Children'S Mouthwash",
         "depth": 3,
         "parent": 938,
         "id": 941
     },
     {
-        "name": "Children's Battery & Electric Toothbrushes",
+        "name": "Children'S Battery & Electric Toothbrushes",
         "depth": 3,
         "parent": 938,
         "id": 942
     },
     {
-        "name": "Women's Toiletries",
+        "name": "Women'S Toiletries",
         "depth": 1,
         "parent": 890,
         "id": 943
@@ -5700,37 +5700,37 @@
         "id": 950
     },
     {
-        "name": "Women's Shaving & Hair Removal",
+        "name": "Women'S Shaving & Hair Removal",
         "depth": 2,
         "parent": 943,
         "id": 951
     },
     {
-        "name": "Women's Shaving Gel",
+        "name": "Women'S Shaving Gel",
         "depth": 3,
         "parent": 951,
         "id": 952
     },
     {
-        "name": "Women's Hair Removal Cream",
+        "name": "Women'S Hair Removal Cream",
         "depth": 3,
         "parent": 951,
         "id": 953
     },
     {
-        "name": "Women's Waxing",
+        "name": "Women'S Waxing",
         "depth": 3,
         "parent": 951,
         "id": 954
     },
     {
-        "name": "Women's Razors & Blades",
+        "name": "Women'S Razors & Blades",
         "depth": 3,
         "parent": 951,
         "id": 955
     },
     {
-        "name": "Women's Deodorant & Body Spray",
+        "name": "Women'S Deodorant & Body Spray",
         "depth": 2,
         "parent": 943,
         "id": 956
@@ -5742,25 +5742,25 @@
         "id": 957
     },
     {
-        "name": "Women's Spray Deodorant",
+        "name": "Women'S Spray Deodorant",
         "depth": 3,
         "parent": 956,
         "id": 958
     },
     {
-        "name": "Women's Body Spray & Mists",
+        "name": "Women'S Body Spray & Mists",
         "depth": 3,
         "parent": 956,
         "id": 959
     },
     {
-        "name": "Women's Stick & Cream",
+        "name": "Women'S Stick & Cream",
         "depth": 3,
         "parent": 956,
         "id": 960
     },
     {
-        "name": "Women's Roll-On Deodorant",
+        "name": "Women'S Roll On Deodorant",
         "depth": 3,
         "parent": 956,
         "id": 961
@@ -5832,7 +5832,7 @@
         "id": 972
     },
     {
-        "name": "3 for 2 Travel Size Toiletries",
+        "name": "3 For 2 Travel Size Toiletries",
         "depth": 3,
         "parent": 972,
         "id": 973
@@ -5898,7 +5898,7 @@
         "id": 983
     },
     {
-        "name": " Foundation & BB/CC Cream",
+        "name": " Foundation & Bb/Cc Cream",
         "depth": 3,
         "parent": 977,
         "id": 984
@@ -6036,7 +6036,7 @@
         "id": 1006
     },
     {
-        "name": "Women's Bladder Weakness",
+        "name": "Women'S Bladder Weakness",
         "depth": 2,
         "parent": 1006,
         "id": 1007
@@ -6060,13 +6060,13 @@
         "id": 1010
     },
     {
-        "name": "Men's Bladder Weakness",
+        "name": "Men'S Bladder Weakness",
         "depth": 2,
         "parent": 1006,
         "id": 1011
     },
     {
-        "name": "Men's Bladder Weakness",
+        "name": "Men'S Bladder Weakness",
         "depth": 3,
         "parent": 1012,
         "id": 1012
@@ -6144,7 +6144,7 @@
         "id": 1024
     },
     {
-        "name": "Men's Shower Gel",
+        "name": "Men'S Shower Gel",
         "depth": 3,
         "parent": 1023,
         "id": 1025
@@ -6162,7 +6162,7 @@
         "id": 1027
     },
     {
-        "name": "Hand Gels & Sanitisers",
+        "name": "H& Gels & Sanitisers",
         "depth": 3,
         "parent": 1023,
         "id": 1028
@@ -6186,7 +6186,7 @@
         "id": 1031
     },
     {
-        "name": "Hand Wash",
+        "name": "H& Wash",
         "depth": 3,
         "parent": 1023,
         "id": 1032
@@ -6258,7 +6258,7 @@
         "id": 1043
     },
     {
-        "name": "Hands",
+        "name": "H&S",
         "depth": 2,
         "parent": 1043,
         "id": 1044
@@ -6396,7 +6396,7 @@
         "id": 1066
     },
     {
-        "name": "Shop by Skin Type",
+        "name": "Shop By Skin Type",
         "depth": 2,
         "parent": 1043,
         "id": 1067
@@ -6774,19 +6774,19 @@
         "id": 1129
     },
     {
-        "name": "Popular Brands",
+        "name": "Popular Br&S",
         "depth": 2,
         "parent": 1113,
         "id": 1130
     },
     {
-        "name": "Nando's",
+        "name": "N&O'S",
         "depth": 3,
         "parent": 1130,
         "id": 1131
     },
     {
-        "name": "COOK by ASDA",
+        "name": "Cook By Asda",
         "depth": 3,
         "parent": 1130,
         "id": 1132
@@ -6834,7 +6834,7 @@
         "id": 1139
     },
     {
-        "name": "BBQ & Burger Sauces",
+        "name": "Bbq & Burger Sauces",
         "depth": 3,
         "parent": 1133,
         "id": 1140
@@ -7020,13 +7020,13 @@
         "id": 1170
     },
     {
-        "name": "Boxes of Chocolates",
+        "name": "Boxes Of Chocolates",
         "depth": 3,
         "parent": 1170,
         "id": 1171
     },
     {
-        "name": "Chocolates to Share",
+        "name": "Chocolates To Share",
         "depth": 3,
         "parent": 1170,
         "id": 1172
@@ -7194,7 +7194,7 @@
         "id": 1199
     },
     {
-        "name": "Cream & Sandwich Biscuits",
+        "name": "Cream & S&Wich Biscuits",
         "depth": 3,
         "parent": 1197,
         "id": 1200
@@ -7458,7 +7458,7 @@
         "id": 1243
     },
     {
-        "name": "Sandwich Fillers",
+        "name": "S&Wich Fillers",
         "depth": 2,
         "parent": 1230,
         "id": 1244
@@ -7614,7 +7614,7 @@
         "id": 1269
     },
     {
-        "name": "Bran Flakes & Fruit n Fibre",
+        "name": "Bran Flakes & Fruit N Fibre",
         "depth": 3,
         "parent": 1266,
         "id": 1270
@@ -7662,7 +7662,7 @@
         "id": 1277
     },
     {
-        "name": "On the Go Breakfast",
+        "name": "On The Go Breakfast",
         "depth": 2,
         "parent": 1265,
         "id": 1278
@@ -7890,7 +7890,7 @@
         "id": 1315
     },
     {
-        "name": "Cake & Birthday Candles",
+        "name": "Cake & Birthday C&Les",
         "depth": 3,
         "parent": 1314,
         "id": 1316
@@ -7908,19 +7908,19 @@
         "parent": 0
     },
     {
-        "name": "BBQ",
+        "name": "Bbq",
         "depth": 1,
         "parent": 1318,
         "id": 1319
     },
     {
-        "name": "View All BBQ",
+        "name": "View All Bbq",
         "depth": 2,
         "parent": 1319,
         "id": 1320
     },
     {
-        "name": "View All BBQ",
+        "name": "View All Bbq",
         "depth": 3,
         "parent": 1321,
         "id": 1321
@@ -7956,7 +7956,7 @@
         "id": 1326
     },
     {
-        "name": "Beef Burgers & BBQ",
+        "name": "Beef Burgers & Bbq",
         "depth": 3,
         "parent": 1326,
         "id": 1327
@@ -8124,7 +8124,7 @@
         "id": 1354
     },
     {
-        "name": "Candles & Room Fragrances",
+        "name": "C&Les & Room Fragrances",
         "depth": 3,
         "parent": 1350,
         "id": 1355
@@ -8148,7 +8148,7 @@
         "id": 1358
     },
     {
-        "name": "DIY & Car Care",
+        "name": "Diy & Car Care",
         "depth": 1,
         "parent": 1328,
         "id": 1359
@@ -8202,7 +8202,7 @@
         "id": 1367
     },
     {
-        "name": "Hardware & DIY",
+        "name": "Hardware & Diy",
         "depth": 2,
         "parent": 1359,
         "id": 1368
@@ -8226,7 +8226,7 @@
         "id": 1371
     },
     {
-        "name": "Hand & Power Tools",
+        "name": "H& & Power Tools",
         "depth": 3,
         "parent": 1368,
         "id": 1372
@@ -8244,7 +8244,7 @@
         "id": 1374
     },
     {
-        "name": "Screenwash & De-Icer",
+        "name": "Screenwash & De Icer",
         "depth": 3,
         "parent": 1374,
         "id": 1375
@@ -8298,13 +8298,13 @@
         "id": 1383
     },
     {
-        "name": "Toys by Brand & Character",
+        "name": "Toys By Br& & Character",
         "depth": 2,
         "parent": 1383,
         "id": 1384
     },
     {
-        "name": "Play-Doh",
+        "name": "Play Doh",
         "depth": 3,
         "parent": 1384,
         "id": 1385
@@ -8334,13 +8334,13 @@
         "id": 1389
     },
     {
-        "name": "LEGO",
+        "name": "Lego",
         "depth": 3,
         "parent": 1384,
         "id": 1390
     },
     {
-        "name": "Toys by Type",
+        "name": "Toys By Type",
         "depth": 2,
         "parent": 1383,
         "id": 1391
@@ -8592,19 +8592,19 @@
         "id": 1432
     },
     {
-        "name": "TV Accessories",
+        "name": "Tv Accessories",
         "depth": 2,
         "parent": 1415,
         "id": 1433
     },
     {
-        "name": "TV Accessories",
+        "name": "Tv Accessories",
         "depth": 3,
         "parent": 1434,
         "id": 1434
     },
     {
-        "name": "Media Boxes & DVD Players",
+        "name": "Media Boxes & Dvd Players",
         "depth": 3,
         "parent": 1434,
         "id": 1435
@@ -8616,7 +8616,7 @@
         "id": 1436
     },
     {
-        "name": "CD Players",
+        "name": "Cd Players",
         "depth": 3,
         "parent": 1436,
         "id": 1437
@@ -8742,7 +8742,7 @@
         "id": 1457
     },
     {
-        "name": "Candles & Badges",
+        "name": "C&Les & Badges",
         "depth": 3,
         "parent": 1456,
         "id": 1458
@@ -8754,7 +8754,7 @@
         "id": 1459
     },
     {
-        "name": "Banners & Garlands",
+        "name": "Banners & Garl&S",
         "depth": 3,
         "parent": 1456,
         "id": 1460
@@ -8772,19 +8772,19 @@
         "id": 1462
     },
     {
-        "name": "JML",
+        "name": "Jml",
         "depth": 1,
         "parent": 1328,
         "id": 1463
     },
     {
-        "name": "View All JML",
+        "name": "View All Jml",
         "depth": 2,
         "parent": 1463,
         "id": 1464
     },
     {
-        "name": "View all JML",
+        "name": "View All Jml",
         "depth": 3,
         "parent": 1464,
         "id": 1465
@@ -8844,7 +8844,7 @@
         "id": 1474
     },
     {
-        "name": "AA Batteries",
+        "name": "Aa Batteries",
         "depth": 3,
         "parent": 1474,
         "id": 1475
@@ -8862,7 +8862,7 @@
         "id": 1477
     },
     {
-        "name": "AAA Batteries",
+        "name": "Aaa Batteries",
         "depth": 3,
         "parent": 1474,
         "id": 1478
@@ -9120,7 +9120,7 @@
         "id": 1520
     },
     {
-        "name": "Toasters & Sandwich Makers",
+        "name": "Toasters & S&Wich Makers",
         "depth": 3,
         "parent": 1518,
         "id": 1521
@@ -9726,13 +9726,13 @@
         "id": 1621
     },
     {
-        "name": "5 a Day Frozen Fruit & Vegetables",
+        "name": "5 A Day Frozen Fruit & Vegetables",
         "depth": 2,
         "parent": 1619,
         "id": 1622
     },
     {
-        "name": "5 a Day Frozen Fruit & Vegetables",
+        "name": "5 A Day Frozen Fruit & Vegetables",
         "depth": 3,
         "parent": 1623,
         "id": 1623
@@ -9762,7 +9762,7 @@
         "id": 1627
     },
     {
-        "name": "Scratch Cook from Frozen",
+        "name": "Scratch Cook From Frozen",
         "depth": 2,
         "parent": 1625,
         "id": 1628
@@ -9984,7 +9984,7 @@
         "id": 1664
     },
     {
-        "name": "View all Ready Meals",
+        "name": "View All Ready Meals",
         "depth": 3,
         "parent": 1664,
         "id": 1665
@@ -10314,7 +10314,7 @@
         "parent": 0
     },
     {
-        "name": "Plant Based by Asda",
+        "name": "Plant Based By Asda",
         "depth": 1,
         "parent": 1719,
         "id": 1720
@@ -10506,43 +10506,43 @@
         "id": 1751
     },
     {
-        "name": "OMV!",
+        "name": "Omv!",
         "depth": 1,
         "parent": 1719,
         "id": 1752
     },
     {
-        "name": "OMV! Meat Alternatives",
+        "name": "Omv! Meat Alternatives",
         "depth": 2,
         "parent": 1752,
         "id": 1753
     },
     {
-        "name": "OMV! Meat Alternatives",
+        "name": "Omv! Meat Alternatives",
         "depth": 3,
         "parent": 1754,
         "id": 1754
     },
     {
-        "name": "OMV! Ready Meals & Snacking",
+        "name": "Omv! Ready Meals & Snacking",
         "depth": 2,
         "parent": 1752,
         "id": 1755
     },
     {
-        "name": "OMV! Ready Meals & Snacking",
+        "name": "Omv! Ready Meals & Snacking",
         "depth": 3,
         "parent": 1756,
         "id": 1756
     },
     {
-        "name": "OMV! Food Cupboard",
+        "name": "Omv! Food Cupboard",
         "depth": 2,
         "parent": 1752,
         "id": 1757
     },
     {
-        "name": "OMV! Food Cupboard",
+        "name": "Omv! Food Cupboard",
         "depth": 3,
         "parent": 1758,
         "id": 1758

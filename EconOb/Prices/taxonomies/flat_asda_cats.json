@@ -138,7 +138,7 @@
         "id": 23
     },
     {
-        "name": "Cadbury & Mr Kipling Shop - Sponsored ",
+        "name": "Cadbury & Mr Kipling Shop   Sponsored ",
         "depth": 1,
         "parent": 1,
         "id": 24
@@ -156,13 +156,13 @@
         "id": 26
     },
     {
-        "name": "Rolls & Part-Baked",
+        "name": "Rolls & Part Baked",
         "depth": 1,
         "parent": 1,
         "id": 27
     },
     {
-        "name": "Part-Baked Bread & Rolls",
+        "name": "Part Baked Bread & Rolls",
         "depth": 2,
         "parent": 27,
         "id": 28
@@ -228,7 +228,7 @@
         "id": 38
     },
     {
-        "name": "Croissants, Brioche & Pain au Chocolat",
+        "name": "Croissants, Brioche & Pain Au Chocolat",
         "depth": 1,
         "parent": 1,
         "id": 39
@@ -306,7 +306,7 @@
         "id": 51
     },
     {
-        "name": "Celebration Station - Sponsored Shop",
+        "name": "Celebration Station   Sponsored Shop",
         "depth": 1,
         "parent": 1,
         "id": 52
@@ -576,7 +576,7 @@
         "id": 96
     },
     {
-        "name": "Standard Chicken Slices",
+        "name": "St&Ard Chicken Slices",
         "depth": 3,
         "parent": 96,
         "id": 97
@@ -618,7 +618,7 @@
         "id": 103
     },
     {
-        "name": "Standard Ham",
+        "name": "St&Ard Ham",
         "depth": 3,
         "parent": 102,
         "id": 104
@@ -1068,7 +1068,7 @@
         "id": 178
     },
     {
-        "name": "M\u00fcller Shop - Sponsored Shop",
+        "name": "M\u00fcller Shop   Sponsored Shop",
         "depth": 2,
         "parent": 170,
         "id": 179
@@ -1116,7 +1116,7 @@
         "id": 186
     },
     {
-        "name": "Activia Shop - Sponsored Shop",
+        "name": "Activia Shop   Sponsored Shop",
         "depth": 2,
         "parent": 170,
         "id": 187
@@ -1278,7 +1278,7 @@
         "id": 213
     },
     {
-        "name": "GU Shop - Sponsored",
+        "name": "Gu Shop   Sponsored",
         "depth": 1,
         "parent": 90,
         "id": 214
@@ -1314,7 +1314,7 @@
         "id": 219
     },
     {
-        "name": "Meals for Two & Sides",
+        "name": "Meals For Two & Sides",
         "depth": 2,
         "parent": 218,
         "id": 220
@@ -1380,7 +1380,7 @@
         "id": 230
     },
     {
-        "name": "Meals for One",
+        "name": "Meals For One",
         "depth": 2,
         "parent": 218,
         "id": 231
@@ -1428,13 +1428,13 @@
         "id": 238
     },
     {
-        "name": "Mains for Two",
+        "name": "Mains For Two",
         "depth": 3,
         "parent": 238,
         "id": 239
     },
     {
-        "name": "Shop by Cuisine",
+        "name": "Shop By Cuisine",
         "depth": 2,
         "parent": 218,
         "id": 240
@@ -1848,7 +1848,7 @@
         "id": 308
     },
     {
-        "name": "Sandwich Fillers",
+        "name": "S&Wich Fillers",
         "depth": 2,
         "parent": 303,
         "id": 309
@@ -1860,7 +1860,7 @@
         "id": 310
     },
     {
-        "name": "Alpro Shop - Sponsored",
+        "name": "Alpro Shop   Sponsored",
         "depth": 1,
         "parent": 90,
         "id": 311
@@ -1980,7 +1980,7 @@
         "parent": 0
     },
     {
-        "name": "Mars, Maltesers, M&M's & More - Sponsored Shop",
+        "name": "Mars, Maltesers, M&M'S & More   Sponsored Shop",
         "depth": 1,
         "parent": 330,
         "id": 331
@@ -2226,7 +2226,7 @@
         "id": 371
     },
     {
-        "name": "Stage 2 (7-10 Months)",
+        "name": "Stage 2 (7 10 Months)",
         "depth": 2,
         "parent": 370,
         "id": 372
@@ -2256,7 +2256,7 @@
         "id": 376
     },
     {
-        "name": "Stage 3 (10-12 Months)",
+        "name": "Stage 3 (10 12 Months)",
         "depth": 2,
         "parent": 370,
         "id": 377
@@ -2280,7 +2280,7 @@
         "id": 380
     },
     {
-        "name": "Stage 1 (4-6 Months)",
+        "name": "Stage 1 (4 6 Months)",
         "depth": 2,
         "parent": 370,
         "id": 381
@@ -2328,7 +2328,7 @@
         "id": 388
     },
     {
-        "name": "Toddler (12-36 Months)",
+        "name": "Toddler (12 36 Months)",
         "depth": 2,
         "parent": 370,
         "id": 389
@@ -2382,7 +2382,7 @@
         "id": 397
     },
     {
-        "name": "8-15 Years",
+        "name": "8 15 Years",
         "depth": 3,
         "parent": 397,
         "id": 398
@@ -2406,7 +2406,7 @@
         "id": 401
     },
     {
-        "name": "3-5 Years",
+        "name": "3 5 Years",
         "depth": 3,
         "parent": 397,
         "id": 402
@@ -2490,7 +2490,7 @@
         "id": 415
     },
     {
-        "name": "DryNites",
+        "name": "Drynites",
         "depth": 3,
         "parent": 415,
         "id": 416
@@ -2610,13 +2610,13 @@
         "id": 435
     },
     {
-        "name": "Aptamil Shop - Sponsored Shop ",
+        "name": "Aptamil Shop   Sponsored Shop ",
         "depth": 1,
         "parent": 333,
         "id": 436
     },
     {
-        "name": "Pre-measured Tabs",
+        "name": "Pre Measured Tabs",
         "depth": 2,
         "parent": 436,
         "id": 437
@@ -2640,13 +2640,13 @@
         "id": 440
     },
     {
-        "name": "Cow & Gate - Sponsored Shop",
+        "name": "Cow & Gate   Sponsored Shop",
         "depth": 1,
         "parent": 333,
         "id": 441
     },
     {
-        "name": "Toddler Milk - Stage 3",
+        "name": "Toddler Milk   Stage 3",
         "depth": 2,
         "parent": 441,
         "id": 442
@@ -2664,7 +2664,7 @@
         "id": 444
     },
     {
-        "name": "Follow On Milk - Stage 2",
+        "name": "Follow On Milk   Stage 2",
         "depth": 2,
         "parent": 441,
         "id": 445
@@ -2802,7 +2802,7 @@
         "id": 467
     },
     {
-        "name": "Follow On Milk (6-12 Months)",
+        "name": "Follow On Milk (6 12 Months)",
         "depth": 2,
         "parent": 467,
         "id": 468
@@ -2832,7 +2832,7 @@
         "id": 472
     },
     {
-        "name": "First Milk (0-6 Months)",
+        "name": "First Milk (0 6 Months)",
         "depth": 2,
         "parent": 467,
         "id": 473
@@ -2898,7 +2898,7 @@
         "id": 483
     },
     {
-        "name": "Pampers Shop - Sponsored",
+        "name": "Pampers Shop   Sponsored",
         "depth": 1,
         "parent": 333,
         "id": 484
@@ -2910,7 +2910,7 @@
         "id": 485
     },
     {
-        "name": "Baby-Dry Nappy Pants",
+        "name": "Baby Dry Nappy Pants",
         "depth": 2,
         "parent": 484,
         "id": 486
@@ -2922,7 +2922,7 @@
         "id": 487
     },
     {
-        "name": "Baby-Dry Taped Nappies",
+        "name": "Baby Dry Taped Nappies",
         "depth": 2,
         "parent": 484,
         "id": 488
@@ -2976,7 +2976,7 @@
         "id": 496
     },
     {
-        "name": "Candles, Reeds and Wax Melts",
+        "name": "C&Les, Reeds & Wax Melts",
         "depth": 2,
         "parent": 494,
         "id": 497
@@ -2988,7 +2988,7 @@
         "id": 498
     },
     {
-        "name": "Candles",
+        "name": "C&Les",
         "depth": 3,
         "parent": 497,
         "id": 499
@@ -3054,13 +3054,13 @@
         "id": 509
     },
     {
-        "name": "Medium Pack (9-12 Rolls)",
+        "name": "Medium Pack (9 12 Rolls)",
         "depth": 2,
         "parent": 509,
         "id": 510
     },
     {
-        "name": "Small Packs (2-6 Rolls)",
+        "name": "Small Packs (2 6 Rolls)",
         "depth": 2,
         "parent": 509,
         "id": 511
@@ -3330,7 +3330,7 @@
         "id": 555
     },
     {
-        "name": "Dustpans and Brushes",
+        "name": "Dustpans & Brushes",
         "depth": 3,
         "parent": 551,
         "id": 556
@@ -3522,7 +3522,7 @@
         "id": 587
     },
     {
-        "name": "Handwash & Delicates",
+        "name": "H&Wash & Delicates",
         "depth": 3,
         "parent": 584,
         "id": 588
@@ -3582,7 +3582,7 @@
         "id": 597
     },
     {
-        "name": "Hand Dishwashing ",
+        "name": "H& Dishwashing ",
         "depth": 2,
         "parent": 591,
         "id": 598
@@ -3918,7 +3918,7 @@
         "id": 653
     },
     {
-        "name": "Lucozade & Ribena Shop - Sponsored",
+        "name": "Lucozade & Ribena Shop   Sponsored",
         "depth": 1,
         "parent": 652,
         "id": 654
@@ -4080,19 +4080,19 @@
         "id": 680
     },
     {
-        "name": "Coca Cola Shop - Sponsored",
+        "name": "Coca Cola Shop   Sponsored",
         "depth": 1,
         "parent": 652,
         "id": 681
     },
     {
-        "name": "Coca-Cola Zero Sugar",
+        "name": "Coca Cola Zero Sugar",
         "depth": 2,
         "parent": 681,
         "id": 682
     },
     {
-        "name": "Coca-Cola Original Taste",
+        "name": "Coca Cola Original Taste",
         "depth": 2,
         "parent": 681,
         "id": 683
@@ -4428,13 +4428,13 @@
         "id": 738
     },
     {
-        "name": "Dandelion and Burdoch",
+        "name": "D&Elion & Burdoch",
         "depth": 3,
         "parent": 738,
         "id": 739
     },
     {
-        "name": "Shandy",
+        "name": "Sh&Y",
         "depth": 3,
         "parent": 738,
         "id": 740
@@ -5286,7 +5286,7 @@
         "parent": 0
     },
     {
-        "name": "Plant-Based",
+        "name": "Plant Based",
         "depth": 1,
         "parent": 881,
         "id": 882
@@ -5394,7 +5394,7 @@
         "parent": 0
     },
     {
-        "name": "Cocktail Shop - Sponsored",
+        "name": "Cocktail Shop   Sponsored",
         "depth": 1,
         "parent": 899,
         "id": 900
@@ -5484,7 +5484,7 @@
         "id": 914
     },
     {
-        "name": "ABInbev Delivery Pass Competition",
+        "name": "Abinbev Delivery Pass Competition",
         "depth": 2,
         "parent": 910,
         "id": 915
@@ -5508,7 +5508,7 @@
         "id": 918
     },
     {
-        "name": "IPA",
+        "name": "Ipa",
         "depth": 2,
         "parent": 918,
         "id": 919
@@ -5688,7 +5688,7 @@
         "id": 948
     },
     {
-        "name": "Brandy",
+        "name": "Br&Y",
         "depth": 2,
         "parent": 930,
         "id": 949
@@ -5700,7 +5700,7 @@
         "id": 950
     },
     {
-        "name": "Brandy",
+        "name": "Br&Y",
         "depth": 3,
         "parent": 951,
         "id": 951
@@ -5784,7 +5784,7 @@
         "id": 964
     },
     {
-        "name": "UK",
+        "name": "Uk",
         "depth": 3,
         "parent": 959,
         "id": 965
@@ -5802,7 +5802,7 @@
         "id": 967
     },
     {
-        "name": "New Zealand",
+        "name": "New Zeal&",
         "depth": 3,
         "parent": 959,
         "id": 968
@@ -5880,7 +5880,7 @@
         "id": 980
     },
     {
-        "name": "UK",
+        "name": "Uk",
         "depth": 3,
         "parent": 980,
         "id": 981
@@ -5916,7 +5916,7 @@
         "id": 986
     },
     {
-        "name": "UK",
+        "name": "Uk",
         "depth": 3,
         "parent": 982,
         "id": 987
@@ -5940,7 +5940,7 @@
         "id": 990
     },
     {
-        "name": "UK",
+        "name": "Uk",
         "depth": 3,
         "parent": 989,
         "id": 991
@@ -6006,7 +6006,7 @@
         "id": 1001
     },
     {
-        "name": "New Zealand",
+        "name": "New Zeal&",
         "depth": 3,
         "parent": 994,
         "id": 1002
@@ -6030,7 +6030,7 @@
         "id": 1005
     },
     {
-        "name": "UK",
+        "name": "Uk",
         "depth": 3,
         "parent": 1004,
         "id": 1006
@@ -6150,13 +6150,13 @@
         "id": 1025
     },
     {
-        "name": "20g - 30g Rolling Tobacco ",
+        "name": "20G   30G Rolling Tobacco ",
         "depth": 3,
         "parent": 1025,
         "id": 1026
     },
     {
-        "name": "50g Rolling Tobacco ",
+        "name": "50G Rolling Tobacco ",
         "depth": 3,
         "parent": 1025,
         "id": 1027
@@ -6228,13 +6228,13 @@
         "id": 1038
     },
     {
-        "name": "POD Refills",
+        "name": "Pod Refills",
         "depth": 3,
         "parent": 1037,
         "id": 1039
     },
     {
-        "name": "POD Systems",
+        "name": "Pod Systems",
         "depth": 3,
         "parent": 1037,
         "id": 1040
@@ -6252,7 +6252,7 @@
         "id": 1042
     },
     {
-        "name": "Cider Shop - Sponsored",
+        "name": "Cider Shop   Sponsored",
         "depth": 1,
         "parent": 899,
         "id": 1043
@@ -6360,7 +6360,7 @@
         "id": 1060
     },
     {
-        "name": "Easy to Cook",
+        "name": "Easy To Cook",
         "depth": 2,
         "parent": 1059,
         "id": 1061
@@ -6396,7 +6396,7 @@
         "id": 1066
     },
     {
-        "name": "3 for \u00a310 Meat & Fish",
+        "name": "3 For \u00a310 Meat & Fish",
         "depth": 1,
         "parent": 1058,
         "id": 1067
@@ -6612,7 +6612,7 @@
         "id": 1102
     },
     {
-        "name": "Easy to Cook",
+        "name": "Easy To Cook",
         "depth": 2,
         "parent": 1100,
         "id": 1103
@@ -6684,7 +6684,7 @@
         "id": 1114
     },
     {
-        "name": "BBQ",
+        "name": "Bbq",
         "depth": 1,
         "parent": 1058,
         "id": 1115
@@ -6798,7 +6798,7 @@
         "parent": 0
     },
     {
-        "name": "Frozen Offer Buy 3 for \u00a39",
+        "name": "Frozen Offer Buy 3 For \u00a39",
         "depth": 1,
         "parent": 1133,
         "id": 1134
@@ -7332,7 +7332,7 @@
         "id": 1222
     },
     {
-        "name": "McCain Shop - Sponsored",
+        "name": "Mccain Shop   Sponsored",
         "depth": 1,
         "parent": 1133,
         "id": 1223
@@ -7410,7 +7410,7 @@
         "id": 1235
     },
     {
-        "name": "Chicken Kiev's",
+        "name": "Chicken Kiev'S",
         "depth": 3,
         "parent": 1231,
         "id": 1236
@@ -7656,7 +7656,7 @@
         "id": 1276
     },
     {
-        "name": "nan",
+        "name": "Nan",
         "depth": 0,
         "id": 1277,
         "parent": 0
@@ -7716,7 +7716,7 @@
         "id": 1286
     },
     {
-        "name": "3 for \u00a310 Meat & Fish",
+        "name": "3 For \u00a310 Meat & Fish",
         "depth": 1,
         "parent": 1278,
         "id": 1287
@@ -7836,7 +7836,7 @@
         "parent": 0
     },
     {
-        "name": "Ear, Eye and Mouth Care",
+        "name": "Ear, Eye & Mouth Care",
         "depth": 1,
         "parent": 1306,
         "id": 1307
@@ -7884,7 +7884,7 @@
         "id": 1314
     },
     {
-        "name": "Pregnancy & Ovulation kits",
+        "name": "Pregnancy & Ovulation Kits",
         "depth": 2,
         "parent": 1314,
         "id": 1315
@@ -7932,7 +7932,7 @@
         "id": 1322
     },
     {
-        "name": "IBS",
+        "name": "Ibs",
         "depth": 2,
         "parent": 1319,
         "id": 1323
@@ -7950,7 +7950,7 @@
         "id": 1325
     },
     {
-        "name": "Children's ",
+        "name": "Children'S ",
         "depth": 1,
         "parent": 1306,
         "id": 1326
@@ -7974,7 +7974,7 @@
         "id": 1329
     },
     {
-        "name": "Children's Pain ",
+        "name": "Children'S Pain ",
         "depth": 2,
         "parent": 1326,
         "id": 1330
@@ -8010,7 +8010,7 @@
         "id": 1335
     },
     {
-        "name": "Women's Health",
+        "name": "Women'S Health",
         "depth": 1,
         "parent": 1306,
         "id": 1336
@@ -8088,7 +8088,7 @@
         "id": 1348
     },
     {
-        "name": "Athlete's Foot",
+        "name": "Athlete'S Foot",
         "depth": 2,
         "parent": 1347,
         "id": 1349
@@ -8148,7 +8148,7 @@
         "id": 1358
     },
     {
-        "name": "Plasters, Wipes & Bandages",
+        "name": "Plasters, Wipes & B&Ages",
         "depth": 2,
         "parent": 1356,
         "id": 1359
@@ -8250,7 +8250,7 @@
         "id": 1375
     },
     {
-        "name": "Women's Health",
+        "name": "Women'S Health",
         "depth": 2,
         "parent": 1372,
         "id": 1376
@@ -8286,7 +8286,7 @@
         "id": 1381
     },
     {
-        "name": "Men's Health",
+        "name": "Men'S Health",
         "depth": 2,
         "parent": 1372,
         "id": 1382
@@ -8562,7 +8562,7 @@
         "id": 1427
     },
     {
-        "name": "0-2 Years",
+        "name": "0 2 Years",
         "depth": 3,
         "parent": 1427,
         "id": 1428
@@ -8730,7 +8730,7 @@
         "id": 1455
     },
     {
-        "name": "Sensodyne - Sponsored Shop",
+        "name": "Sensodyne   Sponsored Shop",
         "depth": 1,
         "parent": 1419,
         "id": 1456
@@ -8742,13 +8742,13 @@
         "id": 1457
     },
     {
-        "name": "Dental care for your family",
+        "name": "Dental Care For Your Family",
         "depth": 2,
         "parent": 1456,
         "id": 1458
     },
     {
-        "name": "Colgate - Sponsored Shop",
+        "name": "Colgate   Sponsored Shop",
         "depth": 1,
         "parent": 1419,
         "id": 1459
@@ -8784,7 +8784,7 @@
         "id": 1464
     },
     {
-        "name": "Menopause Shop - Sponsored Shop",
+        "name": "Menopause Shop   Sponsored Shop",
         "depth": 1,
         "parent": 1419,
         "id": 1465
@@ -8808,7 +8808,7 @@
         "id": 1468
     },
     {
-        "name": "Sanex - Sponsored Shop",
+        "name": "Sanex   Sponsored Shop",
         "depth": 1,
         "parent": 1419,
         "id": 1469
@@ -8862,7 +8862,7 @@
         "id": 1477
     },
     {
-        "name": "Hair Band & Ties",
+        "name": "Hair B& & Ties",
         "depth": 3,
         "parent": 1476,
         "id": 1478
@@ -8958,19 +8958,19 @@
         "id": 1493
     },
     {
-        "name": "Medicated & Anti Dandruff",
+        "name": "Medicated & Anti D&Ruff",
         "depth": 3,
         "parent": 1493,
         "id": 1494
     },
     {
-        "name": "2 in 1",
+        "name": "2 In 1",
         "depth": 3,
         "parent": 1493,
         "id": 1495
     },
     {
-        "name": "Treatment and Masks",
+        "name": "Treatment & Masks",
         "depth": 3,
         "parent": 1493,
         "id": 1496
@@ -9036,7 +9036,7 @@
         "id": 1506
     },
     {
-        "name": "got2b",
+        "name": "Got2B",
         "depth": 3,
         "parent": 1505,
         "id": 1507
@@ -9228,7 +9228,7 @@
         "id": 1538
     },
     {
-        "name": "Soap & Hand Wash",
+        "name": "Soap & H& Wash",
         "depth": 2,
         "parent": 1535,
         "id": 1539
@@ -9246,13 +9246,13 @@
         "id": 1541
     },
     {
-        "name": "Hand Sanitiser",
+        "name": "H& Sanitiser",
         "depth": 2,
         "parent": 1535,
         "id": 1542
     },
     {
-        "name": "Men's Toiletries",
+        "name": "Men'S Toiletries",
         "depth": 1,
         "parent": 1419,
         "id": 1543
@@ -9498,7 +9498,7 @@
         "id": 1583
     },
     {
-        "name": "Sustainables and Reusables",
+        "name": "Sustainables & Reusables",
         "depth": 2,
         "parent": 1583,
         "id": 1584
@@ -9606,7 +9606,7 @@
         "id": 1601
     },
     {
-        "name": "Lip, Hand & Foot Care",
+        "name": "Lip, H& & Foot Care",
         "depth": 2,
         "parent": 1595,
         "id": 1602
@@ -9618,7 +9618,7 @@
         "id": 1603
     },
     {
-        "name": "Hand Care",
+        "name": "H& Care",
         "depth": 3,
         "parent": 1602,
         "id": 1604
@@ -9666,7 +9666,7 @@
         "id": 1611
     },
     {
-        "name": "Anti-Ageing",
+        "name": "Anti Ageing",
         "depth": 3,
         "parent": 1610,
         "id": 1612
@@ -9678,7 +9678,7 @@
         "id": 1613
     },
     {
-        "name": "BB Cream & CC Cream",
+        "name": "Bb Cream & Cc Cream",
         "depth": 3,
         "parent": 1610,
         "id": 1614
@@ -10332,7 +10332,7 @@
         "id": 1722
     },
     {
-        "name": "Schwartz Shop - Sponsored ",
+        "name": "Schwartz Shop   Sponsored ",
         "depth": 1,
         "parent": 1624,
         "id": 1723
@@ -11148,7 +11148,7 @@
         "id": 1858
     },
     {
-        "name": "Horseradish & Hollandaise",
+        "name": "Horseradish & Holl&Aise",
         "depth": 2,
         "parent": 1833,
         "id": 1859
@@ -11184,13 +11184,13 @@
         "id": 1864
     },
     {
-        "name": "BBQ",
+        "name": "Bbq",
         "depth": 2,
         "parent": 1833,
         "id": 1865
     },
     {
-        "name": "BBQ Sauce",
+        "name": "Bbq Sauce",
         "depth": 3,
         "parent": 1865,
         "id": 1866
@@ -11346,7 +11346,7 @@
         "id": 1891
     },
     {
-        "name": "Best Sellers Cereals - Sponsored",
+        "name": "Best Sellers Cereals   Sponsored",
         "depth": 2,
         "parent": 1888,
         "id": 1892
@@ -11652,7 +11652,7 @@
         "id": 1942
     },
     {
-        "name": "Morrison's Bakes It",
+        "name": "Morrison'S Bakes It",
         "depth": 1,
         "parent": 1624,
         "id": 1943
@@ -11676,7 +11676,7 @@
         "id": 1946
     },
     {
-        "name": "Covering the Bake",
+        "name": "Covering The Bake",
         "depth": 2,
         "parent": 1943,
         "id": 1947
@@ -11700,7 +11700,7 @@
         "id": 1950
     },
     {
-        "name": "Decorating the Bake",
+        "name": "Decorating The Bake",
         "depth": 2,
         "parent": 1943,
         "id": 1951
@@ -11718,7 +11718,7 @@
         "id": 1953
     },
     {
-        "name": "Candles",
+        "name": "C&Les",
         "depth": 3,
         "parent": 1951,
         "id": 1954
@@ -11730,7 +11730,7 @@
         "id": 1955
     },
     {
-        "name": "In the Bake",
+        "name": "In The Bake",
         "depth": 2,
         "parent": 1943,
         "id": 1956
@@ -11802,13 +11802,13 @@
         "id": 1967
     },
     {
-        "name": "Ready to Use",
+        "name": "Ready To Use",
         "depth": 3,
         "parent": 1965,
         "id": 1968
     },
     {
-        "name": "Mcvities True Orignals - Sponsored Shop",
+        "name": "Mcvities True Orignals   Sponsored Shop",
         "depth": 1,
         "parent": 1624,
         "id": 1969
@@ -11832,7 +11832,7 @@
         "id": 1972
     },
     {
-        "name": "Carr's",
+        "name": "Carr'S",
         "depth": 2,
         "parent": 1969,
         "id": 1973
@@ -12342,7 +12342,7 @@
         "parent": 0
     },
     {
-        "name": "DIY",
+        "name": "Diy",
         "depth": 1,
         "parent": 2057,
         "id": 2058
@@ -12360,7 +12360,7 @@
         "id": 2060
     },
     {
-        "name": "LED",
+        "name": "Led",
         "depth": 3,
         "parent": 2060,
         "id": 2061
@@ -12414,13 +12414,13 @@
         "id": 2069
     },
     {
-        "name": "BBQ, Garden & Outdoor Living",
+        "name": "Bbq, Garden & Outdoor Living",
         "depth": 1,
         "parent": 2057,
         "id": 2070
     },
     {
-        "name": "Candles, Outdoor Lighting & Decor",
+        "name": "C&Les, Outdoor Lighting & Decor",
         "depth": 2,
         "parent": 2070,
         "id": 2071
@@ -12432,7 +12432,7 @@
         "id": 2072
     },
     {
-        "name": "Outdoor Lighting & Candles",
+        "name": "Outdoor Lighting & C&Les",
         "depth": 3,
         "parent": 2071,
         "id": 2073
@@ -12534,7 +12534,7 @@
         "id": 2089
     },
     {
-        "name": "BBQ, Picnic & Disposable Tableware",
+        "name": "Bbq, Picnic & Disposable Tableware",
         "depth": 2,
         "parent": 2070,
         "id": 2090
@@ -12552,7 +12552,7 @@
         "id": 2092
     },
     {
-        "name": "BBQ",
+        "name": "Bbq",
         "depth": 3,
         "parent": 2090,
         "id": 2093
@@ -12654,13 +12654,13 @@
         "id": 2109
     },
     {
-        "name": "AA",
+        "name": "Aa",
         "depth": 2,
         "parent": 2105,
         "id": 2110
     },
     {
-        "name": "AAA",
+        "name": "Aaa",
         "depth": 2,
         "parent": 2105,
         "id": 2111
@@ -12792,7 +12792,7 @@
         "id": 2132
     },
     {
-        "name": "Children's Bedroom",
+        "name": "Children'S Bedroom",
         "depth": 2,
         "parent": 2122,
         "id": 2133
@@ -12978,7 +12978,7 @@
         "id": 2163
     },
     {
-        "name": "Shop By Brand",
+        "name": "Shop By Br&",
         "depth": 3,
         "parent": 2159,
         "id": 2164
@@ -13014,7 +13014,7 @@
         "id": 2169
     },
     {
-        "name": "Sieves & Colanders",
+        "name": "Sieves & Col&Ers",
         "depth": 3,
         "parent": 2166,
         "id": 2170
@@ -13242,7 +13242,7 @@
         "id": 2207
     },
     {
-        "name": "Back to School",
+        "name": "Back To School",
         "depth": 3,
         "parent": 2205,
         "id": 2208
@@ -13278,7 +13278,7 @@
         "id": 2213
     },
     {
-        "name": "Elastic Bands",
+        "name": "Elastic B&S",
         "depth": 3,
         "parent": 2209,
         "id": 2214
@@ -13314,7 +13314,7 @@
         "id": 2219
     },
     {
-        "name": "Back to School",
+        "name": "Back To School",
         "depth": 3,
         "parent": 2219,
         "id": 2220
@@ -13446,7 +13446,7 @@
         "id": 2241
     },
     {
-        "name": "Candles & Home Fragrance",
+        "name": "C&Les & Home Fragrance",
         "depth": 1,
         "parent": 2057,
         "id": 2242
@@ -13464,13 +13464,13 @@
         "id": 2244
     },
     {
-        "name": "Scented Candles",
+        "name": "Scented C&Les",
         "depth": 2,
         "parent": 2242,
         "id": 2245
     },
     {
-        "name": "Unscented Candles",
+        "name": "Unscented C&Les",
         "depth": 2,
         "parent": 2242,
         "id": 2246
@@ -13980,7 +13980,7 @@
         "id": 2330
     },
     {
-        "name": "AA",
+        "name": "Aa",
         "depth": 2,
         "parent": 2328,
         "id": 2331
@@ -13992,7 +13992,7 @@
         "id": 2332
     },
     {
-        "name": "AAA",
+        "name": "Aaa",
         "depth": 2,
         "parent": 2328,
         "id": 2333
@@ -14046,7 +14046,7 @@
         "id": 2341
     },
     {
-        "name": "Dressing up & Roleplay",
+        "name": "Dressing Up & Roleplay",
         "depth": 2,
         "parent": 2335,
         "id": 2342
@@ -14088,19 +14088,19 @@
         "id": 2348
     },
     {
-        "name": "LEGO",
+        "name": "Lego",
         "depth": 2,
         "parent": 2335,
         "id": 2349
     },
     {
-        "name": "Baby & Pre-School ",
+        "name": "Baby & Pre School ",
         "depth": 2,
         "parent": 2335,
         "id": 2350
     },
     {
-        "name": "Mother's Day",
+        "name": "Mother'S Day",
         "depth": 1,
         "parent": 2315,
         "id": 2351
@@ -14118,7 +14118,7 @@
         "id": 2353
     },
     {
-        "name": "Candles",
+        "name": "C&Les",
         "depth": 2,
         "parent": 2353,
         "id": 2354
@@ -14274,7 +14274,7 @@
         "id": 2379
     },
     {
-        "name": "Children's Books",
+        "name": "Children'S Books",
         "depth": 2,
         "parent": 2379,
         "id": 2380
@@ -14346,7 +14346,7 @@
         "id": 2391
     },
     {
-        "name": "Rolls & Part-Baked",
+        "name": "Rolls & Part Baked",
         "depth": 3,
         "parent": 2390,
         "id": 2392
@@ -14466,7 +14466,7 @@
         "id": 2411
     },
     {
-        "name": "On the Go & Snacking",
+        "name": "On The Go & Snacking",
         "depth": 2,
         "parent": 2410,
         "id": 2412
@@ -14748,7 +14748,7 @@
         "id": 2458
     },
     {
-        "name": "Coriander",
+        "name": "Cori&Er",
         "depth": 3,
         "parent": 2454,
         "id": 2459
@@ -15216,61 +15216,61 @@
         "parent": 0
     },
     {
-        "name": "Fruit Pots - 200 Points",
+        "name": "Fruit Pots   200 Points",
         "depth": 1,
         "parent": 2536,
         "id": 2537
     },
     {
-        "name": "Vaseline - 300 Points",
+        "name": "Vaseline   300 Points",
         "depth": 1,
         "parent": 2536,
         "id": 2538
     },
     {
-        "name": "Pampers Wipes - 100 Points",
+        "name": "Pampers Wipes   100 Points",
         "depth": 1,
         "parent": 2536,
         "id": 2539
     },
     {
-        "name": "Deli - 500 Points (Buy 3 Items)",
+        "name": "Deli   500 Points (Buy 3 Items)",
         "depth": 1,
         "parent": 2536,
         "id": 2540
     },
     {
-        "name": "Huggies Drynites - 1800 Points",
+        "name": "Huggies Drynites   1800 Points",
         "depth": 1,
         "parent": 2536,
         "id": 2541
     },
     {
-        "name": "Robinsons - 200 Points",
+        "name": "Robinsons   200 Points",
         "depth": 1,
         "parent": 2536,
         "id": 2542
     },
     {
-        "name": "Takeaway Bags - 1000 Points",
+        "name": "Takeaway Bags   1000 Points",
         "depth": 1,
         "parent": 2536,
         "id": 2543
     },
     {
-        "name": "BBQ Meat - 500 Points (Spend \u00a35)",
+        "name": "Bbq Meat   500 Points (Spend \u00a35)",
         "depth": 1,
         "parent": 2536,
         "id": 2544
     },
     {
-        "name": "Celebration Cakes - 1000 Points",
+        "name": "Celebration Cakes   1000 Points",
         "depth": 1,
         "parent": 2536,
         "id": 2545
     },
     {
-        "name": "Huggies Pull Ups - 4000 Points",
+        "name": "Huggies Pull Ups   4000 Points",
         "depth": 1,
         "parent": 2536,
         "id": 2546
@@ -15384,7 +15384,7 @@
         "id": 2564
     },
     {
-        "name": "Dentalife Shop - Sponsored",
+        "name": "Dentalife Shop   Sponsored",
         "depth": 1,
         "parent": 2547,
         "id": 2565
@@ -15468,7 +15468,7 @@
         "id": 2578
     },
     {
-        "name": "Kitten Food (0-1 Year)",
+        "name": "Kitten Food (0 1 Year)",
         "depth": 3,
         "parent": 2578,
         "id": 2579
@@ -15480,7 +15480,7 @@
         "id": 2580
     },
     {
-        "name": "Adult Cat Food (1-6 Years)",
+        "name": "Adult Cat Food (1 6 Years)",
         "depth": 3,
         "parent": 2578,
         "id": 2581
@@ -15516,7 +15516,7 @@
         "id": 2586
     },
     {
-        "name": "Kitten Food (0-1 Year)",
+        "name": "Kitten Food (0 1 Year)",
         "depth": 2,
         "parent": 2576,
         "id": 2587
@@ -15552,7 +15552,7 @@
         "id": 2592
     },
     {
-        "name": "Adult Cat Food (1-6 Years)",
+        "name": "Adult Cat Food (1 6 Years)",
         "depth": 2,
         "parent": 2576,
         "id": 2593
@@ -15600,7 +15600,7 @@
         "id": 2600
     },
     {
-        "name": "Kitten Food (0-1 Year)",
+        "name": "Kitten Food (0 1 Year)",
         "depth": 3,
         "parent": 2600,
         "id": 2601
@@ -15612,7 +15612,7 @@
         "id": 2602
     },
     {
-        "name": "Adult Cat Food (1-6 Years)",
+        "name": "Adult Cat Food (1 6 Years)",
         "depth": 3,
         "parent": 2600,
         "id": 2603
@@ -15708,7 +15708,7 @@
         "id": 2618
     },
     {
-        "name": "Advertised Brand",
+        "name": "Advertised Br&",
         "depth": 1,
         "parent": 2547,
         "id": 2619
@@ -15720,7 +15720,7 @@
         "id": 2620
     },
     {
-        "name": "Bigger Pack for Dogs",
+        "name": "Bigger Pack For Dogs",
         "depth": 2,
         "parent": 2620,
         "id": 2621
@@ -15774,7 +15774,7 @@
         "id": 2629
     },
     {
-        "name": "Puppy Food (0-2 Years)",
+        "name": "Puppy Food (0 2 Years)",
         "depth": 3,
         "parent": 2629,
         "id": 2630
@@ -15852,7 +15852,7 @@
         "id": 2642
     },
     {
-        "name": "Puppy Food (0-2 Years)",
+        "name": "Puppy Food (0 2 Years)",
         "depth": 2,
         "parent": 2623,
         "id": 2643
@@ -15882,7 +15882,7 @@
         "id": 2647
     },
     {
-        "name": "Puppy Food (0-2 Years)",
+        "name": "Puppy Food (0 2 Years)",
         "depth": 3,
         "parent": 2647,
         "id": 2648
