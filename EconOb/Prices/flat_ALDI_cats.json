@@ -1,0 +1,1199 @@
+[
+    {
+        "name": "baby-toddler"
+    },
+    {
+        "name": "nappies-wipes",
+        "parent": "baby-toddler"
+    },
+    {
+        "name": "wipes",
+        "parent": "nappies-wipes"
+    },
+    {
+        "name": "nappies",
+        "parent": "nappies-wipes"
+    },
+    {
+        "name": "baby-food-drink",
+        "parent": "baby-toddler"
+    },
+    {
+        "name": "pouches-pots",
+        "parent": "baby-food-drink"
+    },
+    {
+        "name": "formula",
+        "parent": "baby-food-drink"
+    },
+    {
+        "name": "snacks-finger-foods",
+        "parent": "baby-food-drink"
+    },
+    {
+        "name": "drinks"
+    },
+    {
+        "name": "tea",
+        "parent": "drinks"
+    },
+    {
+        "name": "herbal-tea",
+        "parent": "tea"
+    },
+    {
+        "name": "green-tea",
+        "parent": "tea"
+    },
+    {
+        "name": "everyday-tea",
+        "parent": "tea"
+    },
+    {
+        "name": "soft-drinks-juices",
+        "parent": "drinks"
+    },
+    {
+        "name": "flavoured-water",
+        "parent": "soft-drinks-juices"
+    },
+    {
+        "name": "squash-cordial",
+        "parent": "soft-drinks-juices"
+    },
+    {
+        "name": "water",
+        "parent": "soft-drinks-juices"
+    },
+    {
+        "name": "sports-energy-drinks",
+        "parent": "soft-drinks-juices"
+    },
+    {
+        "name": "soft-drinks-fruit-carbonates",
+        "parent": "soft-drinks-juices"
+    },
+    {
+        "name": "juices",
+        "parent": "soft-drinks-juices"
+    },
+    {
+        "name": "tonics-mixers",
+        "parent": "soft-drinks-juices"
+    },
+    {
+        "name": "juices-childrens-drinks",
+        "parent": "soft-drinks-juices"
+    },
+    {
+        "name": "spirits-liqueurs",
+        "parent": "drinks"
+    },
+    {
+        "name": "spirits",
+        "parent": "spirits-liqueurs"
+    },
+    {
+        "name": "liqueurs-speciality-spirits",
+        "parent": "spirits-liqueurs"
+    },
+    {
+        "name": "ready-to-drink",
+        "parent": "spirits-liqueurs"
+    },
+    {
+        "name": "wine",
+        "parent": "drinks"
+    },
+    {
+        "name": "red-wine",
+        "parent": "wine"
+    },
+    {
+        "name": "white-wine",
+        "parent": "wine"
+    },
+    {
+        "name": "prosecco-champagne-sparkling-wine",
+        "parent": "wine"
+    },
+    {
+        "name": "fortified-wine",
+        "parent": "wine"
+    },
+    {
+        "name": "wine-based-drinks-wine-assorted",
+        "parent": "wine"
+    },
+    {
+        "name": "rose-wine",
+        "parent": "wine"
+    },
+    {
+        "name": "beers-ciders",
+        "parent": "drinks"
+    },
+    {
+        "name": "beer-lagers-ales",
+        "parent": "beers-ciders"
+    },
+    {
+        "name": "beer-alternates",
+        "parent": "beers-ciders"
+    },
+    {
+        "name": "cider",
+        "parent": "beers-ciders"
+    },
+    {
+        "name": "coffee",
+        "parent": "drinks"
+    },
+    {
+        "name": "coffee-beans-ground-coffee",
+        "parent": "coffee"
+    },
+    {
+        "name": "powder-mixes",
+        "parent": "coffee"
+    },
+    {
+        "name": "coffee-capsules",
+        "parent": "coffee"
+    },
+    {
+        "name": "instant-coffee",
+        "parent": "coffee"
+    },
+    {
+        "name": "bakery"
+    },
+    {
+        "name": "tea-break-sweet-treats",
+        "parent": "bakery"
+    },
+    {
+        "name": "fresh-small-baked-goods",
+        "parent": "tea-break-sweet-treats"
+    },
+    {
+        "name": "cakes",
+        "parent": "bakery"
+    },
+    {
+        "name": "cakes",
+        "parent": "cakes"
+    },
+    {
+        "name": "fresh-cakes",
+        "parent": "cakes"
+    },
+    {
+        "name": "breakfast-pastries-croissants",
+        "parent": "bakery"
+    },
+    {
+        "name": "fresh-pastry-goods",
+        "parent": "breakfast-pastries-croissants"
+    },
+    {
+        "name": "pastries-croissants",
+        "parent": "breakfast-pastries-croissants"
+    },
+    {
+        "name": "bread",
+        "parent": "bakery"
+    },
+    {
+        "name": "speciality-breads",
+        "parent": "bread"
+    },
+    {
+        "name": "part-baked-breads",
+        "parent": "bread"
+    },
+    {
+        "name": "ambient-bread",
+        "parent": "bread"
+    },
+    {
+        "name": "bread",
+        "parent": "bread"
+    },
+    {
+        "name": "rolls",
+        "parent": "bread"
+    },
+    {
+        "name": "branded-bread",
+        "parent": "bread"
+    },
+    {
+        "name": "household"
+    },
+    {
+        "name": "laundry",
+        "parent": "household"
+    },
+    {
+        "name": "fabric-conditioners",
+        "parent": "laundry"
+    },
+    {
+        "name": "washing-liquids-powders",
+        "parent": "laundry"
+    },
+    {
+        "name": "air-fresheners",
+        "parent": "household"
+    },
+    {
+        "name": "air-fresheners",
+        "parent": "air-fresheners"
+    },
+    {
+        "name": "toilet-roll-kitchen-roll-tissues",
+        "parent": "household"
+    },
+    {
+        "name": "tissues",
+        "parent": "toilet-roll-kitchen-roll-tissues"
+    },
+    {
+        "name": "kitchen-towels",
+        "parent": "toilet-roll-kitchen-roll-tissues"
+    },
+    {
+        "name": "toilet-roll",
+        "parent": "toilet-roll-kitchen-roll-tissues"
+    },
+    {
+        "name": "house-cleaning",
+        "parent": "household"
+    },
+    {
+        "name": "toilet-cleaners-fresheners",
+        "parent": "house-cleaning"
+    },
+    {
+        "name": "cleaning-cloths-sponges-gloves",
+        "parent": "house-cleaning"
+    },
+    {
+        "name": "cleaners",
+        "parent": "house-cleaning"
+    },
+    {
+        "name": "food-bags-foil-cling-film",
+        "parent": "household"
+    },
+    {
+        "name": "food-bags-foil-cling-film",
+        "parent": "food-bags-foil-cling-film"
+    },
+    {
+        "name": "carrier-bags",
+        "parent": "food-bags-foil-cling-film"
+    },
+    {
+        "name": "dishwashing",
+        "parent": "household"
+    },
+    {
+        "name": "dishwashing-detergents",
+        "parent": "dishwashing"
+    },
+    {
+        "name": "batteries",
+        "parent": "household"
+    },
+    {
+        "name": "batteries-rechargeables",
+        "parent": "batteries"
+    },
+    {
+        "name": "frozen"
+    },
+    {
+        "name": "ice-cream-desserts",
+        "parent": "frozen"
+    },
+    {
+        "name": "ice-cream",
+        "parent": "ice-cream-desserts"
+    },
+    {
+        "name": "desserts-pastries",
+        "parent": "ice-cream-desserts"
+    },
+    {
+        "name": "frozen-chips-potato",
+        "parent": "frozen"
+    },
+    {
+        "name": "potato-products",
+        "parent": "frozen-chips-potato"
+    },
+    {
+        "name": "frozen-fruit",
+        "parent": "frozen"
+    },
+    {
+        "name": "frozen-fruit",
+        "parent": "frozen-fruit"
+    },
+    {
+        "name": "frozen-vegetarian-food",
+        "parent": "frozen"
+    },
+    {
+        "name": "frozen-meat-substitutes",
+        "parent": "frozen-vegetarian-food"
+    },
+    {
+        "name": "frozen-meat-poultry",
+        "parent": "frozen"
+    },
+    {
+        "name": "frozen-pork",
+        "parent": "frozen-meat-poultry"
+    },
+    {
+        "name": "frozen-chicken",
+        "parent": "frozen-meat-poultry"
+    },
+    {
+        "name": "frozen-turkey",
+        "parent": "frozen-meat-poultry"
+    },
+    {
+        "name": "frozen-other-meat-goods",
+        "parent": "frozen-meat-poultry"
+    },
+    {
+        "name": "frozen-ground-meat",
+        "parent": "frozen-meat-poultry"
+    },
+    {
+        "name": "frozen-beef",
+        "parent": "frozen-meat-poultry"
+    },
+    {
+        "name": "frozen-lamb",
+        "parent": "frozen-meat-poultry"
+    },
+    {
+        "name": "frozen-fish-seafood",
+        "parent": "frozen"
+    },
+    {
+        "name": "frozen-fish-seafood",
+        "parent": "frozen-fish-seafood"
+    },
+    {
+        "name": "frozen-pizzas-ready-meals",
+        "parent": "frozen"
+    },
+    {
+        "name": "frozen-ready-meals",
+        "parent": "frozen-pizzas-ready-meals"
+    },
+    {
+        "name": "snacks-pies",
+        "parent": "frozen-pizzas-ready-meals"
+    },
+    {
+        "name": "pizzas-garlic-bread",
+        "parent": "frozen-pizzas-ready-meals"
+    },
+    {
+        "name": "frozen-vegetables",
+        "parent": "frozen"
+    },
+    {
+        "name": "frozen-vegetables",
+        "parent": "frozen-vegetables"
+    },
+    {
+        "name": "food-cupboard"
+    },
+    {
+        "name": "biscuits-crackers",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "wafers",
+        "parent": "biscuits-crackers"
+    },
+    {
+        "name": "savoury-biscuits-crackers",
+        "parent": "biscuits-crackers"
+    },
+    {
+        "name": "biscuits",
+        "parent": "biscuits-crackers"
+    },
+    {
+        "name": "rice-pasta-noodles",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "rice",
+        "parent": "rice-pasta-noodles"
+    },
+    {
+        "name": "instant-noodles-rice-snacks",
+        "parent": "rice-pasta-noodles"
+    },
+    {
+        "name": "pasta-noodles",
+        "parent": "rice-pasta-noodles"
+    },
+    {
+        "name": "tins-cans-packets",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "dry-legumes-pulses-grains",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "pickled-vegetables",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "Tinned-desserts",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "antipasti-jars",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "tinned-meats",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "tinned-soups-hotpots",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "potato-products",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "prepared-desserts",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "tinned-vegetables",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "tinned-fruit",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "tinned-fish",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "instant-soups-stocks-packet-mix",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "herbs-spices",
+        "parent": "tins-cans-packets"
+    },
+    {
+        "name": "seeds-nuts-dried-fruits",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "seeds-nuts-dried-fruits",
+        "parent": "seeds-nuts-dried-fruits"
+    },
+    {
+        "name": "dried-fruits",
+        "parent": "seeds-nuts-dried-fruits"
+    },
+    {
+        "name": "nuts-seeds",
+        "parent": "seeds-nuts-dried-fruits"
+    },
+    {
+        "name": "sauces-oils-dressings",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "vinegar",
+        "parent": "sauces-oils-dressings"
+    },
+    {
+        "name": "mayonnaise",
+        "parent": "sauces-oils-dressings"
+    },
+    {
+        "name": "dressings-marinades",
+        "parent": "sauces-oils-dressings"
+    },
+    {
+        "name": "oil",
+        "parent": "sauces-oils-dressings"
+    },
+    {
+        "name": "ketchup-sauces",
+        "parent": "sauces-oils-dressings"
+    },
+    {
+        "name": "sauces-pesto",
+        "parent": "sauces-oils-dressings"
+    },
+    {
+        "name": "jams-spreads-syrups",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "nut-butters",
+        "parent": "jams-spreads-syrups"
+    },
+    {
+        "name": "honey",
+        "parent": "jams-spreads-syrups"
+    },
+    {
+        "name": "chocolate-sweet-spreads",
+        "parent": "jams-spreads-syrups"
+    },
+    {
+        "name": "jams-marmalades",
+        "parent": "jams-spreads-syrups"
+    },
+    {
+        "name": "syruptoppings",
+        "parent": "jams-spreads-syrups"
+    },
+    {
+        "name": "savoury-spreads",
+        "parent": "jams-spreads-syrups"
+    },
+    {
+        "name": "home-baking",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "pastry",
+        "parent": "home-baking"
+    },
+    {
+        "name": "baking-mixes",
+        "parent": "home-baking"
+    },
+    {
+        "name": "flour",
+        "parent": "home-baking"
+    },
+    {
+        "name": "baking-ingredients",
+        "parent": "home-baking"
+    },
+    {
+        "name": "sugar-sweeteners",
+        "parent": "home-baking"
+    },
+    {
+        "name": "sweets-chocolate",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "chewing-gum",
+        "parent": "sweets-chocolate"
+    },
+    {
+        "name": "chocolate-pouches-bags",
+        "parent": "sweets-chocolate"
+    },
+    {
+        "name": "multipack-chocolate",
+        "parent": "sweets-chocolate"
+    },
+    {
+        "name": "chocolate-bars",
+        "parent": "sweets-chocolate"
+    },
+    {
+        "name": "free-from-traditional-sweets",
+        "parent": "sweets-chocolate"
+    },
+    {
+        "name": "mints",
+        "parent": "sweets-chocolate"
+    },
+    {
+        "name": "chewy-sweets",
+        "parent": "sweets-chocolate"
+    },
+    {
+        "name": "jellies-gummy-sweets",
+        "parent": "sweets-chocolate"
+    },
+    {
+        "name": "breakfast-cereal",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "cereals",
+        "parent": "breakfast-cereal"
+    },
+    {
+        "name": "hot-cereals-oatmeal",
+        "parent": "breakfast-cereal"
+    },
+    {
+        "name": "crisps-snacks",
+        "parent": "food-cupboard"
+    },
+    {
+        "name": "cereal-nutritional-snack-bars",
+        "parent": "crisps-snacks"
+    },
+    {
+        "name": "crisps",
+        "parent": "crisps-snacks"
+    },
+    {
+        "name": "healthy-snacking",
+        "parent": "crisps-snacks"
+    },
+    {
+        "name": "snacks",
+        "parent": "crisps-snacks"
+    },
+    {
+        "name": "pet-care"
+    },
+    {
+        "name": "dogs",
+        "parent": "pet-care"
+    },
+    {
+        "name": "dog-food",
+        "parent": "dogs"
+    },
+    {
+        "name": "dog-accessories",
+        "parent": "dogs"
+    },
+    {
+        "name": "cats",
+        "parent": "pet-care"
+    },
+    {
+        "name": "cat-food",
+        "parent": "cats"
+    },
+    {
+        "name": "cat-litter",
+        "parent": "cats"
+    },
+    {
+        "name": "chilled-food"
+    },
+    {
+        "name": "cheese",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "hard-cheese",
+        "parent": "cheese"
+    },
+    {
+        "name": "grated-cheese",
+        "parent": "cheese"
+    },
+    {
+        "name": "cream-cheese",
+        "parent": "cheese"
+    },
+    {
+        "name": "speciality-continental-cheese",
+        "parent": "cheese"
+    },
+    {
+        "name": "cheese-snacks-lunchbox",
+        "parent": "cheese"
+    },
+    {
+        "name": "continental-cheeses",
+        "parent": "cheese"
+    },
+    {
+        "name": "cheese-alternatives",
+        "parent": "cheese"
+    },
+    {
+        "name": "other-cheese-products",
+        "parent": "cheese"
+    },
+    {
+        "name": "sliced-cheese",
+        "parent": "cheese"
+    },
+    {
+        "name": "cheddar-british-regional-cheese",
+        "parent": "cheese"
+    },
+    {
+        "name": "processed-cheese",
+        "parent": "cheese"
+    },
+    {
+        "name": "soft-cheese",
+        "parent": "cheese"
+    },
+    {
+        "name": "chilled-fish-seafood",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "milk-dairy-eggs",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "milk",
+        "parent": "milk-dairy-eggs"
+    },
+    {
+        "name": "cream",
+        "parent": "milk-dairy-eggs"
+    },
+    {
+        "name": "fresh-eggs",
+        "parent": "milk-dairy-eggs"
+    },
+    {
+        "name": "milk-drinks",
+        "parent": "milk-dairy-eggs"
+    },
+    {
+        "name": "squirty-cream",
+        "parent": "milk-dairy-eggs"
+    },
+    {
+        "name": "butter-spreads",
+        "parent": "milk-dairy-eggs"
+    },
+    {
+        "name": "long-life-milk",
+        "parent": "milk-dairy-eggs"
+    },
+    {
+        "name": "milk-alternatives",
+        "parent": "milk-dairy-eggs"
+    },
+    {
+        "name": "pizza-pasta-pasta-sauces",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "fresh-pasta-sauces",
+        "parent": "pizza-pasta-pasta-sauces"
+    },
+    {
+        "name": "pizza",
+        "parent": "pizza-pasta-pasta-sauces"
+    },
+    {
+        "name": "ready-meals",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "ready-meals",
+        "parent": "ready-meals"
+    },
+    {
+        "name": "food-to-go",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "sandwiches-snacks",
+        "parent": "food-to-go"
+    },
+    {
+        "name": "pasta-salads",
+        "parent": "food-to-go"
+    },
+    {
+        "name": "chilled-meats",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "cooked-sliced-meats",
+        "parent": "chilled-meats"
+    },
+    {
+        "name": "pate",
+        "parent": "chilled-meats"
+    },
+    {
+        "name": "ready-to-eat-chicken",
+        "parent": "chilled-meats"
+    },
+    {
+        "name": "continental-meats",
+        "parent": "chilled-meats"
+    },
+    {
+        "name": "meat-substitutes",
+        "parent": "chilled-meats"
+    },
+    {
+        "name": "meat-snacks",
+        "parent": "chilled-meats"
+    },
+    {
+        "name": "cooked-sausages",
+        "parent": "chilled-meats"
+    },
+    {
+        "name": "ham-slices",
+        "parent": "chilled-meats"
+    },
+    {
+        "name": "desserts",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "desserts",
+        "parent": "desserts"
+    },
+    {
+        "name": "party-food-pies-salads-dips",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "spreads-dips-dressings",
+        "parent": "party-food-pies-salads-dips"
+    },
+    {
+        "name": "party-food",
+        "parent": "party-food-pies-salads-dips"
+    },
+    {
+        "name": "delicatessen-food",
+        "parent": "party-food-pies-salads-dips"
+    },
+    {
+        "name": "yogurts",
+        "parent": "chilled-food"
+    },
+    {
+        "name": "plain-yogurts",
+        "parent": "yogurts"
+    },
+    {
+        "name": "yogurt-alternatives",
+        "parent": "yogurts"
+    },
+    {
+        "name": "fruit-yogurts",
+        "parent": "yogurts"
+    },
+    {
+        "name": "seasonal"
+    },
+    {
+        "name": "chocolates",
+        "parent": "seasonal"
+    },
+    {
+        "name": "confectionary",
+        "parent": "chocolates"
+    },
+    {
+        "name": "fresh-food"
+    },
+    {
+        "name": "meat-poultry",
+        "parent": "fresh-food"
+    },
+    {
+        "name": "chicken",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "duck",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "turkey",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "bacon",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "pork",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "bacon-gammon",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "beef",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "lamb",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "fresh-meat-goods-specialities",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "gammon",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "fresh-game",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "sausages",
+        "parent": "meat-poultry"
+    },
+    {
+        "name": "fruit-vegetables",
+        "parent": "fresh-food"
+    },
+    {
+        "name": "tomatoes",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "salad-bags",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "legumes",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "avocados",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "bananas",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "citrus",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "onions-leeks",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "fresh-herbs",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "potatoes",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "convenience-fruits",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "hard-vegetables",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "lettuces",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "prepared-vegetables",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "melons",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "stone-fruits",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "mushrooms",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "cauliflower-broccoli",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "asparagus",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "grapes",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "apples",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "snacks-prepared-vegetables",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "exotic-fruits",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "berries",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "peppers",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "courgettes",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "fruits-bags-snacks",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "mangos",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "root-bulb-vegetables",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "pears",
+        "parent": "fruit-vegetables"
+    },
+    {
+        "name": "fresh-fish",
+        "parent": "fresh-food"
+    },
+    {
+        "name": "fish",
+        "parent": "fresh-fish"
+    },
+    {
+        "name": "seafood",
+        "parent": "fresh-fish"
+    },
+    {
+        "name": "health-beauty"
+    },
+    {
+        "name": "medicine",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "deodorants",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "deodrants",
+        "parent": "deodorants"
+    },
+    {
+        "name": "bath-shower-soap",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "shower-bath-soap",
+        "parent": "bath-shower-soap"
+    },
+    {
+        "name": "health-medicines",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "mobility-auxiliaries",
+        "parent": "health-medicines"
+    },
+    {
+        "name": "sports-nutrition",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "nutritional-supplements",
+        "parent": "sports-nutrition"
+    },
+    {
+        "name": "mens-toiletries",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "shaving",
+        "parent": "mens-toiletries"
+    },
+    {
+        "name": "bladder-weakness",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "adult-incontinence",
+        "parent": "bladder-weakness"
+    },
+    {
+        "name": "womens-toiletries",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "womens-cosmetics",
+        "parent": "womens-toiletries"
+    },
+    {
+        "name": "period-products",
+        "parent": "womens-toiletries"
+    },
+    {
+        "name": "skin-care",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "skin-care",
+        "parent": "skin-care"
+    },
+    {
+        "name": "shaving-hair-removal",
+        "parent": "skin-care"
+    },
+    {
+        "name": "sun-care",
+        "parent": "skin-care"
+    },
+    {
+        "name": "shampoo-hair-care",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "hair-care-accessories",
+        "parent": "shampoo-hair-care"
+    },
+    {
+        "name": "dental-care",
+        "parent": "health-beauty"
+    },
+    {
+        "name": "oral-care",
+        "parent": "dental-care"
+    }
+]
