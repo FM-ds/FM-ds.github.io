@@ -1,1241 +1,1489 @@
 [
     {
         "name": "Beauty & cosmetics",
+        "depth": 0,
         "id": 1,
         "parent": 0
     },
     {
         "name": "Bath & body",
+        "depth": 1,
         "parent": 1,
         "id": 2
     },
     {
         "name": "",
+        "depth": 0,
         "id": 3,
         "parent": 0
     },
     {
         "name": "Food cupboard",
+        "depth": 0,
         "id": 4,
         "parent": 0
     },
     {
         "name": "Fruit & desserts",
+        "depth": 1,
         "parent": 4,
         "id": 5
     },
     {
         "name": "Freefrom",
+        "depth": 1,
         "parent": 4,
         "id": 6
     },
     {
         "name": "Table sauces, dressings & condiments",
+        "depth": 1,
         "parent": 4,
         "id": 7
     },
     {
         "name": "Jams, honey & spreads",
+        "depth": 1,
         "parent": 4,
         "id": 8
     },
     {
         "name": "World Foods",
+        "depth": 1,
         "parent": 4,
         "id": 9
     },
     {
         "name": "Tea, coffee & hot drinks",
+        "depth": 1,
         "parent": 4,
         "id": 10
     },
     {
         "name": "Household",
+        "depth": 0,
         "id": 11,
         "parent": 0
     },
     {
         "name": "Household essentials",
+        "depth": 1,
         "parent": 11,
         "id": 12
     },
     {
         "name": "Newsagent & tobacconist",
+        "depth": 1,
         "parent": 11,
         "id": 13
     },
     {
         "name": "Dairy, eggs & chilled",
+        "depth": 0,
         "id": 14,
         "parent": 0
     },
     {
         "name": "Vegetarian, vegan & dairy free",
+        "depth": 1,
         "parent": 14,
         "id": 15
     },
     {
         "name": "Drinks",
+        "depth": 0,
         "id": 16,
         "parent": 0
     },
     {
         "name": "Juice & smoothies",
+        "depth": 1,
         "parent": 16,
         "id": 17
     },
     {
         "name": "Fizzy drinks",
+        "depth": 1,
         "parent": 16,
         "id": 18
     },
     {
         "name": "Sports, energy & wellbeing",
+        "depth": 1,
         "parent": 16,
         "id": 19
     },
     {
         "name": "Champagne & sparkling wine",
+        "depth": 1,
         "parent": 16,
         "id": 20
     },
     {
         "name": "Wine",
+        "depth": 1,
         "parent": 16,
         "id": 21
     },
     {
         "name": "Mixers & adult soft drinks",
+        "depth": 1,
         "parent": 16,
         "id": 22
     },
     {
         "name": "Water",
+        "depth": 1,
         "parent": 16,
         "id": 23
     },
     {
         "name": "Low & no alcohol",
+        "depth": 1,
         "parent": 16,
         "id": 24
     },
     {
         "name": "Milk & milk drinks",
+        "depth": 1,
         "parent": 16,
         "id": 25
     },
     {
         "name": "Spirits & liqueurs",
+        "depth": 1,
         "parent": 16,
         "id": 26
     },
     {
         "name": "Tea, coffee & hot drinks",
+        "depth": 1,
         "parent": 16,
         "id": 27
     },
     {
         "name": "Squash & cordials",
+        "depth": 1,
         "parent": 16,
         "id": 28
     },
     {
         "name": "Kids & lunchbox",
+        "depth": 1,
         "parent": 16,
         "id": 29
     },
     {
         "name": "Beer & cider",
+        "depth": 1,
         "parent": 16,
         "id": 30
     },
     {
         "name": "Baby & toddler",
+        "depth": 0,
         "id": 31,
         "parent": 0
     },
     {
         "name": "Baby laundry",
+        "depth": 1,
         "parent": 31,
         "id": 32
     },
     {
         "name": "Snacks & rusks",
+        "depth": 1,
         "parent": 31,
         "id": 33
     },
     {
         "name": "Toiletries & healthcare",
+        "depth": 1,
         "parent": 31,
         "id": 34
     },
     {
         "name": "Nappies & pants",
+        "depth": 1,
         "parent": 31,
         "id": 35
     },
     {
         "name": "Wipes",
+        "depth": 1,
         "parent": 31,
         "id": 36
     },
     {
         "name": "Baby meals",
+        "depth": 1,
         "parent": 31,
         "id": 37
     },
     {
         "name": "Baby milk & drinks",
+        "depth": 1,
         "parent": 31,
         "id": 38
     },
     {
         "name": "Toiletries & health",
+        "depth": 0,
         "id": 39,
         "parent": 0
     },
     {
         "name": "Toiletries & health essentials",
+        "depth": 1,
         "parent": 39,
         "id": 40
     },
     {
         "name": "Groceries",
+        "depth": 0,
         "id": 41,
         "parent": 0
     },
     {
         "name": "Beauty & cosmetics",
+        "depth": 1,
         "parent": 41,
         "id": 42
     },
     {
         "name": "Bath & body",
+        "depth": 2,
         "parent": 42,
         "id": 43
     },
     {
         "name": "Bakery",
+        "depth": 1,
         "parent": 41,
         "id": 44
     },
     {
         "name": "Scones, fruited & buns",
+        "depth": 2,
         "parent": 44,
         "id": 45
     },
     {
         "name": "All scones, fruited & buns",
+        "depth": 3,
         "parent": 45,
         "id": 46
     },
     {
         "name": "Freefrom bread & cakes",
+        "depth": 2,
         "parent": 44,
         "id": 47
     },
     {
         "name": "Cakes & tarts",
+        "depth": 2,
         "parent": 44,
         "id": 48
     },
     {
         "name": "All cakes & tarts",
+        "depth": 3,
         "parent": 48,
         "id": 49
     },
     {
         "name": "Croissants & breakfast bakery",
+        "depth": 2,
         "parent": 44,
         "id": 50
     },
     {
         "name": "All breakfast bakery",
+        "depth": 3,
         "parent": 50,
         "id": 51
     },
     {
         "name": "Bread rolls & bagels",
+        "depth": 2,
         "parent": 44,
         "id": 52
     },
     {
         "name": "All rolls & bagels",
+        "depth": 3,
         "parent": 52,
         "id": 53
     },
     {
         "name": "Naans & meal sides",
+        "depth": 2,
         "parent": 44,
         "id": 54
     },
     {
         "name": "Bread",
+        "depth": 2,
         "parent": 44,
         "id": 55
     },
     {
         "name": "All bread",
+        "depth": 3,
         "parent": 55,
         "id": 56
     },
     {
         "name": "From our in store bakery",
+        "depth": 2,
         "parent": 44,
         "id": 57
     },
     {
         "name": "Doughnuts, cookies & muffins",
+        "depth": 2,
         "parent": 44,
         "id": 58
     },
     {
         "name": "All doughnuts, cookies & muffins",
+        "depth": 3,
         "parent": 58,
         "id": 59
     },
     {
         "name": "Wraps, thins & pittas",
+        "depth": 2,
         "parent": 44,
         "id": 60
     },
     {
         "name": "All wraps, thins & pittas",
+        "depth": 3,
         "parent": 60,
         "id": 61
     },
     {
         "name": "Birthday & party cakes",
+        "depth": 2,
         "parent": 44,
         "id": 62
     },
     {
         "name": "Food cupboard",
+        "depth": 1,
         "parent": 41,
         "id": 63
     },
     {
         "name": "Biscuits & crackers",
+        "depth": 2,
         "parent": 63,
         "id": 64
     },
     {
         "name": "Fruit & desserts",
+        "depth": 2,
         "parent": 63,
         "id": 65
     },
     {
         "name": "Crisps, nuts & snacking fruit",
+        "depth": 2,
         "parent": 63,
         "id": 66
     },
     {
         "name": "Sugar & home baking",
+        "depth": 2,
         "parent": 63,
         "id": 67
     },
     {
         "name": "Baking & dessert mixes",
+        "depth": 3,
         "parent": 67,
         "id": 68
     },
     {
         "name": "Cake cases, candles & baking accessories",
+        "depth": 3,
         "parent": 67,
         "id": 69
     },
     {
         "name": "Flour",
+        "depth": 3,
         "parent": 67,
         "id": 70
     },
     {
         "name": "Freefrom baking",
+        "depth": 3,
         "parent": 67,
         "id": 71
     },
     {
         "name": "Wholefood powders & ingredients",
+        "depth": 3,
         "parent": 67,
         "id": 72
     },
     {
         "name": "Baking powder & raising agents",
+        "depth": 3,
         "parent": 67,
         "id": 73
     },
     {
         "name": "Decorations, toppings & fillings",
+        "depth": 3,
         "parent": 67,
         "id": 74
     },
     {
         "name": "Sugar, syrups & sweeteners",
+        "depth": 3,
         "parent": 67,
         "id": 75
     },
     {
         "name": "Baking Essentials",
+        "depth": 3,
         "parent": 67,
         "id": 76
     },
     {
         "name": "Cooking chocolate",
+        "depth": 3,
         "parent": 67,
         "id": 77
     },
     {
         "name": "Colourings & flavourings",
+        "depth": 3,
         "parent": 67,
         "id": 78
     },
     {
         "name": "Dried fruit & peel",
+        "depth": 3,
         "parent": 67,
         "id": 79
     },
     {
         "name": "Nuts & seeds",
+        "depth": 3,
         "parent": 67,
         "id": 80
     },
     {
         "name": "Food cupboard essentials",
+        "depth": 2,
         "parent": 63,
         "id": 81
     },
     {
         "name": "Cooking ingredients & oils",
+        "depth": 2,
         "parent": 63,
         "id": 82
     },
     {
         "name": "Freefrom",
+        "depth": 2,
         "parent": 63,
         "id": 83
     },
     {
         "name": "Table sauces, dressings & condiments",
+        "depth": 2,
         "parent": 63,
         "id": 84
     },
     {
         "name": "Jams, honey & spreads",
+        "depth": 2,
         "parent": 63,
         "id": 85
     },
     {
         "name": "World Foods",
+        "depth": 2,
         "parent": 63,
         "id": 86
     },
     {
         "name": "Rice, pasta & noodles",
+        "depth": 2,
         "parent": 63,
         "id": 87
     },
     {
         "name": "Rice",
+        "depth": 3,
         "parent": 87,
         "id": 88
     },
     {
         "name": "Instant snack & meals",
+        "depth": 3,
         "parent": 87,
         "id": 89
     },
     {
         "name": "Noodles",
+        "depth": 3,
         "parent": 87,
         "id": 90
     },
     {
         "name": "Quinoa, couscous & pulses",
+        "depth": 3,
         "parent": 87,
         "id": 91
     },
     {
         "name": "Pasta",
+        "depth": 3,
         "parent": 87,
         "id": 92
     },
     {
         "name": "Microwave rice",
+        "depth": 3,
         "parent": 87,
         "id": 93
     },
     {
         "name": "Confectionery",
+        "depth": 2,
         "parent": 63,
         "id": 94
     },
     {
         "name": "Canned, tinned & packaged foods",
+        "depth": 2,
         "parent": 63,
         "id": 95
     },
     {
         "name": "Tea, coffee & hot drinks",
+        "depth": 2,
         "parent": 63,
         "id": 96
     },
     {
         "name": "Cereals",
+        "depth": 2,
         "parent": 63,
         "id": 97
     },
     {
         "name": "All cereals",
+        "depth": 3,
         "parent": 97,
         "id": 98
     },
     {
         "name": "Dairy, eggs & chilled",
+        "depth": 1,
         "parent": 41,
         "id": 99
     },
     {
         "name": "Cooked meats, olives & dips",
+        "depth": 2,
         "parent": 99,
         "id": 100
     },
     {
         "name": "Ready meals",
+        "depth": 2,
         "parent": 99,
         "id": 101
     },
     {
         "name": "All ready meals",
+        "depth": 3,
         "parent": 101,
         "id": 102
     },
     {
         "name": "Pizza, pasta & garlic bread",
+        "depth": 2,
         "parent": 99,
         "id": 103
     },
     {
         "name": "Desserts",
+        "depth": 2,
         "parent": 99,
         "id": 104
     },
     {
         "name": "Vegetarian, vegan & dairy free",
+        "depth": 2,
         "parent": 99,
         "id": 105
     },
     {
         "name": "Sandwiches & food to go",
+        "depth": 2,
         "parent": 99,
         "id": 106
     },
     {
         "name": "Dairy & chilled essentials",
+        "depth": 2,
         "parent": 99,
         "id": 107
     },
     {
         "name": "Savoury snacks",
+        "depth": 2,
         "parent": 99,
         "id": 108
     },
     {
         "name": "Dairy & eggs",
+        "depth": 2,
         "parent": 99,
         "id": 109
     },
     {
         "name": "Dairy free",
+        "depth": 3,
         "parent": 109,
         "id": 110
     },
     {
         "name": "Pies, pasties & quiche",
+        "depth": 2,
         "parent": 99,
         "id": 111
     },
     {
         "name": "Fresh soup",
+        "depth": 2,
         "parent": 99,
         "id": 112
     },
     {
         "name": "Household",
+        "depth": 1,
         "parent": 41,
         "id": 113
     },
     {
         "name": "Household essentials",
+        "depth": 2,
         "parent": 113,
         "id": 114
     },
     {
         "name": "Newsagent & tobacconist",
+        "depth": 2,
         "parent": 113,
         "id": 115
     },
     {
         "name": "Drinks",
+        "depth": 1,
         "parent": 41,
         "id": 116
     },
     {
         "name": "Juice & smoothies",
+        "depth": 2,
         "parent": 116,
         "id": 117
     },
     {
         "name": "All juice & smoothies",
+        "depth": 3,
         "parent": 117,
         "id": 118
     },
     {
         "name": "Fizzy drinks",
+        "depth": 2,
         "parent": 116,
         "id": 119
     },
     {
         "name": "Sports, energy & wellbeing",
+        "depth": 2,
         "parent": 116,
         "id": 120
     },
     {
         "name": "All",
+        "depth": 3,
         "parent": 120,
         "id": 121
     },
     {
         "name": "Champagne & sparkling wine",
+        "depth": 2,
         "parent": 116,
         "id": 122
     },
     {
         "name": "All champagne & sparkling wine",
+        "depth": 3,
         "parent": 122,
         "id": 123
     },
     {
         "name": "Wine",
+        "depth": 2,
         "parent": 116,
         "id": 124
     },
     {
         "name": "All wine",
+        "depth": 3,
         "parent": 124,
         "id": 125
     },
     {
         "name": "Mixers & adult soft drinks",
+        "depth": 2,
         "parent": 116,
         "id": 126
     },
     {
         "name": "Mixers",
+        "depth": 3,
         "parent": 126,
         "id": 127
     },
     {
         "name": "Water",
+        "depth": 2,
         "parent": 116,
         "id": 128
     },
     {
         "name": "Sparkling water",
+        "depth": 3,
         "parent": 128,
         "id": 129
     },
     {
         "name": "Coconut water",
+        "depth": 3,
         "parent": 128,
         "id": 130
     },
     {
         "name": "Still water",
+        "depth": 3,
         "parent": 128,
         "id": 131
     },
     {
         "name": "Flavoured & vitamin water",
+        "depth": 3,
         "parent": 128,
         "id": 132
     },
     {
         "name": "Low & no alcohol",
+        "depth": 2,
         "parent": 116,
         "id": 133
     },
     {
         "name": "No alcohol",
+        "depth": 3,
         "parent": 133,
         "id": 134
     },
     {
         "name": "Low alcohol",
+        "depth": 3,
         "parent": 133,
         "id": 135
     },
     {
         "name": "Milk & milk drinks",
+        "depth": 2,
         "parent": 116,
         "id": 136
     },
     {
         "name": "Milkshakes & milkshake mixes",
+        "depth": 3,
         "parent": 136,
         "id": 137
     },
     {
         "name": "Flavoured milk",
+        "depth": 3,
         "parent": 136,
         "id": 138
     },
     {
         "name": "Fresh milk",
+        "depth": 3,
         "parent": 136,
         "id": 139
     },
     {
         "name": "Longer life milk",
+        "depth": 3,
         "parent": 136,
         "id": 140
     },
     {
         "name": "Spirits & liqueurs",
+        "depth": 2,
         "parent": 116,
         "id": 141
     },
     {
         "name": "All spirits & liqueurs",
+        "depth": 3,
         "parent": 141,
         "id": 142
     },
     {
         "name": "Low & no alcohol spirits",
+        "depth": 3,
         "parent": 141,
         "id": 143
     },
     {
         "name": "Tea, coffee & hot drinks",
+        "depth": 2,
         "parent": 116,
         "id": 144
     },
     {
         "name": "All tea & coffee",
+        "depth": 3,
         "parent": 144,
         "id": 145
     },
     {
         "name": "Squash & cordials",
+        "depth": 2,
         "parent": 116,
         "id": 146
     },
     {
         "name": "Kids & lunchbox",
+        "depth": 2,
         "parent": 116,
         "id": 147
     },
     {
         "name": "Beer & cider",
+        "depth": 2,
         "parent": 116,
         "id": 148
     },
     {
         "name": "Low & no alcohol beer & cider",
+        "depth": 3,
         "parent": 148,
         "id": 149
     },
     {
         "name": "All beer",
+        "depth": 3,
         "parent": 148,
         "id": 150
     },
     {
         "name": "Meat & fish",
+        "depth": 1,
         "parent": 41,
         "id": 151
     },
     {
         "name": "Bacon & sausages",
+        "depth": 2,
         "parent": 151,
         "id": 152
     },
     {
         "name": "Sausages",
+        "depth": 3,
         "parent": 152,
         "id": 153
     },
     {
         "name": "Bacon",
+        "depth": 3,
         "parent": 152,
         "id": 154
     },
     {
         "name": "Meat & fish essentials",
+        "depth": 2,
         "parent": 151,
         "id": 155
     },
     {
         "name": "Lamb",
+        "depth": 2,
         "parent": 151,
         "id": 156
     },
     {
         "name": "All lamb",
+        "depth": 3,
         "parent": 156,
         "id": 157
     },
     {
         "name": "Fish & seafood",
+        "depth": 2,
         "parent": 151,
         "id": 158
     },
     {
         "name": "All fish & seafood",
+        "depth": 3,
         "parent": 158,
         "id": 159
     },
     {
         "name": "Ham, cooked meats & p\u00e2t\u00e9",
+        "depth": 2,
         "parent": 151,
         "id": 160
     },
     {
         "name": "All ham, cooked meats & p\u00e2t\u00e9",
+        "depth": 3,
         "parent": 160,
         "id": 161
     },
     {
         "name": "Pork & gammon",
+        "depth": 2,
         "parent": 151,
         "id": 162
     },
     {
         "name": "All pork & gammon",
+        "depth": 3,
         "parent": 162,
         "id": 163
     },
     {
         "name": "Beef",
+        "depth": 2,
         "parent": 151,
         "id": 164
     },
     {
         "name": "All beef",
+        "depth": 3,
         "parent": 164,
         "id": 165
     },
     {
         "name": "Duck, game & venison",
+        "depth": 2,
         "parent": 151,
         "id": 166
     },
     {
         "name": "Mince",
+        "depth": 2,
         "parent": 151,
         "id": 167
     },
     {
         "name": "Turkey",
+        "depth": 2,
         "parent": 151,
         "id": 168
     },
     {
         "name": "Chicken",
+        "depth": 2,
         "parent": 151,
         "id": 169
     },
     {
         "name": "All chicken",
+        "depth": 3,
         "parent": 169,
         "id": 170
     },
     {
         "name": "Baby & toddler",
+        "depth": 1,
         "parent": 41,
         "id": 171
     },
     {
         "name": "Baby laundry",
+        "depth": 2,
         "parent": 171,
         "id": 172
     },
     {
         "name": "Snacks & rusks",
+        "depth": 2,
         "parent": 171,
         "id": 173
     },
     {
         "name": "All snacks & rusks",
+        "depth": 3,
         "parent": 173,
         "id": 174
     },
     {
         "name": "Toiletries & healthcare",
+        "depth": 2,
         "parent": 171,
         "id": 175
     },
     {
         "name": "Nappies & pants",
+        "depth": 2,
         "parent": 171,
         "id": 176
     },
     {
         "name": "Wipes",
+        "depth": 2,
         "parent": 171,
         "id": 177
     },
     {
         "name": "Baby meals",
+        "depth": 2,
         "parent": 171,
         "id": 178
     },
     {
         "name": "All baby meals",
+        "depth": 3,
         "parent": 178,
         "id": 179
     },
     {
         "name": "Baby milk & drinks",
+        "depth": 2,
         "parent": 171,
         "id": 180
     },
     {
         "name": "All baby milk & drinks",
+        "depth": 3,
         "parent": 180,
         "id": 181
     },
     {
         "name": "Toiletries & health",
+        "depth": 1,
         "parent": 41,
         "id": 182
     },
     {
         "name": "Toiletries & health essentials",
+        "depth": 2,
         "parent": 182,
         "id": 183
     },
     {
         "name": "Dietary & world foods",
+        "depth": 1,
         "parent": 41,
         "id": 184
     },
     {
         "name": "Vegan",
+        "depth": 2,
         "parent": 184,
         "id": 185
     },
     {
         "name": "All vegan",
+        "depth": 3,
         "parent": 185,
         "id": 186
     },
     {
         "name": "Vegetarian & plant based",
+        "depth": 2,
         "parent": 184,
         "id": 187
     },
     {
         "name": "Vitamins & supplements",
+        "depth": 2,
         "parent": 184,
         "id": 188
     },
     {
         "name": "Sports nutrition",
+        "depth": 2,
         "parent": 184,
         "id": 189
     },
     {
         "name": "World foods",
+        "depth": 2,
         "parent": 184,
         "id": 190
     },
     {
         "name": "Asian",
+        "depth": 3,
         "parent": 190,
         "id": 191
     },
     {
         "name": "Halal",
+        "depth": 3,
         "parent": 190,
         "id": 192
     },
     {
         "name": "All world foods",
+        "depth": 3,
         "parent": 190,
         "id": 193
     },
     {
         "name": "Irish",
+        "depth": 3,
         "parent": 190,
         "id": 194
     },
     {
         "name": "Kosher",
+        "depth": 3,
         "parent": 190,
         "id": 195
     },
     {
         "name": "American",
+        "depth": 3,
         "parent": 190,
         "id": 196
     },
     {
         "name": "Far East & South-East Asian",
+        "depth": 3,
         "parent": 190,
         "id": 197
     },
     {
         "name": "Free From",
+        "depth": 2,
         "parent": 184,
         "id": 198
     },
     {
         "name": "Milk free",
+        "depth": 3,
         "parent": 198,
         "id": 199
     },
     {
         "name": "Lactose free",
+        "depth": 3,
         "parent": 198,
         "id": 200
     },
     {
         "name": "Nut free",
+        "depth": 3,
         "parent": 198,
         "id": 201
     },
     {
         "name": "Gluten free",
+        "depth": 3,
         "parent": 198,
         "id": 202
     },
     {
         "name": "Soya free",
+        "depth": 3,
         "parent": 198,
         "id": 203
     },
     {
         "name": "Egg free",
+        "depth": 3,
         "parent": 198,
         "id": 204
     },
     {
         "name": "Weight management",
+        "depth": 2,
         "parent": 184,
         "id": 205
     },
     {
         "name": "Fruit & vegetables",
+        "depth": 1,
         "parent": 41,
         "id": 206
     },
     {
         "name": "Fresh herbs & ingredients",
+        "depth": 2,
         "parent": 206,
         "id": 207
     },
     {
         "name": "All fresh herbs & ingredients",
+        "depth": 3,
         "parent": 207,
         "id": 208
     },
     {
         "name": "Fresh fruit",
+        "depth": 2,
         "parent": 206,
         "id": 209
     },
     {
         "name": "All fruit",
+        "depth": 3,
         "parent": 209,
         "id": 210
     },
     {
         "name": "Frozen fruit & vegetables",
+        "depth": 2,
         "parent": 206,
         "id": 211
     },
     {
         "name": "Prepared fruit, veg & salad",
+        "depth": 2,
         "parent": 206,
         "id": 212
     },
     {
         "name": "Fresh vegetables",
+        "depth": 2,
         "parent": 206,
         "id": 213
     },
     {
         "name": "All vegetables",
+        "depth": 3,
         "parent": 213,
         "id": 214
     },
     {
         "name": "Frozen",
+        "depth": 1,
         "parent": 41,
         "id": 215
     },
     {
         "name": "Meat & poultry",
+        "depth": 2,
         "parent": 215,
         "id": 216
     },
     {
         "name": "Beef, pork & lamb",
+        "depth": 3,
         "parent": 216,
         "id": 217
     },
     {
         "name": "Burgers",
+        "depth": 3,
         "parent": 216,
         "id": 218
     },
     {
         "name": "Chicken & turkey",
+        "depth": 3,
         "parent": 216,
         "id": 219
     },
     {
         "name": "Vegan",
+        "depth": 2,
         "parent": 215,
         "id": 220
     },
     {
         "name": "Freefrom",
+        "depth": 2,
         "parent": 215,
         "id": 221
     },
     {
         "name": "All",
+        "depth": 3,
         "parent": 221,
         "id": 222
     },
     {
         "name": "Chips, potatoes & rice",
+        "depth": 2,
         "parent": 215,
         "id": 223
     },
     {
         "name": "Rice",
+        "depth": 3,
         "parent": 223,
         "id": 224
     },
     {
         "name": "Jackets & mashed potato",
+        "depth": 3,
         "parent": 223,
         "id": 225
     },
     {
         "name": "Roast potatoes",
+        "depth": 3,
         "parent": 223,
         "id": 226
     },
     {
         "name": "Sweet potatoes",
+        "depth": 3,
         "parent": 223,
         "id": 227
     },
     {
         "name": "Waffles, hashbrowns & croquettes",
+        "depth": 3,
         "parent": 223,
         "id": 228
     },
     {
         "name": "Chips & wedges",
+        "depth": 3,
         "parent": 223,
         "id": 229
     },
     {
         "name": "Onion rings",
+        "depth": 3,
         "parent": 223,
         "id": 230
     },
     {
         "name": "Fish & seafood",
+        "depth": 2,
         "parent": 215,
         "id": 231
     },
     {
         "name": "All",
+        "depth": 3,
         "parent": 231,
         "id": 232
     },
     {
         "name": "Vegetarian & meat free",
+        "depth": 2,
         "parent": 215,
         "id": 233
     },
     {
         "name": "All vegetarian",
+        "depth": 3,
         "parent": 233,
         "id": 234
     },
     {
         "name": "Pizza & garlic bread",
+        "depth": 2,
         "parent": 215,
         "id": 235
     },
     {
         "name": "All pizza & garlic bread",
+        "depth": 3,
         "parent": 235,
         "id": 236
     },
     {
         "name": "Fruit, vegetables & herbs",
+        "depth": 2,
         "parent": 215,
         "id": 237
     },
     {
         "name": "Smoothie mixes",
+        "depth": 3,
         "parent": 237,
         "id": 238
     },
     {
         "name": "All vegetables",
+        "depth": 3,
         "parent": 237,
         "id": 239
     },
     {
         "name": "Fruit",
+        "depth": 3,
         "parent": 237,
         "id": 240
     },
     {
         "name": "Yorkshire puddings & roast accompaniments",
+        "depth": 2,
         "parent": 215,
         "id": 241
     },
     {
         "name": "Ready meals, pies & party food",
+        "depth": 2,
         "parent": 215,
         "id": 242
     },
     {
         "name": "All ready meals",
+        "depth": 3,
         "parent": 242,
         "id": 243
     },
     {
         "name": "Ice cream & ice",
+        "depth": 2,
         "parent": 215,
         "id": 244
     },
     {
         "name": "All ice creams",
+        "depth": 3,
         "parent": 244,
         "id": 245
     },
     {
         "name": "Desserts & pastry",
+        "depth": 2,
         "parent": 215,
         "id": 246
     },
     {
         "name": "All",
+        "depth": 3,
         "parent": 246,
         "id": 247
     },
     {
         "name": "Frozen essentials",
+        "depth": 2,
         "parent": 215,
         "id": 248
     },

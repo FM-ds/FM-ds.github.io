@@ -1,1696 +1,2035 @@
 [
     {
         "name": "Afternoon Tea",
+        "depth": 0,
         "id": 1,
         "parent": 0
     },
     {
         "name": "Pets",
+        "depth": 0,
         "id": 2,
         "parent": 0
     },
     {
         "name": "Pet Accessories",
+        "depth": 1,
         "parent": 2,
         "id": 3
     },
     {
         "name": "Cat Food",
+        "depth": 1,
         "parent": 2,
         "id": 4
     },
     {
         "name": "Dog Food",
+        "depth": 1,
         "parent": 2,
         "id": 5
     },
     {
         "name": "Pet Treats",
+        "depth": 1,
         "parent": 2,
         "id": 6
     },
     {
         "name": "Fresh",
+        "depth": 0,
         "id": 7,
         "parent": 0
     },
     {
         "name": "Pasta Tubs & Dips",
+        "depth": 1,
         "parent": 7,
         "id": 8
     },
     {
         "name": "Dips",
+        "depth": 2,
         "parent": 8,
         "id": 9
     },
     {
         "name": "Coleslaws & Pasta Tubs",
+        "depth": 2,
         "parent": 8,
         "id": 10
     },
     {
         "name": "Juice, Smoothies & Drinks",
+        "depth": 1,
         "parent": 7,
         "id": 11
     },
     {
         "name": "Juice",
+        "depth": 2,
         "parent": 11,
         "id": 12
     },
     {
         "name": "Milk, Butter & Eggs",
+        "depth": 1,
         "parent": 7,
         "id": 13
     },
     {
         "name": "Milk",
+        "depth": 2,
         "parent": 13,
         "id": 14
     },
     {
         "name": "Butter & Margarine",
+        "depth": 2,
         "parent": 13,
         "id": 15
     },
     {
         "name": "Cream",
+        "depth": 2,
         "parent": 13,
         "id": 16
     },
     {
         "name": "Eggs",
+        "depth": 2,
         "parent": 13,
         "id": 17
     },
     {
         "name": "Chilled Desserts",
+        "depth": 1,
         "parent": 7,
         "id": 18
     },
     {
         "name": "Fresh Meat & Chicken",
+        "depth": 1,
         "parent": 7,
         "id": 19
     },
     {
         "name": "Bacon & Gammon",
+        "depth": 2,
         "parent": 19,
         "id": 20
     },
     {
         "name": "Lamb",
+        "depth": 2,
         "parent": 19,
         "id": 21
     },
     {
         "name": "Sausages",
+        "depth": 2,
         "parent": 19,
         "id": 22
     },
     {
         "name": "Beef",
+        "depth": 2,
         "parent": 19,
         "id": 23
     },
     {
         "name": "Luxury Meat",
+        "depth": 2,
         "parent": 19,
         "id": 24
     },
     {
         "name": "Chicken & Turkey",
+        "depth": 2,
         "parent": 19,
         "id": 25
     },
     {
         "name": "Pork",
+        "depth": 2,
         "parent": 19,
         "id": 26
     },
     {
         "name": "Cheese",
+        "depth": 1,
         "parent": 7,
         "id": 27
     },
     {
         "name": "Cheddar Cheese",
+        "depth": 2,
         "parent": 27,
         "id": 28
     },
     {
         "name": "Cheese Snacks & Spreads",
+        "depth": 2,
         "parent": 27,
         "id": 29
     },
     {
         "name": "Low Fat Cheese",
+        "depth": 2,
         "parent": 27,
         "id": 30
     },
     {
         "name": "Grated & Sliced Cheese",
+        "depth": 2,
         "parent": 27,
         "id": 31
     },
     {
         "name": "British Regional Cheese",
+        "depth": 2,
         "parent": 27,
         "id": 32
     },
     {
         "name": "Speciality Cheese",
+        "depth": 2,
         "parent": 27,
         "id": 33
     },
     {
         "name": "Cottage Cheese & Soft Cheese",
+        "depth": 2,
         "parent": 27,
         "id": 34
     },
     {
         "name": "Bakery",
+        "depth": 1,
         "parent": 7,
         "id": 35
     },
     {
         "name": "Crumpets, Muffins & Pancakes",
+        "depth": 2,
         "parent": 35,
         "id": 36
     },
     {
         "name": "Yogurts",
+        "depth": 1,
         "parent": 7,
         "id": 37
     },
     {
         "name": "M\u00fcller Yogurts",
+        "depth": 2,
         "parent": 37,
         "id": 38
     },
     {
         "name": "Yogurt",
+        "depth": 2,
         "parent": 37,
         "id": 39
     },
     {
         "name": "Low Fat & Fat Free Yogurt",
+        "depth": 2,
         "parent": 37,
         "id": 40
     },
     {
         "name": "Kids Yogurt",
+        "depth": 2,
         "parent": 37,
         "id": 41
     },
     {
         "name": "Yogurt Drinks",
+        "depth": 2,
         "parent": 37,
         "id": 42
     },
     {
         "name": "Dessert Yogurt",
+        "depth": 2,
         "parent": 37,
         "id": 43
     },
     {
         "name": "Fresh Party Food",
+        "depth": 1,
         "parent": 7,
         "id": 44
     },
     {
         "name": "Coleslaw & Sandwich Fillers",
+        "depth": 1,
         "parent": 7,
         "id": 45
     },
     {
         "name": "Cooked Meats & Deli",
+        "depth": 1,
         "parent": 7,
         "id": 46
     },
     {
         "name": "Continental Meats",
+        "depth": 2,
         "parent": 46,
         "id": 47
     },
     {
         "name": "Slices & Pasties",
+        "depth": 2,
         "parent": 46,
         "id": 48
     },
     {
         "name": "Olives",
+        "depth": 2,
         "parent": 46,
         "id": 49
     },
     {
         "name": "Pies & Quiches",
+        "depth": 2,
         "parent": 46,
         "id": 50
     },
     {
         "name": "Sausage Rolls & Savoury Eggs",
+        "depth": 2,
         "parent": 46,
         "id": 51
     },
     {
         "name": "Dips",
+        "depth": 2,
         "parent": 46,
         "id": 52
     },
     {
         "name": "Beef",
+        "depth": 2,
         "parent": 46,
         "id": 53
     },
     {
         "name": "Ham",
+        "depth": 2,
         "parent": 46,
         "id": 54
     },
     {
         "name": "Sandwich Fillers",
+        "depth": 2,
         "parent": 46,
         "id": 55
     },
     {
         "name": "Chicken & Turkey",
+        "depth": 2,
         "parent": 46,
         "id": 56
     },
     {
         "name": "Pate",
+        "depth": 2,
         "parent": 46,
         "id": 57
     },
     {
         "name": "Pork",
+        "depth": 2,
         "parent": 46,
         "id": 58
     },
     {
         "name": "Fresh Fruit, Veg & Salads",
+        "depth": 1,
         "parent": 7,
         "id": 59
     },
     {
         "name": "Salads",
+        "depth": 2,
         "parent": 59,
         "id": 60
     },
     {
         "name": "Potatoes",
+        "depth": 2,
         "parent": 59,
         "id": 61
     },
     {
         "name": "Fresh Vegetables",
+        "depth": 2,
         "parent": 59,
         "id": 62
     },
     {
         "name": "Fresh Fruit",
+        "depth": 2,
         "parent": 59,
         "id": 63
     },
     {
         "name": "Fresh Fish",
+        "depth": 1,
         "parent": 7,
         "id": 64
     },
     {
         "name": "Chilled Ready Meals & Snacks",
+        "depth": 1,
         "parent": 7,
         "id": 65
     },
     {
         "name": "Lowering Prices",
+        "depth": 0,
         "id": 66,
         "parent": 0
     },
     {
         "name": "Drinks",
+        "depth": 0,
         "id": 67,
         "parent": 0
     },
     {
         "name": "Spirits & Pre-Mixed",
+        "depth": 1,
         "parent": 67,
         "id": 68
     },
     {
         "name": "Gin",
+        "depth": 2,
         "parent": 68,
         "id": 69
     },
     {
         "name": "Alcopops",
+        "depth": 2,
         "parent": 68,
         "id": 70
     },
     {
         "name": "Liqueurs",
+        "depth": 2,
         "parent": 68,
         "id": 71
     },
     {
         "name": "Rum",
+        "depth": 2,
         "parent": 68,
         "id": 72
     },
     {
         "name": "Vodka",
+        "depth": 2,
         "parent": 68,
         "id": 73
     },
     {
         "name": "Whisky",
+        "depth": 2,
         "parent": 68,
         "id": 74
     },
     {
         "name": "Wine & Sparkling",
+        "depth": 1,
         "parent": 67,
         "id": 75
     },
     {
         "name": "Red Wine",
+        "depth": 2,
         "parent": 75,
         "id": 76
     },
     {
         "name": "Sparkling Wine",
+        "depth": 2,
         "parent": 75,
         "id": 77
     },
     {
         "name": "Rose Wine",
+        "depth": 2,
         "parent": 75,
         "id": 78
     },
     {
         "name": "White Wine",
+        "depth": 2,
         "parent": 75,
         "id": 79
     },
     {
         "name": "Kids & Lunchbox Drinks",
+        "depth": 1,
         "parent": 67,
         "id": 80
     },
     {
         "name": "Fruit Juice & Smoothies",
+        "depth": 1,
         "parent": 67,
         "id": 81
     },
     {
         "name": "Smoothies",
+        "depth": 2,
         "parent": 81,
         "id": 82
     },
     {
         "name": "Fruit Juice",
+        "depth": 2,
         "parent": 81,
         "id": 83
     },
     {
         "name": "Hot Beverages",
+        "depth": 1,
         "parent": 67,
         "id": 84
     },
     {
         "name": "Sports & Energy Drinks",
+        "depth": 1,
         "parent": 67,
         "id": 85
     },
     {
         "name": "Lucozade",
+        "depth": 2,
         "parent": 85,
         "id": 86
     },
     {
         "name": "Protein Shakes",
+        "depth": 2,
         "parent": 85,
         "id": 87
     },
     {
         "name": "Monster",
+        "depth": 2,
         "parent": 85,
         "id": 88
     },
     {
         "name": "Still & Flavoured Water",
+        "depth": 1,
         "parent": 67,
         "id": 89
     },
     {
         "name": "Bigger Packs",
+        "depth": 2,
         "parent": 89,
         "id": 90
     },
     {
         "name": "Still Water",
+        "depth": 2,
         "parent": 89,
         "id": 91
     },
     {
         "name": "Sparkling Water",
+        "depth": 2,
         "parent": 89,
         "id": 92
     },
     {
         "name": "Beer, Cider & Ales",
+        "depth": 1,
         "parent": 67,
         "id": 93
     },
     {
         "name": "Ales",
+        "depth": 2,
         "parent": 93,
         "id": 94
     },
     {
         "name": "Beer",
+        "depth": 2,
         "parent": 93,
         "id": 95
     },
     {
         "name": "Cider",
+        "depth": 2,
         "parent": 93,
         "id": 96
     },
     {
         "name": "Coffee",
+        "depth": 1,
         "parent": 67,
         "id": 97
     },
     {
         "name": "Instant & Ground Coffee",
+        "depth": 2,
         "parent": 97,
         "id": 98
     },
     {
         "name": "Starbucks Coffee",
+        "depth": 2,
         "parent": 97,
         "id": 99
     },
     {
         "name": "Coffee Machine Pods",
+        "depth": 2,
         "parent": 97,
         "id": 100
     },
     {
         "name": "Milkshakes",
+        "depth": 1,
         "parent": 67,
         "id": 101
     },
     {
         "name": "Squash & Cordial",
+        "depth": 1,
         "parent": 67,
         "id": 102
     },
     {
         "name": "Hot Chocolate",
+        "depth": 1,
         "parent": 67,
         "id": 103
     },
     {
         "name": "Tea",
+        "depth": 1,
         "parent": 67,
         "id": 104
     },
     {
         "name": "Breakfast Tea",
+        "depth": 2,
         "parent": 104,
         "id": 105
     },
     {
         "name": "Fruit & Herbal Tea",
+        "depth": 2,
         "parent": 104,
         "id": 106
     },
     {
         "name": "Decaf Tea",
+        "depth": 2,
         "parent": 104,
         "id": 107
     },
     {
         "name": "Fizzy Drinks",
+        "depth": 1,
         "parent": 67,
         "id": 108
     },
     {
         "name": "Cola",
+        "depth": 2,
         "parent": 108,
         "id": 109
     },
     {
         "name": "Canned Drinks",
+        "depth": 2,
         "parent": 108,
         "id": 110
     },
     {
         "name": "Lemonade",
+        "depth": 2,
         "parent": 108,
         "id": 111
     },
     {
         "name": "Diet Drinks",
+        "depth": 2,
         "parent": 108,
         "id": 112
     },
     {
         "name": "Multipacks",
+        "depth": 2,
         "parent": 108,
         "id": 113
     },
     {
         "name": "Orange and Fruit Flavoured",
+        "depth": 2,
         "parent": 108,
         "id": 114
     },
     {
         "name": "Bottled Drinks",
+        "depth": 2,
         "parent": 108,
         "id": 115
     },
     {
         "name": "12 - 24 Packs",
+        "depth": 2,
         "parent": 108,
         "id": 116
     },
     {
         "name": "BBQ Essentials",
+        "depth": 0,
         "id": 117,
         "parent": 0
     },
     {
         "name": "Drinks",
+        "depth": 1,
         "parent": 117,
         "id": 118
     },
     {
         "name": "Easter",
+        "depth": 0,
         "id": 119,
         "parent": 0
     },
     {
         "name": "Easter Chocolate",
+        "depth": 1,
         "parent": 119,
         "id": 120
     },
     {
         "name": "Slimming World",
+        "depth": 0,
         "id": 121,
         "parent": 0
     },
     {
         "name": "Meats",
+        "depth": 1,
         "parent": 121,
         "id": 122
     },
     {
         "name": "Meals",
+        "depth": 1,
         "parent": 121,
         "id": 123
     },
     {
         "name": "Soups",
+        "depth": 1,
         "parent": 121,
         "id": 124
     },
     {
         "name": "Slimming World Lunch Bowls",
+        "depth": 1,
         "parent": 121,
         "id": 125
     },
     {
         "name": "Vegetarian",
+        "depth": 1,
         "parent": 121,
         "id": 126
     },
     {
         "name": "Home & Household",
+        "depth": 0,
         "id": 127,
         "parent": 0
     },
     {
         "name": "Appliances",
+        "depth": 1,
         "parent": 127,
         "id": 128
     },
     {
         "name": "Home Accessories",
+        "depth": 1,
         "parent": 127,
         "id": 129
     },
     {
         "name": "Cooking & Dining",
+        "depth": 1,
         "parent": 127,
         "id": 130
     },
     {
         "name": "Bin Bags, Foil & Cling Film",
+        "depth": 1,
         "parent": 127,
         "id": 131
     },
     {
         "name": "Baby & Toddler",
+        "depth": 1,
         "parent": 127,
         "id": 132
     },
     {
         "name": "Reusable Bags",
+        "depth": 1,
         "parent": 127,
         "id": 133
     },
     {
         "name": "Toilet Roll, Kitchen Roll & Tissues",
+        "depth": 1,
         "parent": 127,
         "id": 134
     },
     {
         "name": "Laundry",
+        "depth": 1,
         "parent": 127,
         "id": 135
     },
     {
         "name": "Washing Powders & Liquids",
+        "depth": 2,
         "parent": 135,
         "id": 136
     },
     {
         "name": "Fabric Conditioners",
+        "depth": 2,
         "parent": 135,
         "id": 137
     },
     {
         "name": "Washing Capsules & Tablets",
+        "depth": 2,
         "parent": 135,
         "id": 138
     },
     {
         "name": "Cleaning Products",
+        "depth": 1,
         "parent": 127,
         "id": 139
     },
     {
         "name": "Washing Up & Dishwasher Tablets",
+        "depth": 2,
         "parent": 139,
         "id": 140
     },
     {
         "name": "Kitchen",
+        "depth": 2,
         "parent": 139,
         "id": 141
     },
     {
         "name": "Bathroom & Toilet",
+        "depth": 2,
         "parent": 139,
         "id": 142
     },
     {
         "name": "Electronic Cigarettes",
+        "depth": 1,
         "parent": 127,
         "id": 143
     },
     {
         "name": "Sim Cards",
+        "depth": 1,
         "parent": 127,
         "id": 144
     },
     {
         "name": "Luxury Food",
+        "depth": 0,
         "id": 145,
         "parent": 0
     },
     {
         "name": "Offers",
+        "depth": 0,
         "id": 146,
         "parent": 0
     },
     {
         "name": "3 for \u00a33 Mix & Match",
+        "depth": 1,
         "parent": 146,
         "id": 147
     },
     {
         "name": "3 for \u00a310 Mix & Match",
+        "depth": 1,
         "parent": 146,
         "id": 148
     },
     {
         "name": "3 for \u00a35 Mix & Match",
+        "depth": 1,
         "parent": 146,
         "id": 149
     },
     {
         "name": "Frozen",
+        "depth": 0,
         "id": 150,
         "parent": 0
     },
     {
         "name": "Frozen Slimming World",
+        "depth": 1,
         "parent": 150,
         "id": 151
     },
     {
         "name": "Frozen Ready Meals",
+        "depth": 1,
         "parent": 150,
         "id": 152
     },
     {
         "name": "Frozen Snacks",
+        "depth": 2,
         "parent": 152,
         "id": 153
     },
     {
         "name": "Meal in a Bag",
+        "depth": 2,
         "parent": 152,
         "id": 154
     },
     {
         "name": "Traditional",
+        "depth": 2,
         "parent": 152,
         "id": 155
     },
     {
         "name": "Italian",
+        "depth": 2,
         "parent": 152,
         "id": 156
     },
     {
         "name": "Chinese & Oriental",
+        "depth": 2,
         "parent": 152,
         "id": 157
     },
     {
         "name": "Spanish & Mexican",
+        "depth": 2,
         "parent": 152,
         "id": 158
     },
     {
         "name": "Indian",
+        "depth": 2,
         "parent": 152,
         "id": 159
     },
     {
         "name": "Luxury",
+        "depth": 2,
         "parent": 152,
         "id": 160
     },
     {
         "name": "Vegan",
+        "depth": 1,
         "parent": 150,
         "id": 161
     },
     {
         "name": "Party Food & Platters",
+        "depth": 1,
         "parent": 150,
         "id": 162
     },
     {
         "name": "Pizza & Garlic Bread",
+        "depth": 1,
         "parent": 150,
         "id": 163
     },
     {
         "name": "Meat & Chicken Pizza",
+        "depth": 2,
         "parent": 163,
         "id": 164
     },
     {
         "name": "Stuffed Crust Pizza",
+        "depth": 2,
         "parent": 163,
         "id": 165
     },
     {
         "name": "Mini Pizzas",
+        "depth": 2,
         "parent": 163,
         "id": 166
     },
     {
         "name": "Deep Pan Pizza",
+        "depth": 2,
         "parent": 163,
         "id": 167
     },
     {
         "name": "Pizza Snacks",
+        "depth": 2,
         "parent": 163,
         "id": 168
     },
     {
         "name": "Stonebaked Pizza",
+        "depth": 2,
         "parent": 163,
         "id": 169
     },
     {
         "name": "Garlic Bread",
+        "depth": 2,
         "parent": 163,
         "id": 170
     },
     {
         "name": "Thin & Crispy Pizza",
+        "depth": 2,
         "parent": 163,
         "id": 171
     },
     {
         "name": "Sharing Pizza",
+        "depth": 2,
         "parent": 163,
         "id": 172
     },
     {
         "name": "Woodfired Pizza",
+        "depth": 2,
         "parent": 163,
         "id": 173
     },
     {
         "name": "Frozen Desserts, Fruit & Pastry",
+        "depth": 1,
         "parent": 150,
         "id": 174
     },
     {
         "name": "Desserts",
+        "depth": 2,
         "parent": 174,
         "id": 175
     },
     {
         "name": "Frozen Fruit, Smoothies & Ice",
+        "depth": 2,
         "parent": 174,
         "id": 176
     },
     {
         "name": "Pastry",
+        "depth": 2,
         "parent": 174,
         "id": 177
     },
     {
         "name": "Frozen Pies",
+        "depth": 1,
         "parent": 150,
         "id": 178
     },
     {
         "name": "Greggs",
+        "depth": 2,
         "parent": 178,
         "id": 179
     },
     {
         "name": "Pies & Puddings",
+        "depth": 2,
         "parent": 178,
         "id": 180
     },
     {
         "name": "Pasties, Quiche & Sausage Rolls",
+        "depth": 2,
         "parent": 178,
         "id": 181
     },
     {
         "name": "Chips & Potatoes",
+        "depth": 1,
         "parent": 150,
         "id": 182
     },
     {
         "name": "Chips & Fries",
+        "depth": 2,
         "parent": 182,
         "id": 183
     },
     {
         "name": "Potatoes",
+        "depth": 2,
         "parent": 182,
         "id": 184
     },
     {
         "name": "Yorkshire Puddings & Stuffing",
+        "depth": 1,
         "parent": 150,
         "id": 185
     },
     {
         "name": "Ice Cream & Lollies",
+        "depth": 1,
         "parent": 150,
         "id": 186
     },
     {
         "name": "Ice Lollies",
+        "depth": 2,
         "parent": 186,
         "id": 187
     },
     {
         "name": "Ice Cream Tubs",
+        "depth": 2,
         "parent": 186,
         "id": 188
     },
     {
         "name": "Ice Cream Cones, Sticks & Bars",
+        "depth": 2,
         "parent": 186,
         "id": 189
     },
     {
         "name": "Frozen Bakery",
+        "depth": 1,
         "parent": 150,
         "id": 190
     },
     {
         "name": "Frozen Meat & Chicken",
+        "depth": 1,
         "parent": 150,
         "id": 191
     },
     {
         "name": "Crispy Shredded",
+        "depth": 2,
         "parent": 191,
         "id": 192
     },
     {
         "name": "Luxury Meat & Poultry",
+        "depth": 2,
         "parent": 191,
         "id": 193
     },
     {
         "name": "Lamb",
+        "depth": 2,
         "parent": 191,
         "id": 194
     },
     {
         "name": "Chicken and Turkey",
+        "depth": 2,
         "parent": 191,
         "id": 195
     },
     {
         "name": "Turkey",
+        "depth": 3,
         "parent": 195,
         "id": 196
     },
     {
         "name": "Sausages",
+        "depth": 2,
         "parent": 191,
         "id": 197
     },
     {
         "name": "Breaded & Battered Chicken",
+        "depth": 2,
         "parent": 191,
         "id": 198
     },
     {
         "name": "Beef",
+        "depth": 2,
         "parent": 191,
         "id": 199
     },
     {
         "name": "Burgers",
+        "depth": 2,
         "parent": 191,
         "id": 200
     },
     {
         "name": "Burgers and Sausages",
+        "depth": 2,
         "parent": 191,
         "id": 201
     },
     {
         "name": "Burgers",
+        "depth": 3,
         "parent": 201,
         "id": 202
     },
     {
         "name": "Pork & Gammon",
+        "depth": 2,
         "parent": 191,
         "id": 203
     },
     {
         "name": "Turkey",
+        "depth": 2,
         "parent": 191,
         "id": 204
     },
     {
         "name": "Chicken",
+        "depth": 2,
         "parent": 191,
         "id": 205
     },
     {
         "name": "Vegetarian",
+        "depth": 1,
         "parent": 150,
         "id": 206
     },
     {
         "name": "Frozen Vegetables & Rice",
+        "depth": 1,
         "parent": 150,
         "id": 207
     },
     {
         "name": "Herbs",
+        "depth": 2,
         "parent": 207,
         "id": 208
     },
     {
         "name": "Vegetables",
+        "depth": 2,
         "parent": 207,
         "id": 209
     },
     {
         "name": "Rice & Grains",
+        "depth": 2,
         "parent": 207,
         "id": 210
     },
     {
         "name": "Vegetable Side Dishes",
+        "depth": 2,
         "parent": 207,
         "id": 211
     },
     {
         "name": "Frozen Fish & Seafood",
+        "depth": 1,
         "parent": 150,
         "id": 212
     },
     {
         "name": "Luxury Fish & Seafood",
+        "depth": 2,
         "parent": 212,
         "id": 213
     },
     {
         "name": "Fish Fingers, Fish Cakes & Scampi",
+        "depth": 2,
         "parent": 212,
         "id": 214
     },
     {
         "name": "Fish Pies & Meals",
+        "depth": 2,
         "parent": 212,
         "id": 215
     },
     {
         "name": "Prawns & Seafood",
+        "depth": 2,
         "parent": 212,
         "id": 216
     },
     {
         "name": "Battered & Breaded Fish",
+        "depth": 2,
         "parent": 212,
         "id": 217
     },
     {
         "name": "Fish Fillets",
+        "depth": 2,
         "parent": 212,
         "id": 218
     },
     {
         "name": "TGI Fridays",
+        "depth": 1,
         "parent": 150,
         "id": 219
     },
     {
         "name": "Back to School",
+        "depth": 0,
         "id": 220,
         "parent": 0
     },
     {
         "name": "Beers, Wines & Spirits",
+        "depth": 0,
         "id": 221,
         "parent": 0
     },
     {
         "name": "Spirits & Pre-Mixed",
+        "depth": 1,
         "parent": 221,
         "id": 222
     },
     {
         "name": "Wine & Sparkling",
+        "depth": 1,
         "parent": 221,
         "id": 223
     },
     {
         "name": "The Land of the Roast",
+        "depth": 0,
         "id": 224,
         "parent": 0
     },
     {
         "name": "Bakery",
+        "depth": 0,
         "id": 225,
         "parent": 0
     },
     {
         "name": "Cakes",
+        "depth": 1,
         "parent": 225,
         "id": 226
     },
     {
         "name": "Mini Rolls & Cake Bars",
+        "depth": 2,
         "parent": 226,
         "id": 227
     },
     {
         "name": "Fruit Pies & Tarts",
+        "depth": 2,
         "parent": 226,
         "id": 228
     },
     {
         "name": "Cake",
+        "depth": 2,
         "parent": 226,
         "id": 229
     },
     {
         "name": "Muffins & Mini Bites",
+        "depth": 2,
         "parent": 226,
         "id": 230
     },
     {
         "name": "Wraps, Naan, Pittas & Thins",
+        "depth": 1,
         "parent": 225,
         "id": 231
     },
     {
         "name": "Fruit Loaves, Teacakes & Scones",
+        "depth": 1,
         "parent": 225,
         "id": 232
     },
     {
         "name": "Crumpets, Muffins & Pancakes",
+        "depth": 1,
         "parent": 225,
         "id": 233
     },
     {
         "name": "The Daily Bakery",
+        "depth": 1,
         "parent": 225,
         "id": 234
     },
     {
         "name": "Bread",
+        "depth": 1,
         "parent": 225,
         "id": 235
     },
     {
         "name": "Brown & Wholemeal Bread",
+        "depth": 2,
         "parent": 235,
         "id": 236
     },
     {
         "name": "White Bread",
+        "depth": 2,
         "parent": 235,
         "id": 237
     },
     {
         "name": "Seeds & Grains",
+        "depth": 2,
         "parent": 235,
         "id": 238
     },
     {
         "name": "Half & Half Bread",
+        "depth": 2,
         "parent": 235,
         "id": 239
     },
     {
         "name": "Indian & Mediterranean Breads",
+        "depth": 1,
         "parent": 225,
         "id": 240
     },
     {
         "name": "Wraps, Bagels, Pittas & Thins",
+        "depth": 1,
         "parent": 225,
         "id": 241
     },
     {
         "name": "Croissants, Pain au Chocolat & Belgian Buns",
+        "depth": 1,
         "parent": 225,
         "id": 242
     },
     {
         "name": "Rolls & Part Baked",
+        "depth": 1,
         "parent": 225,
         "id": 243
     },
     {
         "name": "Toiletries & Health",
+        "depth": 0,
         "id": 244,
         "parent": 0
     },
     {
         "name": "Soap Handwash and Hand Sanitiser",
+        "depth": 1,
         "parent": 244,
         "id": 245
     },
     {
         "name": "Medicines",
+        "depth": 1,
         "parent": 244,
         "id": 246
     },
     {
         "name": "Mens Toiletries",
+        "depth": 1,
         "parent": 244,
         "id": 247
     },
     {
         "name": "Dental Care",
+        "depth": 1,
         "parent": 244,
         "id": 248
     },
     {
         "name": "Shampoo and Conditioner",
+        "depth": 1,
         "parent": 244,
         "id": 249
     },
     {
         "name": "Deodorant",
+        "depth": 1,
         "parent": 244,
         "id": 250
     },
     {
         "name": "Womens Toiletries",
+        "depth": 1,
         "parent": 244,
         "id": 251
     },
     {
         "name": "Food Cupboard",
+        "depth": 0,
         "id": 252,
         "parent": 0
     },
     {
         "name": "Cans, Tins & Packets",
+        "depth": 1,
         "parent": 252,
         "id": 253
     },
     {
         "name": "Tinned Fruit, Desserts & Jelly",
+        "depth": 2,
         "parent": 253,
         "id": 254
     },
     {
         "name": "Tinned Soup",
+        "depth": 2,
         "parent": 253,
         "id": 255
     },
     {
         "name": "Tinned Beans, Spaghetti & Pasta",
+        "depth": 2,
         "parent": 253,
         "id": 256
     },
     {
         "name": "Tinned Fish & Seafood",
+        "depth": 2,
         "parent": 253,
         "id": 257
     },
     {
         "name": "Tinned Tomatoes & Vegetables",
+        "depth": 2,
         "parent": 253,
         "id": 258
     },
     {
         "name": "Packet Rice, Pasta & Noodles",
+        "depth": 2,
         "parent": 253,
         "id": 259
     },
     {
         "name": "Tinned Meat & Pies",
+        "depth": 2,
         "parent": 253,
         "id": 260
     },
     {
         "name": "Cereal",
+        "depth": 1,
         "parent": 252,
         "id": 261
     },
     {
         "name": "Cereal Bars",
+        "depth": 2,
         "parent": 261,
         "id": 262
     },
     {
         "name": "Everyday & Family Cereal",
+        "depth": 2,
         "parent": 261,
         "id": 263
     },
     {
         "name": "Oats & Porridge",
+        "depth": 2,
         "parent": 261,
         "id": 264
     },
     {
         "name": "Kids Cereal",
+        "depth": 2,
         "parent": 261,
         "id": 265
     },
     {
         "name": "Rice, Pasta & Noodles",
+        "depth": 1,
         "parent": 252,
         "id": 266
     },
     {
         "name": "Pasta",
+        "depth": 2,
         "parent": 266,
         "id": 267
     },
     {
         "name": "Rice, Grains & Pulses",
+        "depth": 2,
         "parent": 266,
         "id": 268
     },
     {
         "name": "Noodles",
+        "depth": 2,
         "parent": 266,
         "id": 269
     },
     {
         "name": "Chocolate & Sweets",
+        "depth": 1,
         "parent": 252,
         "id": 270
     },
     {
         "name": "Sharing Bags & Tubs",
+        "depth": 2,
         "parent": 270,
         "id": 271
     },
     {
         "name": "Sweets",
+        "depth": 2,
         "parent": 270,
         "id": 272
     },
     {
         "name": "Single Chocolate Bars & Bags",
+        "depth": 2,
         "parent": 270,
         "id": 273
     },
     {
         "name": "Chocolate Boxes & Gifts",
+        "depth": 2,
         "parent": 270,
         "id": 274
     },
     {
         "name": "Multipacks",
+        "depth": 2,
         "parent": 270,
         "id": 275
     },
     {
         "name": "Chewing Gum & Mints",
+        "depth": 2,
         "parent": 270,
         "id": 276
     },
     {
         "name": "Long Life Milk & Sugar",
+        "depth": 1,
         "parent": 252,
         "id": 277
     },
     {
         "name": "Table Sauces, BBQ & Pickles",
+        "depth": 1,
         "parent": 252,
         "id": 278
     },
     {
         "name": "Pickles & Chutneys",
+        "depth": 2,
         "parent": 278,
         "id": 279
     },
     {
         "name": "Salad Cream & Mayonnaise",
+        "depth": 2,
         "parent": 278,
         "id": 280
     },
     {
         "name": "BBQ, Chilli & Marinades",
+        "depth": 2,
         "parent": 278,
         "id": 281
     },
     {
         "name": "Table Sauce",
+        "depth": 2,
         "parent": 278,
         "id": 282
     },
     {
         "name": "Biscuits & Crackers",
+        "depth": 1,
         "parent": 252,
         "id": 283
     },
     {
         "name": "Chocolate Biscuits",
+        "depth": 2,
         "parent": 283,
         "id": 284
     },
     {
         "name": "Crackers & Savoury Biscuits",
+        "depth": 2,
         "parent": 283,
         "id": 285
     },
     {
         "name": "Sweet Biscuits",
+        "depth": 2,
         "parent": 283,
         "id": 286
     },
     {
         "name": "Multipack Biscuits",
+        "depth": 2,
         "parent": 283,
         "id": 287
     },
     {
         "name": "Tea, Coffee & Hot Drinks",
+        "depth": 1,
         "parent": 252,
         "id": 288
     },
     {
         "name": "Jams & Spreads",
+        "depth": 1,
         "parent": 252,
         "id": 289
     },
     {
         "name": "Jams, Marmalades & Honey",
+        "depth": 2,
         "parent": 289,
         "id": 290
     },
     {
         "name": "Paste & Spreads",
+        "depth": 2,
         "parent": 289,
         "id": 291
     },
     {
         "name": "Cooking Ingredients",
+        "depth": 1,
         "parent": 252,
         "id": 292
     },
     {
         "name": "Herbs, Spices & Seasonings",
+        "depth": 2,
         "parent": 292,
         "id": 293
     },
     {
         "name": "Gravy, Stock Cubes & Stuffing",
+        "depth": 2,
         "parent": 292,
         "id": 294
     },
     {
         "name": "Packet Mixes",
+        "depth": 2,
         "parent": 292,
         "id": 295
     },
     {
         "name": "Salt, Pepper & Vinegar",
+        "depth": 2,
         "parent": 292,
         "id": 296
     },
     {
         "name": "Oils & Dressings",
+        "depth": 2,
         "parent": 292,
         "id": 297
     },
     {
         "name": "Freeze Pops, Wafers & Sauces",
+        "depth": 1,
         "parent": 252,
         "id": 298
     },
     {
         "name": "Ice Cream Toppings",
+        "depth": 2,
         "parent": 298,
         "id": 299
     },
     {
         "name": "Freeze Pops",
+        "depth": 2,
         "parent": 298,
         "id": 300
     },
     {
         "name": "Ice Cream Wafers",
+        "depth": 2,
         "parent": 298,
         "id": 301
     },
     {
         "name": "Crisps, Nuts & Snacks",
+        "depth": 1,
         "parent": 252,
         "id": 302
     },
     {
         "name": "Seabrook",
+        "depth": 2,
         "parent": 302,
         "id": 303
     },
     {
         "name": "Nuts & Snacks",
+        "depth": 2,
         "parent": 302,
         "id": 304
     },
     {
         "name": "Sharing Crisps",
+        "depth": 2,
         "parent": 302,
         "id": 305
     },
     {
         "name": "Multipack Crisps",
+        "depth": 2,
         "parent": 302,
         "id": 306
     },
     {
         "name": "Dried Fruit",
+        "depth": 2,
         "parent": 302,
         "id": 307
     },
     {
         "name": "Popcorn",
+        "depth": 2,
         "parent": 302,
         "id": 308
     },
     {
         "name": "Baby Food",
+        "depth": 1,
         "parent": 252,
         "id": 309
     },
     {
         "name": "Biscuits & Beverages",
+        "depth": 1,
         "parent": 252,
         "id": 310
     },
     {
         "name": "Cooking Sauces & Meal Kits",
+        "depth": 1,
         "parent": 252,
         "id": 311
     },
     {
         "name": "Pasta Sauces",
+        "depth": 2,
         "parent": 311,
         "id": 312
     },
     {
         "name": "Chinese and Oriental Sauces",
+        "depth": 2,
         "parent": 311,
         "id": 313
     },
     {
         "name": "Mexican Sauces & Meal Kits",
+        "depth": 2,
         "parent": 311,
         "id": 314
     },
     {
         "name": "Traditional Sauces",
+        "depth": 2,
         "parent": 311,
         "id": 315
     },
     {
         "name": "Indian and Curry Sauces",
+        "depth": 2,
         "parent": 311,
         "id": 316
     },
     {
         "name": "Home Baking",
+        "depth": 1,
         "parent": 252,
         "id": 317
     },
     {
         "name": "Air Fry",
+        "depth": 0,
         "id": 318,
         "parent": 0
     },
     {
         "name": "Fish & Seafood",
+        "depth": 1,
         "parent": 318,
         "id": 319
     },
     {
         "name": "Meat & Poultry",
+        "depth": 1,
         "parent": 318,
         "id": 320
     },
     {
         "name": "Halloween and Bonfire",
+        "depth": 0,
         "id": 321,
         "parent": 0
     },
     {
         "name": "Gluten Free",
+        "depth": 0,
         "id": 322,
         "parent": 0
     },
     {
         "name": "Christmas Trimmings",
+        "depth": 0,
         "id": 323,
         "parent": 0
     },
     {
         "name": "Halal",
+        "depth": 0,
         "id": 324,
         "parent": 0
     },
     {
         "name": "Pet",
+        "depth": 0,
         "id": 325,
         "parent": 0
     },
     {
         "name": "Dog Food",
+        "depth": 1,
         "parent": 325,
         "id": 326
     },
     {
         "name": "Cat Food",
+        "depth": 1,
         "parent": 325,
         "id": 327
     },
     {
         "name": "Pet Treats",
+        "depth": 1,
         "parent": 325,
         "id": 328
     },
     {
         "name": "Slimming World Meals",
+        "depth": 0,
         "id": 329,
         "parent": 0
     },
     {
         "name": "Treats & Snacks",
+        "depth": 0,
         "id": 330,
         "parent": 0
     },
     {
         "name": "New",
+        "depth": 0,
         "id": 331,
         "parent": 0
     },
     {
         "name": "Exclusive Brands",
+        "depth": 0,
         "id": 332,
         "parent": 0
     },
     {
         "name": "Slimming World",
+        "depth": 1,
         "parent": 332,
         "id": 333
     },
     {
         "name": "Blue Dragon",
+        "depth": 1,
         "parent": 332,
         "id": 334
     },
     {
         "name": "Cathedral City",
+        "depth": 1,
         "parent": 332,
         "id": 335
     },
     {
         "name": "Piccolino",
+        "depth": 1,
         "parent": 332,
         "id": 336
     },
     {
         "name": "Grill House",
+        "depth": 1,
         "parent": 332,
         "id": 337
     },
     {
         "name": "TGI Fridays",
+        "depth": 1,
         "parent": 332,
         "id": 338
     },
     {
         "name": "Festive Drinks",
+        "depth": 0,
         "id": 339,
         "parent": 0
     },
