@@ -1,0 +1,991 @@
+[
+    {
+        "name": "Pets",
+        "depth": 0,
+        "id": 1,
+        "parent": 0
+    },
+    {
+        "name": "Dog Food & Accessories",
+        "depth": 1,
+        "parent": 1,
+        "id": 2
+    },
+    {
+        "name": "Pet Cleaning",
+        "depth": 1,
+        "parent": 1,
+        "id": 3
+    },
+    {
+        "name": "Cat Food & Accessories",
+        "depth": 1,
+        "parent": 1,
+        "id": 4
+    },
+    {
+        "name": "Small Animal, Fish & Bird",
+        "depth": 1,
+        "parent": 1,
+        "id": 5
+    },
+    {
+        "name": "Cigarettes & Tobacco",
+        "depth": 0,
+        "id": 6,
+        "parent": 0
+    },
+    {
+        "name": "Cigarettes",
+        "depth": 1,
+        "parent": 6,
+        "id": 7
+    },
+    {
+        "name": "Roll Your Own",
+        "depth": 1,
+        "parent": 6,
+        "id": 8
+    },
+    {
+        "name": "Cigars",
+        "depth": 1,
+        "parent": 6,
+        "id": 9
+    },
+    {
+        "name": "Bakery",
+        "depth": 0,
+        "id": 10,
+        "parent": 0
+    },
+    {
+        "name": "Bread & Rolls",
+        "depth": 1,
+        "parent": 10,
+        "id": 11
+    },
+    {
+        "name": "Doughnuts, Cookies & Muffins",
+        "depth": 1,
+        "parent": 10,
+        "id": 12
+    },
+    {
+        "name": "Free From Bakery",
+        "depth": 1,
+        "parent": 10,
+        "id": 13
+    },
+    {
+        "name": "Wraps, Pittas, Naan & Thins",
+        "depth": 1,
+        "parent": 10,
+        "id": 14
+    },
+    {
+        "name": "Cakes, Cake Bars, Slices & Pies",
+        "depth": 1,
+        "parent": 10,
+        "id": 15
+    },
+    {
+        "name": "Crumpets, Muffins & Pancakes",
+        "depth": 1,
+        "parent": 10,
+        "id": 16
+    },
+    {
+        "name": "Christmas Bakery",
+        "depth": 1,
+        "parent": 10,
+        "id": 17
+    },
+    {
+        "name": "Teacakes, Fruit Loaves & Scones",
+        "depth": 1,
+        "parent": 10,
+        "id": 18
+    },
+    {
+        "name": "Croissants, Brioche & Pastries",
+        "depth": 1,
+        "parent": 10,
+        "id": 19
+    },
+    {
+        "name": "Health & Beauty",
+        "depth": 0,
+        "id": 20,
+        "parent": 0
+    },
+    {
+        "name": "Suncare & Travel",
+        "depth": 1,
+        "parent": 20,
+        "id": 21
+    },
+    {
+        "name": "Make Up & Beauty Accessories",
+        "depth": 1,
+        "parent": 20,
+        "id": 22
+    },
+    {
+        "name": "Face Coverings & Covid Tests",
+        "depth": 1,
+        "parent": 20,
+        "id": 23
+    },
+    {
+        "name": "Lifestyle & Wellbeing",
+        "depth": 1,
+        "parent": 20,
+        "id": 24
+    },
+    {
+        "name": "Hair Colourants & Dyes",
+        "depth": 1,
+        "parent": 20,
+        "id": 25
+    },
+    {
+        "name": "Shower, Bath & H& Hygiene",
+        "depth": 1,
+        "parent": 20,
+        "id": 26
+    },
+    {
+        "name": "Body Skincare",
+        "depth": 1,
+        "parent": 20,
+        "id": 27
+    },
+    {
+        "name": "Vitamins, Minerals & Supplements",
+        "depth": 1,
+        "parent": 20,
+        "id": 28
+    },
+    {
+        "name": "Conditioner",
+        "depth": 1,
+        "parent": 20,
+        "id": 29
+    },
+    {
+        "name": "Face Skincare",
+        "depth": 1,
+        "parent": 20,
+        "id": 30
+    },
+    {
+        "name": "Toothpaste, Mouthwash & Toothbrush",
+        "depth": 1,
+        "parent": 20,
+        "id": 31
+    },
+    {
+        "name": "Shampoo",
+        "depth": 1,
+        "parent": 20,
+        "id": 32
+    },
+    {
+        "name": "Deodorants",
+        "depth": 1,
+        "parent": 20,
+        "id": 33
+    },
+    {
+        "name": "Haircare & Styling",
+        "depth": 1,
+        "parent": 20,
+        "id": 34
+    },
+    {
+        "name": "Medicine",
+        "depth": 1,
+        "parent": 20,
+        "id": 35
+    },
+    {
+        "name": "Perfumes, Aftershaves & Gift Sets",
+        "depth": 1,
+        "parent": 20,
+        "id": 36
+    },
+    {
+        "name": "Home & Ents",
+        "depth": 0,
+        "id": 37,
+        "parent": 0
+    },
+    {
+        "name": "Home Accessories",
+        "depth": 1,
+        "parent": 37,
+        "id": 38
+    },
+    {
+        "name": "Cooking & Dining",
+        "depth": 1,
+        "parent": 37,
+        "id": 39
+    },
+    {
+        "name": "Diy & Car Care",
+        "depth": 1,
+        "parent": 37,
+        "id": 40
+    },
+    {
+        "name": "Electrical",
+        "depth": 1,
+        "parent": 37,
+        "id": 41
+    },
+    {
+        "name": "Bedding",
+        "depth": 1,
+        "parent": 37,
+        "id": 42
+    },
+    {
+        "name": "Flowers",
+        "depth": 1,
+        "parent": 37,
+        "id": 43
+    },
+    {
+        "name": "Stationery, Arts & Crafts",
+        "depth": 1,
+        "parent": 37,
+        "id": 44
+    },
+    {
+        "name": "Bathroom Accessories & Towels",
+        "depth": 1,
+        "parent": 37,
+        "id": 45
+    },
+    {
+        "name": "Garden & Outdoor",
+        "depth": 1,
+        "parent": 37,
+        "id": 46
+    },
+    {
+        "name": "Toys & Games",
+        "depth": 1,
+        "parent": 37,
+        "id": 47
+    },
+    {
+        "name": "Books",
+        "depth": 1,
+        "parent": 37,
+        "id": 48
+    },
+    {
+        "name": "Batteries",
+        "depth": 1,
+        "parent": 37,
+        "id": 49
+    },
+    {
+        "name": "Party & Giftwrap",
+        "depth": 1,
+        "parent": 37,
+        "id": 50
+    },
+    {
+        "name": "National Lottery",
+        "depth": 1,
+        "parent": 37,
+        "id": 51
+    },
+    {
+        "name": "Baby & Toddler",
+        "depth": 0,
+        "id": 52,
+        "parent": 0
+    },
+    {
+        "name": "Dummies & Teething",
+        "depth": 1,
+        "parent": 52,
+        "id": 53
+    },
+    {
+        "name": "Breast Feeding Accessories",
+        "depth": 1,
+        "parent": 52,
+        "id": 54
+    },
+    {
+        "name": "Toys & Nursery Accessories",
+        "depth": 1,
+        "parent": 52,
+        "id": 55
+    },
+    {
+        "name": "Baby & Toddler Milk",
+        "depth": 1,
+        "parent": 52,
+        "id": 56
+    },
+    {
+        "name": "Baby & Toddler Toiletries",
+        "depth": 1,
+        "parent": 52,
+        "id": 57
+    },
+    {
+        "name": "Toilet Training",
+        "depth": 1,
+        "parent": 52,
+        "id": 58
+    },
+    {
+        "name": "Nappies & Pants",
+        "depth": 1,
+        "parent": 52,
+        "id": 59
+    },
+    {
+        "name": "Sterilising & Antibacterial",
+        "depth": 1,
+        "parent": 52,
+        "id": 60
+    },
+    {
+        "name": "Baby & Toddler Wipes",
+        "depth": 1,
+        "parent": 52,
+        "id": 61
+    },
+    {
+        "name": "Baby Weaning & Accessories",
+        "depth": 1,
+        "parent": 52,
+        "id": 62
+    },
+    {
+        "name": "Baby Bottles & Accessories",
+        "depth": 1,
+        "parent": 52,
+        "id": 63
+    },
+    {
+        "name": "Baby & Toddler Food",
+        "depth": 1,
+        "parent": 52,
+        "id": 64
+    },
+    {
+        "name": "Baby & Toddler Healthcare",
+        "depth": 1,
+        "parent": 52,
+        "id": 65
+    },
+    {
+        "name": "Mum To Be",
+        "depth": 1,
+        "parent": 52,
+        "id": 66
+    },
+    {
+        "name": "Household",
+        "depth": 0,
+        "id": 67,
+        "parent": 0
+    },
+    {
+        "name": "Facial Tissue & H& Wipes",
+        "depth": 1,
+        "parent": 67,
+        "id": 68
+    },
+    {
+        "name": "Lightbulbs",
+        "depth": 1,
+        "parent": 67,
+        "id": 69
+    },
+    {
+        "name": "Food Storage",
+        "depth": 1,
+        "parent": 67,
+        "id": 70
+    },
+    {
+        "name": "Brushes, Mops & Buckets",
+        "depth": 1,
+        "parent": 67,
+        "id": 71
+    },
+    {
+        "name": "Air Fresheners & Home Fragrance",
+        "depth": 1,
+        "parent": 67,
+        "id": 72
+    },
+    {
+        "name": "Kitchen Roll",
+        "depth": 1,
+        "parent": 67,
+        "id": 73
+    },
+    {
+        "name": "Laundry",
+        "depth": 1,
+        "parent": 67,
+        "id": 74
+    },
+    {
+        "name": "Toilet Roll",
+        "depth": 1,
+        "parent": 67,
+        "id": 75
+    },
+    {
+        "name": "Kitchen Cleaners",
+        "depth": 1,
+        "parent": 67,
+        "id": 76
+    },
+    {
+        "name": "Cleaning",
+        "depth": 1,
+        "parent": 67,
+        "id": 77
+    },
+    {
+        "name": "Dishwashing",
+        "depth": 1,
+        "parent": 67,
+        "id": 78
+    },
+    {
+        "name": "Bathroom Cleaners & Toilet Care",
+        "depth": 1,
+        "parent": 67,
+        "id": 79
+    },
+    {
+        "name": "Frozen Food",
+        "depth": 0,
+        "id": 80,
+        "parent": 0
+    },
+    {
+        "name": "Desserts",
+        "depth": 1,
+        "parent": 80,
+        "id": 81
+    },
+    {
+        "name": "Yorkshire Puddings & Stuffing",
+        "depth": 1,
+        "parent": 80,
+        "id": 82
+    },
+    {
+        "name": "Free From & Gluten Free",
+        "depth": 1,
+        "parent": 80,
+        "id": 83
+    },
+    {
+        "name": "Fruit & Pastry",
+        "depth": 1,
+        "parent": 80,
+        "id": 84
+    },
+    {
+        "name": "Party Foods & Garlic Breads",
+        "depth": 1,
+        "parent": 80,
+        "id": 85
+    },
+    {
+        "name": "World Foods & Halal",
+        "depth": 1,
+        "parent": 80,
+        "id": 86
+    },
+    {
+        "name": "Ready Meals",
+        "depth": 1,
+        "parent": 80,
+        "id": 87
+    },
+    {
+        "name": "Meat & Poultry",
+        "depth": 1,
+        "parent": 80,
+        "id": 88
+    },
+    {
+        "name": "Pizza",
+        "depth": 1,
+        "parent": 80,
+        "id": 89
+    },
+    {
+        "name": "Fish & Seafood",
+        "depth": 1,
+        "parent": 80,
+        "id": 90
+    },
+    {
+        "name": "Ice Cream & Lollies",
+        "depth": 1,
+        "parent": 80,
+        "id": 91
+    },
+    {
+        "name": "Ice Cubes",
+        "depth": 1,
+        "parent": 80,
+        "id": 92
+    },
+    {
+        "name": "Vegetables",
+        "depth": 1,
+        "parent": 80,
+        "id": 93
+    },
+    {
+        "name": "Vegan",
+        "depth": 1,
+        "parent": 80,
+        "id": 94
+    },
+    {
+        "name": "Christmas Frozen Food",
+        "depth": 1,
+        "parent": 80,
+        "id": 95
+    },
+    {
+        "name": "Chips, Potatoes & Sides",
+        "depth": 1,
+        "parent": 80,
+        "id": 96
+    },
+    {
+        "name": "Pies, Bakes & Sausage Rolls",
+        "depth": 1,
+        "parent": 80,
+        "id": 97
+    },
+    {
+        "name": "Vegetarian",
+        "depth": 1,
+        "parent": 80,
+        "id": 98
+    },
+    {
+        "name": "Finest Frozen Food",
+        "depth": 1,
+        "parent": 80,
+        "id": 99
+    },
+    {
+        "name": "Treats & Snacks",
+        "depth": 0,
+        "id": 100,
+        "parent": 0
+    },
+    {
+        "name": "Chocolate, Sweets, Mints & Chewing Gum",
+        "depth": 1,
+        "parent": 100,
+        "id": 101
+    },
+    {
+        "name": "Meat & Cheese Snacking",
+        "depth": 1,
+        "parent": 100,
+        "id": 102
+    },
+    {
+        "name": "Crisps, Snacks, Nuts & Popcorn",
+        "depth": 1,
+        "parent": 100,
+        "id": 103
+    },
+    {
+        "name": "Biscuits & Cereal Bars",
+        "depth": 1,
+        "parent": 100,
+        "id": 104
+    },
+    {
+        "name": "Drinks",
+        "depth": 0,
+        "id": 105,
+        "parent": 0
+    },
+    {
+        "name": "Sports, Energy & Wellness Drinks",
+        "depth": 1,
+        "parent": 105,
+        "id": 106
+    },
+    {
+        "name": "Hot Chocolate & Malted Drinks",
+        "depth": 1,
+        "parent": 105,
+        "id": 107
+    },
+    {
+        "name": "Soft Drinks & Mixers",
+        "depth": 1,
+        "parent": 105,
+        "id": 108
+    },
+    {
+        "name": "Wine",
+        "depth": 1,
+        "parent": 105,
+        "id": 109
+    },
+    {
+        "name": "Kids Drinks",
+        "depth": 1,
+        "parent": 105,
+        "id": 110
+    },
+    {
+        "name": "Fizzy & Soft Drinks",
+        "depth": 1,
+        "parent": 105,
+        "id": 111
+    },
+    {
+        "name": "Alcohol Free & Low Alcohol Drinks",
+        "depth": 1,
+        "parent": 105,
+        "id": 112
+    },
+    {
+        "name": "Juices & Smoothies",
+        "depth": 1,
+        "parent": 105,
+        "id": 113
+    },
+    {
+        "name": "Alcohol Gift Sets",
+        "depth": 1,
+        "parent": 105,
+        "id": 114
+    },
+    {
+        "name": "Squash & Cordial",
+        "depth": 1,
+        "parent": 105,
+        "id": 115
+    },
+    {
+        "name": "Spirits",
+        "depth": 1,
+        "parent": 105,
+        "id": 116
+    },
+    {
+        "name": "Water",
+        "depth": 1,
+        "parent": 105,
+        "id": 117
+    },
+    {
+        "name": "Coffee",
+        "depth": 1,
+        "parent": 105,
+        "id": 118
+    },
+    {
+        "name": "Tea",
+        "depth": 1,
+        "parent": 105,
+        "id": 119
+    },
+    {
+        "name": "Beer & Cider",
+        "depth": 1,
+        "parent": 105,
+        "id": 120
+    },
+    {
+        "name": "Ready To Drink Wine & Spirits",
+        "depth": 1,
+        "parent": 105,
+        "id": 121
+    },
+    {
+        "name": "Milk & Milkshakes",
+        "depth": 1,
+        "parent": 105,
+        "id": 122
+    },
+    {
+        "name": "Food Cupboard",
+        "depth": 0,
+        "id": 123,
+        "parent": 0
+    },
+    {
+        "name": "Table Sauces, Olives, Pickles & Chutney",
+        "depth": 1,
+        "parent": 123,
+        "id": 124
+    },
+    {
+        "name": "Dried Fruit, Nuts, Nutrient Powders & Seeds",
+        "depth": 1,
+        "parent": 123,
+        "id": 125
+    },
+    {
+        "name": "Desserts",
+        "depth": 1,
+        "parent": 123,
+        "id": 126
+    },
+    {
+        "name": "Tins, Cans & Packets",
+        "depth": 1,
+        "parent": 123,
+        "id": 127
+    },
+    {
+        "name": "Cooking Sauces, Meal Kits & Sides",
+        "depth": 1,
+        "parent": 123,
+        "id": 128
+    },
+    {
+        "name": "World Foods",
+        "depth": 1,
+        "parent": 123,
+        "id": 129
+    },
+    {
+        "name": "Dried Pasta, Rice, Noodles & Cous Cous",
+        "depth": 1,
+        "parent": 123,
+        "id": 130
+    },
+    {
+        "name": "Jams, Sweet & Savoury Spreads",
+        "depth": 1,
+        "parent": 123,
+        "id": 131
+    },
+    {
+        "name": "Crackers & Crispbreads",
+        "depth": 1,
+        "parent": 123,
+        "id": 132
+    },
+    {
+        "name": "Chocolate, Sweets, Mints & Chewing Gum",
+        "depth": 1,
+        "parent": 123,
+        "id": 133
+    },
+    {
+        "name": "Free From",
+        "depth": 1,
+        "parent": 123,
+        "id": 134
+    },
+    {
+        "name": "Christmas Treats",
+        "depth": 1,
+        "parent": 123,
+        "id": 135
+    },
+    {
+        "name": "Cereals",
+        "depth": 1,
+        "parent": 123,
+        "id": 136
+    },
+    {
+        "name": "Home Baking & Sugar",
+        "depth": 1,
+        "parent": 123,
+        "id": 137
+    },
+    {
+        "name": "Biscuits & Cereal Bars",
+        "depth": 1,
+        "parent": 123,
+        "id": 138
+    },
+    {
+        "name": "Finest Food Cupboard",
+        "depth": 1,
+        "parent": 123,
+        "id": 139
+    },
+    {
+        "name": "Cooking Ingredients",
+        "depth": 1,
+        "parent": 123,
+        "id": 140
+    },
+    {
+        "name": "Crisps, Snacks, Nuts & Popcorn",
+        "depth": 1,
+        "parent": 123,
+        "id": 141
+    },
+    {
+        "name": "Noodle Pots & Instant Snack Meals",
+        "depth": 1,
+        "parent": 123,
+        "id": 142
+    },
+    {
+        "name": "Fresh Food",
+        "depth": 0,
+        "id": 143,
+        "parent": 0
+    },
+    {
+        "name": "Dairy Free & Dairy Alternatives",
+        "depth": 1,
+        "parent": 143,
+        "id": 144
+    },
+    {
+        "name": "Pies, Pasties, Quiches & Snacking",
+        "depth": 1,
+        "parent": 143,
+        "id": 145
+    },
+    {
+        "name": "Chilled Desserts",
+        "depth": 1,
+        "parent": 143,
+        "id": 146
+    },
+    {
+        "name": "Cheese",
+        "depth": 1,
+        "parent": 143,
+        "id": 147
+    },
+    {
+        "name": "World Foods",
+        "depth": 1,
+        "parent": 143,
+        "id": 148
+    },
+    {
+        "name": "Cooked Meats, Antipasti & Dips",
+        "depth": 1,
+        "parent": 143,
+        "id": 149
+    },
+    {
+        "name": "Fresh Pizza, Pasta & Garlic Bread",
+        "depth": 1,
+        "parent": 143,
+        "id": 150
+    },
+    {
+        "name": "Milk, Butter & Eggs",
+        "depth": 1,
+        "parent": 143,
+        "id": 151
+    },
+    {
+        "name": "Fresh Meat & Poultry",
+        "depth": 1,
+        "parent": 143,
+        "id": 152
+    },
+    {
+        "name": "Ready Meals",
+        "depth": 1,
+        "parent": 143,
+        "id": 153
+    },
+    {
+        "name": "Juice & Smoothies",
+        "depth": 1,
+        "parent": 143,
+        "id": 154
+    },
+    {
+        "name": "Chilled Vegetarian & Vegan",
+        "depth": 1,
+        "parent": 143,
+        "id": 155
+    },
+    {
+        "name": "Taste Shack",
+        "depth": 1,
+        "parent": 143,
+        "id": 156
+    },
+    {
+        "name": "Finest Fresh Food",
+        "depth": 1,
+        "parent": 143,
+        "id": 157
+    },
+    {
+        "name": "Yoghurts",
+        "depth": 1,
+        "parent": 143,
+        "id": 158
+    },
+    {
+        "name": "Chilled Soup, S&Wiches & Salad Pots",
+        "depth": 1,
+        "parent": 143,
+        "id": 159
+    },
+    {
+        "name": "Fresh Fruit",
+        "depth": 1,
+        "parent": 143,
+        "id": 160
+    },
+    {
+        "name": "Counters",
+        "depth": 1,
+        "parent": 143,
+        "id": 161
+    },
+    {
+        "name": "Chilled Fish & Seafood",
+        "depth": 1,
+        "parent": 143,
+        "id": 162
+    },
+    {
+        "name": "Fresh Salad, Coleslaw & S&Wich Fillers",
+        "depth": 1,
+        "parent": 143,
+        "id": 163
+    },
+    {
+        "name": "Fresh Vegetables",
+        "depth": 1,
+        "parent": 143,
+        "id": 164
+    },
+    {
+        "name": "Unified",
+        "id": 0,
+        "depth": -1
+    }
+]
