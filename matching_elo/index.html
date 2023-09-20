@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Match</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .custom-button {
+    width: 200px;  /* or whatever width you'd like */
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Centered H1 for cpi_name_a -->
+        <h1 class="text-center display-1 mt-5" id="cpi_name_a">Loading...</h1>
+
+        <!-- Row for match information -->
+        <div class="row mt-5">
+            <!-- Div A -->
+            <div class="col-lg-6">
+                <div class="rounded p-4 bg-info text-white">
+                    <h1 id="match_product_title_a">Title A</h1>
+                    <h3 id="matched_breadcrumb_a">Breadcrumb A</h3>
+                </div>
+            </div>
+            <!-- Div B -->
+            <div class="col-lg-6">
+                <div class="rounded p-4 bg-success text-white">
+                    <h1 id="match_product_title_b">Title B</h1>
+                    <h3 id="matched_breadcrumb_b">Breadcrumb B</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row for buttons -->
+        <!-- ... -->
+<div class="row mt-5 justify-content-center">
+    <div class="col-auto">
+        <button id="aWins" class="btn btn-success btn-lg custom-button">
+            A Wins <span class="badge bg-light text-dark">A</span>
+        </button>
+    </div>
+    <div class="col-auto">
+        <button id="draw" class="btn btn-warning btn-lg custom-button">
+            Draw <span class="badge bg-light text-dark">S</span>
+        </button>
+    </div>
+    <div class="col-auto">
+        <button id="bWins" class="btn btn-danger btn-lg custom-button">
+            B Wins <span class="badge bg-light text-dark">D</span>
+        </button>
+    </div>
+</div>
+<!-- ... -->
+
+
+    <script>
+        let matchData;
+        // Function to update match information
+        function updateMatch() {
+            $.ajax({
+                url: 'https://auqarhhot63zhpamqzt7qnwumu0jomtf.lambda-url.eu-west-2.on.aws/',
+                type: 'GET',
+                success: function (data) {
+                    data = data[0];
+                    matchData = data;
+                    $('#cpi_name_a').text(data.cpi_name_a);
+                    $('#match_product_title_a').text(data.match_product_title_a);
+                    $('#matched_breadcrumb_a').text(data.matched_breadcrumb_a);
+                    $('#match_product_title_b').text(data.match_product_title_b);
+                    $('#matched_breadcrumb_b').text(data.matched_breadcrumb_b);
+                }
+            });
+        }
+
+        // Function to send winner
+        function sendWinner(winner) {
+            console.log(`Sending winner ${winner}`);
+            req = $.ajax({
+                url: 'https://6jgztlbxemrzrm6u7veltiaioe0befri.lambda-url.eu-west-2.on.aws/',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    match_type_a: matchData.match_type_a,
+                    match_type_b: matchData.match_type_b,
+                    cpi_name: matchData.cpi_name_a,
+                    match_item_id_a: matchData.match_item_id_a,
+                    match_item_id_b: matchData.match_item_id_b,
+                    store_id_a: matchData.store_id_a,
+                    store_id_b: matchData.store_id_b,
+                    winner: winner,
+                    test: 0
+                }),
+                success: function (data, textStatus, jqXHR) {
+                    console.log("Success", data);
+                    updateMatch();  // Load new random match after submitting
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("Error", textStatus, errorThrown);
+                },
+                complete: function (jqXHR, textStatus) {
+                    // if status is 200 update match
+                    if (jqXHR.status == 200) {
+                        updateMatch();
+                    }
+                }
+            });
+            // reload page
+            console.log(req);
+        }
+
+        // Initialize page
+        $(document).ready(function () {
+
+            console.log("Page loaded")
+            updateMatch();
+
+            $('#aWins').click(function () {
+                sendWinner('match_type_a');
+            });
+
+            $('#draw').click(function () {
+                sendWinner('draw');
+            });
+
+            $('#bWins').click(function () {
+                sendWinner('match_type_b');
+            });
+        });
+
+        document.addEventListener('keydown', function(event) {
+    if (event.code === 'KeyA') {  // A key
+        sendWinner('match_type_a');
+    } else if (event.code === 'KeyS') {  // S key
+        sendWinner('draw');
+    } else if (event.code === 'KeyD') {  // D key
+        sendWinner('match_type_b');
+    }
+});
+    </script>
+</body>
+
+</html>
