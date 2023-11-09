@@ -259,14 +259,6 @@
             <h2>Interactive Data Story</h2>
             <h3> Denes Csala, Josh Hellings, Charlie Meyrick, Finn McEvoy</h3>
         </div>
-        <div class="container">
-            <div id="prevCallout">Previous</div>
-            <div id="currentCallout">
-                Current: </sbr>
-                Weekly Income
-            </div>
-            <div id="nextCallout">Next</div>
-        </div>
     </div>
     <div id="bubbleCharts">
         <svg viewBox="0 0 450 900"></svg>
@@ -864,7 +856,7 @@
 
             d3.json('/data/cleaned/indicators.json').then(function (data) {
                 plot = svg.append('g')
-                    .attr("transform", `translate(150, 0)`)
+                    .attr("transform", `translate(120, 0)`)
 
                 min = d3.min(data, d => d.norm_value)
                 max = d3.max(data, d => d.norm_value)
@@ -913,7 +905,7 @@
                     .append('rect')
                     .attr('x', -175)
                     .attr('y', 20)
-                    .attr('width', 510)
+                    .attr('width', 545)
                     .attr('height', 80)
                     .attr('fill', 'rgba(255,255,255,0.1)')
                     .style('corner-radius', '5px')
