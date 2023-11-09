@@ -1,0 +1,16 @@
+{
+    "Health": [
+        {
+            "title": "How is the cost of living crisis affecting public health?",
+            "image" : "https://www.economicsobservatory.com/wp-content/uploads/2023/05/iStock-1427514565.jpg",
+            "url" : "https://www.economicsobservatory.com/how-is-the-cost-of-living-crisis-affecting-public-health",
+            "description": "Soaring costs are widening health inequalities, weakening food security and diminishing health and social care. With support services already under intense pressure, the cost of living crisis raises major health concerns for the most vulnerable?"
+        },
+        {
+            "title": "Why is the NHS struggling?",
+            "image" : "https://www.economicsobservatory.com/wp-content/uploads/2023/02/iStock-1363098841.jpg",
+            "url" : "https://www.economicsobservatory.com/why-is-the-nhs-struggling",
+            "description": "NHS performance in many areas – including for ambulances, emergency care and pre-planned treatment – is worse than before the pandemic. There are many plausible explanations for this poor record, which makes it hard to identify short-term solutions."
+        }
+    ]
+}

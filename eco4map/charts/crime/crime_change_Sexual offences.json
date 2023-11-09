@@ -1,0 +1,220 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "line",
+        "color": "#gray",
+        "size": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-31ba561cc051e9f3e6cea05da51b907f"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "colour",
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Area Name",
+            "type": "nominal"
+          },
+          {
+            "field": "Crime type",
+            "type": "nominal"
+          },
+          {
+            "field": "5-year change",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "title": "5-year change (%)"
+          },
+          "field": "5-year change",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "title": ""
+          },
+          "field": "Area Name",
+          "sort": "-x",
+          "type": "nominal"
+        }
+      },
+      "name": "view_43",
+      "title": {
+        "text": "Sexual offences",
+        "subtitle": "Largest changes in crime rates, ITL2 regions, England & Wales, 2018 to 2023"
+      }
+    }
+  ],
+  "height": 300,
+  "params": [
+    {
+      "name": "param_337",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales",
+      "views": [
+        "view_43"
+      ]
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ],
+    "data-31ba561cc051e9f3e6cea05da51b907f": [
+      {
+        "Area Code": "E23000037",
+        "Area Name": "Gloucestershire",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 1.6349884340886334,
+        "rate (2023)": 3.4332002839349425,
+        "5-year change": 109.98315415293192,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000018",
+        "Area Name": "Derbyshire",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 1.7864632983794089,
+        "rate (2023)": 3.300620142289621,
+        "5-year change": 84.75723208440836,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "W15000004",
+        "Area Name": "Dyfed-Powys",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 1.8906481614075556,
+        "rate (2023)": 3.270842416315458,
+        "5-year change": 73.00111586496195,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000021",
+        "Area Name": "Leicestershire",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 2.0614350098686702,
+        "rate (2023)": 3.484018782629193,
+        "5-year change": 69.00939228984728,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000028",
+        "Area Name": "Essex",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 2.0836320348674646,
+        "rate (2023)": 3.2885130724567975,
+        "5-year change": 57.82599890128742,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000014",
+        "Area Name": "West Midlands",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 2.24622692207201,
+        "rate (2023)": 3.526589331347141,
+        "5-year change": 57.00058158389773,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "W15000001",
+        "Area Name": "North Wales",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 4.348800202216338,
+        "rate (2023)": 3.6414019543063727,
+        "5-year change": -16.266515245962417,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000032",
+        "Area Name": "Kent",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 3.6768959728246986,
+        "rate (2023)": 3.496119667704507,
+        "5-year change": -4.91654663216686,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000003",
+        "Area Name": "Lancashire",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 3.178805458850303,
+        "rate (2023)": 3.0354243817036366,
+        "5-year change": -4.51053324913202,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000019",
+        "Area Name": "Nottinghamshire",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 2.993740519240493,
+        "rate (2023)": 3.0842459961093467,
+        "5-year change": 3.0231570267090033,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000007",
+        "Area Name": "Northumbria",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 3.3453728095608906,
+        "rate (2023)": 3.531517986143404,
+        "5-year change": 5.56425807164214,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000026",
+        "Area Name": "Bedfordshire",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 2.1652121576888352,
+        "rate (2023)": 2.3565132667165156,
+        "5-year change": 8.83521313827633,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "K04000001",
+        "Area Name": "England & Wales",
+        "Crime type": "Sexual offences",
+        "rate (2018)": 2.6242754758969737,
+        "rate (2023)": 3.237593535235145,
+        "5-year change": 23.37094809486569,
+        "colour": "#596870"
+      }
+    ]
+  }
+}

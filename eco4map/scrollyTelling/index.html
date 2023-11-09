@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <title>Festival Display</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="scrollManager.js"></script>
+    <style>
+        @font-face {
+            font-family: "Circular Std";
+            src: url("circular-std/CircularStd-Bold.woff") format('woff');
+            font-weight: bold;
+        }
+
+        @font-face {
+            font-family: "Circular Std";
+            src: url("circular-std/CircularStd-Book.woff") format('woff');
+            font-weight: normal;
+        }
+
+
+        body {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            height: 100vh;
+            margin: auto;
+        }
+
+        #mainCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 400px;
+            /* height: 600px; */
+            margin: 10px;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 400px;
+            font-weight: bold;
+            color: white;
+            transform: translateY(-50%);
+        }
+
+        #box1 {
+            margin-bottom: 50vh;
+        }
+
+        #scrollContainer {
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            /* Move the container to start at the last 25% of the screen width */
+            width: 50%;
+            /* Limit the container to 25% of screen width */
+        }
+
+        h1 {
+            font-family: "Circular Std";
+            font-weight: bold;
+            font-size: 48px;
+            margin-bottom: 0px;
+        }
+
+        .accentDot {
+            color: rgb(85, 178, 178);
+        }
+
+        h3 {
+            font-family: "Circular Std";
+            font-weight: normal;
+            font-size: 14px;
+            margin-top: 0px;
+        }
+
+        #downArrow {
+            max-width: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #legend {
+            width: 300px;
+            height: 50px;
+            overflow: visible;
+        }
+
+        #buttonRow {
+            display: flex;
+        }
+
+        #buttonRow button {
+            flex: 1;
+            height: 75px;
+            background-color: lightblue;
+            border-radius: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            font-size: 14px;
+            white-space: pre-line;
+            border: none;
+            cursor: pointer;
+        }
+
+        #buttonRow button:hover {
+            background-color: rgb(83, 124, 137);
+            /* Changes background color on hover */
+        }
+
+        figure {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <svg id="mainCanvas">
+
+        </svg>
+        <div id="scrollContainer">
+            <div id="box1" class="box">
+                <h1> Touring the UK<span class="accentDot">.</span> </h1>
+                <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus officia veritatis quidem
+                    quod, magni facilis! Vitae error quia ipsa ipsum earum. Nihil voluptatum totam qui corrupti quam
+                    officia consequatur voluptas. </h3>
+                <span id="downArrow">&#11167;</span>
+
+            </div>
+            <div id="box2" class="box">
+                <h3> This map shows the median incomes in every Local Authourity District in Great Britain. </h3>
+                <svg id="legend"></svg>
+            </div>
+            <div id="box3" class="box">
+                <h3> But this just tells us what's happening in the middle. We can also show the 25th and 75th
+                    percentiles on the same map. </h3>
+                <div id="buttonRow">
+                    <button id="button1" onclick="shadeRegions('LAD Code', 'Q25')">25th Percentile</button>
+                    <button id="button2" onclick="shadeRegions('LAD Code', 'Q50')">50th Percentile</button>
+                    <button id="button3" onclick="shadeRegions('LAD Code', 'Q75')">75th Percentile</button>
+                </div>
+
+            </div>
+            <div id="box4" class="box">
+
+                <h3> Another way of looking at this is to plot the lower quartile and upper quartile incomes of each
+                    area. </h3>
+                <figure id="quartilePlot"></figure>
+
+            </div>
+            <div id="box5" class="box">Sample Text</div>
+        </div>
+    </main>
+    <script>
+
+        const canvas = d3.select("#mainCanvas");
+
+        // UK map params
+        const mapScale = 0.9; // relative to screen size
+
+        canvas.append("rect")
+            .attr("width", "100%")
+            .attr("height", "100%")
+            .attr("fill", "rgb(27, 42, 55)");
+
+
+
+        let ukMap = null;
+        let bbox = null;
+        let mapData = null;
+        let colorScale = null;
+
+        function drawMap() {
+            const width = (window.innerWidth * mapScale) // modified width
+            const height = window.innerHeight * mapScale;
+
+            fetch("lowpoly.json")
+                .then((response) => response.json())
+                .then((data) => {
+
+                    mapData = data;
+
+                    const projection = d3
+                        .geoAlbers() // Albers projection for the UK
+                        .rotate([4.4, 0.5])
+                        //.center([-2.5, 55.4])
+                        .parallels([50, 60])
+                        .fitSize([width, height], { type: "FeatureCollection", features: data.features });
+
+                    const path = d3.geoPath().projection(projection);
+
+                    ukMap = canvas.append("g").attr("id", "ukMap");
+
+                    ukMap
+                        .selectAll("path")
+                        .data(data.features)
+                        .enter()
+                        .append("path")
+                        .attr("d", path)
+                        .attr("fill", "transparent")
+                        .attr("stroke", "#dcdcdc")
+                        .attr("stroke-width", "0.2");
+
+                    bbox = ukMap.node().getBBox();
+
+                    // getting the translateX value to center the map
+                    const translateX = (window.innerWidth - bbox.width) / 2 - bbox.x;
+                    const translateY = (window.innerHeight - bbox.height) / 2 - bbox.y;
+
+                    //ukMap.attr("transform", `translate(${translateX},0)`);
+                    ukMap.attr("transform", `translate(${translateX},${translateY})`);
+
+                })
+                .catch((error) => console.error("Error loading GeoJSON:", error));
+        }
+
+        async function shadeRegions(id_key = "LAD Code", value_key = "Value", scheme = d3.interpolateCool) {
+            try {
+                const response = await fetch('/data/cleaned/LAD_incomes_2022.json');
+                const regionalData = await response.json();
+
+                // a Map to link the data to the regions
+                const dataMap = new Map(regionalData.map(d => [d[id_key], d[value_key]]));
+
+                // Define a color scale
+                colorScale = d3.scaleSequential(scheme)
+                    //.domain([d3.min(regionalData, d => d[value_key])], d3.max(regionalData, d => d[value_key]));  // Adjust domain as necessary
+                    .domain([425, 650])
+
+                // Select the ukMap group
+                const ukMap = d3.select('#ukMap');
+
+                // Update the fill color of each region based on the data from foo.json
+                ukMap.selectAll('path')
+                    .transition()
+                    .duration(500)
+                    .attr('fill', d => {
+                        const value = dataMap.get(d.properties.LAD21CD);
+                        return value ? colorScale(value) : 'rgba(255,255,255,0.01)';  // default color if no value found
+                    });
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        function drawLegend(targetID, colorScale) {
+            const svg = d3.select(targetID);
+            const legendWidth = 300;
+            const legendHeight = 20;
+
+            // Create a group element to contain the legend
+            const legend = svg.append('g')
+                .attr('class', 'legend')
+            //.attr('transform', `translate(${(svg.attr('width') - legendWidth) / 2}, ${svg.attr('height') - legendHeight - 20})`);
+
+            // Create a linear gradient to represent the color scale
+            const gradientId = 'legendGradient';
+            const gradient = legend.append('defs')
+                .append('linearGradient')
+                .attr('id', gradientId);
+
+            const gradientData = Array.from({ length: 10 }, (d, i) => i / 9);  // Create 10 gradient stops
+            gradient.selectAll('stop')
+                .data(gradientData)
+                .enter()
+                .append('stop')
+                .attr('offset', d => d * 100 + '%')
+                .attr('stop-color', d => colorScale(d * colorScale.domain()[1]));
+
+            // Append a rectangle to show the gradient color scale
+            legend.append('rect')
+                .attr('width', legendWidth)
+                .attr('height', legendHeight)
+                .attr('fill', `url(#${gradientId})`);
+
+            // Create an axis to show the scale values
+            const legendScale = d3.scaleLinear()
+                .domain(colorScale.domain())
+                .range([0, legendWidth]);
+
+            const legendAxis = d3.axisBottom(legendScale)
+                .ticks(5);  // Adjust the number of ticks to your preference
+
+            legend.append('g')
+                .attr('class', 'legend-axis')
+                .attr('transform', `translate(0,${legendHeight})`)
+                .call(legendAxis);
+        }
+
+
+        function initMap() {
+            drawMap();
+            shadeRegions("LAD Code", "Q50")
+            vegaEmbed("#quartilePlot", "/charts/q1_q3_income.json")
+            // wait until colorScale is defined
+            //drawLegend("#legend", colorScale);
+        }
+
+        // on load
+        initMap()
+
+        /*
+    Needed for scrollManager
+        - sectionParent: node of the parent DOM object containing the sections or a query as a str 
+        - sectionQuery: str, the query which, when performed upon the sectionParent, returns the relevant sections
+        - commonFunction: function, takes 1 arguemtn, optional, a function that is triggered when any section is scrolled into 
+        - sectionFunctions: list of functions, take no arguments, triggered when section with same index is scrolled into
+    */
+
+        function commonFunction(index) {
+            console.log("common function triggered with index " + index);
+        }
+
+        /*
+
+        new ScrollManager({ sectionParent: "#UKMapSectionContainer", sectionFunctions: sectionFunctions })
+        */
+
+        scrollManager = new ScrollManager({
+            sectionParent: "#scrollContainer", sectionQuery: ".box", commonFunction: commonFunction, sectionFunctions: [function () {
+                d3.select("#box2").style("opacity", 0)
+                drawLegend("#legend", colorScale);
+                d3.select("#box2").transition().duration(1000).style("opacity", 1)
+            }, function () {
+                d3.select("#box2").style("opacity", 0)
+                drawLegend("#legend", colorScale);
+                d3.select("#box2").transition().duration(1000).style("opacity", 1)
+            }, null, null, null]
+        });
+
+    </script>
+
+</body>
+
+</html>

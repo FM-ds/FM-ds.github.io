@@ -1,0 +1,220 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "line",
+        "color": "#gray",
+        "size": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-b798cdfcd336a7e9a16d783c68f80706"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "colour",
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Area Name",
+            "type": "nominal"
+          },
+          {
+            "field": "Crime type",
+            "type": "nominal"
+          },
+          {
+            "field": "5-year change",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "title": "5-year change (%)"
+          },
+          "field": "5-year change",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "title": ""
+          },
+          "field": "Area Name",
+          "sort": "-x",
+          "type": "nominal"
+        }
+      },
+      "name": "view_39",
+      "title": {
+        "text": "Homicide",
+        "subtitle": "Largest changes in crime rates, ITL2 regions, England & Wales, 2018 to 2023"
+      }
+    }
+  ],
+  "height": 300,
+  "params": [
+    {
+      "name": "param_335",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales",
+      "views": [
+        "view_39"
+      ]
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ],
+    "data-b798cdfcd336a7e9a16d783c68f80706": [
+      {
+        "Area Code": "E23000038",
+        "Area Name": "Wiltshire",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.0,
+        "rate (2023)": 0.005353863615678254,
+        "5-year change": null,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000008",
+        "Area Name": "Durham",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.004761836735665681,
+        "rate (2023)": 0.014295516925892041,
+        "5-year change": 200.21014409881062,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000025",
+        "Area Name": "Suffolk",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.003963127065779983,
+        "rate (2023)": 0.010479777304732275,
+        "5-year change": 164.4320288193876,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000026",
+        "Area Name": "Bedfordshire",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.009027986758952753,
+        "rate (2023)": 0.02265878141073573,
+        "5-year change": 150.98376875958277,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000018",
+        "Area Name": "Derbyshire",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.003813155386081983,
+        "rate (2023)": 0.009451947715606016,
+        "5-year change": 147.87732884176776,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000013",
+        "Area Name": "Cleveland",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.012364214430804557,
+        "rate (2023)": 0.026318051902707428,
+        "5-year change": 112.85664406739728,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000002",
+        "Area Name": "Cumbria",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.012039127163280663,
+        "rate (2023)": 0.001996721383488312,
+        "5-year change": -83.4147330084002,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000006",
+        "Area Name": "Cheshire",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.018024325249897784,
+        "rate (2023)": 0.0036428843994386314,
+        "5-year change": -79.78906644808083,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000027",
+        "Area Name": "Hertfordshire",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.009314661107225298,
+        "rate (2023)": 0.0024987090003498196,
+        "5-year change": -73.17445077618989,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000033",
+        "Area Name": "Sussex",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.020676206471416325,
+        "rate (2023)": 0.0064391010312512985,
+        "5-year change": -68.85743504180523,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000017",
+        "Area Name": "Warwickshire",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.019484131060893223,
+        "rate (2023)": 0.0066760910819106305,
+        "5-year change": -65.7357515146761,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000024",
+        "Area Name": "Norfolk",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.0055655116374848344,
+        "rate (2023)": 0.0021777738577848336,
+        "5-year change": -60.87019487809366,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "K04000001",
+        "Area Name": "England & Wales",
+        "Crime type": "Homicide",
+        "rate (2018)": 0.012239423899339165,
+        "rate (2023)": 0.010093587170172127,
+        "5-year change": -17.532171014053173,
+        "colour": "#596870"
+      }
+    ]
+  }
+}

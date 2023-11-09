@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Map with Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="callouts.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@500&display=swap');
+
+        @font-face {
+            font-family: "Circular Std";
+            src: url("/circular-std/CircularStd-Bold.woff") format('woff');
+            font-weight: bold;
+        }
+
+        @font-face {
+            font-family: "Circular Std";
+            src: url("/circular-std/CircularStd-Book.woff") format('woff');
+            font-weight: normal;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(20, 26, 33);
+        }
+
+        #map {
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 100vh;
+            top: 0;
+            width: 40vw;
+        }
+
+        .glowing-marker {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            /*             background-color: #ff2d2d;
+            box-shadow: 0 0 6px 2px #ff2d2d; 
+ */
+        }
+
+        #overlaySvg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        #titleBlock {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            padding: 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 0.5px solid rgba(255, 255, 255, 1);
+            width: 400px;
+        }
+
+        #titleBlock h1 {
+            font-size: 3rem;
+            font-family: Circular Std;
+            color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+
+        #titleBlock h2 {
+            font-size: 1.5rem;
+            font-family: Circular Std;
+            color: whitesmoke;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        #titleBlock h3 {
+            font-size: 1.2rem;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: whitesmoke;
+            font-weight: lighter;
+            margin: 0;
+            padding: 0;
+        }
+
+        #mainTitle {
+            padding: 15px;
+        }
+
+        #prevCallout {
+            width: 33.3333%;
+            background-color: #66c2a5;
+        }
+
+        #currentCallout {
+            width: 66.6666%;
+            background-color: #fc8d62;
+        }
+
+        #nextCallout {
+            width: 33.3333%;
+            background-color: #8da0cb;
+        }
+
+        .container>div {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            text-align: center;
+            color: white;
+            box-sizing: border-box;
+            padding: 10px;
+            /* or any other padding you wish */
+            margin: 0;
+            /* removes default margin from elements */
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .legend-axis text {
+            fill: white;
+            font-size: 14px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: lighter;
+        }
+
+        #tooltip {
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            left: 500px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+        }
+
+        #tooltip h1 {
+            font-size: 16px;
+            font-family: Circular Std;
+            color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+
+        #blurLayer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1040;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(5px);
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        #calloutModal {
+            position: fixed;
+            transform: translate(-50%, -50%);
+            z-index: 1050;
+            top: 50%;
+            left: 50%;
+            width: 80vh;
+            padding: 0%px;
+            height: 80vh;
+            background-color: rgb(20, 26, 33);
+            border-radius: 5px;
+            border: 1px solid white;
+            padding: 20px;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        #calloutModal iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        #calloutModal button {
+            position: absolute;
+            background-color: rgba(50, 50, 50, 1);
+            top: 10px;
+            left: 10px;
+            background-color: rgb();
+            border: 1px solid white;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: lighter;
+            font-size: 14px;
+        }
+
+        #bubbleCharts {
+            position: fixed;
+            top: 5vh;
+            right: 5vh;
+            width: 45vh;
+            height: 90vh;
+        }
+
+        #bubbleCharts svg {
+            overflow: visible;
+            width: 100%;
+            height: 100%;
+        }
+
+        #articlesContainer{
+            position: fixed;
+            top: 45vh;
+            left: 35px;
+            height: 90vh;
+            width: 50vh;
+            overflow: scroll;
+            display: flex;
+            gap: 10px;
+        }
+
+        #articlesContainer div{
+            color: whitesmoke;
+        }
+
+        #articlesContainer p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: lighter;
+            font-size: 12px;
+        }
+
+        #articlesContainer h4 {
+            font-family: 'Circular Std';
+            font-weight: lighter;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg id="overlaySvg"> <!-- Used just for drawing lines between the map and the rest  -->
+        <g id="legend"></g>
+    </svg>
+    <div id="map"></div>
+    <div id="titleBlock">
+        <div id="mainTitle">
+            <h1>Around the UK</h1>
+            <h2>Interactive Data Story</h2>
+            <h3> Denes Csala, Josh Hellings, Charlie Meyrick, Finn McEvoy</h3>
+        </div>
+        <div class="container">
+            <div id="prevCallout">Previous</div>
+            <div id="currentCallout">
+                Current: </sbr>
+                Weekly Income
+            </div>
+            <div id="nextCallout">Next</div>
+        </div>
+    </div>
+    <div id="bubbleCharts">
+        <svg viewBox="0 0 450 900"></svg>
+    </div>
+
+    <div id="tooltip">
+        <h1><span id="regionName">Region Name</span>: <span id="value">£value</span></h1>
+    </div>
+    <div id="blurLayer" onclick="closeModal()"></div>
+
+    <div id="calloutModal">
+        <button id="closeModal" onclick="closeModal()">Return</button>
+        <iframe src="https://www.economicsobservatory.com/how-is-the-cost-of-living-crisis-affecting-public-health" frameborder="0"></iframe>
+    </div>
+
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="nogap.js"></script>
+    <script src="BoundaryCanvas.js"></script>
+    <script>
+
+        pallete = ["#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3", "#a6d854", "#ffd92f", "#e5c494", "#b3b3b3"]
+        accent = "rgb(85, 178, 178)"
+        accent2 = "rgb(170, 77, 77)"
+
+        const britishLocale = d3.formatLocale({
+            decimal: ".",     // Decimal point
+            thousands: ",",   // Thousands separator
+            grouping: [3],    // Digit grouping (standard in British format)
+            currency: ["£", ""] // Currency symbol for British Pound
+        });
+
+        d3.json('/data/cleaned/indicators.json').then(function (data) {
+            indicators_data = data
+        })
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // The Map
+
+        // creating our map
+        var map = L.map('map', {
+            zoomSnap: 0.1,
+            zoomDelta: 1,
+            attributionControl: false,
+            //center: [54.5, -3], // Central point of the UK
+            //zoomControl: false,
+            //dragging: false,
+            //tap: false
+        }).fitBounds([
+            [49.57, -8.41], // Southwest coordinates
+            [59.52, 2.29] // Northeast coordinates
+        ]);
+
+        // Disable tap/zooming.
+        //map.touchZoom.disable();
+        //map.doubleClickZoom.disable();
+        //map.scrollWheelZoom.disable();
+        //map.boxZoom.disable();
+        //map.keyboard.disable();
+        //if (map.tap) map.tap.disable();
+
+        // the tile layer using a custom mapbox style
+        tilesUrl = 'https://api.mapbox.com/styles/v1/fm-ds/clomumkxq00be01pmfce62xuf/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZm0tZHMiLCJhIjoiY2xvbXIwb3piMm93aTJscndvYnFncjh4NSJ9.ZYcFieW_kfpK-uB6PhVkLA'
+        //tilesUrl = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png'
+        osmAttribution = ''
+
+        L.tileLayer(tilesUrl).addTo(map);
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // The Callout functions
+
+        // TODO: Give this something interesting (e.g. a glow or a pulsing effect)
+        function createMapMarker(lat, lng, color, borderColor) {
+            var circleMarker = L.circleMarker([lat, lng], {
+                radius: 6,
+                fillColor: color,
+                color: borderColor,
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 1
+            });
+
+            return circleMarker;
+        }
+
+        //london.bindPopup("<b>London</b><br>Capital of England.");
+
+        function getMarkerScreenCoordinates(marker) {
+            // Get the LatLng object from the marker
+            var latLng = marker.getLatLng();
+
+            // Convert LatLng to container point (pixels within the map container)
+            var containerPoint = map.latLngToContainerPoint(latLng);
+
+            // Get the container's position on the document
+            var containerPosition = map.getContainer().getBoundingClientRect();
+
+            return {
+                x: containerPoint.x + containerPosition.left,
+                y: containerPoint.y + containerPosition.top
+            };
+        }
+
+        // drawings lines on the svg overlay
+        function createOverlayLine(x1, y1, x2, y2, color, width = 0.5) {
+            const svg = d3.select('#overlaySvg');
+
+            svg.append("line")
+                .attr("x1", x1)
+                .attr("y1", y1)
+                .attr("x2", x2)
+                .attr("y2", y2)
+                .attr("class", "calloutLine")
+                .attr("stroke-width", width)
+                .attr("stroke", color);
+        }
+
+        // creating our callouts
+        function createCallout({ accentColor, lat, lng, x, y, dx, dy, width, height, title, subtitle, figureSrc, figureType, paragraph, borderSide, align, modalSrc }) {
+            // (unused)
+            // adds a callout to the map at the specified coordinates with an arrow pointing to the specified x and y coordinates on the screen 
+
+            // place the pin on the map
+            const marker = createMapMarker(lat, lng, accentColor, 'white').addTo(map);
+
+            // get the screen coordinates of the marker 
+            const markerCoordinates = getMarkerScreenCoordinates(marker);
+
+            const div = document.createElement('div');
+            dx = dx ? dx : 0;
+            dy = dy ? dy : 0;
+            div.classList.add('callout');
+            div.style.position = 'fixed';
+            div.style.left = x ? `${x}px` : `${markerCoordinates.x + dx}px`; // If x is defined, use that, otherwise use the marker's x coordinate
+            div.style.top = y ? `${y}px` : `${markerCoordinates.y + dy}px`;
+            div.style.width = `${width}px`;
+            div.style.height = `${height}px`;
+
+            if (align) {
+                div.style.textAlign = align;
+            }
+
+            // draw a line from the marker to the callout
+            const lineColor = accentColor;
+            const lineX1 = markerCoordinates.x;
+            const lineY1 = markerCoordinates.y;
+            const lineX2 = x ? x : markerCoordinates.x;
+            const lineY2 = y ? y : markerCoordinates.y;
+            createOverlayLine(lineX1, lineY1, lineX2, lineY2, lineColor);
+
+            if (borderSide) { // probably a more elegant way to do this
+                const borderStyle = `0.5px solid ${accentColor}`;
+                switch (borderSide.toLowerCase()) {
+                    case 'top':
+                        div.style.borderTop = borderStyle;
+                        break;
+                    case 'right':
+                        div.style.borderRight = borderStyle;
+                        break;
+                    case 'bottom':
+                        div.style.borderBottom = borderStyle;
+                        break;
+                    case 'left':
+                        div.style.borderLeft = borderStyle;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            if (title) {
+                const titleElement = document.createElement('h1');
+                titleElement.textContent = title;
+                titleElement.className = 'title';
+                titleElement.style.color = accentColor;
+                div.appendChild(titleElement);
+            }
+
+            if (subtitle) {
+                const subtitleElement = document.createElement('h2');
+                subtitleElement.textContent = subtitle;
+                subtitleElement.className = 'subtitle';
+                div.appendChild(subtitleElement);
+            }
+
+            if (figureSrc) {
+                const figure = document.createElement('figure');
+                figure.className = 'full-width-figure';
+                let figureContent;
+                if (figureType === 'svg') {
+                    figureContent = document.createElement('object');
+                    figureContent.data = figureSrc;
+                    figureContent.type = 'image/svg+xml';
+                } else {
+                    figureContent = document.createElement('img');
+                    figureContent.src = figureSrc;
+                }
+                figure.appendChild(figureContent);
+                div.appendChild(figure);
+            }
+
+            if (paragraph) {
+                const paragraphElement = document.createElement('p');
+                paragraphElement.textContent = paragraph;
+                paragraphElement.className = 'paragraph';
+                div.appendChild(paragraphElement);
+            }
+
+            if (modalSrc) {
+                // add a show more button
+                const button = document.createElement('button');
+                button.textContent = 'Show More';
+                button.className = 'show-more-button';
+                button.style.backgroundColor = accentColor;
+                button.onclick = () => showModal(modalSrc);
+                div.appendChild(button);
+            }
+
+
+
+            document.body.appendChild(div);
+        }
+
+
+        /*
+
+
+                    --link-visualisation: #0FFF95;
+            --link-engineering: #FF00E1;
+            --link-analytics: #F5FF00;
+            --link-research: #00F3FF;
+
+
+        */
+
+        const callouts = [
+            {
+                lat: 50.6513, // marker coords
+                lng: -4.0309,
+                x: 400, // x or y are the coordinates of the callout, and where the line will be drawn to from the marker
+                dy: -350,
+                width: 300,
+                align: 'left', // do you want the text to be left, right or center aligned?
+                title: 'West Devon',
+                subtitle: 'Lowest weekly income',
+                figureSrc: '/charts/west_devon_income_teaser.png', // the path to the teaser image to be displayed 
+                accentColor: 'rgb(125,192,166)',
+                figureType: 'png', // png or svg 
+                modalSrc: 'NONE/scrollyTelling/index.html', // the path to the modal content
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl aliquet nunc, quis aliquam nisl nisl vitae nisl. ',
+                teaserChloropleth: {
+                    "data": "/data/cleaned/LAD_incomes_2022.json", // the path to the data
+                    "geo": "/data/cleaned/lowpoly_LAD.json", // the path to the geojson
+                    //"geo": "/data/cleaned/nhs_uk.json",
+                    "id": { "geo": "LAD21CD", "data": "LAD Code" }, // the properties to merge the data on
+                    "value": { "data": "Q50" }, // the property to use for the chloropleth
+                    "name": { "geo": "LAD21NM" } // the property to use for the tooltip
+                }
+            },
+            {
+                lat: 56.025,
+                lng: -3.84,
+                x: 2400,
+                dy: -35,
+                width: 300,
+                align: 'left',
+                borderSide: 'left',
+                title: 'Forth Valley',
+                subtitle: 'Longest A&E Waiting Times',
+                figureSrc: '/NHS/png/forth_valley_teaser.png',
+                accentColor: '#00F3FF',
+                figureType: 'png',
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl aliquet nunc, quis aliquam nisl nisl vitae nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl aliquet nunc, quis aliquam nisl nisl vitae nisl.'
+            }
+        ]
+
+        currentCallout = callouts[0];
+
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // chloropleth map functions
+
+        function mergeDataWithGeoJson(geo, data, id = { geo: 'id', data: 'id' }, value = { data: 'value' }, name = {}) {
+            // merges geo with data on the id property of each and returns the merged geoJson with the value property from data inserted into properties
+
+            // reshape the data to be { id: value, id: value, ... }
+            data = data.reduce(function (map, obj) {
+                map[obj[id.data]] = obj[value.data];
+                return map;
+            }, {});
+
+            const merged = geo.features.map(feature => {
+                const featureId = feature.properties[id.geo];
+                feature.properties['value'] = featureId in data ? data[featureId] : null;
+                feature.properties['name'] = name.geo ? feature.properties[name.geo] : null;
+                feature.properties['id'] = featureId;
+                return feature;
+            });
+            return { ...geo, features: merged };
+        }
+
+        function drawLegend(targetID, colorScale, title, description, format) {
+            const svg = d3.select(targetID);
+            const legendWidth = 400;
+            const legendHeight = 20;
+
+
+            // remove any existing legend (remove #legendBlock)
+            svg.select('#legendBlock').remove();
+
+            legendBlock = svg.append('g')
+                .attr('id', 'legendBlock')
+
+            // create a title
+            legendBlock.append('text')
+                .attr('class', 'legend-title')
+                .attr('x', 0)
+                .attr('y', -10)
+                .attr('font-family', 'Circular Std')
+                .attr('text-anchor', 'start')
+                .attr('fill', 'white')
+                .text(title);
+
+            // create a multi-line description with foreignObject
+            legendBlock.append('foreignObject')
+                .attr('x', 0)
+                .attr('y', 0)
+                .attr('width', 400)
+                .attr('height', 100)
+                .append('xhtml:div')
+                .html(description)
+                .style('font-family', 'Raleway, Arial, sans-serif')
+                .style('font-weight', 'lighter')
+                .style('font-size', '12px')
+                .style('color', 'white')
+                .style('line-height', '1.2em')
+                .style('margin-top', '10px')
+                .style('margin-bottom', '10px')
+                .style('text-align', 'left')
+
+            // Create a group element to contain the legend
+            const legend = legendBlock.append('g')
+                .attr('class', 'legend')
+                .attr('transform', `translate(0, 35)`);
+            //.attr('transform', `translate(${(svg.attr('width') - legendWidth) / 2}, ${svg.attr('height') - legendHeight - 20})`);
+
+            // Create a linear gradient to represent the color scale
+            const gradientId = 'legendGradient';
+            const gradient = legend.append('defs')
+                .append('linearGradient')
+                .attr('id', gradientId);
+
+            const gradientData = Array.from({ length: 10 }, (d, i) => i / 9);  // Create 10 gradient stops
+            gradient.selectAll('stop')
+                .data(gradientData)
+                .enter()
+                .append('stop')
+                .attr('offset', d => d * 100 + '%')
+                .attr('stop-color', d => colorScale(d * colorScale.domain()[1]));
+
+            // Append a rectangle to show the gradient color scale
+            legend.append('rect')
+                .attr('width', legendWidth)
+                .attr('height', legendHeight)
+                .attr('stroke', 'white')
+                .attr('stroke-width', 0.5)
+                .attr('fill', `url(#${gradientId})`);
+
+            // Create an axis to show the scale values
+            const legendScale = d3.scaleLinear()
+                .domain(colorScale.domain())
+                .range([0, legendWidth]);
+
+            const legendAxis = d3.axisBottom(legendScale)
+                .ticks(5)
+                .tickFormat(britishLocale.format(format));
+
+            legend.append('g')
+                .attr('class', 'legend-axis')
+                .attr('transform', `translate(0,${legendHeight + 2})`)
+                .call(legendAxis);
+        }
+
+        const series = [
+            {
+                "data": "/data/cleaned/LAD_incomes_2022.json", // the path to the data
+                "geo": "/data/cleaned/lowpoly_LAD.json", // the path to the geojson
+                "id": { "geo": "LAD21CD", "data": "LAD Code" }, // the properties to merge the data on
+                "value": { "data": "Q50" }, // the property to use for the chloropleth
+                "name": { "geo": "LAD21NM" } // the property to use for the tooltip
+            },
+        ]
+
+        currentSeries = null
+
+        lastLayer = null
+        function seriesFocus(series) {
+            //createseries(series)
+            Promise.all([
+                d3.json("/data/cleaned/lowpoly_LAD.json"),
+                d3.json("/data/cleaned/indicators.json")
+            ]).then(function ([geo, data]) {
+
+                // if lastLayer isn't null, remove it from the map
+                if (lastLayer) {
+                    map.removeLayer(lastLayer)
+                }
+
+                data = data.filter(d => d.Series === series)
+
+                currentSeries = {
+                    "seriesId": data[0].Series,
+                    "Theme": data[0].Theme,
+                    "series": series,
+                    "format": data[0].format,
+                    "scheme": data[0].scheme
+                }
+
+                // create the article grid
+                d3.select('#articlesContainer').remove()
+                createArticlesGrid(currentSeries.Theme)
+
+                console.log(`scheme is ${currentSeries.scheme}`)
+
+                scheme = d3[currentSeries.scheme]
+
+                data = mergeDataWithGeoJson(geo, data, { geo: "LAD21CD", data: "Area Code" }, { data: "Value" }, { geo: "LAD21NM" })
+                data = data.features.filter(d => d.properties.value !== null)
+
+                // get the 5th and 95th percentiles to set the domain of the color scale
+                const fifth = d3.quantile(data.map(d => d.properties.value), 0.05)
+                const ninetyFifth = d3.quantile(data.map(d => d.properties.value), 0.95)
+
+                colorScale = d3.scaleSequential(scheme)
+                    .domain([fifth, ninetyFifth])
+                    .clamp(true)
+
+                drawLegend('#legend', colorScale, currentSeries.Theme, currentSeries.series,currentSeries.format)
+                d3.select('#legend')
+                    .attr('transform', `translate(30 300)`)
+
+
+                function getColor(feature) {
+                    return colorScale(feature.properties.value);
+                }
+
+                function updateTooltip(e) {
+
+                    // focus the right panel on the selected region
+                    calloutRegion(e.target.feature.properties.id)
+
+
+                    //seriesFocus(e.target.feature.properties.id)
+
+                    tooltip = d3.select('#tooltip')
+                        .style('left', `${e.originalEvent.clientX}px`)
+                        .style('top', `${e.originalEvent.clientY}px`)
+                        .style('background-color', getColor(e.target.feature))
+                        .style('display', 'block')
+                        .transition()
+                        .duration(200)
+                        .style('opacity', 1)
+
+                    tooltip.select('#regionName')
+                        .text(e.target.feature.properties.name)
+
+                    tooltip.select('#value')
+                        //.text(`£${e.target.feature.properties.value}`)
+                        .text(britishLocale.format(currentSeries.format)(e.target.feature.properties.value))
+
+                    // hide tooltip after 2 seconds
+                    setTimeout(() => {
+                        d3.select('#tooltip').transition()
+                            .duration(1000)
+                            .style('opacity', 0)
+                    }, 2000)
+
+                }
+
+                function onEachFeature(feature, layer) {
+                    layer.on({
+                        click: updateTooltip
+                    });
+                }
+
+                lastLayer = L.geoJson(data, {
+                    onEachFeature: onEachFeature,
+                    style: function (feature) {
+                        return {
+                            fillColor: getColor(feature),
+                            weight: 0,
+                            opacity: 0.2,
+                            color: 'white',
+                            fillOpacity: 0.7
+                        };
+                    }
+                }).addTo(map);
+            })
+
+
+
+
+            map.whenReady(function () {
+                //callouts.forEach(callout => createCallout(callout));
+            });
+
+
+        }
+
+
+
+        callout = callouts[0]
+        seriesFocus("GVA per hour worked (£)")
+
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // The Modal
+
+        function closeModal() {
+            d3.select('#calloutModal')
+                .transition()
+                .duration(500)
+                .style('opacity', 0)
+                .style('pointer-events', 'none');
+            d3.select('#blurLayer')
+                .transition()
+                .duration(500)
+                .style('opacity', 0)
+                .style('pointer-events', 'none');
+        }
+
+        function showModal(src = null) {
+            src ? d3.select('#calloutModal iframe').attr('src', src) : null;
+            d3.select('#calloutModal')
+                .transition()
+                .duration(500)
+                .style('opacity', 1)
+                .style('pointer-events', 'all');
+            d3.select('#blurLayer')
+                .transition()
+                .duration(500)
+                .style('opacity', 1)
+                .style('pointer-events', 'all');
+        }
+
+        function createArticlesGrid(theme){
+            d3.json("/data/ecoResources.json").then(function (data) {
+                const articles = data[theme]; 
+
+                const container = d3.select('body')
+                    .append('div')  // Select the body or any other container element
+                    .attr('id', 'articlesContainer')
+                    .style('display', 'flex')
+                    .style('flex-wrap', 'wrap')
+                    .style('gap', '10px');  // Add space between articles
+
+                articles.forEach(article => {
+                const articleDiv = container.append('div')
+                    .style('width', '200px')
+                    .style('cursor', 'pointer')
+                    .on('click', () => showModal(article.url));
+
+                articleDiv.append('img')
+                    .attr('src', article.image)
+                    .style('width', '200px')
+                    .style('height', '150px');
+
+                articleDiv.append('h4')
+                    .text(article.title);
+
+                articleDiv.append('p')
+                    .text(article.description);
+                });
+            })
+        }
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // The Bubble Charts
+
+        function initBubbleCharts() {
+
+            const width = 325;
+            const height = 900;
+
+            margin = { top: 20, right: 20, bottom: 20, left: 70 };
+            plotWidth = width - margin.left - margin.right;
+            plotHeight = height - margin.top - margin.bottom;
+
+
+            svg = d3.select("#bubbleCharts").select("svg")
+
+            d3.json('/data/cleaned/indicators.json').then(function (data) {
+                plot = svg.append('g')
+                    .attr("transform", `translate(150, 0)`)
+
+                min = d3.min(data, d => d.norm_value)
+                max = d3.max(data, d => d.norm_value)
+
+                xScale = d3.scaleLinear() // TODO: sort out scope so can access from other funcs but this isn't global
+                    .domain([0.5, 1.5]) // Set the domain for z-scores
+                    .clamp(true)
+                    .range([0, plotWidth]);
+
+                yScale = d3.scaleBand()
+                    .domain(data.map(d => d.Series))
+                    .range([0, plotHeight])
+                    .padding(0.1);
+
+                // Create and append the y-axis (no domain or ticks)
+                /* plot
+                    .append('g')
+                    .attr('class', 'y-axis')
+                    .call(d3.axisLeft(yScale).tickSize(0)); */
+
+
+                xAxis = d3.axisBottom(xScale)
+                    .tickSize(0)
+                    .tickValues([0.5, 1, 1.5])
+
+                xAxis = plot
+                    .append('g')
+                    .attr('class', 'x-axis')
+                    .attr('transform', `translate(0, ${plotHeight})`)
+                    .call(xAxis);
+
+                xAxis.selectAll('text')
+                    .attr('fill', 'rgb(200,200,200)')
+                    .attr('font-family', 'Raleway, Arial, sans-serif')
+                    .attr('font-size', '12px')
+                    .attr('font-weight', 'lighter')
+                    .attr('text-anchor', 'middle')
+
+                xAxis.selectAll('path')
+                    .attr('stroke', 'rgb(200,200,200)')
+
+
+                // add a current series indicator
+                plot.append('g')
+                    .attr('id', 'currentSeriesIndicator')
+                    .append('rect')
+                    .attr('x', -175)
+                    .attr('y', 20)
+                    .attr('width', 510)
+                    .attr('height', 80)
+                    .attr('fill', 'rgba(255,255,255,0.1)')
+                    .style('corner-radius', '5px')
+
+                // map the data to Series:row
+
+                allSeries = new Set(data.map(d => d.Series))
+
+                // add invisible rectangles to each series to allow for tapping to select a series
+                plot.append('g')
+                    .attr('id', 'seriesSelect')
+                    .selectAll('rect')
+                    .data(new Set(data.map(d => d.Series)))     // filter out duplicates
+                    .enter()
+                    .append('rect')
+                    .attr('x', -175)
+                    .attr('y', d => {
+                        return yScale(d) + yScale.bandwidth() / 2 - 25;
+                    })
+                    .attr('width', 510)
+                    .attr('height', yScale.bandwidth())
+                    .attr('fill', 'rgb(0,255,0)')
+                    .style('opacity', 0)
+                    .on('click', function (e, d) {
+                        updateSeriesIndicator(d)
+                        seriesFocus(d)
+                    })
+
+
+
+
+                // Create and append the points
+                plot.append('g')
+                    .attr('id', 'points')
+                    .selectAll('.strip')
+                    .data(data)
+                    .enter()
+                    .append('circle')
+                    .attr('class', 'strip')
+                    .attr("area_code", d => d["Area Code"])
+                    .attr('cx', function (d) {
+                        return xScale(d.norm_value);
+                    })
+                    //.attr('cy', d => yScale(d.Series) + yScale.bandwidth() / 2)
+                    .attr('cy', function (d) {
+                        let jitter = Math.random() * 20;
+                        return yScale(d.Series) + yScale.bandwidth() / 2 + jitter;
+                    })
+                    .attr('r', 3)
+                    .attr('fill', accent)
+                    .attr('opacity', 0.5)
+
+                // add median markers at xScale(1)
+                plot.append('g')
+                    .attr('id', 'medians')
+                    .selectAll('.median')
+                    .data(new Set(data.map(d => d.Series)))     // filter out duplicates
+                    .enter()
+                    .append('line')
+                    .attr('class', 'median')
+                    .attr('x1', xScale(1))
+                    .attr('y1', d => yScale(d) + yScale.bandwidth() / 2 - 10)
+                    .attr('x2', xScale(1))
+                    .attr('y2', d => yScale(d) + yScale.bandwidth() / 2 + 30)
+                    .attr('stroke', 'rgba(255,255,255,0.5)')
+                    .attr('stroke-width', 1)
+
+
+                // Add labels to the y-axis
+                plot.append('g')
+                    .attr('class', 'y-axis')
+                    .selectAll('.y-label')
+                    .data(data)
+                    .enter()
+                    .append('foreignObject')
+                    .attr('class', 'y-label')
+                    .attr('x', -170)
+                    .attr('y', function (d) {
+                        return yScale(d.Series) + 12;
+                    })
+                    .attr('width', 150)
+                    .attr('height', yScale.bandwidth())
+                    .append('xhtml:div')
+                    .html(function (d) {
+                        const series = d.Series;
+                        const theme = d.Theme;
+                        return `
+                        <div style="display: flex; align-items: center; justify-content: flex-end; height: ${yScale.bandwidth()}px;">
+                            <div style="text-align: right;"> 
+                                <span style="color: rgb(225,225,225); font-family: 'Circular Std'; font-size: 12px; font-weight: bold;">${theme}</span> <br>
+                                <span style="font-size: 10px; color: rgb(200,200,200);">${series}</span>
+                            </div>
+                        </div>`;
+                    })
+                    .style('font-family', 'Raleway, Arial, sans-serif')
+                    .style('font-weight', 'lighter')
+                    .style('background-color', 'rgba(255,70,120,0)').style('font-size', '10px')
+                    .attr('alignment-baseline', 'top')
+                    .select('div')
+
+                // Add a label for the called-out region
+/*                 plot.append('text')
+                    .attr('class', 'callout-label')
+                    .attr('x', 0)
+                    .attr('y', 0)
+                    .attr('text-anchor', 'start')
+                    .attr('alignment-baseline', 'middle')
+                    .attr('fill', accent2)
+                    .style('font-weight', 'bold')
+                    .attr('font-family', 'Circular Std')
+                    .attr('font-size', '12px')
+                    .style('opacity', 0)
+ */                // set the baseline to the middle of the text
+
+                // create a group to store the callout rank indicators - we'll fill these when we callout a region by tapping on it
+                plot.append('g')
+                    .attr('id', 'calloutRanks')
+
+                // create a column title for the selected region
+                plot.append('text')
+                    .attr('class', 'rankColumnTitle')
+                    .attr('x', 275)
+                    .attr('y', 30)
+                    .attr('text-anchor', 'center')
+                    .attr('alignment-baseline', 'middle')
+                    .attr('fill', accent2)
+                    .style('font-weight', 'bold')
+                    .attr('font-family', 'Circular Std')
+                    .attr('font-size', '12px')
+                    .text('Rank')
+                calloutRegion("E06000023")
+
+
+            });
+
+        }
+
+        function updateSeriesIndicator(series) {
+            // updates the current series indicator to show the selected series
+            d3.select('#currentSeriesIndicator')
+                //.attr("y", yScale(series) - 10)
+                .transition()
+                .attr("transform", `translate(0, ${yScale(series) - 10})`)
+                .duration(500)
+        }
+
+        function calloutRegion(regionId) {
+            //console.log(`trying to callout ${regionId}`)
+
+            d3.select('#bubbleCharts').select('svg').select('#points').selectAll('circle')
+                .transition()
+                .duration(500)
+                .attr('fill', d => d["Area Code"] === regionId ? accent2 : accent)
+                .attr('opacity', d => d["Area Code"] === regionId ? 1 : 0.5)
+                .attr('r', d => d["Area Code"] === regionId ? 5 : 3)
+
+            // raise the selected region to the top
+            d3.select('#bubbleCharts').select('svg').select('#points').selectAll('circle')
+                .sort(function (a, b) {
+                    if (a["Area Code"] === regionId) {
+                        return 1;
+                    } else {
+                        return -1;
+                    }
+                })
+
+            let regionPoints = d3.select('#bubbleCharts').select('svg').select('#points').selectAll('circle').filter(function (d) { return d["Area Code"] === regionId })
+
+            // update the callout label
+            d3.select('#bubbleCharts').select('svg').select('.callout-label')
+                .transition()
+                .duration(500)
+                .style('opacity', 1)
+                .attr('x', regionPoints.attr('cx') + 10)
+                .attr('y', d => {
+                    //return yScale(regionPoint.datum.Series) + yScale.bandwidth() / 2;
+                    return 35 // fuck it
+                })
+                .text(regionPoints.datum()['Local Authority District'])
+
+            //console.warn(regionPoints.datum()['Local Authority District']) 
+
+            // update the rank column title
+            d3.select(".rankColumnTitle")
+                .text(d => regionPoints.datum()['Local Authority District'])
+
+            d3.selectAll('.calloutRank')
+                .transition()
+                .duration(500)
+                .style("opacity", 0)
+                .remove();
+
+            let calloutRanks = d3.select('#calloutRanks');
+
+            // for each regionPoint, append a new text-label
+            regionPoints.each(function (d) {
+                calloutRanks.append('text')
+                    .data([d])
+                    .attr('class', 'calloutRank')
+                    .text(function (d) {
+                        return `${String(parseInt(d.rank)).padStart(3, '0')}/${d.out_of}`; // TODO add padding such that the / is centered
+                    })
+                    .attr("x", 275)
+                    .attr('y', function (d) {
+                        return yScale(d.Series) + yScale.bandwidth() / 2 + 12.5; // TODO: vertically align properly
+                    })
+                    .attr("fill", accent2)
+                    .style("text-anchor", "right")
+                    .style("font-family", "Circular Std")
+            });
+
+
+        }
+
+        initBubbleCharts()
+
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Inactivity/Autoplay
+
+        let lastInteractionTime = Date.now();
+
+        function cycleSeries() {
+            console.log('Every Ten Seconds');
+            // move to the next series
+            allSeries = (Array.from(allSeries))
+            currentSeriesIndex = allSeries.indexOf(currentSeries.series)
+            nextSeriesIndex = (currentSeriesIndex + 1) % allSeries.length
+            nextSeries = allSeries[nextSeriesIndex]
+
+            updateSeriesIndicator(nextSeries)
+            seriesFocus(nextSeries)
+
+        }
+
+        // This function updates the last interaction time
+        function updateLastInteractionTime() {
+            lastInteractionTime = Date.now();
+        }
+
+        // This function checks if one minute has passed since the last interaction
+        function checkInteraction() {
+            if (Date.now() - lastInteractionTime > 30000) {
+                // cycle the series every 10 seconds if it's been more than 30 seconds since the last interaction
+                cycleSeries();
+            }
+            if (Date.now() - lastInteractionTime > 300000) {
+                // if it's been more than 5 minutes since the last interaction, refresh the page
+                location.reload();
+            }
+        }
+
+        // Set up the interval to run the check every ten seconds
+        setInterval(checkInteraction, 10000);
+
+        // Event listeners for user interactions
+        document.addEventListener('click', updateLastInteractionTime);
+        document.addEventListener('touchstart', updateLastInteractionTime);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

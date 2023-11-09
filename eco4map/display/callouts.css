@@ -1,0 +1,54 @@
+:root {
+    --title-color: white;
+    --subtitle-color: white;
+    --background-color: rgba(0, 0, 0, 0);
+    --border-color: rgba(0, 0, 0, 0);
+
+}
+
+.callout {
+    padding: 5px;
+}
+
+.callout .title {
+    font-family: 'Circular Std', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: 4px;
+    margin-top: 0px;
+  }
+  
+  .callout  .subtitle, .action-link {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--subtitle-color);
+    padding-bottom: 10px;
+  }
+
+  .callout img {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .callout .full-width-figure {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .callout .paragraph {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--subtitle-color);
+  }
+
+  .callout button {
+    height: 20px;
+    border: 1px solid var(--border-color);
+    margin-top: 5px;
+    border-radius: 2px;
+  }

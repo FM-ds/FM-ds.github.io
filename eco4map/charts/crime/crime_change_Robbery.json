@@ -1,0 +1,220 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "line",
+        "color": "#gray",
+        "size": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-e3853221a2da9cdb416e1489fbc40405"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "colour",
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Area Name",
+            "type": "nominal"
+          },
+          {
+            "field": "Crime type",
+            "type": "nominal"
+          },
+          {
+            "field": "5-year change",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "title": "5-year change (%)"
+          },
+          "field": "5-year change",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "title": ""
+          },
+          "field": "Area Name",
+          "sort": "-x",
+          "type": "nominal"
+        }
+      },
+      "name": "view_45",
+      "title": {
+        "text": "Robbery",
+        "subtitle": "Largest changes in crime rates, ITL2 regions, England & Wales, 2018 to 2023"
+      }
+    }
+  ],
+  "height": 300,
+  "params": [
+    {
+      "name": "param_338",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales",
+      "views": [
+        "view_45"
+      ]
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ],
+    "data-e3853221a2da9cdb416e1489fbc40405": [
+      {
+        "Area Code": "E23000013",
+        "Area Name": "Cleveland",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.8566634284200301,
+        "rate (2023)": 1.6703190274251645,
+        "5-year change": 94.97961183025913,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000002",
+        "Area Name": "Cumbria",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.19663907700025082,
+        "rate (2023)": 0.34543279934347804,
+        "5-year change": 75.66844017633251,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "W15000004",
+        "Area Name": "Dyfed-Powys",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.09675783835248493,
+        "rate (2023)": 0.15501622826139613,
+        "5-year change": 60.210512037979,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000020",
+        "Area Name": "Lincolnshire",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.3501200126202955,
+        "rate (2023)": 0.48214754494628803,
+        "5-year change": 37.7092218573567,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000039",
+        "Area Name": "Dorset",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.4294858237239665,
+        "rate (2023)": 0.5643709183888939,
+        "5-year change": 31.40618088284538,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000007",
+        "Area Name": "Northumbria",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.5501985409038443,
+        "rate (2023)": 0.7151479388883629,
+        "5-year change": 29.979977357545557,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000025",
+        "Area Name": "Suffolk",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.5284169421039978,
+        "rate (2023)": 0.3419027345668904,
+        "5-year change": -35.29678794825612,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000005",
+        "Area Name": "Greater Manchester",
+        "Crime type": "Robbery",
+        "rate (2018)": 2.5975427317217137,
+        "rate (2023)": 1.7769568750660214,
+        "5-year change": -31.59085110071657,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000032",
+        "Area Name": "Kent",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.9109009022776343,
+        "rate (2023)": 0.6322826857861776,
+        "5-year change": -30.587105117010456,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000026",
+        "Area Name": "Bedfordshire",
+        "Crime type": "Robbery",
+        "rate (2018)": 1.1239843514896177,
+        "rate (2023)": 0.7873926540230667,
+        "5-year change": -29.94629747473492,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "W15000001",
+        "Area Name": "North Wales",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.27862194162152226,
+        "rate (2023)": 0.20812169443077988,
+        "5-year change": -25.3031928427623,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000008",
+        "Area Name": "Durham",
+        "Crime type": "Robbery",
+        "rate (2018)": 0.4396762585931312,
+        "rate (2023)": 0.3287968892955169,
+        "5-year change": -25.218411758780025,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "K04000001",
+        "Area Name": "England & Wales",
+        "Crime type": "Robbery",
+        "rate (2018)": 1.3467962456801346,
+        "rate (2023)": 1.296690616245186,
+        "5-year change": -3.720357076704297,
+        "colour": "#596870"
+      }
+    ]
+  }
+}

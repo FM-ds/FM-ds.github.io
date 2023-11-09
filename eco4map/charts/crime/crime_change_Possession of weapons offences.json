@@ -1,0 +1,220 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "line",
+        "color": "#gray",
+        "size": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-2bcd36078e99d7314dd01bf4090f835d"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "colour",
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Area Name",
+            "type": "nominal"
+          },
+          {
+            "field": "Crime type",
+            "type": "nominal"
+          },
+          {
+            "field": "5-year change",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "title": "5-year change (%)"
+          },
+          "field": "5-year change",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "title": ""
+          },
+          "field": "Area Name",
+          "sort": "-x",
+          "type": "nominal"
+        }
+      },
+      "name": "view_49",
+      "title": {
+        "text": "Possession of weapons offences",
+        "subtitle": "Largest changes in crime rates, ITL2 regions, England & Wales, 2018 to 2023"
+      }
+    }
+  ],
+  "height": 300,
+  "params": [
+    {
+      "name": "param_340",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales",
+      "views": [
+        "view_49"
+      ]
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ],
+    "data-2bcd36078e99d7314dd01bf4090f835d": [
+      {
+        "Area Code": "E23000014",
+        "Area Name": "West Midlands",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.6799426915307097,
+        "rate (2023)": 2.505373556478239,
+        "5-year change": 268.4683411829986,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000003",
+        "Area Name": "Lancashire",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.40389212457321283,
+        "rate (2023)": 1.0894888802286815,
+        "5-year change": 169.74749294255966,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "W15000004",
+        "Area Name": "Dyfed-Powys",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.263181320318759,
+        "rate (2023)": 0.6142518044857821,
+        "5-year change": 133.39490954062194,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000013",
+        "Area Name": "Cleveland",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.6005475580676499,
+        "rate (2023)": 1.3229207423094267,
+        "5-year change": 120.2857583113182,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000002",
+        "Area Name": "Cumbria",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.47955856533734637,
+        "rate (2023)": 1.010341020045086,
+        "5-year change": 110.68146688910868,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000024",
+        "Area Name": "Norfolk",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.4953305357361502,
+        "rate (2023)": 0.9364427588474785,
+        "5-year change": 89.05411463392949,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000001",
+        "Area Name": "London",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.8545654378805779,
+        "rate (2023)": 0.6982240575511407,
+        "5-year change": -18.294840090559024,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000028",
+        "Area Name": "Essex",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 1.120645755636601,
+        "rate (2023)": 0.9549893496409798,
+        "5-year change": -14.782227582838372,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000027",
+        "Area Name": "Hertfordshire",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.5461778558327561,
+        "rate (2023)": 0.512235345071713,
+        "5-year change": -6.214552713656083,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000039",
+        "Area Name": "Dorset",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.3879645356298066,
+        "rate (2023)": 0.40184233191408764,
+        "5-year change": 3.5770785754301904,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000031",
+        "Area Name": "Surrey",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.4749768206249615,
+        "rate (2023)": 0.49684144868681235,
+        "5-year change": 4.60330422715828,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000021",
+        "Area Name": "Leicestershire",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.6942226275957187,
+        "rate (2023)": 0.7393048570007617,
+        "5-year change": 6.493915296476997,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "K04000001",
+        "Area Name": "England & Wales",
+        "Crime type": "Possession of weapons offences",
+        "rate (2018)": 0.6921828297565078,
+        "rate (2023)": 0.9796144917017886,
+        "5-year change": 41.525396122060975,
+        "colour": "#596870"
+      }
+    ]
+  }
+}

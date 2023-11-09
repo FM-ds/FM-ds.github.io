@@ -1,0 +1,220 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "line",
+        "color": "#gray",
+        "size": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-a79992ac034f0def1f54d1d1ae599479"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "colour",
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Area Name",
+            "type": "nominal"
+          },
+          {
+            "field": "Crime type",
+            "type": "nominal"
+          },
+          {
+            "field": "5-year change",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "title": "5-year change (%)"
+          },
+          "field": "5-year change",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "title": ""
+          },
+          "field": "Area Name",
+          "sort": "-x",
+          "type": "nominal"
+        }
+      },
+      "name": "view_47",
+      "title": {
+        "text": "Burglary",
+        "subtitle": "Largest changes in crime rates, ITL2 regions, England & Wales, 2018 to 2023"
+      }
+    }
+  ],
+  "height": 300,
+  "params": [
+    {
+      "name": "param_339",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales",
+      "views": [
+        "view_47"
+      ]
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ],
+    "data-a79992ac034f0def1f54d1d1ae599479": [
+      {
+        "Area Code": "E23000013",
+        "Area Name": "Cleveland",
+        "Crime type": "Burglary",
+        "rate (2018)": 10.513114898878388,
+        "rate (2023)": 9.079727906434062,
+        "5-year change": -13.634274962573176,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000011",
+        "Area Name": "South Yorkshire",
+        "Crime type": "Burglary",
+        "rate (2018)": 10.217841393094094,
+        "rate (2023)": 8.366431811797856,
+        "5-year change": -18.119380699602026,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "W15000004",
+        "Area Name": "Dyfed-Powys",
+        "Crime type": "Burglary",
+        "rate (2018)": 3.1388242761546117,
+        "rate (2023)": 2.530639926367291,
+        "5-year change": -19.376183445745806,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000037",
+        "Area Name": "Gloucestershire",
+        "Crime type": "Burglary",
+        "rate (2018)": 6.132400631070512,
+        "rate (2023)": 4.504915507703823,
+        "5-year change": -26.53911936413365,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000014",
+        "Area Name": "West Midlands",
+        "Crime type": "Burglary",
+        "rate (2018)": 9.706613357318858,
+        "rate (2023)": 7.125534783747787,
+        "5-year change": -26.59092804623684,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000020",
+        "Area Name": "Lincolnshire",
+        "Crime type": "Burglary",
+        "rate (2018)": 5.90944006091822,
+        "rate (2023)": 4.309437355908062,
+        "5-year change": -27.07536904539728,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000026",
+        "Area Name": "Bedfordshire",
+        "Crime type": "Burglary",
+        "rate (2018)": 9.008426120975024,
+        "rate (2023)": 3.3095982598055875,
+        "5-year change": -63.261082287175654,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000025",
+        "Area Name": "Suffolk",
+        "Crime type": "Burglary",
+        "rate (2018)": 5.630282518118095,
+        "rate (2023)": 2.4417881120026204,
+        "5-year change": -56.63116186186017,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000004",
+        "Area Name": "Merseyside",
+        "Crime type": "Burglary",
+        "rate (2018)": 8.691969721031178,
+        "rate (2023)": 3.9946737683089215,
+        "5-year change": -54.04178918567367,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000038",
+        "Area Name": "Wiltshire",
+        "Crime type": "Burglary",
+        "rate (2018)": 5.368464250718168,
+        "rate (2023)": 2.523008228888377,
+        "5-year change": -53.00316606279234,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000024",
+        "Area Name": "Norfolk",
+        "Crime type": "Burglary",
+        "rate (2018)": 4.374492147063079,
+        "rate (2023)": 2.123329511340213,
+        "5-year change": -51.4611196006887,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000017",
+        "Area Name": "Warwickshire",
+        "Crime type": "Burglary",
+        "rate (2018)": 7.7192584693975155,
+        "rate (2023)": 3.905513282917719,
+        "5-year change": -49.40558994881613,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "K04000001",
+        "Area Name": "England & Wales",
+        "Crime type": "Burglary",
+        "rate (2018)": 7.358413144222035,
+        "rate (2023)": 4.567297894234598,
+        "5-year change": -37.930939664336094,
+        "colour": "#596870"
+      }
+    ]
+  }
+}

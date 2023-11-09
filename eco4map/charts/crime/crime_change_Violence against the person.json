@@ -1,0 +1,220 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "line",
+        "color": "#gray",
+        "size": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-dc6643b19bd21ec85c84853d16db8e8c"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "colour",
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Area Name",
+            "type": "nominal"
+          },
+          {
+            "field": "Crime type",
+            "type": "nominal"
+          },
+          {
+            "field": "5-year change",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "title": "5-year change (%)"
+          },
+          "field": "5-year change",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "title": ""
+          },
+          "field": "Area Name",
+          "sort": "-x",
+          "type": "nominal"
+        }
+      },
+      "name": "view_37",
+      "title": {
+        "text": "Violence against the person",
+        "subtitle": "Largest changes in crime rates, ITL2 regions, England & Wales, 2018 to 2023"
+      }
+    }
+  ],
+  "height": 300,
+  "params": [
+    {
+      "name": "param_334",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales",
+      "views": [
+        "view_37"
+      ]
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ],
+    "data-dc6643b19bd21ec85c84853d16db8e8c": [
+      {
+        "Area Code": "E23000037",
+        "Area Name": "Gloucestershire",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 14.073318166838868,
+        "rate (2023)": 37.977071789455124,
+        "5-year change": 169.85158254249495,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000018",
+        "Area Name": "Derbyshire",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 13.379408960915157,
+        "rate (2023)": 35.09035589418734,
+        "5-year change": 162.27134544355198,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000014",
+        "Area Name": "West Midlands",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 21.09686146046858,
+        "rate (2023)": 50.73604349871679,
+        "5-year change": 140.49095451371417,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "W15000004",
+        "Area Name": "Dyfed-Powys",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 17.743452397078684,
+        "rate (2023)": 41.66254904810347,
+        "5-year change": 134.80520090308283,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000020",
+        "Area Name": "Lincolnshire",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 13.947556548375802,
+        "rate (2023)": 30.63911191281317,
+        "5-year change": 119.67368840946631,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000013",
+        "Area Name": "Cleveland",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 27.27545703435485,
+        "rate (2023)": 55.26264538530505,
+        "5-year change": 102.60942031401667,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000032",
+        "Area Name": "Kent",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 39.240781289909904,
+        "rate (2023)": 40.60600125057444,
+        "5-year change": 3.479084553842906,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000003",
+        "Area Name": "Lancashire",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 32.724654930536595,
+        "rate (2023)": 35.12475594208802,
+        "5-year change": 7.334228631733573,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000027",
+        "Area Name": "Hertfordshire",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 20.302574064257612,
+        "rate (2023)": 22.428411987139977,
+        "5-year change": 10.470780287041887,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000007",
+        "Area Name": "Northumbria",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 32.29603304780997,
+        "rate (2023)": 37.36181579861987,
+        "5-year change": 15.685464351955195,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000035",
+        "Area Name": "Devon and Cornwall",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 22.01422906461395,
+        "rate (2023)": 25.49955546730593,
+        "5-year change": 15.83215288830784,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000001",
+        "Area Name": "London",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 23.05863657174885,
+        "rate (2023)": 27.74484780968615,
+        "5-year change": 20.323019634555443,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "K04000001",
+        "Area Name": "England & Wales",
+        "Crime type": "Violence against the person",
+        "rate (2018)": 25.009960490833244,
+        "rate (2023)": 35.257855690508755,
+        "5-year change": 40.97525545244909,
+        "colour": "#596870"
+      }
+    ]
+  }
+}

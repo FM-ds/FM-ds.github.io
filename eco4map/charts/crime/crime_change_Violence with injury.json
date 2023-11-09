@@ -1,0 +1,220 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "line",
+        "color": "#gray",
+        "size": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-d567c2828454e62b813301a9feddf141"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "colour",
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Area Name",
+            "type": "nominal"
+          },
+          {
+            "field": "Crime type",
+            "type": "nominal"
+          },
+          {
+            "field": "5-year change",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "title": "5-year change (%)"
+          },
+          "field": "5-year change",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "title": ""
+          },
+          "field": "Area Name",
+          "sort": "-x",
+          "type": "nominal"
+        }
+      },
+      "name": "view_41",
+      "title": {
+        "text": "Violence with injury",
+        "subtitle": "Largest changes in crime rates, ITL2 regions, England & Wales, 2018 to 2023"
+      }
+    }
+  ],
+  "height": 300,
+  "params": [
+    {
+      "name": "param_336",
+      "select": {
+        "type": "interval",
+        "encodings": [
+          "x",
+          "y"
+        ]
+      },
+      "bind": "scales",
+      "views": [
+        "view_41"
+      ]
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ],
+    "data-d567c2828454e62b813301a9feddf141": [
+      {
+        "Area Code": "E23000021",
+        "Area Name": "Leicestershire",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 6.870219141711886,
+        "rate (2023)": 12.52264567564696,
+        "5-year change": 82.27432658758875,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000020",
+        "Area Name": "Lincolnshire",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 6.39135429882144,
+        "rate (2023)": 9.010051021866884,
+        "5-year change": 40.97248565188021,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000014",
+        "Area Name": "West Midlands",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 9.893338736059018,
+        "rate (2023)": 13.298780713630247,
+        "5-year change": 34.42156453371146,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000013",
+        "Area Name": "Cleveland",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 9.912567340810739,
+        "rate (2023)": 13.292370747660765,
+        "5-year change": 34.096145737493636,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000007",
+        "Area Name": "Northumbria",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 9.159390515322718,
+        "rate (2023)": 12.097401076384017,
+        "5-year change": 32.076485396558965,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "W15000004",
+        "Area Name": "Dyfed-Powys",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 5.892552355666333,
+        "rate (2023)": 7.5589788305963275,
+        "5-year change": 28.280214995926904,
+        "colour": "#e6224b"
+      },
+      {
+        "Area Code": "E23000019",
+        "Area Name": "Nottinghamshire",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 10.77886073963001,
+        "rate (2023)": 9.214337642026734,
+        "5-year change": -14.514735234040877,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000032",
+        "Area Name": "Kent",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 10.989208907944976,
+        "rate (2023)": 9.689261310864607,
+        "5-year change": -11.829310080187236,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000003",
+        "Area Name": "Lancashire",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 12.138904003161361,
+        "rate (2023)": 11.057430882081269,
+        "5-year change": -8.909149629970235,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000006",
+        "Area Name": "Cheshire",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 9.91337888744378,
+        "rate (2023)": 9.038906916107104,
+        "5-year change": -8.82112931691007,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "W15000001",
+        "Area Name": "North Wales",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 10.342044338229803,
+        "rate (2023)": 9.745334726632882,
+        "5-year change": -5.7697452465095225,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "E23000027",
+        "Area Name": "Hertfordshire",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 7.518625088277584,
+        "rate (2023)": 7.22793223501191,
+        "5-year change": -3.866303344728511,
+        "colour": "#36b7b4"
+      },
+      {
+        "Area Code": "K04000001",
+        "Area Name": "England & Wales",
+        "Crime type": "Violence with injury",
+        "rate (2018)": 8.90837701749412,
+        "rate (2023)": 9.614091479320663,
+        "5-year change": 7.921919564480416,
+        "colour": "#596870"
+      }
+    ]
+  }
+}
