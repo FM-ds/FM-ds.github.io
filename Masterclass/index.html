@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Data Science Portfolio</title>
     <style>
-        body {
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;600&family=Raleway:wght@200;300;400;600;700&display=swap');
+
+        /* 
+        
+        This is a sample stylesheet for a portfolio page. Feel free to edit it to suit your needs.
+
+        It's made to accomodate a basic page with the structure:
+
+        <body>
+            <h1> Portfolio Title </h1>
+            <h2> Portfolio Subtitle </h2>
+        
+            <section> - Sections are used to group charts and text together
+                <figure class="chart-figure" id="chart1"></figure>  - Figures are used to contain charts
+                <div class="chart-details"> - Divs are used to contain text
+                    <p>Chart description</p>
+                </div>
+            </section>
+        
+        */
+
+        html {
             background-color: #f5f5f5;
             margin: 0;
             padding: 50px 0 0 0;
-            font-family: Arial, sans-serif;
+            font-family: Raleway, Arial, sans-serif;
         }
 
-        #container {
+        body {
             margin: auto;
-            max-width: 800px;
+            max-width: 1000px;
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -26,61 +48,99 @@
             margin-bottom: 0px;
         }
 
-        h4 {
+        h2 {
+            margin-top: 0px;
             color: darkslategray;
             font-weight: lighter;
             margin-bottom: 30px;
         }
 
-        .chart-section {
-            margin-bottom: 30px;
+        figure {
+            margin: 0;
+            min-width: 500px;
+        }
+
+        section {
+            margin-bottom: 0px;
         }
 
         .chart-details {
             padding: 10px;
         }
 
-        .chart-figure {
+        .figure {
             padding: 10px;
         }
     </style>
 </head>
-<body>
-    <div id="container">
-        <h1>Data Science Portfolio</h1>
-        <h4>A Collection of charts put together at the ECO Workshop</h4>
 
-        <section class="chart-section">
-            <div class="chart-details">
-                <h3>Growth of Regional Trade Agreements</h3>
-                <p>Some description about this chart.</p>
-            </div>
+<body>
+    <main">
+        <h1>Masterclass Portfolio</h1>
+        <h2>A sample page demonstrating the embedding and presentation of Vega-lite Charts.</h2>
+
+        <section>
             <figure class="chart-figure" id="chart1"></figure>
+            <div class="chart-details">
+                <p>We all own smartphones, and we all wear clothes produced by the ‘fast fashion’ industry. But where does the stuff we buy come from?
+                    Just three countries host the world’s 25 largest shoe factories, all of which happen to supply Nike or Adidas.</p>
+            </div>
         </section>
 
-        <section class="chart-section">
+        <section>
             <div class="chart-details">
-                <h3>US Current Account</h3>
-                <p>Some description about this chart.</p>
+                <h3>Transport and Communication Costs</h3>
+                <p> The world is trading more and more but why? Can technological development offer an answer? Decades of dramatic technological improvements have brought the world together. In 1920, a three minute call from New York to Los Angeles would cost over $15. Today, it costs almost nothing. Likewise, the costs of international goods transportation has also plummeted. </p>
             </div>
             <figure class="chart-figure" id="chart2"></figure>
         </section>
-    </div>
+
+        <section>
+            <div class="chart-details">
+                <h3> Trade to GDP Ratios</h3>
+                <p> How much trade do the world’s largest countries do? Explore the chart below to see which countries trade the most and how much trade has increased relative to GDP. </p>
+            </div>
+            <figure class="chart-figure" id="chart3"></figure>
+        </section>
+
+        <section>
+            <div class="chart-details">
+                <h4> Regional Trade Agreements</h4>
+                <p> This increase is not just due to technology. Another reason has been the proliferation of trade agreements. Use the slider on the chart below to see how the number of other countries each country has a trade agreement with has increased. However, this increase is not inevitable; see what happens to the UK before and after Brexit. </p>
+            </div>
+            <figure class="chart-figure" id="chart4"></figure>
+        </section>
+
+        <section>
+            <div class="chart-details">
+                <h4> Trade and Employment</h4>
+                <p> In some places, the rise of globalisation has been met with a backlash. See how manufacturing employment has fallen as imports from China have increased. </p>
+            </div>
+            <figure class="chart-figure" id="chart5"></figure>
+        </section>
+
+
+
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <script>
-        const chart2Spec = 'https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/Charts/age_year.json';
-        const chart1Spec = 'https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/Charts/UK_gender_rate.json';
-
-        specs = [chart1Spec, chart2Spec];
+        specs = [
+        "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/charts/chart7_1_map_ShoeFactories.json",    
+        "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/charts/chart7_x_transport_communication.json",
+        "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/charts/chart7_2_TradeToGDP_P21.json", 
+        "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/charts/chart7_x_RTA_count.json",
+        "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/charts/chart7_X_US_Trade_Employment.json"
+        ];
 
         // loop through the specs and embed each chart, using ids with index
         specs.forEach((spec, index) => {
-            vegaEmbed('#chart' + (index+1), spec).then(function(result) {
+            vegaEmbed('#chart' + (index + 1), spec).then(function (result) {
             }).catch(console.error);
         });
-</script>
+    </script>
 </body>
+
 </html>
