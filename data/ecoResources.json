@@ -12,5 +12,181 @@
             "url" : "https://www.economicsobservatory.com/why-is-the-nhs-struggling",
             "description": "NHS performance in many areas – including for ambulances, emergency care and pre-planned treatment – is worse than before the pandemic. There are many plausible explanations for this poor record, which makes it hard to identify short-term solutions."
         }
+    ],
+    "Productivity": [
+        {
+            "title": "What explains Northern Ireland’s long-standing problem of low productivity?",
+            "image" : "https://www.economicsobservatory.com/wp-content/uploads/2021/04/Photo-by-Dimitry-Anikin-on-Unsplash.jpg'",
+            "url" : "https://www.economicsobservatory.com/what-explains-northern-irelands-long-standing-problem-of-low-productivity",
+            "description": "Low productivity is widely recognised as one of the most important economic challenges facing the UK. But it is a problem that has affected Northern Ireland’s economy for the past 100 years – and it is yet to be solved."
+        },
+        {
+            "title": "The shift to working from home: how has it affected productivity?",
+            "url": "https://www.economicsobservatory.com/the-shift-to-working-from-home-how-has-it-affected-productivity",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2022/09/Picture_by_monkeybusinessimages.iStock-scaled.jpg",
+            "description": "The Covid-19 outbreak led to a rapid shift to working from home in many occupations. The change may have a negative impact on productivity, but this ignores workers’ perceptions and effects on their wellbeing."
+        },
+        {
+            "title": "How does the housing market affect UK productivity?",
+            "url" : "https://www.economicsobservatory.com/how-does-the-housing-market-affect-uk-productivity",
+            "image" : "https://www.economicsobservatory.com/wp-content/uploads/2023/02/iStock-1363876407.jpg",
+            "description": "Where we live – and how much that costs us – affect our ability to work, to find suitable jobs and to access good schools. House prices also influence whether money is invested in property or in developing businesses. All this means that the housing market has a big impact on national productivity."
+        },
+        {
+            "title" : "Is higher productivity at odds with improved wellbeing in post-pandemic Wales?",
+            "url" : "https://www.economicsobservatory.com/is-higher-productivity-at-odds-with-improved-wellbeing-in-post-pandemic-wales",
+            "image" : "https://www.economicsobservatory.com/wp-content/uploads/2021/05/Photo-by-gorodenkoff-from-iStock.jpg",
+            "description": "The Well-being of Future Generations Act in Wales requires that long-term considerations of poverty, health inequalities and climate change are at the forefront of policy-making. Such goals could be at odds with productivity growth and traditional indicators of prosperity."
+        }
+    ],
+    "Employment" : [
+        {
+            "title": "What is the disability employment gap and why is it important?",
+            "url": "https://www.economicsobservatory.com/what-is-the-disability-employment-gap-and-why-is-it-important",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/11/iStock-1493562348.jpg",
+            "description" : "People with disabilities – who are just over a fifth of the UK’s working-age population – tend to have lower levels of employment. Legislation has made discrimination against disabled people unlawful, but the employment gap persists, requiring policy interventions to reduce inequalities."
+        },
+        {
+            "url": "https://www.economicsobservatory.com/how-has-employment-of-older-workers-changed-since-the-pandemic",
+            "title": "How has employment of older workers changed since the pandemic?",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2022/09/Picture_by_JacobLund.iStock-scaled.jpg",
+            "description": "The employment rates of people in their 50s and 60s have risen over the past few decades, partly due to increases in the UK’s state pension age. But since the pandemic, employment rates for these age groups have fallen, as many have moved into early retirement"
+        },
+        {
+            "url" : "https://www.economicsobservatory.com/how-has-the-uk-labour-market-fared-in-recessions-and-recoveries-since-1870",
+            "title" : "How has the UK labour market fared in recessions and recoveries since 1870?",
+            "image" : "https://www.economicsobservatory.com/wp-content/uploads/2021/05/Photo-by-@museumsvictoria-on-Unsplash.jpg",
+            "description": "A look back at the past 150 years of booms and slumps in the UK economy reveals shifts in how the labour market responds. While the government’s furlough scheme has averted much higher joblessness, it is likely to hamper recovery in output and reduction in the unemployment rate."
+        },
+        {
+            "url": "https://www.economicsobservatory.com/should-the-uk-government-get-active-about-economic-inactivity",
+            "title": "Should the UK government get active about economic inactivity?",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/05/Picture_by_NewStreetPhoto.iStock-scaled.jpg",
+            "description": "Concerns about a rise in economic inactivity have prompted new policies aimed at discouraging early retirement and encouraging the labour force participation of women with young children. Such interventions would be more cost-effective if targeted at particular disadvantaged groups."
+        }
+    ],
+    "Income" : [
+        {
+            "url" : "https://www.economicsobservatory.com/how-has-the-uk-labour-market-fared-in-recessions-and-recoveries-since-1870",
+            "title" : "How has the UK labour market fared in recessions and recoveries since 1870?",
+            "image" : "https://www.economicsobservatory.com/wp-content/uploads/2021/05/Photo-by-@museumsvictoria-on-Unsplash.jpg",
+            "description": "A look back at the past 150 years of booms and slumps in the UK economy reveals shifts in how the labour market responds. While the government’s furlough scheme has averted much higher joblessness, it is likely to hamper recovery in output and reduction in the unemployment rate."
+        },
+        {
+            "url": "https://www.economicsobservatory.com/how-might-the-cost-of-living-crisis-affect-long-term-poverty",
+            "title": "How might the cost of living crisis affect long-term poverty?",
+            "description": "The cost of living crisis is disproportionately affecting poorer households. With fewer resources to cover rising bills, many are taking on debt just to get by. This has consequences in the short term, but also lengthens the effects of this crisis for the most vulnerable.",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2022/08/Richard.Johnson.iStock-scaled.jpg"
+        },
+        {
+            "url": "https://www.economicsobservatory.com/minimum-wages-and-living-wages-what-happens-in-times-of-inflation",
+            "title": "Minimum wages and living wages: what happens in times of inflation?",
+            "description": "It is widely accepted that minimum wages are an effective way to help workers at the lower end of the income distribution without damaging their job opportunities. But while the UK’s minimum wage has risen faster than the rate of inflation over the past two decades, it is now falling behind.",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2022/07/Photo_by_Andrii_Lysenko_from_iStock.jpg"
+        },
+        {
+            "title": "Why has it taken so long for stagnant pay to become central to UK politics?",
+            "url": "https://www.economicsobservatory.com/why-has-it-taken-so-long-for-stagnant-pay-to-become-central-to-uk-politics",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/10/iStock-512099449.jpg",
+            "description": "Many people in Britain haven’t had a real-terms pay rise since the global financial crisis. In the wake of the recent spike in inflation and interest rates, this is finally becoming a pressing political issue. The fact it has taken so long reveals a long-term shift in the balance of economic power."
+        }
+    ],
+    "Wellbeing" : [
+        {
+            "title": "How has national wellbeing evolved over time?",
+            "url": "https://www.economicsobservatory.com/how-has-national-wellbeing-evolved-over-time",
+            "description": "Survey data on national wellbeing only go back a few decades, but text analysis makes it possible to observe changes over longer periods of time. The results reveal the big influences on peaks and troughs in human happiness: income, health, aspirations and avoidance of major conflicts.",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/03/iStock-1418480826-scaled.jpg"
+        },
+        {
+            "url": "https://www.economicsobservatory.com/what-is-the-role-of-government-in-creating-a-happier-world",
+            "title": "What is the role of government in creating a happier world?",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/03/Picture_by_Torwal.iStock-scaled.jpg",
+            "description": "The latest edition of the World Happiness Report offers new insights into wellbeing across the globe. The past year has brought a number of fresh challenges, but many people are still able to find happiness in their lives – and governments can play a role in promoting this."
+        },
+        {
+            "title" : "Is higher productivity at odds with improved wellbeing in post-pandemic Wales?",
+            "url" : "https://www.economicsobservatory.com/is-higher-productivity-at-odds-with-improved-wellbeing-in-post-pandemic-wales",
+            "image" : "https://www.economicsobservatory.com/wp-content/uploads/2021/05/Photo-by-gorodenkoff-from-iStock.jpg",
+            "description": "The Well-being of Future Generations Act in Wales requires that long-term considerations of poverty, health inequalities and climate change are at the forefront of policy-making. Such goals could be at odds with productivity growth and traditional indicators of prosperity."
+        },
+        {
+            "title": "What can we learn from the latest World Happiness Report?",
+            "url": "https://www.economicsobservatory.com/what-can-we-learn-from-the-latest-world-happiness-report",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2022/03/Image-by-Rawpixel-from-iStock.jpg",
+            "description" : "Now in its tenth year, the World Happiness Report offers an insight into the progress that has been made – both in terms of understanding the determinants of global wellbeing and in recognising the most important challenges and opportunities that lie ahead."
+        }
+    ],
+    "Housing" : [
+        {
+            "url": "https://www.economicsobservatory.com/how-can-uk-policy-makers-make-homes-more-affordable",
+            "title": "How can UK policy-makers make homes more affordable?",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/09/iStock-1304415619.jpg",
+            "description": "Housing in the UK has become seriously unaffordable; the problem is likely to get worse; and younger people are being hit the hardest. Reforms that could be effective in solving the crisis are considered politically infeasible – while popular policies are ineffective or, worse, counterproductive."
+        },
+        {
+            "url": "https://www.economicsobservatory.com/whats-been-happening-in-the-uks-housing-market-in-the-first-half-of-2023",
+            "title": "What’s been happening in the UK’s housing market in the first half of 2023?",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/06/iStock-903861978-1.jpg",
+            "description": "UK house prices have stalled in recent months, driven in part by higher borrowing costs and the wider squeeze on household finances. But the longer-term lack of supply, due to planning restrictions and a shortage of new homes, means that prices remain stubbornly high for both buyers and renters."
+        },
+        {
+            "url": "https://www.economicsobservatory.com/house-of-cards",
+            "title": "House of cards",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/06/cards-final.jpg",
+            "description": "These are challenging times in the UK’s housing market. Building a healthier and more resilient economy, with stable prices, affordable mortgage rates and targeted support for those in need is essential – not least to ensure that people can keep a roof over their heads."
+        },
+        {
+            "url": "https://www.economicsobservatory.com/rethinking-housing-policy",
+            "title": "Rethinking housing policy",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/03/Picture_by_Victor_Huang.iStock-scaled.jpg",
+            "description": "The UK’s housing market is in crisis. The government’s recent planning reforms are unlikely to solve the problem, and may even make it worse. A more radical approach is needed, with a focus on increasing the supply of new homes and making them more affordable."
+        }
+    ],
+    "Transport" : [
+        {
+            "url" : "https://www.economicsobservatory.com/track-record",
+            "title" : "Track record",
+            "image" : "https://www.economicsobservatory.com/wp-content/uploads/2023/10/iStock-1087191814.jpg",
+            "description" : "In the Victorian era, Brunel and his contemporaries ramped up the UK’s infrastructure, building railways, tunnels and bridges. Two centuries later, the amount of active railway track is in decline and the proposed HS2 line has been cut short. New policies and more cost-effective projects are needed."
+        },
+        {
+            "title": "What is the future of commuting to work?",
+            "url": "https://www.economicsobservatory.com/what-is-the-future-of-commuting-to-work",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2021/05/Photo-by-Leon-Warnking-from-Pexels.jpg",
+            "description": "Around half the UK labour force is currently working from home. Surveys of employees conducted in March and April 2021 suggest that spending two to three days a week at home is the most common expected working pattern after the pandemic."
+        },
+        {
+            "image": "https://www.bristolideas.co.uk/wp-content/uploads/2023/08/jarred-clapperton-uXhaHtQuLr0-unsplash-2048x1365.jpg",
+            "url" : "https://www.bristolideas.co.uk/attend/talking-economics-brunels-vision-for-2050/",
+            "title" : "Talking Economics: Brunel’s vision for 2050",
+            "description": "The 'rest of HS2' being cancelled has resurfaced questions about the UK's infrastructure and public transport connectivity. Our panel will consider the country's infrastructure needs and discuss what the great civil engineer Isambard Kingdom Brunel might build if he was here today"
+        }
+    ],
+    "Education": [
+        {
+            "title":"How can education and skills contribute to levelling up?",
+            "url": "https://www.economicsobservatory.com/how-can-education-and-skills-contribute-to-levelling-up",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2022/11/School-scaled.jpg",
+            "description": "Education and skills contribute to differences in earnings and opportunities across generations, both at the national level and between local authorities in England. Targeted policies can help to reduce the gaps between individuals and contribute to efforts to level up the UK economy."
+        },
+        {
+            "url": "https://www.economicsobservatory.com/which-educational-policies-are-most-effective-for-equalising-opportunities",
+            "title": "Which educational policies are most effective for equalising opportunities?",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/06/J50-school-Copy-1.jpg",
+            "description":"Against a backdrop of poor productivity growth, severe skill shortages and increasing educational inequalities in the UK since the pandemic, investment in education and skills is essential. It requires policies that span from the early years right through to adulthood."
+        },
+        {
+            "url": "https://www.economicsobservatory.com/why-should-we-invest-in-early-childhood-education-and-care",
+            "title": "Why should we invest in early childhood education and care?",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2023/04/iStock-1151510733.jpg",
+            "description": "The Chancellor of the Exchequer has announced a substantial expansion of ‘free’ childcare for one- and two-year-olds in England. High-quality childcare can improve children’s development, raise family income and boost productivity – but there can be negative effects from low-quality provision."
+        },
+        {
+            "url": "https://www.economicsobservatory.com/what-have-two-years-of-interrupted-schooling-taught-us-about-learning",
+            "title": "What have two years of interrupted schooling taught us about learning?",
+            "image": "https://www.economicsobservatory.com/wp-content/uploads/2022/05/Photo-by-monkeybusinessimages-from-iStock-2.jpg",
+            "description": "Covid-19 has disrupted education for children and young people around the world. Stalled progress in learning continues, as does widening inequality. Additional support for schools is urgently needed to reduce learning gaps."
+        }
     ]
 }

@@ -1,0 +1,115 @@
+id,name,nation,series,value,nameShort
+W11000024,Powys Teaching Health Board,Wales,0_on_target,0.9992230000000001,Powys Teaching 
+S08000028,Western Isles,Scotland,0_on_target,0.984743411927878,Western Isles
+S08000025,Orkney,Scotland,0_on_target,0.8774002954209749,Orkney
+S08000022,Highland,Scotland,0_on_target,0.8525980911983033,Highland
+S08000026,Shetland,Scotland,0_on_target,0.8322411533420708,Shetland
+S08000017,Dumfries and Galloway,Scotland,0_on_target,0.8099883855981417,Dumfries and Galloway
+E54000032,NHS Kent And Medway Integrated Care Board,England,0_on_target,0.8040949814597296,Kent And Medway 
+E54000036,NHS Cornwall And The Isles Of Scilly Integrated Care Board,England,0_on_target,0.7972629521016618,Cornwall And The Isles Of Scilly 
+E54000050,NHS North East And North Cumbria Integrated Care Board,England,0_on_target,0.7881703121066244,North East And North Cumbria 
+E54000027,NHS North West London Integrated Care Board,England,0_on_target,0.7825821205383019,North West London 
+E54000053,NHS Sussex Integrated Care Board,England,0_on_target,0.7783536390891115,Sussex 
+E54000031,NHS South West London Integrated Care Board,England,0_on_target,0.7762024374360406,South West London 
+E54000024,"NHS Bedfordshire, Luton And Milton Keynes Integrated Care Board",England,0_on_target,0.7690782422293676,"Bedfordshire, Luton And Milton Keynes "
+E54000048,NHS Lancashire And South Cumbria Integrated Care Board,England,0_on_target,0.767765234452754,Lancashire And South Cumbria 
+E54000039,"NHS Bristol, North Somerset And South Gloucestershire Integrated Care Board",England,0_on_target,0.7676835811743064,"Bristol, North Somerset And South Gloucestershire "
+E54000038,NHS Somerset Integrated Care Board,England,0_on_target,0.7597284857501511,Somerset 
+E54000042,NHS Hampshire And Isle Of Wight Integrated Care Board,England,0_on_target,0.7580663312058904,Hampshire And Isle Of Wight 
+E54000058,NHS Derby And Derbyshire Integrated Care Board,England,0_on_target,0.7555369303300157,Derby And Derbyshire 
+E54000040,"NHS Bath And North East Somerset, Swindon And Wiltshire Integrated Care Board",England,0_on_target,0.7514767167965211,"Bath And North East Somerset, Swindon And Wiltshire "
+E54000062,NHS Black Country Integrated Care Board,England,0_on_target,0.7486431619505324,Black Country 
+E54000044,"NHS Buckinghamshire, Oxfordshire And Berkshire West Integrated Care Board",England,0_on_target,0.7443096083140288,"Buckinghamshire, Oxfordshire And Berkshire West "
+E54000015,"NHS Leicester, Leicestershire And Rutland Integrated Care Board",England,0_on_target,0.7432752917680834,"Leicester, Leicestershire And Rutland "
+W11000028,Aneurin Bevan University Health Board,Wales,0_on_target,0.7358960000000001,Aneurin Bevan University 
+E54000030,NHS South East London Integrated Care Board,England,0_on_target,0.7358369012307568,South East London 
+E54000008,NHS Cheshire And Merseyside Integrated Care Board,England,0_on_target,0.734280463551151,Cheshire And Merseyside 
+E54000028,NHS North Central London Integrated Care Board,England,0_on_target,0.7270471464019851,North Central London 
+E54000054,NHS West Yorkshire Integrated Care Board,England,0_on_target,0.7254958494011364,West Yorkshire 
+E54000018,NHS Coventry And Warwickshire Integrated Care Board,England,0_on_target,0.7233993484966416,Coventry And Warwickshire 
+E54000043,NHS Gloucestershire Integrated Care Board,England,0_on_target,0.7229016410578029,Gloucestershire 
+E54000022,NHS Norfolk And Waveney Integrated Care Board,England,0_on_target,0.713772799080856,Norfolk And Waveney 
+E54000059,NHS Northamptonshire Integrated Care Board,England,0_on_target,0.7113933959578708,Northamptonshire 
+E54000055,NHS Birmingham And Solihull Integrated Care Board,England,0_on_target,0.7049699087555814,Birmingham And Solihull 
+E54000029,NHS North East London Integrated Care Board,England,0_on_target,0.7046643704151658,North East London 
+E54000023,NHS Suffolk And North East Essex Integrated Care Board,England,0_on_target,0.7035659196080211,Suffolk And North East Essex 
+S08000015,Ayrshire and Arran,Scotland,0_on_target,0.7034767236299352,Ayrshire and Arran
+E54000051,NHS Humber And North Yorkshire Integrated Care Board,England,0_on_target,0.7009101471727344,Humber And North Yorkshire 
+E54000052,NHS Surrey Heartlands Integrated Care Board,England,0_on_target,0.7003353285906797,Surrey Heartlands 
+S08000020,Grampian,Scotland,0_on_target,0.6985931240100625,Grampian
+W11000023,Betsi Cadwaladr University Health Board,Wales,0_on_target,0.692533,Betsi Cadwaladr University 
+E54000061,NHS South Yorkshire Integrated Care Board,England,0_on_target,0.6874941835576154,South Yorkshire 
+E54000010,NHS Staffordshire And Stoke-On-Trent Integrated Care Board,England,0_on_target,0.685876436118673,Staffordshire And Stoke-On-Trent 
+W11000029,Cardiff and Vale University Health Board,Wales,0_on_target,0.6856310000000001,Cardiff and Vale University 
+E54000041,NHS Dorset Integrated Care Board,England,0_on_target,0.6834223400679688,Dorset 
+E54000057,NHS Greater Manchester Integrated Care Board,England,0_on_target,0.6814674573122812,Greater Manchester 
+E54000013,NHS Lincolnshire Integrated Care Board,England,0_on_target,0.6779195073674951,Lincolnshire 
+E54000026,NHS Mid And South Essex Integrated Care Board,England,0_on_target,0.6749498379379534,Mid And South Essex 
+E54000034,NHS Frimley Integrated Care Board,England,0_on_target,0.6691960098900162,Frimley 
+E54000060,NHS Nottingham And Nottinghamshire Integrated Care Board,England,0_on_target,0.6676070718469558,Nottingham And Nottinghamshire 
+E54000056,NHS Cambridgeshire And Peterborough Integrated Care Board,England,0_on_target,0.6642090950294607,Cambridgeshire And Peterborough 
+E54000025,NHS Hertfordshire And West Essex Integrated Care Board,England,0_on_target,0.6635759108363772,Hertfordshire And West Essex 
+W11000025,Hywel Dda University Health Board,Wales,0_on_target,0.648419,Hywel Dda University 
+S08000024,Lothian,Scotland,0_on_target,0.6438904675794368,Lothian
+E54000037,NHS Devon Integrated Care Board,England,0_on_target,0.6331117880550171,Devon 
+E54000019,NHS Herefordshire And Worcestershire Integrated Care Board,England,0_on_target,0.6281926795288555,Herefordshire And Worcestershire 
+S08000016,Borders,Scotland,0_on_target,0.6231617647058824,Borders
+E54000011,"NHS Shropshire, Telford And Wrekin Integrated Care Board",England,0_on_target,0.6148522259633371,"Shropshire, Telford And Wrekin "
+S08000019,Forth Valley,Scotland,0_on_target,0.5987281917495516,Forth Valley
+S08000019,Forth Valley,Scotland,1_off_target,0.4012718082504484,Forth Valley
+E54000011,"NHS Shropshire, Telford And Wrekin Integrated Care Board",England,1_off_target,0.3851477740366629,"Shropshire, Telford And Wrekin "
+S08000016,Borders,Scotland,1_off_target,0.37683823529411764,Borders
+E54000019,NHS Herefordshire And Worcestershire Integrated Care Board,England,1_off_target,0.3718073204711445,Herefordshire And Worcestershire 
+E54000037,NHS Devon Integrated Care Board,England,1_off_target,0.3668882119449829,Devon 
+S08000024,Lothian,Scotland,1_off_target,0.3561095324205632,Lothian
+W11000025,Hywel Dda University Health Board,Wales,1_off_target,0.35158100000000003,Hywel Dda University 
+E54000025,NHS Hertfordshire And West Essex Integrated Care Board,England,1_off_target,0.33642408916362276,Hertfordshire And West Essex 
+E54000056,NHS Cambridgeshire And Peterborough Integrated Care Board,England,1_off_target,0.3357909049705393,Cambridgeshire And Peterborough 
+E54000060,NHS Nottingham And Nottinghamshire Integrated Care Board,England,1_off_target,0.3323929281530442,Nottingham And Nottinghamshire 
+E54000034,NHS Frimley Integrated Care Board,England,1_off_target,0.33080399010998385,Frimley 
+E54000026,NHS Mid And South Essex Integrated Care Board,England,1_off_target,0.3250501620620466,Mid And South Essex 
+E54000013,NHS Lincolnshire Integrated Care Board,England,1_off_target,0.32208049263250493,Lincolnshire 
+E54000057,NHS Greater Manchester Integrated Care Board,England,1_off_target,0.3185325426877188,Greater Manchester 
+E54000041,NHS Dorset Integrated Care Board,England,1_off_target,0.31657765993203124,Dorset 
+W11000029,Cardiff and Vale University Health Board,Wales,1_off_target,0.3143689999999999,Cardiff and Vale University 
+E54000010,NHS Staffordshire And Stoke-On-Trent Integrated Care Board,England,1_off_target,0.314123563881327,Staffordshire And Stoke-On-Trent 
+E54000061,NHS South Yorkshire Integrated Care Board,England,1_off_target,0.3125058164423846,South Yorkshire 
+W11000023,Betsi Cadwaladr University Health Board,Wales,1_off_target,0.30746700000000005,Betsi Cadwaladr University 
+S08000020,Grampian,Scotland,1_off_target,0.30140687598993754,Grampian
+E54000052,NHS Surrey Heartlands Integrated Care Board,England,1_off_target,0.2996646714093203,Surrey Heartlands 
+E54000051,NHS Humber And North Yorkshire Integrated Care Board,England,1_off_target,0.29908985282726563,Humber And North Yorkshire 
+S08000015,Ayrshire and Arran,Scotland,1_off_target,0.2965232763700648,Ayrshire and Arran
+E54000023,NHS Suffolk And North East Essex Integrated Care Board,England,1_off_target,0.29643408039197894,Suffolk And North East Essex 
+E54000029,NHS North East London Integrated Care Board,England,1_off_target,0.29533562958483417,North East London 
+E54000055,NHS Birmingham And Solihull Integrated Care Board,England,1_off_target,0.2950300912444186,Birmingham And Solihull 
+E54000059,NHS Northamptonshire Integrated Care Board,England,1_off_target,0.28860660404212923,Northamptonshire 
+E54000022,NHS Norfolk And Waveney Integrated Care Board,England,1_off_target,0.286227200919144,Norfolk And Waveney 
+E54000043,NHS Gloucestershire Integrated Care Board,England,1_off_target,0.27709835894219714,Gloucestershire 
+E54000018,NHS Coventry And Warwickshire Integrated Care Board,England,1_off_target,0.27660065150335844,Coventry And Warwickshire 
+E54000054,NHS West Yorkshire Integrated Care Board,England,1_off_target,0.27450415059886357,West Yorkshire 
+E54000028,NHS North Central London Integrated Care Board,England,1_off_target,0.2729528535980149,North Central London 
+E54000008,NHS Cheshire And Merseyside Integrated Care Board,England,1_off_target,0.26571953644884905,Cheshire And Merseyside 
+E54000030,NHS South East London Integrated Care Board,England,1_off_target,0.26416309876924315,South East London 
+W11000028,Aneurin Bevan University Health Board,Wales,1_off_target,0.2641039999999999,Aneurin Bevan University 
+E54000015,"NHS Leicester, Leicestershire And Rutland Integrated Care Board",England,1_off_target,0.2567247082319166,"Leicester, Leicestershire And Rutland "
+E54000044,"NHS Buckinghamshire, Oxfordshire And Berkshire West Integrated Care Board",England,1_off_target,0.2556903916859712,"Buckinghamshire, Oxfordshire And Berkshire West "
+E54000062,NHS Black Country Integrated Care Board,England,1_off_target,0.2513568380494676,Black Country 
+E54000040,"NHS Bath And North East Somerset, Swindon And Wiltshire Integrated Care Board",England,1_off_target,0.24852328320347894,"Bath And North East Somerset, Swindon And Wiltshire "
+E54000058,NHS Derby And Derbyshire Integrated Care Board,England,1_off_target,0.24446306966998432,Derby And Derbyshire 
+E54000042,NHS Hampshire And Isle Of Wight Integrated Care Board,England,1_off_target,0.2419336687941096,Hampshire And Isle Of Wight 
+E54000038,NHS Somerset Integrated Care Board,England,1_off_target,0.24027151424984894,Somerset 
+E54000039,"NHS Bristol, North Somerset And South Gloucestershire Integrated Care Board",England,1_off_target,0.23231641882569365,"Bristol, North Somerset And South Gloucestershire "
+E54000048,NHS Lancashire And South Cumbria Integrated Care Board,England,1_off_target,0.23223476554724598,Lancashire And South Cumbria 
+E54000024,"NHS Bedfordshire, Luton And Milton Keynes Integrated Care Board",England,1_off_target,0.2309217577706324,"Bedfordshire, Luton And Milton Keynes "
+E54000031,NHS South West London Integrated Care Board,England,1_off_target,0.22379756256395944,South West London 
+E54000053,NHS Sussex Integrated Care Board,England,1_off_target,0.22164636091088852,Sussex 
+E54000027,NHS North West London Integrated Care Board,England,1_off_target,0.2174178794616981,North West London 
+E54000050,NHS North East And North Cumbria Integrated Care Board,England,1_off_target,0.21182968789337564,North East And North Cumbria 
+E54000036,NHS Cornwall And The Isles Of Scilly Integrated Care Board,England,1_off_target,0.20273704789833824,Cornwall And The Isles Of Scilly 
+E54000032,NHS Kent And Medway Integrated Care Board,England,1_off_target,0.19590501854027043,Kent And Medway 
+S08000017,Dumfries and Galloway,Scotland,1_off_target,0.19001161440185832,Dumfries and Galloway
+S08000026,Shetland,Scotland,1_off_target,0.16775884665792917,Shetland
+S08000022,Highland,Scotland,1_off_target,0.14740190880169668,Highland
+S08000025,Orkney,Scotland,1_off_target,0.12259970457902514,Orkney
+S08000028,Western Isles,Scotland,1_off_target,0.015256588072122046,Western Isles
+W11000024,Powys Teaching Health Board,Wales,1_off_target,0.0007769999999999166,Powys Teaching 

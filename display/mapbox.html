@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+
+    <figure id='map' style='width: 400px; height: 300px;'>
+        </div>
+
+        <script>
+            function initializeMap() {
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZm0tZHMiLCJhIjoiY2xvbXIwb3piMm93aTJscndvYnFncjh4NSJ9.ZYcFieW_kfpK-uB6PhVkLA';
+
+                var map = new mapboxgl.Map({
+                    container: 'map', // container ID
+                    style: 'mapbox://styles/mapbox/light-v10', // Replace with your preferred style
+                    zoom: 3, // starting zoom
+                    center: [-3.435973, 55.378051]
+                });
+
+                return map;
+            }
+
+            function updateChoropleth(map, choroplethLayerId, data) {
+                // Check if the layer already exists
+                if (map.getLayer(choroplethLayerId)) {
+                    map.removeLayer(choroplethLayerId);
+                }
+
+                // Check if the source already exists
+                if (map.getSource(choroplethLayerId)) {
+                    map.removeSource(choroplethLayerId);
+                }
+
+                // Add the new source for the choropleth layer
+                map.addSource(choroplethLayerId, {
+                    'type': 'geojson',
+                    'data': data // GeoJSON data
+                });
+
+                // Find the first label layer to insert the choropleth layer below
+                var labelLayerId;
+                var layers = map.getStyle().layers;
+                for (var i = 0; i < layers.length; i++) {
+                    if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+                        labelLayerId = layers[i].id;
+                        break;
+                    }
+                }
+
+                // Add the choropleth layer below the label layer
+                map.addLayer({
+                    'id': choroplethLayerId,
+                    'type': 'fill',
+                    'source': choroplethLayerId,
+                    'layout': {},
+                    'paint': {
+                        'fill-color': "red",
+                        'fill-opacity': 0.8
+                    }
+                }, labelLayerId);
+            }
+
+            map = initializeMap();
+
+            map.on('load', function () {
+                d3.json('/data/geo/LAD.geojson').then(function (data) {
+                    console.log(data);
+                    updateChoropleth(map, 'choropleth', data);
+                });
+
+                // Call this with appropriate parameters to update the choropleth layer
+            });
+
+        </script>
+</body>
+
+</html>
