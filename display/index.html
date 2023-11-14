@@ -335,11 +335,28 @@
         #searchBlock a:hover {
             background-color: rgb(100, 100, 100);
         }
+
+        #reload {
+            position: fixed;
+            bottom: 30px;
+            left:30px;
+            background-color: rgb(49, 45, 55);
+            border: 0.5px solid rgba(255, 255, 255, 1);
+            border-radius: 5px;
+            font-family: 'Circular Std';
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+            z-index: 10000000000;
+        }
     </style>
 </head>
 
 <body>
 
+    <button id="reload" onclick="map.fitBounds([[-8.41, 49.57], [2.29, 59.52]])">
+        Reload Map
+</button>
     <svg id="overlaySvg"> <!-- Used just for drawing lines between the map and the rest  -->
         <g id="legend"></g>
     </svg>
@@ -374,6 +391,8 @@
         <iframe src="https://www.economicsobservatory.com/how-is-the-cost-of-living-crisis-affecting-public-health"
             frameborder="0"></iframe>
     </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

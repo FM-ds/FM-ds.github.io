@@ -240,11 +240,11 @@
 
         #articlesContainer {   
             position: fixed;
-            overflow: hidden;
+            overflow: hidden !important;
             top: 275px;
             left: 35px;
             height: 90vh;
-            width: 50vh;
+            width: 415px;
             overflow: scroll;
             display: flex;
             gap: 10px;
@@ -336,11 +336,28 @@
         #searchBlock a:hover {
             background-color: rgb(100, 100, 100);
         }
+
+        #reload {
+            position: fixed;
+            bottom: 30px;
+            left:30px;
+            background-color: rgb(49, 45, 55);
+            border: 0.5px solid rgba(255, 255, 255, 1);
+            border-radius: 5px;
+            font-family: 'Circular Std';
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+            z-index: 10000000000;
+        }
     </style>
 </head>
 
 <body>
 
+    <button id="reload" onclick="map.fitBounds([[-8.41, 49.57], [2.29, 59.52]])">
+        Reload Map
+</button>
     <svg id="overlaySvg"> <!-- Used just for drawing lines between the map and the rest  -->
         <g id="legend"></g>
     </svg>
@@ -1136,7 +1153,7 @@
 
                 xAxis = d3.axisBottom(xScale)
                     .tickSize(0)
-                    .tickValues([-7.5,-3, 0,3, 7.5])
+                    .tickValues([-7.5,-3,-1, 0,1,3, 7.5])
 
                 xAxis = plot
                     .append('g')
@@ -1222,9 +1239,9 @@
                     .enter()
                     .append('line')
                     .attr('class', 'median')
-                    .attr('x1', xScale(1))
+                    .attr('x1', xScale(0))
                     .attr('y1', d => yScale(d) + yScale.bandwidth() / 2 - 10)
-                    .attr('x2', xScale(1))
+                    .attr('x2', xScale(0))
                     .attr('y2', d => yScale(d) + yScale.bandwidth() / 2 + 30)
                     .attr('stroke', 'rgba(255,255,255,0.5)')
                     .attr('stroke-width', 1)
