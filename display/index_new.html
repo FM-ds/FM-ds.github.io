@@ -917,7 +917,6 @@
                 .append('option')
                 .attr('value', d => d.id)
                 .text(d => d.series)
-                .attr("onC")
 
             $('.selectpicker').selectpicker('refresh');
 
@@ -1011,12 +1010,12 @@
             //console.log(`currentSeries: ${currentSeries.seriesId}`)
             //console.log(`data: ${JSON.stringify(data)}`)
             //console.log(`geo: ${JSON.stringify(geo)}`)
-            geoFoo = geo
+            currentGeo = geo
             dataFoo = data
             updateChoropleth(map, 'choropleth', data, colorScale)
         }
 
-        geoFoo = null
+        currentGeo = null
         dataFoo = null
 
         callout = callouts[0]
@@ -1247,16 +1246,26 @@
                     .attr('stroke-width', 1)
 
 
+                uniqueSeries = []
+                seenSeries = []
+                for (let d of data) {
+                    if (!seenSeries.includes(d.Series)){
+                        uniqueSeries.push({ "Series": d.Series, "Theme": d.Theme})
+                        seenSeries.push(d.Series)
+                    }
+                }
+
                 // Add labels to the y-axis
                 plot.append('g')
                     .attr('class', 'y-axis')
                     .selectAll('.y-label')
-                    .data(data)
+                    .data(uniqueSeries)
                     .enter()
                     .append('foreignObject')
                     .attr('class', 'y-label')
                     .attr('x', -170)
                     .attr('y', function (d) {
+                        console.log(`d: ${d}`)
                         return yScale(d.Series) + 12;
                     })
                     .attr('width', 150)
@@ -1328,6 +1337,21 @@
         function calloutRegion(regionId, regionName = null, fromDropdown = false) {
             //console.log(`trying to callout ${regionId}`)
 
+            // get the region feature from the map
+            regionFeature = currentGeo.features.filter(d => d.properties[currentSeries.geoKey] === regionId)[0]
+            regionLat = regionFeature.properties.LAT
+            regionLng = regionFeature.properties.LONG
+
+            map.flyTo({
+                center: [regionLng, regionLat],
+                zoom: 7,
+                essential: true // this animation is considered essential with respect to prefers-reduced-motion
+            });
+
+            console.log(`regionFeature: ${JSON.stringify(regionFeature)}`)
+
+
+
             // update the regionSelect dropdown
             if (!fromDropdown) {
                 $('.selectpicker').selectpicker('val', regionId);
@@ -1366,7 +1390,7 @@
                 .attr('x', regionPoints.attr('cx') + 10)
                 .attr('y', d => {
                     //return yScale(regionPoint.datum.Series) + yScale.bandwidth() / 2;
-                    return 35 // fuck it
+                    return 35 // I give up
                 })
                 .text(regionPoints.datum()['Local Authority District'])
 
