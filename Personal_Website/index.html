@@ -25,23 +25,23 @@
             /* Neon blue */
 
             --link-visualisation-light: rgba(0, 128, 75, 1);
-  --link-engineering-light: rgba(128, 0, 112, 1);
-  --link-analytics-light: rgba(128, 128, 0, 1);
-  --link-research-light: rgba(0, 122, 128, 1);
+            --link-engineering-light: rgba(128, 0, 112, 1);
+            --link-analytics-light: rgba(128, 128, 0, 1);
+            --link-research-light: rgba(0, 122, 128, 1);
         }
 
         body.light-theme {
-  /* Light theme variables here */
-  --bg-color: rgba(0,0,0,0.05);
-  --text-near: rgba(0,0,0,0.8);
+            /* Light theme variables here */
+            --bg-color: rgba(0, 0, 0, 0.05);
+            --text-near: rgba(0, 0, 0, 0.8);
 
-  --link-visualisation: var(--link-visualisation-light);
-  --link-engineering: var(--link-engineering-light);
-  --link-analytics: var(--link-analytics-light);
-  --link-research: var(--link-research-light);
+            --link-visualisation: var(--link-visualisation-light);
+            --link-engineering: var(--link-engineering-light);
+            --link-analytics: var(--link-analytics-light);
+            --link-research: var(--link-research-light);
 
-  /* ... */
-}
+            /* ... */
+        }
 
 
         /* Global Styles */
@@ -75,26 +75,27 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        #intro h2{
+        #intro h2 {
             margin-top: -10px;
             padding-bottom: 10px;
             margin-bottom: 0px;
         }
 
-        #intro p > a{
+        #intro p>a {
             color: var(--text-near);
             font-weight: bold;
             text-decoration: none;
         }
 
-        #intro p > a:hover{
+        #intro p>a:hover {
             color: var(--text-near);
             text-decoration: underline;
         }
 
         /* Links */
         .links {
-            font-weight: bold; !important
+            font-weight: bold;
+            !important
         }
 
         .links a {
@@ -103,24 +104,24 @@
         }
 
         .link-visualisation {
-    color: var(--link-visualisation);
-    font-weight: bold;
-}
+            color: var(--link-visualisation);
+            font-weight: bold;
+        }
 
-.link-engineering {
-    color: var(--link-engineering);
-    font-weight: bold;
-}
+        .link-engineering {
+            color: var(--link-engineering);
+            font-weight: bold;
+        }
 
-.link-analytics {
-    color: var(--link-analytics);
-    font-weight: bold;
-}
+        .link-analytics {
+            color: var(--link-analytics);
+            font-weight: bold;
+        }
 
-.link-research {
-    color: var(--link-research);
-    font-weight: bold;
-}
+        .link-research {
+            color: var(--link-research);
+            font-weight: bold;
+        }
 
 
         /* Content Divs */
@@ -215,12 +216,13 @@
         .theme-toggle {
             margin-left: 30px;
             font-size: 144px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-  z-index: 1000; /* Ensure it's above other elements */
-}
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            z-index: 1000;
+            /* Ensure it's above other elements */
+        }
     </style>
 </head>
 
@@ -232,7 +234,7 @@
             <h1 class="title">FINN M<span class="floating-c">c</span>EVOY</h1>
 
             <h2>
-            Full<i>ish</i>-Stack Social Data    
+                Full<i>ish</i>-Stack Social Data
             </h2>
 
             <div class="links">
@@ -242,7 +244,11 @@
             </div>
 
             <p id="about_me">
-                I do stuff with data, mostly at the <a href="https://www.economicsobservatory.com">Economics Observatory</a>, where I'm a Research Fellow. My work and research spans the data science stack from data collection and cleaning, to visualisation and analysis, to writing and communicating. Right now, I'm involved with lots of complicated scraping (reverse engineering APIs, using selenium, distributing across cloud instances) for prices research, and data vis with d3 and Vega(-lite). 
+                I do stuff with data, mostly at the <a href="https://www.economicsobservatory.com">Economics
+                    Observatory</a>, where I'm a Research Fellow. My work and research spans the data science stack from
+                data collection and cleaning, to visualisation and analysis, to writing and communicating. Right now,
+                I'm involved with lots of complicated scraping (reverse engineering APIs, using selenium, distributing
+                across cloud instances) for prices research, and data vis with d3 and Vega(-lite).
             </p>
 
             <div class="three-columns">
@@ -330,11 +336,11 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-  const themeToggle = document.getElementById('theme-toggle');
-  themeToggle.addEventListener('click', function () {
-    document.body.classList.toggle('light-theme');
-  });
-});
+            const themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('click', function () {
+                document.body.classList.toggle('light-theme');
+            });
+        });
     </script>
 </body>
 
