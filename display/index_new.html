@@ -350,6 +350,19 @@
             padding: 10px;
             z-index: 10000000000;
         }
+
+        #attribution {
+            position: fixed;
+            bottom: 35px;
+            right: 225px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: lighter;
+            font-size: 16px;
+            color: whitesmoke;
+            text-align: right;
+            opacity: 0.7;
+
+        }
     </style>
 </head>
 
@@ -366,10 +379,9 @@
         <div id="mainTitle">
             <h1>Around the UK<span style="color: #66c2a5;">.</span></h1>
             <h2>Interactive Data Story</h2>
-            <h3> Denes Csala, Josh Hellings, Charlie Meyrick, Finn McEvoy</h3>
             <p>
-                Inspired by the ONS Subnational indicators explorer. <br>
-                Data: ONS, NHS, Open Street Map, MapBox
+                <span style="font-weight: normal">The map is interactive. </span>
+                Click, drag and scroll to explore the data. Select variables on the right and find articles on the left.
             </p>
         </div>
     </div>
@@ -393,6 +405,11 @@
             frameborder="0"></iframe>
     </div>
 
+    <div id="attribution">
+         Data: ONS, NHS, MapBox, OpenStreetMap </br>
+         Created by: Denes Csala, Josh Hellings, Charlie Meyrick, Finn McEvoy
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -413,6 +430,7 @@
     <script type="text/javascript" src="nogap.js"></script>
     <script src="BoundaryCanvas.js"></script>
     <script>
+
 
         pallete = ["#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3", "#a6d854", "#ffd92f", "#e5c494", "#b3b3b3"]
         accent = "rgb(85, 178, 178)"
@@ -451,7 +469,7 @@
             style: 'mapbox://styles/fm-ds/clomumkxq00be01pmfce62xuf', // Replace with your preferred style
             zoomDelta: 0.1,
             zoomSnap: 0.1,
-            attributionControl: false,
+            //attributionControl: false,
             //center: [-3.435973, 55.378051],
         }).fitBounds([
             [-8.41, 49.57], // Southwest coordinates
@@ -471,7 +489,7 @@
         backgroundUrl = 'https://api.mapbox.com/styles/v1/fm-ds/closvgvuq00r301pmbbui8d6v/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZm0tZHMiLCJhIjoiY2xvbXIwb3piMm93aTJscndvYnFncjh4NSJ9.ZYcFieW_kfpK-uB6PhVkLA'
         labelsUrl = "https://api.mapbox.com/styles/v1/fm-ds/closqa87l00sg01pbfnxk9wl9/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZm0tZHMiLCJhIjoiY2xvbXIwb3piMm93aTJscndvYnFncjh4NSJ9.ZYcFieW_kfpK-uB6PhVkLA"
         //tilesUrl = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png'
-        osmAttribution = ''
+        //osmAttribution = ''
 
         /*         L.tileLayer(backgroundUrl).addTo(map).setZIndex(0);
                 L.tileLayer(labelsUrl, {
@@ -954,8 +972,7 @@
                 return d
             })
 
-            function updateTooltip(e) {
-
+            function updateTooltip(e, feature=None) {
 
                 console.log(`e: ${JSON.stringify(e.features[0])}`)
                 // focus the right panel on the selected region
@@ -1217,6 +1234,7 @@
                     .enter()
                     .append('circle')
                     .attr('class', 'strip')
+                    .style('pointer-events', 'none')
                     .attr("area_code", d => d["Area Code"])
                     .attr('cx', function (d) {
                         return xScale(d.norm_value);
@@ -1233,7 +1251,9 @@
                 // add median markers at xScale(1)
                 plot.append('g')
                     .attr('id', 'medians')
+                    .style('pointer-events', 'none')
                     .selectAll('.median')
+                    .style('pointer-events', 'none')
                     .data(new Set(data.map(d => d.Series)))     // filter out duplicates
                     .enter()
                     .append('line')
@@ -1258,6 +1278,7 @@
                 // Add labels to the y-axis
                 plot.append('g')
                     .attr('class', 'y-axis')
+                    .style('pointer-events', 'none')
                     .selectAll('.y-label')
                     .data(uniqueSeries)
                     .enter()
