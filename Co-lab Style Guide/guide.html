@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Guidelines - UK Growth Diagnostics</title>
+    <style>
+        @font-face {
+            font-family: 'Circular Std';
+            src: url('CircularStd-Book.woff2') format('woff2');
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            max-width: 1000px;
+            font-weight: 300;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+            text-align: left;
+        }
+
+        .above-title {
+            font-family: 'Circular Std', sans-serif;
+            font-weight: 300;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 0px;
+        }
+
+        h1 {
+            font-family: 'Circular Std', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-family: 'Circular Std', sans-serif;
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px 20px;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .color-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .country-name {
+            font-family: 'Circular Std', sans-serif;
+            font-weight: 300;
+            font-size: 1.1em;
+            color: #333;
+            margin-right: 10px;
+            flex: 1;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Circular Std', sans-serif;
+            font-size: 0.9em;
+            color: #fff;
+            background-color: #333;
+            flex: 0 0 100px;
+            margin: 0;
+        }
+
+        .info-box {
+            background-color: #f0f8ff;
+            /* Pale color background */
+            padding: 10px;
+            border-left: 5px solid #b0c4de;
+            /* Slightly darker border on the left */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .code-block {
+            background-color: #f5f5f5;
+            padding: 5px;
+            padding-left: 10px !important;
+            border-radius: 5px;
+            margin-top: 5px;
+            font-family: 'Circular Std', sans-serif;
+            font-size: 0.95em;
+            line-height: 1.4;
+            overflow-x: auto;
+        }
+
+        .chart-container {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border-top: 3px solid #000000;
+            max-width: 600px;
+            padding-top: 5px;
+            padding-left: 0px;
+        }
+
+        .chart-container h3 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            font-size: 1.5em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .chart-container h4 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+            font-size: 1em;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        .chart-container p.vis_notes {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+
+</head>
+
+<body>
+    <div class="above-title">UK Growth Diagnostics</div>
+    <h1>Graphics Guidelines</h1>
+    <p>This document outlines rules and best practices for charts, maps, and diagrams made for the UK Growth Diagnostics
+        report.</p>
+    <p>Accompanying <a href="https://raw.githubusercontent.com/FM-ds/GrowthDiagnostics/main/report_figures/report_config.json">Vega-lite</a> and <a href="https://raw.githubusercontent.com/FM-ds/GrowthDiagnostics/main/report_figures/Sectoral_Investment/eco_style.py">Altair</a> themes are provided.</p>
+
+    <h2 class="section-title">Colours</h2>
+    <p>The following colours should be used for the countries:</p>
+
+    <div class="color-grid">
+        <div class="color-item">
+            <div class="country-name">United Kingdom:</div>
+            <div class="color-box" style="background-color: #001f3f;">#001f3f</div>
+        </div>
+        <div class="color-item">
+            <div class="country-name">France:</div>
+            <div class="color-box" style="background-color: #4269d0;">#4269d0</div>
+        </div>
+        <div class="color-item">
+            <div class="country-name">Italy:</div>
+            <div class="color-box" style="background-color: #efb118;">#efb118</div>
+        </div>
+        <div class="color-item">
+            <div class="country-name">Spain:</div>
+            <div class="color-box" style="background-color: #ff725c;">#ff725c</div>
+        </div>
+        <div class="color-item">
+            <div class="country-name">Germany:</div>
+            <div class="color-box" style="background-color: #6cc5b0;">#6cc5b0</div>
+        </div>
+        <div class="color-item">
+            <div class="country-name">Japan:</div>
+            <div class="color-box" style="background-color: #3ca951;">#3ca951</div>
+        </div>
+        <div class="color-item">
+            <div class="country-name">Canada:</div>
+            <div class="color-box" style="background-color: #ff8ab7;">#ff8ab7</div>
+        </div>
+        <div class="color-item">
+            <div class="country-name">United States:</div>
+            <div class="color-box" style="background-color: #a463f2;">#a463f2</div>
+        </div>
+        <div class="color-item">
+            <div class="country-name">Australia:</div>
+            <div class="color-box" style="background-color: #97bbf5;">#97bbf5</div>
+        </div>
+        <div class="color-item">
+            <div class="country-name">South Korea:</div>
+            <div class="color-box" style="background-color: #9c6b4e;">#9c6b4e</div>
+        </div>
+    </div>
+
+    <p>This can be achieved with a Vega-Lite/Altair scale definition:</p>
+
+    <div class="code-block">
+        <pre><code>{
+    "domain": ["United Kingdom", "France", "Italy", "Spain", "Germany", "Japan", "Canada", "United States", "Australia", "South Korea"],
+    "range": ["#001f3f", "#4269d0", "#efb118", "#ff725c", "#6cc5b0", "#3ca951", "#ff8ab7", "#a463f2", "#97bbf5", "#9c6b4e"]
+}
+        </code></pre>
+    </div>
+
+    <h2 class="section-title">Axes</h2>
+    <ol>
+        <li><b>Axis titles.</b>
+            In most cases, axis titles can be avoided. For example, a chart of investment by UK region over time would
+            not need a y-axis title. Instead, the topic and measure should be defined in the chart title and subtitle,
+            and axis labels should be appropriately set.
+            Date and time axes should never need a title. In some cases (e.g. scatter plots), it may be necessary to add
+            titles.
+        </li>
+        <li> <b>Labels</b>
+            Axis lables should include units where appropriate. Time axes should only include required detail - a chart
+            spanning a decade does not need month labels.
+            <div class="info-box">
+                <b>How to Achieve:</b>
+                <p> Make sure labels are defined descriptively. You can use label expressions to set custom label
+                    formatting:</p>
+                <div class="code-block">
+                    <pre><code>
+"axis": {"labelExpr": "'£'+datum.value + 'B'"}
+                    </code></pre>
+                </div>
+            </div>
+        </li>
+    </ol>
+
+    <h2 class="section-title">Panel charts</h2>
+
+    <div class="chart-container">
+        <h3> Figure 1: Investment </h3>
+        <h4> Gross fixed capital formation as a percentage of GDP, 1990-2022. </h4>
+        <div id="chart1"></div>
+        <p class="vis_notes">Source: OECD</p>
+    </div>
+
+
+    <p>Panel charts are useful for comparing a single indicator across multiple countries. Care should be taken over the number of series represented. For example a gender breakdown for 8 countries would mean 16 series, which is likely too many to be useful. In this case, consider a crossectional bar chart or a small multiples chart.</p>
+
+    <ol>
+        <li><b>Countries.</b>
+            When making international comparisons, use the consistent set of peer countries: United Kingdom, France,
+            Italy, Spain, Germany, Japan, Canada, and the United States.
+        </li>
+        <li>
+            <b>Labels.</b>
+            Prefer end labels over legends.
+            <div class="info-box">
+                <b>How to Achieve:</b>
+                <p> End labels can be implemented by adding a text-layer filtered to the final year of data for each country.</p>
+                </p>
+                <div class="code-block">
+                    <pre><code>
+"layer" : [
+...
+{
+    "transform": [
+        {"filter": {"field": "year", "equal": 2022}} // filter to the a single year of data
+    ]
+    "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3},
+    "encoding": {
+        "text": {"field": "value", "type": "quantitative"},
+        "x": {"value": 450}, // Setting a fixed x position means that the labels will be aligned, even if the series end at different points
+        "y": {"field": "value", "type": "quantitative"},
+        "color": {"field": "country", "type": "nominal"}
+    },
+}
+]
+                    </code></pre>
+                </div>
+            </div>
+
+        </li>
+        <li> <b>Highlighting the UK.</b>
+            The UK is the primary focus of the report, and should be highlighted in all charts. It lines should be thicker, not dashed, and appear above other lines.
+            <div class="info-box">
+                <b>How to Achieve:</b>
+                <p> Use conditions for the stroke-dash, and size. Sort the UK last in the underlying data to make its lines appear on top. </p>
+                </p>
+                <div class="code-block">
+                    <pre><code>
+"layer" : [
+{
+...
+"encoding" : {
+    "size": {"condition": {"test": "datum.country == 'United Kingdom'", "value": 2}, "value": 1.5},
+    "strokeDash": {"condition": {"test": "datum.country == 'United Kingdom'", "value": [0, 0]}, "value": [5, 2]},
+}
+...
+}
+]
+                    </code></pre>
+                </div>
+            </div>
+        </li>
+    </ol>
+
+
+    <script>
+        vegaEmbed('#chart1', 'https://raw.githubusercontent.com/FM-ds/GrowthDiagnostics/main/report_figures/charts/gfcf_household.json')
+
+    </script>
+
+
+</body>
+
+</html>
