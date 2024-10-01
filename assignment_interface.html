@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Projects</title>
+    <style>
+        * {
+            font-family: 'Helvetica-Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        #sidebar-left,
+        #sidebar-right {
+            width: 300px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        #sidebar-left {
+            left: 0;
+        }
+
+        #sidebar-right {
+            right: 0;
+        }
+
+        #container-wrapper {
+            flex: 1;
+            margin-left: 300px;
+            margin-right: 300px;
+            overflow: auto;
+        }
+
+        #container {
+            padding: 20px;
+        }
+
+        /* Styling for the rows */
+        .row {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            min-height: 100px;
+            justify-content: flex-start;
+            /* Left align the contents */
+            cursor: pointer;
+        }
+
+        .row-highlighted {
+            background-color: #e0f7fa;
+        }
+
+        /* Styling for the squares (students) */
+        .square {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            cursor: grab;
+        }
+
+        .highlighted {
+            border: 3px solid #000;
+        }
+
+        /* Colors for gender borders */
+        .male-border {
+            border: 3px solid gold;
+        }
+
+        .female-border {
+            border: 3px solid purple;
+        }
+
+        .dragging {
+            opacity: 0.5;
+        }
+
+        .row.dropzone {
+            background-color: #f0f0f0;
+            border: 2px dashed #007BFF;
+        }
+
+        .row.dropzone.dragging-over {
+            background-color: #e0e0ff;
+        }
+
+        .download-button {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-left">
+        <h2>Student Info</h2>
+        <p>Select a student to see their details.</p>
+    </div>
+    <div id="container-wrapper">
+        <div id="container">
+            <div id="drop-zone" style="border: 2px dashed #007BFF; padding: 20px; text-align: center;">
+                <p>Drag and drop a JSON file here to load student and project data</p>
+            </div>
+
+        </div>
+        <button class="download-button" onclick="downloadJSON()">Download JSON</button>
+        <!-- <button class="download-button" onclick="downloadCSV()">Download CSV</button> -->
+    </div>
+    <div id="sidebar-right">
+        <h2>Project Info</h2>
+        <p>Select a project to see its details.</p>
+    </div>
+
+    <script>
+        // Color palette for rankings (reversed)
+        const colorPalette = ["#3288bd", "#66c2a5", "#abdda4", "#e6f598", "#ffffbf", "#fee08b", "#fdae61", "#f46d43", "#d53e4f"];
+
+        // Load JSON data from the file
+        const dropZone = document.getElementById('drop-zone');
+
+        dropZone.addEventListener('dragover', (event) => {
+            event.preventDefault();
+            dropZone.style.backgroundColor = '#e0f7fa'; // Change background when hovering
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.style.backgroundColor = ''; // Revert background when leaving
+        });
+
+        dropZone.addEventListener('drop', (event) => {
+            event.preventDefault();
+            dropZone.style.backgroundColor = ''; // Revert background when dropped
+            const file = event.dataTransfer.files[0];
+
+            if (file && file.type === 'application/json') {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const jsonData = JSON.parse(e.target.result);
+                    window.jsonData = jsonData; // Store JSON data globally
+                    initializePage(jsonData); // Initialize the page with the loaded JSON
+                };
+                reader.readAsText(file);
+            } else {
+                alert('Please drop a valid JSON file.');
+            }
+        });
+
+        // Helper function to create student squares
+        function createStudentDiv(student, projectIndex) {
+            const div = document.createElement('div');
+            div.classList.add('square');
+            div.classList.add(student.gender === 'F' ? 'female-border' : 'male-border');
+            div.setAttribute('draggable', 'true');
+            div.dataset.student = JSON.stringify(student); // Store student data in the div
+
+            // Set initial state
+            div.addEventListener('click', () => showStudentInfo(student, div));
+
+            updateStudentDiv(div, projectIndex);
+            return div;
+        }
+
+        // Function to update student div based on project ranking
+        function updateStudentDiv(div, projectIndex) {
+            const student = JSON.parse(div.dataset.student);
+            if (Array.isArray(student.rankings) && student.rankings.length > projectIndex) {
+                const ranking = student.rankings[projectIndex];
+                const colorIndex = ranking <= 8 ? ranking - 1 : 8;
+                div.style.backgroundColor = colorPalette[colorIndex];
+                div.innerHTML = `${student.name}<br>(Rank: ${ranking})`;
+            } else {
+                div.innerHTML = `${student.name}`;
+            }
+        }
+
+        // Helper function to create rows for projects
+        function createProjectRow(project) {
+            const container = document.createElement('div');
+
+            const title = document.createElement('div');
+            title.innerHTML = `<strong>${project.name}</strong>`;
+            container.appendChild(title);
+
+            const row = document.createElement('div');
+            row.classList.add('row', 'dropzone');
+            row.dataset.project = JSON.stringify(project); // Store project data in the row
+            row.addEventListener('click', () => showProjectInfo(project, row));
+            container.appendChild(row);
+
+            return container;
+        }
+
+        // Initialize the page with data from JSON
+        function initializePage(jsonData) {
+            const container = document.getElementById('container');
+            container.dataset.students = JSON.stringify(jsonData.students); // Store students data for download
+            // Create project rows
+            jsonData.projects.forEach(project => {
+                // if (project.running) {
+                const projectContainer = createProjectRow(project);
+                const row = projectContainer.querySelector('.row');
+
+                // Add students to the project row
+                project.students_assigned.forEach(studentId => {
+                    const student = jsonData.students.find(student => student.id === studentId);
+                    if (student) {
+                        const projectIndex = jsonData.projects.indexOf(project); // Get the index of the project
+                        row.appendChild(createStudentDiv(student, projectIndex));
+                    }
+                });
+
+                container.appendChild(projectContainer);
+                // }
+            });
+
+            // Initialize drag and drop
+            initializeDragAndDrop();
+        }
+
+        // Function to display student info in the sidebar
+        function showStudentInfo(student, studentDiv) {
+            document.querySelectorAll('.square').forEach(div => div.classList.remove('highlighted'));
+            document.querySelectorAll('.row').forEach(row => row.classList.remove('row-highlighted'));
+            studentDiv.classList.add('highlighted');
+
+            const sidebarLeft = document.getElementById('sidebar-left');
+            const projectNames = window.jsonData.projects.map(project => project.name);
+            sidebarLeft.innerHTML = `
+    <h2>Student Info</h2>
+    <p><strong>Name:</strong> ${student.name}</p>
+    <p><strong>Gender:</strong> ${student.gender}</p>
+    <p><strong>Rankings:</strong></p>
+    <ul>
+      ${student.rankings.map((rank, index) => `<li>${projectNames[index]}: ${rank}</li>`).join('')}
+    </ul>
+  `;
+        }
+
+        // Function to display project info in the right sidebar
+        function showProjectInfo(project, projectRow) {
+            document.querySelectorAll('.row').forEach(row => row.classList.remove('row-highlighted'));
+            document.querySelectorAll('.square').forEach(div => div.classList.remove('highlighted'));
+            projectRow.classList.add('row-highlighted');
+
+            const sidebarRight = document.getElementById('sidebar-right');
+            const students = project.students_assigned.map(studentId => {
+                return window.jsonData.students.find(student => student.id === studentId);
+            });
+            sidebarRight.innerHTML = `
+    <h2>Project Info</h2>
+    <p><strong>Name:</strong> ${project.name}</p>
+    <p><strong>Assigned Students:</strong></p>
+    <ul>
+      ${students.map(student => `<li>${student.name} (Gender: ${student.gender})</li>`).join('')}
+    </ul>
+  `;
+        }
+
+        // Drag and Drop functionality
+        function initializeDragAndDrop() {
+            let draggedElement = null;
+            document.addEventListener('dragstart', function (event) {
+                if (event.target.classList.contains('square')) {
+                    draggedElement = event.target;
+                    event.target.classList.add('dragging');
+                }
+            });
+
+            document.addEventListener('dragend', function (event) {
+                if (event.target.classList.contains('square')) {
+                    event.target.classList.remove('dragging');
+                    draggedElement = null;
+                }
+            });
+
+            document.querySelectorAll('.dropzone').forEach(zone => {
+                zone.addEventListener('dragover', function (event) {
+                    event.preventDefault();
+                    zone.classList.add('dragging-over');
+                });
+
+                zone.addEventListener('dragleave', function (event) {
+                    zone.classList.remove('dragging-over');
+                });
+
+                zone.addEventListener('drop', function (event) {
+                    event.preventDefault();
+                    zone.classList.remove('dragging-over');
+
+                    if (draggedElement && draggedElement.classList.contains('square')) {
+                        zone.appendChild(draggedElement);
+
+                        // Update the student div according to the new project
+                        const project = JSON.parse(zone.dataset.project);
+                        const projectIndex = window.jsonData.projects.findIndex(p => p.name === project.name);
+                        updateStudentDiv(draggedElement, projectIndex);
+
+                        // Update sidebar if the dragged student is the selected one
+                        if (draggedElement.classList.contains('highlighted')) {
+                            showStudentInfo(JSON.parse(draggedElement.dataset.student), draggedElement);
+                        }
+
+                        // Update project info if the project is the selected one
+                        if (zone.parentElement.classList.contains('row-highlighted')) {
+                            showProjectInfo(project, zone.parentElement);
+                        }
+                    }
+                });
+            });
+        }
+
+        // Function to download the updated JSON
+        function downloadJSON() {
+            const updatedProjects = [];
+
+            document.querySelectorAll('.dropzone').forEach(zone => {
+                const project = JSON.parse(zone.dataset.project);
+                const studentsAssigned = [];
+
+                zone.querySelectorAll('.square').forEach(square => {
+                    const student = JSON.parse(square.dataset.student);
+                    studentsAssigned.push(student.id);
+                });
+
+                updatedProjects.push({
+                    name: project.name,
+                    running: project.running,
+                    students_assigned: studentsAssigned
+                });
+            });
+
+            const updatedData = {
+                projects: updatedProjects,
+                students: JSON.parse(document.getElementById('container').dataset.students)
+            };
+
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(updatedData, null, 2));
+            const downloadAnchorNode = document.createElement('a');
+            downloadAnchorNode.setAttribute("href", dataStr);
+            downloadAnchorNode.setAttribute("download", "updated_data.json");
+            document.body.appendChild(downloadAnchorNode); // required for firefox
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+        }
+
+        function downloadCSV() {
+            const jsonData = window.jsonData;
+            if (!jsonData || !jsonData.students || !jsonData.projects) {
+                alert("No data available for CSV download.");
+                return;
+            }
+
+            // Prepare CSV data
+            let csvContent = "data:text/csv;charset=utf-8,";
+            csvContent += "Student,Project,Rank\n"; // CSV Header
+
+            // Loop through each student and their rankings
+            jsonData.students.forEach(student => {
+                student.rankings.forEach((rank, projectIndex) => {
+                    const projectName = jsonData.projects[projectIndex].name;
+                    csvContent += `${student.name},${projectName},${rank}\n`;
+                });
+            });
+
+            // Encode and trigger CSV download
+            const encodedUri = encodeURI(csvContent);
+            const downloadLink = document.createElement("a");
+            downloadLink.setAttribute("href", encodedUri);
+            downloadLink.setAttribute("download", "students_projects_ranks.csv");
+            document.body.appendChild(downloadLink); // Required for Firefox
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        }
+
+    </script>
+</body>
+
+</html>
