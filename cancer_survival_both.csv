@@ -1,0 +1,592 @@
+Geography Type,Geography Code,Geography Name,Cancer Site,Gender,Age At Diagnosis,Standardisation Type,Years Since Diagnosis,Survival (%)
+Cancer Alliance,E56000005,Cheshire and Merseyside,Anus,Persons,All ages,Non-standardised,5,60.1
+Cancer Alliance,E56000005,Cheshire and Merseyside,Bladder,Persons,All ages,Non-standardised,5,46.6
+Cancer Alliance,E56000005,Cheshire and Merseyside,Brain,Persons,All ages,Non-standardised,5,14.3
+Cancer Alliance,E56000005,Cheshire and Merseyside,Colon,Persons,All ages,Non-standardised,5,55.2
+Cancer Alliance,E56000005,Cheshire and Merseyside,Colon,Persons,All ages,Age-standardised (4 gps),5,57.6
+Cancer Alliance,E56000005,Cheshire and Merseyside,Colorectal,Persons,All ages,Non-standardised,5,56.4
+Cancer Alliance,E56000005,Cheshire and Merseyside,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,82.7
+Cancer Alliance,E56000005,Cheshire and Merseyside,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,87.4
+Cancer Alliance,E56000005,Cheshire and Merseyside,Kidney,Persons,All ages,Non-standardised,5,65.6
+Cancer Alliance,E56000005,Cheshire and Merseyside,Kidney,Persons,All ages,Age-standardised (4 gps),5,65.6
+Cancer Alliance,E56000005,Cheshire and Merseyside,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,59.1
+Cancer Alliance,E56000005,Cheshire and Merseyside,Leukaemia,Persons,All ages,Non-standardised,5,52.5
+Cancer Alliance,E56000005,Cheshire and Merseyside,Liver,Persons,All ages,Non-standardised,5,15.2
+Cancer Alliance,E56000005,Cheshire and Merseyside,Lung,Persons,All ages,Age-standardised (4 gps),5,19.1
+Cancer Alliance,E56000005,Cheshire and Merseyside,Lung,Persons,All ages,Non-standardised,5,17.5
+Cancer Alliance,E56000005,Cheshire and Merseyside,Melanoma,Persons,All ages,Non-standardised,5,93.9
+Cancer Alliance,E56000005,Cheshire and Merseyside,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000005,Cheshire and Merseyside,Myeloid leukaemia,Persons,All ages,Non-standardised,5,33.2
+Cancer Alliance,E56000005,Cheshire and Merseyside,Myeloma,Persons,All ages,Non-standardised,5,49.6
+Cancer Alliance,E56000005,Cheshire and Merseyside,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,67
+Cancer Alliance,E56000005,Cheshire and Merseyside,Oesophagus,Persons,All ages,Non-standardised,5,16.8
+Cancer Alliance,E56000005,Cheshire and Merseyside,Oesophagus,Persons,All ages,Age-standardised (4 gps),5,17.3
+Cancer Alliance,E56000005,Cheshire and Merseyside,Pancreas,Persons,All ages,Non-standardised,5,9.2
+Cancer Alliance,E56000005,Cheshire and Merseyside,Rectal,Persons,All ages,Non-standardised,5,58.6
+Cancer Alliance,E56000005,Cheshire and Merseyside,Rectal,Persons,All ages,Age-standardised (4 gps),5,59.3
+Cancer Alliance,E56000005,Cheshire and Merseyside,Small intestine,Persons,All ages,Non-standardised,5,56.9
+Cancer Alliance,E56000005,Cheshire and Merseyside,Stomach,Persons,All ages,Non-standardised,5,20.7
+Cancer Alliance,E56000005,Cheshire and Merseyside,Thyroid,Persons,All ages,Non-standardised,5,84.8
+Cancer Alliance,E56000007,West Midlands,Anus,Persons,All ages,Non-standardised,5,65.1
+Cancer Alliance,E56000007,West Midlands,Bladder,Persons,All ages,Age-standardised (4 gps),5,51.4
+Cancer Alliance,E56000007,West Midlands,Bladder,Persons,All ages,Non-standardised,5,46.5
+Cancer Alliance,E56000007,West Midlands,Brain,Persons,All ages,Non-standardised,5,17
+Cancer Alliance,E56000007,West Midlands,Colon,Persons,All ages,Non-standardised,5,54.4
+Cancer Alliance,E56000007,West Midlands,Colorectal,Persons,All ages,Non-standardised,5,56.1
+Cancer Alliance,E56000007,West Midlands,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,79.5
+Cancer Alliance,E56000007,West Midlands,Follicular (nodular) NHL,Persons,All ages,Age-standardised (4 gps),5,77.8
+Cancer Alliance,E56000007,West Midlands,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,79.1
+Cancer Alliance,E56000007,West Midlands,Kidney,Persons,All ages,Non-standardised,5,63.8
+Cancer Alliance,E56000007,West Midlands,Kidney,Persons,All ages,Age-standardised (4 gps),5,63.8
+Cancer Alliance,E56000007,West Midlands,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,59.7
+Cancer Alliance,E56000007,West Midlands,Leukaemia,Persons,All ages,Non-standardised,5,55.8
+Cancer Alliance,E56000007,West Midlands,Liver,Persons,All ages,Non-standardised,5,9.4
+Cancer Alliance,E56000007,West Midlands,Lung,Persons,All ages,Age-standardised (4 gps),5,16.7
+Cancer Alliance,E56000007,West Midlands,Lung,Persons,All ages,Non-standardised,5,15.3
+Cancer Alliance,E56000007,West Midlands,Melanoma,Persons,All ages,Age-standardised (4 gps),5,91.7
+Cancer Alliance,E56000007,West Midlands,Melanoma,Persons,All ages,Non-standardised,5,90.1
+Cancer Alliance,E56000007,West Midlands,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000007,West Midlands,Myeloid leukaemia,Persons,All ages,Non-standardised,5,32.1
+Cancer Alliance,E56000007,West Midlands,Myeloma,Persons,All ages,Non-standardised,5,49
+Cancer Alliance,E56000007,West Midlands,Myeloma,Persons,All ages,Age-standardised (4 gps),5,52.4
+Cancer Alliance,E56000007,West Midlands,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,63.1
+Cancer Alliance,E56000007,West Midlands,Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,63.7
+Cancer Alliance,E56000007,West Midlands,Oesophagus,Persons,All ages,Non-standardised,5,14.4
+Cancer Alliance,E56000007,West Midlands,Pancreas,Persons,All ages,Non-standardised,5,6
+Cancer Alliance,E56000007,West Midlands,Pancreas,Persons,All ages,Age-standardised (4 gps),5,6.7
+Cancer Alliance,E56000007,West Midlands,Rectal,Persons,All ages,Age-standardised (4 gps),5,60.1
+Cancer Alliance,E56000007,West Midlands,Rectal,Persons,All ages,Non-standardised,5,59.5
+Cancer Alliance,E56000007,West Midlands,Small intestine,Persons,All ages,Non-standardised,5,47.2
+Cancer Alliance,E56000007,West Midlands,Stomach,Persons,All ages,Non-standardised,5,18.1
+Cancer Alliance,E56000007,West Midlands,Thyroid,Persons,All ages,Non-standardised,5,89.4
+Cancer Alliance,E56000010,South East London,Anus,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000010,South East London,Bladder,Persons,All ages,Non-standardised,5,48.3
+Cancer Alliance,E56000010,South East London,Brain,Persons,All ages,Non-standardised,5,19.5
+Cancer Alliance,E56000010,South East London,Colon,Persons,All ages,Non-standardised,5,56.5
+Cancer Alliance,E56000010,South East London,Colon,Persons,All ages,Age-standardised (4 gps),5,58.2
+Cancer Alliance,E56000010,South East London,Colorectal,Persons,All ages,Non-standardised,5,56.2
+Cancer Alliance,E56000010,South East London,Colorectal,Persons,All ages,Age-standardised (4 gps),5,57.6
+Cancer Alliance,E56000010,South East London,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000010,South East London,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000010,South East London,Kidney,Persons,All ages,Non-standardised,5,70.6
+Cancer Alliance,E56000010,South East London,Kidney,Persons,All ages,Age-standardised (4 gps),5,69
+Cancer Alliance,E56000010,South East London,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,56.7
+Cancer Alliance,E56000010,South East London,Leukaemia,Persons,All ages,Non-standardised,5,51.4
+Cancer Alliance,E56000010,South East London,Leukaemia,Persons,All ages,Age-standardised (4 gps),5,50.5
+Cancer Alliance,E56000010,South East London,Liver,Persons,All ages,Non-standardised,5,21.4
+Cancer Alliance,E56000010,South East London,Lung,Persons,All ages,Age-standardised (4 gps),5,18.9
+Cancer Alliance,E56000010,South East London,Lung,Persons,All ages,Non-standardised,5,17.9
+Cancer Alliance,E56000010,South East London,Melanoma,Persons,All ages,Non-standardised,5,88.2
+Cancer Alliance,E56000010,South East London,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000010,South East London,Myeloid leukaemia,Persons,All ages,Non-standardised,5,30.3
+Cancer Alliance,E56000010,South East London,Myeloma,Persons,All ages,Non-standardised,5,59
+Cancer Alliance,E56000010,South East London,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,63.9
+Cancer Alliance,E56000010,South East London,Oesophagus,Persons,All ages,Non-standardised,5,20.1
+Cancer Alliance,E56000010,South East London,Pancreas,Persons,All ages,Non-standardised,5,10.4
+Cancer Alliance,E56000010,South East London,Rectal,Persons,All ages,Non-standardised,5,56.6
+Cancer Alliance,E56000010,South East London,Rectal,Persons,All ages,Age-standardised (4 gps),5,56.8
+Cancer Alliance,E56000010,South East London,Small intestine,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000010,South East London,Stomach,Persons,All ages,Non-standardised,5,21.3
+Cancer Alliance,E56000010,South East London,Thyroid,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000011,Kent and Medway,Anus,Persons,All ages,Non-standardised,5,65.9
+Cancer Alliance,E56000011,Kent and Medway,Bladder,Persons,All ages,Non-standardised,5,55.3
+Cancer Alliance,E56000011,Kent and Medway,Brain,Persons,All ages,Non-standardised,5,16.5
+Cancer Alliance,E56000011,Kent and Medway,Colon,Persons,All ages,Age-standardised (4 gps),5,56.8
+Cancer Alliance,E56000011,Kent and Medway,Colon,Persons,All ages,Non-standardised,5,54.2
+Cancer Alliance,E56000011,Kent and Medway,Colorectal,Persons,All ages,Age-standardised (4 gps),5,57.9
+Cancer Alliance,E56000011,Kent and Medway,Colorectal,Persons,All ages,Non-standardised,5,55.5
+Cancer Alliance,E56000011,Kent and Medway,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,82.2
+Cancer Alliance,E56000011,Kent and Medway,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000011,Kent and Medway,Kidney,Persons,All ages,Age-standardised (4 gps),5,64.8
+Cancer Alliance,E56000011,Kent and Medway,Kidney,Persons,All ages,Non-standardised,5,64.9
+Cancer Alliance,E56000011,Kent and Medway,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,60.7
+Cancer Alliance,E56000011,Kent and Medway,Leukaemia,Persons,All ages,Non-standardised,5,44.9
+Cancer Alliance,E56000011,Kent and Medway,Liver,Persons,All ages,Non-standardised,5,8.7
+Cancer Alliance,E56000011,Kent and Medway,Lung,Persons,All ages,Age-standardised (4 gps),5,15.2
+Cancer Alliance,E56000011,Kent and Medway,Lung,Persons,All ages,Non-standardised,5,13.9
+Cancer Alliance,E56000011,Kent and Medway,Melanoma,Persons,All ages,Non-standardised,5,84.8
+Cancer Alliance,E56000011,Kent and Medway,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000011,Kent and Medway,Myeloid leukaemia,Persons,All ages,Non-standardised,5,30.3
+Cancer Alliance,E56000011,Kent and Medway,Myeloma,Persons,All ages,Non-standardised,5,41.3
+Cancer Alliance,E56000011,Kent and Medway,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,66.5
+Cancer Alliance,E56000011,Kent and Medway,Oesophagus,Persons,All ages,Non-standardised,5,14.3
+Cancer Alliance,E56000011,Kent and Medway,Pancreas,Persons,All ages,Non-standardised,5,5
+Cancer Alliance,E56000011,Kent and Medway,Rectal,Persons,All ages,Non-standardised,5,57.6
+Cancer Alliance,E56000011,Kent and Medway,Small intestine,Persons,All ages,Non-standardised,5,57.2
+Cancer Alliance,E56000011,Kent and Medway,Stomach,Persons,All ages,Non-standardised,5,16.6
+Cancer Alliance,E56000011,Kent and Medway,Thyroid,Persons,All ages,Non-standardised,5,94.3
+Cancer Alliance,E56000012,Surrey and Sussex,Anus,Persons,All ages,Non-standardised,5,65.9
+Cancer Alliance,E56000012,Surrey and Sussex,Bladder,Persons,All ages,Non-standardised,5,49.4
+Cancer Alliance,E56000012,Surrey and Sussex,Brain,Persons,All ages,Non-standardised,5,15.5
+Cancer Alliance,E56000012,Surrey and Sussex,Colon,Persons,All ages,Non-standardised,5,58
+Cancer Alliance,E56000012,Surrey and Sussex,Colon,Persons,All ages,Age-standardised (4 gps),5,60.7
+Cancer Alliance,E56000012,Surrey and Sussex,Colorectal,Persons,All ages,Non-standardised,5,59
+Cancer Alliance,E56000012,Surrey and Sussex,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,82.8
+Cancer Alliance,E56000012,Surrey and Sussex,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,80.5
+Cancer Alliance,E56000012,Surrey and Sussex,Kidney,Persons,All ages,Non-standardised,5,67.1
+Cancer Alliance,E56000012,Surrey and Sussex,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,61.2
+Cancer Alliance,E56000012,Surrey and Sussex,Leukaemia,Persons,All ages,Non-standardised,5,50.9
+Cancer Alliance,E56000012,Surrey and Sussex,Liver,Persons,All ages,Non-standardised,5,12.7
+Cancer Alliance,E56000012,Surrey and Sussex,Lung,Persons,All ages,Non-standardised,5,17.2
+Cancer Alliance,E56000012,Surrey and Sussex,Lung,Persons,All ages,Age-standardised (4 gps),5,18.7
+Cancer Alliance,E56000012,Surrey and Sussex,Melanoma,Persons,All ages,Non-standardised,5,91.4
+Cancer Alliance,E56000012,Surrey and Sussex,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000012,Surrey and Sussex,Myeloid leukaemia,Persons,All ages,Non-standardised,5,26.5
+Cancer Alliance,E56000012,Surrey and Sussex,Myeloma,Persons,All ages,Non-standardised,5,49.7
+Cancer Alliance,E56000012,Surrey and Sussex,Myeloma,Persons,All ages,Age-standardised (4 gps),5,54.3
+Cancer Alliance,E56000012,Surrey and Sussex,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,65.7
+Cancer Alliance,E56000012,Surrey and Sussex,Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,67.3
+Cancer Alliance,E56000012,Surrey and Sussex,Oesophagus,Persons,All ages,Age-standardised (4 gps),5,19.6
+Cancer Alliance,E56000012,Surrey and Sussex,Oesophagus,Persons,All ages,Non-standardised,5,18.7
+Cancer Alliance,E56000012,Surrey and Sussex,Pancreas,Persons,All ages,Non-standardised,5,5.6
+Cancer Alliance,E56000012,Surrey and Sussex,Rectal,Persons,All ages,Age-standardised (4 gps),5,62.5
+Cancer Alliance,E56000012,Surrey and Sussex,Rectal,Persons,All ages,Non-standardised,5,61.2
+Cancer Alliance,E56000012,Surrey and Sussex,Small intestine,Persons,All ages,Non-standardised,5,42
+Cancer Alliance,E56000012,Surrey and Sussex,Stomach,Persons,All ages,Non-standardised,5,18.3
+Cancer Alliance,E56000012,Surrey and Sussex,Thyroid,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000013,Thames Valley,Anus,Persons,All ages,Non-standardised,5,73.1
+Cancer Alliance,E56000013,Thames Valley,Bladder,Persons,All ages,Non-standardised,5,47.7
+Cancer Alliance,E56000013,Thames Valley,Brain,Persons,All ages,Non-standardised,5,18.6
+Cancer Alliance,E56000013,Thames Valley,Colon,Persons,All ages,Age-standardised (4 gps),5,60.5
+Cancer Alliance,E56000013,Thames Valley,Colon,Persons,All ages,Non-standardised,5,57.7
+Cancer Alliance,E56000013,Thames Valley,Colorectal,Persons,All ages,Non-standardised,5,59.7
+Cancer Alliance,E56000013,Thames Valley,Colorectal,Persons,All ages,Age-standardised (4 gps),5,61.5
+Cancer Alliance,E56000013,Thames Valley,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,87.2
+Cancer Alliance,E56000013,Thames Valley,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000013,Thames Valley,Kidney,Persons,All ages,Non-standardised,5,64.9
+Cancer Alliance,E56000013,Thames Valley,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,63.2
+Cancer Alliance,E56000013,Thames Valley,Leukaemia,Persons,All ages,Non-standardised,5,49.4
+Cancer Alliance,E56000013,Thames Valley,Liver,Persons,All ages,Non-standardised,5,12.9
+Cancer Alliance,E56000013,Thames Valley,Lung,Persons,All ages,Non-standardised,5,19.9
+Cancer Alliance,E56000013,Thames Valley,Melanoma,Persons,All ages,Non-standardised,5,91
+Cancer Alliance,E56000013,Thames Valley,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000013,Thames Valley,Myeloid leukaemia,Persons,All ages,Non-standardised,5,33.2
+Cancer Alliance,E56000013,Thames Valley,Myeloma,Persons,All ages,Non-standardised,5,51.8
+Cancer Alliance,E56000013,Thames Valley,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,66.4
+Cancer Alliance,E56000013,Thames Valley,Oesophagus,Persons,All ages,Non-standardised,5,23.1
+Cancer Alliance,E56000013,Thames Valley,Pancreas,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000013,Thames Valley,Rectal,Persons,All ages,Age-standardised (4 gps),5,64.1
+Cancer Alliance,E56000013,Thames Valley,Rectal,Persons,All ages,Non-standardised,5,64.1
+Cancer Alliance,E56000013,Thames Valley,Small intestine,Persons,All ages,Non-standardised,5,53.7
+Cancer Alliance,E56000013,Thames Valley,Stomach,Persons,All ages,Non-standardised,5,22.9
+Cancer Alliance,E56000013,Thames Valley,Thyroid,Persons,All ages,Non-standardised,5,87.5
+Cancer Alliance,E56000014,Peninsula,Anus,Persons,All ages,Non-standardised,5,60.3
+Cancer Alliance,E56000014,Peninsula,Bladder,Persons,All ages,Non-standardised,5,51.1
+Cancer Alliance,E56000014,Peninsula,Brain,Persons,All ages,Non-standardised,5,14.8
+Cancer Alliance,E56000014,Peninsula,Colon,Persons,All ages,Age-standardised (4 gps),5,58.4
+Cancer Alliance,E56000014,Peninsula,Colon,Persons,All ages,Non-standardised,5,55.6
+Cancer Alliance,E56000014,Peninsula,Colorectal,Persons,All ages,Non-standardised,5,56.3
+Cancer Alliance,E56000014,Peninsula,Colorectal,Persons,All ages,Age-standardised (4 gps),5,58.8
+Cancer Alliance,E56000014,Peninsula,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,83.6
+Cancer Alliance,E56000014,Peninsula,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,82.1
+Cancer Alliance,E56000014,Peninsula,Kidney,Persons,All ages,Non-standardised,5,61.7
+Cancer Alliance,E56000014,Peninsula,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,58.9
+Cancer Alliance,E56000014,Peninsula,Leukaemia,Persons,All ages,Non-standardised,5,53
+Cancer Alliance,E56000014,Peninsula,Liver,Persons,All ages,Non-standardised,5,12.2
+Cancer Alliance,E56000014,Peninsula,Lung,Persons,All ages,Non-standardised,5,17.2
+Cancer Alliance,E56000014,Peninsula,Melanoma,Persons,All ages,Non-standardised,5,88.6
+Cancer Alliance,E56000014,Peninsula,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000014,Peninsula,Myeloid leukaemia,Persons,All ages,Non-standardised,5,30.1
+Cancer Alliance,E56000014,Peninsula,Myeloma,Persons,All ages,Non-standardised,5,47.7
+Cancer Alliance,E56000014,Peninsula,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,64.3
+Cancer Alliance,E56000014,Peninsula,Oesophagus,Persons,All ages,Non-standardised,5,16.8
+Cancer Alliance,E56000014,Peninsula,Pancreas,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000014,Peninsula,Rectal,Persons,All ages,Age-standardised (4 gps),5,60
+Cancer Alliance,E56000014,Peninsula,Rectal,Persons,All ages,Non-standardised,5,58
+Cancer Alliance,E56000014,Peninsula,Small intestine,Persons,All ages,Non-standardised,5,44.7
+Cancer Alliance,E56000014,Peninsula,Stomach,Persons,All ages,Non-standardised,5,17.7
+Cancer Alliance,E56000014,Peninsula,Thyroid,Persons,All ages,Non-standardised,5,84.3
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Anus,Persons,All ages,Non-standardised,5,62.4
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Bladder,Persons,All ages,Non-standardised,5,49.3
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Brain,Persons,All ages,Non-standardised,5,14.5
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Colon,Persons,All ages,Age-standardised (4 gps),5,57.1
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Colon,Persons,All ages,Non-standardised,5,54.3
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Colorectal,Persons,All ages,Non-standardised,5,56.5
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,84.8
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Hodgkin lymphoma,Persons,All ages,Non-standardised,5,80.9
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Kidney,Persons,All ages,Non-standardised,5,64.5
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Kidney,Persons,All ages,Age-standardised (4 gps),5,65.4
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,59.4
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Leukaemia,Persons,All ages,Non-standardised,5,51.3
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Leukaemia,Persons,All ages,Age-standardised (4 gps),5,52.8
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Liver,Persons,All ages,Non-standardised,5,10.9
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Lung,Persons,All ages,Non-standardised,5,17.2
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Lung,Persons,All ages,Age-standardised (4 gps),5,18.5
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Melanoma,Persons,All ages,Non-standardised,5,89.9
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Myeloid leukaemia,Persons,All ages,Non-standardised,5,28.3
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Myeloma,Persons,All ages,Non-standardised,5,50.9
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Myeloma,Persons,All ages,Age-standardised (4 gps),5,53.9
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,64.6
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,65.8
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Oesophagus,Persons,All ages,Non-standardised,5,15.2
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Pancreas,Persons,All ages,Non-standardised,5,6
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Rectal,Persons,All ages,Non-standardised,5,61
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Small intestine,Persons,All ages,Non-standardised,5,47.5
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Stomach,Persons,All ages,Non-standardised,5,19.8
+Cancer Alliance,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",Thyroid,Persons,All ages,Non-standardised,5,86.7
+Cancer Alliance,E56000016,Wessex,Anus,Persons,All ages,Non-standardised,5,64.8
+Cancer Alliance,E56000016,Wessex,Bladder,Persons,All ages,Non-standardised,5,49.5
+Cancer Alliance,E56000016,Wessex,Brain,Persons,All ages,Non-standardised,5,12
+Cancer Alliance,E56000016,Wessex,Colon,Persons,All ages,Non-standardised,5,54.7
+Cancer Alliance,E56000016,Wessex,Colon,Persons,All ages,Age-standardised (4 gps),5,58.7
+Cancer Alliance,E56000016,Wessex,Colorectal,Persons,All ages,Non-standardised,5,56.8
+Cancer Alliance,E56000016,Wessex,Colorectal,Persons,All ages,Age-standardised (4 gps),5,60.2
+Cancer Alliance,E56000016,Wessex,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,87.9
+Cancer Alliance,E56000016,Wessex,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,84.2
+Cancer Alliance,E56000016,Wessex,Kidney,Persons,All ages,Age-standardised (4 gps),5,65.1
+Cancer Alliance,E56000016,Wessex,Kidney,Persons,All ages,Non-standardised,5,64.4
+Cancer Alliance,E56000016,Wessex,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,58.2
+Cancer Alliance,E56000016,Wessex,Leukaemia,Persons,All ages,Non-standardised,5,53.4
+Cancer Alliance,E56000016,Wessex,Leukaemia,Persons,All ages,Age-standardised (4 gps),5,56.1
+Cancer Alliance,E56000016,Wessex,Liver,Persons,All ages,Non-standardised,5,7.9
+Cancer Alliance,E56000016,Wessex,Lung,Persons,All ages,Non-standardised,5,16.7
+Cancer Alliance,E56000016,Wessex,Melanoma,Persons,All ages,Non-standardised,5,90.1
+Cancer Alliance,E56000016,Wessex,Melanoma,Persons,All ages,Age-standardised (4 gps),5,92.3
+Cancer Alliance,E56000016,Wessex,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000016,Wessex,Myeloid leukaemia,Persons,All ages,Non-standardised,5,27.2
+Cancer Alliance,E56000016,Wessex,Myeloma,Persons,All ages,Non-standardised,5,50.5
+Cancer Alliance,E56000016,Wessex,Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,69.8
+Cancer Alliance,E56000016,Wessex,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,67.9
+Cancer Alliance,E56000016,Wessex,Oesophagus,Persons,All ages,Non-standardised,5,19.5
+Cancer Alliance,E56000016,Wessex,Pancreas,Persons,All ages,Non-standardised,5,7.4
+Cancer Alliance,E56000016,Wessex,Rectal,Persons,All ages,Non-standardised,5,61.9
+Cancer Alliance,E56000016,Wessex,Rectal,Persons,All ages,Age-standardised (4 gps),5,63.5
+Cancer Alliance,E56000016,Wessex,Small intestine,Persons,All ages,Non-standardised,5,52.7
+Cancer Alliance,E56000016,Wessex,Stomach,Persons,All ages,Non-standardised,5,19.6
+Cancer Alliance,E56000016,Wessex,Thyroid,Persons,All ages,Non-standardised,5,91.2
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Anus,Persons,All ages,Non-standardised,5,65.4
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Bladder,Persons,All ages,Non-standardised,5,49.6
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Brain,Persons,All ages,Non-standardised,5,15.9
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Colon,Persons,All ages,Non-standardised,5,52.3
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Colorectal,Persons,All ages,Non-standardised,5,54.4
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Colorectal,Persons,All ages,Age-standardised (4 gps),5,56
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,87.9
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Kidney,Persons,All ages,Non-standardised,5,64.8
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,56.3
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Leukaemia,Persons,All ages,Non-standardised,5,62.8
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Liver,Persons,All ages,Non-standardised,5,11.8
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Lung,Persons,All ages,Non-standardised,5,13.4
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Lung,Persons,All ages,Age-standardised (4 gps),5,14.6
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Melanoma,Persons,All ages,Non-standardised,5,91.2
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Melanoma,Persons,All ages,Age-standardised (4 gps),5,92.3
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Myeloid leukaemia,Persons,All ages,Non-standardised,5,34.1
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Myeloma,Persons,All ages,Non-standardised,5,46.4
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,61.6
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Oesophagus,Persons,All ages,Non-standardised,5,17
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Pancreas,Persons,All ages,Non-standardised,5,5.3
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Rectal,Persons,All ages,Age-standardised (4 gps),5,57.3
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Rectal,Persons,All ages,Non-standardised,5,58
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Small intestine,Persons,All ages,Non-standardised,5,46.7
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Stomach,Persons,All ages,Non-standardised,5,19.3
+Cancer Alliance,E56000018,Lancashire and South Cumbria,Thyroid,Persons,All ages,Non-standardised,5,89.7
+Cancer Alliance,E56000019,Greater Manchester,Anus,Persons,All ages,Non-standardised,5,56.2
+Cancer Alliance,E56000019,Greater Manchester,Bladder,Persons,All ages,Non-standardised,5,48.7
+Cancer Alliance,E56000019,Greater Manchester,Brain,Persons,All ages,Non-standardised,5,20.4
+Cancer Alliance,E56000019,Greater Manchester,Colon,Persons,All ages,Non-standardised,5,53.8
+Cancer Alliance,E56000019,Greater Manchester,Colorectal,Persons,All ages,Non-standardised,5,55.7
+Cancer Alliance,E56000019,Greater Manchester,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,85
+Cancer Alliance,E56000019,Greater Manchester,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000019,Greater Manchester,Kidney,Persons,All ages,Non-standardised,5,65.4
+Cancer Alliance,E56000019,Greater Manchester,Kidney,Persons,All ages,Age-standardised (4 gps),5,64.8
+Cancer Alliance,E56000019,Greater Manchester,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,61.9
+Cancer Alliance,E56000019,Greater Manchester,Leukaemia,Persons,All ages,Non-standardised,5,56
+Cancer Alliance,E56000019,Greater Manchester,Leukaemia,Persons,All ages,Age-standardised (4 gps),5,55.4
+Cancer Alliance,E56000019,Greater Manchester,Liver,Persons,All ages,Non-standardised,5,12.5
+Cancer Alliance,E56000019,Greater Manchester,Lung,Persons,All ages,Non-standardised,5,17.3
+Cancer Alliance,E56000019,Greater Manchester,Melanoma,Persons,All ages,Age-standardised (4 gps),5,93
+Cancer Alliance,E56000019,Greater Manchester,Melanoma,Persons,All ages,Non-standardised,5,92.9
+Cancer Alliance,E56000019,Greater Manchester,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000019,Greater Manchester,Myeloid leukaemia,Persons,All ages,Non-standardised,5,38
+Cancer Alliance,E56000019,Greater Manchester,Myeloma,Persons,All ages,Non-standardised,5,51.6
+Cancer Alliance,E56000019,Greater Manchester,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,65
+Cancer Alliance,E56000019,Greater Manchester,Oesophagus,Persons,All ages,Non-standardised,5,16.6
+Cancer Alliance,E56000019,Greater Manchester,Pancreas,Persons,All ages,Non-standardised,5,8.1
+Cancer Alliance,E56000019,Greater Manchester,Rectal,Persons,All ages,Non-standardised,5,59.7
+Cancer Alliance,E56000019,Greater Manchester,Small intestine,Persons,All ages,Non-standardised,5,48
+Cancer Alliance,E56000019,Greater Manchester,Stomach,Persons,All ages,Non-standardised,5,20.8
+Cancer Alliance,E56000019,Greater Manchester,Thyroid,Persons,All ages,Non-standardised,5,93.6
+Cancer Alliance,E56000021,North West and South West London,Anus,Persons,All ages,Non-standardised,5,62.8
+Cancer Alliance,E56000021,North West and South West London,Bladder,Persons,All ages,Non-standardised,5,51.6
+Cancer Alliance,E56000021,North West and South West London,Brain,Persons,All ages,Non-standardised,5,30.1
+Cancer Alliance,E56000021,North West and South West London,Colon,Persons,All ages,Age-standardised (4 gps),5,60.7
+Cancer Alliance,E56000021,North West and South West London,Colon,Persons,All ages,Non-standardised,5,58.6
+Cancer Alliance,E56000021,North West and South West London,Colorectal,Persons,All ages,Non-standardised,5,60.1
+Cancer Alliance,E56000021,North West and South West London,Colorectal,Persons,All ages,Age-standardised (4 gps),5,61.8
+Cancer Alliance,E56000021,North West and South West London,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,85
+Cancer Alliance,E56000021,North West and South West London,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,88
+Cancer Alliance,E56000021,North West and South West London,Kidney,Persons,All ages,Non-standardised,5,71.6
+Cancer Alliance,E56000021,North West and South West London,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,62.9
+Cancer Alliance,E56000021,North West and South West London,Leukaemia,Persons,All ages,Non-standardised,5,57.4
+Cancer Alliance,E56000021,North West and South West London,Liver,Persons,All ages,Non-standardised,5,17.6
+Cancer Alliance,E56000021,North West and South West London,Lung,Persons,All ages,Non-standardised,5,21.3
+Cancer Alliance,E56000021,North West and South West London,Melanoma,Persons,All ages,Non-standardised,5,89.8
+Cancer Alliance,E56000021,North West and South West London,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000021,North West and South West London,Myeloid leukaemia,Persons,All ages,Non-standardised,5,38.8
+Cancer Alliance,E56000021,North West and South West London,Myeloma,Persons,All ages,Non-standardised,5,58.6
+Cancer Alliance,E56000021,North West and South West London,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,68.6
+Cancer Alliance,E56000021,North West and South West London,Oesophagus,Persons,All ages,Non-standardised,5,16.2
+Cancer Alliance,E56000021,North West and South West London,Pancreas,Persons,All ages,Non-standardised,5,10.3
+Cancer Alliance,E56000021,North West and South West London,Rectal,Persons,All ages,Non-standardised,5,63.2
+Cancer Alliance,E56000021,North West and South West London,Small intestine,Persons,All ages,Non-standardised,5,52.1
+Cancer Alliance,E56000021,North West and South West London,Stomach,Persons,All ages,Non-standardised,5,26.3
+Cancer Alliance,E56000021,North West and South West London,Thyroid,Persons,All ages,Non-standardised,5,94.9
+Cancer Alliance,E56000022,East of England - North,Anus,Persons,All ages,Non-standardised,5,64.2
+Cancer Alliance,E56000022,East of England - North,Bladder,Persons,All ages,Non-standardised,5,50.1
+Cancer Alliance,E56000022,East of England - North,Brain,Persons,All ages,Non-standardised,5,14.1
+Cancer Alliance,E56000022,East of England - North,Colon,Persons,All ages,Age-standardised (4 gps),5,58.1
+Cancer Alliance,E56000022,East of England - North,Colon,Persons,All ages,Non-standardised,5,55
+Cancer Alliance,E56000022,East of England - North,Colorectal,Persons,All ages,Non-standardised,5,56.1
+Cancer Alliance,E56000022,East of England - North,Colorectal,Persons,All ages,Age-standardised (4 gps),5,58.8
+Cancer Alliance,E56000022,East of England - North,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,83.5
+Cancer Alliance,E56000022,East of England - North,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,76.9
+Cancer Alliance,E56000022,East of England - North,Kidney,Persons,All ages,Age-standardised (4 gps),5,62.3
+Cancer Alliance,E56000022,East of England - North,Kidney,Persons,All ages,Non-standardised,5,61.9
+Cancer Alliance,E56000022,East of England - North,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,56.3
+Cancer Alliance,E56000022,East of England - North,Leukaemia,Persons,All ages,Non-standardised,5,46.8
+Cancer Alliance,E56000022,East of England - North,Leukaemia,Persons,All ages,Age-standardised (4 gps),5,49.2
+Cancer Alliance,E56000022,East of England - North,Liver,Persons,All ages,Non-standardised,5,9.7
+Cancer Alliance,E56000022,East of England - North,Lung,Persons,All ages,Age-standardised (4 gps),5,18.6
+Cancer Alliance,E56000022,East of England - North,Lung,Persons,All ages,Non-standardised,5,17
+Cancer Alliance,E56000022,East of England - North,Melanoma,Persons,All ages,Non-standardised,5,90.4
+Cancer Alliance,E56000022,East of England - North,Melanoma,Persons,All ages,Age-standardised (4 gps),5,92.4
+Cancer Alliance,E56000022,East of England - North,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000022,East of England - North,Myeloid leukaemia,Persons,All ages,Non-standardised,5,25.7
+Cancer Alliance,E56000022,East of England - North,Myeloma,Persons,All ages,Non-standardised,5,46.4
+Cancer Alliance,E56000022,East of England - North,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,65.5
+Cancer Alliance,E56000022,East of England - North,Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,67.1
+Cancer Alliance,E56000022,East of England - North,Oesophagus,Persons,All ages,Non-standardised,5,17.7
+Cancer Alliance,E56000022,East of England - North,Pancreas,Persons,All ages,Non-standardised,5,6
+Cancer Alliance,E56000022,East of England - North,Rectal,Persons,All ages,Non-standardised,5,57.8
+Cancer Alliance,E56000022,East of England - North,Rectal,Persons,All ages,Age-standardised (4 gps),5,59.6
+Cancer Alliance,E56000022,East of England - North,Small intestine,Persons,All ages,Non-standardised,5,49.5
+Cancer Alliance,E56000022,East of England - North,Stomach,Persons,All ages,Non-standardised,5,18.7
+Cancer Alliance,E56000022,East of England - North,Thyroid,Persons,All ages,Non-standardised,5,93.3
+Cancer Alliance,E56000023,East of England - South,Anus,Persons,All ages,Non-standardised,5,62.1
+Cancer Alliance,E56000023,East of England - South,Bladder,Persons,All ages,Non-standardised,5,48.2
+Cancer Alliance,E56000023,East of England - South,Brain,Persons,All ages,Non-standardised,5,16.4
+Cancer Alliance,E56000023,East of England - South,Colon,Persons,All ages,Non-standardised,5,55.2
+Cancer Alliance,E56000023,East of England - South,Colorectal,Persons,All ages,Non-standardised,5,56.7
+Cancer Alliance,E56000023,East of England - South,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,79.9
+Cancer Alliance,E56000023,East of England - South,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000023,East of England - South,Kidney,Persons,All ages,Non-standardised,5,63.7
+Cancer Alliance,E56000023,East of England - South,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,58.5
+Cancer Alliance,E56000023,East of England - South,Leukaemia,Persons,All ages,Non-standardised,5,55.1
+Cancer Alliance,E56000023,East of England - South,Liver,Persons,All ages,Non-standardised,5,12.1
+Cancer Alliance,E56000023,East of England - South,Lung,Persons,All ages,Age-standardised (4 gps),5,16.7
+Cancer Alliance,E56000023,East of England - South,Lung,Persons,All ages,Non-standardised,5,15.3
+Cancer Alliance,E56000023,East of England - South,Melanoma,Persons,All ages,Non-standardised,5,89.5
+Cancer Alliance,E56000023,East of England - South,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000023,East of England - South,Myeloid leukaemia,Persons,All ages,Non-standardised,5,33.5
+Cancer Alliance,E56000023,East of England - South,Myeloma,Persons,All ages,Non-standardised,5,50.3
+Cancer Alliance,E56000023,East of England - South,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,65
+Cancer Alliance,E56000023,East of England - South,Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,65.3
+Cancer Alliance,E56000023,East of England - South,Oesophagus,Persons,All ages,Non-standardised,5,18.1
+Cancer Alliance,E56000023,East of England - South,Oesophagus,Persons,All ages,Age-standardised (4 gps),5,18.7
+Cancer Alliance,E56000023,East of England - South,Pancreas,Persons,All ages,Non-standardised,5,5.3
+Cancer Alliance,E56000023,East of England - South,Rectal,Persons,All ages,Age-standardised (4 gps),5,61
+Cancer Alliance,E56000023,East of England - South,Rectal,Persons,All ages,Non-standardised,5,60.1
+Cancer Alliance,E56000023,East of England - South,Small intestine,Persons,All ages,Non-standardised,5,52.2
+Cancer Alliance,E56000023,East of England - South,Stomach,Persons,All ages,Non-standardised,5,17.1
+Cancer Alliance,E56000023,East of England - South,Thyroid,Persons,All ages,Non-standardised,5,90.8
+Cancer Alliance,E56000024,East Midlands,Anus,Persons,All ages,Non-standardised,5,58.7
+Cancer Alliance,E56000024,East Midlands,Bladder,Persons,All ages,Non-standardised,5,47.1
+Cancer Alliance,E56000024,East Midlands,Bladder,Persons,All ages,Age-standardised (4 gps),5,49.8
+Cancer Alliance,E56000024,East Midlands,Brain,Persons,All ages,Non-standardised,5,14
+Cancer Alliance,E56000024,East Midlands,Colon,Persons,All ages,Age-standardised (4 gps),5,56.3
+Cancer Alliance,E56000024,East Midlands,Colon,Persons,All ages,Non-standardised,5,53.1
+Cancer Alliance,E56000024,East Midlands,Colorectal,Persons,All ages,Non-standardised,5,53.9
+Cancer Alliance,E56000024,East Midlands,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,85.5
+Cancer Alliance,E56000024,East Midlands,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,80
+Cancer Alliance,E56000024,East Midlands,Kidney,Persons,All ages,Non-standardised,5,61.8
+Cancer Alliance,E56000024,East Midlands,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,57.3
+Cancer Alliance,E56000024,East Midlands,Leukaemia,Persons,All ages,Non-standardised,5,54.2
+Cancer Alliance,E56000024,East Midlands,Leukaemia,Persons,All ages,Age-standardised (4 gps),5,56.5
+Cancer Alliance,E56000024,East Midlands,Liver,Persons,All ages,Non-standardised,5,9.1
+Cancer Alliance,E56000024,East Midlands,Lung,Persons,All ages,Age-standardised (4 gps),5,16.4
+Cancer Alliance,E56000024,East Midlands,Lung,Persons,All ages,Non-standardised,5,14.8
+Cancer Alliance,E56000024,East Midlands,Melanoma,Persons,All ages,Age-standardised (4 gps),5,90.8
+Cancer Alliance,E56000024,East Midlands,Melanoma,Persons,All ages,Non-standardised,5,89.1
+Cancer Alliance,E56000024,East Midlands,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000024,East Midlands,Myeloid leukaemia,Persons,All ages,Non-standardised,5,34.3
+Cancer Alliance,E56000024,East Midlands,Myeloma,Persons,All ages,Non-standardised,5,56.9
+Cancer Alliance,E56000024,East Midlands,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,63.8
+Cancer Alliance,E56000024,East Midlands,Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,64.6
+Cancer Alliance,E56000024,East Midlands,Oesophagus,Persons,All ages,Non-standardised,5,16.2
+Cancer Alliance,E56000024,East Midlands,Oesophagus,Persons,All ages,Age-standardised (4 gps),5,16.8
+Cancer Alliance,E56000024,East Midlands,Pancreas,Persons,All ages,Non-standardised,5,5.3
+Cancer Alliance,E56000024,East Midlands,Rectal,Persons,All ages,Non-standardised,5,55.2
+Cancer Alliance,E56000024,East Midlands,Small intestine,Persons,All ages,Non-standardised,5,46.6
+Cancer Alliance,E56000024,East Midlands,Stomach,Persons,All ages,Non-standardised,5,18.1
+Cancer Alliance,E56000024,East Midlands,Thyroid,Persons,All ages,Non-standardised,5,91.4
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Anus,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Bladder,Persons,All ages,Non-standardised,5,49.4
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Brain,Persons,All ages,Non-standardised,5,17.9
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Colon,Persons,All ages,Non-standardised,5,51.9
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Colon,Persons,All ages,Age-standardised (4 gps),5,55
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Colorectal,Persons,All ages,Non-standardised,5,53.8
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Colorectal,Persons,All ages,Age-standardised (4 gps),5,55.5
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,83.9
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Kidney,Persons,All ages,Age-standardised (4 gps),5,63.8
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Kidney,Persons,All ages,Non-standardised,5,63.9
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,50.9
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Leukaemia,Persons,All ages,Non-standardised,5,58.2
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Leukaemia,Persons,All ages,Age-standardised (4 gps),5,59.5
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Liver,Persons,All ages,Non-standardised,5,14.4
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Lung,Persons,All ages,Non-standardised,5,16.4
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Melanoma,Persons,All ages,Non-standardised,5,89.5
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Myeloid leukaemia,Persons,All ages,Non-standardised,5,35.8
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Myeloma,Persons,All ages,Non-standardised,5,49.8
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,63.1
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Oesophagus,Persons,All ages,Non-standardised,5,14.1
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Pancreas,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Rectal,Persons,All ages,Age-standardised (4 gps),5,56.5
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Rectal,Persons,All ages,Non-standardised,5,56.7
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Small intestine,Persons,All ages,Non-standardised,5,41.6
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Stomach,Persons,All ages,Non-standardised,5,17.7
+Cancer Alliance,E56000025,South Yorkshire and Bassetlaw,Thyroid,Persons,All ages,Non-standardised,5,86.7
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Anus,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Bladder,Persons,All ages,Non-standardised,5,49.8
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Brain,Persons,All ages,Non-standardised,5,12.1
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Colon,Persons,All ages,Age-standardised (4 gps),5,58.2
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Colon,Persons,All ages,Non-standardised,5,55.9
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Colorectal,Persons,All ages,Age-standardised (4 gps),5,60.2
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Colorectal,Persons,All ages,Non-standardised,5,58.2
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,89
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Kidney,Persons,All ages,Age-standardised (4 gps),5,63.4
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Kidney,Persons,All ages,Non-standardised,5,62.5
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,58.4
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Leukaemia,Persons,All ages,Non-standardised,5,55.6
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Liver,Persons,All ages,Non-standardised,5,13.2
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Lung,Persons,All ages,Non-standardised,5,15.2
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Lung,Persons,All ages,Age-standardised (4 gps),5,16.9
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Melanoma,Persons,All ages,Age-standardised (4 gps),5,91.1
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Melanoma,Persons,All ages,Non-standardised,5,88.8
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Myeloid leukaemia,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Myeloma,Persons,All ages,Non-standardised,5,43.8
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,64.5
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,63.4
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Oesophagus,Persons,All ages,Non-standardised,5,18.7
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Pancreas,Persons,All ages,Non-standardised,5,6
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Rectal,Persons,All ages,Non-standardised,5,62.7
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Rectal,Persons,All ages,Age-standardised (4 gps),5,63.7
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Small intestine,Persons,All ages,Non-standardised,5,52.1
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Stomach,Persons,All ages,Non-standardised,5,16.2
+Cancer Alliance,E56000026,"Humber, Coast and Vale",Thyroid,Persons,All ages,Non-standardised,5,83.4
+Cancer Alliance,E56000027,North Central London,Anus,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000027,North Central London,Bladder,Persons,All ages,Non-standardised,5,50.8
+Cancer Alliance,E56000027,North Central London,Brain,Persons,All ages,Non-standardised,5,25.7
+Cancer Alliance,E56000027,North Central London,Colon,Persons,All ages,Non-standardised,5,57.6
+Cancer Alliance,E56000027,North Central London,Colorectal,Persons,All ages,Non-standardised,5,57.7
+Cancer Alliance,E56000027,North Central London,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,87.7
+Cancer Alliance,E56000027,North Central London,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000027,North Central London,Kidney,Persons,All ages,Non-standardised,5,74.7
+Cancer Alliance,E56000027,North Central London,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,64.7
+Cancer Alliance,E56000027,North Central London,Leukaemia,Persons,All ages,Non-standardised,5,60.8
+Cancer Alliance,E56000027,North Central London,Liver,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000027,North Central London,Lung,Persons,All ages,Age-standardised (4 gps),5,24.5
+Cancer Alliance,E56000027,North Central London,Lung,Persons,All ages,Non-standardised,5,23.8
+Cancer Alliance,E56000027,North Central London,Melanoma,Persons,All ages,Non-standardised,5,92.2
+Cancer Alliance,E56000027,North Central London,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000027,North Central London,Myeloid leukaemia,Persons,All ages,Non-standardised,5,35.8
+Cancer Alliance,E56000027,North Central London,Myeloma,Persons,All ages,Non-standardised,5,60.9
+Cancer Alliance,E56000027,North Central London,Myeloma,Persons,All ages,Age-standardised (4 gps),5,62.2
+Cancer Alliance,E56000027,North Central London,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,70.8
+Cancer Alliance,E56000027,North Central London,Oesophagus,Persons,All ages,Non-standardised,5,14.8
+Cancer Alliance,E56000027,North Central London,Pancreas,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000027,North Central London,Rectal,Persons,All ages,Non-standardised,5,57.5
+Cancer Alliance,E56000027,North Central London,Small intestine,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000027,North Central London,Stomach,Persons,All ages,Non-standardised,5,27
+Cancer Alliance,E56000027,North Central London,Thyroid,Persons,All ages,Non-standardised,5,96.1
+Cancer Alliance,E56000028,North East London,Anus,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000028,North East London,Bladder,Persons,All ages,Non-standardised,5,40
+Cancer Alliance,E56000028,North East London,Brain,Persons,All ages,Non-standardised,5,25.9
+Cancer Alliance,E56000028,North East London,Colon,Persons,All ages,Non-standardised,5,54.4
+Cancer Alliance,E56000028,North East London,Colon,Persons,All ages,Age-standardised (4 gps),5,56.8
+Cancer Alliance,E56000028,North East London,Colorectal,Persons,All ages,Non-standardised,5,56.5
+Cancer Alliance,E56000028,North East London,Colorectal,Persons,All ages,Age-standardised (4 gps),5,58.3
+Cancer Alliance,E56000028,North East London,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,77.6
+Cancer Alliance,E56000028,North East London,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000028,North East London,Kidney,Persons,All ages,Non-standardised,5,70.5
+Cancer Alliance,E56000028,North East London,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,54
+Cancer Alliance,E56000028,North East London,Leukaemia,Persons,All ages,Non-standardised,5,56.4
+Cancer Alliance,E56000028,North East London,Liver,Persons,All ages,Non-standardised,5,18.9
+Cancer Alliance,E56000028,North East London,Lung,Persons,All ages,Non-standardised,5,19
+Cancer Alliance,E56000028,North East London,Lung,Persons,All ages,Age-standardised (4 gps),5,20.2
+Cancer Alliance,E56000028,North East London,Melanoma,Persons,All ages,Non-standardised,5,89.7
+Cancer Alliance,E56000028,North East London,Melanoma,Persons,All ages,Age-standardised (4 gps),5,90.8
+Cancer Alliance,E56000028,North East London,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000028,North East London,Myeloid leukaemia,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000028,North East London,Myeloma,Persons,All ages,Non-standardised,5,55.6
+Cancer Alliance,E56000028,North East London,Myeloma,Persons,All ages,Age-standardised (4 gps),5,56.1
+Cancer Alliance,E56000028,North East London,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,59.3
+Cancer Alliance,E56000028,North East London,Oesophagus,Persons,All ages,Non-standardised,5,13
+Cancer Alliance,E56000028,North East London,Pancreas,Persons,All ages,Non-standardised,5,8.6
+Cancer Alliance,E56000028,North East London,Rectal,Persons,All ages,Non-standardised,5,61.5
+Cancer Alliance,E56000028,North East London,Small intestine,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000028,North East London,Stomach,Persons,All ages,Non-standardised,5,28.1
+Cancer Alliance,E56000028,North East London,Thyroid,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000029,Northern,Anus,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000029,Northern,Bladder,Persons,All ages,Non-standardised,5,46.5
+Cancer Alliance,E56000029,Northern,Brain,Persons,All ages,Non-standardised,5,13.8
+Cancer Alliance,E56000029,Northern,Colon,Persons,All ages,Non-standardised,5,53.6
+Cancer Alliance,E56000029,Northern,Colon,Persons,All ages,Age-standardised (4 gps),5,55.9
+Cancer Alliance,E56000029,Northern,Colorectal,Persons,All ages,Age-standardised (4 gps),5,57.5
+Cancer Alliance,E56000029,Northern,Colorectal,Persons,All ages,Non-standardised,5,55.5
+Cancer Alliance,E56000029,Northern,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,91.6
+Cancer Alliance,E56000029,Northern,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,78.3
+Cancer Alliance,E56000029,Northern,Kidney,Persons,All ages,Non-standardised,5,61.4
+Cancer Alliance,E56000029,Northern,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,52.2
+Cancer Alliance,E56000029,Northern,Leukaemia,Persons,All ages,Age-standardised (4 gps),5,52.2
+Cancer Alliance,E56000029,Northern,Leukaemia,Persons,All ages,Non-standardised,5,50.2
+Cancer Alliance,E56000029,Northern,Liver,Persons,All ages,Non-standardised,5,10.2
+Cancer Alliance,E56000029,Northern,Lung,Persons,All ages,Non-standardised,5,14.3
+Cancer Alliance,E56000029,Northern,Lung,Persons,All ages,Age-standardised (4 gps),5,15.6
+Cancer Alliance,E56000029,Northern,Melanoma,Persons,All ages,Non-standardised,5,92.4
+Cancer Alliance,E56000029,Northern,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000029,Northern,Myeloid leukaemia,Persons,All ages,Non-standardised,5,27.1
+Cancer Alliance,E56000029,Northern,Myeloma,Persons,All ages,Age-standardised (4 gps),5,49.4
+Cancer Alliance,E56000029,Northern,Myeloma,Persons,All ages,Non-standardised,5,45.4
+Cancer Alliance,E56000029,Northern,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,61.7
+Cancer Alliance,E56000029,Northern,Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,62.3
+Cancer Alliance,E56000029,Northern,Oesophagus,Persons,All ages,Non-standardised,5,17.9
+Cancer Alliance,E56000029,Northern,Pancreas,Persons,All ages,Non-standardised,5,6.8
+Cancer Alliance,E56000029,Northern,Rectal,Persons,All ages,Age-standardised (4 gps),5,60.1
+Cancer Alliance,E56000029,Northern,Rectal,Persons,All ages,Non-standardised,5,59.5
+Cancer Alliance,E56000029,Northern,Small intestine,Persons,All ages,Non-standardised,5,50.3
+Cancer Alliance,E56000029,Northern,Stomach,Persons,All ages,Non-standardised,5,23.2
+Cancer Alliance,E56000029,Northern,Thyroid,Persons,All ages,Non-standardised,5,91.7
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Anus,Persons,All ages,Non-standardised,5,66.5
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Bladder,Persons,All ages,Non-standardised,5,46.2
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Brain,Persons,All ages,Non-standardised,5,20.1
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Colon,Persons,All ages,Age-standardised (4 gps),5,57.2
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Colon,Persons,All ages,Non-standardised,5,54.5
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Colorectal,Persons,All ages,Non-standardised,5,55.7
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Colorectal,Persons,All ages,Age-standardised (4 gps),5,57.8
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Follicular (nodular) NHL,Persons,All ages,Non-standardised,5,81.9
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Hodgkin lymphoma,Persons,All ages,Non-standardised,5,78
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Kidney,Persons,All ages,Age-standardised (4 gps),5,63.7
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Kidney,Persons,All ages,Non-standardised,5,64.4
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Large cell (diffuse) lymphoma,Persons,All ages,Non-standardised,5,59.4
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Leukaemia,Persons,All ages,Non-standardised,5,57.9
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Leukaemia,Persons,All ages,Age-standardised (4 gps),5,59.8
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Liver,Persons,All ages,Non-standardised,5,19.4
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Lung,Persons,All ages,Non-standardised,5,17.8
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Melanoma,Persons,All ages,Non-standardised,5,91.5
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Mesothelioma,Persons,All ages,Non-standardised,5,[u]
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Myeloid leukaemia,Persons,All ages,Non-standardised,5,28.4
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Myeloma,Persons,All ages,Non-standardised,5,47.1
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Non-Hodgkin lymphoma,Persons,All ages,Non-standardised,5,62.1
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Non-Hodgkin lymphoma,Persons,All ages,Age-standardised (4 gps),5,62
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Oesophagus,Persons,All ages,Non-standardised,5,19.5
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Pancreas,Persons,All ages,Non-standardised,5,5.5
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Rectal,Persons,All ages,Non-standardised,5,58.1
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Small intestine,Persons,All ages,Non-standardised,5,46.1
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Stomach,Persons,All ages,Non-standardised,5,22.4
+Cancer Alliance,E56000030,West Yorkshire and Harrogate,Thyroid,Persons,All ages,Non-standardised,5,96.9
