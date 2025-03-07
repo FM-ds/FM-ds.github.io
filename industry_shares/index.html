@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suffolk MSOAs Choropleth</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { margin: 0; padding: 0; background: #121212; color: white; font-family: Arial, sans-serif; }
+        #map { width: 100vw; height: 100vh; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(30, 30, 30, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            z-index: 1000;
+        }
+        select {
+            background: #222;
+            color: white;
+            border: 1px solid #555;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        #legend {
+            position: absolute;
+            top: 60px;
+            left: 10px;
+            background: rgba(30, 30, 30, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            z-index: 1000;
+        }
+        .legend-label {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+        }
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div id="controls">
+    <label for="data-select">Industry:</label>
+    <select id="data-select">
+        <option value="agriculture_percent">Agriculture</option>
+        <option value="manufacturing_percent">Manufacturing</option>
+        <option value="construction_percent">Construction</option>
+        <option value="wholesale_retail_percent">Wholesale & Retail</option>
+        <option value="transport_percent">Transport</option>
+        <option value="accommodation_food_percent">Accommodation & Food</option>
+        <option value="information_communication_percent">Information & Communication</option>
+        <option value="financial_insurance_percent">Financial & Insurance</option>
+        <option value="real_estate_percent">Real Estate</option>
+        <option value="professional_scientific_percent">Professional & Scientific</option>
+        <option value="administrative_support_percent">Administrative Support</option>
+        <option value="public_administration_percent">Public Administration</option>
+        <option value="education_percent">Education</option>
+        <option value="health_social_work_percent">Health & Social Work</option>
+    </select>
+</div>
+
+<div id="legend"></div>
+<div id="map"></div>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZm0tZHMiLCJhIjoiY2xvbXIwb3piMm93aTJscndvYnFncjh4NSJ9.ZYcFieW_kfpK-uB6PhVkLA';
+
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/fm-ds/clomumkxq00be01pmfce62xuf',
+        center: [0.859, 52.12], // Suffolk center
+        zoom: 9
+    });
+
+    let geoData;
+
+    fetch('suffolk_msoas.geojson')
+        .then(response => response.json())
+        .then(data => {
+            geoData = data;
+
+            // Ensure all MSOAs have the necessary fields (default missing values to 0)
+            geoData.features.forEach(feature => {
+                Object.keys(feature.properties).forEach(key => {
+                    if (feature.properties[key] === null || feature.properties[key] === undefined) {
+                        feature.properties[key] = 0;
+                    }
+                });
+            });
+
+            map.on('load', () => {
+                map.addSource('suffolk-msoas', { type: 'geojson', data: geoData });
+
+                map.addLayer({
+                    id: 'choropleth-layer',
+                    type: 'fill',
+                    source: 'suffolk-msoas',
+                    paint: { 'fill-opacity': 0.75 }
+                });
+
+                updateChoropleth('agriculture_percent'); // Default field
+
+                // Bring labels to the top
+                const layers = map.getStyle().layers;
+                let labelLayerId;
+                for (let layer of layers) {
+                    if (layer.type === 'symbol') {
+                        labelLayerId = layer.id;
+                        break;
+                    }
+                }
+                if (labelLayerId) {
+                    map.moveLayer('choropleth-layer', labelLayerId);
+                }
+
+                document.getElementById('data-select').addEventListener('change', (event) => {
+                    updateChoropleth(event.target.value);
+                });
+            });
+        });
+
+    function updateChoropleth(field) {
+        const values = geoData.features.map(f => f.properties[field]).filter(v => v !== undefined);
+        let minVal = Math.min(...values);
+        let maxVal = Math.max(...values);
+
+        // Ensure a valid range (avoid identical min/max)
+        if (minVal === maxVal) {
+            minVal = minVal - 1;
+            maxVal = maxVal + 1;
+        }
+
+        // Define color scale using d3.interpolateCool
+        const colorStops = [
+            [minVal, d3.interpolateCool(0)],
+            [(minVal + maxVal) * 0.25, d3.interpolateCool(0.25)],
+            [(minVal + maxVal) * 0.5, d3.interpolateCool(0.5)],
+            [(minVal + maxVal) * 0.75, d3.interpolateCool(0.75)],
+            [maxVal, d3.interpolateCool(1)]
+        ].sort((a, b) => a[0] - b[0]); // Ensure strictly increasing order
+
+        map.setPaintProperty('choropleth-layer', 'fill-color', [
+            'interpolate',
+            ['linear'],
+            ['coalesce', ['get', field], 0], // Handle null values safely
+            ...colorStops.flat()
+        ]);
+
+        updateLegend(colorStops);
+    }
+
+    function updateLegend(colorStops) {
+        const legend = document.getElementById('legend');
+        legend.innerHTML = 'Employment share<br>';
+        colorStops.forEach(([value, color]) => {
+            legend.innerHTML += `
+                <div class="legend-label">
+                    <span class="legend-color" style="background:${color}"></span>
+                    ${value.toFixed(1)}%
+                </div>
+            `;
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -276,6 +276,7 @@ function medians_focus(focus=true){
 function drawBoxPlots(){
     let boxWidth = 35;
     countries.forEach(country => {
+       
         /** Draw a Rect with properties
             - x: x_scale(country)-0.5*boxWidth
             - y: secondStageScale( quantiles.Q3[country] )
@@ -284,6 +285,7 @@ function drawBoxPlots(){
         
             - fill: countryScale(country)
         */
+
         console.log(country);
         plotArea.insert('rect', ":first-child")
             .attr("x", x_scale(country)-0.5*boxWidth)
